@@ -1,0 +1,53 @@
+{
+  "name": "Bouzeron",
+  "description": "關於 Bouzeron 的描述... Bouzeron 是布根地唯一一個村莊級的 Aligoté 法定產區。",
+  "area": "約 61 公頃",
+  "altitude": "270-350m",
+  "exposition": "東、東南",
+  "grapeVarieties": [
+    "Aligoté"
+  ],
+  "wineTypes": [
+    "白酒"
+  ],
+  "climate": "大陸性氣候，受坡地影響，有良好的日照。",
+  "soilStructure": "白色泥灰岩和石灰岩，非常適合 Aligoté。",
+  "wineStyle": "清新、活潑，帶有礦物感和柑橘香氣。",
+  "tastingNotes": "檸檬、青蘋果、金合歡、燧石。",
+  "agingPotential": "3-7年",
+  "famousWineries": [
+    "Domaine de Villaine",
+    "Domaine A. et P. de Villaine"
+  ],
+  "grandCrus": [],
+  "premierCrus": [],
+  "history": "Bouzeron 於 1998 年獲得獨立的村莊級 AOC 地位，專門用於 Aligoté 葡萄。",
+  "geojson": {
+    "village": {
+      "bouzeron": {
+        "name": "Bouzeron",
+        "file": "AOC Bouzeron.geojson",
+        "fullName": "AOC Bouzeron",
+        "classification": "Village",
+        "area": "約 61 公頃",
+        "altitude": "270-350m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩和石灰岩",
+        "grapes": [
+          "Aligoté"
+        ],
+        "wineStyle": "清新、活潑，帶有礦物感和柑橘香氣。",
+        "tastingNotes": "檸檬、青蘋果、金合歡、燧石。",
+        "agingPotential": "3-7年",
+        "history": "這是該產區的核心，展現了 Aligoté Doré 品種的潛力。",
+        "producers": [
+          "Domaine de Villaine",
+          "Domaine A. et P. de Villaine"
+        ],
+        "color": "#FFFFE0"
+      }
+    },
+    "premier_crus": {},
+    "grand_crus": {}
+  }
+}

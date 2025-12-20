@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.756653245629572,46.96796510878999],[4.756755603595694,46.96792514950603],[4.756701066909748,46.96784332055388],[4.756988384882561,46.96771279343589],[4.757151984828971,46.96764863722328],[4.757222744709367,46.96770875551631],[4.757277721906121,46.96778236219514],[4.757019200215127,46.96789705368781],[4.75668722604847,46.96802694150265],[4.756653245629572,46.96796510878999]]]},"properties":{"name":"23 Domaine Jean Javillier et Fils","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#55aa7f","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

@@ -1,0 +1,64 @@
+{
+  "modules": [
+    {
+      "id": "beginner-m1",
+      "order": 1,
+      "title": "認識布根地",
+      "icon": "🗺️",
+      "duration": "60分鐘",
+      "lessons": 4,
+      "progress": 0,
+      "completed": false,
+      "locked": false,
+      "description": "探索布根地的地理環境、悠久歷史、經典品種與酒標解讀"
+    },
+    {
+      "id": "beginner-m2",
+      "order": 2,
+      "title": "分級制度入門",
+      "icon": "🏷️",
+      "duration": "45分鐘",
+      "lessons": 3,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "掌握布根地AOC制度與金字塔四級分級系統"
+    },
+    {
+      "id": "beginner-m3",
+      "order": 3,
+      "title": "六大產區概覽",
+      "icon": "🌍",
+      "duration": "75分鐘",
+      "lessons": 4,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "認識夜丘、伯恩丘、夏布利、夏隆、馬貢與薄酒萊六大產區"
+    },
+    {
+      "id": "beginner-m4",
+      "order": 4,
+      "title": "夏布利深入探索",
+      "icon": "🦪",
+      "duration": "50分鐘",
+      "lessons": 3,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "深入了解夏布利Kimmeridgian風土、七大特級園與品鑑技巧"
+    },
+    {
+      "id": "beginner-m5",
+      "order": 5,
+      "title": "薄酒萊入門",
+      "icon": "🎉",
+      "duration": "45分鐘",
+      "lessons": 3,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "探索加美品種特性、十大特級村莊與亞洲料理搭配"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.777887943864377,46.99292587776639],[4.777824106132416,46.99281988273275],[4.77781556705533,46.99274291859401],[4.777754747939007,46.99268719101372],[4.778417166257205,46.99238659481088],[4.778434076486482,46.99245648809777],[4.778402330466449,46.99259618387875],[4.778376174362686,46.99271168512123],[4.777887943864377,46.99292587776639]]]},"properties":{"name":"17 Domaine des Hospices\nde Beaune","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

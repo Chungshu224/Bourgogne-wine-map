@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.787761852256047,47.00954497464986],[4.787506201208935,47.00950481082778],[4.787233003053897,47.00944618794787],[4.787100953938634,47.00941757992067],[4.787034389100173,47.0093290465236],[4.787999089219741,47.00913234093722],[4.788028945425968,47.00957775233204],[4.787761852256047,47.00954497464986]]]},"properties":{"name":"20 Domaine Jean-Marc Bouley","styleUrl":"#m_ylw-pushpin","fill-opacity":0.6,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

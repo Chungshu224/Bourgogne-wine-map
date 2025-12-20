@@ -1,0 +1,202 @@
+{
+  "Regional": {
+    "files": [
+      "AOC Bourgogne Côte Chalonnaise.geojson",
+      "AOC Bourgogne Côtes du Couchois.geojson"
+    ],
+    "subfolders": {}
+  },
+  "01Bouzeron": {
+    "files": [
+      "AOC Bouzeron.geojson"
+    ],
+    "subfolders": {}
+  },
+  "02 Rully": {
+    "files": [
+      "AOC Rully.geojson"
+    ],
+    "subfolders": {
+      "Rully 1er Cru": {
+        "files": [
+          "AOC Rully 1er Cru Agneux.geojson",
+          "AOC Rully 1er Cru Champs Cloux.geojson",
+          "AOC Rully 1er Cru Chapitre.geojson",
+          "AOC Rully 1er Cru Clos du Chaigne.geojson",
+          "AOC Rully 1er Cru Clos St Jacques.geojson",
+          "AOC Rully 1er Cru Cloux.geojson",
+          "AOC Rully 1er Cru Grésigny.geojson",
+          "AOC Rully 1er Cru La Bressande.geojson",
+          "AOC Rully 1er Cru La Fosse.geojson",
+          "AOC Rully 1er Cru La Pucelle.geojson",
+          "AOC Rully 1er Cru La Renarde.geojson",
+          "AOC Rully 1er Cru Le Meix Cadot.geojson",
+          "AOC Rully 1er Cru Le Meix Caillet.geojson",
+          "AOC Rully 1er Cru Les Pierres.geojson",
+          "AOC Rully 1er Cru Margotés.geojson",
+          "AOC Rully 1er Cru Marissou.geojson",
+          "AOC Rully 1er Cru Molesme.geojson",
+          "AOC Rully 1er Cru Montpalais.geojson",
+          "AOC Rully 1er Cru Pillot.geojson",
+          "AOC Rully 1er Cru Préaux.geojson",
+          "AOC Rully 1er Cru Rabourcé.geojson",
+          "AOC Rully 1er Cru Raclot.geojson",
+          "AOC Rully 1er Cru Vauvry.geojson",
+          "AOC Rully 1er Cru.geojson"
+        ]
+      }
+    }
+  },
+  "03Mercurey": {
+    "files": [
+      "AOC Mercurey.geojson"
+    ],
+    "subfolders": {
+      "Mercurey 1er Cru": {
+        "files": [
+          "AOC Mercurey 1er Cru Clos de Paradis.geojson",
+          "AOC Mercurey 1er Cru Clos des Barraults.geojson",
+          "AOC Mercurey 1er Cru Clos des grands Voyens.geojson",
+          "AOC Mercurey 1er Cru Clos des Montaigus.geojson",
+          "AOC Mercurey 1er Cru Clos des Myglands.geojson",
+          "AOC Mercurey 1er Cru Clos du Château de Montaigu.geojson",
+          "AOC Mercurey 1er Cru Clos Marcilly.geojson",
+          "AOC Mercurey 1er Cru Clos Tonnerre.geojson",
+          "AOC Mercurey 1er Cru Clos Voyens.geojson",
+          "AOC Mercurey 1er Cru Grand Clos Fortoul.geojson",
+          "AOC Mercurey 1er Cru Griffères.geojson",
+          "AOC Mercurey 1er Cru La Bondue.geojson",
+          "AOC Mercurey 1er Cru La Cailloute.geojson",
+          "AOC Mercurey 1er Cru La Chassière.geojson",
+          "AOC Mercurey 1er Cru La Levrière.geojson",
+          "AOC Mercurey 1er Cru La Mission.geojson",
+          "AOC Mercurey 1er Cru Le Clos du Roy.geojson",
+          "AOC Mercurey 1er Cru Le Clos l'Evêque.geojson",
+          "AOC Mercurey 1er Cru Les Byots.geojson",
+          "AOC Mercurey 1er Cru Les Champs Martin.geojson",
+          "AOC Mercurey 1er Cru Les Combins.geojson",
+          "AOC Mercurey 1er Cru Les Crêts.geojson",
+          "AOC Mercurey 1er Cru Les Croichots.geojson",
+          "AOC Mercurey 1er Cru Les Fourneaux.geojson",
+          "AOC Mercurey 1er Cru Les Montaigus.geojson",
+          "AOC Mercurey 1er Cru Les Naugues.geojson",
+          "AOC Mercurey 1er Cru Les Puillets.geojson",
+          "AOC Mercurey 1er Cru Les Ruelles.geojson",
+          "AOC Mercurey 1er Cru Les Saumonts.geojson",
+          "AOC Mercurey 1er Cru Les Vasées.geojson",
+          "AOC Mercurey 1er Cru Les Velley.geojson",
+          "AOC Mercurey 1er Cru Sazenay.geojson",
+          "AOC Mercurey 1er Cru.geojson"
+        ]
+      }
+    }
+  },
+  "04Givry": {
+    "files": [
+      "AOC Givry.geojson"
+    ],
+    "subfolders": {
+      "Givry 1er Cru": {
+        "files": [
+          "AOC Givry 1er Cru A Vigne Rouge.geojson",
+          "AOC Givry 1er Cru Clos Charlé.geojson",
+          "AOC Givry 1er Cru Clos de la Baraude.geojson",
+          "AOC Givry 1er Cru Clos du Cellier aux Moines.geojson",
+          "AOC Givry 1er Cru Clos du Cras long.geojson",
+          "AOC Givry 1er Cru Clos du Vernoy.geojson",
+          "AOC Givry 1er Cru Clos Jus.geojson",
+          "AOC Givry 1er Cru Clos Marceaux.geojson",
+          "AOC Givry 1er Cru Clos Marole.geojson",
+          "AOC Givry 1er Cru Clos Salomon.geojson",
+          "AOC Givry 1er Cru Clos-Saint-Paul.geojson",
+          "AOC Givry 1er Cru Clos-Saint-Pierre.geojson",
+          "AOC Givry 1er Cru Crausot.geojson",
+          "AOC Givry 1er Cru Crémillons.geojson",
+          "AOC Givry 1er Cru En Choué.geojson",
+          "AOC Givry 1er Cru La Brûlée.geojson",
+          "AOC Givry 1er Cru La Grande Berge.geojson",
+          "AOC Givry 1er Cru La Matrosse.geojson",
+          "AOC Givry 1er Cru La Petite Berge.geojson",
+          "AOC Givry 1er Cru La Plante.geojson",
+          "AOC Givry 1er Cru Le Champ Lalot.geojson",
+          "AOC Givry 1er Cru Le Médenchot.geojson",
+          "AOC Givry 1er Cru Le Paradis.geojson",
+          "AOC Givry 1er Cru Le Petit Prétan.geojson",
+          "AOC Givry 1er Cru Le Pied de Chaume.geojson",
+          "AOC Givry 1er Cru Le Pied du Clou.geojson",
+          "AOC Givry 1er Cru Le Vigron.geojson",
+          "AOC Givry 1er Cru Les Bois Chevaux.geojson",
+          "AOC Givry 1er Cru Les Bois Gautiers.geojson",
+          "AOC Givry 1er Cru Les Combes.geojson",
+          "AOC Givry 1er Cru Les Galaffres.geojson",
+          "AOC Givry 1er Cru Les Grandes Vignes.geojson",
+          "AOC Givry 1er Cru Les Grands Prétans.geojson",
+          "AOC Givry 1er Cru Petit Marole.geojson",
+          "AOC Givry 1er Cru Servoisine.geojson",
+          "AOC Givry 1er Cru.geojson"
+        ]
+      }
+    }
+  },
+  "05Montagny": {
+    "files": [
+      "AOC Montagny.geojson"
+    ],
+    "subfolders": {
+      "Montagny 1er Cru": {
+        "files": [
+          "AOC Montagny 1er Cru Champ Toizeau.geojson",
+          "AOC Montagny 1er Cru Chazelle.geojson",
+          "AOC Montagny 1er Cru Cornevent.geojson",
+          "AOC Montagny 1er Cru Creux de Beaux Champs.geojson",
+          "AOC Montagny 1er Cru L'Epaule.geojson",
+          "AOC Montagny 1er Cru La Condemine du Vieux Château.geojson",
+          "AOC Montagny 1er Cru La Grande Pièce.geojson",
+          "AOC Montagny 1er Cru La Moullière.geojson",
+          "AOC Montagny 1er Cru Le Clos Chaudron.geojson",
+          "AOC Montagny 1er Cru Le Cloux.geojson",
+          "AOC Montagny 1er Cru Le Clouzot.geojson",
+          "AOC Montagny 1er Cru Le Vieux Château.geojson",
+          "AOC Montagny 1er Cru Les Bassets.geojson",
+          "AOC Montagny 1er Cru Les Beaux Champs.geojson",
+          "AOC Montagny 1er Cru Les Bonneveaux.geojson",
+          "AOC Montagny 1er Cru Les Bordes.geojson",
+          "AOC Montagny 1er Cru Les Bouchots.geojson",
+          "AOC Montagny 1er Cru Les Burnins.geojson",
+          "AOC Montagny 1er Cru Les Chaniots.geojson",
+          "AOC Montagny 1er Cru Les Chaumelottes.geojson",
+          "AOC Montagny 1er Cru Les Coères.geojson",
+          "AOC Montagny 1er Cru Les Combes.geojson",
+          "AOC Montagny 1er Cru Les Coudrettes.geojson",
+          "AOC Montagny 1er Cru Les Craboulettes.geojson",
+          "AOC Montagny 1er Cru Les Garchères.geojson",
+          "AOC Montagny 1er Cru Les Gouresses.geojson",
+          "AOC Montagny 1er Cru Les Jardins.geojson",
+          "AOC Montagny 1er Cru Les Las.geojson",
+          "AOC Montagny 1er Cru Les Macles.geojson",
+          "AOC Montagny 1er Cru Les Maroques.geojson",
+          "AOC Montagny 1er Cru Les Paquiers.geojson",
+          "AOC Montagny 1er Cru Les Perrières.geojson",
+          "AOC Montagny 1er Cru Les Pidances.geojson",
+          "AOC Montagny 1er Cru Les Platières.geojson",
+          "AOC Montagny 1er Cru Les Resses.geojson",
+          "AOC Montagny 1er Cru Les Treuffères.geojson",
+          "AOC Montagny 1er Cru Les Vignes Derrière.geojson",
+          "AOC Montagny 1er Cru Les Vignes des Prés.geojson",
+          "AOC Montagny 1er Cru Les Vignes longues.geojson",
+          "AOC Montagny 1er Cru Mont Laurent.geojson",
+          "AOC Montagny 1er Cru Montcuchot.geojson",
+          "AOC Montagny 1er Cru Montorge.geojson",
+          "AOC Montagny 1er Cru Saint-Ytages.geojson",
+          "AOC Montagny 1er Cru Sainte-Morille.geojson",
+          "AOC Montagny 1er Cru Sous les Feilles.geojson",
+          "AOC Montagny 1er Cru Vigne du soleil.geojson",
+          "AOC Montagny 1er Cru Vignes Couland.geojson",
+          "AOC Montagny 1er Cru Vignes Saint-Pierre.geojson",
+          "AOC Montagny 1er Cru Vignes sur le Cloux.geojson",
+          "AOC Montagny 1er Cru.geojson"
+        ]
+      }
+    }
+  }
+}

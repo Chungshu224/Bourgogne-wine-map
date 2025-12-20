@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 06 Maison Louis Latour",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "06 Maison Louis Latour", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963331035333725, 47.210814089280468, 0.0 ], [ 4.965798159952584, 47.210341200893758, 0.0 ], [ 4.965949467551414, 47.21069192941529, 0.0 ], [ 4.963426563928759, 47.211165438861613, 0.0 ], [ 4.963331035333725, 47.210814089280468, 0.0 ] ] ] } }
+]
+}

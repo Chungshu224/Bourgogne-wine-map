@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.802068380585379,47.01369061015687],[4.801244359310724,47.01351387826029],[4.802586618816227,47.01268088314575],[4.804097212154184,47.01174495512497],[4.804337933115068,47.01176671513787],[4.804629777984299,47.01178769434662],[4.805040340845748,47.01184506887697],[4.802068380585379,47.01369061015687]]]},"properties":{"name":"07 Domaine Michel Gaunoux","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#00ffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

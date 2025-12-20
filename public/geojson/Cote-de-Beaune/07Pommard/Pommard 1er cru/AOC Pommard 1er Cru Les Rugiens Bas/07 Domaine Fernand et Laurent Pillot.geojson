@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "07 Domaine Fernand et Laurent Pillot",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "07Domaine Fernand et Laurent Pillot", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.788071051524396, 47.007163638571591, 0.0 ], [ 4.788027251117075, 47.007075255720387, 0.0 ], [ 4.789558241682139, 47.006588443798613, 0.0 ], [ 4.789659847633311, 47.006606321707167, 0.0 ], [ 4.788071051524396, 47.007163638571591, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "07Domaine Fernand et Laurent Pillot", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.787273287171699, 47.006106354277883, 0.0 ], [ 4.787112749257716, 47.005839393866381, 0.0 ], [ 4.787651912500188, 47.005673172510768, 0.0 ], [ 4.787752377152625, 47.005730327503663, 0.0 ], [ 4.787838995361171, 47.005791333158157, 0.0 ], [ 4.787946267727681, 47.005883498941422, 0.0 ], [ 4.787273287171699, 47.006106354277883, 0.0 ] ] ] } }
+]
+}

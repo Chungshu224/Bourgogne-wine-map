@@ -1,0 +1,39 @@
+{
+  "name": "Chorey-lès-Beaune",
+  "description": "位於伯恩市東邊的平原上，主要生產輕盈、易飲的紅酒。這裡的葡萄酒通常在年輕時飲用，充滿新鮮的紅色水果風味。",
+  "area": "約 135 公頃",
+  "altitude": "220-250m",
+  "exposition": "平坦",
+  "grapeVarieties": ["Pinot Noir"],
+  "wineTypes": ["紅酒"],
+  "climate": "大陸性氣候",
+  "soilStructure": "石灰質粘土和礫石",
+  "wineStyle": "輕盈、果味主導、單寧柔和",
+  "tastingNotes": "櫻桃、覆盆子、草莓",
+  "agingPotential": "3-8年",
+  "famousWineries": ["Domaine Tollot-Beaut", "Domaine Maillard Père et Fils"],
+  "grandCrus": [],
+  "premierCrus": [],
+  "history": "歷史上是供應伯恩市日常飲用酒的產區。",
+  "geojson": {
+    "village": {
+      "chorey-les-beaune": {
+        "name": "Chorey-lès-Beaune",
+        "file": "AOC Chorey-lès-Beaune Village.geojson",
+        "fullName": "AOC Chorey-lès-Beaune Village",
+        "classification": "Village",
+        "area": "約 135 公頃",
+        "altitude": "220-250m",
+        "exposition": "平坦",
+        "soil": "石灰質粘土和礫石，部分地區為沙質土壤",
+        "grapes": ["Pinot Noir"],
+        "wineStyle": "紅酒：輕盈、果味主導、單寧柔和，易於入口。",
+        "tastingNotes": "紅酒：櫻桃、覆盆子、草莓等新鮮紅色水果香氣。",
+        "agingPotential": "紅酒：3-8年",
+        "history": "Chorey-lès-Beaune的葡萄園大部分位於平地上，這在伯恩丘是比較少見的。其葡萄酒以高性價比和迷人的果味而聞名。",
+        "producers": ["Domaine Tollot-Beaut", "Domaine Maillard Père et Fils", "Arnoux Père et Fils"],
+        "color": "#8FBC8F"
+      }
+    }
+  }
+}

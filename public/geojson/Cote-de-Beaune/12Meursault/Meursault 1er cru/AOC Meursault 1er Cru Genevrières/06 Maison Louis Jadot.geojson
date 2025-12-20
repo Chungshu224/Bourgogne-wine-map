@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.756072470186714,46.96365992649289],[4.758320118360595,46.96312198551083],[4.758394708389668,46.96325005800247],[4.756249197050638,46.96377817127664],[4.756072470186714,46.96365992649289]]]},"properties":{"name":"06 Maison Louis Jadot","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

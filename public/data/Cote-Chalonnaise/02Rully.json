@@ -1,0 +1,547 @@
+{
+  "name": "Rully",
+  "description": "關於 Rully 的描述... Rully 以其高品質的白酒和氣泡酒（Crémant de Bourgogne）而聞名。",
+  "area": "約 360 公頃",
+  "altitude": "230-310m",
+  "exposition": "東、東南",
+  "grapeVarieties": [
+    "Chardonnay",
+    "Pinot Noir"
+  ],
+  "wineTypes": [
+    "白酒",
+    "紅酒",
+    "氣泡酒"
+  ],
+  "climate": "大陸性氣候，坡地提供了良好的保護和日照。",
+  "soilStructure": "主要是石灰岩和泥灰岩，適合 Chardonnay。",
+  "wineStyle": "白酒：清新、果香濃郁，帶有礦物感。紅酒：輕盈、優雅，紅色水果風味。",
+  "tastingNotes": "白酒：白花、檸檬、礦石。紅酒：櫻桃、覆盆子。",
+  "agingPotential": "白酒：3-8年，紅酒：3-7年",
+  "famousWineries": [
+    "Domaine Jacqueson",
+    "Domaine de Villaine",
+    "Domaine Paul et Marie Jacqueson"
+  ],
+  "grandCrus": [],
+  "premierCrus": [
+    "Clos Saint-Jacques",
+    "Grésigny",
+    "Margotés",
+    "Raclot"
+  ],
+  "history": "Rully 是 Crémant de Bourgogne 的發源地之一，擁有悠久的氣泡酒釀造歷史。",
+  "geojson": {
+    "village": {
+      "rully": {
+        "name": "Rully",
+        "file": "AOC Rully.geojson",
+        "fullName": "AOC Rully",
+        "classification": "Village",
+        "area": "約 220 公頃",
+        "altitude": "230-310m",
+        "exposition": "東、東南",
+        "soil": "石灰岩和粘土的混合",
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "wineStyle": "白酒：果味直接，易於飲用。紅酒：輕盈，紅色水果主導。",
+        "tastingNotes": "白酒：蘋果、梨。紅酒：櫻桃、草莓。",
+        "agingPotential": "2-5年",
+        "history": "Rully 村莊級的葡萄園構成了產區的基礎。",
+        "producers": [
+          "Domaine Jacqueson",
+          "Maison Joseph Drouhin"
+        ],
+        "color": "#F5F5DC"
+      }
+    },
+    "1er Cru": {
+      "overview": {
+        "name": "Rully 1er Cru",
+        "file": "AOC Rully 1er Cru.geojson",
+        "fullName": "AOC Rully 1er Cru",
+        "classification": "1er Cru",
+        "area": "約 95 公頃",
+        "altitude": "240-300m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩",
+        "grapes": [
+          "Chardonnay",
+          "Pinot Noir"
+        ],
+        "wineStyle": "白酒：更具複雜性和結構感，礦物風味突出。紅酒：更為集中，單寧更細膩。",
+        "tastingNotes": "白酒：檸檬、金合歡、蜂蜜。紅酒：黑櫻桃、香料。",
+        "agingPotential": "白酒：5-12年，紅酒：5-10年",
+        "history": "Rully 擁有多個優質的一級園，主要以其白酒聞名。",
+        "producers": [
+          "Domaine de Villaine",
+          "Domaine Paul et Marie Jacqueson"
+        ],
+        "color": "#B22222"
+      },
+      "agneux": {
+        "name": "Agneux",
+        "file": "AOC Rully 1er Cru Agneux.geojson",
+        "fullName": "AOC Rully 1er Cru Agneux",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "champs-cloux": {
+        "name": "Champs Cloux",
+        "file": "AOC Rully 1er Cru Champs Cloux.geojson",
+        "fullName": "AOC Rully 1er Cru Champs Cloux",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "chapitre": {
+        "name": "Chapitre",
+        "file": "AOC Rully 1er Cru Chapitre.geojson",
+        "fullName": "AOC Rully 1er Cru Chapitre",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-du-chaigne": {
+        "name": "Clos du Chaigne",
+        "file": "AOC Rully 1er Cru Clos du Chaigne.geojson",
+        "fullName": "AOC Rully 1er Cru Clos du Chaigne",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-st-jacques": {
+        "name": "Clos St Jacques",
+        "file": "AOC Rully 1er Cru Clos St Jacques.geojson",
+        "fullName": "AOC Rully 1er Cru Clos St Jacques",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "cloux": {
+        "name": "Cloux",
+        "file": "AOC Rully 1er Cru Cloux.geojson",
+        "fullName": "AOC Rully 1er Cru Cloux",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "gresigny": {
+        "name": "Grésigny",
+        "file": "AOC Rully 1er Cru Grésigny.geojson",
+        "fullName": "AOC Rully 1er Cru Grésigny",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-bressande": {
+        "name": "La Bressande",
+        "file": "AOC Rully 1er Cru La Bressande.geojson",
+        "fullName": "AOC Rully 1er Cru La Bressande",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-fosse": {
+        "name": "La Fosse",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru La Fosse.geojson",
+        "fullName": "AOC Rully 1er Cru La Fosse",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-pucelle": {
+        "name": "La Pucelle",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru La Pucelle.geojson",
+        "fullName": "AOC Rully 1er Cru La Pucelle",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-renarde": {
+        "name": "La Renarde",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru La Renarde.geojson",
+        "fullName": "AOC Rully 1er Cru La Renarde",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-meix-cadot": {
+        "name": "Le Meix Cadot",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Le Meix Cadot.geojson",
+        "fullName": "AOC Rully 1er Cru Le Meix Cadot",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-meix-caillet": {
+        "name": "Le Meix Caillet",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Le Meix Caillet.geojson",
+        "fullName": "AOC Rully 1er Cru Le Meix Caillet",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-pierres": {
+        "name": "Les Pierres",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Les Pierres.geojson",
+        "fullName": "AOC Rully 1er Cru Les Pierres",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "margotes": {
+        "name": "Margotés",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Margotés.geojson",
+        "fullName": "AOC Rully 1er Cru Margotés",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "marissou": {
+        "name": "Marissou",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Marissou.geojson",
+        "fullName": "AOC Rully 1er Cru Marissou",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "molesme": {
+        "name": "Molesme",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Molesme.geojson",
+        "fullName": "AOC Rully 1er Cru Molesme",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "montpalais": {
+        "name": "Montpalais",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Montpalais.geojson",
+        "fullName": "AOC Rully 1er Cru Montpalais",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "pillot": {
+        "name": "Pillot",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Pillot.geojson",
+        "fullName": "AOC Rully 1er Cru Pillot",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "preaux": {
+        "name": "Préaux",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Préaux.geojson",
+        "fullName": "AOC Rully 1er Cru Préaux",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "rabource": {
+        "name": "Rabourcé",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Rabourcé.geojson",
+        "fullName": "AOC Rully 1er Cru Rabourcé",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "raclot": {
+        "name": "Raclot",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Raclot.geojson",
+        "fullName": "AOC Rully 1er Cru Raclot",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "vauvry": {
+        "name": "Vauvry",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Vauvry.geojson",
+        "fullName": "AOC Rully 1er Cru Vauvry",
+        "classification": "1er Cru",
+        "area": "約 1-2.8 公頃",
+        "altitude": "240-310m",
+        "exposition": "東、東南",
+        "soil": "白色泥灰岩與石灰岩，適合夏多內",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：結構優雅，礦物感突出，適合陳年。紅酒：輕盈精緻，紅色水果主導。",
+        "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      }
+    },
+    "grand_crus": {}
+  }
+}

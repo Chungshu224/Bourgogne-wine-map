@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.738383396896875,46.941616601295],[4.739080279116006,46.94146751483427],[4.73954746378058,46.94131672718591],[4.739697936042191,46.9414360544738],[4.739179149645429,46.94159885476102],[4.738501184021988,46.94175349672906],[4.738490690190944,46.94175682709052],[4.738383396896875,46.941616601295]]]},"properties":{"name":"26 Domaine de la Romanée-Conti","styleUrl":"#m_ylw-pushpin","fill-opacity":0.2,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

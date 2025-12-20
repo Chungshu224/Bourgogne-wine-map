@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "10Domaine Chazans 10Domaine Chazans",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Domaine Chazans", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.957803551083253, 47.180343958451523, 0.0 ], [ 4.957008624988324, 47.180583083386907, 0.0 ], [ 4.956968266505449, 47.180523125496883, 0.0 ], [ 4.957778022578003, 47.180293982700547, 0.0 ], [ 4.957803551083253, 47.180343958451523, 0.0 ] ] ] } }
+]
+}

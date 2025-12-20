@@ -1,0 +1,25 @@
+{
+  "title": "Chambertin Grand Cru",
+  "fullName": "Chambertin Grand Cru",
+  "files": [
+    { "id": 1, "name": "01 Armand Rousseau", "shortDescription": "", "file": "Chambertin 01 Armand Rousseau.geojson" },
+    { "id": 2, "name": "02 Louis Latour", "shortDescription": "", "file": "Chambertin 02 Louis Latour.geojson" },
+    { "id": 3, "name": "03 Domaine de la Romanée-Conti", "shortDescription": "", "file": "Chambertin 03 Domaine de la Romanée-Conti.geojson" },
+    { "id": 4, "name": "04 Domaine Leroy", "shortDescription": "", "file": "Chambertin 04 Domaine Leroy.geojson" },
+    { "id": 5, "name": "05 Joseph Drouhin", "shortDescription": "", "file": "Chambertin 05 Joseph Drouhin.geojson" },
+    { "id": 6, "name": "06 Domaine Fourrier", "shortDescription": "", "file": "Chambertin 06 Domaine Fourrier.geojson" },
+    { "id": 7, "name": "07 Domaine Trapet", "shortDescription": "", "file": "Chambertin 07 Domaine Trapet.geojson" },
+    { "id": 8, "name": "08 Domaine Armand", "shortDescription": "", "file": "Chambertin 08 Domaine Armand.geojson" },
+    { "id": 9, "name": "09 Domaine Philippe", "shortDescription": "", "file": "Chambertin 09 Domaine Philippe.geojson" },
+    { "id": 10, "name": "10 Domaine Dugat-Py", "shortDescription": "", "file": "Chambertin 10 Domaine Dugat-Py.geojson" },
+    { "id": 11, "name": "11 Domaine Mugneret-Gibourg", "shortDescription": "", "file": "Chambertin 11 Domaine Mugneret-Gibourg.geojson" },
+    { "id": 12, "name": "12 Domaine Rousseau", "shortDescription": "", "file": "Chambertin 12 Domaine Rousseau.geojson" },
+    { "id": 13, "name": "13 Domaine Camus", "shortDescription": "", "file": "Chambertin 13 Domaine Camus.geojson" },
+    { "id": 14, "name": "14 Domaine Girardin", "shortDescription": "", "file": "Chambertin 14 Domaine Girardin.geojson" },
+    { "id": 15, "name": "15 Domaine Jadot", "shortDescription": "", "file": "Chambertin 15 Domaine Jadot.geojson" },
+    { "id": 16, "name": "16 Domaine Confuron-Cotetidot", "shortDescription": "", "file": "Chambertin 16 Domaine Confuron-Cotetidot.geojson" },
+    { "id": 17, "name": "17 Domaine Méo-Camuzet", "shortDescription": "", "file": "Chambertin 17 Domaine Méo-Camuzet.geojson" },
+    { "id": 18, "name": "18 Domaine Jean Grivot", "shortDescription": "", "file": "Chambertin 18 Domaine Jean Grivot.geojson" },
+    { "id": 19, "name": "19 Domaine Hubert Lignier", "shortDescription": "", "file": "Chambertin 19 Domaine Hubert Lignier.geojson" }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 19 Domaine Dugat-Py",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "19 Domaine Dugat-Py", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963226388960438, 47.211612034511099, 0.0 ], [ 4.963413780111974, 47.211570297414518, 0.0 ], [ 4.963507724980698, 47.211853887706887, 0.0 ], [ 4.963543682403597, 47.212032885897479, 0.0 ], [ 4.963465639625698, 47.21231826565991, 0.0 ], [ 4.963406159373234, 47.212083512176157, 0.0 ], [ 4.963322186165366, 47.211922551414638, 0.0 ], [ 4.963226388960438, 47.211612034511099, 0.0 ] ] ] } }
+]
+}

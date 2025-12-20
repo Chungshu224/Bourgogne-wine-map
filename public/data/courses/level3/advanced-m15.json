@@ -1,0 +1,13 @@
+{
+  "moduleId": "advanced-m15",
+  "title": "綜合案例研究",
+  "description": "實際案例分析、模擬專業場景與Level 3總複習與認證準備",
+  "lessons": [
+    {"id": "m15-l1", "title": "案例一：酒莊參訪規劃", "duration": "18分鐘", "type": "presentation"},
+    {"id": "m15-l2", "title": "案例二：收藏組合構建", "duration": "18分鐘", "type": "presentation"},
+    {"id": "m15-l3", "title": "案例三：餐廳酒單設計", "duration": "18分鐘", "type": "presentation"},
+    {"id": "m15-l4", "title": "Level 3 總複習", "duration": "18分鐘", "type": "presentation"},
+    {"id": "m15-l5", "title": "認證考試準備", "duration": "18分鐘", "type": "presentation"}
+  ],
+  "quiz": {"id": "advanced-m15-quiz", "title": "綜合案例研究 - 最終測驗", "passingScore": 80, "questions": [{"id": "q1", "type": "multiple-choice", "question": "布根地有多少個特級園？", "options": ["24個", "33個", "42個", "50個"], "correctAnswer": 1}]}
+}

@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.804211369918585,47.01546937850283],[4.803774437526059,47.01525292867583],[4.804138548705305,47.01501717419035],[4.804496707969772,47.01478799929613],[4.805049275148885,47.01443322556478],[4.805180966214657,47.0144900557364],[4.805355307053003,47.01455394519345],[4.805425744169343,47.01453822803015],[4.80556505295379,47.01457607470454],[4.804211369918585,47.01546937850283]]]},"properties":{"name":"10 Domaine Antoine Jobard","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#55ff7f","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

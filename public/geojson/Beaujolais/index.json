@@ -1,0 +1,22 @@
+{
+  "Beaujolais": {
+    "files": [
+      "AOC Beaujolais.geojson",
+      "AOC Beaujolais Villages.geojson"
+    ]
+  },
+  "Beaujolais Crus": {
+    "files": [
+      "AOC Brouilly.geojson",
+      "AOC Chénas.geojson",
+      "AOC Chiroubles.geojson",
+      "AOC Côte de Brouilly.geojson",
+      "AOC Fleurie.geojson",
+      "AOC Juliénas.geojson",
+      "AOC Morgon.geojson",
+      "AOC Moulin-à-Vent.geojson",
+      "AOC Régnié.geojson",
+      "AOC Saint-Amour.geojson"
+    ]
+  }
+}

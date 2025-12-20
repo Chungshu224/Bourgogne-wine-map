@@ -1,0 +1,461 @@
+{
+  "moduleId": "intermediate-m1",
+  "title": "夜丘產區深度解析",
+  "description": "探索世界最偉大的黑皮諾產區，深入了解夜丘的九大村莊與特級園",
+  "lessons": [
+    {
+      "id": "m1-l1",
+      "title": "夜丘產區總覽",
+      "duration": "20分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "夜丘產區總覽",
+          "subtitle": "Lesson 1 - 20分鐘",
+          "description": "認識夜丘的地理位置、氣候特色與九大重要村莊"
+        },
+        {
+          "type": "content",
+          "title": "夜丘（Côte de Nuits）",
+          "content": "夜丘是布根地最負盛名的紅酒產區，南北長約20公里，位於第戎南方至科爾戈洛瓦（Corgoloin）。這裡出產世界上最昂貴、最優雅的黑皮諾紅酒。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 夜丘的特色",
+          "points": [
+            "擁有24個特級園，其中23個生產紅酒",
+            "最適合種植黑皮諾的風土條件",
+            "東向與東南向坡地，海拔250-300米",
+            "石灰岩土壤為主，排水性極佳",
+            "夜丘紅酒：結構強勁、單寧緊實、陳年潛力驚人"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "📍 九大重要村莊（由北至南）",
+          "points": [
+            "馬沙內（Marsannay）- 唯一可生產三色酒的村莊",
+            "菲克桑（Fixin）- 強勁有力的紅酒",
+            "熱夫雷-香貝丹（Gevrey-Chambertin）- 擁有9個特級園",
+            "莫雷-聖丹尼（Morey-Saint-Denis）- 5個特級園",
+            "香波-慕西尼（Chambolle-Musigny）- 優雅細緻",
+            "伏舊（Vougeot）- 著名的克洛-伏舊特級園",
+            "弗拉傑-艾瑟索（Flagey-Echézeaux）- 2個特級園",
+            "馮內-羅曼尼（Vosne-Romanée）- 8個特級園，包括羅曼尼康帝",
+            "夜-聖喬治（Nuits-Saint-Georges）- 無特級園但有眾多優質一級園"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "夜丘紅酒 vs 伯恩丘紅酒",
+          "leftTitle": "夜丘紅酒",
+          "leftPoints": [
+            "結構強勁、骨架明顯",
+            "單寧緊實、需要陳年",
+            "香氣濃郁、深度複雜",
+            "陳年後展現森林氣息",
+            "適合搭配野味與紅肉"
+          ],
+          "rightTitle": "伯恩丘紅酒",
+          "rightPoints": [
+            "優雅柔順、質地細緻",
+            "單寧柔和、較早適飲",
+            "果香明顯、清新活潑",
+            "陳年後展現花香",
+            "適合搭配禽類與魚類"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "為什麼夜丘如此特殊？",
+          "content": "夜丘的獨特性源於其完美的風土條件：東向坡地提供清晨陽光、石灰岩土壤賦予礦物感、大陸性氣候帶來涼爽夜晚保持酸度、數百年來僧侶與酒農對地塊的精細劃分。"
+        }
+      ]
+    },
+    {
+      "id": "m1-l2",
+      "title": "熱夫雷-香貝丹村莊",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "熱夫雷-香貝丹",
+          "subtitle": "Lesson 2 - 18分鐘",
+          "description": "探索夜丘最大的村莊，擁有9個特級園的葡萄酒王國"
+        },
+        {
+          "type": "content",
+          "title": "熱夫雷-香貝丹（Gevrey-Chambertin）",
+          "content": "這是夜丘最大的村莊，擁有9個特級園，超過400公頃的葡萄園。拿破崙最愛的香貝丹特級園就位於此，這裡的紅酒以強勁、濃郁、需要長時間陳年著稱。"
+        },
+        {
+          "type": "list",
+          "title": "👑 九大特級園",
+          "points": [
+            "香貝丹（Chambertin）- 面積12.9公頃，最負盛名",
+            "香貝丹-貝日（Chambertin-Clos de Bèze）- 可標示為Chambertin",
+            "夏爾姆-香貝丹（Charmes-Chambertin）- 最大31.1公頃",
+            "夏培爾-香貝丹（Chapelle-Chambertin）- 面積5.5公頃",
+            "格里奧-香貝丹（Griotte-Chambertin）- 最小2.7公頃",
+            "拉圖里榭-香貝丹（Latricières-Chambertin）- 面積7.4公頃",
+            "瑪茲-香貝丹（Mazis-Chambertin）- 面積12.6公頃",
+            "瑪佐耶-香貝丹（Mazoyères-Chambertin）- 可標示為Charmes",
+            "胡修-香貝丹（Ruchottes-Chambertin）- 面積3.3公頃"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🍇 熱夫雷-香貝丹風格",
+          "points": [
+            "顏色深邃、幾乎不透光",
+            "香氣：黑櫻桃、黑莓、甘草、動物皮革",
+            "口感：強勁有力、單寧緊實",
+            "結構：骨架明顯、酸度活潑",
+            "陳年：需要10-30年才能完全展開",
+            "最佳飲用：15-25年之間"
+          ]
+        },
+        {
+          "type": "winery",
+          "title": "🏰 重要生產者",
+          "wineries": [
+            {
+              "name": "Armand Rousseau",
+              "description": "香貝丹的傳奇酒莊，擁有多個特級園"
+            },
+            {
+              "name": "Denis Mortet",
+              "description": "現代派風格，濃郁果香"
+            },
+            {
+              "name": "Claude Dugat",
+              "description": "產量稀少，品質卓越"
+            },
+            {
+              "name": "Domaine Leroy",
+              "description": "生物動力法，價格昂貴"
+            }
+          ]
+        },
+        {
+          "type": "content",
+          "title": "品鑑建議",
+          "content": "熱夫雷-香貝丹的紅酒需要時間，年輕時單寧強勁、果香封閉。建議至少陳年10年以上，使用大型勃艮第杯醒酒1-2小時，最佳侍酒溫度16-18°C。"
+        }
+      ]
+    },
+    {
+      "id": "m1-l3",
+      "title": "香波-慕西尼與莫雷-聖丹尼",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "香波-慕西尼 & 莫雷-聖丹尼",
+          "subtitle": "Lesson 3 - 18分鐘",
+          "description": "探索夜丘最優雅與最被低估的兩個村莊"
+        },
+        {
+          "type": "content",
+          "title": "香波-慕西尼（Chambolle-Musigny）",
+          "content": "如果說熱夫雷-香貝丹是夜丘的力量代表，香波-慕西尼就是優雅的化身。這裡的紅酒以絲綢般的質地、細緻的單寧與花香著稱，是夜丘中最女性化的風格。"
+        },
+        {
+          "type": "list",
+          "title": "💎 香波-慕西尼特級園",
+          "points": [
+            "慕西尼（Musigny）- 面積10.9公頃，夜丘最優雅",
+            "邦馬爾（Bonnes-Mares）- 面積15.1公頃（部分在莫雷）",
+            "慕西尼白酒（Musigny Blanc）- 極其稀有的特級白酒"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🌹 香波-慕西尼風格",
+          "points": [
+            "顏色：相對較淡、透亮的寶石紅",
+            "香氣：紫羅蘭、玫瑰、紅色莓果、香料",
+            "口感：絲綢般質地、單寧細緻",
+            "結構：優雅而非強勁",
+            "陳年：10-25年",
+            "特色：夜丘中最具女性氣質的紅酒"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "莫雷-聖丹尼（Morey-Saint-Denis）",
+          "content": "夾在熱夫雷-香貝丹與香波-慕西尼之間，莫雷-聖丹尼常被忽略，但這裡擁有5個特級園，風格介於鄰村之間，兼具力量與優雅。"
+        },
+        {
+          "type": "list",
+          "title": "👑 莫雷-聖丹尼特級園",
+          "points": [
+            "克洛-德-拉侯奇（Clos de la Roche）- 最大16.9公頃",
+            "克洛-聖丹尼（Clos Saint-Denis）- 面積6.6公頃",
+            "克洛-德-塔（Clos des Lambrays）- 面積8.7公頃",
+            "克洛-德-塔爾（Clos de Tart）- 單一所有權7.5公頃",
+            "邦馬爾（Bonnes-Mares）- 部分位於此村"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "三村比較",
+          "leftTitle": "熱夫雷-香貝丹",
+          "leftPoints": [
+            "力量型",
+            "單寧強勁",
+            "需長時間陳年",
+            "濃郁複雜",
+            "男性化風格"
+          ],
+          "rightTitle": "香波-慕西尼",
+          "rightPoints": [
+            "優雅型",
+            "單寧絲滑",
+            "相對早熟",
+            "花香明顯",
+            "女性化風格"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "莫雷-聖丹尼的獨特性",
+          "content": "莫雷-聖丹尼完美平衡了鄰村的特質，既有熱夫雷的結構與深度，又保有香波的優雅與細緻。這種平衡使其成為性價比極高的選擇。"
+        }
+      ]
+    },
+    {
+      "id": "m1-l4",
+      "title": "馮內-羅曼尼：頂級園的天堂",
+      "duration": "20分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "馮內-羅曼尼",
+          "subtitle": "Lesson 4 - 20分鐘",
+          "description": "探索擁有8個特級園的傳奇村莊，包括世界最貴的羅曼尼康帝"
+        },
+        {
+          "type": "content",
+          "title": "馮內-羅曼尼（Vosne-Romanée）",
+          "content": "這是布根地的心臟，世界上葡萄酒愛好者的朝聖地。這個小村莊擁有8個特級園，包括傳奇的羅曼尼康帝（Romanée-Conti），每一瓶都是天價。"
+        },
+        {
+          "type": "list",
+          "title": "👑 八大特級園",
+          "points": [
+            "羅曼尼康帝（Romanée-Conti）- 1.8公頃，世界最貴",
+            "拉塔希（La Tâche）- 6.1公頃，DRC單一所有",
+            "羅曼尼（Romanée）- 0.85公頃，最小特級園",
+            "李奇堡（Richebourg）- 8.0公頃",
+            "羅曼尼-聖維旺（Romanée-Saint-Vivant）- 9.4公頃",
+            "大街特級園（La Grande Rue）- 1.7公頃",
+            "艾瑟索（Echézeaux）- 37.7公頃（最大）",
+            "大艾瑟索（Grands Echézeaux）- 9.1公頃"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "羅曼尼康帝（Romanée-Conti）",
+          "content": "這是世界上最昂貴、最難取得的葡萄酒。僅有1.8公頃，年產量約450箱（5400瓶）。自1760年起由康帝親王購買，現由DRC酒莊獨家擁有。一瓶年份佳的RC可售價超過10萬美元。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 馮內-羅曼尼風格",
+          "points": [
+            "完美平衡力量與優雅",
+            "香氣極其複雜：玫瑰、紫羅蘭、櫻桃、香料、松露",
+            "口感：絲綢般質地、層次無窮",
+            "結構：優雅但有深度",
+            "陳年：15-40年甚至更久",
+            "獨特性：每個特級園都有鮮明個性"
+          ]
+        },
+        {
+          "type": "winery",
+          "title": "🏰 傳奇酒莊",
+          "wineries": [
+            {
+              "name": "Domaine de la Romanée-Conti (DRC)",
+              "description": "擁有RC、La Tâche等特級園，世界頂級"
+            },
+            {
+              "name": "Domaine Leroy",
+              "description": "生物動力法先驅，品質驚人"
+            },
+            {
+              "name": "Domaine Méo-Camuzet",
+              "description": "現代派風格，果香濃郁"
+            },
+            {
+              "name": "Domaine Hudelot-Noëllat",
+              "description": "性價比高，風格優雅"
+            }
+          ]
+        },
+        {
+          "type": "content",
+          "title": "為何如此昂貴？",
+          "content": "馮內-羅曼尼的高價源於：1) 產量稀少（特別是RC僅1.8公頃）2) 風土獨特無法複製 3) 歷史傳奇與名氣 4) 全球富豪與收藏家追捧 5) 品質確實卓越無比。"
+        },
+        {
+          "type": "list",
+          "title": "💡 投資與收藏建議",
+          "points": [
+            "RC: 需要極高預算，適合頂級收藏家",
+            "La Tâche: 相對較易取得，投資價值高",
+            "Richebourg: 性價比較佳的選擇",
+            "村級酒: 優質生產者的村級酒也值得收藏",
+            "陳年潛力: 好年份可陳年30-50年",
+            "保存條件: 需恆溫恆濕酒窖（12-14°C）"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m1-l5",
+      "title": "夜-聖喬治與其他村莊",
+      "duration": "14分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "夜-聖喬治 & 其他村莊",
+          "subtitle": "Lesson 5 - 14分鐘",
+          "description": "探索夜丘南段的重要村莊與性價比之選"
+        },
+        {
+          "type": "content",
+          "title": "夜-聖喬治（Nuits-Saint-Georges）",
+          "content": "夜丘最南端的重要村莊，也是整個夜丘的命名來源。雖然沒有特級園，但擁有41個一級園，面積達143公頃，紅酒以強勁、耐久著稱。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 夜-聖喬治特色",
+          "points": [
+            "無特級園，但有41個優質一級園",
+            "風格：強勁有力、單寧緊實",
+            "香氣：黑色水果、動物皮革、松露",
+            "陳年潛力：15-30年",
+            "性價比：比特級園親民許多",
+            "著名一級園：Les Saint-Georges, Les Vaucrains, Les Cailles"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "馬沙內（Marsannay）",
+          "content": "夜丘最北端的村莊，2009年才升級為村級AOC。這裡是夜丘唯一可以合法生產紅、白、粉紅三種酒的村莊，以粉紅酒最為著名。"
+        },
+        {
+          "type": "list",
+          "title": "🌸 馬沙內粉紅酒",
+          "points": [
+            "夜丘唯一可生產粉紅酒的村莊",
+            "100%黑皮諾釀造",
+            "顏色：淺粉紅至洋蔥皮色",
+            "香氣：草莓、覆盆子、玫瑰",
+            "口感：清新活潑、礦物感",
+            "適合夏季與亞洲料理搭配"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "菲克桑（Fixin）",
+          "content": "緊鄰熱夫雷-香貝丹南方，風格相似但價格親民許多。紅酒以強勁、需要陳年著稱，是性價比極高的選擇。"
+        },
+        {
+          "type": "list",
+          "title": "💎 性價比村莊推薦",
+          "points": [
+            "Fixin - 類似熱夫雷但價格合理",
+            "Marsannay - 新興優質產區",
+            "Nuits-Saint-Georges村級 - 一級園價格高但村級親民",
+            "Côte de Nuits-Villages - 區域級但品質優秀",
+            "建議：尋找優質生產者的村級酒"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "夜丘總結",
+          "content": "夜丘是世界黑皮諾的聖地，從強勁的熱夫雷-香貝丹到優雅的香波-慕西尼，從傳奇的羅曼尼康帝到性價比的菲克桑，這裡展現了黑皮諾的所有可能性。"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "title": "夜丘產區測驗",
+    "description": "測試您對夜丘產區的理解程度",
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "夜丘共有多少個特級園？",
+        "type": "single",
+        "options": [
+          "20個",
+          "24個",
+          "28個",
+          "33個"
+        ],
+        "correctAnswer": 1,
+        "explanation": "夜丘共有24個特級園，其中23個生產紅酒，只有慕西尼可生產極少量白酒。"
+      },
+      {
+        "id": "q2",
+        "question": "哪個村莊擁有最多特級園？",
+        "type": "single",
+        "options": [
+          "香波-慕西尼",
+          "熱夫雷-香貝丹",
+          "馮內-羅曼尼",
+          "莫雷-聖丹尼"
+        ],
+        "correctAnswer": 1,
+        "explanation": "熱夫雷-香貝丹擁有9個特級園，是夜丘中擁有最多特級園的村莊。"
+      },
+      {
+        "id": "q3",
+        "question": "羅曼尼康帝特級園的面積是多少？",
+        "type": "single",
+        "options": [
+          "0.85公頃",
+          "1.8公頃",
+          "6.1公頃",
+          "8.0公頃"
+        ],
+        "correctAnswer": 1,
+        "explanation": "羅曼尼康帝僅有1.8公頃，年產量約450箱，是世界上最稀有、最昂貴的葡萄酒之一。"
+      },
+      {
+        "id": "q4",
+        "question": "以下哪個村莊沒有特級園？",
+        "type": "single",
+        "options": [
+          "夜-聖喬治",
+          "莫雷-聖丹尼",
+          "香波-慕西尼",
+          "伏舊"
+        ],
+        "correctAnswer": 0,
+        "explanation": "夜-聖喬治是夜丘中唯一沒有特級園的主要村莊，但擁有41個優質一級園。"
+      },
+      {
+        "id": "q5",
+        "question": "哪個特級園是夜丘中最大的？",
+        "type": "single",
+        "options": [
+          "克洛-伏舊",
+          "艾瑟索",
+          "夏爾姆-香貝丹",
+          "李奇堡"
+        ],
+        "correctAnswer": 1,
+        "explanation": "艾瑟索（Echézeaux）是夜丘最大的特級園，面積達37.7公頃。"
+      }
+    ]
+  }
+}

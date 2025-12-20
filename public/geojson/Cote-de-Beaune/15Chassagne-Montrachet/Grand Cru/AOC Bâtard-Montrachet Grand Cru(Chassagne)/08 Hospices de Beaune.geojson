@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.737605075115909,46.9428418756634],[4.737527738230753,46.94269837426851],[4.739803131330412,46.94201678140968],[4.739842223961704,46.94206750259366],[4.739598654376602,46.9421521338996],[4.739615879021633,46.94221483406045],[4.739627175074985,46.94221006785893],[4.739629429274252,46.94220911677662],[4.737605075115909,46.9428418756634]]]},"properties":{"name":"08 Hospices de Beaune","styleUrl":"#m_ylw-pushpin","fill-opacity":0.2,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

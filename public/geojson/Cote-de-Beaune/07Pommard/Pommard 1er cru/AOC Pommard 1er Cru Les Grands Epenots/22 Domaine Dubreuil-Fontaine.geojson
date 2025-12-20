@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "22 Domaine Dubreuil-Fontaine",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "22 Domaine Dubreuil-Fontaine", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.799895206569658, 47.012994621683987, 0.0 ], [ 4.800250267322516, 47.012682842444171, 0.0 ], [ 4.800786146553526, 47.012340888973071, 0.0 ], [ 4.80121881727076, 47.012091206126001, 0.0 ], [ 4.80140103945886, 47.012227615207301, 0.0 ], [ 4.800028730133004, 47.013058269859378, 0.0 ], [ 4.799895206569658, 47.012994621683987, 0.0 ] ] ] } }
+]
+}

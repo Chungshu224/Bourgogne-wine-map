@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.75953707505739,46.96487150885448],[4.759680265124093,46.96514147141067],[4.759843005525668,46.96546087928777],[4.759890873981547,46.96561007029413],[4.759895685995175,46.96570798928429],[4.759860823807339,46.96577157560415],[4.75801899092307,46.96484531763402],[4.759233869219093,46.96439813888344],[4.75953707505739,46.96487150885448]]]},"properties":{"name":"23 Château de Savigny","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

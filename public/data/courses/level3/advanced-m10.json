@@ -1,0 +1,435 @@
+{
+  "moduleId": "advanced-m10",
+  "title": "高級餐酒搭配藝術",
+  "description": "餐酒搭配科學原理、經典與創新搭配、米其林案例研究",
+  "lessons": [
+    {
+      "id": "m10-l1",
+      "title": "餐酒搭配科學原理",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "餐酒搭配科學原理",
+          "subtitle": "Lesson 1 - 18分鐘",
+          "description": "理解味覺互動與搭配邏輯"
+        },
+        {
+          "type": "content",
+          "title": "味覺的五大元素",
+          "content": "食物與葡萄酒的互動建立在五大味覺元素上：甜、酸、苦、鹹、鮮（Umami）。這些元素會相互影響：酸度可以平衡油膩、甜味可以緩和辣度、單寧與蛋白質結合變柔順。理解這些基本原理，是所有高級搭配的基礎。成功的搭配不是「好酒+好菜」，而是「元素互補或對比」。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 六大搭配原則",
+          "points": [
+            "互補原則：豐腴的Meursault配奶油醬汁",
+            "對比原則：高酸Chablis配油膩鵝肝",
+            "重量匹配：輕盈Volnay配家禽，飽滿Pommard配紅肉",
+            "風味呼應：帶泥土香的NSG配松露或野菌",
+            "質地和諧：絲滑Chambolle配細嫩魚類",
+            "產地呼應：布根地酒配布根地料理（地方傳統）"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "互補 vs 對比搭配",
+          "leftTitle": "互補搭配",
+          "leftPoints": [
+            "豐腴酒配豐腴菜：Meursault+龍蝦",
+            "單寧酒配蛋白質：Gevrey+牛排",
+            "甜酒配甜點：Sauternes+焦糖甜點",
+            "強化相似特質",
+            "安全保守",
+            "適合初學者"
+          ],
+          "rightTitle": "對比搭配",
+          "rightPoints": [
+            "高酸酒配油膩菜：Chablis+鵝肝",
+            "清爽酒配濃郁菜：Pouilly+奶油醬",
+            "辣菜配微甜酒：咖喱+半甜Riesling",
+            "平衡彼此",
+            "驚喜效果",
+            "需要經驗"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "酸度的關鍵作用",
+          "content": "酸度是餐酒搭配的核心。高酸的酒（如Chablis、Puligny-Montrachet）能切開油脂、清潔味蕾、提振食慾。這就是為什麼生蠔配Chablis是經典：生蠔的海洋鹹鮮與Chablis的高酸礦物完美平衡。相反，低酸的酒配油膩菜會顯得沉重。記住：菜餚油膩度越高，酒的酸度要越高。"
+        },
+        {
+          "type": "list",
+          "title": "⚠️ 常見搭配錯誤",
+          "points": [
+            "單寧強酒配魚類：單寧+魚腥=金屬苦味",
+            "高酸酒配醋：酸+酸=過度尖銳",
+            "甜菜配干酒：菜比酒甜，酒變苦澀",
+            "辛辣菜配單寧重紅酒：辣+單寧=火上澆油",
+            "精緻酒配重口味菜：酒被菜蓋過",
+            "忽略醬汁：醬汁往往比主食材更重要"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💡 專業搭配技巧",
+          "points": [
+            "先分析菜餚：主食材、烹調法、醬汁、配菜",
+            "找出主導味道：是奶油、辛香料、還是肉汁？",
+            "確定酒的角色：襯托、對比、還是清潔味蕾？",
+            "考慮用餐順序：從輕到重、從白到紅",
+            "溫度影響：白酒太冷會掩蓋風味，紅酒太溫會突顯酒精",
+            "實驗與記錄：沒有絕對規則，靠經驗累積"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10-l2",
+      "title": "布根地與法國經典搭配",
+      "duration": "19分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "布根地與法國經典搭配",
+          "subtitle": "Lesson 2 - 19分鐘",
+          "description": "傳承百年的完美組合"
+        },
+        {
+          "type": "content",
+          "title": "地方料理與地方酒",
+          "content": "布根地不僅是葡萄酒產區，更是美食天堂。當地傳統料理與葡萄酒發展同步：Coq au Vin（紅酒燉雞）配Gevrey、Escargots（蝸牛）配Chablis、Bœuf Bourguignon（紅酒燉牛肉）配Pommard。這些百年組合證明了「產地搭配」的智慧。"
+        },
+        {
+          "type": "list",
+          "title": "🇫🇷 布根地經典料理搭配",
+          "points": [
+            "生蠔（Huîtres）+ Chablis Grand Cru：礦物與海洋完美對話",
+            "勃根地蝸牛（Escargots）+ Chablis或Meursault：蒜香奶油需要酸度",
+            "紅酒燉雞（Coq au Vin）+ Gevrey-Chambertin：用同款酒烹調與配餐",
+            "紅酒燉牛肉（Bœuf Bourguignon）+ Pommard或NSG：強勁單寧配燉肉",
+            "Bresse雞（白肉）+ Volnay或Chambolle：細膩配細膩",
+            "Époisses乳酪 + Marc de Bourgogne或甜白酒"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "白酒經典搭配",
+          "leftTitle": "Chablis",
+          "leftPoints": [
+            "生蠔、貝類（經典）",
+            "清蒸魚、白肉魚",
+            "山羊乳酪（Chèvre）",
+            "蝸牛（蒜香奶油）",
+            "壽司、生魚片（創新）",
+            "檸檬醬汁菜餚"
+          ],
+          "rightTitle": "Meursault",
+          "rightPoints": [
+            "龍蝦（奶油醬）",
+            "烤雞（奶油醬汁）",
+            "白松露料理",
+            "Comté乳酪",
+            "奶油醬義大利麵",
+            "烤扇貝"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "紅酒與肉類搭配邏輯",
+          "content": "布根地紅酒的優雅單寧適合多種肉類，但要注意烹調法：烤肉（高溫）適合單寧強的Pommard、NSG；燉煮（低溫）適合優雅的Volnay、Chambolle；煎烤（中溫）適合Vosne、Morey。禽類（鴨、鵝）比牛羊肉更適合布根地的細膩風格。"
+        },
+        {
+          "type": "list",
+          "title": "🥩 紅酒與肉類指南",
+          "points": [
+            "野味（鹿、野豬）+ Gevrey GC、Chambertin：強勁動物配野性",
+            "鴨胸（Duck Breast）+ Vosne-Romanée：油脂配單寧和酸度",
+            "羊排（Lamb）+ Pommard、Volnay：羊的鮮味配酒的果味",
+            "牛菲力（Filet）+ Chambolle、Volnay：細嫩肉配優雅酒",
+            "牛肋眼（Ribeye）+ Gevrey、NSG：油花配強勁單寧",
+            "乳鴿（Squab）+ Morey-St-Denis：精緻配複雜"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🧀 乳酪搭配藝術",
+          "points": [
+            "軟質乳酪（Brie, Camembert）+ 年輕紅酒或Meursault",
+            "洗皮乳酪（Époisses）+ 甜白酒或Marc",
+            "山羊乳酪（Chèvre）+ Chablis、Sancerre",
+            "硬質乳酪（Comté）+ Meursault、陳年紅酒",
+            "藍紋乳酪（Roquefort）+ Sauternes（非布根地但經典）",
+            "原則：產地搭配、重量匹配、避免壓過酒"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10-l3",
+      "title": "亞洲料理創新搭配",
+      "duration": "19分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "亞洲料理創新搭配",
+          "subtitle": "Lesson 3 - 19分鐘",
+          "description": "打破傳統，探索東西融合"
+        },
+        {
+          "type": "content",
+          "title": "亞洲料理的挑戰與機遇",
+          "content": "亞洲料理對葡萄酒搭配是挑戰：複雜香料、辣度、甜鹹平衡、鮮味（Umami）。但布根地的高酸度和礦物感意外地適合：Chablis配壽司已是經典、Meursault配粵菜海鮮、輕盈紅酒配北京烤鴨。關鍵是避開過辣、過甜的菜色，選擇精緻路線。"
+        },
+        {
+          "type": "list",
+          "title": "🍣 日本料理搭配",
+          "points": [
+            "壽司、生魚片 + Chablis Grand Cru：礦物配海洋鮮味",
+            "天婦羅（炸物）+ Puligny-Montrachet：高酸切油膩",
+            "烤鰻魚（蒲燒）+ Volnay、年輕Gevrey：甜鹹醬汁配果味",
+            "和牛（Wagyu）+ Chambolle、Vosne：油花配絲滑單寧",
+            "懷石料理 + 一套布根地（白→淡紅→強紅）",
+            "注意：避免芥末過多，會壓過酒"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "中式料理搭配策略",
+          "leftTitle": "粵菜（清淡精緻）",
+          "leftPoints": [
+            "蒸魚 + Chablis、Meursault",
+            "白切雞 + Puligny、淡紅酒",
+            "龍蝦、螃蟹 + Meursault、Chassagne",
+            "燒味（叉燒）+ Volnay、Pommard",
+            "點心 + 清爽白酒",
+            "優勢：風味細膩，易搭配"
+          ],
+          "rightTitle": "川菜、湘菜（重辣）",
+          "rightPoints": [
+            "避免高單寧紅酒（辣+單寧=苦）",
+            "可選：微甜Riesling（非布根地）",
+            "折衷：不辣的菜色+輕紅酒",
+            "水煮魚（去辣）+ Gevrey",
+            "建議：啤酒或茶更適合",
+            "挑戰：辣度壓過酒的細膩"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "東南亞與印度料理",
+          "content": "東南亞料理（泰、越）的酸辣甜複雜平衡，對布根地是極大挑戰。越南河粉（Pho）的清爽湯頭可配Chablis，泰式海鮮可配Puligny，但咖哩、叻沙等濃郁辛香料會壓過酒。印度料理同理：Tikka Masala等重香料菜式不適合精緻布根地，應選新世界或啤酒。"
+        },
+        {
+          "type": "list",
+          "title": "🥢 台灣料理創新搭配",
+          "points": [
+            "蚵仔煎 + Chablis：海鮮鮮味配礦物",
+            "三杯雞（不辣版）+ Gevrey村莊級：醬油甜配果味",
+            "清蒸石斑 + Meursault：細嫩魚肉配飽滿白酒",
+            "滷肉飯 + 輕盈紅酒（挑戰）：肥肉需酸度",
+            "鹹酥雞（炸物）+ Puligny：油炸需高酸",
+            "珍珠奶茶：不搭！甜度太高"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💡 亞洲料理搭配建議",
+          "points": [
+            "選擇精緻路線：高級日料、粵菜比重口味川湘菜易配",
+            "白酒優先：布根地白酒酸度高，更適合亞洲海鮮",
+            "避開極端：超辣、超甜、超鹹都不適合精緻葡萄酒",
+            "醬汁是關鍵：清蒸>紅燒>麻辣",
+            "創新嘗試：北京烤鴨配Chambolle（油脂配絲滑）",
+            "文化融合：米其林中餐廳已證明可行"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m10-l4",
+      "title": "米其林餐廳案例研究",
+      "duration": "19分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "米其林餐廳案例研究",
+          "subtitle": "Lesson 4 - 19分鐘",
+          "description": "頂級餐廳的搭配哲學"
+        },
+        {
+          "type": "content",
+          "title": "侍酒師的角色與挑戰",
+          "content": "米其林三星餐廳的侍酒師（Chef Sommelier）不僅選酒，更是體驗設計師。他們需要：理解主廚創作理念、平衡客人預算與期待、編排整套餐酒節奏（from light to rich）、處理特殊飲食限制、講述酒款故事。一套8-12道菜的Tasting Menu，搭配的酒需層層遞進，創造高潮。"
+        },
+        {
+          "type": "list",
+          "title": "⭐ 頂級餐廳搭配案例",
+          "points": [
+            "Maison Lameloise（布根地三星）：全套布根地酒單，在地食材",
+            "Le Bernardin（紐約）：海鮮專家，Chablis與白布根地為主",
+            "Eleven Madison Park：創新美式，布根地為核心酒單",
+            "The French Laundry：經典法式，DRC等頂級布根地",
+            "巴黎Restaurant Guy Savoy：傳統法菜配傳統布根地",
+            "東京Quintessence：法日融合，布根地完美契合"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Tasting Menu 搭配策略",
+          "leftTitle": "保守搭配（安全）",
+          "leftPoints": [
+            "開胃菜：Chablis或香檳",
+            "前菜：Puligny、Chassagne",
+            "魚類主菜：Meursault、Corton-Charlemagne",
+            "肉類主菜：Volnay、Gevrey",
+            "甜點：甜白酒、Marc",
+            "每道菜一款酒，穩健不出錯"
+          ],
+          "rightTitle": "冒險搭配（驚喜）",
+          "rightPoints": [
+            "開胃菜：老年份Meursault（氧化風格）",
+            "前菜：淡紅酒配魚（創新）",
+            "魚類：陳年Corton-Charlemagne",
+            "肉類：DRC Echézeaux（極致）",
+            "甜點：陳年Sauternes配藍紋乳酪",
+            "挑戰傳統，創造話題"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "酒單設計哲學",
+          "content": "頂級餐廳酒單設計考量：深度（每村莊多個生產者）vs 廣度（全球產區）、價格階梯（入門→奢華）、年份選擇（適飲期）、故事性（酒莊背景）。布根地專精餐廳如Maison Lameloise擁有數千款布根地，從村莊級到DRC；綜合餐廳則布根地佔30-50%，平衡波爾多、隆河等。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 Wine Pairing Menu 設計範例",
+          "points": [
+            "第1道（Amuse-bouche）：Chablis 1er Cru（開胃、清爽）",
+            "第2道（海鮮前菜）：Puligny-Montrachet（礦物、優雅）",
+            "第3道（魚類主菜）：Meursault 1er Cru（飽滿、奶油）",
+            "第4道（過渡菜）：Volnay（輕盈紅酒、絲滑）",
+            "第5道（肉類主菜）：Vosne-Romanée 1er Cru（複雜、精緻）",
+            "第6道（乳酪）：陳年Gevrey GC（強勁、配硬質乳酪）"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💡 專業侍酒技巧",
+          "points": [
+            "提前溝通：詢問客人喜好、預算、禁忌",
+            "靈活調整：準備替代方案（不喜歡某款風格）",
+            "溫度控制：白酒10-12°C、紅酒14-16°C",
+            "醒酒判斷：年輕酒需要、老酒謹慎（可能脆弱）",
+            "份量控制：每款75-100ml，避免過醉",
+            "講故事：簡短介紹酒款背景，增加體驗價值",
+            "觀察反應：根據客人表情調整後續搭配"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "advanced-m10-quiz",
+    "title": "高級餐酒搭配藝術 - 綜合測驗",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple-choice",
+        "question": "Chablis與生蠔的經典搭配基於什麼原理？",
+        "options": ["互補原則", "對比原則（高酸切海洋鹹鮮）", "風味呼應", "產地呼應"],
+        "correctAnswer": 1,
+        "explanation": "Chablis的高酸度與礦物感能平衡生蠔的海洋鹹鮮和油膩，屬於對比搭配原理。"
+      },
+      {
+        "id": "q2",
+        "type": "multiple-choice",
+        "question": "以下哪個搭配是錯誤的？",
+        "options": [
+          "Meursault + 龍蝦奶油醬",
+          "高單寧紅酒 + 清蒸魚",
+          "Gevrey-Chambertin + 紅酒燉牛肉",
+          "Chablis + 蝸牛"
+        ],
+        "correctAnswer": 1,
+        "explanation": "單寧強的紅酒配魚類會產生金屬苦味，這是餐酒搭配的大忌。"
+      },
+      {
+        "id": "q3",
+        "type": "true-false",
+        "question": "Meursault的飽滿酒體和奶油質地適合配奶油醬汁料理，這是互補搭配原則。",
+        "correctAnswer": true,
+        "explanation": "豐腴的Meursault配豐腴的奶油醬汁，強化相似特質，屬於互補搭配。"
+      },
+      {
+        "id": "q4",
+        "type": "multiple-choice",
+        "question": "布根地經典料理「Coq au Vin」最適合搭配？",
+        "options": ["Chablis", "Meursault", "Gevrey-Chambertin", "Sauternes"],
+        "correctAnswer": 2,
+        "explanation": "Coq au Vin（紅酒燉雞）傳統上用Gevrey紅酒烹調，也最適合配同款紅酒。"
+      },
+      {
+        "id": "q5",
+        "type": "multiple-choice",
+        "question": "壽司和生魚片最適合搭配哪款布根地酒？",
+        "options": ["Pommard", "Meursault", "Chablis Grand Cru", "Gevrey村莊級"],
+        "correctAnswer": 2,
+        "explanation": "Chablis的礦物感和高酸度與生魚的海洋鮮味完美契合，已成為經典搭配。"
+      },
+      {
+        "id": "q6",
+        "type": "true-false",
+        "question": "辛辣的川菜和湘菜適合搭配高單寧的布根地紅酒。",
+        "correctAnswer": false,
+        "explanation": "辣味+高單寧會產生火上澆油的效果，讓酒變苦澀，應避免這種搭配。"
+      },
+      {
+        "id": "q7",
+        "type": "multiple-choice",
+        "question": "米其林Tasting Menu的搭配順序通常是？",
+        "options": [
+          "紅酒→白酒→甜酒",
+          "白酒→紅酒→甜酒",
+          "隨機選擇",
+          "只用一款酒"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tasting Menu遵循從輕到重、從白到紅的原則，最後以甜酒收尾。"
+      },
+      {
+        "id": "q8",
+        "type": "multiple-choice",
+        "question": "Époisses乳酪（洗皮乳酪）最適合搭配？",
+        "options": ["Chablis", "年輕Gevrey", "甜白酒或Marc", "清酒"],
+        "correctAnswer": 2,
+        "explanation": "Époisses味道強烈，需要甜白酒的甜度或Marc的酒精度來平衡。"
+      },
+      {
+        "id": "q9",
+        "type": "true-false",
+        "question": "菜餚的醬汁往往比主食材本身對搭配更重要。",
+        "correctAnswer": true,
+        "explanation": "醬汁通常主導菜餚的味道，因此在選酒時醬汁的風味比主食材更關鍵。"
+      },
+      {
+        "id": "q10",
+        "type": "multiple-choice",
+        "question": "和牛（Wagyu）豐富的油花最適合搭配什麼風格的布根地？",
+        "options": [
+          "高酸清爽的Chablis",
+          "絲滑單寧的Chambolle或Vosne",
+          "強勁粗獷的老Pommard",
+          "甜白酒"
+        ],
+        "correctAnswer": 1,
+        "explanation": "和牛的油花需要絲滑細膩的單寧來襯托，Chambolle或Vosne的優雅風格最適合。"
+      }
+    ]
+  }
+}

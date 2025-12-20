@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Chambolle-Musigny premier cru Derrière la Grange",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": null, "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": -1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null, "id": 994.0, "new_insee": "21133", "new_nomcom": "chambolle-musigny", "old_insee": "21133", "old_nomcom": "chambolle-musigny", "type_ig": "AOC", "id_app": 150.0, "appellatio": "Chambolle-Musigny", "id_denom": 453.0, "denominati": "Chambolle-Musigny premier cru Derrière la Grange", "crinao": "Bourgogne, Beaujolais, Savoie, Jura" }, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 4.95727130166541, 47.187988698233802 ], [ 4.95670422274267, 47.187560971017398 ], [ 4.95663049820616, 47.187596978158901 ], [ 4.95648368803134, 47.187475812155498 ], [ 4.95606764907454, 47.187201776593298 ], [ 4.95599681386094, 47.187233682029898 ], [ 4.95577556704948, 47.187332427475198 ], [ 4.95613702517544, 47.187667633248999 ], [ 4.95670217410134, 47.188165909332703 ], [ 4.9568302161071, 47.188224983653299 ], [ 4.95727130166541, 47.187988698233802 ] ] ] ] } }
+]
+}

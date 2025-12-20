@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.788215649784641,47.00734642514639],[4.788069045412239,47.00716989930041],[4.78965833295343,47.00660473202819],[4.789761832252282,47.00662783564673],[4.789858994992995,47.00666647453242],[4.789933061385194,47.00670598824625],[4.789722660795663,47.00677507166304],[4.789710442044013,47.00680787791354],[4.788215649784641,47.00734642514639]]]},"properties":{"name":"17 Maison Albert Bichot","styleUrl":"#m_ylw-pushpin","fill-opacity":0.6,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

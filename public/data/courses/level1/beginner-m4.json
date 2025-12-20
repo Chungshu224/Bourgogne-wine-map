@@ -1,0 +1,443 @@
+{
+  "moduleId": "module4",
+  "title": "夏布利深入探索",
+  "description": "深入了解夏布利的風土、分級、七大特級園，以及如何品鑑這種純淨礦物感的霞多麗白酒",
+  "lessons": [
+    {
+      "id": "lesson1",
+      "title": "夏布利的獨特風土",
+      "duration": "15分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "夏布利位於布根地最北端，距離巴黎僅2小時車程，但卻與金丘有著截然不同的風土條件。這裡的霞多麗展現了最純淨、最礦物感的一面。",
+        "sections": [
+          {
+            "heading": "地理位置與氣候",
+            "text": "夏布利位於約訥省（Yonne），Serein 河蜿蜒流過，形成理想的山谷地形。氣候屬於大陸性，比金丘更冷，春季霜凍是最大威脅。",
+            "keyPoints": [
+              "緯度：北緯47.8度，布根地最北",
+              "年均溫：10.5°C，比伯恩丘低2°C",
+              "降雨：750mm，分佈均勻",
+              "霜凍：春季4-5月是關鍵期，採用暖爐、灑水防霜",
+              "日照：夏季日照時數長，利於成熟"
+            ]
+          },
+          {
+            "heading": "神奇的 Kimmeridgian 土壤",
+            "text": "夏布利最獨特的是1.5億年前侏羅紀時期形成的 Kimmeridgian 泥灰岩，富含小牡蠣化石（Exogyra virgula）。這種土壤賦予夏布利酒款獨特的礦物感和「槍石」（gunflint）香氣。",
+            "keyPoints": [
+              "成分：泥灰岩 + 石灰岩 + 貝殼化石",
+              "排水：良好，避免根部積水",
+              "礦物質：鈣、鎂、碘豐富",
+              "特級園：100% Kimmeridgian 土壤",
+              "風味影響：牡蠣、貝殼、白堊、燧石"
+            ]
+          },
+          {
+            "heading": "與金丘霞多麗的差異",
+            "comparisonTable": {
+              "夏布利": {
+                "氣候": "涼爽大陸性",
+                "土壤": "Kimmeridgian 泥灰岩",
+                "釀造": "少過桶或不過桶",
+                "風格": "高酸、礦物、檸檬、牡蠣",
+                "酒體": "輕盈到中等"
+              },
+              "金丘": {
+                "氣候": "溫和",
+                "土壤": "石灰岩為主",
+                "釀造": "橡木桶發酵/陳年",
+                "風格": "奶油、榛果、烤麵包、熱帶水果",
+                "酒體": "中等到飽滿"
+              }
+            }
+          }
+        ],
+        "tips": [
+          "🌊 Kimmeridgian 得名自英國 Dorset 郡的 Kimmeridge 村",
+          "🌊 同樣的土壤也出現在香檳區和英國南部",
+          "🌊 化石含量越高，礦物感越明顯",
+          "🌊 2017、2018年霜凍導致產量減少50%以上"
+        ],
+        "summary": "夏布利的涼爽氣候和獨特的 Kimmeridgian 土壤，造就了世界上最純淨、最具礦物感的霞多麗白酒。這是風土影響的最佳範例。"
+      }
+    },
+    {
+      "id": "lesson2",
+      "title": "夏布利四級分級與七大特級園",
+      "duration": "20分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "夏布利有獨特的四級分級體系：Petit Chablis、Chablis、Premier Cru、Grand Cru。七大特級園連成一片，位於 Serein 河右岸，是夏布利的精華所在。",
+        "sections": [
+          {
+            "heading": "四級分級詳解",
+            "levels": [
+              {
+                "name": "Petit Chablis（小夏布利）",
+                "area": "外圍高地，Portlandian 石灰岩",
+                "style": "輕盈爽口、簡單果味、高酸度",
+                "price": "€8-15",
+                "drink": "1-2年內飲用",
+                "percentage": "15%"
+              },
+              {
+                "name": "Chablis（夏布利）",
+                "area": "山谷兩側，部分 Kimmeridgian 土壤",
+                "style": "經典夏布利風格、檸檬、礦物、清爽",
+                "price": "€15-30",
+                "drink": "2-5年",
+                "percentage": "60%"
+              },
+              {
+                "name": "Chablis Premier Cru（一級園）",
+                "area": "40個一級園，主要在右岸山坡",
+                "style": "更濃郁複雜、陳年潛力強、礦物感明顯",
+                "price": "€25-60",
+                "drink": "3-10年",
+                "percentage": "15%",
+                "famousClimates": [
+                  "Montée de Tonnerre - 最著名，緊鄰特級園",
+                  "Fourchaume - 最大的一級園",
+                  "Vaillons - 優雅礦物",
+                  "Montmains - 豐富果味",
+                  "Côte de Léchet - 飽滿圓潤"
+                ]
+              },
+              {
+                "name": "Chablis Grand Cru（特級園）",
+                "area": "7個特級園，全在右岸同一山坡",
+                "style": "極致複雜、驚人陳年潛力、完美平衡",
+                "price": "€50-200+",
+                "drink": "5-20年",
+                "percentage": "2%"
+              }
+            ]
+          },
+          {
+            "heading": "七大特級園（從西到東）",
+            "grandCrus": [
+              {
+                "name": "Bougros",
+                "area": "15.9公頃",
+                "exposure": "西南向",
+                "style": "強勁有力、礦物感強、需長時間陳年",
+                "position": "最西端，最晚成熟"
+              },
+              {
+                "name": "Preuses",
+                "area": "11.4公頃",
+                "exposure": "南向",
+                "style": "優雅細緻、花香明顯、絲滑質地",
+                "position": "位置最佳之一"
+              },
+              {
+                "name": "Vaudésir",
+                "area": "14.7公頃",
+                "exposure": "南向",
+                "style": "豐富飽滿、複雜度高、陳年潛力極強",
+                "position": "許多名家認為最優秀"
+              },
+              {
+                "name": "Grenouilles",
+                "area": "9.4公頃（最小）",
+                "exposure": "南向",
+                "style": "精緻優雅、礦物與花香平衡",
+                "position": "最緊湊集中"
+              },
+              {
+                "name": "Valmur",
+                "area": "13.1公頃",
+                "exposure": "南向",
+                "style": "強勁結構、陳年後展現複雜香氣",
+                "position": "坡度陡峭"
+              },
+              {
+                "name": "Les Clos",
+                "area": "26.9公頃（最大）",
+                "exposure": "南西向",
+                "style": "夏布利之王、最強勁複雜、可陳年30年+",
+                "position": "中心位置，最著名"
+              },
+              {
+                "name": "Blanchot",
+                "area": "12.7公頃",
+                "exposure": "南向",
+                "style": "優雅芬芳、花香果香平衡、早熟",
+                "position": "最東端"
+              }
+            ]
+          },
+          {
+            "heading": "La Moutonne - 第八個特級園？",
+            "text": "La Moutonne 是一個獨佔園（Monopole），橫跨 Preuses 和 Vaudésir 兩個特級園，面積2.35公頃，由 Domaine Long-Depaquit（屬於 Bichot 集團）獨家擁有。雖然不是官方特級園，但品質和價格都達到特級園水準。"
+          }
+        ],
+        "tips": [
+          "🍾 Les Clos 被公認為七大特級園中最優秀",
+          "🍾 所有特級園總面積僅約100公頃，產量稀少",
+          "🍾 特級園酒標只標 'Chablis Grand Cru' + 園名",
+          "🍾 一級園 Montée de Tonnerre 品質接近特級園",
+          "🍾 好的特級園至少需陳年5年才開始展現真正潛力"
+        ],
+        "summary": "夏布利的分級體系清晰反映了風土差異。七大特級園連成一片黃金山坡，展現了霞多麗在涼爽氣候和 Kimmeridgian 土壤上的極致表現。"
+      }
+    },
+    {
+      "id": "lesson3",
+      "title": "夏布利品鑑與餐酒搭配",
+      "duration": "15分鐘",
+      "type": "interactive",
+      "content": {
+        "introduction": "夏布利的高酸度和礦物感使其成為配餐的絕佳選擇，尤其是海鮮。了解不同級別的風味特徵，能幫助您做出最佳搭配。",
+        "sections": [
+          {
+            "heading": "品鑑夏布利的關鍵要素",
+            "keyPoints": [
+              "溫度：8-10°C，過冷會抑制香氣",
+              "杯型：鬱金香型白酒杯，聚集香氣",
+              "觀色：淺金黃帶綠色反光（年輕），金黃色（陳年）",
+              "聞香：檸檬、青蘋果、白花、礦物、牡蠣殼",
+              "品嚐：高酸度、中等酒體、持久礦物尾韻"
+            ]
+          },
+          {
+            "heading": "不同級別的風味輪廓",
+            "tastingNotes": [
+              {
+                "level": "Petit Chablis",
+                "aroma": "青蘋果、檸檬皮、白花",
+                "palate": "清爽高酸、輕盈酒體、簡單直接",
+                "finish": "短暫、清新"
+              },
+              {
+                "level": "Chablis",
+                "aroma": "檸檬、青蘋果、白堊、淡淡的燧石",
+                "palate": "活潑酸度、中等酒體、礦物感明顯",
+                "finish": "中等長度、礦物尾韻"
+              },
+              {
+                "level": "Premier Cru",
+                "aroma": "成熟檸檬、白桃、杏仁、燧石、貝殼",
+                "palate": "濃郁但不厚重、酸度與果味平衡、複雜層次",
+                "finish": "持久、礦物與果味交織"
+              },
+              {
+                "level": "Grand Cru",
+                "aroma": "蜂蜜、烤杏仁、檸檬乳酪、濕石頭、牡蠣、香料",
+                "palate": "極致複雜、完美平衡、絲滑質地、深邃礦物感",
+                "finish": "非常持久（30秒+）、層次豐富"
+              }
+            ]
+          },
+          {
+            "heading": "經典餐酒搭配",
+            "pairings": [
+              {
+                "food": "生蠔 Oysters",
+                "wine": "Chablis 或 Premier Cru",
+                "reason": "礦物感與海洋風味完美匹配，高酸度平衡蠔的鮮味"
+              },
+              {
+                "food": "清蒸鱸魚",
+                "wine": "Chablis",
+                "reason": "不搶味，突顯魚的鮮甜"
+              },
+              {
+                "food": "烤龍蝦配奶油醬",
+                "wine": "Grand Cru",
+                "reason": "足夠的酒體和複雜度搭配豐富醬汁"
+              },
+              {
+                "food": "山羊起司 Chèvre",
+                "wine": "Petit Chablis 或 Chablis",
+                "reason": "酸度切入起司的油脂，礦物感互補"
+              },
+              {
+                "food": "日式生魚片",
+                "wine": "Chablis",
+                "reason": "純淨風格不干擾魚肉細緻風味"
+              },
+              {
+                "food": "白酒蒸淡菜",
+                "wine": "Premier Cru",
+                "reason": "礦物感呼應貝類，酸度提振味蕾"
+              },
+              {
+                "food": "烤雞配奶油蘑菇",
+                "wine": "Premier Cru（有桶）",
+                "reason": "微橡木味與蘑菇土壤香氣搭配"
+              },
+              {
+                "food": "炸物（天婦羅）",
+                "wine": "Petit Chablis",
+                "reason": "高酸度去油解膩"
+              }
+            ]
+          },
+          {
+            "heading": "過桶 vs 不過桶",
+            "text": "夏布利的釀造風格有兩大陣營：傳統派堅持不鏽鋼桶保持純淨，現代派使用部分橡木桶增加複雜度。",
+            "styles": [
+              {
+                "name": "不鏽鋼桶派（Traditionalists）",
+                "producers": "Dauvissat, Raveneau, Moreau",
+                "style": "純淨礦物、高酸、緊緻",
+                "pairing": "生蠔、生魚片、清蒸海鮮"
+              },
+              {
+                "name": "橡木桶派（Modernists）",
+                "producers": "William Fèvre, Droin, Long-Depaquit",
+                "style": "更圓潤、奶油感、複雜度高",
+                "pairing": "烤魚、奶油醬料、成熟起司"
+              }
+            ]
+          }
+        ],
+        "tips": [
+          "🥂 夏布利開瓶後1小時風味最佳",
+          "🥂 特級園可醒酒30分鐘",
+          "🥂 避免與重口味醬料搭配（如紅酒醬）",
+          "🥂 陳年的夏布利溫度可提高到12°C",
+          "🥂 「When in doubt, Chablis」- 海鮮萬能搭配"
+        ],
+        "summary": "夏布利的高酸度和礦物感使其成為海鮮的最佳伴侶。不同級別有不同的複雜度，但都保持了霞多麗的純淨本質。了解過桶與否的差異，能幫助您選擇最適合的餐酒搭配。"
+      }
+    }
+  ],
+  "quiz": {
+    "passingScore": 60,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "夏布利的獨特土壤 Kimmeridgian 主要富含什麼？",
+        "type": "single-choice",
+        "options": [
+          "火山灰",
+          "小牡蠣化石",
+          "鐵礦",
+          "花崗岩"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Kimmeridgian 泥灰岩富含1.5億年前的小牡蠣化石（Exogyra virgula），賦予夏布利獨特的礦物感和牡蠣貝殼味。"
+      },
+      {
+        "id": "q2",
+        "question": "夏布利共有多少個特級園（Grand Cru）？",
+        "type": "single-choice",
+        "options": [
+          "1個",
+          "7個",
+          "12個",
+          "24個"
+        ],
+        "correctAnswer": 1,
+        "explanation": "夏布利有7個特級園：Bougros、Preuses、Vaudésir、Grenouilles、Valmur、Les Clos、Blanchot，全部位於 Serein 河右岸。"
+      },
+      {
+        "id": "q3",
+        "question": "哪個是夏布利最大、最著名的特級園？",
+        "type": "single-choice",
+        "options": [
+          "Preuses",
+          "Vaudésir",
+          "Les Clos",
+          "Grenouilles"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Les Clos 是夏布利最大的特級園（26.9公頃），也被公認為品質最優秀，可陳年30年以上。"
+      },
+      {
+        "id": "q4",
+        "question": "夏布利四級分級中，佔產量最大比例的是？",
+        "type": "single-choice",
+        "options": [
+          "Petit Chablis",
+          "Chablis",
+          "Premier Cru",
+          "Grand Cru"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Chablis（夏布利）村莊級佔總產量的60%，是最基礎也是產量最大的級別。"
+      },
+      {
+        "id": "q5",
+        "question": "夏布利最經典的餐酒搭配是？",
+        "type": "single-choice",
+        "options": [
+          "牛排",
+          "生蠔",
+          "巧克力",
+          "辣椒"
+        ],
+        "correctAnswer": 1,
+        "explanation": "夏布利與生蠔是經典搭配，礦物感與海洋風味完美匹配，高酸度平衡蠔的鮮味。"
+      },
+      {
+        "id": "q6",
+        "question": "品鑑夏布利的理想溫度是？",
+        "type": "single-choice",
+        "options": [
+          "4-6°C",
+          "8-10°C",
+          "14-16°C",
+          "18-20°C"
+        ],
+        "correctAnswer": 1,
+        "explanation": "夏布利應在8-10°C品飲，過冷會抑制香氣，陳年老酒可稍高至12°C。"
+      },
+      {
+        "id": "q7",
+        "question": "夏布利一級園（Premier Cru）約有多少個氣候區？",
+        "type": "single-choice",
+        "options": [
+          "10個",
+          "20個",
+          "40個",
+          "100個"
+        ],
+        "correctAnswer": 2,
+        "explanation": "夏布利有約40個一級園，其中最著名的包括 Montée de Tonnerre、Fourchaume、Vaillons 等。"
+      },
+      {
+        "id": "q8",
+        "question": "哪個不是夏布利傳統不鏽鋼桶派的代表酒莊？",
+        "type": "single-choice",
+        "options": [
+          "Dauvissat",
+          "Raveneau",
+          "William Fèvre",
+          "Moreau"
+        ],
+        "correctAnswer": 2,
+        "explanation": "William Fèvre 屬於橡木桶派（現代派），Dauvissat 和 Raveneau 是傳統不鏽鋼桶派的代表。"
+      },
+      {
+        "id": "q9",
+        "question": "夏布利春季最大的自然威脅是？",
+        "type": "single-choice",
+        "options": [
+          "乾旱",
+          "霜凍",
+          "颱風",
+          "冰雹"
+        ],
+        "correctAnswer": 1,
+        "explanation": "春季霜凍是夏布利最大的威脅，4-5月的霜凍可能摧毀當年大部分產量，酒農使用暖爐、灑水等方式防霜。"
+      },
+      {
+        "id": "q10",
+        "question": "La Moutonne 是一個橫跨哪兩個特級園的獨佔園？",
+        "type": "single-choice",
+        "options": [
+          "Les Clos 和 Valmur",
+          "Preuses 和 Vaudésir",
+          "Bougros 和 Blanchot",
+          "Grenouilles 和 Valmur"
+        ],
+        "correctAnswer": 1,
+        "explanation": "La Moutonne（2.35公頃）橫跨 Preuses 和 Vaudésir 兩個特級園，由 Domaine Long-Depaquit 獨家擁有。"
+      }
+    ]
+  }
+}

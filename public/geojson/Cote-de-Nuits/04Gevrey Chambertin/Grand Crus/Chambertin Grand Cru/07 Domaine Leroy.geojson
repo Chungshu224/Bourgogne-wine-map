@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 07 Domaine Leroy",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "07 Domaine Leroy", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963445112840665, 47.21141361332414, 0.0 ], [ 4.964434588106307, 47.211179658358049, 0.0 ], [ 4.964478642235093, 47.211246069739857, 0.0 ], [ 4.965079562010772, 47.211137534696469, 0.0 ], [ 4.966048606858877, 47.211016680379203, 0.0 ], [ 4.966066726770569, 47.211050207414573, 0.0 ], [ 4.965091201038454, 47.211174567734261, 0.0 ], [ 4.964492608543902, 47.211290277379398, 0.0 ], [ 4.963471232017946, 47.211514813028273, 0.0 ], [ 4.963445112840665, 47.21141361332414, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "07 Domaine Leroy", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.966742609991599, 47.213274747419213, 0.0 ], [ 4.966905435451194, 47.21324264539237, 0.0 ], [ 4.967144222709161, 47.213671553596932, 0.0 ], [ 4.967183779988034, 47.213843235611137, 0.0 ], [ 4.967026256159492, 47.213860278240134, 0.0 ], [ 4.966742609991599, 47.213274747419213, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "07 Domaine Leroy", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963606960253437, 47.213100667986019, 0.0 ], [ 4.96469856518976, 47.212932314585139, 0.0 ], [ 4.96477797219713, 47.213093445855613, 0.0 ], [ 4.96552151032112, 47.212915870484679, 0.0 ], [ 4.965571322544287, 47.213005936739137, 0.0 ], [ 4.963656372846934, 47.21331007010923, 0.0 ], [ 4.963606960253437, 47.213100667986019, 0.0 ] ] ] } }
+]
+}

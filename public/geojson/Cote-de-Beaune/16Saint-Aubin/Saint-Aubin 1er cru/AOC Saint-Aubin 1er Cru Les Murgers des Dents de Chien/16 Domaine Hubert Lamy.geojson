@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.735036106661745,46.95126296760863],[4.735193948685417,46.95141815636708],[4.734957939635454,46.95153119633887],[4.734807855488762,46.95162876530958],[4.734520118626646,46.95140394766719],[4.734396688362137,46.95129651807837],[4.734519462669398,46.95119417085856],[4.734748707723478,46.95104227273686],[4.735036106661745,46.95126296760863]]]},"properties":{"name":"16 Domaine Hubert Lamy","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.760729004215682,46.9699851575428],[4.760674994642448,46.96989078637365],[4.761974418787913,46.96956241804376],[4.762069247349996,46.96963898440683],[4.76166180455899,46.96974681198914],[4.761313172490835,46.9698332485937],[4.761067411653714,46.96989779348485],[4.760729004215682,46.9699851575428]]]},"properties":{"name":"22 Domaine Latour-Giraud","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#55aa00","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

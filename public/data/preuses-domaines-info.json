@@ -1,0 +1,128 @@
+{
+  "01 Domaine William Févre.geojson": {
+    "name": "Domaine William Févre",
+    "founded": "1959年",
+    "area": "2.5公頃",
+    "style": "現代釀造技術結合傳統工藝",
+    "characteristics": "純淨優雅，礦物感強烈，結構平衡",
+    "specialties": ["不鏽鋼發酵", "部分橡木桶陳年"],
+    "description": "夏布利最具代表性的酒莊之一，以其純淨的風格和卓越的品質聞名。在 Preuses 特級園的表現尤其出色，展現出優雅的礦物特性。"
+  },
+  "02 Domaine Nathalie et Gilles Fèvre.geojson": {
+    "name": "Domaine Nathalie et Gilles Fèvre",
+    "founded": "1990年代",
+    "area": "1.2公頃",
+    "style": "家族式精品酒莊",
+    "characteristics": "細膩精緻，優雅純淨，展現 Preuses 風土",
+    "specialties": ["手工採收", "天然酵母發酵"],
+    "description": "小型精品酒莊，注重每個細節，在 Preuses 產出極具個性的夏多內，完美詮釋特級園的獨特風土。"
+  },
+  "03 Vignobles Dampt Frères.geojson": {
+    "name": "Vignobles Dampt Frères",
+    "founded": "1980年",
+    "area": "1.8公頃",
+    "style": "兄弟合作經營",
+    "characteristics": "濃郁飽滿，層次豐富，陳年潛力佳",
+    "specialties": ["精選橡木桶", "延長浸皮時間"],
+    "description": "由兄弟檔經營的酒莊，在 Preuses 特級園展現出濃郁而複雜的風格，是該產區的優質代表。"
+  },
+  "04 Jean et Sébastien Dauvissat.geojson": {
+    "name": "Jean et Sébastien Dauvissat",
+    "founded": "1985年",
+    "area": "0.8公頃",
+    "style": "傳統工藝傳承",
+    "characteristics": "經典優雅，細膩平衡，典型夏布利風格",
+    "specialties": ["傳統木桶發酵", "長時間酒泥接觸"],
+    "description": "家族傳統釀酒工藝的守護者，在 Preuses 特級園釀造出具有深度和優雅的經典夏布利白酒。"
+  },
+  "05 Domaine Servin.geojson": {
+    "name": "Domaine Servin",
+    "founded": "1955年",
+    "area": "3.2公頃",
+    "style": "歷史悠久的經典酒莊",
+    "characteristics": "礦物感突出，酸度平衡，陳年優雅",
+    "specialties": ["精準控溫發酵", "選擇性收成"],
+    "description": "夏布利地區的知名酒莊，在 Preuses 特級園擁有優質地塊，釀造出展現純正風土特色的頂級白酒。"
+  },
+  "06 Domaine Vincent Dauvissat.geojson": {
+    "name": "Domaine Vincent Dauvissat",
+    "founded": "1976年",
+    "area": "1.5公頃",
+    "style": "精品小產量",
+    "characteristics": "極致純淨，礦物感豐富，優雅持久",
+    "specialties": ["天然發酵", "最少人工干預"],
+    "description": "夏布利最受尊敬的酒莊之一，Vincent Dauvissat 在 Preuses 特級園的作品被認為是該產區的標竿之作。"
+  },
+  "07 Domaine Baillard.geojson": {
+    "name": "Domaine Baillard",
+    "founded": "1970年",
+    "area": "1.0公頃",
+    "style": "傳統與創新並重",
+    "characteristics": "豐富層次，果味與礦物感平衡",
+    "specialties": ["精選酵母", "控溫發酵"],
+    "description": "在傳統基礎上融入現代技術，在 Preuses 特級園釀造出既保持經典風格又具現代感的優質白酒。"
+  },
+  "08 Domaine Roy.geojson": {
+    "name": "Domaine Roy",
+    "founded": "1982年",
+    "area": "0.9公頃",
+    "style": "小而精的家族酒莊",
+    "characteristics": "純淨清香，礦物感明顯，口感細膩",
+    "specialties": ["手工分揀", "溫和壓榨"],
+    "description": "專注於品質的小型家族酒莊，在 Preuses 特級園的小塊葡萄園中精心釀造出品質卓越的夏布利白酒。"
+  },
+  "09 Domaine Billaud-Simon.geojson": {
+    "name": "Domaine Billaud-Simon",
+    "founded": "1950年",
+    "area": "2.8公頃",
+    "style": "現代化精準釀造",
+    "characteristics": "精準平衡，優雅細緻，陳年潛力強",
+    "specialties": ["溫控發酵", "精確調配"],
+    "description": "以現代化釀造技術著稱的知名酒莊，在 Preuses 特級園展現出精準而優雅的釀酒風格。"
+  },
+  "10 Domaine Long-Depaquit.geojson": {
+    "name": "Domaine Long-Depaquit",
+    "founded": "1795年",
+    "area": "4.5公頃",
+    "style": "歷史悠久的大型酒莊",
+    "characteristics": "豐富複雜，結構宏大，陳年優異",
+    "specialties": ["多樣化發酵容器", "精密調配技術"],
+    "description": "夏布利最古老的酒莊之一，在 Preuses 特級園擁有最大面積的葡萄園，釀造出風格宏大的頂級白酒。"
+  },
+  "11 Maison Simonnet-Febvre.geojson": {
+    "name": "Maison Simonnet-Febvre",
+    "founded": "1840年",
+    "area": "1.7公頃",
+    "style": "傳統酒商與酒莊結合",
+    "characteristics": "優雅經典，平衡和諧，展現風土特色",
+    "specialties": ["傳統橡木桶陳年", "精選葡萄"],
+    "description": "擁有深厚歷史底蘊的酒商，在 Preuses 特級園釀造出展現傳統夏布利風格的經典白酒。"
+  },
+  "12 Domaine Joseph Drouhin.geojson": {
+    "name": "Domaine Joseph Drouhin",
+    "founded": "1880年",
+    "area": "2.2公頃",
+    "style": "勃艮地知名大廠",
+    "characteristics": "精緻優雅，層次豐富，國際化品質",
+    "specialties": ["生物動力法", "精密釀造技術"],
+    "description": "勃艮地最具聲望的酒莊之一，在 Preuses 特級園展現出國際級的釀酒實力和一貫的高品質標準。"
+  },
+  "13 EARL Allindre .geojson": {
+    "name": "EARL Allindre",
+    "founded": "1995年",
+    "area": "0.6公頃",
+    "style": "新世代精品酒莊",
+    "characteristics": "創新風格，現代感強，注重純淨度",
+    "specialties": ["現代發酵技術", "精準溫控"],
+    "description": "代表新世代釀酒理念的精品酒莊，在 Preuses 特級園以現代化手法詮釋傳統風土。"
+  },
+  "14 Domaine Brocard.geojson": {
+    "name": "Domaine Brocard",
+    "founded": "1973年",
+    "area": "1.4公頃",
+    "style": "環保永續經營",
+    "characteristics": "自然純淨，有機風味，環境友善",
+    "specialties": ["有機釀造", "天然酵母發酵"],
+    "description": "致力於有機和永續釀酒的先驅酒莊，在 Preuses 特級園展現出自然純淨的釀酒哲學。"
+  }
+}

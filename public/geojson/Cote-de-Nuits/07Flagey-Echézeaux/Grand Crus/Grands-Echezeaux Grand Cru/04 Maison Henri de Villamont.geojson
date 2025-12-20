@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.952565384530621,47.17019549322548],[4.953929932154795,47.17007247725347],[4.954530230284819,47.17001343561257],[4.955543624684056,47.16993494305394],[4.955594210191339,47.1700807520475],[4.953967000315336,47.17022346011984],[4.952624724133732,47.17034141696951],[4.952565384530621,47.17019549322548]]]},"properties":{"name":"04 Maison Henri de Villamont","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

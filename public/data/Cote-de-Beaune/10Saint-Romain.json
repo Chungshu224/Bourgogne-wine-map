@@ -1,0 +1,39 @@
+{
+  "name": "Saint-Romain",
+  "description": "位於伯恩丘較高的山坡上，以其清新、礦物感十足的白酒和輕盈的紅酒而聞名。這裡的葡萄酒因其高海拔而獨具特色。",
+  "area": "約 100 公頃",
+  "altitude": "280-450m",
+  "exposition": "南、東南",
+  "grapeVarieties": ["Chardonnay", "Pinot Noir"],
+  "wineTypes": ["白酒", "紅酒"],
+  "climate": "涼爽，成熟期較晚",
+  "soilStructure": "貧瘠的石灰岩",
+  "wineStyle": "白酒：非常清新、礦物感強烈。紅酒：輕盈、果味純正。",
+  "tastingNotes": "白酒：青蘋果、檸檬、燧石。紅酒：紅色水果。",
+  "agingPotential": "白酒：3-10年，紅酒：3-8年",
+  "famousWineries": ["Domaine Alain Gras", "Domaine de Chassorney", "Joseph Drouhin"],
+  "grandCrus": [],
+  "premierCrus": [],
+  "history": "Saint-Romain是伯恩丘海拔最高的村莊之一。",
+  "geojson": {
+    "village": {
+      "saint-romain": {
+        "name": "Saint-Romain",
+        "file": "AOC Saint-Romain Village.geojson",
+        "fullName": "AOC Saint-Romain Village",
+        "classification": "Village",
+        "area": "約 100 公頃",
+        "altitude": "280-450m",
+        "exposition": "南、東南",
+        "soil": "貧瘠的石灰岩和泥灰岩",
+        "grapes": ["Chardonnay", "Pinot Noir"],
+        "wineStyle": "白酒：以其清新的酸度、明顯的礦物感和純淨的風格而聞名。紅酒：輕盈，果味直接，單寧柔和。",
+        "tastingNotes": "白酒：青蘋果、檸檬、白花、燧石。紅酒：紅色漿果、櫻桃。",
+        "agingPotential": "白酒：3-10年，紅酒：3-8年",
+        "history": "Saint-Romain位於一個陡峭的山谷中，是伯恩丘海拔最高的村莊之一。這裡的葡萄酒因其涼爽的氣候而具有獨特的清新風格，近年來因全球暖化而越來越受到重視。",
+        "producers": ["Domaine Alain Gras", "Domaine de Chassorney (Frédéric Cossard)", "Joseph Drouhin", "Benjamin Leroux"],
+        "color": "#8FBC8F"
+      }
+    }
+  }
+}

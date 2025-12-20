@@ -1,0 +1,489 @@
+{
+  "moduleId": "module5",
+  "title": "薄酒萊入門",
+  "description": "探索布根地的特立獨行者薄酒萊，了解加美葡萄、二氧化碳浸漬法，以及十大特級村的獨特魅力",
+  "lessons": [
+    {
+      "id": "lesson1",
+      "title": "薄酒萊：布根地的叛逆者",
+      "duration": "15分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "薄酒萊雖然行政上屬於布根地大區，但在品種、土壤、釀造方式和風格上都與金丘截然不同。這裡是加美（Gamay）葡萄的天堂，釀出的酒果味奔放、易飲親民。",
+        "sections": [
+          {
+            "heading": "為什麼薄酒萊如此不同？",
+            "keyPoints": [
+              "品種：100% 加美（Gamay），而非黑皮諾",
+              "土壤：花崗岩而非石灰岩",
+              "釀造：二氧化碳浸漬法（Carbonic Maceration）",
+              "風格：果味主導、低單寧、年輕時飲用最佳",
+              "文化：薄酒萊新酒節（11月第三個週四）"
+            ]
+          },
+          {
+            "heading": "加美葡萄的前世今生",
+            "text": "加美（Gamay）全名為 Gamay Noir à Jus Blanc（白汁黑加美），是黑皮諾與 Gouais Blanc 的自然雜交後代。1395年，勃艮第公爵 Philippe le Hardi 曾禁止在金丘種植加美，認為它「低劣」，只允許在薄酒萊種植。諷刺的是，這反而讓薄酒萊成為加美的完美家園。",
+            "keyPoints": [
+              "起源：勃艮第自然雜交",
+              "特性：高產、早熟、適應貧瘠土壤",
+              "香氣：紅櫻桃、草莓、香蕉、泡泡糖",
+              "單寧：低單寧，適合年輕飲用",
+              "全球種植：法國90%，其他國家少見"
+            ]
+          },
+          {
+            "heading": "花崗岩土壤的魔力",
+            "text": "薄酒萊北部的十大特級村區域都位於花崗岩土壤上，與金丘的石灰岩完全不同。花崗岩貧瘠、排水良好、富含礦物質，限制產量但提升品質。",
+            "soilTypes": [
+              {
+                "name": "粉紅花崗岩",
+                "location": "Fleurie, Chiroubles",
+                "character": "優雅芬芳、細膩柔順"
+              },
+              {
+                "name": "藍色花崗岩",
+                "location": "Morgon, Régnié",
+                "character": "結構緊實、礦物感強"
+              },
+              {
+                "name": "分解花崗岩（Gore）",
+                "location": "Moulin-à-Vent",
+                "character": "複雜度高、陳年潛力強"
+              }
+            ]
+          },
+          {
+            "heading": "二氧化碳浸漬法（Carbonic Maceration）",
+            "text": "這是薄酒萊最獨特的釀造技術。整串葡萄（不破皮）放入密閉槽，注入二氧化碳，葡萄在無氧環境下進行細胞內發酵，萃取出果味和顏色，但單寧很低。",
+            "steps": [
+              "1. 手工採收整串葡萄",
+              "2. 不破皮直接放入發酵槽",
+              "3. 注入二氧化碳排出氧氣",
+              "4. 5-10天細胞內發酵（35°C）",
+              "5. 壓榨後完成酒精發酵",
+              "6. 短暫陳年後裝瓶"
+            ],
+            "results": [
+              "✓ 濃郁果香（香蕉、草莓、泡泡糖）",
+              "✓ 鮮豔紫紅色澤",
+              "✓ 低單寧、口感柔順",
+              "✓ 適合年輕飲用",
+              "✗ 陳年潛力有限（除非傳統釀造）"
+            ]
+          }
+        ],
+        "tips": [
+          "🍇 加美在花崗岩上表現最佳，石灰岩上較平庸",
+          "🍇 二氧化碳浸漬法發明於薄酒萊",
+          "🍇 十大特級村很多使用傳統釀造法，可陳年更久",
+          "🍇 薄酒萊新酒只佔總產量25%，別被誤導"
+        ],
+        "summary": "薄酒萊的加美葡萄、花崗岩土壤和二氧化碳浸漬法，創造了與金丘黑皮諾完全不同的風格。這是布根地多樣性的最佳證明。"
+      }
+    },
+    {
+      "id": "lesson2",
+      "title": "十大特級村（Crus）深度解析",
+      "duration": "20分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "薄酒萊的精華在十大特級村（Crus），全部位於北部花崗岩山坡。這些村莊釀出的酒複雜度高、可陳年，完全不同於人們對薄酒萊「簡單新酒」的刻板印象。",
+        "sections": [
+          {
+            "heading": "十大特級村分級與特色",
+            "crus": [
+              {
+                "name": "Moulin-à-Vent",
+                "chinese": "風車磨坊",
+                "area": "660公頃",
+                "soil": "分解花崗岩（Gore）+ 錳",
+                "style": "薄酒萊之王，最強勁複雜",
+                "aging": "5-20年",
+                "character": "深紅寶石色、玫瑰香氣、單寧明顯、可比擬夜丘紅酒",
+                "price": "€15-50",
+                "food": "烤肉、野味、成熟起司"
+              },
+              {
+                "name": "Morgon",
+                "chinese": "莫爾貢",
+                "area": "1100公頃（最大）",
+                "soil": "分解藍色花崗岩（Côte de Py）",
+                "style": "獨特的「Morgon味」",
+                "aging": "5-15年",
+                "character": "櫻桃、土壤香氣、結構紮實、陳年後發展出類似黑皮諾的複雜度",
+                "price": "€12-40",
+                "food": "燉牛肉、烤鴨、野菇"
+              },
+              {
+                "name": "Fleurie",
+                "chinese": "花莊",
+                "area": "870公頃",
+                "soil": "粉紅花崗岩",
+                "style": "薄酒萊女王，最優雅芬芳",
+                "aging": "3-10年",
+                "character": "紫羅蘭、玫瑰花香、絲滑質地、女性化風格",
+                "price": "€12-35",
+                "food": "烤雞、鮭魚、溫和起司"
+              },
+              {
+                "name": "Juliénas",
+                "chinese": "朱麗娜",
+                "area": "580公頃",
+                "soil": "花崗岩 + 沖積土",
+                "style": "果味與香料並存",
+                "aging": "3-10年",
+                "character": "紅色漿果、牡丹花香、香料、結構均衡",
+                "price": "€12-30",
+                "food": "烤豬肉、火腿、中式紅燒"
+              },
+              {
+                "name": "Chénas",
+                "chinese": "謝納",
+                "area": "285公頃（最小）",
+                "soil": "花崗岩",
+                "style": "最稀有、複雜度高",
+                "aging": "5-12年",
+                "character": "牡丹、紫羅蘭、礦物感、優雅結構",
+                "price": "€15-40",
+                "food": "野味、烤羊排"
+              },
+              {
+                "name": "Saint-Amour",
+                "chinese": "聖愛",
+                "area": "320公頃",
+                "soil": "花崗岩 + 黏土",
+                "style": "情人節最愛",
+                "aging": "2-5年",
+                "character": "桃子、杏桃、花香、輕盈優雅",
+                "price": "€12-28",
+                "food": "白肉、海鮮、沙拉"
+              },
+              {
+                "name": "Chiroubles",
+                "chinese": "希魯布勒",
+                "area": "360公頃",
+                "soil": "粉紅花崗岩",
+                "style": "海拔最高（400米），最細膩",
+                "aging": "2-5年",
+                "character": "紅色小果、紫羅蘭、細膩柔順、酒體最輕",
+                "price": "€12-28",
+                "food": "冷盤、輕食、日式料理"
+              },
+              {
+                "name": "Régnié",
+                "chinese": "雷尼耶",
+                "area": "400公頃",
+                "soil": "粉紅花崗岩",
+                "style": "1988年才升級為特級村",
+                "aging": "2-5年",
+                "character": "紅莓、香蕉、新鮮果味",
+                "price": "€10-25",
+                "food": "烤雞、披薩、輕食"
+              },
+              {
+                "name": "Brouilly",
+                "chinese": "布魯伊",
+                "area": "1300公頃（第二大）",
+                "soil": "藍色花崗岩（Mont Brouilly 周圍）",
+                "style": "最大特級村，風格多樣",
+                "aging": "2-5年",
+                "character": "紅色漿果、礦物感、易飲爽口",
+                "price": "€10-25",
+                "food": "燒烤、火鍋、家常菜"
+              },
+              {
+                "name": "Côte de Brouilly",
+                "chinese": "布魯伊山坡",
+                "area": "320公頃",
+                "soil": "火山岩（獨特！）",
+                "style": "Brouilly 的精華版",
+                "aging": "3-8年",
+                "character": "更濃郁、礦物感強、火山土壤特色",
+                "price": "€12-30",
+                "food": "烤肉、野味、濃郁醬汁"
+              }
+            ]
+          },
+          {
+            "heading": "如何選擇特級村？",
+            "guide": {
+              "想要優雅細膩": "Fleurie, Chiroubles, Saint-Amour",
+              "想要強勁陳年": "Moulin-à-Vent, Morgon, Chénas",
+              "想要平衡易飲": "Juliénas, Régnié, Brouilly",
+              "想要獨特風土": "Côte de Brouilly（火山岩）, Morgon（Côte de Py）",
+              "性價比首選": "Brouilly, Régnié"
+            }
+          }
+        ],
+        "tips": [
+          "🍷 Moulin-à-Vent 陳年後常被誤認為夜丘黑皮諾",
+          "🍷 Morgon 的 Côte de Py 地塊是整個薄酒萊最精華",
+          "🍷 Fleurie 最受女性喜愛，花香四溢",
+          "🍷 Côte de Brouilly 是唯一有火山岩的特級村"
+        ],
+        "summary": "十大特級村展現了加美葡萄在花崗岩土壤上的多樣表現，從優雅的 Fleurie 到強勁的 Moulin-à-Vent，證明薄酒萊遠不只是「新酒」。"
+      }
+    },
+    {
+      "id": "lesson3",
+      "title": "薄酒萊品鑑與餐酒搭配",
+      "duration": "10分鐘",
+      "type": "interactive",
+      "content": {
+        "introduction": "薄酒萊的果味、低單寧和適中酒體，使其成為配餐的萬能選手，尤其適合搭配亞洲料理。了解如何品鑑和搭配，讓您充分享受這種易飲葡萄酒的魅力。",
+        "sections": [
+          {
+            "heading": "品鑑薄酒萊的要點",
+            "keyPoints": [
+              "溫度：微冷飲用（12-14°C），夏天可降至10°C",
+              "杯型：較大的紅酒杯，展現果香",
+              "觀色：紫紅色（年輕），石榴紅（陳年）",
+              "聞香：紅櫻桃、草莓、香蕉、泡泡糖、紫羅蘭",
+              "品嚐：低單寧、中等酒體、果味豐富、爽口"
+            ]
+          },
+          {
+            "heading": "不同類型的品鑑差異",
+            "comparison": [
+              {
+                "type": "Beaujolais Nouveau 新酒",
+                "color": "鮮豔紫紅",
+                "aroma": "香蕉、泡泡糖、草莓糖",
+                "palate": "輕盈、簡單、果味甜美",
+                "temperature": "10-12°C",
+                "drink": "當年12月前"
+              },
+              {
+                "type": "Beaujolais-Villages",
+                "color": "紫紅色",
+                "aroma": "紅莓、櫻桃、淡花香",
+                "palate": "清新、中等酒體、平衡",
+                "temperature": "12-14°C",
+                "drink": "1-3年"
+              },
+              {
+                "type": "Cru Beaujolais（特級村）",
+                "color": "深紅寶石",
+                "aroma": "成熟櫻桃、紫羅蘭、香料、土壤",
+                "palate": "複雜、結構、礦物感、單寧柔和但明顯",
+                "temperature": "14-16°C",
+                "drink": "2-15年（視特級村而定）"
+              }
+            ]
+          },
+          {
+            "heading": "餐酒搭配建議",
+            "pairings": [
+              {
+                "category": "法式料理",
+                "dishes": [
+                  "里昂沙拉（Lyon Salad）",
+                  "熟食拼盤（Charcuterie）",
+                  "烤雞",
+                  "布列斯雞（Poulet de Bresse）",
+                  "燉牛肉（Boeuf Bourguignon）- 用 Morgon 或 Moulin-à-Vent"
+                ]
+              },
+              {
+                "category": "中式料理（絕配！）",
+                "dishes": [
+                  "宮保雞丁",
+                  "糖醋排骨",
+                  "北京烤鴨",
+                  "紅燒肉",
+                  "火鍋（清湯）",
+                  "粵菜燒味"
+                ]
+              },
+              {
+                "category": "日式料理",
+                "dishes": [
+                  "照燒雞",
+                  "鰻魚飯",
+                  "壽喜燒",
+                  "炸豬排",
+                  "烤雞串"
+                ]
+              },
+              {
+                "category": "其他",
+                "dishes": [
+                  "披薩",
+                  "漢堡",
+                  "燒烤",
+                  "起司拼盤（溫和起司）",
+                  "野餐冷盤"
+                ]
+              }
+            ]
+          },
+          {
+            "heading": "薄酒萊配餐的黃金法則",
+            "rules": [
+              "✓ 果味料理 → 果味薄酒萊（完美匹配）",
+              "✓ 油膩食物 → 酸度洗淨油脂",
+              "✓ 微辣料理 → 低單寧不會放大辣味",
+              "✓ 冷盤熟食 → 微冷的薄酒萊最佳",
+              "✗ 避免過重醬汁（會壓過酒的細膩）",
+              "✗ 避免過辣料理（四川麻辣鍋太刺激）"
+            ]
+          },
+          {
+            "heading": "侍酒溫度很重要！",
+            "text": "很多人犯的最大錯誤是把薄酒萊當作「紅酒」在室溫下喝（18-20°C）。這會讓酒顯得鬆散無趣。正確做法是微冷飲用：",
+            "temperatures": [
+              "夏天：10-12°C（冰箱30分鐘）",
+              "春秋：12-14°C（冰箱15分鐘）",
+              "冬天：14-16°C（室溫稍涼處）",
+              "陳年特級村：最高不超過16°C"
+            ]
+          }
+        ],
+        "tips": [
+          "🍽️ 薄酒萊是亞洲料理的最佳夥伴",
+          "🍽️ 野餐、BBQ、派對的完美選擇",
+          "🍽️ 不喜歡單寧重的人會愛上薄酒萊",
+          "🍽️ Morgon 配紅燒肉絕配",
+          "🍽️ Fleurie 配烤雞完美"
+        ],
+        "summary": "薄酒萊的低單寧、果味和易飲特性，使其成為配餐萬能選手。記得微冷飲用，別錯過與亞洲料理的美妙搭配。"
+      }
+    }
+  ],
+  "quiz": {
+    "passingScore": 60,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "薄酒萊主要種植哪個葡萄品種？",
+        "type": "single-choice",
+        "options": [
+          "黑皮諾 Pinot Noir",
+          "加美 Gamay",
+          "希哈 Syrah",
+          "梅洛 Merlot"
+        ],
+        "correctAnswer": 1,
+        "explanation": "薄酒萊100%種植加美（Gamay）葡萄，這是與布根地其他產區最大的區別。"
+      },
+      {
+        "id": "q2",
+        "question": "薄酒萊最獨特的釀造技術是什麼？",
+        "type": "single-choice",
+        "options": [
+          "冷浸皮",
+          "二氧化碳浸漬法",
+          "蘋果酸乳酸發酵",
+          "橡木桶陳年"
+        ],
+        "correctAnswer": 1,
+        "explanation": "二氧化碳浸漬法（Carbonic Maceration）是薄酒萊的標誌性釀造技術，整串葡萄在無氧環境下發酵。"
+      },
+      {
+        "id": "q3",
+        "question": "薄酒萊共有多少個特級村（Crus）？",
+        "type": "single-choice",
+        "options": [
+          "5個",
+          "7個",
+          "10個",
+          "12個"
+        ],
+        "correctAnswer": 2,
+        "explanation": "薄酒萊有10個特級村，包括 Moulin-à-Vent、Morgon、Fleurie 等。"
+      },
+      {
+        "id": "q4",
+        "question": "哪個特級村被稱為「薄酒萊之王」？",
+        "type": "single-choice",
+        "options": [
+          "Fleurie",
+          "Morgon",
+          "Moulin-à-Vent",
+          "Brouilly"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Moulin-à-Vent 被稱為「薄酒萊之王」，最強勁複雜，可陳年10-20年，陳年後常被誤認為夜丘黑皮諾。"
+      },
+      {
+        "id": "q5",
+        "question": "薄酒萊新酒（Beaujolais Nouveau）每年什麼時候上市？",
+        "type": "single-choice",
+        "options": [
+          "9月第一個週六",
+          "10月第三個週四",
+          "11月第三個週四",
+          "12月第一個週六"
+        ],
+        "correctAnswer": 2,
+        "explanation": "薄酒萊新酒每年11月第三個週四上市，這是法國的葡萄酒節慶日。"
+      },
+      {
+        "id": "q6",
+        "question": "哪個特級村因其優雅芬芳的風格被稱為「薄酒萊女王」？",
+        "type": "single-choice",
+        "options": [
+          "Fleurie",
+          "Chiroubles",
+          "Saint-Amour",
+          "Régnié"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Fleurie 被稱為「薄酒萊女王」，以紫羅蘭、玫瑰花香和絲滑質地著稱，是最優雅芬芳的特級村。"
+      },
+      {
+        "id": "q7",
+        "question": "薄酒萊十大特級村主要位於什麼土壤上？",
+        "type": "single-choice",
+        "options": [
+          "石灰岩",
+          "花崗岩",
+          "黏土",
+          "沙土"
+        ],
+        "correctAnswer": 1,
+        "explanation": "十大特級村都位於北部的花崗岩土壤上，這與金丘的石灰岩土壤完全不同。"
+      },
+      {
+        "id": "q8",
+        "question": "品鑑薄酒萊的理想溫度是？",
+        "type": "single-choice",
+        "options": [
+          "8-10°C",
+          "12-14°C",
+          "16-18°C",
+          "18-20°C"
+        ],
+        "correctAnswer": 1,
+        "explanation": "薄酒萊應微冷飲用（12-14°C），夏天可降至10°C。常溫飲用會顯得鬆散無趣。"
+      },
+      {
+        "id": "q9",
+        "question": "哪個特級村是唯一位於火山岩土壤上的？",
+        "type": "single-choice",
+        "options": [
+          "Morgon",
+          "Côte de Brouilly",
+          "Moulin-à-Vent",
+          "Chénas"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Côte de Brouilly 位於 Mont Brouilly 山坡上，是唯一有火山岩土壤的特級村，賦予酒款獨特的礦物感。"
+      },
+      {
+        "id": "q10",
+        "question": "薄酒萊最適合搭配哪種料理？",
+        "type": "single-choice",
+        "options": [
+          "厚重紅肉",
+          "辣味川菜",
+          "亞洲料理",
+          "甜點"
+        ],
+        "correctAnswer": 2,
+        "explanation": "薄酒萊的果味、低單寧和適中酒體，使其成為亞洲料理（中式、日式）的絕配，尤其適合宮保雞丁、糖醋排骨等。"
+      }
+    ]
+  }
+}

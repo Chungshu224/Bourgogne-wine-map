@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.934638013033394,47.12199924466812],[4.934991008240499,47.12196869387489],[4.934978065098141,47.12193096096757],[4.935362794074218,47.12189101226767],[4.936085323775448,47.12178573009216],[4.936142483395685,47.12191262103646],[4.935421793697645,47.1221005434187],[4.935486029433235,47.12224354803212],[4.934658992402337,47.12229423842264],[4.934638013033394,47.12199924466812]]]},"properties":{"name":"09 Domaine Dupasquier","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

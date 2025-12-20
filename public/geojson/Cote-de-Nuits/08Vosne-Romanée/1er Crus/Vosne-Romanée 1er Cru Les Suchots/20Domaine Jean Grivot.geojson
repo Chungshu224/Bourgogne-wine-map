@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.953755967618598,47.16482645969516],[4.953557088077003,47.16382716611181],[4.953797748265161,47.16379666591746],[4.953975758687543,47.16480597409067],[4.953985631713859,47.16481137499892],[4.953755967618598,47.16482645969516]]]},"properties":{"name":"20Domaine Jean Grivot","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

@@ -1,0 +1,39 @@
+{
+  "moduleId": "beginner-m1",
+  "title": "測試模組",
+  "description": "簡單測試",
+  "lessons": [
+    {
+      "id": "m1-l1",
+      "title": "測試課程",
+      "duration": "5分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "測試標題",
+          "subtitle": "測試副標題",
+          "description": "測試描述"
+        },
+        {
+          "type": "content",
+          "title": "內容頁",
+          "content": "這是測試內容"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "passingScore": 60,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "測試問題？",
+        "type": "single",
+        "options": ["A", "B", "C", "D"],
+        "correctAnswer": 0,
+        "explanation": "測試解釋"
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.754520689200685,46.96427914784324],[4.756007165176415,46.96383778790721],[4.756375281400558,46.96401571284665],[4.754693624805862,46.96450580196403],[4.754672307014049,46.96451257448462],[4.754668276288816,46.96451386673459],[4.754520689200685,46.96427914784324]]]},"properties":{"name":"08 Domaine Briotet","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

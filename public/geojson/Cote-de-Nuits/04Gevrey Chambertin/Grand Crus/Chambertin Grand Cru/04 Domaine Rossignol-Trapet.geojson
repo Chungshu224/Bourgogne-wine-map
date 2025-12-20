@@ -1,0 +1,9 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 04 Domaine Rossignol-Trapet",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "04 Domaine Rossignol-Trapet", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963423070671375, 47.21115980378886, 0.0 ], [ 4.965944959708095, 47.210699503916821, 0.0 ], [ 4.966055038201535, 47.211011455687562, 0.0 ], [ 4.964529058780991, 47.2112346236691, 0.0 ], [ 4.964487261072557, 47.211168758833061, 0.0 ], [ 4.963444048263019, 47.211409593449567, 0.0 ], [ 4.963423070671375, 47.21115980378886, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "04 Domaine Rossignol-Trapet", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963482996790642, 47.212839049994876, 0.0 ], [ 4.96638531825872, 47.212162361716373, 0.0 ], [ 4.966519459460146, 47.212548772189884, 0.0 ], [ 4.964763442809337, 47.212978910652602, 0.0 ], [ 4.964691534991577, 47.21284255679862, 0.0 ], [ 4.965076705293249, 47.212737999912648, 0.0 ], [ 4.965050485311425, 47.212641849226038, 0.0 ], [ 4.963550580918897, 47.212954813769429, 0.0 ], [ 4.963482996790642, 47.212839049994876, 0.0 ] ] ] } }
+]
+}

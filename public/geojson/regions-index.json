@@ -1,0 +1,112 @@
+{
+  "regions": {
+    "chablis": {
+      "name": "夏布利與大歐塞瓦",
+      "nameFr": "Chablis & Grand Auxerrois",
+      "basePath": "/geojson",
+      "indexFile": "index.json",
+      "mapConfig": {
+        "center": [3.8, 47.8],
+        "zoom": 10,
+        "minZoom": 9,
+        "maxZoom": 16
+      },
+      "colorScheme": {
+        "default": "#F0E68C",
+        "1er Cru": "#DAA520",
+        "Grand Cru": "#FFD700"
+      }
+    },
+    "cote-de-nuits": {
+      "name": "夜丘",
+      "nameFr": "Côte de Nuits",
+      "basePath": "/geojson/Cote-de-Nuits",
+      "indexFile": "index.json",
+      "mapConfig": {
+        "center": [4.95, 47.15],
+        "zoom": 11.5,
+        "minZoom": 10,
+        "maxZoom": 16
+      },
+      "colorScheme": {
+        "default": "#8B0000",
+        "1er Cru": "#DC143C",
+        "Grand Cru": "#B22222"
+      }
+    },
+    "cote-de-beaune": {
+      "name": "伯恩丘",
+      "nameFr": "Côte de Beaune",
+      "basePath": "/geojson/Cote-de-Beaune",
+      "indexFile": "index.json",
+      "mapConfig": {
+        "center": [4.85, 47.0],
+        "zoom": 11.5,
+        "minZoom": 10,
+        "maxZoom": 16
+      },
+      "colorScheme": {
+        "default": "#CD5C5C",
+        "1er Cru": "#F08080",
+        "Grand Cru": "#FA8072"
+      }
+    },
+    "cote-chalonnaise": {
+      "name": "夏隆內丘",
+      "nameFr": "Côte Chalonnaise",
+      "basePath": "/geojson/Cote-Chalonnaise",
+      "indexFile": "index.json",
+      "mapConfig": {
+        "center": [4.75, 46.80],
+        "zoom": 11,
+        "minZoom": 9,
+        "maxZoom": 16
+      },
+      "colorScheme": {
+        "default": "#BC8F8F",
+        "Village": "#D2691E",
+        "1er Cru": "#CD853F"
+      }
+    },
+    "maconnais": {
+      "name": "馬貢內",
+      "nameFr": "Mâconnais",
+      "basePath": "/geojson/Maconnais",
+      "indexFile": "index.json",
+      "mapConfig": {
+        "center": [4.80, 46.35],
+        "zoom": 10.5,
+        "minZoom": 9,
+        "maxZoom": 16
+      },
+      "colorScheme": {
+        "default": "#F5DEB3",
+        "Village": "#DEB887",
+        "Pouilly-Fuissé": "#D2B48C"
+      }
+    },
+    "beaujolais": {
+      "name": "薄酒萊",
+      "nameFr": "Beaujolais",
+      "basePath": "/geojson/Beaujolais",
+      "indexFile": "index.json",
+      "mapConfig": {
+        "center": [4.65, 46.15],
+        "zoom": 10,
+        "minZoom": 9,
+        "maxZoom": 16
+      },
+      "colorScheme": {
+        "default": "#E0115F",
+        "Cru": "#C41E3A",
+        "Villages": "#DC143C"
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-15",
+    "totalRegions": 6,
+    "description": "布根地完整產區地圖索引"
+  }
+}

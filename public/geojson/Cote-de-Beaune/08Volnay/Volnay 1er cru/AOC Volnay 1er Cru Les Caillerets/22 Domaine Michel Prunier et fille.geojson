@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.777864525999329,46.99108176568206],[4.777871019639615,46.99100102014709],[4.778298201707194,46.99096681673111],[4.778721610770784,46.99096073063726],[4.779005900650541,46.99095237743609],[4.779039743133477,46.9911156614097],[4.778239252814447,46.99130571967268],[4.778122202025985,46.99120005053711],[4.777881190402066,46.99121355414655],[4.777864525999329,46.99108176568206]]]},"properties":{"name":"22 Domaine Michel Prunier et fille","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

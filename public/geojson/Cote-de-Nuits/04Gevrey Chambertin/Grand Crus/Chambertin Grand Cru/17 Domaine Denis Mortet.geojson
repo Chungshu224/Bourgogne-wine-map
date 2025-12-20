@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 17 Domaine Denis Mortet",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "17 Domaine Denis Mortet", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.965179048076617, 47.211242839469982, 0.0 ], [ 4.966109388417904, 47.211141093559149, 0.0 ], [ 4.9661750485925, 47.211318026507783, 0.0 ], [ 4.965227841972242, 47.211419723803189, 0.0 ], [ 4.965197048152527, 47.211326869408857, 0.0 ], [ 4.965179048076617, 47.211242839469982, 0.0 ] ] ] } }
+]
+}

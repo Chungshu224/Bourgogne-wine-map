@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.78583239276257,47.00752278197436],[4.785731274531901,47.0075282196252],[4.785671134518412,47.00750116292448],[4.785567267588135,47.00743231753794],[4.785517691461991,47.00737062620632],[4.787520282785341,47.00659117393531],[4.787589890725292,47.00667671308789],[4.787662158223318,47.00678913181822],[4.78583239276257,47.00752278197436]]]},"properties":{"name":"08 Domaine Faiveley","styleUrl":"#m_ylw-pushpin","fill-opacity":0.6,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

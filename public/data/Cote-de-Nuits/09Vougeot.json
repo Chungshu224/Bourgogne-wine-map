@@ -1,0 +1,118 @@
+{
+  "village": {
+    "vougeot": {
+      "name": "Vougeot",
+      "fullName": "AOC Vougeot",
+      "classification": "Village",
+      "description": "Vougeot 是 Côte de Nuits 中的一個小村莊，以其唯一但著名的特級園 Clos de Vougeot 而聞名於世。村莊級的 Vougeot 葡萄酒雖然產量不大，但同樣展現了這個產區的優雅風格。",
+      "characteristics": {
+        "grape_variety": "黑皮諾 (Pinot Noir)",
+        "soil": "主要為石灰岩和泥灰岩土壤，排水良好",
+        "style": "優雅、精緻，帶有紅色水果香氣和細膩單寧",
+        "aging_potential": "8-15年"
+      },
+      "area": "村莊級約 10.7 公頃",
+      "annual_production": "約 400 百公升"
+    }
+  },
+  "premier_crus": {
+    "vougeot-1er-cru-overview": {
+      "name": "Vougeot 一級園總覽",
+      "fullName": "AOC Vougeot 1er Cru",
+      "classification": "Premier Cru",
+      "area": "一級園總面積約 11.9 公頃",
+      "altitude": "—",
+      "exposition": "—",
+      "soil": "石灰岩為主，含豐富礦物質",
+      "grapes": ["黑皮諾 (Pinot Noir)"],
+      "wineStyle": "比村莊級更有結構，展現更複雜的香氣層次",
+      "tastingNotes": "—",
+      "agingPotential": "12-20年",
+      "history": "Vougeot 擁有 4 個一級園，總面積約 11.9 公頃。這些一級園位於著名的 Clos de Vougeot 周邊，受益於相似的地質條件。",
+      "producers": [],
+      "color": "#CD853F"
+    },
+    "clos-de-la-perriere": {
+      "name": "Clos de la Perrière",
+      "fullName": "AOC Vougeot 1er Cru Clos de la Perrière",
+      "classification": "Premier Cru",
+      "area": "約 2.14 公頃",
+      "altitude": "—",
+      "exposition": "—",
+      "soil": "石灰岩和碎石土壤，排水極佳",
+      "grapes": ["黑皮諾 (Pinot Noir)"],
+      "wineStyle": "結構緊實，礦物感強烈，有良好的陳年潛力",
+      "tastingNotes": "—",
+      "agingPotential": "15-25年",
+      "history": "位於 Clos de Vougeot 北側的一級園，以其石質土壤（Perrière 意為採石場）而得名。產出的葡萄酒結構緊實，礦物味明顯。",
+      "producers": [],
+      "color": "#CD853F"
+    },
+    "les-petits-vougeots": {
+      "name": "Les Petits Vougeots",
+      "fullName": "AOC Vougeot 1er Cru Les Petits Vougeots",
+      "classification": "Premier Cru",
+      "area": "約 5.77 公頃",
+      "altitude": "—",
+      "exposition": "—",
+      "soil": "深層石灰岩土壤，富含礦物質",
+      "grapes": ["黑皮諾 (Pinot Noir)"],
+      "wineStyle": "濃郁而不失優雅，有明顯的地域特色",
+      "tastingNotes": "—",
+      "agingPotential": "15-25年",
+      "history": "「小 Vougeot」之意，這個一級園雖然面積不大，但產出的葡萄酒品質極佳，風格接近特級園。",
+      "producers": [],
+      "color": "#CD853F"
+    },
+    "clos-blanc": {
+      "name": "Le Clos Blanc",
+      "fullName": "AOC Vougeot 1er Cru Le Clos Blanc",
+      "classification": "Premier Cru",
+      "area": "約 1.27 公頃",
+      "altitude": "—",
+      "exposition": "—",
+      "soil": "淺色石灰岩土壤，排水良好",
+      "grapes": ["黑皮諾 (Pinot Noir)"],
+      "wineStyle": "精緻優雅，果香濃郁，單寧絲滑",
+      "tastingNotes": "—",
+      "agingPotential": "12-18年",
+      "history": "這個一級園以其淺色土壤而得名。產出的葡萄酒風格精緻，展現出 Vougeot 地區的典型特色。",
+      "producers": [],
+      "color": "#CD853F"
+    },
+    "les-cras": {
+      "name": "Les Crâs",
+      "fullName": "AOC Vougeot 1er Cru Les Crâs",
+      "classification": "Premier Cru",
+      "area": "約 0.92 公頃",
+      "altitude": "—",
+      "exposition": "—",
+      "soil": "石灰岩為主，含大量碎石",
+      "grapes": ["黑皮諾 (Pinot Noir)"],
+      "wineStyle": "結構良好，礦物感明顯，餘韻悠長",
+      "tastingNotes": "—",
+      "agingPotential": "12-20年",
+      "history": "這個一級園的名字來自於其多石的地質特徵，帶有重音符號的正確拼寫。",
+      "producers": [],
+      "color": "#CD853F"
+    }
+  },
+  "grand_crus": {
+    "clos-de-vougeot": {
+      "name": "Clos de Vougeot",
+      "fullName": "AOC Clos de Vougeot ou Clos Vougeot Grand Cru",
+      "classification": "Grand Cru",
+      "area": "50.59 公頃（Côte de Nuits 最大的特級園）",
+      "altitude": "—",
+      "exposition": "—",
+      "soil": "從上坡的石灰岩到下坡的深層黏土，土壤多樣化",
+      "grapes": ["黑皮諾 (Pinot Noir)"],
+      "wineStyle": "風格因地塊而異，最佳地塊產出深沉、複雜、有力的葡萄酒",
+      "tastingNotes": "—",
+      "agingPotential": "20-40年以上",
+      "history": "Côte de Nuits 最大的特級園，面積達 50.59 公頃。這個由熙篤會修士在 12 世紀建立的葡萄園，至今仍被石牆圍繞，是勃艮地最具象徵性的葡萄園之一。園內有超過 80 個不同的擁有者，因此品質可能有所差異。由熙篤會修士在 12 世紀建立，被認為是勃艮地最古老的葡萄園之一。分為上坡、中坡、下坡三個風土區。",
+      "producers": ["Domaine de la Vougeraie", "Domaine Leroy", "Domaine Méo-Camuzet", "Château de la Tour"],
+      "color": "#8B0000"
+    }
+  }
+}

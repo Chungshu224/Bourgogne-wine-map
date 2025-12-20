@@ -1,0 +1,12 @@
+{
+  "moduleId": "advanced-m14",
+  "title": "專業品鑑報告撰寫",
+  "description": "專業品鑑術語、評分系統理解與高品質品鑑筆記撰寫技巧",
+  "lessons": [
+    {"id": "m14-l1", "title": "專業品鑑術語", "duration": "19分鐘", "type": "presentation"},
+    {"id": "m14-l2", "title": "評分系統比較", "duration": "19分鐘", "type": "presentation"},
+    {"id": "m14-l3", "title": "品鑑筆記結構", "duration": "19分鐘", "type": "presentation"},
+    {"id": "m14-l4", "title": "實戰演練", "duration": "18分鐘", "type": "presentation"}
+  ],
+  "quiz": {"id": "advanced-m14-quiz", "title": "專業品鑑報告撰寫 - 綜合測驗", "passingScore": 75, "questions": [{"id": "q1", "type": "multiple-choice", "question": "Parker評分系統的滿分是？", "options": ["20分", "100分", "5星", "10分"], "correctAnswer": 1}]}
+}

@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.95379169377763,47.16377231351712],[4.954020593692132,47.16375186906314],[4.954240214637203,47.16478618129593],[4.953998741164025,47.16480114958774],[4.95379169377763,47.16377231351712]]]},"properties":{"name":"17Comte Liger-Belair","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 12 Domaine Feuillet-Duband",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "12 Domaine Feuillet-Duband", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963456179897596, 47.211515639820568, 0.0 ], [ 4.964676098635003, 47.211250397588813, 0.0 ], [ 4.965035174768611, 47.211173554850397, 0.0 ], [ 4.966060853856913, 47.21104511933936, 0.0 ], [ 4.966088963156241, 47.211107460875517, 0.0 ], [ 4.965181421639384, 47.211211737933802, 0.0 ], [ 4.964594600674683, 47.211326530686129, 0.0 ], [ 4.963487237909019, 47.21157150907338, 0.0 ], [ 4.963456179897596, 47.211515639820568, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "12 Domaine Feuillet-Duband", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.963592960791368, 47.213000046004233, 0.0 ], [ 4.964668437797879, 47.212820048998097, 0.0 ], [ 4.964718118229328, 47.212937635749263, 0.0 ], [ 4.96360650574135, 47.21309595686467, 0.0 ], [ 4.963592960791368, 47.213000046004233, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "12 Domaine Feuillet-Duband", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.962889831119321, 47.213275927318882, 0.0 ], [ 4.963290742499535, 47.213116544351209, 0.0 ], [ 4.963358721972046, 47.213234619216557, 0.0 ], [ 4.963222879016982, 47.213346729791617, 0.0 ], [ 4.962966171489366, 47.21347232577461, 0.0 ], [ 4.962889831119321, 47.213275927318882, 0.0 ] ] ] } }
+]
+}

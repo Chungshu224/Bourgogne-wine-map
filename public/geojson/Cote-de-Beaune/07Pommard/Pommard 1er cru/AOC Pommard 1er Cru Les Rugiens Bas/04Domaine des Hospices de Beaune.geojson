@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "04Domaine des Hospices de Beaune",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "04Domaine des Hospices de Beaune", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.788228263084666, 47.007346074102657, 0.0 ], [ 4.789707025397727, 47.006810174480627, 0.0 ], [ 4.789768168686239, 47.006825982194528, 0.0 ], [ 4.789812957203834, 47.006851449519672, 0.0 ], [ 4.788281359011521, 47.007391286368772, 0.0 ], [ 4.788228263084666, 47.007346074102657, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "04Domaine des Hospices de Beaune", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.788830346653208, 47.007949646208168, 0.0 ], [ 4.790149279403724, 47.007493872875997, 0.0 ], [ 4.790182456122515, 47.007555767372722, 0.0 ], [ 4.790222437779881, 47.007669710979272, 0.0 ], [ 4.788975588067723, 47.008099042478612, 0.0 ], [ 4.788830346653208, 47.007949646208168, 0.0 ] ] ] } },
+{ "type": "Feature", "properties": { "Name": "04 Domaine des Hospices de Beaune", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.789210296941899, 47.008455779155959, 0.0 ], [ 4.789091286935609, 47.008313919951682, 0.0 ], [ 4.790316617073045, 47.007856375883087, 0.0 ], [ 4.790339755291826, 47.007919590894062, 0.0 ], [ 4.79039441869361, 47.007989536313907, 0.0 ], [ 4.789210296941899, 47.008455779155959, 0.0 ] ] ] } }
+]
+}

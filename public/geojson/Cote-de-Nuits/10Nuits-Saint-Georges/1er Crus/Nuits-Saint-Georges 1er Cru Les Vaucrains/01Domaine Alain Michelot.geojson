@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.934850237725714,47.12386998949624],[4.936589286045483,47.12349162398393],[4.936653472436006,47.12361557822624],[4.936733856437181,47.12373357276312],[4.936896254380255,47.12388127092404],[4.936063559193531,47.12405515949985],[4.935049436155885,47.12427345913526],[4.934933697813615,47.1240826436451],[4.934850237725714,47.12386998949624]]]},"properties":{"name":"01Domaine Alain Michelot","styleUrl":"#m_ylw-pushpin","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

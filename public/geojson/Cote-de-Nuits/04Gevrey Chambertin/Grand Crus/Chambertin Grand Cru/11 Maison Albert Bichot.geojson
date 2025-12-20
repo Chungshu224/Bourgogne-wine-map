@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 11 Maison Albert Bichot",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "11 Maison Albert Bichot", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.962996890876202, 47.211500639400462, 0.0 ], [ 4.96293594500589, 47.211289178632519, 0.0 ], [ 4.962936687840025, 47.211095388638157, 0.0 ], [ 4.96332944249938, 47.211012314981872, 0.0 ], [ 4.963392876653449, 47.21126546193603, 0.0 ], [ 4.963426570023564, 47.211531117877243, 0.0 ], [ 4.963322363986045, 47.211555117873537, 0.0 ], [ 4.963208186502397, 47.211575293218807, 0.0 ], [ 4.963175178504602, 47.211471725879193, 0.0 ], [ 4.962996890876202, 47.211500639400462, 0.0 ] ] ] } }
+]
+}

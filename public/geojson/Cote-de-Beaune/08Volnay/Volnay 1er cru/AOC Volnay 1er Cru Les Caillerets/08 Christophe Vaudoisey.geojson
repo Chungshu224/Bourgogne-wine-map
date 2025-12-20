@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.778459136251825,46.99429772301261],[4.778977201177684,46.9940106343313],[4.779920896827628,46.9936235404183],[4.779952629104014,46.99369732648659],[4.779235424278565,46.9939910026817],[4.779031531382978,46.99407920704274],[4.778532193691902,46.99434587341581],[4.778459136251825,46.99429772301261]]]},"properties":{"name":"08 Christophe Vaudoisey","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

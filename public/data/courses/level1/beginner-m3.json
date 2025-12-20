@@ -1,0 +1,499 @@
+{
+  "moduleId": "module3",
+  "title": "六大產區概覽",
+  "description": "探索布根地的六大主要產區：夏布利、夜丘、伯恩丘、夏隆內丘、馬貢內、薄酒萊，了解各產區的風土特色與代表酒款",
+  "lessons": [
+    {
+      "id": "lesson1",
+      "title": "夜丘 Côte de Nuits：紅酒之鄉",
+      "duration": "15分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "夜丘是布根地最負盛名的紅酒產區，擁有24個特級園中的絕大部分。從 Marsannay 到 Nuits-Saint-Georges，這條僅24公里的黃金地帶孕育了世界上最昂貴、最優雅的黑皮諾葡萄酒。",
+        "sections": [
+          {
+            "heading": "地理位置與氣候",
+            "text": "夜丘位於第戎南部，是金丘（Côte d'Or）的北段。產區呈南北狹長帶狀，寬度僅300-400米，但長度達24公里。朝東的山坡接受充足日照，白天溫暖夜晚涼爽的溫差造就了黑皮諾的優雅風格。",
+            "keyPoints": [
+              "海拔：250-350米的最佳位置",
+              "土壤：侏羅紀石灰岩、泥灰岩",
+              "坡度：5-15度，排水良好",
+              "微氣候：每個村莊甚至每塊園都有差異"
+            ]
+          },
+          {
+            "heading": "10個主要村莊",
+            "villages": [
+              {
+                "name": "Marsannay",
+                "highlight": "唯一可釀造紅、白、粉紅三色酒的村莊",
+                "style": "果味新鮮、易飲"
+              },
+              {
+                "name": "Fixin",
+                "highlight": "緊鄰 Gevrey-Chambertin，風格相似但更親民",
+                "style": "結構扎實、需陳年"
+              },
+              {
+                "name": "Gevrey-Chambertin",
+                "highlight": "擁有9個特級園，夜丘之王",
+                "style": "強勁有力、複雜度高、陳年潛力極強"
+              },
+              {
+                "name": "Morey-Saint-Denis",
+                "highlight": "5個特級園，低調的寶石",
+                "style": "介於 Gevrey 和 Chambolle 之間，均衡優雅"
+              },
+              {
+                "name": "Chambolle-Musigny",
+                "highlight": "2個特級園，「女性化」的代表",
+                "style": "絲綢般質地、花香四溢、精緻細膩"
+              },
+              {
+                "name": "Vougeot",
+                "highlight": "擁有最大特級園 Clos de Vougeot（50公頃）",
+                "style": "風格多變，取決於地塊位置"
+              },
+              {
+                "name": "Vosne-Romanée",
+                "highlight": "6個特級園，包括傳奇的 Romanée-Conti",
+                "style": "極致優雅、香料複雜、價格昂貴"
+              },
+              {
+                "name": "Flagey-Echézeaux",
+                "highlight": "2個特級園但無村莊級，酒標使用 Vosne-Romanée",
+                "style": "花香濃郁、結構優雅"
+              },
+              {
+                "name": "Nuits-Saint-Georges",
+                "highlight": "無特級園但有41個優質一級園",
+                "style": "強健有力、野味香氣、陳年潛力強"
+              },
+              {
+                "name": "Côte de Nuits-Villages",
+                "highlight": "包含5個村莊的混調酒",
+                "style": "性價比高的入門選擇"
+              }
+            ]
+          },
+          {
+            "heading": "著名特級園",
+            "grandCrus": [
+              "Chambertin - 拿破崙的最愛，夜丘最強勁",
+              "Musigny - 最優雅細緻，也產少量白酒",
+              "Clos de Vougeot - 最大的特級園（50公頃）",
+              "Romanée-Conti - 世界最貴葡萄酒，僅1.8公頃",
+              "La Tâche - DRC 獨佔園，6公頃",
+              "Richebourg - 強勁與優雅的完美平衡"
+            ]
+          }
+        ],
+        "tips": [
+          "🍷 夜丘93%產紅酒，黑皮諾是絕對主角",
+          "🍷 特級園主要集中在中段（Gevrey 到 Vosne-Romanée）",
+          "🍷 村莊級酒已有很高水準，是學習夜丘的好起點",
+          "🍷 同一特級園不同酒莊差異巨大，生產者很重要"
+        ],
+        "summary": "夜丘是黑皮諾的天堂，每個村莊都有獨特個性，從強勁的 Gevrey 到優雅的 Chambolle，風格多樣但都展現了極高的品質。",
+        "mapInteraction": {
+          "region": "Cote-de-Nuits",
+          "instructions": "點擊查看夜丘產區地圖，探索各村莊和特級園的位置"
+        }
+      }
+    },
+    {
+      "id": "lesson2",
+      "title": "伯恩丘 Côte de Beaune：白酒天堂",
+      "duration": "15分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "伯恩丘是金丘的南段，以出產世界頂級霞多麗白酒聞名。雖然也產紅酒，但白酒的名氣更勝一籌，Meursault、Puligny-Montrachet、Chassagne-Montrachet 等村莊是白酒愛好者的朝聖地。",
+        "sections": [
+          {
+            "heading": "地理與氣候特徵",
+            "text": "伯恩丘從 Ladoix 延伸到 Maranges，長約25公里。相比夜丘，這裡的地形更複雜，山坡走向多變，土壤組成也更多樣化，造就了紅白酒並存的格局。",
+            "keyPoints": [
+              "氣候：比夜丘稍溫暖，更適合霞多麗",
+              "土壤：石灰岩為主，泥灰岩比例較高",
+              "地形：山谷與山坡交錯，微氣候差異大",
+              "產量：白酒佔60%，紅酒40%"
+            ]
+          },
+          {
+            "heading": "主要村莊（北至南）",
+            "villages": [
+              {
+                "name": "Aloxe-Corton",
+                "highlight": "夜丘與伯恩丘的交界，擁有 Corton 和 Corton-Charlemagne 特級園",
+                "wines": "紅白兼具，Corton 紅酒強勁，Corton-Charlemagne 白酒礦物感強"
+              },
+              {
+                "name": "Beaune",
+                "highlight": "伯恩丘的首府，擁有最多一級園（42個）",
+                "wines": "紅酒為主，風格優雅、易飲、性價比高"
+              },
+              {
+                "name": "Pommard",
+                "highlight": "伯恩丘最強勁的紅酒產區",
+                "wines": "只產紅酒，單寧厚實、需長時間陳年"
+              },
+              {
+                "name": "Volnay",
+                "highlight": "伯恩丘最優雅的紅酒",
+                "wines": "只產紅酒，絲滑細膩、花香四溢"
+              },
+              {
+                "name": "Meursault",
+                "highlight": "白酒之王，無特級園但一級園極優秀",
+                "wines": "經典奶油榛果香氣、圓潤飽滿"
+              },
+              {
+                "name": "Puligny-Montrachet",
+                "highlight": "擁有4個特級園，白酒最精緻",
+                "wines": "礦物感強、酸度活潑、陳年潛力驚人"
+              },
+              {
+                "name": "Chassagne-Montrachet",
+                "highlight": "紅白兼產，共享 Montrachet 特級園",
+                "wines": "白酒優雅礦物，紅酒也有高水準"
+              }
+            ]
+          },
+          {
+            "heading": "白酒特級園（全球最貴的白酒）",
+            "grandCrus": [
+              "Montrachet - 白酒之王，7.5公頃",
+              "Bâtard-Montrachet - Montrachet 的兄弟園",
+              "Chevalier-Montrachet - 位置最高，最優雅",
+              "Bienvenues-Bâtard-Montrachet - 最小的特級園",
+              "Criots-Bâtard-Montrachet - 只有1.5公頃",
+              "Corton-Charlemagne - 查理曼大帝的遺產"
+            ]
+          }
+        ],
+        "tips": [
+          "🍾 Meursault 無特級園，但最好的一級園不輸特級園",
+          "🍾 Montrachet 是全球最貴的霞多麗，均價超過€500",
+          "🍾 Pommard 和 Volnay 緊鄰但風格迥異，體現風土細微差別",
+          "🍾 Beaune 村莊級性價比極高，適合入門"
+        ],
+        "summary": "伯恩丘展現了霞多麗的極致表現，從奶油般的 Meursault 到礦物感十足的 Puligny，每個村莊都有獨特魅力。紅酒雖不如夜丘著名，但同樣品質卓越。"
+      }
+    },
+    {
+      "id": "lesson3",
+      "title": "夏布利、夏隆內丘與馬貢內",
+      "duration": "15分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "除了金丘，布根地還有三個重要產區：夏布利以純淨礦物感的白酒聞名，夏隆內丘是夜丘的延續，馬貢內則以親民的白酒著稱。",
+        "sections": [
+          {
+            "heading": "夏布利 Chablis：礦物感白酒典範",
+            "text": "位於布根地最北端，氣候涼爽，土壤富含貝殼化石（Kimmeridgian 泥灰岩）。這裡只種霞多麗，釀出的酒酸度高、礦物感強、不過桶或少過桶，展現最純淨的品種特性。",
+            "keyPoints": [
+              "氣候：大陸性，春季霜凍是大敵",
+              "土壤：Kimmeridgian 泥灰岩（貝殼化石）",
+              "風格：高酸度、礦物感、檸檬香、牡蠣貝殼味",
+              "分級：Petit Chablis < Chablis < Premier Cru < Grand Cru"
+            ],
+            "subRegions": [
+              "Petit Chablis - 最基礎，輕盈易飲",
+              "Chablis - 經典風格，性價比高",
+              "Chablis Premier Cru - 40個一級園，更集中複雜",
+              "Chablis Grand Cru - 7個特級園，全在右岸山坡"
+            ]
+          },
+          {
+            "heading": "夏隆內丘 Côte Chalonnaise：性價比之選",
+            "text": "位於伯恩丘南端，氣候與土壤相似但名氣較小，因此價格更親民。是尋找高品質布根地的絕佳選擇。",
+            "keyPoints": [
+              "位置：伯恩丘南部，金丘的延續",
+              "氣候：略溫暖於金丘",
+              "風格：與金丘相似但更輕盈易飲",
+              "價格：比金丘便宜30-50%"
+            ],
+            "villages": [
+              "Bouzeron - 只產 Aligoté 白酒的特殊村莊",
+              "Rully - 紅白兼產，氣泡酒著名",
+              "Mercurey - 最大村莊，以紅酒為主",
+              "Givry - 優雅的紅酒，歷史悠久",
+              "Montagny - 只產白酒，霞多麗為主"
+            ]
+          },
+          {
+            "heading": "馬貢內 Mâconnais：日常白酒首選",
+            "text": "布根地最南端，氣候溫暖，以大量生產清爽易飲的霞多麗白酒為主。價格親民，適合日常飲用。",
+            "keyPoints": [
+              "氣候：溫暖，受地中海影響",
+              "產量：布根地25%的白酒來自這裡",
+              "風格：果味豐富、圓潤、酒體輕盈",
+              "價格：€8-25，極具性價比"
+            ],
+            "appellations": [
+              "Mâcon / Mâcon-Villages - 基礎大區酒",
+              "Pouilly-Fuissé - 最著名村莊，品質可比美 Meursault",
+              "Saint-Véran - 清新優雅，性價比高",
+              "Viré-Clessé - 圓潤飽滿，微礦物感"
+            ]
+          }
+        ],
+        "comparisonTable": {
+          "title": "三產區對比",
+          "headers": ["產區", "主要品種", "風格特色", "價格範圍"],
+          "rows": [
+            ["夏布利", "100% 霞多麗", "高酸、礦物、純淨", "€15-200"],
+            ["夏隆內丘", "紅白兼產", "金丘風格但更親民", "€12-50"],
+            ["馬貢內", "主要白酒", "果味豐富、易飲", "€8-40"]
+          ]
+        },
+        "summary": "這三個產區各有特色：夏布利展現霞多麗的純淨面貌，夏隆內丘是金丘的平價版，馬貢內則提供日常飲用的高性價比選擇。"
+      }
+    },
+    {
+      "id": "lesson4",
+      "title": "薄酒萊 Beaujolais：獨特的加美風格",
+      "duration": "10分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "薄酒萊雖然行政上屬於布根地大區，但在風土和風格上截然不同。這裡的主角是加美（Gamay）葡萄，釀出的酒果味奔放、易飲親民，與黑皮諾的優雅複雜形成對比。",
+        "sections": [
+          {
+            "heading": "為什麼薄酒萊與眾不同？",
+            "keyPoints": [
+              "品種：加美（Gamay）而非黑皮諾",
+              "土壤：花崗岩而非石灰岩",
+              "釀造：二氧化碳浸漬法（Carbonic Maceration）",
+              "風格：果味主導、低單寧、年輕時飲用"
+            ]
+          },
+          {
+            "heading": "薄酒萊的分級",
+            "text": "薄酒萊有三級分級體系，從基礎的 Beaujolais 到頂級的 Cru Beaujolais，品質和價格逐級上升。",
+            "levels": [
+              {
+                "name": "Beaujolais / Beaujolais-Villages",
+                "area": "南部平原",
+                "style": "輕盈果味、€5-10",
+                "drink": "裝瓶後立即飲用"
+              },
+              {
+                "name": "Beaujolais Nouveau 新酒",
+                "area": "整個產區",
+                "style": "11月第三個週四上市的節慶酒",
+                "drink": "當年飲用完畢"
+              },
+              {
+                "name": "Beaujolais Crus 十大特級村",
+                "area": "北部山坡",
+                "style": "結構複雜、€15-50",
+                "drink": "可陳年5-15年"
+              }
+            ]
+          },
+          {
+            "heading": "十大特級村（Crus）",
+            "crus": [
+              {
+                "name": "Morgon",
+                "style": "最強勁，有「Morgon味」的櫻桃與土壤香",
+                "ageability": "10-15年"
+              },
+              {
+                "name": "Moulin-à-Vent",
+                "style": "「薄酒萊之王」，可比擬夜丘紅酒",
+                "ageability": "10-20年"
+              },
+              {
+                "name": "Fleurie",
+                "style": "最優雅芬芳，花香四溢",
+                "ageability": "5-10年"
+              },
+              {
+                "name": "Juliénas",
+                "style": "果味與香料並存",
+                "ageability": "5-10年"
+              },
+              {
+                "name": "Chénas",
+                "style": "最稀有，複雜度高",
+                "ageability": "8-12年"
+              },
+              {
+                "name": "Saint-Amour",
+                "style": "情人節最愛，輕盈優雅",
+                "ageability": "3-5年"
+              },
+              {
+                "name": "Chiroubles",
+                "style": "海拔最高，最細膩",
+                "ageability": "3-5年"
+              },
+              {
+                "name": "Régnié",
+                "style": "1988年才升級，果味新鮮",
+                "ageability": "3-5年"
+              },
+              {
+                "name": "Brouilly",
+                "style": "最大特級村，易飲",
+                "ageability": "3-5年"
+              },
+              {
+                "name": "Côte de Brouilly",
+                "style": "火山土壤，更濃郁",
+                "ageability": "5-8年"
+              }
+            ]
+          }
+        ],
+        "tips": [
+          "🍇 優質薄酒萊需微冷飲用（12-14°C），不是常溫",
+          "🍇 薄酒萊新酒只是行銷手段，真正的精華在十大特級村",
+          "🍇 Moulin-à-Vent 和 Morgon 可與黑皮諾媲美",
+          "🍇 薄酒萊非常適合搭配中式料理"
+        ],
+        "summary": "薄酒萊是布根地的特立獨行者，加美葡萄展現了完全不同的風格。別被新酒誤導，十大特級村才是薄酒萊的靈魂。",
+        "mapInteraction": {
+          "region": "Beaujolais",
+          "instructions": "點擊查看薄酒萊產區地圖，探索十大特級村的位置"
+        }
+      }
+    }
+  ],
+  "quiz": {
+    "passingScore": 60,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "夜丘（Côte de Nuits）主要以生產哪種酒為主？",
+        "type": "single-choice",
+        "options": [
+          "白酒",
+          "紅酒",
+          "粉紅酒",
+          "氣泡酒"
+        ],
+        "correctAnswer": 1,
+        "explanation": "夜丘93%產紅酒，是布根地黑皮諾的核心產區，擁有24個特級園中的大部分。"
+      },
+      {
+        "id": "q2",
+        "question": "哪個村莊被稱為「伯恩丘白酒之王」，以奶油榛果香氣著名？",
+        "type": "single-choice",
+        "options": [
+          "Puligny-Montrachet",
+          "Chassagne-Montrachet",
+          "Meursault",
+          "Beaune"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Meursault 以經典的奶油榛果香氣聞名，雖無特級園但一級園品質極高。"
+      },
+      {
+        "id": "q3",
+        "question": "夏布利（Chablis）的土壤主要成分是什麼？",
+        "type": "single-choice",
+        "options": [
+          "花崗岩",
+          "火山岩",
+          "Kimmeridgian 泥灰岩（含貝殼化石）",
+          "沙土"
+        ],
+        "correctAnswer": 2,
+        "explanation": "夏布利的 Kimmeridgian 泥灰岩富含貝殼化石，賦予酒款獨特的礦物感和牡蠣貝殼味。"
+      },
+      {
+        "id": "q4",
+        "question": "世界最貴的葡萄酒之一 Romanée-Conti 位於哪個村莊？",
+        "type": "single-choice",
+        "options": [
+          "Gevrey-Chambertin",
+          "Vosne-Romanée",
+          "Chambolle-Musigny",
+          "Nuits-Saint-Georges"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Romanée-Conti 是 Vosne-Romanée 村的特級園，僅1.8公頃，是世界最貴的葡萄酒之一。"
+      },
+      {
+        "id": "q5",
+        "question": "薄酒萊（Beaujolais）主要種植哪個葡萄品種？",
+        "type": "single-choice",
+        "options": [
+          "黑皮諾 Pinot Noir",
+          "加美 Gamay",
+          "霞多麗 Chardonnay",
+          "阿里高特 Aligoté"
+        ],
+        "correctAnswer": 1,
+        "explanation": "薄酒萊的主角是加美（Gamay）葡萄，而非布根地其他產區的黑皮諾。"
+      },
+      {
+        "id": "q6",
+        "question": "哪個產區被稱為「金丘的性價比之選」，價格比金丘便宜30-50%？",
+        "type": "single-choice",
+        "options": [
+          "夏布利",
+          "夏隆內丘",
+          "馬貢內",
+          "薄酒萊"
+        ],
+        "correctAnswer": 1,
+        "explanation": "夏隆內丘位於伯恩丘南端，風土相似但名氣較小，因此價格更親民，性價比極高。"
+      },
+      {
+        "id": "q7",
+        "question": "薄酒萊共有多少個特級村（Crus）？",
+        "type": "single-choice",
+        "options": [
+          "5個",
+          "7個",
+          "10個",
+          "12個"
+        ],
+        "correctAnswer": 2,
+        "explanation": "薄酒萊有10個特級村，包括 Morgon、Moulin-à-Vent、Fleurie 等，代表薄酒萊的最高品質。"
+      },
+      {
+        "id": "q8",
+        "question": "Montrachet 是哪種酒的特級園？",
+        "type": "single-choice",
+        "options": [
+          "紅酒",
+          "白酒",
+          "氣泡酒",
+          "甜酒"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Montrachet 是世界最著名的霞多麗白酒特級園，被譽為「白酒之王」。"
+      },
+      {
+        "id": "q9",
+        "question": "夏布利 Grand Cru 有多少個特級園？",
+        "type": "single-choice",
+        "options": [
+          "1個",
+          "4個",
+          "7個",
+          "12個"
+        ],
+        "correctAnswer": 2,
+        "explanation": "夏布利有7個特級園，全部位於 Serein 河右岸的山坡上。"
+      },
+      {
+        "id": "q10",
+        "question": "哪個村莊被稱為「伯恩丘最優雅的紅酒」，風格絲滑細膩？",
+        "type": "single-choice",
+        "options": [
+          "Pommard",
+          "Volnay",
+          "Beaune",
+          "Santenay"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Volnay 以絲滑細膩、花香四溢的優雅紅酒聞名，與鄰近 Pommard 的強勁風格形成對比。"
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "name": "Mâconnais",
+  "description": "馬貢內（Mâconnais）位於布根地南部，是一個以白酒為主的產區。這裡的葡萄酒通常價格親民，性價比高，以清新果香和礦物質風味著稱。",
+  "area": "約 6,800 公頃",
+  "altitude": "200-500m",
+  "exposition": "東、東南",
+  "grapeVarieties": [
+    "Chardonnay",
+    "Gamay",
+    "Pinot Noir"
+  ],
+  "wineTypes": [
+    "白酒",
+    "紅酒"
+  ],
+  "climate": "大陸性氣候，比北部稍溫暖，受到地中海氣候的輕微影響。",
+  "soilStructure": "石灰岩、泥灰岩、花崗岩的混合土壤，多樣化的地質為葡萄酒帶來豐富的風味。",
+  "wineStyle": "白酒：清新活潑、果香濃郁，帶有礦物感。紅酒：輕盈易飲、果味豐富。",
+  "tastingNotes": "白酒：檸檬、青蘋果、榛果、礦物質。紅酒：紅櫻桃、草莓。",
+  "agingPotential": "白酒：2-5年（Pouilly-Fuissé 可達 8-10年），紅酒：2-4年",
+  "famousWineries": [
+    "Domaine de la Bongran",
+    "Domaine Ferret",
+    "Château de Fuissé",
+    "Domaine J.A. Ferret",
+    "Domaine Saumaize-Michelin"
+  ],
+  "grandCrus": [],
+  "premierCrus": [],
+  "villages": [
+    "Pouilly-Fuissé",
+    "Pouilly-Loché",
+    "Pouilly-Vinzelles",
+    "Saint-Véran",
+    "Viré-Clessé",
+    "Mâcon-Villages"
+  ],
+  "highlights": [
+    "Pouilly-Fuissé：馬貢內最知名的村莊級AOC，以優質白酒聞名",
+    "Saint-Véran：性價比極高的白酒產區",
+    "Viré-Clessé：2002年升級為村莊級AOC，品質優異"
+  ],
+  "geojson": {
+    "regional": {
+      "aoc-macon": {
+        "name": "AOC Mâcon",
+        "fullName": "AOC Mâcon",
+        "classification": "Régionale",
+        "area": "約 2,500 公頃",
+        "altitude": "200-400m",
+        "exposition": "東、東南",
+        "soil": "石灰岩和黏土",
+        "grapes": ["Chardonnay", "Gamay", "Pinot Noir"],
+        "wineStyle": "白酒：清新易飲、果香直接；紅酒：輕盈柔順",
+        "tastingNotes": "白酒：青蘋果、檸檬、白花；紅酒：紅櫻桃、草莓",
+        "agingPotential": "白酒：1-3年，紅酒：1-2年",
+        "history": "馬貢內最基礎的地區級 AOC，性價比極高",
+        "producers": ["Cave de Lugny", "Cave de Viré", "眾多小型生產者"],
+        "color": "#F5DEB3"
+      },
+      "aoc-macon-villages": {
+        "name": "AOC Mâcon-Villages",
+        "fullName": "AOC Mâcon-Villages",
+        "classification": "Régionale",
+        "area": "約 2,000 公頃",
+        "altitude": "200-450m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩和泥灰岩",
+        "grapes": ["Chardonnay"],
+        "wineStyle": "比 AOC Mâcon 更有深度、礦物感更明顯",
+        "tastingNotes": "白桃、杏仁、白花、礦物質、奶油氣息",
+        "agingPotential": "2-5年",
+        "history": "僅限白酒，涵蓋26個村莊，可標註村莊名稱（如 Mâcon-Lugny）",
+        "producers": ["Domaine de la Bongran", "Domaine Guillot-Broux", "Domaine Saumaize-Michelin"],
+        "color": "#DEB887"
+      },
+      "aoc-pouilly-fuisse": {
+        "name": "AOC Pouilly-Fuissé",
+        "fullName": "AOC Pouilly-Fuissé",
+        "classification": "Village",
+        "area": "約 760 公頃",
+        "altitude": "200-450m",
+        "exposition": "東、東南、南",
+        "soil": "侏羅紀石灰岩和泥灰岩，含有豐富化石",
+        "grapes": ["Chardonnay"],
+        "wineStyle": "豐滿圓潤、結構良好、礦物質豐富、陳年潛力佳",
+        "tastingNotes": "白桃、榛果、奶油、烤麵包、蜂蜜、礦物質",
+        "agingPotential": "5-10年（頂級園可達15年）",
+        "history": "馬貢內最知名的 AOC，2020年開始引入22個一級園制度",
+        "producers": ["Château de Fuissé", "Domaine Ferret", "Domaine J.A. Ferret", "Domaine Saumaize-Michelin"],
+        "color": "#D2B48C"
+      },
+      "aoc-pouilly-loche": {
+        "name": "AOC Pouilly-Loché",
+        "fullName": "AOC Pouilly-Loché",
+        "classification": "Village",
+        "area": "約 35 公頃",
+        "altitude": "250-400m",
+        "exposition": "東、東南",
+        "soil": "石灰岩和泥灰岩",
+        "grapes": ["Chardonnay"],
+        "wineStyle": "清新優雅、礦物感明顯、風格較為細膩",
+        "tastingNotes": "柑橘、白花、礦物質、檸檬皮",
+        "agingPotential": "3-6年",
+        "history": "小而精的 AOC，與 Pouilly-Fuissé 相鄰，風格相似但更為親民",
+        "producers": ["Cave de Viré", "Domaine des Poncétys", "本地小型生產者"],
+        "color": "#DAA520"
+      },
+      "aoc-pouilly-vinzelles": {
+        "name": "AOC Pouilly-Vinzelles",
+        "fullName": "AOC Pouilly-Vinzelles",
+        "classification": "Village",
+        "area": "約 55 公頃",
+        "altitude": "250-400m",
+        "exposition": "東、東南",
+        "soil": "石灰岩和泥灰岩，含砂質土",
+        "grapes": ["Chardonnay"],
+        "wineStyle": "平衡優雅、果香豐富、酸度活潑",
+        "tastingNotes": "青蘋果、檸檬、白桃、礦物質、花香",
+        "agingPotential": "3-7年",
+        "history": "與 Pouilly-Loché 類似，小面積精品 AOC，性價比高",
+        "producers": ["Cave de Viré", "Domaine Mathias", "Château de Vinzelles"],
+        "color": "#F0E68C"
+      },
+      "aoc-saint-veran": {
+        "name": "AOC Saint-Véran",
+        "fullName": "AOC Saint-Véran",
+        "classification": "Village",
+        "area": "約 700 公頃",
+        "altitude": "200-450m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩和黏土混合",
+        "grapes": ["Chardonnay"],
+        "wineStyle": "清新活潑、果味豐富、礦物感明顯、性價比極高",
+        "tastingNotes": "檸檬、青蘋果、榛果、白花、礦物質",
+        "agingPotential": "3-6年",
+        "history": "1971年獲得 AOC 認證，環繞 Pouilly-Fuissé，是性價比最高的馬貢內白酒",
+        "producers": ["Domaine des Deux Roches", "Domaine de la Croix Senaillet", "Domaine Saumaize-Michelin"],
+        "color": "#FFF8DC"
+      },
+      "aoc-vire-clesse": {
+        "name": "AOC Viré-Clessé",
+        "fullName": "AOC Viré-Clessé",
+        "classification": "Village",
+        "area": "約 400 公頃",
+        "altitude": "200-400m",
+        "exposition": "東、東南",
+        "soil": "石灰岩和泥灰岩，富含化石",
+        "grapes": ["Chardonnay"],
+        "wineStyle": "豐滿圓潤、奶油質感、結構良好、陳年潛力佳",
+        "tastingNotes": "白桃、杏仁、蜂蜜、烤榛果、奶油、礦物質",
+        "agingPotential": "4-8年（特級可達12年）",
+        "history": "2002年獲得村莊級 AOC，由 Viré 和 Clessé 兩村合併，以豐滿風格和陳年潛力著稱",
+        "producers": ["Domaine de la Bongran", "Domaine Thévenet", "Cave de Viré"],
+        "color": "#FFE4B5"
+      }
+    }
+  }
+}

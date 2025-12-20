@@ -1,0 +1,55 @@
+{
+  "village": {
+    "flagey-echezeaux": {
+      "name": "Flagey-Echézeaux",
+      "fullName": "Flagey-Echézeaux",
+      "classification": "Village",
+      "area": "約 30 ha",
+      "altitude": "250-360m",
+      "exposition": "南東向",
+      "soil": "石灰岩與粘土，坡向良好",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "深沉、礦物感強、結構良好",
+      "tastingNotes": "黑莓、香料、皮革、礦物質",
+      "agingPotential": "12-25年",
+      "history": "Flagey-Echézeaux 與 Echézeaux / Grands-Echezeaux 聯繫密切，周邊有多個頂級園",
+      "producers": [],
+      "color": "#8B4513"
+    }
+  },
+  "Grand Crus": {
+    "grands-echezeaux-overview": {
+      "name": "Grands Echézeaux",
+      "fullName": "AOC Grands-Echezeaux Grand Cru",
+      "classification": "Grand Cru",
+      "area": "數個小園合集",
+      "altitude": "260-380m",
+      "exposition": "東南向",
+      "soil": "石灰岩與特殊礫石層",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "重量級、極佳的陳年能力",
+      "tastingNotes": "深色水果、礦物、皮革與香料",
+      "agingPotential": "20-40年",
+      "history": "包含 Echézeaux 與 Grands-Echezeaux 的區域，擁有多家著名酒莊",
+      "producers": [],
+      "color": "#6B4226"
+    }
+    ,
+    "aoc-echezeaux-grand-cru": {
+      "name": "Echézeaux",
+      "fullName": "AOC Echezeaux Grand Cru",
+      "classification": "Grand Cru",
+      "area": "多個小園合計",
+      "altitude": "260-380m",
+      "exposition": "東南向",
+      "soil": "石灰岩與礫石層，土壤複雜多樣",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "豐富且層次分明，適合長期陳年",
+      "tastingNotes": "黑櫻桃、黑莓、香料、礦物質、皮革",
+      "agingPotential": "20-40年",
+      "history": "Echézeaux 與 Grands-Echezeaux 鄰近，為布根地重要的 Grand Cru 區域",
+      "producers": [],
+      "color": "#5C3317"
+    }
+  }
+}

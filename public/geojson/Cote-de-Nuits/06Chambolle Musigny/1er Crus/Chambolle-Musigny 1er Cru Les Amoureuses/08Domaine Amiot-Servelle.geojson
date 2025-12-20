@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "08Domaine Amiot-Servelle",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "Domaine Amiot-Servelle", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.957087506175926, 47.180687944214988, 0.0 ], [ 4.957819350427267, 47.180416262233663, 0.0 ], [ 4.957863753307279, 47.180453185923909, 0.0 ], [ 4.958242705126443, 47.180342678746207, 0.0 ], [ 4.95830299389552, 47.180383535415757, 0.0 ], [ 4.9584281942549, 47.180354498629328, 0.0 ], [ 4.958561516309636, 47.180583833603109, 0.0 ], [ 4.957294242297907, 47.181034081133937, 0.0 ], [ 4.957087506175926, 47.180687944214988, 0.0 ] ] ] } }
+]
+}

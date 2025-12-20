@@ -1,0 +1,483 @@
+{
+  "moduleId": "advanced-m4",
+  "title": "土壤地質科學",
+  "description": "深入理解侏羅紀地質、Kimmeridgian與Portlandian土壤差異",
+  "lessons": [
+    {
+      "id": "m4-l1",
+      "title": "侏羅紀地質年代解析",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "侏羅紀地質年代解析",
+          "subtitle": "Lesson 1 - 18分鐘",
+          "description": "理解布根地土壤形成的地質歷史"
+        },
+        {
+          "type": "content",
+          "title": "2億年前的海洋",
+          "content": "布根地的土壤主要形成於侏羅紀時期（2億-1.45億年前）。當時這片土地是溫暖的淺海，海洋生物（珊瑚、貝類、浮游生物）的遺骸層層堆積，經過數百萬年的壓縮和化學變化，形成了今日的石灰岩、泥灰岩和黏土。這些古老岩石的微小差異，造就了今日葡萄酒的風格差異。"
+        },
+        {
+          "type": "list",
+          "title": "🌍 侏羅紀時期的布根地",
+          "points": [
+            "早侏羅紀（2-1.75億年前）：深海環境，形成深色頁岩",
+            "中侏羅紀（1.75-1.6億年前）：淺海環境，富含鐵質",
+            "晚侏羅紀（1.6-1.45億年前）：最重要時期，形成Kimmeridgian層",
+            "海洋生物沉積：牡蠣、珊瑚、海膽化石豐富",
+            "板塊運動：隆起形成今日的坡地地形"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "Kimmeridgian vs Portlandian",
+          "content": "夏布利最重要的兩種土壤類型都形成於侏羅紀晚期：Kimmeridgian（約1.55億年前）和Portlandian（約1.5億年前）。僅僅500萬年的差異，卻造就了截然不同的土壤組成和葡萄酒風格。"
+        },
+        {
+          "type": "comparison",
+          "title": "Kimmeridgian vs Portlandian",
+          "leftTitle": "Kimmeridgian土壤",
+          "leftPoints": [
+            "年代：約1.55億年前",
+            "特徵：富含小牡蠣化石（Exogyra virgula）",
+            "質地：泥灰岩為主，灰綠色",
+            "排水性：良好",
+            "代表：夏布利特級園、一級園",
+            "風格：極致礦物感、鹹鮮味"
+          ],
+          "rightTitle": "Portlandian土壤",
+          "rightPoints": [
+            "年代：約1.5億年前",
+            "特徵：較少化石，石灰岩含量高",
+            "質地：較硬的石灰岩",
+            "排水性：極佳",
+            "代表：夏布利Petit Chablis",
+            "風格：較輕盈、果味導向"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🔬 地質對葡萄酒的影響",
+          "points": [
+            "化石含量：釋放礦物質，賦予鹹鮮味",
+            "碳酸鈣含量：影響土壤pH值和排水性",
+            "黏土比例：影響保水能力和酒體厚度",
+            "微量元素：鐵、鎂、鉀等影響香氣和風味",
+            "土壤深度：影響根系深度和水分壓力"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4-l2",
+      "title": "夏布利的Kimmeridgian奇蹟",
+      "duration": "17分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "夏布利的Kimmeridgian奇蹟",
+          "subtitle": "Lesson 2 - 17分鐘",
+          "description": "深入探索夏布利獨特土壤的秘密"
+        },
+        {
+          "type": "content",
+          "title": "Kimmeridgian：夏布利的靈魂",
+          "content": "Kimmeridgian土壤是夏布利特級園和一級園的必要條件。這種土壤得名於英國Dorset郡的Kimmeridge村，同樣的地質層延伸至法國夏布利。富含小牡蠣化石的泥灰岩賦予夏布利白酒無可比擬的礦物感、鹹鮮味和貝殼香氣。"
+        },
+        {
+          "type": "list",
+          "title": "🦪 Kimmeridgian的關鍵特徵",
+          "points": [
+            "小牡蠣化石（Exogyra virgula）：2-3cm大小，極其豐富",
+            "灰綠色泥灰岩：富含有機質和礦物質",
+            "層狀結構：交替的石灰岩和黏土層",
+            "高碳酸鈣含量：約40-60%",
+            "良好排水性：防止根部積水",
+            "涼爽的土壤溫度：延緩成熟，保持酸度"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "七大特級園的位置",
+          "content": "夏布利所有七個特級園都位於Serein河右岸的同一個坡地上，全部建立在Kimmeridgian土壤上。這個朝南偏西南的坡地提供理想的日照和排水條件，是Kimmeridgian土壤發揮最大潛力的位置。"
+        },
+        {
+          "type": "list",
+          "title": "⭐ 夏布利七大特級園",
+          "points": [
+            "Blanchot（12.7ha）- 最北端，最優雅精緻",
+            "Les Clos（26ha）- 最大、最有力量",
+            "Valmur（13.2ha）- 均衡，礦物感強",
+            "Grenouilles（9.4ha）- 最小，細膩",
+            "Vaudésir（14.7ha）- 圓潤豐富",
+            "Les Preuses（11.4ha）- 花香突出",
+            "Bougros（15.9ha）- 最西端，強勁"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "特級園 vs Petit Chablis",
+          "leftTitle": "Grand Cru（特級園）",
+          "leftPoints": [
+            "土壤：Kimmeridgian，富含化石",
+            "坡向：理想的朝南坡地",
+            "海拔：150-200m",
+            "排水：極佳",
+            "風格：濃郁、複雜、礦物感",
+            "陳年：10-30年"
+          ],
+          "rightTitle": "Petit Chablis",
+          "rightPoints": [
+            "土壤：Portlandian，較少化石",
+            "坡向：較不理想的位置",
+            "海拔：200-300m（較高）",
+            "排水：良好但土壤較淺",
+            "風格：輕盈、清爽、果味",
+            "陳年：2-5年"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "品鑑Kimmeridgian的影響",
+          "content": "Kimmeridgian土壤賦予夏布利特有的「石頭味」（goût de pierre à fusil）、牡蠣殼香氣、以及極致的礦物感和鹹鮮味。這些特徵在年輕時已經明顯，經過陳年後會發展出更複雜的碘酒、燧石、濕石頭氣息。這是世界上其他霞多麗產區無法複製的風土密碼。"
+        }
+      ]
+    },
+    {
+      "id": "m4-l3",
+      "title": "夜丘與伯恩丘的土壤差異",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "夜丘與伯恩丘的土壤差異",
+          "subtitle": "Lesson 3 - 18分鐘",
+          "description": "理解紅酒與白酒產區的地質差異"
+        },
+        {
+          "type": "content",
+          "title": "同一條山脈，不同的土壤",
+          "content": "夜丘（Côte de Nuits）和伯恩丘（Côte de Beaune）位於同一條南北走向的山脈，但土壤組成有顯著差異。夜丘以石灰岩混合黏土為主，適合黑皮諾；伯恩丘北段（Corton-Charlemagne）和南段（Meursault-Puligny）以石灰岩為主，適合霞多麗。這些差異源於侏羅紀時期不同的沉積環境。"
+        },
+        {
+          "type": "comparison",
+          "title": "夜丘 vs 伯恩丘土壤",
+          "leftTitle": "夜丘（Côte de Nuits）",
+          "leftPoints": [
+            "主要土壤：石灰岩混合紅黏土",
+            "黏土比例：30-50%",
+            "土壤顏色：紅褐色",
+            "排水性：良好但保水性佳",
+            "適合品種：黑皮諾為主",
+            "酒款風格：強勁、結構、深邃"
+          ],
+          "rightTitle": "伯恩丘（Côte de Beaune）",
+          "rightPoints": [
+            "主要土壤：白色泥灰岩、石灰岩",
+            "黏土比例：20-40%",
+            "土壤顏色：白色、淺灰色",
+            "排水性：極佳",
+            "適合品種：霞多麗、黑皮諾",
+            "酒款風格：優雅、礦物感、平衡"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🍇 不同村莊的土壤特徵",
+          "points": [
+            "Gevrey-Chambertin：黏土混合石礫，鐵質豐富，酒體強勁",
+            "Chambolle-Musigny：薄層石灰岩，排水極佳，優雅細膩",
+            "Vosne-Romanée：完美的石灰岩黏土平衡，溫暖微氣候",
+            "Meursault：白色泥灰岩，反射陽光，白酒濃郁",
+            "Puligny-Montrachet：薄層石灰岩，排水極佳，優雅礦物",
+            "Pommard：深厚紅黏土，保水性好，酒體飽滿"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "鐵質的影響",
+          "content": "夜丘許多地塊的土壤富含鐵質氧化物，這賦予土壤特有的紅褐色。鐵質影響葡萄的香氣發展，經常帶來紅色漿果、玫瑰、以及「血味」的特徵。Clos de Tart、Romanée-Conti等地塊的土壤都富含鐵質，這是其複雜度的來源之一。"
+        },
+        {
+          "type": "list",
+          "title": "💎 Le Montrachet的完美土壤",
+          "points": [
+            "位置：Puligny和Chassagne交界，中坡位置",
+            "土壤深度：僅30-40cm，下層為堅硬石灰岩",
+            "石灰岩含量：約70%，排水極佳",
+            "坡向：完美的東南向",
+            "海拔：約260m",
+            "結果：世界最偉大白酒，礦物感、深度、陳年潛力完美"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4-l4",
+      "title": "微量元素與風味表達",
+      "duration": "16分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "微量元素與風味表達",
+          "subtitle": "Lesson 4 - 16分鐘",
+          "description": "探索土壤化學成分如何影響葡萄酒風味"
+        },
+        {
+          "type": "content",
+          "title": "土壤不只是支撐物",
+          "content": "傳統觀念認為葡萄藤從土壤吸收的礦物質微乎其微，不足以直接影響風味。但最新研究顯示，土壤微量元素（鐵、錳、鋅、銅等）雖然含量極少，卻能顯著影響葡萄的代謝過程、酵素活性、以及風味前驅物的生成。這解釋了為何相同品種在不同土壤上展現截然不同的風味。"
+        },
+        {
+          "type": "list",
+          "title": "🔬 關鍵微量元素的影響",
+          "points": [
+            "鐵（Fe）：影響色素形成，帶來「血味」、礦物感",
+            "錳（Mn）：參與光合作用，影響香氣前驅物",
+            "鋅（Zn）：影響酵素活性，促進香氣發展",
+            "銅（Cu）：抗氧化作用，影響陳年潛力",
+            "鎂（Mg）：葉綠素核心，影響光合效率",
+            "鉀（K）：影響糖分累積和酸度平衡"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "碳酸鈣的關鍵作用",
+          "content": "石灰岩中的碳酸鈣（CaCO3）是布根地土壤最重要的成分之一。高碳酸鈣含量提供良好排水性、調節土壤pH值在理想範圍（7.5-8.5）、促進微生物活性。研究顯示，碳酸鈣含量50-70%的土壤產出最優雅精緻的酒款。"
+        },
+        {
+          "type": "list",
+          "title": "⚗️ 土壤pH值的影響",
+          "points": [
+            "pH 7-7.5（微鹼性）：最理想，Meursault、Puligny常見",
+            "pH 7.5-8（鹼性）：石灰岩含量高，優雅礦物感",
+            "pH 6.5-7（中性）：黏土較多，酒體較飽滿",
+            "pH影響：養分有效性、微生物活性、根系發展",
+            "布根地優勢：鹼性土壤保持高酸度，平衡酒體"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "石灰岩 vs 黏土的化學差異",
+          "leftTitle": "高石灰岩土壤",
+          "leftPoints": [
+            "主要成分：CaCO3 60-80%",
+            "pH值：7.5-8.5",
+            "排水性：極佳",
+            "養分釋放：緩慢穩定",
+            "風味表達：礦物、鹹鮮、緊緻",
+            "代表：Musigny, Montrachet"
+          ],
+          "rightTitle": "高黏土土壤",
+          "rightPoints": [
+            "主要成分：矽酸鹽黏土 40-60%",
+            "pH值：6.5-7.5",
+            "保水性：強",
+            "養分釋放：豐富",
+            "風味表達：果味、飽滿、柔和",
+            "代表：Pommard, Corton"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "土壤微生物的角色",
+          "content": "土壤不是死的礦物質，而是充滿生命的生態系統。每公克土壤含有數十億微生物（細菌、真菌、酵母），它們分解有機質、釋放養分、產生生長激素、甚至影響葡萄的風味前驅物。生物動力法（Biodynamics）特別強調土壤微生物活性，這是Leroy、DRC等頂級酒莊的核心哲學。"
+        }
+      ]
+    },
+    {
+      "id": "m4-l5",
+      "title": "土壤分析與地塊選擇",
+      "duration": "16分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "土壤分析與地塊選擇",
+          "subtitle": "Lesson 5 - 16分鐘",
+          "description": "學習如何評估土壤品質與地塊潛力"
+        },
+        {
+          "type": "content",
+          "title": "專業土壤分析方法",
+          "content": "現代葡萄園管理需要科學的土壤分析。專業分析包括：物理性質（質地、結構、深度）、化學性質（pH、有機質、礦物質）、生物性質（微生物數量、活性）。頂級酒莊通常每5年進行一次完整土壤分析，每年進行基本監測。"
+        },
+        {
+          "type": "list",
+          "title": "🔍 土壤評估的關鍵指標",
+          "points": [
+            "質地：砂、粉砂、黏土的比例（理想：砂質壤土）",
+            "深度：可耕層深度（理想：40-80cm）",
+            "排水性：滲透速率（理想：中等偏快）",
+            "有機質：含量1-3%為佳",
+            "pH值：7-8為理想",
+            "碳酸鈣：50-70%最優",
+            "氮磷鉀：適中水平（過高反而不利品質）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "如何識別潛力地塊？",
+          "content": "識別高潛力地塊需要綜合考慮土壤、地形、氣候。布根地的傳統智慧是：最好的地塊通常在中坡位置、東南向、石灰岩主導的土壤、適度的土層深度（不太深也不太淺）。但也有例外，如Romanée-Conti在坡度較緩的位置，卻因獨特的土壤組成而卓越。"
+        },
+        {
+          "type": "list",
+          "title": "⭐ 頂級地塊的共同特徵",
+          "points": [
+            "完美排水但不過度乾燥",
+            "土壤深度適中（40-60cm），下層為岩石",
+            "石灰岩與黏土的理想比例",
+            "東向或東南向，避免西曬",
+            "中坡位置，避免霜凍和積水",
+            "千年歷史驗證的優秀表現",
+            "周圍有森林或石牆提供微氣候保護"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "上坡 vs 中坡 vs 下坡",
+          "leftTitle": "上坡（Haut）",
+          "leftPoints": [
+            "土壤：淺薄、石灰岩多",
+            "排水：極佳",
+            "水分壓力：高",
+            "風格：優雅、礦物、緊緻",
+            "陳年：長",
+            "例如：Les Amoureuses上段"
+          ],
+          "rightTitle": "下坡（Bas）",
+          "rightPoints": [
+            "土壤：深厚、黏土多",
+            "排水：良好",
+            "水分壓力：低",
+            "風格：飽滿、果味、柔和",
+            "陳年：中等",
+            "例如：Clos de Vougeot下段"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "氣候變遷下的地塊重估",
+          "content": "隨著氣候變暖，過去被認為理想的溫暖地塊現在面臨過熟風險，而涼爽的高海拔或朝北地塊正在重新受到重視。一些生產者開始實驗性種植過去被認為太涼的地塊。未來10-20年，布根地的「理想地塊」定義可能會被改寫。"
+        },
+        {
+          "type": "list",
+          "title": "💡 實用建議",
+          "points": [
+            "參觀葡萄園時觀察土壤顏色（紅褐色vs白色）",
+            "注意坡度和坡向（用指南針確認）",
+            "觀察周圍植被（某些植物指示土壤類型）",
+            "品鑑同一年份不同地塊的酒款進行比較",
+            "閱讀地質圖（BRGM法國地質調查局提供）",
+            "跟隨專業導覽深入理解風土"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "advanced-m4-quiz",
+    "title": "土壤地質科學 - 綜合測驗",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple-choice",
+        "question": "布根地的土壤主要形成於哪個地質時期？",
+        "options": ["白堊紀", "侏羅紀", "三疊紀", "新生代"],
+        "correctAnswer": 1,
+        "explanation": "布根地土壤主要形成於侏羅紀時期（2億-1.45億年前），當時是溫暖的淺海環境。"
+      },
+      {
+        "id": "q2",
+        "type": "multiple-choice",
+        "question": "Kimmeridgian土壤最顯著的特徵是？",
+        "options": [
+          "富含火山灰",
+          "富含小牡蠣化石",
+          "純粹的花崗岩",
+          "高含量有機質"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Kimmeridgian土壤富含小牡蠣化石（Exogyra virgula），這是夏布利特級園的標誌性特徵。"
+      },
+      {
+        "id": "q3",
+        "type": "true-false",
+        "question": "夏布利所有七個特級園都位於Kimmeridgian土壤上。",
+        "correctAnswer": true,
+        "explanation": "夏布利的七個特級園全部位於Serein河右岸的Kimmeridgian土壤上，這是其卓越品質的基礎。"
+      },
+      {
+        "id": "q4",
+        "type": "multiple-choice",
+        "question": "夜丘與伯恩丘土壤的主要差異是？",
+        "options": [
+          "夜丘黏土多，伯恩丘石灰岩多",
+          "夜丘石灰岩多，伯恩丘黏土多",
+          "兩者土壤完全相同",
+          "夜丘是花崗岩"
+        ],
+        "correctAnswer": 0,
+        "explanation": "夜丘以石灰岩混合紅黏土為主（適合黑皮諾），伯恩丘以白色泥灰岩和石灰岩為主（適合霞多麗）。"
+      },
+      {
+        "id": "q5",
+        "type": "multiple-choice",
+        "question": "理想的布根地土壤pH值範圍是？",
+        "options": ["6-6.5", "7-8", "8.5-9", "5.5-6"],
+        "correctAnswer": 1,
+        "explanation": "布根地最理想的土壤pH值在7-8之間（微鹼性），這有助於保持葡萄的高酸度和養分有效性。"
+      },
+      {
+        "id": "q6",
+        "type": "true-false",
+        "question": "土壤中的鐵質含量會影響葡萄酒的香氣發展。",
+        "correctAnswer": true,
+        "explanation": "鐵質影響葡萄的代謝過程和香氣發展，富含鐵質的土壤（如Romanée-Conti）經常帶來「血味」和礦物特徵。"
+      },
+      {
+        "id": "q7",
+        "type": "multiple-choice",
+        "question": "Le Montrachet的土壤深度約為？",
+        "options": ["10-20cm", "30-40cm", "80-100cm", "150cm以上"],
+        "correctAnswer": 1,
+        "explanation": "Le Montrachet的土壤深度僅30-40cm，下層為堅硬石灰岩，這種淺薄土層是其優雅風格的關鍵。"
+      },
+      {
+        "id": "q8",
+        "type": "multiple-choice",
+        "question": "Kimmeridgian和Portlandian土壤的年代差異約為？",
+        "options": ["500萬年", "1000萬年", "5000萬年", "1億年"],
+        "correctAnswer": 0,
+        "explanation": "Kimmeridgian（約1.55億年前）和Portlandian（約1.5億年前）相差約500萬年，但造就了不同的土壤特性。"
+      },
+      {
+        "id": "q9",
+        "type": "true-false",
+        "question": "石灰岩含量越高，酒款通常越優雅精緻。",
+        "correctAnswer": true,
+        "explanation": "高石灰岩含量（50-70%）的土壤排水性極佳，通常產出優雅、礦物感強、酸度高的酒款。"
+      },
+      {
+        "id": "q10",
+        "type": "multiple-choice",
+        "question": "頂級地塊通常位於坡地的哪個位置？",
+        "options": [
+          "上坡（最高處）",
+          "中坡",
+          "下坡（最低處）",
+          "平地"
+        ],
+        "correctAnswer": 1,
+        "explanation": "中坡位置通常最理想，兼具良好排水、適度水分壓力、理想坡向，避免霜凍和積水。"
+      }
+    ]
+  }
+}

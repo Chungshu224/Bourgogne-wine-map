@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "Chambertin 13 Domaine Charlopin",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "Name": "13 Domaine Charlopin", "description": null, "timestamp": null, "begin": null, "end": null, "altitudeMode": null, "tessellate": 1, "extrude": 0, "visibility": -1, "drawOrder": null, "icon": null }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 4.96317375271026, 47.210489263299273, 0.0 ], [ 4.964429694866554, 47.210200425713019, 0.0 ], [ 4.965623972316409, 47.209958310534482, 0.0 ], [ 4.965663075068045, 47.21005462053769, 0.0 ], [ 4.964429203025366, 47.210305399205282, 0.0 ], [ 4.963201664613228, 47.210565742877208, 0.0 ], [ 4.96317375271026, 47.210489263299273, 0.0 ] ] ] } }
+]
+}

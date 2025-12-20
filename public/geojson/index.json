@@ -1,0 +1,56 @@
+{
+  "Chablis": {
+    "files": [
+      "AOC Chablis.geojson",
+      "AOC Petit Chablis.geojson"
+    ],
+    "subfolders": {
+      "Chablis 1er cru": {
+        "files": [
+          "AOC Chablis 1er Cru.geojson",
+          "AOC Chablis 1er Cru Chaume de Talvat.geojson",
+          "AOC Chablis 1er Cru Côte de Jouan.geojson",
+          "AOC Chablis 1er Cru Fourchaume.geojson",
+          "AOC Chablis 1er Cru Les Beauregards.geojson",
+          "AOC Chablis 1er Cru Les Fourneaux.geojson",
+          "AOC Chablis 1er Cru Mont de Milieu.geojson",
+          "AOC Chablis 1er Cru Vaucoupin.geojson",
+          "AOC Chablis 1er Cru Vaugiraut.geojson",
+          "AOC Chablis 1er Cru Vaupulent.geojson",
+          "AOC Chablis 1er Cru Vosgros.geojson"
+          
+        ]
+      },
+      "Chablis Grand Cru": {
+        "files": [
+          "AOC Chablis Grand Cru.geojson",
+          "AOC Chablis Grand Cru Blanchot.geojson",
+          "AOC Chablis Grand Cru Bougros.geojson",
+          "AOC Chablis Grand Cru Grenouilles.geojson",
+          "AOC Chablis Grand Cru Les Clos.geojson",
+          "AOC Chablis Grand Cru Preuses.geojson",
+          "AOC Chablis Grand Cru Valmur.geojson",
+          "AOC Chablis Grand Cru Vaudésir.geojson"
+        ]
+      }
+    }
+  },
+  "AOC Bourgogne": {
+    "files": [
+      "AOC Bourgogne Chitry.geojson",
+      "AOC Bourgogne Côte Saint-Jacques.geojson",
+      "AOC Bourgogne Côtes d'Auxerre.geojson",
+      "AOC Bourgogne Coulanges-la-Vineuse.geojson",
+      "AOC Bourgogne Epineuil.geojson",
+      "AOC Bourgogne Tonnerre.geojson",
+      "AOC Bourgogne Vézelay.geojson"
+    ]
+  },
+  "Grand Auxerrois": {
+    "files": [
+        "AOC Irancy.geojson",
+        "AOC Saint-Bris.geojson",
+        "AOC Vézelay.geojson"
+    ]
+  }
+}

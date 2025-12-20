@@ -1,0 +1,56 @@
+{
+  "name": "Regional AOCs",
+  "description": "Bourgogne 區域級法定產區資訊（Côte Chalonnaise 與 Côtes du Couchois）",
+  "geojson": {
+    "regional": {
+      "bourgogne-cote-chalonnaise": {
+        "name": "Bourgogne Côte Chalonnaise",
+        "file": "AOC Bourgogne Côte Chalonnaise.geojson",
+        "fullName": "AOC Bourgogne Côte Chalonnaise",
+        "classification": "Regional",
+        "area": "約 3,900 公頃",
+        "altitude": "200-400m",
+        "exposition": "東、東南",
+        "soil": "石灰岩、泥灰岩與黏土的混合土壤",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：果香豐富、結構均衡，展現典型勃艮第風格。白酒：清新優雅，礦物感明顯。",
+        "tastingNotes": "紅酒：櫻桃、覆盆子、紫羅蘭、香料。白酒：檸檬、青蘋果、榛果、礦物。",
+        "agingPotential": "紅酒：3-8年，白酒：2-6年",
+        "history": "Côte Chalonnaise 地區的區域級法定產區，涵蓋整個夏隆丘產區，是品嚐勃艮第風格的絕佳入門選擇。",
+        "producers": [
+          "Domaine A. et P. de Villaine",
+          "Maison Antonin Rodet",
+          "Domaine Michel Juillot"
+        ],
+        "color": "#D2B48C"
+      },
+      "bourgogne-cotes-du-couchois": {
+        "name": "Bourgogne Côtes du Couchois",
+        "file": "AOC Bourgogne Côtes du Couchois.geojson",
+        "fullName": "AOC Bourgogne Côtes du Couchois",
+        "classification": "Regional",
+        "area": "約 390 公頃",
+        "altitude": "220-350m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩基底上的棕色石灰質土壤",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：柔順易飲，果香純淨，適合年輕時享用。白酒：清新活潑，帶有花香與礦物質感。",
+        "tastingNotes": "紅酒：紅莓、櫻桃、淡淡的香料。白酒：白花、柑橘、蜂蜜。",
+        "agingPotential": "紅酒：2-5年，白酒：2-4年",
+        "history": "2017年新設立的法定產區，位於 Côte Chalonnaise 南部，代表該地區新興的優質葡萄酒產區。",
+        "producers": [
+          "Domaine des Vignes du Maynes",
+          "Domaine de la Combe aux Jacques",
+          "Cave de Buxy"
+        ],
+        "color": "#EEE8AA"
+      }
+    }
+  }
+}

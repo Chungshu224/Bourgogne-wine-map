@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.805870217921527,47.01453975853737],[4.805541705679037,47.01447660984997],[4.806112707540531,47.01410286425734],[4.8071762402633,47.01341293900623],[4.807228399895873,47.01340871364108],[4.807257301768848,47.01345777371909],[4.807345097036064,47.01356269855115],[4.805870217921527,47.01453975853737]]]},"properties":{"name":"13 Domaine Jean-Luc Joillot","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#aaaa7f","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

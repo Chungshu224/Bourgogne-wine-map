@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.756015043511459,46.96616566290708],[4.757063044289298,46.96590746966896],[4.757934052504512,46.96568028027713],[4.75897339909936,46.9654441435062],[4.759178076685979,46.96554071226878],[4.758265121253467,46.96575911082388],[4.757565154873109,46.96592039986164],[4.757134100301852,46.96602557781008],[4.75608728679939,46.96628032157733],[4.756015043511459,46.96616566290708]]]},"properties":{"name":"25 Domaine Darviot-Perrin","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

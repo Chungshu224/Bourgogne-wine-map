@@ -1,0 +1,276 @@
+{
+  "moduleId": "intermediate-m8",
+  "title": "酒莊與釀酒師",
+  "description": "認識重要酒莊、傳奇釀酒師與現代釀造技術的演變",
+  "lessons": [
+    {
+      "id": "m8-l1",
+      "title": "布根地頂級酒莊",
+      "duration": "22分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "頂級酒莊巡禮",
+          "subtitle": "Lesson 1 - 22分鐘",
+          "description": "認識布根地最重要的酒莊"
+        },
+        {
+          "type": "content",
+          "title": "Domaine de la Romanée-Conti (DRC)",
+          "content": "毫無爭議的世界第一酒莊，擁有羅曼尼康帝、拉塔希等傳奇特級園。年產量僅約6,000箱，平均每瓶售價超過5,000美元。採用生物動力法，釀造工藝精益求精。"
+        },
+        {
+          "type": "list",
+          "title": "👑 DRC擁有的特級園",
+          "points": [
+            "Romanée-Conti（獨家）- 1.8公頃",
+            "La Tâche（獨家）- 6.1公頃",
+            "Romanée-Saint-Vivant - 5.3公頃",
+            "Richebourg - 3.5公頃",
+            "Grands Echézeaux - 3.5公頃",
+            "Echézeaux - 4.7公頃",
+            "Montrachet（白）- 0.67公頃",
+            "Corton（紅）- 近期收購"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "Domaine Leroy",
+          "content": "由Lalou Bize-Leroy創立，生物動力法先驅。產量極低（每公頃僅15-20百升），價格僅次於DRC。風格濃郁、純淨、陳年潛力驚人。"
+        },
+        {
+          "type": "list",
+          "title": "💎 其他頂級名莊",
+          "points": [
+            "Domaine Armand Rousseau - 香貝丹之王",
+            "Domaine Comte Georges de Vogüé - Musigny專家",
+            "Domaine Leflaive - 白酒傳奇，生物動力法",
+            "Domaine Ramonet - 蒙哈榭大師",
+            "Domaine Coche-Dury - 最難買到的默爾索",
+            "Domaine Dujac - 優雅派代表",
+            "Domaine Méo-Camuzet - 現代派經典",
+            "Domaine Hudelot-Noëllat - 性價比之選"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🏰 酒商（Négociant）",
+          "points": [
+            "Joseph Drouhin - 大型優質酒商",
+            "Louis Jadot - 穩定品質保證",
+            "Bouchard Père et Fils - 歷史悠久",
+            "Faiveley - 產區廣泛",
+            "酒商特色：購買葡萄或酒液釀造/調配",
+            "頂級酒商品質不輸酒莊"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m8-l2",
+      "title": "釀造哲學與風格",
+      "duration": "20分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "釀造哲學",
+          "subtitle": "Lesson 2 - 20分鐘",
+          "description": "探索不同釀酒師的理念與風格"
+        },
+        {
+          "type": "comparison",
+          "title": "傳統派 vs 現代派",
+          "leftTitle": "傳統派",
+          "leftPoints": [
+            "整串發酵",
+            "長時間浸皮",
+            "老橡木桶",
+            "不過濾不澄清",
+            "自然酵母",
+            "代表：DRC、Rousseau"
+          ],
+          "rightTitle": "現代派",
+          "leftPoints": [
+            "去梗發酵",
+            "控制萃取",
+            "部分新桶",
+            "輕度過濾",
+            "選育酵母",
+            "代表：Méo-Camuzet"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "生物動力法（Biodynamic）",
+          "content": "基於Rudolf Steiner的農業哲學，視葡萄園為一個整體生態系統。使用天然配方、依月相週期工作、禁用化學物質。代表：Leroy、Leflaive、Comte Armand。"
+        },
+        {
+          "type": "list",
+          "title": "🌿 有機與生物動力法",
+          "points": [
+            "有機種植 - 禁用合成化學物質",
+            "生物動力法 - 有機+宇宙週期+特殊配方",
+            "優點：純淨風土表現、土壤健康、可持續",
+            "挑戰：病害防治難、產量低、成本高",
+            "趨勢：越來越多頂級酒莊採用",
+            "爭議：科學性vs實際效果"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🍇 關鍵釀造選擇",
+          "points": [
+            "整串vs去梗 - 影響單寧與香氣",
+            "冷浸漬 - 萃取果香與顏色",
+            "發酵溫度 - 28-32°C，過高失去優雅",
+            "淋汁vs踩皮 - 萃取方式",
+            "新桶比例 - 0-100%，影響風格",
+            "陳年時間 - 12-24個月不等",
+            "過濾澄清 - 影響質地與風味"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "風土 vs 釀造技術",
+          "content": "頂級釀酒師的共識：釀造是為了表現風土，而非掩蓋風土。最好的酒是在酒窖中干預最少的酒。技術服務於風土表現，而非炫技。"
+        }
+      ]
+    },
+    {
+      "id": "m8-l3",
+      "title": "新興酒莊與未來趨勢",
+      "duration": "23分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "新興勢力",
+          "subtitle": "Lesson 3 - 23分鐘",
+          "description": "探索布根地的新生代與未來走向"
+        },
+        {
+          "type": "content",
+          "title": "新生代釀酒師",
+          "content": "過去20年，許多年輕釀酒師回歸家族酒莊或創立新品牌，帶來新理念與活力。他們接受過正規釀酒教育，同時尊重傳統，創造出新舊融合的風格。"
+        },
+        {
+          "type": "list",
+          "title": "🌟 值得關注的新興酒莊",
+          "points": [
+            "Domaine Sylvain Cathiard - 馮內-羅曼尼新星",
+            "Domaine Thibault Liger-Belair - 年輕才俊",
+            "Domaine David Duband - 性價比之王",
+            "Domaine Arnaud Mortet - 傳承父業",
+            "Domaine Benjamin Leroux - 酒商轉酒莊",
+            "Domaine Alex Gambal - 美國人在布根地",
+            "特色：品質高、價格相對親民、值得投資"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🔮 未來趨勢",
+          "points": [
+            "氣候變遷應對 - 調整種植與釀造",
+            "可持續發展 - 有機、生物動力法普及",
+            "精準釀造 - 科技輔助但不主導",
+            "地塊細分 - 更精細的風土研究",
+            "國際化 - 外資與外國釀酒師進入",
+            "價格分化 - 頂級酒更貴、性價比酒興起",
+            "新產區開發 - Côte Chalonnaise受重視"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💰 投資建議",
+          "points": [
+            "經典名莊 - 保值穩定（DRC、Leroy）",
+            "新興酒莊 - 升值潛力大",
+            "被低估產區 - 夏隆丘、馬貢",
+            "優質酒商 - 流動性好、價格合理",
+            "策略：70%經典+30%新興",
+            "長期持有：至少10-15年"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "如何發現好酒莊？",
+          "content": "參考酒評家評分（但不盲從）；關注專業媒體報導；參加品酒會親自品嚐；訪問產區與酒莊；加入品酒社群交流；建立自己的品味標準。最重要的是：喝你喜歡的，而非別人說好的。"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "title": "酒莊與釀酒測驗",
+    "description": "測試您對布根地酒莊的了解",
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "DRC獨家擁有的兩個特級園是？",
+        "type": "single",
+        "options": [
+          "Romanée-Conti & Richebourg",
+          "Romanée-Conti & La Tâche",
+          "La Tâche & Montrachet",
+          "Romanée & La Tâche"
+        ],
+        "correctAnswer": 1,
+        "explanation": "DRC獨家擁有（Monopole）的是Romanée-Conti和La Tâche兩個特級園。"
+      },
+      {
+        "id": "q2",
+        "question": "生物動力法的先驅酒莊是？",
+        "type": "single",
+        "options": [
+          "DRC",
+          "Domaine Leroy",
+          "Armand Rousseau",
+          "Méo-Camuzet"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Domaine Leroy由Lalou Bize-Leroy創立，是生物動力法的先驅之一。"
+      },
+      {
+        "id": "q3",
+        "question": "傳統派釀造最典型的特徵是？",
+        "type": "single",
+        "options": [
+          "去梗發酵",
+          "整串發酵",
+          "100%新桶",
+          "低溫發酵"
+        ],
+        "correctAnswer": 1,
+        "explanation": "傳統派通常採用整串發酵（不去梗），使用老橡木桶，強調自然釀造。"
+      },
+      {
+        "id": "q4",
+        "question": "Négociant（酒商）的主要特點是？",
+        "type": "single",
+        "options": [
+          "只擁有葡萄園",
+          "購買葡萄或酒液釀造",
+          "只做批發不釀酒",
+          "只生產白酒"
+        ],
+        "correctAnswer": 1,
+        "explanation": "酒商（Négociant）的特點是購買葡萄或酒液進行釀造和調配，而非只使用自有葡萄園。"
+      },
+      {
+        "id": "q5",
+        "question": "布根地未來最重要的趨勢是？",
+        "type": "single",
+        "options": [
+          "大規模機械化",
+          "可持續與有機種植",
+          "完全工業化生產",
+          "放棄傳統釀造"
+        ],
+        "correctAnswer": 1,
+        "explanation": "可持續發展、有機和生物動力法種植是布根地未來最重要的趨勢。"
+      }
+    ]
+  }
+}

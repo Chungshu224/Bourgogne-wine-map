@@ -1,0 +1,1012 @@
+{
+  "name": "Montagny",
+  "description": "關於 Montagny 的描述... Montagny 是 Côte Chalonnaise 一個只生產夏多內白酒的產區。",
+  "area": "約 320 公頃",
+  "altitude": "270-400m",
+  "exposition": "東、東南",
+  "grapeVarieties": [
+    "Chardonnay"
+  ],
+  "wineTypes": [
+    "白酒"
+  ],
+  "climate": "較為涼爽，海拔較高，有利於保持酸度。",
+  "soilStructure": "主要是石灰岩和泥灰岩，非常適合夏多內。",
+  "wineStyle": "活潑、清新，帶有明顯的礦物感和良好的結構。",
+  "tastingNotes": "檸檬、白花、燧石、有時帶有榛果的香氣。",
+  "agingPotential": "3-10年",
+  "famousWineries": [
+    "Domaine Stéphane Aladame",
+    "Maison Louis Latour",
+    "Domaine des Vignes du Soleil"
+  ],
+  "grandCrus": [],
+  "premierCrus": [
+    "Les Coères",
+    "Le Mont-Laurent",
+    "Les Jardins"
+  ],
+  "history": "Montagny 的葡萄園歷史悠久，自中世紀以來就以其白酒而聞名。",
+  "geojson": {
+    "village": {
+      "montagny": {
+        "name": "Montagny",
+        "file": "AOC Montagny.geojson",
+        "fullName": "AOC Montagny",
+        "classification": "Village",
+        "area": "約 120 公頃",
+        "altitude": "270-400m",
+        "exposition": "東、東南",
+        "soil": "石灰岩和粘土",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "清新、直接，帶有柑橘和礦物風味。",
+        "tastingNotes": "青蘋果、檸檬。",
+        "agingPotential": "2-5年",
+        "history": "Montagny 村莊級葡萄酒是該產區的基礎。",
+        "producers": [
+          "Maison Louis Latour",
+          "Cave de Buxy"
+        ],
+        "color": "#FFFFF0"
+      }
+    },
+    "premier_crus": {
+      "overview": {
+        "name": "Montagny 1er Cru",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru.geojson",
+        "fullName": "AOC Montagny 1er Cru",
+        "classification": "1er Cru",
+        "area": "約 200 公頃",
+        "altitude": "280-400m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度更陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "更為豐富、複雜和集中，具有顯著的礦物核心和陳年潛力。",
+        "tastingNotes": "白桃、杏仁、蜂蜜、燧石。",
+        "agingPotential": "5-12年",
+        "history": "Montagny 的一級園比例非常高，是該產區品質的保證。",
+        "producers": [
+          "Domaine Stéphane Aladame",
+          "Domaine Feuillat-Juillot"
+        ],
+        "color": "#B22222"
+      },
+      "champ-toizeau": {
+        "name": "Champ Toizeau",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Champ Toizeau.geojson",
+        "fullName": "AOC Montagny 1er Cru Champ Toizeau",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "chazelle": {
+        "name": "Chazelle",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Chazelle.geojson",
+        "fullName": "AOC Montagny 1er Cru Chazelle",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "cornevent": {
+        "name": "Cornevent",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Cornevent.geojson",
+        "fullName": "AOC Montagny 1er Cru Cornevent",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "creux-de-beaux-champs": {
+        "name": "Creux de Beaux Champs",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Creux de Beaux Champs.geojson",
+        "fullName": "AOC Montagny 1er Cru Creux de Beaux Champs",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "lepaule": {
+        "name": "L'Epaule",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru L'Epaule.geojson",
+        "fullName": "AOC Montagny 1er Cru L'Epaule",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-condemine-du-vieux-chateau": {
+        "name": "La Condemine du Vieux Château",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru La Condemine du Vieux Château.geojson",
+        "fullName": "AOC Montagny 1er Cru La Condemine du Vieux Château",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-grande-piece": {
+        "name": "La Grande Pièce",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru La Grande Pièce.geojson",
+        "fullName": "AOC Montagny 1er Cru La Grande Pièce",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-moulliere": {
+        "name": "La Moullière",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru La Moullière.geojson",
+        "fullName": "AOC Montagny 1er Cru La Moullière",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-clos-chaudron": {
+        "name": "Le Clos Chaudron",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Le Clos Chaudron.geojson",
+        "fullName": "AOC Montagny 1er Cru Le Clos Chaudron",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-cloux": {
+        "name": "Le Cloux",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Le Cloux.geojson",
+        "fullName": "AOC Montagny 1er Cru Le Cloux",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-clouzot": {
+        "name": "Le Clouzot",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Le Clouzot.geojson",
+        "fullName": "AOC Montagny 1er Cru Le Clouzot",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-vieux-chateau": {
+        "name": "Le Vieux Château",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Le Vieux Château.geojson",
+        "fullName": "AOC Montagny 1er Cru Le Vieux Château",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-bassets": {
+        "name": "Les Bassets",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Bassets.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Bassets",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-beaux-champs": {
+        "name": "Les Beaux Champs",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Beaux Champs.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Beaux Champs",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-bonneveaux": {
+        "name": "Les Bonneveaux",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Bonneveaux.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Bonneveaux",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-bordes": {
+        "name": "Les Bordes",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Bordes.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Bordes",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-bouchots": {
+        "name": "Les Bouchots",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Bouchots.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Bouchots",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-burnins": {
+        "name": "Les Burnins",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Burnins.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Burnins",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-chaniots": {
+        "name": "Les Chaniots",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Chaniots.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Chaniots",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-chaumelottes": {
+        "name": "Les Chaumelottes",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Chaumelottes.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Chaumelottes",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-coeres": {
+        "name": "Les Coères",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Coères.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Coères",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-combes": {
+        "name": "Les Combes",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Combes.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Combes",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-coudrettes": {
+        "name": "Les Coudrettes",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Coudrettes.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Coudrettes",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-craboulettes": {
+        "name": "Les Craboulettes",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Craboulettes.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Craboulettes",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-garcheres": {
+        "name": "Les Garchères",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Garchères.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Garchères",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-gouresses": {
+        "name": "Les Gouresses",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Gouresses.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Gouresses",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-jardins": {
+        "name": "Les Jardins",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Jardins.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Jardins",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-las": {
+        "name": "Les Las",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Las.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Las",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-macles": {
+        "name": "Les Macles",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Macles.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Macles",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-maroques": {
+        "name": "Les Maroques",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Maroques.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Maroques",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-paquiers": {
+        "name": "Les Paquiers",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Paquiers.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Paquiers",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-perrieres": {
+        "name": "Les Perrières",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Perrières.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Perrières",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-pidances": {
+        "name": "Les Pidances",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Pidances.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Pidances",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-platieres": {
+        "name": "Les Platières",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Platières.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Platières",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-resses": {
+        "name": "Les Resses",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Resses.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Resses",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-treufferes": {
+        "name": "Les Treuffères",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Treuffères.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Treuffères",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-vignes-derriere": {
+        "name": "Les Vignes Derrière",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Vignes Derrière.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Vignes Derrière",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-vignes-des-pres": {
+        "name": "Les Vignes des Prés",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Vignes des Prés.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Vignes des Prés",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-vignes-longues": {
+        "name": "Les Vignes longues",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Les Vignes longues.geojson",
+        "fullName": "AOC Montagny 1er Cru Les Vignes longues",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "mont-laurent": {
+        "name": "Mont Laurent",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Mont Laurent.geojson",
+        "fullName": "AOC Montagny 1er Cru Mont Laurent",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "montcuchot": {
+        "name": "Montcuchot",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Montcuchot.geojson",
+        "fullName": "AOC Montagny 1er Cru Montcuchot",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "montorge": {
+        "name": "Montorge",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Montorge.geojson",
+        "fullName": "AOC Montagny 1er Cru Montorge",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "saint-ytages": {
+        "name": "Saint Ytages",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Saint-Ytages.geojson",
+        "fullName": "AOC Montagny 1er Cru Saint Ytages",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "sainte-morille": {
+        "name": "Sainte Morille",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Sainte-Morille.geojson",
+        "fullName": "AOC Montagny 1er Cru Sainte Morille",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "sous-les-feilles": {
+        "name": "Sous les Feilles",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Sous les Feilles.geojson",
+        "fullName": "AOC Montagny 1er Cru Sous les Feilles",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "vigne-du-soleil": {
+        "name": "Vigne du soleil",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Vigne du soleil.geojson",
+        "fullName": "AOC Montagny 1er Cru Vigne du soleil",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "vignes-couland": {
+        "name": "Vignes Couland",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Vignes Couland.geojson",
+        "fullName": "AOC Montagny 1er Cru Vignes Couland",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "vignes-saint-pierre": {
+        "name": "Vignes Saint Pierre",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Vignes Saint-Pierre.geojson",
+        "fullName": "AOC Montagny 1er Cru Vignes Saint Pierre",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "vignes-sur-le-cloux": {
+        "name": "Vignes sur le Cloux",
+        "file": "Montagny 1er Cru/AOC Montagny 1er Cru Vignes sur le Cloux.geojson",
+        "fullName": "AOC Montagny 1er Cru Vignes sur le Cloux",
+        "classification": "1er Cru",
+        "area": "約 1.5-3 公頃",
+        "altitude": "280-380m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapes": [
+          "Chardonnay"
+        ],
+        "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
+        "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
+        "agingPotential": "5-12年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      }
+    },
+    "grand_crus": {}
+  }
+}

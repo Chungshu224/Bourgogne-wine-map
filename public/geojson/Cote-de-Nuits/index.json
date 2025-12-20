@@ -1,0 +1,288 @@
+{
+  "01Marsannay": {
+    "files": [
+      "AOC Marsannay (Chenôve).geojson",
+      "AOC Marsannay (Couchey).geojson",
+      "AOC Marsannay (Marsannay-la-côte).geojson"
+    ],
+    "subfolders": {}
+  },
+  "02Fixin": {
+    "files": [
+      "AOC Fixin (Fixin).geojson"
+    ],
+    "subfolders": {
+      "1er Crus": {
+        "files": [
+          "AOC Fixin 1er Cru Clos de la Perrière.geojson",
+          "AOC Fixin 1er Cru Clos du Chapitre.geojson",
+          "AOC Fixin 1er Cru Clos Napoléon.geojson",
+          "AOC Fixin 1er Cru Les Arvelets.geojson",
+          "AOC Fixin 1er Cru Les Hervelets.geojson",
+          "AOC Fixin 1er Cru Les Meix Bas.geojson",
+          "AOC Fixin 1er Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  },
+  "03Brochon": {
+    "files": [
+      "AOC Fixin (Brochon).geojson",
+      "AOC Gevrey-Chambertin (Brochon).geojson",
+      "Brochon.geojson"
+    ],
+    "subfolders": {}
+  },
+  "04Gevrey Chambertin": {
+    "files": [
+      "AOC Gevrey-Chambertin (Gevrey-Chambertin).geojson"
+    ],
+    "subfolders": {
+      "1er Crus": {
+        "files": [
+          "AOC Gevrey-Chambertin 1er Cru Bel Air.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Champeaux.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Champonnet.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Cherbaudes.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Clos des Varoilles.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Clos du Chapitre.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Clos Prieur.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Clos Saint-Jacques.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Combe au Moine.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Craipillot.geojson",
+          "AOC Gevrey-Chambertin 1er Cru En Ergot.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Estournelles-Saint-Jacques.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Fonteny.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Issarts.geojson",
+          "AOC Gevrey-Chambertin 1er Cru La Bossière.geojson",
+          "AOC Gevrey-Chambertin 1er Cru La Perrière.geojson",
+          "AOC Gevrey-Chambertin 1er Cru La Romanée.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Lavaut Saint-Jacques.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Les Cazetiers.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Les Goulots.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Petite Chapelle.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Petits Cazetiers.geojson",
+          "AOC Gevrey-Chambertin 1er Cru Poissenot.geojson",
+          "AOC Gevrey-Chambertin 1er Cru.geojson"
+        ],
+        "subfolders": {}
+      },
+      "Grand Crus": {
+        "files": [
+          "AOC Chambertin Clos de Bèze Grand Cru.geojson",
+          "AOC Chambertin Grand Cru.geojson",
+          "AOC Chapelle Chambertin Grand Cru.geojson",
+          "AOC Charmes Chambertin Grand Cru.geojson",
+          "AOC Griotte Chambertin Grand Cru.geojson",
+          "AOC Latricières Chambertin Grand Cru.geojson",
+          "AOC Mazis Chambertin Grand Cru.geojson",
+          "AOC Mazoyères Chambertin Grand Cru.geojson",
+          "AOC Ruchottes Chambertin Grand Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  },
+  "05Morey-Saint-Denis": {
+    "files": [
+      "AOC Morey-Saint-Denis.geojson"
+    ],
+    "subfolders": {
+      "1er Crus": {
+        "files": [
+          "AOC Morey-Saint-Denis 1er Cru Aux Charmes.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Aux Cheseaux.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Clos Baulet.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Clos des Ormes.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Clos Sorbè.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Côte Rotie.geojson",
+          "AOC Morey-Saint-Denis 1er Cru La Bussière.geojson",
+          "AOC Morey-Saint-Denis 1er Cru La Riotte.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Le Village.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Blanchards.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Chaffots.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Charrières.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Chenevery.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Faconnières.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Genavrières.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Gruenchers.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Millandes.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Ruchots.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Les Sorbès.geojson",
+          "AOC Morey-Saint-Denis 1er Cru Monts Luisants.geojson",
+          "AOC Morey-Saint-Denis 1er Cru.geojson"
+        ],
+        "subfolders": {}
+      },
+      "Grand Crus": {
+        "files": [
+          "AOC Bonnes Mares Grand Cru.geojson",
+          "AOC Clos de la Roche Grand Cru.geojson",
+          "AOC Clos de Tart Grand Cru.geojson",
+          "AOC Clos des Lambrays Grand Cru.geojson",
+          "AOC Clos Saint-Denis Grand Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  },
+  "06Chambolle Musigny": {
+    "files": [
+      "AOC Chambolle-Musigny.geojson"
+    ],
+    "subfolders": {
+      "1er Crus": {
+        "files": [
+          "AOC Chambolle-Musigny 1er Cru Aux Combottes.geojson",
+          "AOC Chambolle-Musigny 1er Cru Aux Echanges.geojson",
+          "AOC Chambolle-Musigny 1er Cru Derrière la Grange.geojson",
+          "AOC Chambolle-Musigny 1er Cru La Combe d'Orveau.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Amoureuses.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Baudes.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Borniques.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Carrières.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Chabiots.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Charmes.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Chatelots.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Combottes.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Cras.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Feusselottes ou Les Feusselotes.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Fuées.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Groseilles.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Gruenchers.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Hauts Doix.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Lavrottes.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Noirots.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Plantes.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Sentiers.geojson",
+          "AOC Chambolle-Musigny 1er Cru Les Véroilles.geojson",
+          "AOC Chambolle-Musigny 1er Cru.geojson"
+        ],
+        "subfolders": {}
+      },
+      "Grand Crus": {
+        "files": [
+          "AOC Bonnes-Mares Grand Cru.geojson",
+          "AOC Musigny Grand Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  },
+  "07Flagey-Echézeaux": {
+    "files": [
+      "Flagey-Echézeaux.geojson"
+    ],
+    "subfolders": {
+      "Grand Crus": {
+        "files": [
+          "AOC Echezeaux Grand Cru.geojson",
+          "AOC Grands-Echezeaux Grand Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  },
+  "08Vosne-Romanée": {
+    "files": [
+      "AOC Vosne-Romanée.geojson"
+    ],
+    "subfolders": {
+      "1er Crus": {
+        "files": [
+          "AOC Vosne-Romanée 1er Cru Au-dessus des Malconsorts.geojson",
+          "AOC Vosne-Romanée 1er Cru Aux Brûlées.geojson",
+          "AOC Vosne-Romanée 1er Cru Aux Malconsorts.geojson",
+          "AOC Vosne-Romanée 1er Cru Aux Raignots.geojson",
+          "AOC Vosne-Romanée 1er Cru Clos des Réas.geojson",
+          "AOC Vosne-Romanée 1er Cru Cros Parantoux.geojson",
+          "AOC Vosne-Romanée 1er Cru La Croix Rameau.geojson",
+          "AOC Vosne-Romanée 1er Cru Les Beaux Monts.geojson",
+          "AOC Vosne-Romanée 1er Cru Les Chaumes.geojson",
+          "AOC Vosne-Romanée 1er Cru Les Gaudichots.geojson",
+          "AOC Vosne-Romanée 1er Cru Les Petis Monts.geojson",
+          "AOC Vosne-Romanée 1er Cru Les Suchots.geojson",
+          "AOC Vosne-Romanée 1er Cru.geojson"
+        ],
+        "subfolders": {}
+      },
+      "Grand Crus": {
+        "files": [
+          "AOC La Grande Rue Grand Cru.geojson",
+          "AOC La Romanée Grand Cru.geojson",
+          "AOC La Tâche Grand Cru.geojson",
+          "AOC Richebourg Grand Cru.geojson",
+          "AOC Romanée-Conti Grand Cru.geojson",
+          "AOC Romanée-Saint-Vivant Grand Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  },
+  "09Vougeot": {
+    "files": [
+      "AOC Vougeot.geojson"
+    ],
+    "subfolders": {
+      "1er Crus": {
+        "files": [
+          "AOC Vougeot 1er Cru Clos de la Perrière.geojson",
+          "AOC Vougeot 1er Cru Le Clos Blanc.geojson",
+          "AOC Vougeot 1er Cru Les Crâs.geojson",
+          "AOC Vougeot 1er Cru Les Petits Vougeots.geojson",
+          "AOC Vougeot 1er Cru.geojson"
+        ],
+        "subfolders": {}
+      },
+      "Grand Crus": {
+        "files": [
+          "AOC Clos de Vougeot ou Clos Vougeot Grand Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  },
+  "10Nuits-Saint-Georges": {
+    "files": [
+      "AOC Nuits-Saint-Georges.geojson"
+    ],
+    "subfolders": {
+      "1er Crus": {
+        "files": [
+          "AOC Nuits-Saint-Georges 1er Cru Aux Argillas.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Boudots.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Bousselots.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Chaignots.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Champs Perdrix.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Cras.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Murgers.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Thorey.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Aux Vignerondes.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Chaines Carteaux.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Château Gris.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Clos des Porrets-Saint-Georges.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru En la Perrière Noblot.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru La Richemone.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Cailles.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Chabœufs.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Crots.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Damodes.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Hauts Pruliers.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Perrières.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Porrets-Saint-Georges.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Poulettes.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Procès.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Pruliers.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Saints-Georges.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Vallerots.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Les Vaucrains.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Roncière.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru Rue de Chaux.geojson",
+          "AOC Nuits-Saint-Georges 1er Cru.geojson"
+        ],
+        "subfolders": {}
+      }
+    }
+  }
+}

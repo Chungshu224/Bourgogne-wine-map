@@ -1,0 +1,380 @@
+{
+  "moduleId": "module2",
+  "title": "布根地分級制度入門",
+  "description": "了解布根地獨特的四級分級體系，掌握AOC法定產區、村莊級、一級園和特級園的區別",
+  "lessons": [
+    {
+      "id": "lesson1",
+      "title": "AOC法定產區制度",
+      "duration": "15分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "法國AOC（Appellation d'Origine Contrôlée）法定產區制度是保障葡萄酒品質與產地真實性的核心機制。布根地的分級系統建立在這個基礎之上，形成了世界上最精細的風土劃分。",
+        "sections": [
+          {
+            "heading": "什麼是 AOC？",
+            "text": "AOC 是法國在1935年創建的原產地命名保護制度，確保葡萄酒來自特定產區，遵循嚴格的釀造規範。2009年後，AOC 被納入歐盟的 AOP（Appellation d'Origine Protégée）體系，但在法國仍習慣使用 AOC 稱呼。",
+            "keyPoints": [
+              "產地界定：精確劃定葡萄園地理範圍",
+              "品種限制：規定可使用的葡萄品種",
+              "種植規範：最高產量、種植密度、修剪方式",
+              "釀造標準：最低酒精度、陳年時間",
+              "品質檢驗：化學分析與專家盲品雙重把關"
+            ]
+          },
+          {
+            "heading": "布根地的AOC架構",
+            "text": "布根地擁有超過100個AOC產區，從大區級到特級園形成金字塔結構。每一級對葡萄園的要求和允許產量都有嚴格規定，級別越高，標準越嚴格。"
+          }
+        ],
+        "pyramid": {
+          "title": "布根地分級金字塔",
+          "levels": [
+            {
+              "level": 4,
+              "name": "Grands Crus 特級園",
+              "percentage": "1%",
+              "description": "最頂級的33個特級園",
+              "color": "#9C27B0",
+              "maxYield": "35-37 hl/ha"
+            },
+            {
+              "level": 3,
+              "name": "Premiers Crus 一級園",
+              "percentage": "10%",
+              "description": "約640個優質一級園",
+              "color": "#FF9800",
+              "maxYield": "40-48 hl/ha"
+            },
+            {
+              "level": 2,
+              "name": "Villages 村莊級",
+              "percentage": "36%",
+              "description": "44個村莊級產區",
+              "color": "#4CAF50",
+              "maxYield": "40-50 hl/ha"
+            },
+            {
+              "level": 1,
+              "name": "Régionales 大區級",
+              "percentage": "53%",
+              "description": "整個布根地大區",
+              "color": "#2196F3",
+              "maxYield": "55-60 hl/ha"
+            }
+          ]
+        },
+        "summary": "AOC制度保證了布根地葡萄酒的品質與產地真實性，分級金字塔清楚展現了風土的細緻差異。"
+      }
+    },
+    {
+      "id": "lesson2",
+      "title": "四級分級體系詳解",
+      "duration": "20分鐘",
+      "type": "comparison",
+      "content": {
+        "introduction": "布根地的四級分級（大區、村莊、一級園、特級園）不僅是行政劃分，更是對風土（Terroir）的精準詮釋。每一級都有獨特的特徵與價值定位。",
+        "sections": [
+          {
+            "heading": "第一級：大區級 Bourgogne",
+            "text": "佔布根地總產量的53%，是最基礎的分級，葡萄可來自整個布根地大區。雖然是入門級，但優秀生產者釀造的大區酒也具有很高的品質。",
+            "keyPoints": [
+              "酒標標示：Bourgogne Rouge / Blanc",
+              "產區範圍：整個布根地大區約27,000公頃",
+              "允許產量：紅酒55 hl/ha，白酒60 hl/ha",
+              "價格範圍：€10-30/瓶",
+              "典型特色：果味清新、易飲、日常飲用"
+            ],
+            "examples": [
+              "Bourgogne Pinot Noir",
+              "Bourgogne Chardonnay",
+              "Bourgogne Aligoté",
+              "Bourgogne Hautes-Côtes de Nuits"
+            ]
+          },
+          {
+            "heading": "第二級：村莊級 Villages",
+            "text": "葡萄來自特定村莊的範圍內，體現村莊的整體風格。布根地有44個村莊級AOC，每個村莊都有獨特的風土表現。",
+            "keyPoints": [
+              "酒標標示：村莊名稱（如 Gevrey-Chambertin）",
+              "產區範圍：單一村莊行政區",
+              "允許產量：紅酒40-50 hl/ha",
+              "價格範圍：€25-80/瓶",
+              "典型特色：展現村莊特色、均衡度佳"
+            ],
+            "examples": [
+              "Gevrey-Chambertin（果味濃郁、結構強）",
+              "Chambolle-Musigny（優雅細緻、女性化）",
+              "Meursault（奶油質感、榛果香）",
+              "Pommard（強勁有力、需陳年）"
+            ]
+          },
+          {
+            "heading": "第三級：一級園 Premiers Crus",
+            "text": "約640個被認定為特別優質的地塊，通常位於山坡中段的理想位置。酒標必須同時標注村莊名和園名。",
+            "keyPoints": [
+              "酒標標示：村莊名 + Premier Cru + 園名",
+              "產區範圍：經認證的單一葡萄園",
+              "允許產量：紅酒40-48 hl/ha",
+              "價格範圍：€50-300/瓶",
+              "典型特色：複雜度高、陳年潛力強、風土特色明顯"
+            ],
+            "examples": [
+              "Gevrey-Chambertin 1er Cru 'Clos Saint-Jacques'",
+              "Meursault 1er Cru 'Perrières'",
+              "Vosne-Romanée 1er Cru 'Les Suchots'",
+              "Volnay 1er Cru 'Clos des Chênes'"
+            ]
+          },
+          {
+            "heading": "第四級：特級園 Grands Crus",
+            "text": "布根地的巔峰，全區僅有33個特級園（夏布利1個、夜丘24個、伯恩丘8個）。這些園區擁有最理想的風土條件，釀出的酒可陳年數十年。",
+            "keyPoints": [
+              "酒標標示：只標園名，不標村莊（如 Romanée-Conti）",
+              "產區範圍：經認證的頂級葡萄園",
+              "允許產量：紅酒35-37 hl/ha（最嚴格）",
+              "價格範圍：€100-數萬歐元/瓶",
+              "典型特色：極致複雜度、驚人陳年潛力、獨一無二的風土表現"
+            ],
+            "examples": [
+              "Romanée-Conti（世界最貴葡萄酒之一）",
+              "Chambertin（拿破崙最愛）",
+              "Montrachet（白酒之王）",
+              "Clos de Vougeot（最大的特級園，50公頃）"
+            ]
+          }
+        ],
+        "comparisonTable": {
+          "title": "四級分級對比",
+          "headers": ["分級", "產量佔比", "最大產量", "價格範圍", "主要特色"],
+          "rows": [
+            ["大區級", "53%", "55-60 hl/ha", "€10-30", "日常飲用、入門之選"],
+            ["村莊級", "36%", "40-50 hl/ha", "€25-80", "村莊風格、均衡度佳"],
+            ["一級園", "10%", "40-48 hl/ha", "€50-300", "風土特色、陳年潛力"],
+            ["特級園", "1%", "35-37 hl/ha", "€100+", "極致複雜、收藏級"]
+          ]
+        },
+        "tips": [
+          "💡 同村莊的一級園品質可能差異很大，需了解各園區的聲譽",
+          "💡 特級園不一定比優秀生產者的一級園好，釀酒師技術很重要",
+          "💡 村莊級酒是學習布根地風土的性價比之選",
+          "💡 大區級酒也有驚喜之作，尤其是知名酒莊出品"
+        ],
+        "summary": "四級分級體系精準反映了風土差異與葡萄酒的品質層次，但生產者的釀造水平同樣重要。理解這個系統是欣賞布根地葡萄酒的第一步。"
+      }
+    },
+    {
+      "id": "lesson3",
+      "title": "如何閱讀分級標示",
+      "duration": "10分鐘",
+      "type": "interactive",
+      "content": {
+        "introduction": "布根地酒標包含豐富的分級資訊，學會解讀能幫助您快速判斷葡萄酒的等級與來源。以下是實戰解讀技巧。",
+        "sections": [
+          {
+            "heading": "酒標解讀三步驟",
+            "keyPoints": [
+              "第一步：找最大字體（通常是分級重點）",
+              "第二步：查看是否有村莊名",
+              "第三步：確認是否標注 Premier Cru 或 Grand Cru"
+            ]
+          }
+        ],
+        "labelExamples": [
+          {
+            "label": "GEVREY-CHAMBERTIN",
+            "interpretation": "村莊級葡萄酒，來自 Gevrey-Chambertin 村",
+            "level": "Village",
+            "notes": "只有村莊名，無園名 = 村莊級"
+          },
+          {
+            "label": "GEVREY-CHAMBERTIN PREMIER CRU 'Clos Saint-Jacques'",
+            "interpretation": "一級園葡萄酒，來自 Gevrey-Chambertin 村的 Clos Saint-Jacques 一級園",
+            "level": "1er Cru",
+            "notes": "村莊名 + Premier Cru + 園名 = 一級園"
+          },
+          {
+            "label": "CHAMBERTIN GRAND CRU",
+            "interpretation": "特級園葡萄酒，來自 Chambertin 特級園（位於 Gevrey-Chambertin 村）",
+            "level": "Grand Cru",
+            "notes": "只有園名 + Grand Cru，不標村莊名 = 特級園"
+          },
+          {
+            "label": "BOURGOGNE PINOT NOIR",
+            "interpretation": "大區級紅酒，葡萄可來自整個布根地",
+            "level": "Régionale",
+            "notes": "Bourgogne + 品種名 = 大區級"
+          },
+          {
+            "label": "MEURSAULT 1ER CRU",
+            "interpretation": "一級園葡萄酒，來自 Meursault 村的某個一級園（但未指定園名）",
+            "level": "1er Cru",
+            "notes": "有些酒莊混調多個一級園，標示「1er Cru」但不寫園名"
+          }
+        ],
+        "practiceQuiz": {
+          "instructions": "請判斷以下酒標的分級",
+          "questions": [
+            {
+              "label": "VOSNE-ROMANÉE",
+              "answer": "Village 村莊級"
+            },
+            {
+              "label": "ROMANÉE-CONTI",
+              "answer": "Grand Cru 特級園"
+            },
+            {
+              "label": "POMMARD 1ER CRU 'Rugiens'",
+              "answer": "Premier Cru 一級園"
+            },
+            {
+              "label": "BOURGOGNE HAUTES-CÔTES DE NUITS",
+              "answer": "Régionale 大區級"
+            }
+          ]
+        },
+        "tips": [
+          "🔍 特級園酒標最簡潔：只有園名 + Grand Cru",
+          "🔍 一級園一定會標 'Premier Cru' 或 '1er Cru'",
+          "🔍 看到 'Bourgogne' 就是大區級",
+          "🔍 村莊級只標村莊名，無任何園名",
+          "🔍 字體大小不代表分級，要看實際文字內容"
+        ],
+        "summary": "掌握酒標解讀技巧後，您就能在酒架前快速判斷葡萄酒的等級，做出明智的選購決定。"
+      }
+    }
+  ],
+  "quiz": {
+    "passingScore": 60,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "布根地的四級分級體系中，哪一級佔總產量最多？",
+        "type": "single-choice",
+        "options": [
+          "大區級 Régionales",
+          "村莊級 Villages",
+          "一級園 Premiers Crus",
+          "特級園 Grands Crus"
+        ],
+        "correctAnswer": 0,
+        "explanation": "大區級佔布根地總產量的53%，是最基礎也是產量最大的分級。"
+      },
+      {
+        "id": "q2",
+        "question": "特級園（Grand Cru）的酒標上通常會標示什麼？",
+        "type": "single-choice",
+        "options": [
+          "村莊名 + Grand Cru",
+          "只標園名 + Grand Cru",
+          "村莊名 + 園名 + Grand Cru",
+          "Bourgogne + Grand Cru"
+        ],
+        "correctAnswer": 1,
+        "explanation": "特級園的酒標最簡潔，只標注園名和 Grand Cru，不標示村莊名，因為特級園本身就是獨立的 AOC。"
+      },
+      {
+        "id": "q3",
+        "question": "一級園（Premier Cru）允許的最大產量約為多少？",
+        "type": "single-choice",
+        "options": [
+          "30-35 hl/ha",
+          "40-48 hl/ha",
+          "55-60 hl/ha",
+          "沒有限制"
+        ],
+        "correctAnswer": 1,
+        "explanation": "一級園的允許產量為紅酒約 40-48 hl/ha，比特級園（35-37）高，但比大區級（55-60）嚴格得多。"
+      },
+      {
+        "id": "q4",
+        "question": "如果酒標上只標示 'GEVREY-CHAMBERTIN'，這是什麼級別？",
+        "type": "single-choice",
+        "options": [
+          "大區級",
+          "村莊級",
+          "一級園",
+          "特級園"
+        ],
+        "correctAnswer": 1,
+        "explanation": "只標村莊名而無其他標示（如 Premier Cru 或 Grand Cru），即為村莊級葡萄酒。"
+      },
+      {
+        "id": "q5",
+        "question": "AOC 是哪個詞組的縮寫？",
+        "type": "single-choice",
+        "options": [
+          "Appellation d'Origine Contrôlée",
+          "Association of Original Chateaux",
+          "Advanced Organic Certification",
+          "Agricultural Origin Classification"
+        ],
+        "correctAnswer": 0,
+        "explanation": "AOC 是 Appellation d'Origine Contrôlée（法定產區控制命名）的縮寫，是法國葡萄酒的品質保證制度。"
+      },
+      {
+        "id": "q6",
+        "question": "布根地共有多少個特級園（Grands Crus）？",
+        "type": "single-choice",
+        "options": [
+          "10個",
+          "33個",
+          "100個",
+          "640個"
+        ],
+        "correctAnswer": 1,
+        "explanation": "布根地共有 33 個特級園，分佈在夏布利（1個）、夜丘（24個）和伯恩丘（8個）。"
+      },
+      {
+        "id": "q7",
+        "question": "一級園的酒標上一定會出現哪個詞？",
+        "type": "single-choice",
+        "options": [
+          "Bourgogne",
+          "Village",
+          "Premier Cru 或 1er Cru",
+          "Monopole"
+        ],
+        "correctAnswer": 2,
+        "explanation": "一級園酒標必定標示 'Premier Cru' 或其縮寫 '1er Cru'，以區別於村莊級。"
+      },
+      {
+        "id": "q8",
+        "question": "以下哪個是大區級（Régionale）的酒標？",
+        "type": "single-choice",
+        "options": [
+          "Chambertin",
+          "Gevrey-Chambertin",
+          "Bourgogne Pinot Noir",
+          "Meursault 1er Cru"
+        ],
+        "correctAnswer": 2,
+        "explanation": "只要看到 'Bourgogne' 開頭的標示，就是大區級葡萄酒。"
+      },
+      {
+        "id": "q9",
+        "question": "分級金字塔中，特級園佔總產量的多少？",
+        "type": "true-false",
+        "options": [
+          "正確：1%",
+          "錯誤：不是 1%"
+        ],
+        "correctAnswer": 0,
+        "explanation": "特級園只佔布根地總產量的1%，是最稀有珍貴的分級。"
+      },
+      {
+        "id": "q10",
+        "question": "村莊級葡萄酒的價格範圍通常為？",
+        "type": "single-choice",
+        "options": [
+          "€10-20",
+          "€25-80",
+          "€100-500",
+          "€1000以上"
+        ],
+        "correctAnswer": 1,
+        "explanation": "村莊級葡萄酒的典型價格範圍為 €25-80，是學習布根地風土的性價比之選。"
+      }
+    ]
+  }
+}

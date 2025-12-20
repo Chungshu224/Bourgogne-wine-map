@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.759149458877536,46.96425882551907],[4.759243036772829,46.96439977417776],[4.758774487007842,46.96456511734358],[4.758022281666207,46.9648211128688],[4.757824156579611,46.96473442899162],[4.758982107259053,46.96431392799374],[4.759149458877536,46.96425882551907]]]},"properties":{"name":"22 Domaine Guy Bocard","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

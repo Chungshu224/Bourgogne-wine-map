@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.737986140156572,46.94340908755251],[4.740296349476736,46.9426218735052],[4.740354768776474,46.94268459754536],[4.739135982842777,46.94313271922667],[4.739103908252393,46.94308701010137],[4.738035944911192,46.943460432862],[4.737986140156572,46.94340908755251]]]},"properties":{"name":"19 Jean-Marc Boillot","styleUrl":"#m_ylw-pushpin","fill-opacity":0.2,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

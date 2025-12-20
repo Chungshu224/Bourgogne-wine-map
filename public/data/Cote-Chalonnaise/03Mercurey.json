@@ -1,0 +1,726 @@
+{
+  "name": "Mercurey",
+  "description": "關於 Mercurey 的描述... Mercurey 是 Côte Chalonnaise 最著名和最重要的產區，以其高品質的紅酒而聞名。",
+  "area": "約 650 公頃",
+  "altitude": "230-320m",
+  "exposition": "東、東南、南",
+  "grapeVarieties": [
+    "Pinot Noir",
+    "Chardonnay"
+  ],
+  "wineTypes": [
+    "紅酒",
+    "白酒"
+  ],
+  "climate": "多樣的微氣候，受益於山谷的保護。",
+  "soilStructure": "富含鐵質的石灰岩和泥灰岩。",
+  "wineStyle": "紅酒：結構堅實，果味濃郁，帶有泥土氣息。白酒：較為罕見，但品質優良，風格圓潤。",
+  "tastingNotes": "紅酒：櫻桃、草莓、香料、林地氣息。白酒：白桃、杏仁。",
+  "agingPotential": "紅酒：5-15年，白酒：3-8年",
+  "famousWineries": [
+    "Domaine Faiveley",
+    "Château de Chamirey",
+    "Domaine Michel Juillot"
+  ],
+  "grandCrus": [],
+  "premierCrus": [
+    "Clos des Myglands",
+    "Les Naugues",
+    "Clos du Roy"
+  ],
+  "history": "Mercurey 的釀酒歷史可以追溯到羅馬時代，長期以來一直是布根地重要的葡萄酒產區。",
+  "geojson": {
+    "village": {
+      "mercurey": {
+        "name": "Mercurey",
+        "file": "AOC Mercurey.geojson",
+        "fullName": "AOC Mercurey",
+        "classification": "Village",
+        "area": "約 500 公頃",
+        "altitude": "230-320m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩和粘土",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：果味直接，單寧柔和。白酒：清新易飲。",
+        "tastingNotes": "紅酒：紅色水果。白酒：蘋果、柑橘。",
+        "agingPotential": "3-8年",
+        "history": "Mercurey 村莊級是產區產量最大的部分。",
+        "producers": [
+          "Domaine Faiveley",
+          "Maison Louis Jadot"
+        ],
+        "color": "#F0E68C"
+      }
+    },
+    "premier_crus": {
+      "overview": {
+        "name": "Mercurey 1er Cru",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru.geojson",
+        "fullName": "AOC Mercurey 1er Cru",
+        "classification": "1er Cru",
+        "area": "約 150 公頃",
+        "altitude": "240-300m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：更為集中和複雜，具有很好的陳年潛力。白酒：結構感更強，帶有礦物風味。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革。白酒：烤麵包、蜂蜜。",
+        "agingPotential": "紅酒：7-20年，白酒：5-12年",
+        "history": "Mercurey 擁有多達32個一級園，是其品質的象徵。",
+        "producers": [
+          "Domaine Faiveley",
+          "Château de Chamirey",
+          "Domaine Michel Juillot"
+        ],
+        "color": "#B22222"
+      },
+      "clos-de-paradis": {
+        "name": "Clos de Paradis",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos de Paradis.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos de Paradis",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-des-barraults": {
+        "name": "Clos des Barraults",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos des Barraults.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos des Barraults",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-des-grands-voyens": {
+        "name": "Clos des grands Voyens",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos des grands Voyens.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos des grands Voyens",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-des-montaigus": {
+        "name": "Clos des Montaigus",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos des Montaigus.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos des Montaigus",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-des-myglands": {
+        "name": "Clos des Myglands",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos des Myglands.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos des Myglands",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-du-chateau-de-montaigu": {
+        "name": "Clos du Château de Montaigu",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos du Château de Montaigu.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos du Château de Montaigu",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-marcilly": {
+        "name": "Clos Marcilly",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos Marcilly.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos Marcilly",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-tonnerre": {
+        "name": "Clos Tonnerre",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos Tonnerre.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos Tonnerre",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-voyens": {
+        "name": "Clos Voyens",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Clos Voyens.geojson",
+        "fullName": "AOC Mercurey 1er Cru Clos Voyens",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "grand-clos-fortoul": {
+        "name": "Grand Clos Fortoul",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Grand Clos Fortoul.geojson",
+        "fullName": "AOC Mercurey 1er Cru Grand Clos Fortoul",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "grifferes": {
+        "name": "Griffères",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Griffères.geojson",
+        "fullName": "AOC Mercurey 1er Cru Griffères",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-bondue": {
+        "name": "La Bondue",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru La Bondue.geojson",
+        "fullName": "AOC Mercurey 1er Cru La Bondue",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-cailloute": {
+        "name": "La Cailloute",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru La Cailloute.geojson",
+        "fullName": "AOC Mercurey 1er Cru La Cailloute",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-chassiere": {
+        "name": "La Chassière",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru La Chassière.geojson",
+        "fullName": "AOC Mercurey 1er Cru La Chassière",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-levriere": {
+        "name": "La Levrière",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru La Levrière.geojson",
+        "fullName": "AOC Mercurey 1er Cru La Levrière",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-mission": {
+        "name": "La Mission",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru La Mission.geojson",
+        "fullName": "AOC Mercurey 1er Cru La Mission",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-clos-du-roy": {
+        "name": "Le Clos du Roy",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Le Clos du Roy.geojson",
+        "fullName": "AOC Mercurey 1er Cru Le Clos du Roy",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-clos-leveque": {
+        "name": "Le Clos l'Evêque",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Le Clos l'Evêque.geojson",
+        "fullName": "AOC Mercurey 1er Cru Le Clos l'Evêque",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-byots": {
+        "name": "Les Byots",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Byots.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Byots",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-champs-martin": {
+        "name": "Les Champs Martin",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Champs Martin.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Champs Martin",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-combins": {
+        "name": "Les Combins",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Combins.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Combins",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-crets": {
+        "name": "Les Crêts",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Crêts.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Crêts",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-croichots": {
+        "name": "Les Croichots",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Croichots.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Croichots",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-fourneaux": {
+        "name": "Les Fourneaux",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Fourneaux.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Fourneaux",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-montaigus": {
+        "name": "Les Montaigus",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Montaigus.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Montaigus",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-naugues": {
+        "name": "Les Naugues",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Naugues.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Naugues",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-puillets": {
+        "name": "Les Puillets",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Puillets.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Puillets",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-ruelles": {
+        "name": "Les Ruelles",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Ruelles.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Ruelles",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-saumonts": {
+        "name": "Les Saumonts",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Saumonts.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Saumonts",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-vasees": {
+        "name": "Les Vasées",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Vasées.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Vasées",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-velley": {
+        "name": "Les Velley",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Les Velley.geojson",
+        "fullName": "AOC Mercurey 1er Cru Les Velley",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "sazenay": {
+        "name": "Sazenay",
+        "file": "Mercurey 1er Cru/AOC Mercurey 1er Cru Sazenay.geojson",
+        "fullName": "AOC Mercurey 1er Cru Sazenay",
+        "classification": "1er Cru",
+        "area": "約 1.2-4 公頃",
+        "altitude": "240-320m",
+        "exposition": "東、東南、南",
+        "soil": "富含鐵質的石灰岩與泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：結構堅實，單寧緊緻，具有良好的陳年潛力。白酒：圓潤豐滿，帶有礦物尾韻。",
+        "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
+        "agingPotential": "7-20年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      }
+    },
+    "grand_crus": {}
+  }
+}

@@ -1,0 +1,395 @@
+{
+  "moduleId": "intermediate-m2",
+  "title": "伯恩丘白酒聖地",
+  "description": "掌握伯恩丘頂級白酒產區，包括蒙哈榭、默爾索與伯恩村的特級園與一級園",
+  "lessons": [
+    {
+      "id": "m2-l1",
+      "title": "伯恩丘產區總覽",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "伯恩丘產區總覽",
+          "subtitle": "Lesson 1 - 18分鐘",
+          "description": "認識世界最偉大的夏多內白酒產區"
+        },
+        {
+          "type": "content",
+          "title": "伯恩丘（Côte de Beaune）",
+          "content": "伯恩丘位於夜丘南方，從科爾戈洛瓦延伸至桑特內，全長約25公里。這裡是世界頂級白酒的聖地，同時也生產優雅的黑皮諾紅酒。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 伯恩丘特色",
+          "points": [
+            "擁有8個白酒特級園（全球最貴的白酒產區）",
+            "夏多內在此達到完美表現",
+            "白酒：礦物感、複雜度、陳年潛力驚人",
+            "紅酒：相比夜丘更優雅、單寧柔和",
+            "南向與東南向坡地，日照充足",
+            "石灰岩與泥灰岩土壤，賦予獨特礦物感"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "📍 重要村莊（由北至南）",
+          "points": [
+            "佩爾南-韋熱萊斯（Pernand-Vergelesses）",
+            "阿羅克斯-科爾通（Aloxe-Corton）- 紅白特級園",
+            "薩維尼（Savigny-lès-Beaune）",
+            "伯恩（Beaune）- 產區中心",
+            "波瑪（Pommard）- 強勁紅酒",
+            "沃爾奈（Volnay）- 優雅紅酒",
+            "默爾索（Meursault）- 頂級白酒",
+            "普里尼-蒙哈榭（Puligny-Montrachet）- 白酒之王",
+            "夏山-蒙哈榭（Chassagne-Montrachet）- 紅白雙傑",
+            "桑特內（Santenay）- 性價比產區"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🏆 八大白酒特級園",
+          "points": [
+            "蒙哈榭（Montrachet）- 8公頃，白酒之王",
+            "騎士-蒙哈榭（Chevalier-Montrachet）- 7.4公頃",
+            "巴塔-蒙哈榭（Bâtard-Montrachet）- 12公頃",
+            "比恩維尼-巴塔-蒙哈榭（Bienvenues-Bâtard-Montrachet）- 3.7公頃",
+            "克里奧-巴塔-蒙哈榭（Criots-Bâtard-Montrachet）- 1.6公頃",
+            "科爾通-查理曼（Corton-Charlemagne）- 51.6公頃",
+            "查理曼（Charlemagne）- 0.3公頃（極稀有）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "為何伯恩丘白酒如此偉大？",
+          "content": "完美的風土條件：石灰岩土壤賦予礦物感與活潑酸度、東南向坡地提供充足陽光、涼爽氣候保持新鮮度、數百年來對夏多內的專精釀造技術。"
+        }
+      ]
+    },
+    {
+      "id": "m2-l2",
+      "title": "蒙哈榭：白酒之王",
+      "duration": "20分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "蒙哈榭特級園",
+          "subtitle": "Lesson 2 - 20分鐘",
+          "description": "探索世界最昂貴、最複雜的白葡萄酒"
+        },
+        {
+          "type": "content",
+          "title": "蒙哈榭（Montrachet）",
+          "content": "蒙哈榭是白葡萄酒的絕對王者，面積僅8公頃，橫跨普里尼與夏山兩村。這裡產出的白酒集力量、優雅、複雜度於一身，陳年後展現無與倫比的深度。"
+        },
+        {
+          "type": "list",
+          "title": "👑 蒙哈榭風格",
+          "points": [
+            "顏色：金黃色，陳年後呈琥珀色",
+            "香氣：白花、榛果、奶油、蜂蜜、礦物",
+            "口感：豐滿圓潤、質地如絲綢",
+            "酸度：活潑但完美平衡",
+            "複雜度：層次無窮、餘韻悠長",
+            "陳年：10-30年甚至更久",
+            "價格：一瓶可達數千至數萬美元"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🍇 蒙哈榭家族特級園比較",
+          "points": [
+            "蒙哈榭（Montrachet）- 最完美的平衡",
+            "騎士-蒙哈榭 - 更優雅、礦物感更明顯",
+            "巴塔-蒙哈榭 - 更豐滿、果香更濃郁",
+            "比恩維尼-巴塔 - 介於蒙哈榭與巴塔之間",
+            "克里奧-巴塔 - 最稀有、風格獨特"
+          ]
+        },
+        {
+          "type": "winery",
+          "title": "🏰 頂級生產者",
+          "wineries": [
+            {
+              "name": "Domaine de la Romanée-Conti (DRC)",
+              "description": "擁有0.67公頃蒙哈榭，產量極少"
+            },
+            {
+              "name": "Domaine Leflaive",
+              "description": "生物動力法，風格純淨優雅"
+            },
+            {
+              "name": "Domaine Ramonet",
+              "description": "傳統風格，陳年潛力驚人"
+            },
+            {
+              "name": "Domaine des Comtes Lafon",
+              "description": "默爾索最佳生產者之一"
+            }
+          ]
+        },
+        {
+          "type": "content",
+          "title": "品鑑建議",
+          "content": "蒙哈榭需要時間展開，建議陳年至少5-10年。侍酒溫度12-14°C，使用大型勃艮第白酒杯，醒酒30-60分鐘。年輕時會有閉鎖期，耐心等待會得到豐厚回報。"
+        }
+      ]
+    },
+    {
+      "id": "m2-l3",
+      "title": "默爾索：黃金之鄉",
+      "duration": "17分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "默爾索村莊",
+          "subtitle": "Lesson 3 - 17分鐘",
+          "description": "探索布根地最著名的白酒村莊"
+        },
+        {
+          "type": "content",
+          "title": "默爾索（Meursault）",
+          "content": "默爾索雖然沒有特級園，但擁有眾多頂級一級園。這裡的白酒以奶油般的質地、榛果香氣與豐滿口感著稱，是「黃金布根地」的代表。"
+        },
+        {
+          "type": "list",
+          "title": "🍯 默爾索白酒風格",
+          "points": [
+            "顏色：深金黃色",
+            "香氣：榛果、奶油、烤杏仁、蜂蜜",
+            "口感：豐滿圓潤、如黃油般滑順",
+            "酸度：柔和但足夠平衡",
+            "質地：厚實有份量",
+            "陳年：5-15年",
+            "特色：比蒙哈榭更易飲、價格更親民"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💎 著名一級園",
+          "points": [
+            "Les Perrières - 最接近特級園品質",
+            "Les Genevrières - 優雅礦物感",
+            "Les Charmes - 如其名般迷人",
+            "Poruzots - 強勁有力",
+            "Blagny - 位於山坡上段",
+            "Goutte d'Or - 最豐滿圓潤"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "默爾索 vs 普里尼-蒙哈榭",
+          "leftTitle": "默爾索",
+          "leftPoints": [
+            "豐滿圓潤",
+            "奶油榛果香",
+            "質地厚實",
+            "酸度柔和",
+            "較早適飲"
+          ],
+          "rightTitle": "普里尼-蒙哈榭",
+          "rightPoints": [
+            "優雅精緻",
+            "礦物花香",
+            "質地纖細",
+            "酸度活潑",
+            "需更長陳年"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "性價比推薦",
+          "content": "默爾索一級園是體驗頂級布根地白酒的絕佳入門，特別是優質生產者的Les Perrières或Les Genevrières，品質接近特級園但價格合理許多。"
+        }
+      ]
+    },
+    {
+      "id": "m2-l4",
+      "title": "科爾通山：紅白雙傑",
+      "duration": "16分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "科爾通山特級園",
+          "subtitle": "Lesson 4 - 16分鐘",
+          "description": "探索伯恩丘唯一的紅酒特級園區域"
+        },
+        {
+          "type": "content",
+          "title": "科爾通山（Corton Hill）",
+          "content": "科爾通山是伯恩丘北端的獨立山丘，橫跨三個村莊。這裡既生產強勁的紅酒特級園（Corton），也產出優雅的白酒特級園（Corton-Charlemagne）。"
+        },
+        {
+          "type": "list",
+          "title": "🏔️ 科爾通山特色",
+          "points": [
+            "橫跨三村：Aloxe-Corton、Pernand-Vergelesses、Ladoix",
+            "紅酒特級園：Corton（160公頃，布根地最大）",
+            "白酒特級園：Corton-Charlemagne（51.6公頃）",
+            "傳說：查理曼大帝曾擁有此地葡萄園",
+            "地勢：山坡各面向展現不同風格"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🍷 科爾通紅酒",
+          "points": [
+            "風格：介於夜丘與伯恩丘之間",
+            "香氣：紅色與黑色水果、香料、森林氣息",
+            "口感：強勁有力但不失優雅",
+            "單寧：緊實、需要陳年",
+            "陳年：10-25年",
+            "特色：布根地最大的特級園"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🥂 科爾通-查理曼白酒",
+          "points": [
+            "香氣：白花、檸檬、燧石、礦物",
+            "口感：優雅精緻、酸度活潑",
+            "礦物感：非常明顯",
+            "陳年：10-30年",
+            "特色：與蒙哈榭風格不同，更清瘦優雅",
+            "價格：比蒙哈榭親民但品質卓越"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "投資建議",
+          "content": "科爾通-查理曼是投資布根地頂級白酒的絕佳選擇，價格比蒙哈榭低30-50%，但陳年潛力與複雜度不遑多讓。優質生產者包括Bonneau du Martray、Coche-Dury等。"
+        }
+      ]
+    },
+    {
+      "id": "m2-l5",
+      "title": "伯恩丘紅酒產區",
+      "duration": "14分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "伯恩丘紅酒村莊",
+          "subtitle": "Lesson 5 - 14分鐘",
+          "description": "探索波瑪、沃爾奈等優雅紅酒產區"
+        },
+        {
+          "type": "content",
+          "title": "波瑪（Pommard）",
+          "content": "波瑪是伯恩丘最著名的紅酒村莊之一，以強勁、男性化的風格著稱。這裡沒有特級園，但擁有28個一級園，紅酒需要時間陳年。"
+        },
+        {
+          "type": "list",
+          "title": "💪 波瑪風格",
+          "points": [
+            "顏色深邃、幾乎不透光",
+            "香氣：黑色水果、動物皮革、香料",
+            "口感：強勁有力、單寧緊實",
+            "結構：骨架明顯",
+            "陳年：10-20年",
+            "著名一級園：Les Rugiens、Les Epenots"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "沃爾奈（Volnay）",
+          "content": "與鄰村波瑪形成強烈對比，沃爾奈是伯恩丘最優雅的紅酒。這裡的黑皮諾展現絲綢般的質地與花香，被稱為「紅酒中的香波-慕西尼」。"
+        },
+        {
+          "type": "list",
+          "title": "🌹 沃爾奈風格",
+          "points": [
+            "顏色：寶石紅、透亮",
+            "香氣：紫羅蘭、櫻桃、草莓、香料",
+            "口感：絲滑細膩、單寧柔和",
+            "優雅度：伯恩丘最高",
+            "陳年：8-15年",
+            "著名一級園：Caillerets、Champans"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "波瑪 vs 沃爾奈",
+          "leftTitle": "波瑪",
+          "leftPoints": [
+            "強勁有力",
+            "單寧緊實",
+            "需長時間陳年",
+            "黑色水果",
+            "男性化"
+          ],
+          "rightTitle": "沃爾奈",
+          "rightPoints": [
+            "優雅細膩",
+            "單寧柔和",
+            "相對早熟",
+            "紅色水果",
+            "女性化"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "伯恩丘紅酒總結",
+          "content": "伯恩丘的紅酒整體比夜丘更優雅、更易飲，但頂級一級園（如波瑪Les Rugiens、沃爾奈Caillerets）的品質絲毫不遜色，且價格更親民。"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "title": "伯恩丘產區測驗",
+    "description": "測試您對伯恩丘白酒產區的理解",
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "伯恩丘共有多少個白酒特級園？",
+        "type": "single",
+        "options": ["5個", "6個", "7個", "8個"],
+        "correctAnswer": 3,
+        "explanation": "伯恩丘共有8個白酒特級園，包括蒙哈榭、騎士-蒙哈榭、巴塔-蒙哈榭等。"
+      },
+      {
+        "id": "q2",
+        "question": "哪個特級園被稱為「白酒之王」？",
+        "type": "single",
+        "options": [
+          "科爾通-查理曼",
+          "蒙哈榭",
+          "騎士-蒙哈榭",
+          "默爾索"
+        ],
+        "correctAnswer": 1,
+        "explanation": "蒙哈榭（Montrachet）被公認為世界最偉大的白葡萄酒，集力量、優雅、複雜度於一身。"
+      },
+      {
+        "id": "q3",
+        "question": "默爾索白酒最典型的香氣是什麼？",
+        "type": "single",
+        "options": ["柑橘", "榛果奶油", "青蘋果", "礦物"  ],
+        "correctAnswer": 1,
+        "explanation": "默爾索白酒以榛果、奶油、烤杏仁等香氣著稱，口感豐滿如黃油般滑順。"
+      },
+      {
+        "id": "q4",
+        "question": "科爾通山橫跨幾個村莊？",
+        "type": "single",
+        "options": ["1個", "2個", "3個", "4個"],
+        "correctAnswer": 2,
+        "explanation": "科爾通山橫跨三個村莊：Aloxe-Corton、Pernand-Vergelesses和Ladoix。"
+      },
+      {
+        "id": "q5",
+        "question": "以下哪個村莊以優雅細膩的紅酒著稱？",
+        "type": "single",
+        "options": ["波瑪", "沃爾奈", "伯恩", "桑特內"],
+        "correctAnswer": 1,
+        "explanation": "沃爾奈是伯恩丘最優雅的紅酒村莊，被稱為「紅酒中的香波-慕西尼」。"
+      }
+    ]
+  }
+}

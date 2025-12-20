@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.737938594348581,46.94159725164408],[4.738004295459712,46.94157701929599],[4.738515072329412,46.94212933475508],[4.738450239656522,46.94215582309524],[4.737938594348581,46.94159725164408]]]},"properties":{"name":"34 Château de Puligny","styleUrl":"#m_ylw-pushpin","fill-opacity":0.2,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

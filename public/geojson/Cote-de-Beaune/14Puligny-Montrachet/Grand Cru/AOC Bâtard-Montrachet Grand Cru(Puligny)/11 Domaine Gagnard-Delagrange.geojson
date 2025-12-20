@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.738739458685368,46.94404444731773],[4.738784837817979,46.94403415030325],[4.73923617419813,46.94458178807278],[4.739705818851516,46.94514523241649],[4.73966834066726,46.9451597480244],[4.738739458685368,46.94404444731773]]]},"properties":{"name":"11 Domaine Gagnard-Delagrange","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.30196078431372547,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

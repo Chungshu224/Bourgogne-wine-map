@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.756719531768669,46.96692722619525],[4.756741912338747,46.96685843181867],[4.757122490801191,46.96676779865295],[4.757432470764069,46.96669021149818],[4.758549096465952,46.96647152348473],[4.75890789506998,46.96642554051485],[4.758857153475134,46.96657630691191],[4.758122684836305,46.9667073307309],[4.756774012216103,46.96699958509662],[4.756719531768669,46.96692722619525]]]},"properties":{"name":"19 Domaine Arnaud Tessier","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

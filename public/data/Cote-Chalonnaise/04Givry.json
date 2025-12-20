@@ -1,0 +1,786 @@
+{
+  "name": "Givry",
+  "description": "關於 Givry 的描述... Givry 以其優雅細膩的紅酒而聞名，據說是法國國王亨利四世的最愛。",
+  "area": "約 285 公頃",
+  "altitude": "240-280m",
+  "exposition": "東、東南",
+  "grapeVarieties": [
+    "Pinot Noir",
+    "Chardonnay"
+  ],
+  "wineTypes": [
+    "紅酒",
+    "白酒"
+  ],
+  "climate": "溫和的大陸性氣候，受坡地保護。",
+  "soilStructure": "富含石灰岩的棕色土壤和泥灰岩。",
+  "wineStyle": "紅酒：果香濃郁、口感柔順、單寧細膩。白酒：清新、活潑，帶有花香。",
+  "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗。白酒：檸檬、金合歡。",
+  "agingPotential": "紅酒：4-12年，白酒：2-7年",
+  "famousWineries": [
+    "Domaine Joblot",
+    "Domaine François Lumpp",
+    "Domaine Thenard"
+  ],
+  "grandCrus": [],
+  "premierCrus": [
+    "Clos Salomon",
+    "La Grande Berge",
+    "Cellier aux Moines"
+  ],
+  "history": "Givry 的葡萄酒聲譽在亨利四世時期達到了頂峰。",
+  "geojson": {
+    "village": {
+      "givry": {
+        "name": "Givry",
+        "file": "AOC Givry.geojson",
+        "fullName": "AOC Givry",
+        "classification": "Village",
+        "area": "約 230 公頃",
+        "altitude": "240-280m",
+        "exposition": "東、東南",
+        "soil": "石灰岩和粘土",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：柔和、易飲，充滿紅色水果香氣。白酒：簡單、清新。",
+        "tastingNotes": "紅酒：櫻桃、覆盆子。白酒：青蘋果。",
+        "agingPotential": "3-7年",
+        "history": "Givry 村莊級葡萄酒是體驗該產區風格的絕佳入門。",
+        "producers": [
+          "Domaine Joblot",
+          "Maison Joseph Drouhin"
+        ],
+        "color": "#FFE4E1"
+      }
+    },
+    "premier_crus": {
+      "overview": {
+        "name": "Givry 1er Cru",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru.geojson",
+        "fullName": "AOC Givry 1er Cru",
+        "classification": "1er Cru",
+        "area": "約 55 公頃",
+        "altitude": "250-280m",
+        "exposition": "東、東南",
+        "soil": "富含石灰岩的泥灰岩",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：更具結構感和複雜性，單寧更為精緻。白酒：更為集中，帶有礦物感。",
+        "tastingNotes": "紅酒：黑櫻桃、香料、煙燻。白酒：白桃、烤杏仁。",
+        "agingPotential": "紅酒：6-15年，白酒：4-10年",
+        "history": "Givry 的一級園展現了該產區所能達到的精緻和優雅的高度。",
+        "producers": [
+          "Domaine François Lumpp",
+          "Domaine Thenard",
+          "Clos Salomon"
+        ],
+        "color": "#B22222"
+      },
+      "a-vigne-rouge": {
+        "name": "A Vigne Rouge",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru A Vigne Rouge.geojson",
+        "fullName": "AOC Givry 1er Cru A Vigne Rouge",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-charle": {
+        "name": "Clos Charlé",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos Charlé.geojson",
+        "fullName": "AOC Givry 1er Cru Clos Charlé",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-de-la-baraude": {
+        "name": "Clos de la Baraude",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos de la Baraude.geojson",
+        "fullName": "AOC Givry 1er Cru Clos de la Baraude",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-du-cellier-aux-moines": {
+        "name": "Clos du Cellier aux Moines",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos du Cellier aux Moines.geojson",
+        "fullName": "AOC Givry 1er Cru Clos du Cellier aux Moines",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-du-cras-long": {
+        "name": "Clos du Cras long",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos du Cras long.geojson",
+        "fullName": "AOC Givry 1er Cru Clos du Cras long",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-du-vernoy": {
+        "name": "Clos du Vernoy",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos du Vernoy.geojson",
+        "fullName": "AOC Givry 1er Cru Clos du Vernoy",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-jus": {
+        "name": "Clos Jus",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos Jus.geojson",
+        "fullName": "AOC Givry 1er Cru Clos Jus",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-marceaux": {
+        "name": "Clos Marceaux",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos Marceaux.geojson",
+        "fullName": "AOC Givry 1er Cru Clos Marceaux",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-marole": {
+        "name": "Clos Marole",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos Marole.geojson",
+        "fullName": "AOC Givry 1er Cru Clos Marole",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-salomon": {
+        "name": "Clos Salomon",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos Salomon.geojson",
+        "fullName": "AOC Givry 1er Cru Clos Salomon",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-saint-paul": {
+        "name": "Clos Saint Paul",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos-Saint-Paul.geojson",
+        "fullName": "AOC Givry 1er Cru Clos Saint Paul",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "clos-saint-pierre": {
+        "name": "Clos Saint Pierre",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Clos-Saint-Pierre.geojson",
+        "fullName": "AOC Givry 1er Cru Clos Saint Pierre",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "crausot": {
+        "name": "Crausot",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Crausot.geojson",
+        "fullName": "AOC Givry 1er Cru Crausot",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "cremillons": {
+        "name": "Crémillons",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Crémillons.geojson",
+        "fullName": "AOC Givry 1er Cru Crémillons",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "en-choue": {
+        "name": "En Choué",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru En Choué.geojson",
+        "fullName": "AOC Givry 1er Cru En Choué",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-brulee": {
+        "name": "La Brûlée",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru La Brûlée.geojson",
+        "fullName": "AOC Givry 1er Cru La Brûlée",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-grande-berge": {
+        "name": "La Grande Berge",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru La Grande Berge.geojson",
+        "fullName": "AOC Givry 1er Cru La Grande Berge",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-matrosse": {
+        "name": "La Matrosse",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru La Matrosse.geojson",
+        "fullName": "AOC Givry 1er Cru La Matrosse",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-petite-berge": {
+        "name": "La Petite Berge",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru La Petite Berge.geojson",
+        "fullName": "AOC Givry 1er Cru La Petite Berge",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "la-plante": {
+        "name": "La Plante",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru La Plante.geojson",
+        "fullName": "AOC Givry 1er Cru La Plante",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-champ-lalot": {
+        "name": "Le Champ Lalot",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Le Champ Lalot.geojson",
+        "fullName": "AOC Givry 1er Cru Le Champ Lalot",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-medenchot": {
+        "name": "Le Médenchot",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Le Médenchot.geojson",
+        "fullName": "AOC Givry 1er Cru Le Médenchot",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-paradis": {
+        "name": "Le Paradis",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Le Paradis.geojson",
+        "fullName": "AOC Givry 1er Cru Le Paradis",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-petit-pretan": {
+        "name": "Le Petit Prétan",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Le Petit Prétan.geojson",
+        "fullName": "AOC Givry 1er Cru Le Petit Prétan",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-pied-de-chaume": {
+        "name": "Le Pied de Chaume",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Le Pied de Chaume.geojson",
+        "fullName": "AOC Givry 1er Cru Le Pied de Chaume",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-pied-du-clou": {
+        "name": "Le Pied du Clou",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Le Pied du Clou.geojson",
+        "fullName": "AOC Givry 1er Cru Le Pied du Clou",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "le-vigron": {
+        "name": "Le Vigron",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Le Vigron.geojson",
+        "fullName": "AOC Givry 1er Cru Le Vigron",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-bois-chevaux": {
+        "name": "Les Bois Chevaux",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Les Bois Chevaux.geojson",
+        "fullName": "AOC Givry 1er Cru Les Bois Chevaux",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-bois-gautiers": {
+        "name": "Les Bois Gautiers",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Les Bois Gautiers.geojson",
+        "fullName": "AOC Givry 1er Cru Les Bois Gautiers",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-combes": {
+        "name": "Les Combes",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Les Combes.geojson",
+        "fullName": "AOC Givry 1er Cru Les Combes",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-galaffres": {
+        "name": "Les Galaffres",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Les Galaffres.geojson",
+        "fullName": "AOC Givry 1er Cru Les Galaffres",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-grandes-vignes": {
+        "name": "Les Grandes Vignes",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Les Grandes Vignes.geojson",
+        "fullName": "AOC Givry 1er Cru Les Grandes Vignes",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "les-grands-pretans": {
+        "name": "Les Grands Prétans",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Les Grands Prétans.geojson",
+        "fullName": "AOC Givry 1er Cru Les Grands Prétans",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "petit-marole": {
+        "name": "Petit Marole",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Petit Marole.geojson",
+        "fullName": "AOC Givry 1er Cru Petit Marole",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      },
+      "servoisine": {
+        "name": "Servoisine",
+        "file": "Givry 1er Cru/AOC Givry 1er Cru Servoisine.geojson",
+        "fullName": "AOC Givry 1er Cru Servoisine",
+        "classification": "1er Cru",
+        "area": "約 0.8-2.5 公頃",
+        "altitude": "250-300m",
+        "exposition": "東、東南、南",
+        "soil": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapes": [
+          "Pinot Noir",
+          "Chardonnay"
+        ],
+        "wineStyle": "紅酒：優雅細膩，單寧絲滑，果香純淨。白酒：清新活潑，花香明顯。",
+        "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
+        "agingPotential": "6-15年",
+        "history": "",
+        "producers": [],
+        "color": "#CD853F"
+      }
+    },
+    "grand_crus": {}
+  }
+}

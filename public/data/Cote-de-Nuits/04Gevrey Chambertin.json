@@ -1,0 +1,989 @@
+{
+  "Grand Crus": {
+    "chambertin": {
+      "name": "Chambertin",
+      "fullName": "AOC Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "13.5 ha",
+      "altitude": "275-300m",
+      "exposition": "東-東南向",
+      "soil": "粘土石灰岩土壤，含有豐富的鐵質",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "結構宏大、濃郁複雜、陳年潛力極佳",
+      "tastingNotes": "黑莓、櫻桃、香料、皮革、礦物質",
+      "agingPotential": "15-30年",
+      "history": "勃根地之王，拿破崙最愛的葡萄酒，被譽為最偉大的黑皮諾產區之一",
+      "producers": [
+        "Armand Rousseau",
+        "Leroy",
+        "Denis Mortet"
+      ],
+      "color": "#8B0000",
+      "domaines": [
+        {
+          "id": 1,
+          "name": "Domaine Armand Rousseau",
+          "shortDescription": "布根地最傳奇的酒莊之一，以優雅細膩的風格著稱，被譽為特級園中的藝術品。",
+          "wineStyle": "優雅、精緻、複雜，具有絲綢般的單寧",
+          "speciality": "家族傳承四代，堅持傳統釀造工藝",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/01.jpg",
+          "established": "1909年",
+          "area": "2.15 公頃"
+        },
+        {
+          "id": 2,
+          "name": "Domaine Trapet",
+          "shortDescription": "生物動力法的先驅，注重土壤健康與自然平衡，釀造出純淨優雅的頂級佳釀。",
+          "wineStyle": "純淨、礦物感豐富、結構優雅",
+          "speciality": "生物動力栽培，注重土壤微生物",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/02.jpg",
+          "established": "1868年",
+          "area": "1.9 公頃"
+        },
+        {
+          "id": 3,
+          "name": "Domaine Camus",
+          "shortDescription": "具有深厚歷史底蘊的家族酒莊，以強勁有力的酒體和豐富的果香聞名。",
+          "wineStyle": "濃郁、果香豐富、單寧強勁",
+          "speciality": "傳統橡木桶陳年，保持經典風格",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/03.jpg",
+          "established": "1850年",
+          "area": "1.2 公頃"
+        },
+        {
+          "id": 4,
+          "name": "Domaine Rossignol-Trapet",
+          "shortDescription": "結合傳統與現代技術，致力於表現純正的特級園風土特色。",
+          "wineStyle": "平衡優雅、土壤特色明顯",
+          "speciality": "精確的葡萄園管理，低產量高品質",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/04.jpg",
+          "established": "1990年",
+          "area": "0.8 公頃"
+        },
+        {
+          "id": 5,
+          "name": "Domaine Jacques Prieur",
+          "shortDescription": "擁有眾多頂級園區的知名酒莊，以精湛的釀酒技術和穩定品質著稱。",
+          "wineStyle": "經典、平衡、陳年潛力佳",
+          "speciality": "擁有多個特級園，經驗豐富",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/05.jpg",
+          "established": "1868年",
+          "area": "0.5 公頃"
+        },
+        {
+          "id": 6,
+          "name": "Maison Louis Latour",
+          "shortDescription": "布根地最古老的酒商之一，以傳統釀造工藝和卓越品質享譽全球。",
+          "wineStyle": "經典、豐富、具有陳年實力",
+          "speciality": "200多年歷史，傳統釀造工藝",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/06.jpg",
+          "established": "1797年",
+          "area": "1.1 公頃"
+        },
+        {
+          "id": 7,
+          "name": "Domaine Leroy",
+          "shortDescription": "生物動力法的典範，被譽為布根地最昂貴也最頂級的酒莊之一。",
+          "wineStyle": "濃縮、深邃、極具表現力",
+          "speciality": "生物動力栽培，極低產量",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/07.jpg",
+          "established": "1988年",
+          "area": "0.3 公頃"
+        },
+        {
+          "id": 8,
+          "name": "Domaine Damoy",
+          "shortDescription": "家族經營的精品酒莊，專注於小批量生產，品質卓越。",
+          "wineStyle": "精緻、細膩、優雅平衡",
+          "speciality": "小規模生產，手工精釀",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/08.jpg",
+          "established": "1920年",
+          "area": "0.6 公頃"
+        },
+        {
+          "id": 9,
+          "name": "Domaine Rebourseau",
+          "shortDescription": "傳統家族酒莊，堅持古法釀造，保持 Chambertin 的經典風格。",
+          "wineStyle": "傳統、醇厚、經典布根地風格",
+          "speciality": "家族傳承，古法釀造",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/09.jpg",
+          "established": "1850年",
+          "area": "0.9 公頃"
+        },
+        {
+          "id": 10,
+          "name": "Domaine Tortochot",
+          "shortDescription": "注重葡萄園管理的家族酒莊，釀造風格現代而不失傳統韻味。",
+          "wineStyle": "現代、清新、果香濃郁",
+          "speciality": "精細的葡萄園管理，現代釀造",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/10.jpg",
+          "established": "1865年",
+          "area": "0.7 公頃"
+        },
+        {
+          "id": 11,
+          "name": "Maison Albert Bichot",
+          "shortDescription": "歷史悠久的酒商，擁有豐富的釀造經驗和廣泛的園區資源。",
+          "wineStyle": "豐富、複雜、展現風土特色",
+          "speciality": "酒商背景，豐富的園區資源",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/11.jpg",
+          "established": "1831年",
+          "area": "0.4 公頃"
+        },
+        {
+          "id": 12,
+          "name": "Domaine Feuillet-Duband",
+          "shortDescription": "小而精的家族酒莊，專注於表現 Chambertin 獨特的礦物質風味。",
+          "wineStyle": "礦物感豐富、優雅、層次複雜",
+          "speciality": "小產量精品，礦物質風味突出",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/12.jpg",
+          "established": "1900年",
+          "area": "0.3 公頃"
+        },
+        {
+          "id": 13,
+          "name": "Domaine Charlopin",
+          "shortDescription": "年輕有為的酒莊，結合現代技術與傳統工藝，釀造風格獨特。",
+          "wineStyle": "現代、活潑、果香明顯",
+          "speciality": "年輕世代，創新釀造理念",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/13.jpg",
+          "established": "1991年",
+          "area": "0.5 公頃"
+        },
+        {
+          "id": 14,
+          "name": "Domaine Bertagna",
+          "shortDescription": "德國投資背景的酒莊，以精確的釀造工藝和國際化視野聞名。",
+          "wineStyle": "精確、純淨、國際化風格",
+          "speciality": "國際化管理，精確釀造",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/14.jpg",
+          "established": "1982年",
+          "area": "0.8 公頃"
+        },
+        {
+          "id": 15,
+          "name": "Maison Bouchard Père et Fils",
+          "shortDescription": "布根地最著名的酒商之一，擁有豐富的特級園資源和深厚的釀造底蘊。",
+          "wineStyle": "經典、優雅、陳年潛力強",
+          "speciality": "歷史悠久酒商，特級園資源豐富",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/15.jpg",
+          "established": "1731年",
+          "area": "1.3 公頃"
+        },
+        {
+          "id": 16,
+          "name": "Domaine Ponsot",
+          "shortDescription": "創新派酒莊的代表，敢於挑戰傳統，釀造風格獨特而現代。",
+          "wineStyle": "獨特、創新、個性鮮明",
+          "speciality": "創新釀造理念，挑戰傳統",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/16.jpg",
+          "established": "1872年",
+          "area": "0.6 公頃"
+        },
+        {
+          "id": 17,
+          "name": "Domaine Denis Mortet",
+          "shortDescription": "已故釀酒師Denis Mortet的遺產，以濃郁的果香和現代風格著稱。",
+          "wineStyle": "濃郁、果香豐富、現代風格",
+          "speciality": "已故名家遺產，現代風格典範",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/17.jpg",
+          "established": "1956年",
+          "area": "0.4 公頃"
+        },
+        {
+          "id": 18,
+          "name": "Château de Marsannay",
+          "shortDescription": "歷史悠久的酒堡，結合傳統與現代，展現 Chambertin 的多元風貌。",
+          "wineStyle": "平衡、優雅、具有酒堡風範",
+          "speciality": "酒堡背景，歷史建築",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/18.jpg",
+          "established": "13世紀",
+          "area": "0.7 公頃"
+        },
+        {
+          "id": 19,
+          "name": "Domaine Dugat-Py",
+          "shortDescription": "精品小酒莊，以極低產量和極高品質聞名，是收藏家的最愛。",
+          "wineStyle": "極致濃縮、層次豐富、收藏級品質",
+          "speciality": "極低產量，收藏家最愛",
+          "labelImage": "/images/gevrey chambertin/chambertin grand cru/19.jpg",
+          "established": "1989年",
+          "area": "0.2 公頃"
+        }
+      ]
+    },
+    "chambertin-clos-de-beze": {
+      "name": "Chambertin Clos de Bèze",
+      "fullName": "AOC Chambertin Clos de Bèze Grand Cru",
+      "classification": "Grand Cru",
+      "area": "15.5 ha",
+      "altitude": "275-300m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩粘土，富含鐵質氧化物",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅細膩、香氣複雜、單寧絲滑",
+      "tastingNotes": "紅果、紫羅蘭、香料、森林地面、礦物質",
+      "agingPotential": "15-25年",
+      "history": "歷史可追溯至7世紀，由僧侶開墾，與Chambertin同樣聲譽卓著",
+      "producers": [
+        "Faiveley",
+        "Bruno Clair",
+        "Pierre Damoy"
+      ],
+      "color": "#8B0000"
+    },
+    "chapelle-chambertin": {
+      "name": "Chapelle-Chambertin",
+      "fullName": "AOC Chapelle Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "5.5 ha",
+      "altitude": "280-310m",
+      "exposition": "東向",
+      "soil": "石灰岩土壤，排水良好",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅精緻、酸度活潑、結構平衡",
+      "tastingNotes": "草莓、櫻桃、玫瑰花瓣、香料",
+      "agingPotential": "10-20年",
+      "history": "因附近的小教堂（Chapelle）而得名",
+      "producers": [
+        "Claude Dugat",
+        "Jean-Louis Trapet"
+      ],
+      "color": "#8B0000"
+    },
+    "charmes-chambertin": {
+      "name": "Charmes-Chambertin",
+      "fullName": "AOC Charmes Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "31 ha",
+      "altitude": "260-280m",
+      "exposition": "東-東南向",
+      "soil": "深厚的粘土石灰岩土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "豐滿圓潤、果味濃郁、易於親近",
+      "tastingNotes": "黑櫻桃、李子、香草、咖啡",
+      "agingPotential": "12-20年",
+      "history": "Gevrey-Chambertin最大的特級園",
+      "producers": [
+        "Ponsot",
+        "Dujac",
+        "Sérafin Père et Fils"
+      ],
+      "color": "#8B0000"
+    },
+    "griotte-chambertin": {
+      "name": "Griotte-Chambertin",
+      "fullName": "AOC Griotte Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "2.7 ha",
+      "altitude": "280-300m",
+      "exposition": "東向",
+      "soil": "薄層石灰岩土壤，底層為堅硬岩床",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "精緻優雅、香氣濃郁、單寧精細",
+      "tastingNotes": "櫻桃、玫瑰、香料、礦物質",
+      "agingPotential": "15-25年",
+      "history": "以其精緻優雅著稱的小產區",
+      "producers": [
+        "Claude Dugat",
+        "Ponsot"
+      ],
+      "color": "#8B0000"
+    },
+    "latricieres-chambertin": {
+      "name": "Latricières-Chambertin",
+      "fullName": "AOC Latricières Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "7.4 ha",
+      "altitude": "270-290m",
+      "exposition": "東-東南向",
+      "soil": "粘土石灰岩，富含鐵質",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "強勁有力、結構緊密、陳年能力強",
+      "tastingNotes": "黑果、皮革、煙燻、礦物質",
+      "agingPotential": "15-25年",
+      "history": "名稱來自拉丁語「Latricis」，意為石礦場",
+      "producers": [
+        "Jean-Louis Trapet",
+        "Faiveley"
+      ],
+      "color": "#8B0000"
+    },
+    "mazis-chambertin": {
+      "name": "Mazis-Chambertin",
+      "fullName": "AOC Mazis Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "9.1 ha",
+      "altitude": "270-290m",
+      "exposition": "東向",
+      "soil": "石灰岩粘土，含有較多石塊",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "濃郁深邃、單寧堅實、層次豐富",
+      "tastingNotes": "黑莓、香料、松露、土壤氣息",
+      "agingPotential": "15-25年",
+      "history": "位於Chambertin北部的優質產區",
+      "producers": [
+        "Faiveley",
+        "Hospices de Beaune"
+      ],
+      "color": "#8B0000"
+    },
+    "mazoyeres-chambertin": {
+      "name": "Mazoyères-Chambertin",
+      "fullName": "AOC Mazoyères Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "19 ha",
+      "altitude": "260-280m",
+      "exposition": "東-東南向",
+      "soil": "深厚粘土土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "豐滿柔順、果味充沛、易於飲用",
+      "tastingNotes": "紅果、香草、巧克力、香料",
+      "agingPotential": "10-18年",
+      "history": "與Charmes-Chambertin相鄰，風格相似",
+      "producers": [
+        "Hospices de Beaune",
+        "Various producers"
+      ],
+      "color": "#8B0000"
+    },
+    "ruchottes-chambertin": {
+      "name": "Ruchottes-Chambertin",
+      "fullName": "AOC Ruchottes Chambertin Grand Cru",
+      "classification": "Grand Cru",
+      "area": "3.3 ha",
+      "altitude": "280-310m",
+      "exposition": "東向",
+      "soil": "薄層石灰岩土壤，多石塊",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "精緻細膩、香氣複雜、礦物感強",
+      "tastingNotes": "紅果、花香、礦物質、香料",
+      "agingPotential": "15-20年",
+      "history": "最小的Chambertin家族產區之一",
+      "producers": [
+        "Armand Rousseau",
+        "Mugneret-Gibourg"
+      ],
+      "color": "#8B0000"
+    }
+  },
+  "premier_crus": {
+    "gevrey-1er-cru-overview": {
+      "name": "Gevrey-Chambertin 1er Cru",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru",
+      "classification": "Premier Cru",
+      "area": "約80 ha (23個一級園)",
+      "altitude": "250-350m",
+      "exposition": "主要朝東及東南向",
+      "soil": "石灰岩粘土土壤，各園區略有差異",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "介於村莊級與特級園之間，品質卓越、風格多樣、結構複雜",
+      "tastingNotes": "黑果、紅果、花香、香料、礦物質、土壤氣息",
+      "agingPotential": "8-25年（視具體園區而定）",
+      "history": "Gevrey-Chambertin擁有23個一級園，其中Clos Saint-Jacques、Les Cazetiers等被譽為接近特級園品質。這些一級園大多位於特級園周圍的優質坡地，承載著數百年的釀酒傳統，展現出勃根地黑皮諾的精髓與多樣性。",
+      "producers": [
+        "Armand Rousseau",
+        "Bruno Clair",
+        "Denis Mortet",
+        "Claude Dugat",
+        "Bernard Dugat-Py",
+        "Christian Serafin"
+      ],
+      "color": "#B22222"
+    },
+    "bel-air": {
+      "name": "Bel Air",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Bel Air",
+      "classification": "Premier Cru",
+      "area": "2.4 ha",
+      "altitude": "260-280m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩粘土土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅平衡、果味清新、單寧柔順",
+      "tastingNotes": "櫻桃、草莓、花香、香料",
+      "agingPotential": "8-15年",
+      "history": "位於村莊上方的優質地塊",
+      "producers": [
+        "Various local producers"
+      ],
+      "color": "#B22222"
+    },
+    "champeaux": {
+      "name": "Champeaux",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Champeaux",
+      "classification": "Premier Cru",
+      "area": "6.7 ha",
+      "altitude": "250-270m",
+      "exposition": "東向",
+      "soil": "粘土石灰岩，含有較多砂礫",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "結構良好、果味濃郁、陳年潛力佳",
+      "tastingNotes": "黑果、香料、土壤氣息、礦物質",
+      "agingPotential": "10-18年",
+      "history": "位於特級園下方的重要一級園",
+      "producers": [
+        "Denis Bachelet",
+        "Philippe Leclerc"
+      ],
+      "color": "#B22222"
+    },
+    "champonnet": {
+      "name": "Champonnet",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Champonnet",
+      "classification": "Premier Cru",
+      "area": "3.9 ha",
+      "altitude": "260-280m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩土壤，排水良好",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅精緻、酸度活潑、香氣複雜",
+      "tastingNotes": "紅果、花香、香料、礦物質",
+      "agingPotential": "8-15年",
+      "history": "傳統的一級園地塊",
+      "producers": [
+        "Local producers"
+      ],
+      "color": "#B22222"
+    },
+    "cherbaudes": {
+      "name": "Cherbaudes",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Cherbaudes",
+      "classification": "Premier Cru",
+      "area": "3.6 ha",
+      "altitude": "270-290m",
+      "exposition": "東向",
+      "soil": "石灰岩粘土，含鐵質",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "濃郁深邃、單寧緊實、陳年能力強",
+      "tastingNotes": "黑果、皮革、香料、煙燻",
+      "agingPotential": "10-20年",
+      "history": "與特級園相鄰的優質地塊",
+      "producers": [
+        "Dupont-Tisserandot",
+        "Philippe Leclerc"
+      ],
+      "color": "#B22222"
+    },
+    "clos-des-varoilles": {
+      "name": "Clos des Varoilles",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Clos des Varoilles",
+      "classification": "Premier Cru",
+      "area": "5.9 ha",
+      "altitude": "280-320m",
+      "exposition": "東向",
+      "soil": "石灰岩土壤，多石塊",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "強勁有力、結構宏大、礦物感強",
+      "tastingNotes": "黑果、礦物質、香料、土壤氣息",
+      "agingPotential": "12-20年",
+      "history": "著名的單一園，由Clos des Varoilles酒莊擁有",
+      "producers": [
+        "Clos des Varoilles"
+      ],
+      "color": "#B22222"
+    },
+    "clos-du-chapitre": {
+      "name": "Clos du Chapitre",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Clos du Chapitre",
+      "classification": "Premier Cru",
+      "area": "1.6 ha",
+      "altitude": "280-300m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅精緻、香氣純淨、口感絲滑",
+      "tastingNotes": "紅果、花香、香料、礦物質",
+      "agingPotential": "10-15年",
+      "history": "小而精的單一園",
+      "producers": [
+        "Pierre Damoy"
+      ],
+      "color": "#B22222"
+    },
+    "clos-prieur": {
+      "name": "Clos Prieur",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Clos Prieur",
+      "classification": "Premier Cru",
+      "area": "1.8 ha",
+      "altitude": "270-290m",
+      "exposition": "東向",
+      "soil": "粘土石灰岩土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "濃郁複雜、結構良好、層次豐富",
+      "tastingNotes": "黑果、香料、皮革、礦物質",
+      "agingPotential": "10-18年",
+      "history": "歷史悠久的修道院葡萄園",
+      "producers": [
+        "Various producers"
+      ],
+      "color": "#B22222"
+    },
+    "clos-saint-jacques": {
+      "name": "Clos Saint-Jacques",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Clos Saint-Jacques",
+      "classification": "Premier Cru",
+      "area": "6.7 ha",
+      "altitude": "270-300m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩粘土，富含鐵質",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "品質接近特級園、濃郁複雜、陳年潛力極佳",
+      "tastingNotes": "黑果、紫羅蘭、香料、礦物質、皮革",
+      "agingPotential": "15-25年",
+      "history": "被譽為最接近特級園品質的一級園",
+      "producers": [
+        "Armand Rousseau",
+        "Bruno Clair",
+        "Sylvie Esmonin"
+      ],
+      "color": "#B22222"
+    },
+    "combe-au-moine": {
+      "name": "Combe au Moine",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Combe au Moine",
+      "classification": "Premier Cru",
+      "area": "5.2 ha",
+      "altitude": "300-350m",
+      "exposition": "東向",
+      "soil": "石灰岩土壤，薄層表土",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅細膩、酸度鮮活、礦物感突出",
+      "tastingNotes": "紅果、花香、礦物質、香料",
+      "agingPotential": "10-18年",
+      "history": "位於山坡高處的優質地塊",
+      "producers": [
+        "Hubert Lignier",
+        "Dupont-Tisserandot"
+      ],
+      "color": "#B22222"
+    },
+    "craipillot": {
+      "name": "Craipillot",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Craipillot",
+      "classification": "Premier Cru",
+      "area": "2.4 ha",
+      "altitude": "280-300m",
+      "exposition": "東向",
+      "soil": "石灰岩粘土土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "結構良好、果味濃郁、單寧平衡",
+      "tastingNotes": "黑果、香料、土壤氣息",
+      "agingPotential": "8-15年",
+      "history": "傳統一級園地塊",
+      "producers": [
+        "Local producers"
+      ],
+      "color": "#B22222"
+    },
+    "en-ergot": {
+      "name": "En Ergot",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru En Ergot",
+      "classification": "Premier Cru",
+      "area": "1.3 ha",
+      "altitude": "280-300m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "精緻優雅、香氣純淨、口感細膩",
+      "tastingNotes": "紅果、花香、礦物質",
+      "agingPotential": "8-15年",
+      "history": "小型精品一級園",
+      "producers": [
+        "Various small producers"
+      ],
+      "color": "#B22222"
+    },
+    "estournelles-saint-jacques": {
+      "name": "Estournelles-Saint-Jacques",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Estournelles-Saint-Jacques",
+      "classification": "Premier Cru",
+      "area": "2.3 ha",
+      "altitude": "270-290m",
+      "exposition": "東向",
+      "soil": "粘土石灰岩，含鐵質",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "濃郁深邃、結構紮實、陳年能力佳",
+      "tastingNotes": "黑果、香料、皮革、礦物質",
+      "agingPotential": "10-18年",
+      "history": "與Clos Saint-Jacques相鄰的優質地塊",
+      "producers": [
+        "Robert Esmonin",
+        "Sylvie Esmonin"
+      ],
+      "color": "#B22222"
+    },
+    "fonteny": {
+      "name": "Fonteny",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Fonteny",
+      "classification": "Premier Cru",
+      "area": "4.2 ha",
+      "altitude": "250-270m",
+      "exposition": "東-東南向",
+      "soil": "粘土石灰岩土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "平衡優雅、果味清新、易於親近",
+      "tastingNotes": "櫻桃、草莓、香料、花香",
+      "agingPotential": "8-15年",
+      "history": "位於村莊附近的一級園",
+      "producers": [
+        "Various producers"
+      ],
+      "color": "#B22222"
+    },
+    "issarts": {
+      "name": "Issarts",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Issarts",
+      "classification": "Premier Cru",
+      "area": "1.9 ha",
+      "altitude": "280-300m",
+      "exposition": "東向",
+      "soil": "石灰岩土壤，多石塊",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "精緻細膩、礦物感強、口感純淨",
+      "tastingNotes": "紅果、礦物質、花香、香料",
+      "agingPotential": "10-15年",
+      "history": "小型優質一級園",
+      "producers": [
+        "Claude Dugat"
+      ],
+      "color": "#B22222"
+    },
+    "la-bossiere": {
+      "name": "La Bossière",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru La Bossière",
+      "classification": "Premier Cru",
+      "area": "2.5 ha",
+      "altitude": "300-320m",
+      "exposition": "東向",
+      "soil": "石灰岩土壤，薄層表土",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅精緻、酸度鮮活、香氣複雜",
+      "tastingNotes": "紅果、花香、礦物質、香料",
+      "agingPotential": "10-18年",
+      "history": "位於山坡上的優質地塊",
+      "producers": [
+        "Various producers"
+      ],
+      "color": "#B22222"
+    },
+    "la-perriere": {
+      "name": "La Perrière",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru La Perrière",
+      "classification": "Premier Cru",
+      "area": "3.8 ha",
+      "altitude": "280-300m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩土壤，多石塊",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "強勁有力、礦物感突出、結構緊密",
+      "tastingNotes": "黑果、礦物質、香料、土壤氣息",
+      "agingPotential": "12-20年",
+      "history": "以石質土壤著稱的一級園",
+      "producers": [
+        "Various producers"
+      ],
+      "color": "#B22222"
+    },
+    "la-romanee": {
+      "name": "La Romanée",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru La Romanée",
+      "classification": "Premier Cru",
+      "area": "1.2 ha",
+      "altitude": "280-300m",
+      "exposition": "東向",
+      "soil": "石灰岩粘土土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅細膩、香氣複雜、口感絲滑",
+      "tastingNotes": "紅果、紫羅蘭、香料、礦物質",
+      "agingPotential": "10-18年",
+      "history": "小而精的優質一級園",
+      "producers": [
+        "Various small producers"
+      ],
+      "color": "#B22222"
+    },
+    "lavaut-saint-jacques": {
+      "name": "Lavaut Saint-Jacques",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Lavaut Saint-Jacques",
+      "classification": "Premier Cru",
+      "area": "9.5 ha",
+      "altitude": "270-300m",
+      "exposition": "東-東南向",
+      "soil": "粘土石灰岩，富含鐵質",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "濃郁複雜、結構宏大、陳年潛力強",
+      "tastingNotes": "黑果、香料、皮革、礦物質、煙燻",
+      "agingPotential": "12-22年",
+      "history": "Gevrey-Chambertin最重要的一級園之一",
+      "producers": [
+        "Bernard Dugat-Py",
+        "Claude Dugat",
+        "Denis Mortet"
+      ],
+      "color": "#B22222"
+    },
+    "les-cazetiers": {
+      "name": "Les Cazetiers",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Les Cazetiers",
+      "classification": "Premier Cru",
+      "area": "9.0 ha",
+      "altitude": "260-280m",
+      "exposition": "東-東南向",
+      "soil": "粘土石灰岩，含砂礫",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "品質卓越、濃郁複雜、陳年潛力佳",
+      "tastingNotes": "黑果、紫羅蘭、香料、礦物質",
+      "agingPotential": "12-20年",
+      "history": "被認為是品質最接近特級園的一級園之一",
+      "producers": [
+        "Christian Serafin",
+        "Bruno Clair",
+        "Philippe Charlopin"
+      ],
+      "color": "#B22222"
+    },
+    "les-goulots": {
+      "name": "Les Goulots",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Les Goulots",
+      "classification": "Premier Cru",
+      "area": "2.3 ha",
+      "altitude": "280-300m",
+      "exposition": "東向",
+      "soil": "石灰岩土壤，多石塊",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "精緻優雅、礦物感強、口感純淨",
+      "tastingNotes": "紅果、礦物質、花香、香料",
+      "agingPotential": "10-15年",
+      "history": "位於山坡中段的優質地塊",
+      "producers": [
+        "Various producers"
+      ],
+      "color": "#B22222"
+    },
+    "petite-chapelle": {
+      "name": "Petite Chapelle",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Petite Chapelle",
+      "classification": "Premier Cru",
+      "area": "5.8 ha",
+      "altitude": "270-290m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩粘土土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅平衡、果味濃郁、單寧柔順",
+      "tastingNotes": "櫻桃、草莓、香料、花香",
+      "agingPotential": "10-18年",
+      "history": "與特級園Chapelle-Chambertin相鄰",
+      "producers": [
+        "Various producers"
+      ],
+      "color": "#B22222"
+    },
+    "petits-cazetiers": {
+      "name": "Petits Cazetiers",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Petits Cazetiers",
+      "classification": "Premier Cru",
+      "area": "2.2 ha",
+      "altitude": "260-280m",
+      "exposition": "東向",
+      "soil": "粘土石灰岩土壤",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "濃郁深邃、結構良好、層次豐富",
+      "tastingNotes": "黑果、香料、皮革、礦物質",
+      "agingPotential": "10-18年",
+      "history": "Les Cazetiers的延伸部分",
+      "producers": [
+        "Various producers"
+      ],
+      "color": "#B22222"
+    },
+    "poissenot": {
+      "name": "Poissenot",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Poissenot",
+      "classification": "Premier Cru",
+      "area": "2.1 ha",
+      "altitude": "280-300m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩土壤，排水良好",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "優雅精緻、香氣純淨、口感細膩",
+      "tastingNotes": "紅果、花香、礦物質、香料",
+      "agingPotential": "8-15年",
+      "history": "小型精品一級園",
+      "producers": [
+        "Harmand-Geoffroy"
+      ],
+      "color": "#B22222"
+    }
+  },
+  "1er Crus": {
+    "clos-saint-jacques": {
+      "name": "Clos Saint-Jacques",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Clos Saint-Jacques",
+      "classification": "1er Cru",
+      "area": "6.7 ha",
+      "altitude": "270-300m",
+      "exposition": "東向",
+      "soil": "石灰岩基底，表層為紅色粘土和碎石",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "優雅精緻、結構完美、具有特級園的品質",
+      "tastingNotes": "紅色水果、玫瑰花、香料、礦物質、絲滑單寧",
+      "agingPotential": "15-25年",
+      "history": "被譽為「未被授予特級園稱號的特級園」，品質可媲美 Grand Cru",
+      "producers": ["Armand Rousseau", "Bruno Clair", "Fourrier", "Sylvie Esmonin"],
+      "color": "#DC143C"
+    },
+    "lavaut-saint-jacques": {
+      "name": "Lavaut Saint-Jacques",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Lavaut Saint-Jacques",
+      "classification": "1er Cru",
+      "area": "9.5 ha",
+      "altitude": "270-290m",
+      "exposition": "東向",
+      "soil": "粘土石灰岩，富含鐵質",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "強勁有力、濃郁複雜、單寧堅實",
+      "tastingNotes": "黑櫻桃、甘草、香料、泥土氣息、礦物質",
+      "agingPotential": "12-20年",
+      "history": "與 Clos Saint-Jacques 相鄰，品質卓越的一級園",
+      "producers": ["Denis Mortet", "Claude Dugat", "Harmand-Geoffroy"],
+      "color": "#DC143C"
+    },
+    "cazetiers": {
+      "name": "Les Cazetiers",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Les Cazetiers",
+      "classification": "1er Cru",
+      "area": "9 ha",
+      "altitude": "260-280m",
+      "exposition": "東-東南向",
+      "soil": "粘土石灰岩，含石塊",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "優雅、細膩、花香豐富",
+      "tastingNotes": "紅色水果、紫羅蘭、香料、優雅的單寧",
+      "agingPotential": "10-18年",
+      "history": "位於村莊北端，鄰近 Chambertin，是頂級一級園之一",
+      "producers": ["Faiveley", "Bruno Clair", "Philippe Leclerc"],
+      "color": "#DC143C"
+    },
+    "combe-au-moine": {
+      "name": "Combe au Moine",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Combe au Moine",
+      "classification": "1er Cru",
+      "area": "5 ha",
+      "altitude": "280-310m",
+      "exposition": "東向",
+      "soil": "石灰岩為主，土層較薄",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "優雅、礦物感強、結構精緻",
+      "tastingNotes": "櫻桃、草莓、白花、石頭礦物、細膩單寧",
+      "agingPotential": "12-20年",
+      "history": "位於 Latricières-Chambertin 上方，海拔較高的一級園",
+      "producers": ["Hubert Lignier", "Dujac", "Ponsot"],
+      "color": "#DC143C"
+    },
+    "estournelles-saint-jacques": {
+      "name": "Estournelles-Saint-Jacques",
+      "fullName": "AOC Gevrey-Chambertin 1er Cru Estournelles-Saint-Jacques",
+      "classification": "1er Cru",
+      "area": "2.2 ha",
+      "altitude": "270-280m",
+      "exposition": "東向",
+      "soil": "粘土石灰岩，含礫石",
+      "grapes": ["黑皮諾 100%"],
+      "wineStyle": "豐富、深邃、具有深度",
+      "tastingNotes": "黑色水果、香料、煙燻、皮革、複雜層次",
+      "agingPotential": "15-22年",
+      "history": "緊鄰 Clos Saint-Jacques，品質優異",
+      "producers": ["Fourrier", "Rossignol-Trapet"],
+      "color": "#DC143C"
+    }
+  },
+  "village": {
+    "gevrey-village": {
+      "name": "Gevrey-Chambertin Village",
+      "fullName": "AOC Gevrey-Chambertin (Gevrey-Chambertin)",
+      "classification": "Village",
+      "area": "約400 ha",
+      "altitude": "220-280m",
+      "exposition": "主要朝東",
+      "soil": "多樣化土壤，以粘土石灰岩為主",
+      "grapes": [
+        "黑皮諾 100%"
+      ],
+      "wineStyle": "果味豐富、結構良好、易於親近",
+      "tastingNotes": "櫻桃、草莓、香料、土壤氣息",
+      "agingPotential": "5-12年",
+      "history": "勃根地最著名的村莊之一，擁有9個特級園",
+      "producers": [
+        "眾多生產者"
+      ],
+      "color": "#CD853F"
+    }
+  }
+}

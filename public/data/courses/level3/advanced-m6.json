@@ -1,0 +1,525 @@
+{
+  "moduleId": "advanced-m6",
+  "title": "特級園地塊比較",
+  "description": "同一特級園內不同地塊的風格差異與生產者詮釋比較",
+  "lessons": [
+    {
+      "id": "m6-l1",
+      "title": "Clos de Vougeot：50公頃的多樣性",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "Clos de Vougeot的地塊差異",
+          "subtitle": "Lesson 1 - 18分鐘",
+          "description": "理解同一特級園內地塊位置如何影響品質"
+        },
+        {
+          "type": "content",
+          "title": "布根地最大的矛盾",
+          "content": "Clos de Vougeot是布根地最大的特級園（50.59公頃），但也是品質最不一致的。被80多個生產者擁有，從上坡到下坡海拔差距60米，土壤、坡向、排水性差異巨大。同樣標示Clos de Vougeot Grand Cru，價格可差距5-10倍。"
+        },
+        {
+          "type": "list",
+          "title": "📍 三個區域的差異",
+          "points": [
+            "上坡（Haut）：靠近Musigny，石灰岩多，優雅精緻，最頂級",
+            "中坡（Milieu）：平衡區域，品質穩定",
+            "下坡（Bas）：靠近國道，黏土多，土壤深厚，較為厚重",
+            "海拔：上坡270m → 下坡240m（差距30m）",
+            "坡度：上坡8-12% → 下坡2-5%",
+            "最佳地塊：Grand Maupertui（上坡中心）"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "上坡 vs 下坡 Clos de Vougeot",
+          "leftTitle": "上坡地塊",
+          "leftPoints": [
+            "生產者：Méo-Camuzet, Gros Frère et Sœur",
+            "土壤：薄層石灰岩，排水極佳",
+            "風格：優雅、緊緻、礦物感",
+            "價格：每瓶200-500美元",
+            "品質：接近Musigny水準"
+          ],
+          "rightTitle": "下坡地塊",
+          "rightPoints": [
+            "生產者：部分較不知名酒莊",
+            "土壤：深厚黏土，保水性強",
+            "風格：厚重、果味豐富",
+            "價格：每瓶80-150美元",
+            "品質：村莊級或一級園水準"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "為什麼不細分？",
+          "content": "許多專家認為Clos de Vougeot應該細分為多個獨立的特級園，因為品質差異太大。但歷史原因（整片園牆圍繞）和既得利益讓這變得困難。解決方法是：了解生產者的地塊位置。頂級生產者通常註明「Haut」或地塊名稱。"
+        },
+        {
+          "type": "list",
+          "title": "🏆 頂級地塊持有者",
+          "points": [
+            "Méo-Camuzet（3.0ha）：上坡絕佳位置",
+            "Château de la Tour（5.5ha）：最大單一持有者",
+            "Gros Frère et Sœur（1.6ha）：上坡優質地塊",
+            "Domaine Leroy（1.91ha）：上坡中心位置",
+            "Anne Gros（1.0ha）：上坡精華",
+            "購買建議：選擇標明地塊或已知上坡持有者"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6-l2",
+      "title": "Chambertin家族的八兄弟",
+      "duration": "20分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "Chambertin與七個鄰居",
+          "subtitle": "Lesson 2 - 20分鐘",
+          "description": "深入了解Gevrey-Chambertin的九個特級園"
+        },
+        {
+          "type": "content",
+          "title": "Chambertin：拿破崙最愛",
+          "content": "Chambertin（13.3ha）和Chambertin-Clos de Bèze（15.4ha）是Gevrey最頂級的特級園，法律允許Clos de Bèze標示為Chambertin，但反之不行。周圍還有七個帶Chambertin後綴的特級園，品質和風格各異。理解這些差異是布根地專家的必修課。"
+        },
+        {
+          "type": "list",
+          "title": "👑 九大特級園排名",
+          "points": [
+            "1. Chambertin & Clos de Bèze - 最頂級，力量與優雅平衡",
+            "2. Latricières-Chambertin - 優雅版Chambertin",
+            "3. Mazis-Chambertin - 緊鄰Chambertin，強勁",
+            "4. Ruchottes-Chambertin - 最高海拔，優雅",
+            "5. Chapelle-Chambertin - 較輕盈",
+            "6. Griotte-Chambertin - 小而精緻",
+            "7. Charmes-Chambertin - 最大（31ha），柔和",
+            "8. Mazoyères-Chambertin - 通常標為Charmes"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Chambertin vs Latricières-Chambertin",
+          "leftTitle": "Chambertin",
+          "leftPoints": [
+            "面積：13.3公頃",
+            "位置：中心位置，略低於Clos de Bèze",
+            "風格：強勁、雄偉、深邃",
+            "單寧：厚重但精緻",
+            "價格：每瓶300-1,500美元",
+            "代表：Armand Rousseau, Leroy"
+          ],
+          "rightTitle": "Latricières-Chambertin",
+          "leftPoints": [
+            "面積：7.4公頃",
+            "位置：Chambertin南側",
+            "風格：優雅、精緻、細膩",
+            "單寧：較輕但絲滑",
+            "價格：每瓶150-600美元",
+            "代表：Faiveley, Rossignol-Trapet"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "Charmes的性價比",
+          "content": "Charmes-Chambertin是家族中最大的（31ha），也是相對最親民的。雖然被認為是最「柔和」的Chambertin，但頂級生產者（如Rousseau、Dujac）的Charmes品質卓越，價格卻只有Chambertin的1/3-1/2，是性價比之選。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 品鑑辨識要點",
+          "points": [
+            "Chambertin：黑櫻桃、甘草、皮革、強勁結構",
+            "Clos de Bèze：比Chambertin更優雅、花香更明顯",
+            "Latricières：紅色漿果、玫瑰、絲綢質地",
+            "Charmes：黑醋栗、柔和單寧、較早適飲",
+            "Ruchottes：礦物感、高酸度、緊緻",
+            "所有：都展現Gevrey的力量基因"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6-l3",
+      "title": "Corton：紅白雙棲的特級園",
+      "duration": "17分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "Corton山的多樣性",
+          "subtitle": "Lesson 3 - 17分鐘",
+          "description": "探索伯恩丘唯一的紅酒特級園"
+        },
+        {
+          "type": "content",
+          "title": "Corton：伯恩丘的紅色例外",
+          "content": "Corton是伯恩丘最大的特級園（160ha含紅白），也是唯一同時生產紅酒和白酒特級園的地塊。位於Corton山上，橫跨三個村莊（Aloxe-Corton、Ladoix、Pernand-Vergelesses）。因為面積大、地塊多，品質差異顯著。"
+        },
+        {
+          "type": "list",
+          "title": "🗺️ Corton的主要地塊",
+          "points": [
+            "Corton-Charlemagne（白）：西南向，白色泥灰岩，最頂級白酒",
+            "Le Corton（紅）：東南向，黏土混石灰岩",
+            "Les Bressandes（紅）：最優雅的Corton紅酒",
+            "Le Clos du Roi（紅）：最強勁有力",
+            "Les Renardes（紅）：平衡優雅",
+            "Les Pougets（紅）：較為次級"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Corton vs Corton-Charlemagne",
+          "leftTitle": "Corton（紅）",
+          "leftPoints": [
+            "品種：黑皮諾",
+            "坡向：東南向",
+            "土壤：紅黏土混石灰岩",
+            "風格：強勁、飽滿、單寧厚",
+            "價格：每瓶80-300美元",
+            "代表：Chandon de Briailles"
+          ],
+          "rightTitle": "Corton-Charlemagne（白）",
+          "rightPoints": [
+            "品種：霞多麗",
+            "坡向：西南向",
+            "土壤：白色泥灰岩",
+            "風格：濃郁、礦物、陳年潛力強",
+            "價格：每瓶150-600美元",
+            "代表：Coche-Dury, Bonneau du Martray"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "查理曼大帝的傳說",
+          "content": "Corton-Charlemagne得名於查理曼大帝（Charlemagne）。傳說他在晚年因紅酒弄髒白鬍子，下令將此地塊改種白葡萄。這個傳說真實性存疑，但Corton-Charlemagne確實是布根地最偉大的白酒之一，僅次於Montrachet家族。"
+        },
+        {
+          "type": "list",
+          "title": "⚠️ Corton購買建議",
+          "points": [
+            "標明地塊：選擇標示Bressandes、Clos du Roi等具體地塊",
+            "避免泛指：單純標Corton可能來自較次級地塊",
+            "頂級生產者：Bonneau du Martray（最大Corton-Charlemagne持有者）",
+            "白酒優先：Corton-Charlemagne通常比Corton紅酒更穩定",
+            "價格差異：同一生產者的不同地塊可差2-3倍",
+            "陳年潛力：白酒15-25年，紅酒10-20年"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6-l4",
+      "title": "Montrachet家族的五兄弟",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "白酒特級園的金字塔",
+          "subtitle": "Lesson 4 - 18分鐘",
+          "description": "深入理解五個Montrachet特級園的差異"
+        },
+        {
+          "type": "content",
+          "title": "Le Montrachet：白酒之王",
+          "content": "Le Montrachet（8ha）是世界最昂貴、最頂級的白酒。橫跨Puligny和Chassagne兩村，位於完美的中坡位置。薄層石灰岩土壤、理想的東南向、絕佳的排水性，造就了無與倫比的礦物感、深度與陳年潛力。周圍四個特級園都帶Montrachet後綴。"
+        },
+        {
+          "type": "list",
+          "title": "👑 五大白酒特級園排名",
+          "points": [
+            "1. Le Montrachet（8ha）- 絕對的王者，完美平衡",
+            "2. Chevalier-Montrachet（7.4ha）- 上坡，最優雅精緻",
+            "3. Bâtard-Montrachet（11.9ha）- 下坡，最強勁飽滿",
+            "4. Bienvenues-Bâtard-Montrachet（3.7ha）- 優雅版Bâtard",
+            "5. Criots-Bâtard-Montrachet（1.6ha）- 最小，Chassagne獨有"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Chevalier vs Bâtard-Montrachet",
+          "leftTitle": "Chevalier-Montrachet",
+          "leftPoints": [
+            "位置：Le Montrachet上坡",
+            "土壤：極薄石灰岩，多石礫",
+            "風格：極致優雅、礦物感、緊緻",
+            "酸度：最高",
+            "價格：每瓶400-2,000美元",
+            "代表：Leflaive, Ramonet"
+          ],
+          "rightTitle": "Bâtard-Montrachet",
+          "rightPoints": [
+            "位置：Le Montrachet下坡",
+            "土壤：較深，黏土比例高",
+            "風格：飽滿、濃郁、油潤",
+            "酸度：較低但平衡",
+            "價格：每瓶300-1,500美元",
+            "代表：Ramonet, Sauzet"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "Leflaive vs Ramonet",
+          "content": "兩家酒莊都是Montrachet家族的頂級生產者。Leflaive風格更優雅、礦物感更突出，Ramonet則更濃郁、飽滿。兩者都採用生物動力法，長時間酒泥陳年。Leflaive的Chevalier被認為是僅次於Le Montrachet的白酒。"
+        },
+        {
+          "type": "list",
+          "title": "💎 品鑑特徵",
+          "points": [
+            "Le Montrachet：完美平衡、深度、礦物、堅果、無窮層次",
+            "Chevalier：燧石、檸檬、緊緻、極高酸度、空靈",
+            "Bâtard：奶油、烤榛果、飽滿、油潤、豐富",
+            "Bienvenues：介於Montrachet和Bâtard之間",
+            "Criots：最小巧精緻，類似Bâtard但更輕盈",
+            "陳年：10年後開始展現複雜度，20-30年巔峰"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6-l5",
+      "title": "Musigny vs Bonnes-Mares",
+      "duration": "16分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "Chambolle的雙子星",
+          "subtitle": "Lesson 5 - 16分鐘",
+          "description": "比較Chambolle-Musigny的兩個特級園"
+        },
+        {
+          "type": "content",
+          "title": "Musigny：布根地最優雅的紅酒",
+          "content": "Musigny（10.8ha）被譽為布根地最優雅、最精緻的紅酒特級園。70%由Comte de Vogüé持有，土壤以石灰岩為主、極薄、排水完美。產出的酒款如絲綢般柔滑，花香四溢，是優雅的極致體現。還有0.65ha種植霞多麗（Musigny Blanc），極度稀有。"
+        },
+        {
+          "type": "comparison",
+          "title": "Musigny vs Bonnes-Mares",
+          "leftTitle": "Musigny",
+          "leftPoints": [
+            "面積：10.8公頃（紅）+ 0.65ha（白）",
+            "土壤：薄層石灰岩為主",
+            "風格：極致優雅、空靈、花香",
+            "單寧：絲綢般細膩",
+            "價格：每瓶300-1,500美元",
+            "主要持有者：Comte de Vogüé（70%）"
+          ],
+          "rightTitle": "Bonnes-Mares",
+          "rightPoints": [
+            "面積：15.1公頃",
+            "土壤：黏土比例較高",
+            "風格：更強勁、結構更明顯",
+            "單寧：更厚實但優雅",
+            "價格：每瓶200-1,000美元",
+            "橫跨：Chambolle（85%）+ Morey（15%）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "Bonnes-Mares的兩個面孔",
+          "content": "Bonnes-Mares橫跨Chambolle-Musigny和Morey-Saint-Denis兩村。Chambolle這側（85%）較優雅，Morey那側（15%）較強勁。頂級生產者如Comte de Vogüé、Roumier、Dujac都持有兩側地塊，混釀後達到力量與優雅的完美平衡。"
+        },
+        {
+          "type": "list",
+          "title": "🌟 頂級生產者比較",
+          "points": [
+            "Comte de Vogüé：兩者都有，Musigny最權威",
+            "Georges Roumier：Bonnes-Mares傳奇生產者",
+            "Domaine Dujac：兩者都有，整串發酵風格",
+            "Jacques-Frédéric Mugnier：優雅派代表",
+            "Groffier：Bonnes-Mares小地塊持有者",
+            "Leroy：兩者都有，極度濃郁風格"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💡 選購建議",
+          "points": [
+            "Musigny：絕對的優雅體驗，但價格高昂",
+            "Bonnes-Mares：性價比較佳，品質僅次於Musigny",
+            "Les Amoureuses（一級園）：被認為可媲美Musigny",
+            "Vogüé的Musigny：標竿之作，但1970-1990年份要小心",
+            "Roumier的Bonnes-Mares：與Musigny同價但風格不同",
+            "陳年：Musigny 15-40年，Bonnes-Mares 12-35年"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6-l6",
+      "title": "特級園投資價值比較",
+      "duration": "16分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "特級園的投資邏輯",
+          "subtitle": "Lesson 6 - 16分鐘",
+          "description": "從投資角度分析不同特級園的潛力"
+        },
+        {
+          "type": "content",
+          "title": "並非所有特級園都值得投資",
+          "content": "33個特級園的投資價值差異巨大。頂級的（Romanée-Conti、Montrachet）已經天價且難以取得，但增值潛力依然強勁。中檔的（如Corton、Clos de Vougeot下段）價格波動大、流動性差。關鍵是找到被低估且品質穩定的特級園。"
+        },
+        {
+          "type": "list",
+          "title": "💰 投資級特級園（按性價比）",
+          "points": [
+            "最高：Vosne-Romanée特級園（除RC外）- 穩定增值",
+            "優秀：Chambertin家族、Musigny - 頂級但價高",
+            "性價比：Clos de la Roche, Clos Saint-Denis - 被低估",
+            "白酒：Montrachet家族 - 增值快但波動大",
+            "避免：Corton下段、Clos de Vougeot下段 - 品質不穩",
+            "新星：Chablis Grand Cru - 價格合理，品質提升"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "投資型 vs 飲用型特級園",
+          "leftTitle": "投資首選",
+          "leftPoints": [
+            "DRC全系列：穩定增值10-15%/年",
+            "Leroy特級園：稀缺性高",
+            "Rousseau Chambertin：頂級名聲",
+            "Leflaive Montrachet：白酒標竿",
+            "流動性：高",
+            "持有期：10年以上"
+          ],
+          "rightTitle": "飲用性價比",
+          "rightPoints": [
+            "Morey特級園：品質高但價格合理",
+            "Chablis Grand Cru：礦物感獨特",
+            "Corton-Charlemagne：白酒性價比",
+            "Charmes-Chambertin：Gevrey最親民",
+            "流動性：中等",
+            "持有期：5-10年"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "拍賣數據分析",
+          "content": "根據近20年拍賣數據，DRC的Romanée-Conti年均增值約12%，La Tâche約10%，Leroy的Musigny約11%。Montrachet家族白酒增值更快（15-20%）但波動也更大。Morey-Saint-Denis的特級園被嚴重低估，增值潛力可觀。"
+        },
+        {
+          "type": "list",
+          "title": "📊 特級園價格梯度（2024）",
+          "points": [
+            "超頂級（$2,000+）：Romanée-Conti, La Tâche, Montrachet",
+            "頂級（$500-2,000）：其他DRC、Leroy、Rousseau Chambertin",
+            "優質（$200-500）：Musigny, Chambertin（一般生產者）",
+            "中高（$100-200）：Bonnes-Mares, Clos de la Roche",
+            "中等（$80-150）：Corton, Clos de Vougeot（部分）",
+            "親民（$60-100）：Chablis Grand Cru, Charmes-Chambertin"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "id": "advanced-m6-quiz",
+    "title": "特級園地塊比較 - 綜合測驗",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple-choice",
+        "question": "Clos de Vougeot特級園被多少個生產者擁有？",
+        "options": ["約20個", "約50個", "約80個", "約100個"],
+        "correctAnswer": 2,
+        "explanation": "Clos de Vougeot被80多個生產者擁有，是布根地所有權最分散的特級園。"
+      },
+      {
+        "id": "q2",
+        "type": "true-false",
+        "question": "Chambertin-Clos de Bèze可以標示為Chambertin，但反之不行。",
+        "correctAnswer": true,
+        "explanation": "法律允許Clos de Bèze標示為Chambertin，但Chambertin不能標示為Clos de Bèze，顯示Clos de Bèze的地位。"
+      },
+      {
+        "id": "q3",
+        "type": "multiple-choice",
+        "question": "Gevrey-Chambertin有多少個特級園？",
+        "options": ["5個", "7個", "9個", "11個"],
+        "correctAnswer": 2,
+        "explanation": "Gevrey-Chambertin有9個特級園，包括Chambertin、Clos de Bèze和7個帶Chambertin後綴的特級園。"
+      },
+      {
+        "id": "q4",
+        "type": "multiple-choice",
+        "question": "Corton-Charlemagne的名稱來源於？",
+        "options": [
+          "一位釀酒師",
+          "查理曼大帝",
+          "一個地名",
+          "葡萄品種"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Corton-Charlemagne得名於查理曼大帝（Charlemagne），傳說他下令此地改種白葡萄。"
+      },
+      {
+        "id": "q5",
+        "type": "multiple-choice",
+        "question": "Montrachet家族有多少個白酒特級園？",
+        "options": ["3個", "4個", "5個", "6個"],
+        "correctAnswer": 2,
+        "explanation": "Montrachet家族有5個白酒特級園：Le Montrachet、Chevalier、Bâtard、Bienvenues-Bâtard和Criots-Bâtard。"
+      },
+      {
+        "id": "q6",
+        "type": "true-false",
+        "question": "Chevalier-Montrachet位於Le Montrachet的上坡位置，風格更優雅精緻。",
+        "correctAnswer": true,
+        "explanation": "Chevalier-Montrachet在上坡，土壤更薄、石灰岩更多，產出極致優雅、高酸度、礦物感強的白酒。"
+      },
+      {
+        "id": "q7",
+        "type": "multiple-choice",
+        "question": "Comte de Vogüé擁有Musigny特級園的多少比例？",
+        "options": ["30%", "50%", "70%", "100%"],
+        "correctAnswer": 2,
+        "explanation": "Comte de Vogüé擁有Musigny 10.8公頃中的約7公頃，約佔70%，是Musigny的代名詞。"
+      },
+      {
+        "id": "q8",
+        "type": "true-false",
+        "question": "Bonnes-Mares特級園橫跨Chambolle-Musigny和Morey-Saint-Denis兩個村莊。",
+        "correctAnswer": true,
+        "explanation": "Bonnes-Mares約85%在Chambolle，15%在Morey-Saint-Denis，兩側風格略有差異。"
+      },
+      {
+        "id": "q9",
+        "type": "multiple-choice",
+        "question": "從投資角度，以下哪個特級園的性價比較高？",
+        "options": [
+          "Romanée-Conti",
+          "Clos de la Roche",
+          "Le Montrachet",
+          "La Tâche"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Clos de la Roche品質優秀但相對被低估，價格較合理，投資性價比較高。"
+      },
+      {
+        "id": "q10",
+        "type": "multiple-choice",
+        "question": "Clos de Vougeot上坡地塊的品質可媲美？",
+        "options": [
+          "村莊級",
+          "一級園",
+          "Musigny",
+          "普通特級園"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Clos de Vougeot上坡地塊（如Méo-Camuzet持有）品質接近Musigny水準，遠超一般特級園。"
+      }
+    ]
+  }
+}

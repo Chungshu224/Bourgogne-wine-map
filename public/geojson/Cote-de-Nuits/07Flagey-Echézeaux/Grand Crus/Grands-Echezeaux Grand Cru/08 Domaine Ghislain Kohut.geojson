@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.952539155071955,47.17014229460415],[4.952521968609682,47.17010752060397],[4.953243071241229,47.17002842370371],[4.95382454084022,47.16998139915745],[4.954527808713816,47.16992476939437],[4.954521849312783,47.16996283305753],[4.952539155071955,47.17014229460415]]]},"properties":{"name":"08 Domaine Ghislain Kohut","styleUrl":"#m_ylw-pushpin","fill-opacity":0.5019607843137255,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

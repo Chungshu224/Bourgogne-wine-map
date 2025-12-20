@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.934383287061459,47.12349281862419],[4.936451887393227,47.12304900880852],[4.936489938744996,47.12312834392844],[4.936521570342718,47.1232279902021],[4.936037819854151,47.12333054983348],[4.93563130817755,47.12341153465563],[4.93533005260862,47.12346935763275],[4.935257624645473,47.12335200631512],[4.9343781773814,47.12353043485903],[4.934383287061459,47.12349281862419]]]},"properties":{"name":"07 Domaine Chicotot","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

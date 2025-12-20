@@ -1,0 +1,447 @@
+{
+  "moduleId": "beginner-m1",
+  "title": "認識布根地",
+  "description": "探索布根地的地理環境、悠久歷史、經典品種與酒標解讀",
+  "lessons": [
+    {
+      "id": "m1-l1",
+      "title": "地理位置與氣候環境",
+      "duration": "15分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "地理位置與氣候環境",
+          "subtitle": "Lesson 1 - 15分鐘",
+          "description": "認識布根地的地理位置、氣候特色與六大產區分布"
+        },
+        {
+          "type": "content",
+          "title": "布根地在哪裡？",
+          "content": "布根地位於法國東部，從巴黎東南方約 300 公里處開始，南北延伸約 230 公里，是世界上最負盛名的葡萄酒產區之一。"
+        },
+        {
+          "type": "list",
+          "title": "📍 地理特徵",
+          "points": [
+            "位於北緯 46-48 度之間，葡萄種植的黃金緯度",
+            "南北跨越約 230 公里，從夏布利延伸至薄酒萊",
+            "主要城市：第戎（Dijon）與博訥（Beaune）",
+            "鄰近瑞士邊境，受阿爾卑斯山脈影響"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🌤️ 大陸性氣候",
+          "points": [
+            "春季：溫和潮濕，需注意霜凍風險",
+            "夏季：溫暖但不炎熱（22-25°C），葡萄緩慢成熟",
+            "秋季：涼爽乾燥，保持葡萄的新鮮酸度",
+            "冬季：寒冷（可降至 -5°C），葡萄藤休眠"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🌍 六大產區（南北排列）",
+          "points": [
+            "夏布利與大歐塞瓦 - 純淨礦物風格的夏多內",
+            "夜丘（Côte de Nuits）- 世界頂級黑皮諾紅酒",
+            "伯恩丘（Côte de Beaune）- 偉大的白酒與紅酒",
+            "夏隆丘（Côte Chalonnaise）- 性價比優質產區",
+            "馬貢內（Mâconnais）- 清新易飲的白酒",
+            "薄酒萊（Beaujolais）- 加美葡萄的天堂"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "風土（Terroir）的重要性",
+          "content": "布根地的獨特之處在於「風土」概念 - 同一葡萄品種在不同地塊會展現截然不同的風格，這是由土壤、坡向、海拔與微氣候共同決定的。"
+        }
+      ]
+    },
+    {
+      "id": "m1-l2",
+      "title": "葡萄酒歷史與僧侶傳統",
+      "duration": "15分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "葡萄酒歷史與僧侶傳統",
+          "subtitle": "Lesson 2 - 15分鐘",
+          "description": "從羅馬時代到現代，了解布根地兩千年的釀酒歷史"
+        },
+        {
+          "type": "timeline",
+          "title": "📅 布根地葡萄酒歷史",
+          "timeline": [
+            {
+              "year": "312年",
+              "event": "羅馬時代開始在布根地種植葡萄"
+            },
+            {
+              "year": "496年",
+              "event": "克洛維一世皈依基督教，教會開始擁有葡萄園"
+            },
+            {
+              "year": "910年",
+              "event": "克呂尼修道院（Cluny Abbey）成立，推動葡萄酒釀造"
+            },
+            {
+              "year": "1098年",
+              "event": "西篤會（Cistercian）修道士建立修道院"
+            },
+            {
+              "year": "1336年",
+              "event": "教皇遷至亞維儂，布根地酒聲名遠播"
+            },
+            {
+              "year": "1395年",
+              "event": "勃艮第公爵菲利普下令禁種加美，只種黑皮諾"
+            },
+            {
+              "year": "1789年",
+              "event": "法國大革命，葡萄園從教會轉為私人所有"
+            },
+            {
+              "year": "1855年",
+              "event": "波爾多分級制度建立（布根地後來發展不同體系）"
+            },
+            {
+              "year": "1936年",
+              "event": "AOC 法定產區制度正式確立"
+            },
+            {
+              "year": "2015年",
+              "event": "布根地 Climats 被列為聯合國教科文組織世界遺產"
+            }
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🏰 西篤會修道士的貢獻",
+          "content": "西篤會修道士（Cistercian Monks）對布根地葡萄酒發展功不可沒。他們仔細觀察不同地塊的差異，首創「風土」概念，並建立了嚴格的品質標準。"
+        },
+        {
+          "type": "list",
+          "title": "修道士的創新",
+          "points": [
+            "詳細記錄每塊地的土壤與氣候特徵",
+            "建立石牆（Clos）劃分不同的葡萄園地塊",
+            "發展出精確的葡萄種植與釀酒技術",
+            "創造「Climat」概念 - 獨特地塊的命名系統"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "法國大革命的影響",
+          "content": "1789 年法國大革命後，教會擁有的大片葡萄園被沒收並分割出售。這造就了布根地獨特的「小農經濟」- 同一塊葡萄園可能有數十位地主，每人只擁有幾排葡萄藤。"
+        },
+        {
+          "type": "content",
+          "title": "🏛️ 聯合國教科文組織世界遺產",
+          "content": "2015年，布根地的「Climats」正式被列為世界遺產。Climats 指的是 1,247 個被精確劃分的葡萄園地塊，每一塊都有獨特的名稱、歷史與風土特色。"
+        }
+      ]
+    },
+    {
+      "id": "m1-l3",
+      "title": "主要葡萄品種",
+      "duration": "15分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "主要葡萄品種",
+          "subtitle": "Lesson 3 - 15分鐘",
+          "description": "深入了解黑皮諾（Pinot Noir）與夏多內（Chardonnay）兩大經典品種"
+        },
+        {
+          "type": "content",
+          "title": "布根地的單一品種哲學",
+          "content": "與波爾多的混釀傳統不同，布根地堅持單一品種釀造。紅酒幾乎全部使用黑皮諾（Pinot Noir），白酒則以夏多內（Chardonnay）為主。"
+        },
+        {
+          "type": "comparison",
+          "title": "🍇 兩大經典品種對比",
+          "grapes": [
+            {
+              "name": "黑皮諾",
+              "nameFr": "Pinot Noir",
+              "emoji": "🍷",
+              "characteristics": {
+                "color": "淺至中等紅寶石色",
+                "body": "中等酒體，優雅細緻",
+                "acidity": "高酸度，清新活潑",
+                "tannin": "柔和單寧，絲滑口感",
+                "alcohol": "12.5-14%",
+                "aroma": "紅色莓果、櫻桃、草莓",
+                "flavor": "成熟後發展出森林地表、松露、皮革香氣"
+              },
+              "regions": [
+                "夜丘（Côte de Nuits）- 最頂級",
+                "伯恩丘（Côte de Beaune）- 優雅柔美",
+                "夏隆丘 - 性價比高"
+              ],
+              "temperature": "🌡️ 適飲溫度：14-16°C",
+              "aging": "頂級酒款可陳年 20-50 年"
+            },
+            {
+              "name": "夏多內",
+              "nameFr": "Chardonnay",
+              "emoji": "🥂",
+              "characteristics": {
+                "color": "淺檸檬黃至金黃色",
+                "body": "中至飽滿酒體",
+                "acidity": "中高至高酸度",
+                "alcohol": "12-14%",
+                "aroma": "青蘋果、檸檬、白花",
+                "flavor": "經橡木桶後展現奶油、烤麵包、榛果香氣"
+              },
+              "regions": [
+                "夏布利 - 純淨礦物風格",
+                "伯恩丘 - Meursault、Puligny-Montrachet",
+                "馬貢內 - 清新果味風格"
+              ],
+              "temperature": "🌡️ 適飲溫度：10-12°C",
+              "aging": "頂級白酒可陳年 15-30 年"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "為什麼黑皮諾如此特別？",
+          "points": [
+            "最難種植的品種之一 - 對氣候與土壤極為挑剔",
+            "薄皮葡萄 - 容易受病蟲害影響",
+            "早熟品種 - 需要涼爽氣候保持酸度",
+            "能完美表達風土差異 - 被稱為「透明的品種」"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "夏多內的多樣性",
+          "points": [
+            "適應力強 - 在全球各地都有種植",
+            "風格多變 - 從清爽礦物到濃郁奶油",
+            "橡木桶使用 - 影響最終風格的關鍵",
+            "布根地是夏多內的原鄉與標竿"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "其他品種",
+          "content": "除了黑皮諾與夏多內，布根地也種植少量 Aligoté（白葡萄）和 Gamay（紅葡萄，主要在薄酒萊）。Aligoté 用於釀造清新的白酒，也是著名雞尾酒 Kir 的基酒。"
+        }
+      ]
+    },
+    {
+      "id": "m1-l4",
+      "title": "酒標閱讀指南",
+      "duration": "15分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "酒標閱讀指南",
+          "subtitle": "Lesson 4 - 15分鐘",
+          "description": "學會解讀布根地酒標，了解等級系統與關鍵資訊"
+        },
+        {
+          "type": "content",
+          "title": "布根地酒標的獨特性",
+          "content": "布根地酒標看似簡單，實則蘊含豐富資訊。理解酒標是選購布根地酒的第一步，也是了解布根地分級體系的關鍵。"
+        },
+        {
+          "type": "list",
+          "title": "🏷️ 酒標必讀元素（由上而下）",
+          "points": [
+            "1. 酒莊名稱 - Domaine（酒莊）或 Maison（酒商）",
+            "2. 葡萄園名稱 - 可能包含 Grand Cru 或 Premier Cru",
+            "3. 產區/村莊名稱 - 如 Gevrey-Chambertin",
+            "4. AOC 等級標示 - Appellation d'Origine Contrôlée",
+            "5. 年份 - Vintage（非常重要）",
+            "6. 酒精濃度 - 通常 12-14%",
+            "7. 容量 - 標準 750ml"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "四級金字塔分級系統",
+          "points": [
+            "大區級（Régionale）- 約佔產量 53%",
+            "村莊級（Village）- 約佔產量 36%",
+            "一級園（Premier Cru）- 約佔產量 10%",
+            "特級園（Grand Cru）- 僅佔產量 1%"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "如何辨識等級？",
+          "content": "Grand Cru（特級園）- 酒標上只會標示葡萄園名稱，如「Chambertin」；Premier Cru（一級園）- 會標示村莊名 + 葡萄園名，如「Gevrey-Chambertin 1er Cru Les Cazetiers」"
+        },
+        {
+          "type": "list",
+          "title": "酒標常見法文術語",
+          "points": [
+            "Mis en bouteille au domaine - 酒莊自行裝瓶",
+            "Vieilles Vignes - 老藤葡萄（通常 30 年以上）",
+            "Monopole - 單一所有權葡萄園",
+            "Clos - 有石牆圍繞的葡萄園",
+            "Climat - 特定命名的地塊"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "選購建議",
+          "points": [
+            "初學者：從村莊級開始，價格合理且品質穩定",
+            "進階者：嘗試一級園，體驗不同地塊的差異",
+            "收藏家：特級園值得長期陳年與投資",
+            "注意年份：布根地年份差異顯著，影響品質與價格"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "Domaine vs Négociant",
+          "content": "Domaine（酒莊）擁有自己的葡萄園並釀酒；Négociant（酒商）則是向農民購買葡萄或酒液再裝瓶。兩者各有優勢，許多酒商也擁有自己的葡萄園。"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "passingScore": 60,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "布根地位於法國哪個方位？",
+        "type": "single",
+        "options": [
+          "西南部（波爾多附近）",
+          "東部（巴黎東南方約300公里）",
+          "南部（普羅旺斯地區）",
+          "北部（香檳區附近）"
+        ],
+        "correctAnswer": 1,
+        "explanation": "布根地位於法國東部，從巴黎東南方約300公里處開始，主要城市包括第戎（Dijon）和博訥（Beaune）。"
+      },
+      {
+        "id": "q2",
+        "question": "布根地屬於什麼氣候類型？",
+        "type": "single",
+        "options": [
+          "地中海型氣候",
+          "海洋性氣候",
+          "大陸性氣候",
+          "熱帶氣候"
+        ],
+        "correctAnswer": 2,
+        "explanation": "布根地屬於大陸性氣候，四季分明，冬季寒冷，夏季溫暖但不炎熱，這對黑皮諾和夏多內的生長非常理想。"
+      },
+      {
+        "id": "q3",
+        "question": "哪個修道會對布根地葡萄酒發展貢獻最大？",
+        "type": "single",
+        "options": [
+          "本篤會（Benedictine）",
+          "西篤會（Cistercian）",
+          "方濟會（Franciscan）",
+          "道明會（Dominican）"
+        ],
+        "correctAnswer": 1,
+        "explanation": "西篤會修道士仔細研究不同地塊的差異，首創「風土」概念，並建立了嚴格的葡萄種植與釀酒標準，對布根地發展功不可沒。"
+      },
+      {
+        "id": "q4",
+        "question": "布根地的「Climats」在2015年被列為什麼？",
+        "type": "single",
+        "options": [
+          "法國國家級古蹟",
+          "聯合國教科文組織世界遺產",
+          "歐盟保護產區",
+          "國際美食之都"
+        ],
+        "correctAnswer": 1,
+        "explanation": "2015年，布根地的 Climats（1,247個精確劃分的葡萄園地塊）被列為聯合國教科文組織世界遺產，彰顯其獨特的文化與歷史價值。"
+      },
+      {
+        "id": "q5",
+        "question": "布根地紅酒主要使用哪個葡萄品種？",
+        "type": "single",
+        "options": [
+          "卡本內蘇維濃（Cabernet Sauvignon）",
+          "梅洛（Merlot）",
+          "黑皮諾（Pinot Noir）",
+          "希哈（Syrah）"
+        ],
+        "correctAnswer": 2,
+        "explanation": "布根地紅酒幾乎全部使用黑皮諾（Pinot Noir）單一品種釀造，這是布根地的特色之一，與波爾多的混釀傳統截然不同。"
+      },
+      {
+        "id": "q6",
+        "question": "夏多內（Chardonnay）在布根地主要用於釀造什麼？",
+        "type": "single",
+        "options": [
+          "紅酒",
+          "白酒",
+          "粉紅酒",
+          "氣泡酒"
+        ],
+        "correctAnswer": 1,
+        "explanation": "夏多內是白葡萄品種，在布根地主要用於釀造白酒。布根地是夏多內的原鄉，這裡的夏多內白酒被視為世界標竿。"
+      },
+      {
+        "id": "q7",
+        "question": "布根地四級分級系統中，哪一級產量最少但品質最高？",
+        "type": "single",
+        "options": [
+          "大區級（Régionale）",
+          "村莊級（Village）",
+          "一級園（Premier Cru）",
+          "特級園（Grand Cru）"
+        ],
+        "correctAnswer": 3,
+        "explanation": "特級園（Grand Cru）僅佔布根地總產量的1%，是品質最高的等級。這些葡萄園擁有最優越的風土條件，釀造出的葡萄酒最具陳年潛力。"
+      },
+      {
+        "id": "q8",
+        "question": "在布根地酒標上，如果只標示「Chambertin」而沒有村莊名，這是什麼等級？",
+        "type": "single",
+        "options": [
+          "大區級",
+          "村莊級",
+          "一級園",
+          "特級園"
+        ],
+        "correctAnswer": 3,
+        "explanation": "特級園（Grand Cru）的酒標只會標示葡萄園名稱，不需要標示村莊名。如果是一級園，則會標示「村莊名 + 1er Cru + 葡萄園名」。"
+      },
+      {
+        "id": "q9",
+        "question": "「Mis en bouteille au domaine」在酒標上代表什麼意思？",
+        "type": "single",
+        "options": [
+          "有機認證葡萄酒",
+          "老藤葡萄釀造",
+          "酒莊自行裝瓶",
+          "單一葡萄園"
+        ],
+        "correctAnswer": 2,
+        "explanation": "「Mis en bouteille au domaine」表示這支酒是由酒莊自行裝瓶，通常意味著從葡萄種植到裝瓶都由同一酒莊掌控，品質較有保障。"
+      },
+      {
+        "id": "q10",
+        "question": "布根地從北到南有六大產區，以下哪個不是？",
+        "type": "single",
+        "options": [
+          "夏布利（Chablis）",
+          "夜丘（Côte de Nuits）",
+          "波亞克（Pauillac）",
+          "薄酒萊（Beaujolais）"
+        ],
+        "correctAnswer": 2,
+        "explanation": "波亞克（Pauillac）是波爾多的產區，不屬於布根地。布根地六大產區由北到南為：夏布利、夜丘、伯恩丘、夏隆丘、馬貢內、薄酒萊。"
+      }
+    ]
+  }
+}

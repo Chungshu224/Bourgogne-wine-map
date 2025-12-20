@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.779255086093881,46.99479230866408],[4.780623292756248,46.99410717061391],[4.780727468180695,46.99433667026168],[4.779446413342445,46.99495244314133],[4.779255086093881,46.99479230866408]]]},"properties":{"name":"02 Bernard Delagrange","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

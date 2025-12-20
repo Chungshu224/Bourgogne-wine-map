@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.7375325325187,46.94792042230839],[4.737529713924602,46.94792456367905],[4.737477596730222,46.94783769187984],[4.739112914309993,46.94726150103358],[4.739232754458877,46.94738779626699],[4.737600295682681,46.94796166188238],[4.7375325325187,46.94792042230839]]]},"properties":{"name":"09Domaine Philippe Colin","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

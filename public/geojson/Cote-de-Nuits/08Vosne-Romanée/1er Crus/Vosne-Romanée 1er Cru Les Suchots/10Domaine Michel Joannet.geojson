@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.953294264754897,47.1650243186091],[4.953063582034172,47.16391115114649],[4.953264657498111,47.16385145609193],[4.953468683334357,47.16381716760667],[4.953552399114844,47.16424635089271],[4.953651673281332,47.16474543261991],[4.953696352427834,47.16497413759864],[4.953294264754897,47.1650243186091]]]},"properties":{"name":"10Domaine Michel Joannet","styleUrl":"#m_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

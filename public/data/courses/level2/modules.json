@@ -1,0 +1,100 @@
+{
+  "modules": [
+    {
+      "id": "intermediate-m1",
+      "order": 1,
+      "title": "夜丘產區深度解析",
+      "icon": "🌙",
+      "duration": "90分鐘",
+      "lessons": 5,
+      "progress": 0,
+      "completed": false,
+      "locked": false,
+      "description": "探索世界最偉大的黑皮諾產區，深入了解夜丘的九大村莊與特級園"
+    },
+    {
+      "id": "intermediate-m2",
+      "order": 2,
+      "title": "伯恩丘白酒聖地",
+      "icon": "🏔️",
+      "duration": "85分鐘",
+      "lessons": 5,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "掌握伯恩丘頂級白酒產區，包括蒙哈榭、默爾索與伯恩村的特級園與一級園"
+    },
+    {
+      "id": "intermediate-m3",
+      "order": 3,
+      "title": "風土與土壤科學",
+      "icon": "🌍",
+      "duration": "70分鐘",
+      "lessons": 4,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "理解布根地複雜的地質結構、土壤類型與風土對葡萄酒風格的影響"
+    },
+    {
+      "id": "intermediate-m4",
+      "order": 4,
+      "title": "特級園完整導覽",
+      "icon": "👑",
+      "duration": "100分鐘",
+      "lessons": 6,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "深入研究布根地33個特級園（Grand Cru）的歷史、風土與典型風格"
+    },
+    {
+      "id": "intermediate-m5",
+      "order": 5,
+      "title": "一級園精選分析",
+      "icon": "💎",
+      "duration": "80分鐘",
+      "lessons": 4,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "探索重要一級園（Premier Cru）及其與特級園的差異與投資價值"
+    },
+    {
+      "id": "intermediate-m6",
+      "order": 6,
+      "title": "氣候年份解讀",
+      "icon": "☀️",
+      "duration": "60分鐘",
+      "lessons": 3,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "學習如何判讀年份差異、氣候對品質的影響與陳年潛力評估"
+    },
+    {
+      "id": "intermediate-m7",
+      "order": 7,
+      "title": "進階品鑑技術",
+      "icon": "👃",
+      "duration": "75分鐘",
+      "lessons": 4,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "掌握專業品鑑流程、香氣識別、結構分析與陳年潛力判斷"
+    },
+    {
+      "id": "intermediate-m8",
+      "order": 8,
+      "title": "酒莊與釀酒師",
+      "icon": "🏰",
+      "duration": "65分鐘",
+      "lessons": 3,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "認識重要酒莊、傳奇釀酒師與現代釀造技術的演變"
+    }
+  ]
+}

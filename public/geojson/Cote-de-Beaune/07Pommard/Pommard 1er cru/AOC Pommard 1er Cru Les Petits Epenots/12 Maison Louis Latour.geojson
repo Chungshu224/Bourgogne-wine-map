@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.804894815518718,47.01548701541819],[4.804897100486993,47.01548582248127],[4.806005205684594,47.01469805302655],[4.806007404949344,47.01469690480832],[4.806363410136694,47.0148158131599],[4.805474365546027,47.01556266346373],[4.804894815518718,47.01548701541819]]]},"properties":{"name":"12 Maison Louis Latour","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#aaaa00","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

@@ -1,0 +1,14 @@
+{
+  "Regional": {
+    "files": [
+      "AOC Mâcon-Villages.geojson",
+      "AOC Mâcon.geojson",
+      "AOC Pouilly-Fuissé.geojson",
+      "AOC Pouilly-Loché.geojson",
+      "AOC Pouilly-Vinzelles.geojson",
+      "AOC Saint-Véran.geojson",
+      "AOC Viré-Clessé.geojson"
+    ],
+    "subfolders": {}
+  }
+}

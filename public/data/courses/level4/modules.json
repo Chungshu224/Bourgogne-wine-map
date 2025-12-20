@@ -1,0 +1,100 @@
+{
+  "modules": [
+    {
+      "id": "master-m1",
+      "order": 1,
+      "title": "布根地歷史文化深度研究",
+      "icon": "📜",
+      "duration": "90分鐘",
+      "lessons": 6,
+      "progress": 0,
+      "completed": false,
+      "locked": false,
+      "description": "從羅馬時期到現代，探索布根地葡萄酒千年演進史與文化影響力"
+    },
+    {
+      "id": "master-m2",
+      "order": 2,
+      "title": "全球頂級黑皮諾比較研究",
+      "icon": "🌍",
+      "duration": "105分鐘",
+      "lessons": 7,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "布根地 vs 紐西蘭 vs 奧勒岡 vs 德國 - 深度風格分析與盲品訓練"
+    },
+    {
+      "id": "master-m3",
+      "order": 3,
+      "title": "侍酒師專業技能訓練",
+      "icon": "🍷",
+      "duration": "120分鐘",
+      "lessons": 8,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "專業侍酒服務、餐酒搭配設計、酒單建構與酒窖管理實務"
+    },
+    {
+      "id": "master-m4",
+      "order": 4,
+      "title": "葡萄酒教育與培訓方法",
+      "icon": "👨‍🏫",
+      "duration": "95分鐘",
+      "lessons": 6,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "教學法設計、課程規劃、品酒會主持與認證考試準備技巧"
+    },
+    {
+      "id": "master-m5",
+      "order": 5,
+      "title": "商業案例與市場策略",
+      "icon": "💼",
+      "duration": "110分鐘",
+      "lessons": 7,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "酒商經營模式、品牌策略、定價分析與消費者心理學"
+    },
+    {
+      "id": "master-m6",
+      "order": 6,
+      "title": "國際貿易與進出口實務",
+      "icon": "🚢",
+      "duration": "85分鐘",
+      "lessons": 5,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "進口流程、關稅法規、物流管理與國際酒展參展策略"
+    },
+    {
+      "id": "master-m7",
+      "order": 7,
+      "title": "酒莊經營與創業管理",
+      "icon": "🏛️",
+      "duration": "100分鐘",
+      "lessons": 6,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "酒莊營運模式、財務規劃、品牌建立與永續經營策略"
+    },
+    {
+      "id": "master-m8",
+      "order": 8,
+      "title": "專家論文與綜合評估",
+      "icon": "🎓",
+      "duration": "150分鐘",
+      "lessons": 8,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "專業論文撰寫、綜合盲品測試、口試模擬與大師認證評估"
+    }
+  ]
+}

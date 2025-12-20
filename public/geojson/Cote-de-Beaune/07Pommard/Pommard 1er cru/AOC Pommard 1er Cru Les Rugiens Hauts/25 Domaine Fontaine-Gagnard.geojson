@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.788057020723874,47.00915048848357],[4.788062558436163,47.00899019106915],[4.78925381824464,47.0087344591806],[4.789341250999676,47.00881493359442],[4.789432305934489,47.00890384490165],[4.788057020723874,47.00915048848357]]]},"properties":{"name":"25 Domaine Fontaine-Gagnard","styleUrl":"#m_ylw-pushpin","fill-opacity":0.6,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

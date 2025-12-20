@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.8081659060015,47.01563560646333],[4.808126025402498,47.01558460552533],[4.809361925918905,47.01503184767849],[4.809318672050638,47.01498563106632],[4.810381009400047,47.01452407187788],[4.810468621717988,47.01460976437718],[4.8081659060015,47.01563560646333]]]},"properties":{"name":"21 Domaine Joseph Voillot","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#00aaff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

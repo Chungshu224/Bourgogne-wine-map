@@ -1,0 +1,68 @@
+{
+  "village": {
+    "marsannay-la-cote": {
+      "name": "AOC Marsannay (Marsannay-la-Côte)",
+      "fullName": "AOC Marsannay (Marsannay-la-Côte)",
+      "classification": "Village",
+      "area": "約 120 ha",
+      "altitude": "250-380m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩基底，表層為棕色石灰質土壤",
+      "grapes": ["黑皮諾 85%", "夏多內 10%", "灰皮諾 5%"],
+      "wineStyle": "紅酒：果味濃郁、結構良好；玫瑰紅：清新優雅；白酒：礦物質豐富",
+      "tastingNotes": "紅酒：紅莓、櫻桃、香料；玫瑰紅：草莓、花香；白酒：柑橘、礦物質",
+      "agingPotential": "紅酒：8-12年；玫瑰紅：2-4年；白酒：5-8年",
+      "history": "Marsannay 的核心村莊，以玫瑰紅酒聞名於世",
+      "producers": ["Sylvain Pataille", "Bruno Clair", "Denis Mortet"],
+      "color": "#8FBC8F"
+    },
+    "couchey": {
+      "name": "AOC Marsannay (Couchey)",
+      "fullName": "AOC Marsannay (Couchey)",
+      "classification": "Village",
+      "area": "約 80 ha",
+      "altitude": "240-360m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩和泥灰岩，表層含砂礫",
+      "grapes": ["黑皮諾 80%", "夏多內 15%", "灰皮諾 5%"],
+      "wineStyle": "紅酒：優雅精緻、單寧柔順；玫瑰紅：果香豐富；白酒：清新活潑",
+      "tastingNotes": "紅酒：櫻桃、覆盆子、花香；玫瑰紅：桃子、玫瑰；白酒：蘋果、檸檬",
+      "agingPotential": "紅酒：6-10年；玫瑰紅：2-3年；白酒：4-6年",
+      "history": "位於 Marsannay 北部，土壤條件優越",
+      "producers": ["Bruno Clair", "Olivier Guyot", "Régis Bouvier"],
+      "color": "#9ACD32"
+    },
+    "chenove": {
+      "name": "AOC Marsannay (Chenôve)",
+      "fullName": "AOC Marsannay (Chenôve)",
+      "classification": "Village",
+      "area": "約 60 ha",
+      "altitude": "230-340m",
+      "exposition": "東-東南向",
+      "soil": "石灰岩基底，含較多粘土",
+      "grapes": ["黑皮諾 75%", "夏多內 20%", "灰皮諾 5%"],
+      "wineStyle": "紅酒：濃郁豐富、結構扎實；玫瑰紅：色澤美麗；白酒：豐滿圓潤",
+      "tastingNotes": "紅酒：黑果、香料、泥土氣息；玫瑰紅：紅果、花香；白酒：奶油、堅果",
+      "agingPotential": "紅酒：8-15年；玫瑰紅：2-4年；白酒：5-10年",
+      "history": "位於 Marsannay 南部，接近第戎市，歷史悠久",
+      "producers": ["Sylvain Pataille", "Jean Fournier", "Domaine de la Côte"],
+      "color": "#98FB98"
+    },
+    "marsannay-overview": {
+      "name": "Marsannay AOC",
+      "fullName": "AOC Marsannay",
+      "classification": "Village",
+      "area": "約 260 ha",
+      "altitude": "230-380m",
+      "exposition": "主要東-東南向",
+      "soil": "石灰岩基底，表層土壤多樣化",
+      "grapes": ["黑皮諾", "夏多內", "灰皮諾"],
+      "wineStyle": "布根地唯一可生產三種顏色酒款的 AOC",
+      "tastingNotes": "豐富多樣，從清新到濃郁",
+      "agingPotential": "因酒款類型而異",
+      "history": "1987年獲得 AOC 地位，以玫瑰紅酒開創布根地新風格",
+      "producers": ["Bruno Clair", "Sylvain Pataille", "Denis Mortet", "Olivier Guyot"],
+      "color": "#90EE90"
+    }
+  }
+}

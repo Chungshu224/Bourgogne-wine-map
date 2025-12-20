@@ -1,0 +1,457 @@
+{
+  "moduleId": "intermediate-m4",
+  "title": "特級園完整導覽",
+  "description": "深入研究布根地33個特級園（Grand Cru）的歷史、風土與典型風格",
+  "lessons": [
+    {
+      "id": "m4-l1",
+      "title": "特級園制度與分類",
+      "duration": "15分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "特級園制度",
+          "subtitle": "Lesson 1 - 15分鐘",
+          "description": "了解布根地特級園的分級制度與標準"
+        },
+        {
+          "type": "content",
+          "title": "什麼是特級園（Grand Cru）？",
+          "content": "特級園是布根地葡萄酒分級制度的最高等級，代表風土條件最優越的地塊。整個布根地僅有33個特級園（不含夏布利），總面積約550公頃，僅佔布根地總產區的2%。"
+        },
+        {
+          "type": "list",
+          "title": "👑 特級園的特點",
+          "points": [
+            "酒標只標示地塊名稱，無需標示村莊名",
+            "例如：「Chambertin」而非「Gevrey-Chambertin」",
+            "產量嚴格限制（每公頃35-37百升）",
+            "價格通常是一級園的3-10倍",
+            "陳年潛力最強（20-50年）",
+            "代表該產區最極致的表現"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "📊 特級園分布",
+          "points": [
+            "夜丘：24個特級園（23紅1白）",
+            "伯恩丘：8個白酒特級園 + 1個紅酒",
+            "夏布利：7個特級園（Chablis Grand Cru）",
+            "其他產區：無特級園",
+            "總計：33個（不含夏布利為33個）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "特級園的認定標準",
+          "content": "特級園的劃分基於數百年的經驗與現代科學驗證：土壤分析、坡向研究、歷史價格、品質穩定性。一旦認定為特級園，地位永久不變，是對風土的最高認可。"
+        }
+      ]
+    },
+    {
+      "id": "m4-l2",
+      "title": "夜丘特級園（上）",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "夜丘特級園（上）",
+          "subtitle": "Lesson 2 - 18分鐘",
+          "description": "熱夫雷-香貝丹與莫雷-聖丹尼的特級園"
+        },
+        {
+          "type": "content",
+          "title": "熱夫雷-香貝丹的9個特級園",
+          "content": "熱夫雷-香貝丹擁有布根地最多的特級園，全部以「香貝丹」命名，但風格各異。只有Chambertin和Clos de Bèze可以互相標示對方名稱。"
+        },
+        {
+          "type": "list",
+          "title": "🍷 熱夫雷-香貝丹特級園排名",
+          "points": [
+            "1. Chambertin - 12.9公頃，最負盛名",
+            "2. Clos de Bèze - 15.4公頃，可標為Chambertin",
+            "3. Latricières-Chambertin - 7.4公頃，優雅版香貝丹",
+            "4. Mazis-Chambertin - 9.1公頃，強勁有力",
+            "5. Ruchottes-Chambertin - 3.3公頃，海拔最高",
+            "6. Chapelle-Chambertin - 5.5公頃，細膩優雅",
+            "7. Griotte-Chambertin - 2.7公頃，最小最珍貴",
+            "8. Charmes-Chambertin - 31.1公頃，最大最親民",
+            "9. Mazoyères-Chambertin - 可標為Charmes"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "莫雷-聖丹尼的5個特級園",
+          "content": "莫雷-聖丹尼被夾在兩個明星村莊之間，但其5個特級園品質卓越，且性價比極高。"
+        },
+        {
+          "type": "list",
+          "title": "💎 莫雷-聖丹尼特級園",
+          "points": [
+            "Clos de la Roche - 16.9公頃，最大最優",
+            "風格：力量與優雅完美平衡",
+            "Clos Saint-Denis - 6.6公頃，村莊命名來源",
+            "風格：細膩複雜、花香明顯",
+            "Clos des Lambrays - 8.7公頃，單一所有權",
+            "風格：優雅精緻、需時間陳年",
+            "Clos de Tart - 7.5公頃，單一所有權",
+            "風格：強勁濃郁、Monopole",
+            "Bonnes-Mares - 1.5公頃（大部分在香波）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "投資建議",
+          "content": "莫雷-聖丹尼的特級園被嚴重低估，價格僅為熱夫雷-香貝丹的60-70%，但品質不遑多讓。Clos de la Roche和Clos Saint-Denis是性價比極高的投資選擇。"
+        }
+      ]
+    },
+    {
+      "id": "m4-l3",
+      "title": "夜丘特級園（中）",
+      "duration": "17分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "夜丘特級園（中）",
+          "subtitle": "Lesson 3 - 17分鐘",
+          "description": "香波-慕西尼與伏舊的特級園"
+        },
+        {
+          "type": "content",
+          "title": "香波-慕西尼的2+1個特級園",
+          "content": "香波-慕西尼雖只有2個獨有特級園，但都是夜丘最優雅的代表。還有部分Bonnes-Mares位於此村。"
+        },
+        {
+          "type": "list",
+          "title": "🌹 Musigny - 慕西尼",
+          "points": [
+            "面積：10.9公頃（10.7紅酒 + 0.7白酒）",
+            "風格：夜丘最優雅、如絲綢般質地",
+            "香氣：玫瑰、紫羅蘭、紅色莓果",
+            "特色：唯一可產少量白酒的夜丘特級園",
+            "頂級生產者：Domaine Comte Georges de Vogüé",
+            "價格：與羅曼尼康帝同級"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💪 Bonnes-Mares - 邦馬爾",
+          "points": [
+            "面積：15.1公頃（13.6在香波，1.5在莫雷）",
+            "風格：比Musigny更強勁，兼具力量與優雅",
+            "香氣：黑色水果、香料、礦物",
+            "特色：兩個地塊風格不同",
+            "陳年：需要10-20年",
+            "相對性價比：比Musigny親民"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "Clos de Vougeot - 克洛-伏舊",
+          "content": "布根地最著名的特級園之一，但也最具爭議。面積50.6公頃，是特級園中最大的之一，擁有80多位地主，品質參差不齊。"
+        },
+        {
+          "type": "list",
+          "title": "🏰 Clos de Vougeot特色",
+          "points": [
+            "歷史：西篤會僧侶於12世紀建立",
+            "石牆環繞的「Clos」（封閉園）",
+            "上坡地段 - 頂級品質，接近慕西尼",
+            "中坡地段 - 優秀品質",
+            "下坡地段 - 品質較普通，近平地",
+            "選購關鍵：必須了解生產者與地塊位置",
+            "最佳生產者：Anne Gros、Méo-Camuzet、Leroy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4-l4",
+      "title": "夜丘特級園（下）",
+      "duration": "20分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "夜丘特級園（下）",
+          "subtitle": "Lesson 4 - 20分鐘",
+          "description": "馮內-羅曼尼的8大傳奇特級園"
+        },
+        {
+          "type": "content",
+          "title": "馮內-羅曼尼：特級園的天堂",
+          "content": "這個小村莊集中了8個特級園，包括世界最貴的羅曼尼康帝。每一個特級園都有鮮明個性，代表黑皮諾的不同面向。"
+        },
+        {
+          "type": "list",
+          "title": "👑 Romanée-Conti",
+          "points": [
+            "面積：1.8公頃（布根地最小之一）",
+            "年產量：約450箱（5,400瓶）",
+            "價格：每瓶10-30萬美元",
+            "風格：完美、無法言喻的複雜度",
+            "獨家所有：Domaine de la Romanée-Conti",
+            "地位：世界最貴、最難取得的葡萄酒"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💎 La Tâche - 拉塔希",
+          "points": [
+            "面積：6.1公頃",
+            "獨家所有：DRC",
+            "風格：比RC更強勁、更開放",
+            "香氣：玫瑰、香料、黑色水果",
+            "陳年：15-40年",
+            "相對性價比：比RC更易取得"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🌟 其他6個特級園",
+          "points": [
+            "Romanée - 0.85公頃，最小特級園，Comte Liger-Belair獨有",
+            "Richebourg - 8.0公頃，豐滿濃郁",
+            "Romanée-Saint-Vivant - 9.4公頃，優雅細膩",
+            "La Grande Rue - 1.7公頃，1992年才升級",
+            "Echézeaux - 37.7公頃，最大、最多樣",
+            "Grands Echézeaux - 9.1公頃，比Echézeaux更集中"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "DRC的6個特級園",
+          "leftTitle": "獨家所有",
+          "leftPoints": [
+            "Romanée-Conti",
+            "La Tâche",
+            "以上兩個為Monopole"
+          ],
+          "rightTitle": "擁有地塊",
+          "rightPoints": [
+            "Romanée-Saint-Vivant",
+            "Richebourg",
+            "Grands Echézeaux",
+            "Echézeaux"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "投資與收藏",
+          "content": "馮內-羅曼尼的特級園是頂級收藏家的必備。建議：DRC的酒需極高預算；其他優質生產者如Leroy、Méo-Camuzet性價比更佳；Richebourg和RSV是較親民的入門選擇。"
+        }
+      ]
+    },
+    {
+      "id": "m4-l5",
+      "title": "伯恩丘特級園",
+      "duration": "16分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "伯恩丘特級園",
+          "subtitle": "Lesson 5 - 16分鐘",
+          "description": "白酒特級園的完整導覽"
+        },
+        {
+          "type": "content",
+          "title": "伯恩丘的9個特級園",
+          "content": "伯恩丘擁有8個白酒特級園和1個紅白兼產的特級園（Corton），代表世界夏多內白酒的最高成就。"
+        },
+        {
+          "type": "list",
+          "title": "🥇 蒙哈榭家族（普里尼/夏山）",
+          "points": [
+            "Montrachet - 8公頃，白酒之王",
+            "Chevalier-Montrachet - 7.4公頃，最優雅",
+            "Bâtard-Montrachet - 12公頃，最豐滿",
+            "Bienvenues-Bâtard - 3.7公頃，平衡之作",
+            "Criots-Bâtard - 1.6公頃，最稀有（僅在夏山）"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "👑 科爾通山特級園",
+          "points": [
+            "Corton-Charlemagne - 51.6公頃，最大白酒特級園",
+            "風格：礦物感強、優雅精緻",
+            "Charlemagne - 0.3公頃，極稀有",
+            "Corton（紅）- 160公頃，最大特級園",
+            "風格：強勁有力的黑皮諾"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "白酒特級園風格",
+          "leftTitle": "蒙哈榭系列",
+          "leftPoints": [
+            "豐滿圓潤",
+            "榛果奶油香",
+            "質地厚實",
+            "陳年後金黃色",
+            "需10-30年陳年"
+          ],
+          "rightTitle": "科爾通-查理曼",
+          "rightPoints": [
+            "優雅精緻",
+            "礦物花香",
+            "質地纖細",
+            "保持淺金色",
+            "需10-25年陳年"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💰 價格與價值",
+          "points": [
+            "Montrachet - 最貴（每瓶2000-10000美元）",
+            "Chevalier/Bâtard - 次貴（1000-3000美元）",
+            "Corton-Charlemagne - 相對親民（300-1000美元）",
+            "投資建議：CC性價比最高",
+            "收藏建議：Montrachet是終極目標"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "特級園總結",
+          "content": "布根地33個特級園代表世界最偉大的黑皮諾與夏多內。每個特級園都有獨特個性，是風土的極致表現。投資特級園不僅是享受美酒，更是擁有一塊無法複製的文化遺產。"
+        }
+      ]
+    },
+    {
+      "id": "m4-l6",
+      "title": "特級園品鑑與選購",
+      "duration": "14分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "特級園品鑑與選購",
+          "subtitle": "Lesson 6 - 14分鐘",
+          "description": "如何品鑑、選購與投資特級園"
+        },
+        {
+          "type": "list",
+          "title": "🍷 品鑑特級園的關鍵",
+          "points": [
+            "溫度：紅酒16-18°C，白酒12-14°C",
+            "醒酒：年輕紅酒1-2小時，老酒15-30分鐘",
+            "酒杯：大型勃艮第杯（700-900ml）",
+            "時間：至少觀察15-30分鐘的變化",
+            "筆記：記錄香氣、口感、餘韻的演變",
+            "耐心：年輕特級園可能需要數小時才完全展開"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🏆 選購特級園的原則",
+          "points": [
+            "生產者第一：同一特級園，生產者差異巨大",
+            "了解地塊：特別是Clos de Vougeot等大型特級園",
+            "年份重要：好年份特級園更值得投資",
+            "來源可靠：確保正品與正確保存",
+            "價格合理：避免過度炒作的酒款",
+            "陳年潛力：購買年輕酒需考慮陳年空間"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💡 投資建議",
+          "points": [
+            "入門級：Corton-Charlemagne、Richebourg",
+            "進階級：Clos de la Roche、Musigny",
+            "頂級：Romanée-Conti、Montrachet、La Tâche",
+            "性價比：莫雷-聖丹尼的特級園被低估",
+            "保存：恆溫恆濕酒窖（12-14°C，70%濕度）",
+            "持有期：至少10-20年才能欣賞全貌"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "⚠️ 常見陷阱",
+          "points": [
+            "假酒：特別是DRC、Leroy等名莊",
+            "過度炒作：某些年份價格不合理",
+            "保存不當：光線、溫度、濕度都會影響",
+            "太早飲用：年輕特級園未展開就喝掉",
+            "忽視生產者：只看地塊不看釀酒師",
+            "跟風購買：不了解風格就盲目投資"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "特級園的終極意義",
+          "content": "特級園不只是昂貴的葡萄酒，更是數百年風土研究的結晶、人類文明的瑰寶。每一瓶特級園都訴說著一個獨特的風土故事，值得我們用一生去探索與品味。"
+        }
+      ]
+    }
+  ],
+  "quiz": {
+    "title": "特級園測驗",
+    "description": "測試您對布根地特級園的了解",
+    "passingScore": 70,
+    "questions": [
+      {
+        "id": "q1",
+        "question": "布根地共有多少個特級園（不含夏布利）？",
+        "type": "single",
+        "options": ["24個", "28個", "33個", "40個"],
+        "correctAnswer": 2,
+        "explanation": "布根地有33個特級園（不含夏布利的7個），其中24個在夜丘，9個在伯恩丘。"
+      },
+      {
+        "id": "q2",
+        "question": "哪個村莊擁有最多特級園？",
+        "type": "single",
+        "options": [
+          "馮內-羅曼尼",
+          "熱夫雷-香貝丹",
+          "香波-慕西尼",
+          "莫雷-聖丹尼"
+        ],
+        "correctAnswer": 1,
+        "explanation": "熱夫雷-香貝丹擁有9個特級園，都以「香貝丹」命名。"
+      },
+      {
+        "id": "q3",
+        "question": "羅曼尼康帝特級園獨家擁有者是？",
+        "type": "single",
+        "options": ["Leroy", "DRC", "Méo-Camuzet", "Dujac"],
+        "correctAnswer": 1,
+        "explanation": "羅曼尼康帝由Domaine de la Romanée-Conti (DRC)獨家擁有，是Monopole。"
+      },
+      {
+        "id": "q4",
+        "question": "哪個特級園是布根地最大的？",
+        "type": "single",
+        "options": [
+          "Clos de Vougeot",
+          "Corton",
+          "Echézeaux",
+          "Charmes-Chambertin"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Corton是布根地最大的特級園，面積達160公頃，生產紅酒。"
+      },
+      {
+        "id": "q5",
+        "question": "哪個特級園被稱為「白酒之王」？",
+        "type": "single",
+        "options": [
+          "Corton-Charlemagne",
+          "Chevalier-Montrachet",
+          "Montrachet",
+          "Bâtard-Montrachet"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Montrachet被公認為世界最偉大的白葡萄酒，是「白酒之王」。"
+      }
+    ]
+  }
+}

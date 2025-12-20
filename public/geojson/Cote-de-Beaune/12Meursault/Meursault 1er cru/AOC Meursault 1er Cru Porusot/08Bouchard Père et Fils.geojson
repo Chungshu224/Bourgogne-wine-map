@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.760989916134333,46.97072558557608],[4.76141621545022,46.9706214699064],[4.762101319423113,46.97046803359632],[4.76279495314869,46.97030470259735],[4.762872399061832,46.97036600849262],[4.762989365365295,46.97052093745284],[4.762180426717348,46.97071771866055],[4.761094786433917,46.97095104905281],[4.760989916134333,46.97072558557608]]]},"properties":{"name":"08Bouchard Père et Fils","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#00ffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

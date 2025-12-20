@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.802623608157097,47.0138714836857],[4.8040573164535,47.01304701674232],[4.805837160725845,47.0120101508391],[4.805925113130884,47.01202692630626],[4.805148502261591,47.01248858115367],[4.804165585421851,47.01305110632478],[4.803122970930249,47.01364927139096],[4.802703515572741,47.0138876618934],[4.802623608157097,47.0138714836857]]]},"properties":{"name":"18 Domaine Clos de la Chapelle","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#ffaaff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

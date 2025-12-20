@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.786627288222505,47.00794442800364],[4.786522689983275,47.00787692968835],[4.786384966549138,47.00780315036958],[4.787896244865868,47.00717957812337],[4.787962579546257,47.00729280166126],[4.788085651921947,47.00739868215852],[4.786728049621249,47.00799337373265],[4.786627288222505,47.00794442800364]]]},"properties":{"name":"10 Domaine Heitz-Lochardet","styleUrl":"#m_ylw-pushpin","fill-opacity":0.6,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

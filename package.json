@@ -1,0 +1,38 @@
+{
+  "name": "bourgogne-wine-map",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && npx vite-plugin-gh-pages"
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "axios": "^1.11.0",
+    "cheerio": "^1.1.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.4",
+    "mapbox-gl": "^2.15.0",
+    "vue": "^3.5.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.x",
+    "vite": "^4.x"
+  },
+  "vite": {
+    "plugins": [
+      "@vitejs/plugin-vue"
+    ],
+    "server": {
+      "port": 5173,
+      "open": true
+    },
+    "build": {
+      "sourcemap": true,
+      "chunkSizeWarningLimit": 1000
+    }
+  }
+}

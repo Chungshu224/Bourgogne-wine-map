@@ -1,0 +1,3 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Polygon","coordinates":[[[4.935464514243986,47.12208715506706],[4.936143899550638,47.121914662328],[4.93617190320879,47.12198470123549],[4.936180950450726,47.12207842058694],[4.936184094540275,47.12210606889448],[4.935620381957841,47.12222109424918],[4.935525244102648,47.12221813652309],[4.935464514243986,47.12208715506706]]]},"properties":{"name":"10 Domaine Ambroise","styleUrl":"#msn_ylw-pushpin","fill-opacity":0.4,"fill":"#ffffff","icon-scale":1.1,"icon-offset":[20,2],"icon-offset-units":["pixels","pixels"],"icon":"http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png"}}
+]}

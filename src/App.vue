@@ -73,85 +73,85 @@ const switchMode = (mode) => {
     </div>
   </div>
 </template>
-
 <style>
+:root {
+  --header-height: 56px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-}
-
-body {
-  margin: 0;
+  overflow: auto;
 }
 
 .app-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
 }
 
 .map-view {
   width: 100%;
-  height: 100vh;
+  min-height: calc(100vh - var(--header-height));
   position: relative;
+  padding-top: var(--header-height);
 }
 
 .back-button {
   position: absolute;
-  top:50px;
-  left: 400px;
+  top: calc(var(--header-height) + 12px);
+  left: 16px;
   z-index: 1000;
-  padding: 10px 20px;
+  padding: 10px 18px;
   background: white;
   border: 2px solid #667eea;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   color: #667eea;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  min-height: 44px;
 }
 
 .back-button:hover {
   background: #667eea;
   color: white;
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(102, 126, 234, 0.25);
 }
 
 /* 模式切換按鈕 */
 .mode-switcher {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 12px;
   z-index: 1000;
 }
 
 .course-mode-btn {
-  padding: 12px 24px;
+  padding: 12px 20px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1.05rem;
   font-weight: 700;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.22);
 }
 
 .course-mode-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
 
 .course-mode-header {
@@ -160,28 +160,26 @@ body {
   left: 0;
   right: 0;
   z-index: 1001;
-  padding: 15px 20px;
+  padding: 12px 16px;
   background: white;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
 
 .exit-course-btn {
-  padding: 10px 20px;
+  padding: 10px 16px;
   background: white;
   border: 2px solid #667eea;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.95rem;
   font-weight: 600;
   color: #667eea;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .exit-course-btn:hover {
   background: #f5f5f5;
-  transform: translateX(-2px);
 }
-</style>
 
 .map-mode-header {
   position: fixed;
@@ -189,25 +187,46 @@ body {
   left: 0;
   right: 0;
   z-index: 1001;
-  padding: 15px 20px;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
 }
 
 .back-to-course-btn {
-  padding: 10px 20px;
+  padding: 10px 16px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .back-to-course-btn:hover {
   transform: translateX(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 6px 14px rgba(102, 126, 234, 0.2);
 }
+
+/* 響應式調整 */
+@media (max-width: 768px) {
+  .back-button {
+    left: 12px;
+    top: calc(var(--header-height) + 10px);
+    font-size: 0.98rem;
+    padding: 10px 14px;
+  }
+
+  .course-mode-btn, .back-to-course-btn {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
+  .map-view {
+    padding-top: calc(var(--header-height));
+  }
+}
+
+</style>

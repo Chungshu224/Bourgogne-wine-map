@@ -29,6 +29,12 @@
           <li v-for="(point, i) in section.keyPoints" :key="i">{{ point }}</li>
         </ul>
 
+        <!-- 酒標圖片 -->
+        <div v-if="section.labelImage" class="label-image-container">
+          <img :src="section.labelImage" :alt="section.labelCaption || section.heading" class="label-image" />
+          <p v-if="section.labelCaption" class="label-caption">{{ section.labelCaption }}</p>
+        </div>
+
         <!-- 產區列表 -->
         <div v-if="section.regions" class="regions-grid">
           <div v-for="(region, i) in section.regions" :key="i" class="region-card">
@@ -306,6 +312,31 @@ const openMap = () => {
 .key-points li {
   margin-bottom: 12px;
   color: #2c3e50;
+}
+
+/* 酒標圖片樣式 */
+.label-image-container {
+  margin: 24px 0;
+  text-align: center;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.label-image {
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: contain;
+}
+
+.label-caption {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #7f8c8d;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .regions-grid {

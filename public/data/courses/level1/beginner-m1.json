@@ -16,9 +16,37 @@
           "description": "認識布根地的地理位置、氣候特色與六大產區分布"
         },
         {
-          "type": "content",
+          "type": "map",
           "title": "布根地在哪裡？",
-          "content": "布根地位於法國東部，從巴黎東南方約 300 公里處開始，南北延伸約 230 公里，是世界上最負盛名的葡萄酒產區之一。"
+          "content": "布根地位於法國東部，從巴黎東南方約 300 公里處開始，南北延伸約 230 公里，是世界上最負盛名的葡萄酒產區之一。",
+          "mapConfig": {
+            "center": [2.5, 46.5],
+            "zoom": 6,
+            "pitch": 0,
+            "bearing": 0
+          },
+          "geojsonFiles": [
+            {
+              "id": "bourgogne-map",
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.3,
+              "lineColor": "#5C2E5C",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ],
+          "bounds": [[3.5, 46.8], [5.5, 48.0]],
+          "markers": [
+            {
+              "name": "Dijon",
+              "coordinates": [5.0415, 47.3220]
+            },
+            {
+              "name": "Beaune",
+              "coordinates": [4.8378, 47.0247]
+            }
+          ]
         },
         {
           "type": "list",
@@ -41,14 +69,384 @@
           ]
         },
         {
-          "type": "list",
+          "type": "map",
           "title": "🌍 六大產區（南北排列）",
+
+          "mapConfig": {
+            "center": [4.5, 47.0],
+            "zoom": 8.2,
+            "pitch": 0,
+            "bearing": 0
+          },
+          "geojsonFiles": [
+            {
+              "id": "bourgogne-base",
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.2,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "chablis",
+              "url": "/geojson/Chablis/AOC Chablis.geojson",
+              "displayName": "夏布利",
+              "displayNameFr": "Chablis",
+              "fillColor": "#F0E68C",
+              "fillOpacity": 0.7,
+              "lineColor": "#DAA520",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "cote-de-nuits",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Chenôve).geojson",
+              "displayName": "夜丘",
+              "displayNameFr": "Côte de Nuits",
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "marsannay-couchey",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Couchey).geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "marsannay",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Marsannay-la-côte).geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "fixin",
+              "url": "/geojson/Cote-de-Nuits/02Fixin/AOC Fixin (Fixin).geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "brochon",
+              "url": "/geojson/Cote-de-Nuits/03Brochon/Brochon.geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "gevrey-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/AOC Gevrey-Chambertin (Gevrey-Chambertin).geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "morey-saint-denis",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/AOC Morey-Saint-Denis.geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "chambolle-musigny",
+              "url": "/geojson/Cote-de-Nuits/06Chambolle Musigny/AOC Chambolle-Musigny.geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "flagey-echezeaux",
+              "url": "/geojson/Cote-de-Nuits/07Flagey-Echézeaux/Flagey-Echézeaux.geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "vosne-romanee",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/AOC Vosne-Romanée.geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "vougeot",
+              "url": "/geojson/Cote-de-Nuits/09Vougeot/AOC Vougeot.geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "nuits-saint-georges",
+              "url": "/geojson/Cote-de-Nuits/10Nuits-Saint-Georges/AOC Nuits-Saint-Georges.geojson",
+              "isBase": true,
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "cote-de-beaune",
+              "url": "/geojson/Cote-de-Beaune/01Pernand-Vergelesses/AOC Pernand-Vergelesses Village.geojson",
+              "displayName": "伯恩丘",
+              "displayNameFr": "Côte de Beaune",
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "ladoix",
+              "url": "/geojson/Cote-de-Beaune/02Ladoix/AOC Ladoix Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "aloxe-corton",
+              "url": "/geojson/Cote-de-Beaune/03Aloxe-Corton/AOC Aloxe-Corton Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "savigny-les-beaune",
+              "url": "/geojson/Cote-de-Beaune/04Savigny-lès-Beaune/AOC Savigny-lès-Beaune Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "chorey-les-beaune",
+              "url": "/geojson/Cote-de-Beaune/05Chorey-lès-Beaune/AOC Chorey-lès-Beaune Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "beaune",
+              "url": "/geojson/Cote-de-Beaune/06Beaune/AOC Beaune Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "pommard",
+              "url": "/geojson/Cote-de-Beaune/07Pommard/AOC Pommard Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "volnay",
+              "url": "/geojson/Cote-de-Beaune/08Volnay/AOC Volnay Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "monthelie",
+              "url": "/geojson/Cote-de-Beaune/09Monthélie/AOC Monthélie Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "saint-romain",
+              "url": "/geojson/Cote-de-Beaune/10Saint-Romain/AOC Saint-Romain Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "auxey-duresses",
+              "url": "/geojson/Cote-de-Beaune/11Auxey-Duresses/AOC Auxey-Duresses Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "meursault",
+              "url": "/geojson/Cote-de-Beaune/12Meursault/AOC Meursault Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "blagny",
+              "url": "/geojson/Cote-de-Beaune/13Blagny/AOC Blagny Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "puligny-montrachet",
+              "url": "/geojson/Cote-de-Beaune/14Puligny-Montrachet/AOC Puligny-Montrachet Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "chassagne-montrachet",
+              "url": "/geojson/Cote-de-Beaune/15Chassagne-Montrachet/AOC Chassagne-Montrachet Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "saint-aubin",
+              "url": "/geojson/Cote-de-Beaune/16Saint-Aubin/AOC Saint-Aubin Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "santenay",
+              "url": "/geojson/Cote-de-Beaune/17Santenay/AOC Santenay Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "maranges",
+              "url": "/geojson/Cote-de-Beaune/18Maranges/AOC Maranges Village.geojson",
+              "isBase": true,
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.7,
+              "lineColor": "#FF4500",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "cote-chalonnaise",
+              "url": "/geojson/Cote-Chalonnaise/AOC Bourgogne Côte Chalonnaise.geojson",
+              "displayName": "夏隆丘",
+              "displayNameFr": "Côte Chalonnaise",
+              "fillColor": "#FF6B6B",
+              "fillOpacity": 0.7,
+              "lineColor": "#DC143C",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "maconnais",
+              "url": "/geojson/Maconnais/AOC Mâcon.geojson",
+              "displayName": "馬貢內",
+              "displayNameFr": "Mâconnais",
+              "fillColor": "#98D8C8",
+              "fillOpacity": 0.7,
+              "lineColor": "#45B7AF",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "beaujolais",
+              "url": "/geojson/Beaujolais/AOC Beaujolais Villages.geojson",
+              "displayName": "薄酒萊",
+              "displayNameFr": "Beaujolais",
+              "fillColor": "#DC143C",
+              "fillOpacity": 0.7,
+              "lineColor": "#B22222",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ],
+          "bounds": [[3.8, 45.8], [5.2, 48.0]]
+        },
+        {
+          "type": "list",
+          "title": "🗺️ 六大產區特色",
           "points": [
-            "夏布利與大歐塞瓦 - 純淨礦物風格的夏多內",
-            "夜丘（Côte de Nuits）- 世界頂級黑皮諾紅酒",
-            "伯恩丘（Côte de Beaune）- 偉大的白酒與紅酒",
-            "夏隆丘（Côte Chalonnaise）- 性價比優質產區",
-            "馬貢內（Mâconnais）- 清新易飲的白酒",
+            "夏布利與大歐塞瓦(Chablis and Grand Auxerrois) - 純淨礦物風格的夏多內白酒",
+            "夜丘（Côte de Nuits）- 世界頂級黑皮諾紅酒產區",
+            "伯恩丘（Côte de Beaune）- 紅白酒並重的偉大產區",
+            "夏隆丘（Côte Chalonnaise）- 高性價比優質產區",
+            "馬貢內（Mâconnais）- 清新易飲的白酒產區",
             "薄酒萊（Beaujolais）- 加美葡萄的天堂"
           ]
         },
@@ -279,6 +677,18 @@
           "type": "content",
           "title": "如何辨識等級？",
           "content": "Grand Cru（特級園）- 酒標上只會標示葡萄園名稱，如「Chambertin」；Premier Cru（一級園）- 會標示村莊名 + 葡萄園名，如「Gevrey-Chambertin 1er Cru Les Cazetiers」"
+        },
+        {
+          "type": "image",
+          "title": "🍷 特級園酒標實例：Chambertin Grand Cru",
+          "image": "/images/Lesson/Chambertin Grand Cru.jpg",
+          "caption": "特級園酒標只標示葡萄園名稱「Chambertin」，不需標示村莊名"
+        },
+        {
+          "type": "image",
+          "title": "🍷 一級園酒標實例：Gevrey-Chambertin 1er Cru",
+          "image": "/images/Lesson/Gevrey-Chambertin 1er Cru Les Cazetiers.jpg",
+          "caption": "一級園酒標標示「村莊名 + 1er Cru + 葡萄園名」：Gevrey-Chambertin 1er Cru Les Cazetiers"
         },
         {
           "type": "list",

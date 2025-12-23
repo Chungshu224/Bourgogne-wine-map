@@ -90,7 +90,9 @@
               "Bourgogne Chardonnay",
               "Bourgogne Aligoté",
               "Bourgogne Hautes-Côtes de Nuits"
-            ]
+            ],
+            "labelImage": "/images/Lesson/Bourgogne Blanc.jpg",
+            "labelCaption": "大區級酒標範例：Bourgogne Blanc"
           },
           {
             "heading": "第二級：村莊級 Villages",
@@ -107,7 +109,9 @@
               "Chambolle-Musigny（優雅細緻、女性化）",
               "Meursault（奶油質感、榛果香）",
               "Pommard（強勁有力、需陳年）"
-            ]
+            ],
+            "labelImage": "/images/Lesson/Gevrey Chambertin .jpg",
+            "labelCaption": "村莊級酒標範例：Gevrey-Chambertin"
           },
           {
             "heading": "第三級：一級園 Premiers Crus",
@@ -124,13 +128,15 @@
               "Meursault 1er Cru 'Perrières'",
               "Vosne-Romanée 1er Cru 'Les Suchots'",
               "Volnay 1er Cru 'Clos des Chênes'"
-            ]
+            ],
+            "labelImage": "/images/Lesson/Morey st denis 1er Cru Les Genavrieres.jpg",
+            "labelCaption": "一級園酒標範例：Morey-Saint-Denis 1er Cru Les Genavrières"
           },
           {
             "heading": "第四級：特級園 Grands Crus",
             "text": "布根地的巔峰，全區僅有33個特級園（夏布利1個、夜丘24個、伯恩丘8個）。這些園區擁有最理想的風土條件，釀出的酒可陳年數十年。",
             "keyPoints": [
-              "酒標標示：只標園名，不標村莊（如 Romanée-Conti）",
+              "酒標標示：只標園名，不標村莊（如 Richebourg）",
               "產區範圍：經認證的頂級葡萄園",
               "允許產量：紅酒35-37 hl/ha（最嚴格）",
               "價格範圍：€100-數萬歐元/瓶",
@@ -141,7 +147,9 @@
               "Chambertin（拿破崙最愛）",
               "Montrachet（白酒之王）",
               "Clos de Vougeot（最大的特級園，50公頃）"
-            ]
+            ],
+            "labelImage": "/images/Lesson/Richebourg Grand Cru.jpg",
+            "labelCaption": "特級園酒標範例：Richebourg Grand Cru"
           }
         ],
         "comparisonTable": {

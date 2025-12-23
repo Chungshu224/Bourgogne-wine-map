@@ -50,8 +50,9 @@ defineProps({
 .slide-body {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow-y: auto;
+  padding-top: 8px;
 }
 
 .points-list {

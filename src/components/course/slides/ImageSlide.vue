@@ -53,7 +53,7 @@ defineProps({
 
 .slide-image {
   max-width: 100%;
-  max-height: 400px;
+  max-height: 320px;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   object-fit: contain;
@@ -76,7 +76,7 @@ defineProps({
   }
 
   .slide-image {
-    max-height: 300px;
+    max-height: 260px;
   }
 
   .image-caption {

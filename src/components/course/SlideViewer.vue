@@ -66,6 +66,7 @@ import ImageSlide from './slides/ImageSlide.vue'
 import ListSlide from './slides/ListSlide.vue'
 import ComparisonSlide from './slides/ComparisonSlide.vue'
 import TimelineSlide from './slides/TimelineSlide.vue'
+import MapSlide from './slides/MapSlide.vue'
 
 const props = defineProps({
   lesson: {
@@ -96,9 +97,45 @@ const slides = computed(() => {
     description: props.lesson.content?.introduction || ''
   })
 
-  // 2. 內容投影片
+  // 2. 地圖投影片（如果有的話，放在第二頁）
+  if (props.lesson.content?.mapSlide) {
+    slideArray.push({
+      type: 'map',
+      title: props.lesson.content.mapSlide.title || '產區地圖',
+      content: props.lesson.content.mapSlide.content,
+      mapConfig: props.lesson.content.mapSlide.mapConfig,
+      geojsonFiles: props.lesson.content.mapSlide.geojsonFiles
+    })
+  }
+
+  // 2b. 多個地圖投影片（如果有的話）
+  if (props.lesson.content?.mapSlides && Array.isArray(props.lesson.content.mapSlides)) {
+    console.log('找到 mapSlides，數量:', props.lesson.content.mapSlides.length)
+    props.lesson.content.mapSlides.forEach((mapSlide, index) => {
+      console.log(`添加地圖 ${index + 1}:`, mapSlide.title)
+      slideArray.push({
+        type: 'map',
+        title: mapSlide.title || '產區地圖',
+        content: mapSlide.content,
+        mapConfig: mapSlide.mapConfig,
+        geojsonFiles: mapSlide.geojsonFiles
+      })
+    })
+  } else {
+    console.log('未找到 mapSlides 或不是陣列')
+  }
+
+  // 3. 內容投影片
   if (props.lesson.content?.sections) {
     props.lesson.content.sections.forEach(section => {
+      // 如果這個 section 有地圖配置，先添加地圖投影片
+      if (section.mapSlide) {
+        slideArray.push({
+          type: 'map',
+          ...section.mapSlide
+        })
+      }
+
       if (section.heading) {
         // 如果有重點列表，使用 list 類型
         if (section.keyPoints && section.keyPoints.length > 0) {
@@ -118,6 +155,15 @@ const slides = computed(() => {
             points: section.villages.map(v => typeof v === 'string' ? v : v.name || v.village)
           })
         }
+        // 如果有特級園列表，使用 list 類型
+        else if (section.grandCrus && section.grandCrus.length > 0) {
+          slideArray.push({
+            type: 'list',
+            title: section.heading,
+            content: section.text,
+            points: section.grandCrus.map(c => typeof c === 'string' ? c : `${c.name} - ${c.character}`)
+          })
+        }
         // 如果有特級村列表，使用 list 類型
         else if (section.crus && section.crus.length > 0) {
           slideArray.push({
@@ -133,6 +179,16 @@ const slides = computed(() => {
             type: 'content',
             title: section.heading,
             content: section.text
+          })
+        }
+        
+        // 如果有酒標圖片，添加一個圖片投影片
+        if (section.labelImage) {
+          slideArray.push({
+            type: 'image',
+            title: section.labelCaption || `${section.heading} 酒標範例`,
+            image: section.labelImage,
+            caption: section.labelCaption
           })
         }
       }
@@ -175,7 +231,16 @@ const slides = computed(() => {
     })
   }
 
-  // 7. 提示與技巧投影片
+  // 7. 對比表投影片
+  if (props.lesson.content?.comparisonTable) {
+    slideArray.push({
+      type: 'comparison',
+      title: props.lesson.content.comparisonTable.title || '對比表',
+      comparison: props.lesson.content.comparisonTable
+    })
+  }
+
+  // 8. 提示與技巧投影片
   if (props.lesson.content?.tips && props.lesson.content.tips.length > 0) {
     slideArray.push({
       type: 'list',
@@ -184,7 +249,7 @@ const slides = computed(() => {
     })
   }
 
-  // 8. 總結投影片
+  // 9. 總結投影片
   if (props.lesson.content?.summary) {
     slideArray.push({
       type: 'content',
@@ -205,6 +270,7 @@ const getCurrentSlideComponent = computed(() => {
     case 'timeline': return TimelineSlide
     case 'comparison': return ComparisonSlide
     case 'image': return ImageSlide
+    case 'map': return MapSlide
     default: return ContentSlide
   }
 })

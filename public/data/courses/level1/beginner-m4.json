@@ -4,6 +4,46 @@
   "description": "深入了解夏布利的風土、分級、七大特級園，以及如何品鑑這種純淨礦物感的霞多麗白酒",
   "lessons": [
     {
+      "id": "map-overview",
+      "title": "🗺️ 夏布利產區地圖總覽",
+      "duration": "2分鐘",
+      "type": "map-only",
+      "content": {
+        "mapSlide": {
+          "title": "🗺️ 夏布利產區地圖",
+          "content": "探索夏布利的地理位置與四個分級",
+          "mapConfig": {
+            "center": [3.8, 47.82],
+            "zoom": 11.5,
+            "pitch": 0,
+            "bearing": 0
+          },
+          "geojsonFiles": [
+            {
+              "id": "base-burgundy",
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "chablis",
+              "url": "/geojson/Chablis/AOC Chablis.geojson",
+              "displayName": "Chablis",
+              "fillColor": "#F0E68C",
+              "fillOpacity": 0.6,
+              "lineColor": "#DAA520",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
+        }
+      }
+    },
+    {
       "id": "lesson1",
       "title": "夏布利的獨特風土",
       "duration": "15分鐘",
@@ -13,6 +53,38 @@
         "sections": [
           {
             "heading": "地理位置與氣候",
+            "mapSlide": {
+              "title": "🗺️ 夏布利產區地圖",
+              "content": "探索夏布利的地理位置",
+              "mapConfig": {
+                "center": [3.8, 47.82],
+                "zoom": 12,
+                "pitch": 0,
+                "bearing": 0
+              },
+              "geojsonFiles": [
+                {
+                  "id": "base-burgundy",
+                  "url": "/geojson/AOC Bourgogne map.geojson",
+                  "isBase": true,
+                  "fillColor": "#E6E6FA",
+                  "fillOpacity": 0.1,
+                  "lineColor": "#9370DB",
+                  "lineWidth": 1,
+                  "showLabels": false
+                },
+                {
+                  "id": "chablis",
+                  "url": "/geojson/Chablis/AOC Chablis.geojson",
+                  "displayName": "Chablis",
+                  "fillColor": "#F0E68C",
+                  "fillOpacity": 0.6,
+                  "lineColor": "#DAA520",
+                  "lineWidth": 2,
+                  "showLabels": true
+                }
+              ]
+            },
             "text": "夏布利位於約訥省（Yonne），Serein 河蜿蜒流過，形成理想的山谷地形。氣候屬於大陸性，比金丘更冷，春季霜凍是最大威脅。",
             "keyPoints": [
               "緯度：北緯47.8度，布根地最北",
@@ -35,21 +107,19 @@
           },
           {
             "heading": "與金丘霞多麗的差異",
+            "text": "夏布利與金丘雖然都種植霞多麗，但因氣候、土壤和釀造方式的不同，展現出截然不同的風格特徵。",
             "comparisonTable": {
-              "夏布利": {
-                "氣候": "涼爽大陸性",
-                "土壤": "Kimmeridgian 泥灰岩",
-                "釀造": "少過桶或不過桶",
-                "風格": "高酸、礦物、檸檬、牡蠣",
-                "酒體": "輕盈到中等"
-              },
-              "金丘": {
-                "氣候": "溫和",
-                "土壤": "石灰岩為主",
-                "釀造": "橡木桶發酵/陳年",
-                "風格": "奶油、榛果、烤麵包、熱帶水果",
-                "酒體": "中等到飽滿"
-              }
+              "title": "夏布利 vs 金丘霞多麗",
+              "headers": ["特徵", "夏布利 Chablis", "金丘 Côte d'Or"],
+              "rows": [
+                ["🌡️ 氣候", "涼爽大陸性", "溫和"],
+                ["🪨 土壤", "Kimmeridgian 泥灰岩", "石灰岩為主"],
+                ["🍷 釀造", "少過桶或不過桶", "橡木桶發酵/陳年"],
+                ["👃 風格", "高酸、礦物、檸檬、牡蠣", "奶油、榛果、烤麵包、熱帶水果"],
+                ["💪 酒體", "輕盈到中等", "中等到飽滿"],
+                ["💰 價格", "€15-200", "€30-500+"],
+                ["🍽️ 配餐", "生蠔、海鮮、清淡料理", "奶油醬汁、禽肉、豐富料理"]
+              ]
             }
           }
         ],
@@ -71,31 +141,92 @@
         "introduction": "夏布利有獨特的四級分級體系：Petit Chablis、Chablis、Premier Cru、Grand Cru。七大特級園連成一片，位於 Serein 河右岸，是夏布利的精華所在。",
         "sections": [
           {
+            "mapSlide": {
+              "title": "🗺️ 夏布利分級地圖",
+              "mapConfig": {
+                "center": [3.8, 47.82],
+                "zoom": 11.8,
+                "pitch": 0,
+                "bearing": 0
+              },
+              "buttonPosition": "left",
+              "geojsonFiles": [
+                {
+                  "id": "petit-chablis",
+                  "name": "🥉 Petit Chablis",
+                  "url": "/geojson/Chablis/AOC Petit Chablis.geojson",
+                  "fillColor": "#E8D5A8",
+                  "fillOpacity": 0.7,
+                  "lineColor": "#D4C090",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "chablis",
+                  "name": "🥈 Chablis",
+                  "url": "/geojson/Chablis/AOC Chablis.geojson",
+                  "fillColor": "#DBC68F",
+                  "fillOpacity": 0.75,
+                  "lineColor": "#C9B178",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "premier-cru",
+                  "name": "🥇 Premier Cru",
+                  "url": "/geojson/Chablis/Chablis Premier Cru/AOC Chablis Premier Cru.geojson",
+                  "fillColor": "#CEB776",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#BDA55E",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "grand-cru",
+                  "name": "👑 Grand Cru",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru.geojson",
+                  "fillColor": "#B8860B",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#8B6508",
+                  "lineWidth": 3,
+                  "isBase": false,
+                  "defaultVisible": false
+                }
+              ]
+            }
+          },
+          {
             "heading": "四級分級詳解",
             "levels": [
               {
-                "name": "Petit Chablis（小夏布利）",
-                "area": "外圍高地，Portlandian 石灰岩",
-                "style": "輕盈爽口、簡單果味、高酸度",
+                "name": "🥉 Petit Chablis",
+                "area": "外圍高地 Portlandian 石灰岩",
+                "style": "輕盈爽口、簡單果味",
                 "price": "€8-15",
                 "drink": "1-2年內飲用",
-                "percentage": "15%"
+                "percentage": "15%產量",
+                "color": "#E8D5A8"
               },
               {
-                "name": "Chablis（夏布利）",
-                "area": "山谷兩側，部分 Kimmeridgian 土壤",
-                "style": "經典夏布利風格、檸檬、礦物、清爽",
+                "name": "🥈 Chablis",
+                "area": "山谷兩側 部分Kimmeridgian土壤",
+                "style": "經典風格、檸檬礦物清爽",
                 "price": "€15-30",
-                "drink": "2-5年",
-                "percentage": "60%"
+                "drink": "2-5年適飲",
+                "percentage": "60%產量",
+                "color": "#DBC68F"
               },
               {
-                "name": "Chablis Premier Cru（一級園）",
-                "area": "40個一級園，主要在右岸山坡",
-                "style": "更濃郁複雜、陳年潛力強、礦物感明顯",
+                "name": "🥇 Premier Cru",
+                "area": "40個一級園 右岸山坡精華",
+                "style": "濃郁複雜、礦物感強",
                 "price": "€25-60",
-                "drink": "3-10年",
-                "percentage": "15%",
+                "drink": "3-10年陳年",
+                "percentage": "15%產量",
+                "color": "#CEB776",
                 "famousClimates": [
                   "Montée de Tonnerre - 最著名，緊鄰特級園",
                   "Fourchaume - 最大的一級園",
@@ -105,14 +236,106 @@
                 ]
               },
               {
-                "name": "Chablis Grand Cru（特級園）",
-                "area": "7個特級園，全在右岸同一山坡",
-                "style": "極致複雜、驚人陳年潛力、完美平衡",
+                "name": "👑 Grand Cru",
+                "area": "7大特級園 右岸同一山坡",
+                "style": "極致複雜、完美平衡",
                 "price": "€50-200+",
-                "drink": "5-20年",
-                "percentage": "2%"
+                "drink": "5-20年長期陳年",
+                "percentage": "2%頂級",
+                "color": "#B8860B"
               }
             ]
+          },
+          {
+            "mapSlide": {
+              "title": "👑 七大特級園地圖",
+              "mapConfig": {
+                "center": [3.815, 47.815],
+                "zoom": 13.5,
+                "pitch": 0,
+                "bearing": 0
+              },
+              "buttonPosition": "left",
+              "geojsonFiles": [
+                {
+                  "id": "bougros",
+                  "name": "Bougros",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Bougros.geojson",
+                  "fillColor": "#8B4513",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#654321",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "preuses",
+                  "name": "Preuses",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Preuses.geojson",
+                  "fillColor": "#B8860B",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#8B6508",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "vaudesir",
+                  "name": "Vaudésir",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Vaudésir.geojson",
+                  "fillColor": "#DAA520",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#B8860B",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "grenouilles",
+                  "name": "Grenouilles",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Grenouilles.geojson",
+                  "fillColor": "#FFD700",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#DAA520",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "valmur",
+                  "name": "Valmur",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Valmur.geojson",
+                  "fillColor": "#F0E68C",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#DAA520",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "les-clos",
+                  "name": "Les Clos",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Les Clos.geojson",
+                  "fillColor": "#CD853F",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#8B4513",
+                  "lineWidth": 3,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "blanchot",
+                  "name": "Blanchot",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Blanchot.geojson",
+                  "fillColor": "#DEB887",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#CD853F",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                }
+              ]
+            }
           },
           {
             "heading": "七大特級園（從西到東）",
@@ -170,7 +393,8 @@
           },
           {
             "heading": "La Moutonne - 第八個特級園？",
-            "text": "La Moutonne 是一個獨佔園（Monopole），橫跨 Preuses 和 Vaudésir 兩個特級園，面積2.35公頃，由 Domaine Long-Depaquit（屬於 Bichot 集團）獨家擁有。雖然不是官方特級園，但品質和價格都達到特級園水準。"
+            "text": "La Moutonne 是一個獨佔園（Monopole），橫跨 Preuses 和 Vaudésir 兩個特級園，面積2.35公頃，由 Domaine Long-Depaquit（屬於 Bichot 集團）獨家擁有。雖然不是官方特級園，但品質和價格都達到特級園水準。",
+            "labelImage": "/images/Lesson/Moutonne .jpg"
           }
         ],
         "tips": [

@@ -132,7 +132,9 @@ const slides = computed(() => {
       if (section.mapSlide) {
         slideArray.push({
           type: 'map',
-          ...section.mapSlide
+          ...section.mapSlide,
+          interactive: true,
+          buttonPosition: section.mapSlide.buttonPosition || 'left'
         })
       }
 
@@ -161,7 +163,13 @@ const slides = computed(() => {
             type: 'list',
             title: section.heading,
             content: section.text,
-            points: section.grandCrus.map(c => typeof c === 'string' ? c : `${c.name} - ${c.character}`)
+            points: section.grandCrus.map(c => {
+              if (typeof c === 'string') return c
+              // 對象格式：顯示名稱、面積和風格
+              const size = c.size ? ` (${c.size})` : ''
+              const style = c.style || c.character || ''
+              return `${c.name}${size} - ${style}`
+            })
           })
         }
         // 如果有特級村列表，使用 list 類型
@@ -173,12 +181,117 @@ const slides = computed(() => {
             points: section.crus.map(c => typeof c === 'string' ? c : `${c.name} - ${c.character}`)
           })
         }
+        // 如果有子產區詳細資料（如夏布利四級分類），為每個級別創建投影片
+        else if (section.subRegions && section.subRegions.length > 0 && typeof section.subRegions[0] === 'object') {
+          // 為每個級別創建一張投影片
+          section.subRegions.forEach(subRegion => {
+            const contentParts = []
+            
+            // 描述
+            if (subRegion.description) {
+              contentParts.push(subRegion.description)
+            }
+            
+            // 風味輪廓
+            if (subRegion.flavorProfile) {
+              contentParts.push(`\n**香氣：** ${subRegion.flavorProfile.aroma}`)
+              contentParts.push(`**口感：** ${subRegion.flavorProfile.palate}`)
+              contentParts.push(`**酒體：** ${subRegion.flavorProfile.body} | **酸度：** ${subRegion.flavorProfile.acidity} | **酒精度：** ${subRegion.flavorProfile.alcohol}`)
+            }
+            
+            // 陳年潛力
+            if (subRegion.agingPotential) {
+              contentParts.push(`\n**陳年潛力：** ${subRegion.agingPotential}`)
+            }
+            
+            // 適飲溫度
+            if (subRegion.servingTemp) {
+              contentParts.push(`**適飲溫度：** ${subRegion.servingTemp}`)
+            }
+            
+            // 餐酒搭配
+            if (subRegion.foodPairing) {
+              contentParts.push(`**餐酒搭配：** ${subRegion.foodPairing}`)
+            }
+            
+            // 價格區間
+            if (subRegion.priceRange) {
+              contentParts.push(`\n**價格區間：** ${subRegion.priceRange}`)
+            }
+            
+            // 著名一級園（如果有）
+            if (subRegion.notablePremierCrus && subRegion.notablePremierCrus.length > 0) {
+              contentParts.push(`\n**著名一級園：**\n${subRegion.notablePremierCrus.map(c => `• ${c}`).join('\n')}`)
+            }
+            
+            // 特別說明
+            if (subRegion.note) {
+              contentParts.push(`\n*${subRegion.note}*`)
+            }
+            
+            slideArray.push({
+              type: 'content',
+              title: subRegion.level,
+              content: contentParts.join('\n')
+            })
+          })
+        }
+        // 如果有分級列表（levels），創建金字塔式視覺投影片
+        else if (section.levels && section.levels.length > 0) {
+          slideArray.push({
+            type: 'comparison',
+            title: section.heading,
+            pyramid: {
+              levels: section.levels.map((level, index) => ({
+                level: section.levels.length - index,
+                name: level.name,
+                percentage: level.percentage || '',
+                maxYield: level.price || '',
+                description: `${level.area} • ${level.style} • ${level.drink}`,
+                color: level.color || ['#F4E4C1', '#E8D5A8', '#DBC68F', '#CEB776'][index]
+              }))
+            }
+          })
+          
+          // 如果有交互式地圖，在金字塔投影片後添加地圖投影片
+          if (section.interactiveMap) {
+            slideArray.push({
+              type: 'map',
+              title: section.interactiveMap.title,
+              mapConfig: section.interactiveMap.mapConfig,
+              geojsonFiles: [
+                {
+                  id: "base-burgundy",
+                  url: "/geojson/AOC Bourgogne map.geojson",
+                  isBase: true,
+                  fillColor: "#E6E6FA",
+                  fillOpacity: 0.05,
+                  lineColor: "#9370DB",
+                  lineWidth: 1,
+                  showLabels: false
+                },
+                ...section.interactiveMap.layers
+              ],
+              buttonPosition: section.interactiveMap.buttonPosition || 'left',
+              interactive: true
+            })
+          }
+        }
         // 否則使用 content 類型
         else {
           slideArray.push({
             type: 'content',
             title: section.heading,
             content: section.text
+          })
+        }
+        
+        // 如果有對比表，添加對比表投影片
+        if (section.comparisonTable) {
+          slideArray.push({
+            type: 'comparison',
+            title: section.comparisonTable.title || section.heading,
+            comparison: section.comparisonTable
           })
         }
         

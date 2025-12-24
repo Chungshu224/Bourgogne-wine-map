@@ -60,9 +60,14 @@
             </div>
           </div>
 
-          <button class="start-module-btn" @click="startLesson(0)">
-            {{ hasModuleProgress ? '繼續學習' : '開始學習' }}
-          </button>
+          <div class="module-actions">
+            <button class="start-module-btn" @click="startLesson(0)">
+              {{ hasModuleProgress ? '繼續學習' : '開始學習' }}
+            </button>
+            <button class="quiz-btn" @click="startQuiz" v-if="moduleData.quiz">
+              {{ allLessonsCompleted ? '📝 開始測驗' : '📝 挑戰測驗' }}
+            </button>
+          </div>
         </div>
 
         <!-- 課程內容 - 使用簡報模式 -->
@@ -138,6 +143,11 @@ const hasModuleProgress = computed(() => {
   return completedLessons.value.length > 0
 })
 
+const allLessonsCompleted = computed(() => {
+  if (!moduleData.value || !moduleData.value.lessons) return false
+  return completedLessons.value.length === moduleData.value.lessons.length
+})
+
 // 處理選擇階段
 const handleSelectLevel = async (level) => {
   console.log('🎓 選擇 Level:', level.id, level.name)
@@ -204,6 +214,11 @@ const loadCompletedLessons = (moduleId) => {
 const startLesson = (lessonIndex) => {
   currentLessonIndex.value = lessonIndex
   viewMode.value = 'lesson'
+}
+
+// 開始測驗
+const startQuiz = () => {
+  viewMode.value = 'quiz'
 }
 
 // 完成課程
@@ -526,8 +541,14 @@ const handleOpenMap = () => {
   font-weight: 700;
 }
 
+.module-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
 .start-module-btn {
-  width: 100%;
+  flex: 1;
   padding: 16px;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -542,6 +563,24 @@ const handleOpenMap = () => {
 .start-module-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(102, 126, 234, 0.35);
+}
+
+.quiz-btn {
+  flex: 1;
+  padding: 16px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.0625rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 87, 108, 0.35);
 }
 
 .certificate-actions-bottom {

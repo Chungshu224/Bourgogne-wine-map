@@ -76,10 +76,22 @@
 </template>
 
 <script setup>
-defineProps({
+import { onMounted } from 'vue'
+
+const props = defineProps({
   slide: {
     type: Object,
     required: true
+  }
+})
+
+onMounted(() => {
+  console.log('ComparisonSlide mounted')
+  console.log('  slide:', props.slide)
+  console.log('  slide.comparison:', props.slide.comparison)
+  if (props.slide.comparison) {
+    console.log('  headers:', props.slide.comparison.headers)
+    console.log('  rows:', props.slide.comparison.rows)
   }
 })
 

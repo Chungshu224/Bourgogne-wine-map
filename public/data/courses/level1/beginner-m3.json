@@ -111,19 +111,95 @@
         "mapSlide": {
           "title": "🗺️ 夜丘產區地圖",
           "content": "從北到南的9個村莊",
+          "interactive": true,
+          "buttonPosition": "left",
           "mapConfig": {
             "center": [4.95, 47.15],
             "zoom": 11.5,
             "pitch": 0,
             "bearing": 0
           },
+          "markers": [
+            {
+              "id": "marsannay",
+              "coordinates": [4.968, 47.270],
+              "name": "Marsannay",
+              "description": "最北村莊，紅白粉三色酒",
+              "color": "#8B4789",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "fixin",
+              "coordinates": [4.971, 47.245],
+              "name": "Fixin",
+              "description": "強勁紅酒，5個一級園",
+              "color": "#F39C12",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "gevrey-chambertin",
+              "coordinates": [4.965, 47.225],
+              "name": "Gevrey-Chambertin",
+              "description": "夜丘之王，9個特級園",
+              "color": "#C0392B",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "morey-saint-denis",
+              "coordinates": [4.962, 47.200],
+              "name": "Morey-Saint-Denis",
+              "description": "5個特級園，優雅風格",
+              "color": "#2980B9",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "chambolle-musigny",
+              "coordinates": [4.958, 47.180],
+              "name": "Chambolle-Musigny",
+              "description": "夜丘最優雅，2個特級園",
+              "color": "#16A085",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "vougeot",
+              "coordinates": [4.960, 47.165],
+              "name": "Vougeot",
+              "description": "Clos de Vougeot 特級園所在地",
+              "color": "#9B59B6",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "flagey-echezeaux",
+              "coordinates": [4.950, 47.155],
+              "name": "Flagey-Échézeaux",
+              "description": "2個特級園：Échézeaux & Grands-Échézeaux",
+              "color": "#E67E22",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "vosne-romanee",
+              "coordinates": [4.955, 47.145],
+              "name": "Vosne-Romanée",
+              "description": "布根地之巔，8個特級園含 Romanée-Conti",
+              "color": "#8E44AD",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "nuits-saint-georges",
+              "coordinates": [4.950, 47.120],
+              "name": "Nuits-Saint-Georges",
+              "description": "最南村莊，41個一級園但無特級園",
+              "color": "#1ABC9C",
+              "textColor": "#FFFFFF"
+            }
+          ],
           "geojsonFiles": [
             {
               "id": "base-burgundy",
               "url": "/geojson/AOC Bourgogne map.geojson",
               "isBase": true,
               "fillColor": "#E6E6FA",
-              "fillOpacity": 0.1,
+              "fillOpacity": 0.05,
               "lineColor": "#9370DB",
               "lineWidth": 1,
               "showLabels": false
@@ -132,91 +208,99 @@
               "id": "marsannay",
               "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Marsannay-la-côte).geojson",
               "displayName": "Marsannay",
-              "fillColor": "#8B0000",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Marsannay",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.5,
+              "lineColor": "#5B2C5A",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "fixin",
               "url": "/geojson/Cote-de-Nuits/02Fixin/AOC Fixin (Fixin).geojson",
               "displayName": "Fixin",
-              "fillColor": "#A52A2A",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Fixin",
+              "fillColor": "#F39C12",
+              "fillOpacity": 0.5,
+              "lineColor": "#CA6F1E",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "gevrey-chambertin",
               "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/AOC Gevrey-Chambertin (Gevrey-Chambertin).geojson",
               "displayName": "Gevrey-Chambertin",
-              "fillColor": "#DC143C",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Gevrey-Chambertin",
+              "fillColor": "#C0392B",
+              "fillOpacity": 0.5,
+              "lineColor": "#7B241C",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "morey-saint-denis",
               "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/AOC Morey-Saint-Denis.geojson",
               "displayName": "Morey-Saint-Denis",
-              "fillColor": "#B22222",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Morey-Saint-Denis",
+              "fillColor": "#2980B9",
+              "fillOpacity": 0.5,
+              "lineColor": "#1B4F72",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "chambolle-musigny",
               "url": "/geojson/Cote-de-Nuits/06Chambolle Musigny/AOC Chambolle-Musigny.geojson",
               "displayName": "Chambolle-Musigny",
-              "fillColor": "#CD5C5C",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Chambolle-Musigny",
+              "fillColor": "#16A085",
+              "fillOpacity": 0.5,
+              "lineColor": "#0E6655",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "vougeot",
               "url": "/geojson/Cote-de-Nuits/09Vougeot/AOC Vougeot.geojson",
               "displayName": "Vougeot",
-              "fillColor": "#8B0000",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Vougeot",
+              "fillColor": "#9B59B6",
+              "fillOpacity": 0.5,
+              "lineColor": "#6C3483",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "flagey-echezeaux",
               "url": "/geojson/Cote-de-Nuits/07Flagey-Echézeaux/Flagey-Echézeaux.geojson",
               "displayName": "Flagey-Echézeaux",
-              "fillColor": "#A52A2A",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "fillColor": "#E67E22",
+              "fillOpacity": 0.5,
+              "lineColor": "#BA4A00",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "vosne-romanee",
               "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/AOC Vosne-Romanée.geojson",
               "displayName": "Vosne-Romanée",
-              "fillColor": "#DC143C",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Vosne-Romanée",
+              "fillColor": "#8E44AD",
+              "fillOpacity": 0.5,
+              "lineColor": "#4A235A",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "nuits-saint-georges",
               "url": "/geojson/Cote-de-Nuits/10Nuits-Saint-Georges/AOC Nuits-Saint-Georges.geojson",
               "displayName": "Nuits-Saint-Georges",
-              "fillColor": "#B22222",
-              "fillOpacity": 0.6,
-              "lineColor": "#4A0000",
+              "name": "Nuits-Saint-Georges",
+              "fillColor": "#1ABC9C",
+              "fillOpacity": 0.5,
+              "lineColor": "#117A65",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             }
           ]
         },
@@ -312,13 +396,71 @@
             "pitch": 0,
             "bearing": 0
           },
+          "markers": [
+            {
+              "id": "aloxe-corton",
+              "coordinates": [4.865, 47.065],
+              "name": "Aloxe-Corton",
+              "description": "紅白特級園：Corton & Corton-Charlemagne",
+              "color": "#C0392B",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "beaune",
+              "coordinates": [4.835, 47.025],
+              "name": "Beaune",
+              "description": "伯恩丘首府，42個一級園",
+              "color": "#E67E22",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "pommard",
+              "coordinates": [4.800, 46.995],
+              "name": "Pommard",
+              "description": "最強勁的紅酒，單寧厚實",
+              "color": "#8B4789",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "volnay",
+              "coordinates": [4.780, 46.980],
+              "name": "Volnay",
+              "description": "最優雅的紅酒，絲滑細膩",
+              "color": "#2980B9",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "meursault",
+              "coordinates": [4.765, 46.975],
+              "name": "Meursault",
+              "description": "白酒之王，奶油榛果香氣",
+              "color": "#F39C12",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "puligny-montrachet",
+              "coordinates": [4.755, 46.945],
+              "name": "Puligny-Montrachet",
+              "description": "4個白酒特級園，礦物感強",
+              "color": "#16A085",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "chassagne-montrachet",
+              "coordinates": [4.745, 46.920],
+              "name": "Chassagne-Montrachet",
+              "description": "紅白兼產，共享 Montrachet",
+              "color": "#8E44AD",
+              "textColor": "#FFFFFF"
+            }
+          ],
           "geojsonFiles": [
             {
               "id": "base-burgundy",
               "url": "/geojson/AOC Bourgogne map.geojson",
               "isBase": true,
               "fillColor": "#E6E6FA",
-              "fillOpacity": 0.1,
+              "fillOpacity": 0.05,
               "lineColor": "#9370DB",
               "lineWidth": 1,
               "showLabels": false
@@ -327,71 +469,71 @@
               "id": "aloxe-corton",
               "url": "/geojson/Cote-de-Beaune/03Aloxe-Corton/AOC Aloxe-Corton Village.geojson",
               "displayName": "Aloxe-Corton",
-              "fillColor": "#FF6347",
-              "fillOpacity": 0.6,
-              "lineColor": "#FF4500",
+              "fillColor": "#C0392B",
+              "fillOpacity": 0.5,
+              "lineColor": "#7B241C",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "beaune",
               "url": "/geojson/Cote-de-Beaune/06Beaune/AOC Beaune Village.geojson",
               "displayName": "Beaune",
-              "fillColor": "#DC143C",
-              "fillOpacity": 0.6,
-              "lineColor": "#FF4500",
+              "fillColor": "#E67E22",
+              "fillOpacity": 0.5,
+              "lineColor": "#BA4A00",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "pommard",
               "url": "/geojson/Cote-de-Beaune/07Pommard/AOC Pommard Village.geojson",
               "displayName": "Pommard",
-              "fillColor": "#8B0000",
-              "fillOpacity": 0.6,
-              "lineColor": "#FF4500",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.5,
+              "lineColor": "#5B2C5A",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "volnay",
               "url": "/geojson/Cote-de-Beaune/08Volnay/AOC Volnay Village.geojson",
               "displayName": "Volnay",
-              "fillColor": "#CD5C5C",
-              "fillOpacity": 0.6,
-              "lineColor": "#FF4500",
+              "fillColor": "#2980B9",
+              "fillOpacity": 0.5,
+              "lineColor": "#1B4F72",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "meursault",
               "url": "/geojson/Cote-de-Beaune/12Meursault/AOC Meursault Village.geojson",
               "displayName": "Meursault",
-              "fillColor": "#FFD700",
-              "fillOpacity": 0.6,
-              "lineColor": "#DAA520",
+              "fillColor": "#F39C12",
+              "fillOpacity": 0.5,
+              "lineColor": "#CA6F1E",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "puligny-montrachet",
               "url": "/geojson/Cote-de-Beaune/14Puligny-Montrachet/AOC Puligny-Montrachet Village.geojson",
               "displayName": "Puligny-Montrachet",
-              "fillColor": "#F0E68C",
-              "fillOpacity": 0.6,
-              "lineColor": "#DAA520",
+              "fillColor": "#16A085",
+              "fillOpacity": 0.5,
+              "lineColor": "#0E6655",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             },
             {
               "id": "chassagne-montrachet",
               "url": "/geojson/Cote-de-Beaune/15Chassagne-Montrachet/AOC Chassagne-Montrachet Village.geojson",
               "displayName": "Chassagne-Montrachet",
-              "fillColor": "#EEE8AA",
-              "fillOpacity": 0.6,
-              "lineColor": "#DAA520",
+              "fillColor": "#8E44AD",
+              "fillOpacity": 0.5,
+              "lineColor": "#5B2C6F",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
             }
           ]
         }
@@ -408,44 +550,22 @@
           {
             "heading": "夏布利 Chablis：礦物感白酒典範",
             "text": "位於布根地最北端，氣候涼爽，土壤富含貝殼化石（Kimmeridgian 泥灰岩）。這裡只種霞多麗，釀出的酒酸度高、礦物感強、不過桶或少過桶，展現最純淨的品種特性。",
-            "mapSlide": {
-              "title": "🗺️ 夏布利產區地圖",
-              "content": "夏布利的四個分級",
-              "mapConfig": {
-                "center": [3.8, 47.82],
-                "zoom": 12,
-                "pitch": 0,
-                "bearing": 0
-              },
-              "geojsonFiles": [
-                {
-                  "id": "base-burgundy",
-                  "url": "/geojson/AOC Bourgogne map.geojson",
-                  "isBase": true,
-                  "fillColor": "#E6E6FA",
-                  "fillOpacity": 0.1,
-                  "lineColor": "#9370DB",
-                  "lineWidth": 1,
-                  "showLabels": false
-                },
-                {
-                  "id": "chablis",
-                  "url": "/geojson/Chablis/AOC Chablis.geojson",
-                  "displayName": "Chablis",
-                  "fillColor": "#F0E68C",
-                  "fillOpacity": 0.6,
-                  "lineColor": "#DAA520",
-                  "lineWidth": 2,
-                  "showLabels": true
-                }
-              ]
-            },
             "keyPoints": [
               "氣候：大陸性，春季霜凍是大敵",
               "土壤：Kimmeridgian 泥灰岩（貝殼化石）",
               "風格：高酸度、礦物感、檸檬香、牡蠣貝殼味",
               "分級：Petit Chablis < Chablis < Premier Cru < Grand Cru"
             ],
+            "comparisonTable": {
+              "title": "不同級別的風味輪廓",
+              "headers": ["級別", "香氣特徵", "口感風格", "陳年潛力", "價格區間"],
+              "rows": [
+                ["Petit Chablis", "青蘋果、檸檬、白花", "輕盈清爽、酸度明快", "1-3年", "€10-18"],
+                ["Chablis", "檸檬、青蘋果、濕石頭、牡蠣殼", "清爽純淨、礦物感明顯", "3-5年", "€15-30"],
+                ["Premier Cru", "成熟檸檬、白桃、蜂蜜、燧石", "濃郁複雜、礦物層次豐富", "5-10年", "€25-60"],
+                ["Grand Cru", "白桃、杏桃、蜂蜜、烤榛果、碘", "濃郁深邃、結構宏大", "10-20年", "€50-200+"]
+              ]
+            },
             "subRegions": [
               "Petit Chablis - 最基礎，輕盈易飲",
               "Chablis - 經典風格，性價比高",
@@ -454,40 +574,112 @@
             ]
           },
           {
-            "heading": "夏隆內丘 Côte Chalonnaise：性價比之選",
-            "text": "位於伯恩丘南端，氣候與土壤相似但名氣較小，因此價格更親民。是尋找高品質布根地的絕佳選擇。",
             "mapSlide": {
-              "title": "🗺️ 夏隆內丘產區地圖",
-              "content": "五個主要村莊",
+              "title": "🗺️ 夏布利產區地圖",
+              "content": "四個等級的分布",
+              "interactive": true,
+              "buttonPosition": "left",
               "mapConfig": {
-                "center": [4.72, 46.85],
-                "zoom": 11,
+                "center": [3.80, 47.81],
+                "zoom": 11.5,
                 "pitch": 0,
                 "bearing": 0
               },
+              "markers": [
+                {
+                  "id": "petit-chablis",
+                  "coordinates": [3.75, 47.85],
+                  "name": "Petit Chablis",
+                  "description": "最基礎，輕盈易飲",
+                  "color": "#95A5A6",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "chablis",
+                  "coordinates": [3.80, 47.81],
+                  "name": "Chablis",
+                  "description": "經典風格，性價比高",
+                  "color": "#3498DB",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "premier-cru",
+                  "coordinates": [3.82, 47.80],
+                  "name": "Premier Cru",
+                  "description": "40個一級園，更集中複雜",
+                  "color": "#16A085",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "grand-cru",
+                  "coordinates": [3.805, 47.815],
+                  "name": "Grand Cru",
+                  "description": "7個特級園，全在右岸山坡",
+                  "color": "#E74C3C",
+                  "textColor": "#FFFFFF"
+                }
+              ],
               "geojsonFiles": [
                 {
                   "id": "base-burgundy",
                   "url": "/geojson/AOC Bourgogne map.geojson",
                   "isBase": true,
                   "fillColor": "#E6E6FA",
-                  "fillOpacity": 0.1,
+                  "fillOpacity": 0.05,
                   "lineColor": "#9370DB",
                   "lineWidth": 1,
                   "showLabels": false
                 },
                 {
-                  "id": "cote-chalonnaise",
-                  "url": "/geojson/Cote-Chalonnaise/AOC Bourgogne Côte Chalonnaise.geojson",
-                  "displayName": "Côte Chalonnaise",
-                  "fillColor": "#CD5C5C",
-                  "fillOpacity": 0.6,
-                  "lineColor": "#8B0000",
+                  "id": "petit-chablis",
+                  "url": "/geojson/Chablis/AOC Petit Chablis.geojson",
+                  "displayName": "Petit Chablis",
+                  "name": "Petit Chablis",
+                  "fillColor": "#95A5A6",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#7F8C8D",
                   "lineWidth": 2,
-                  "showLabels": true
+                  "showLabels": false
+                },
+                {
+                  "id": "chablis",
+                  "url": "/geojson/Chablis/AOC Chablis.geojson",
+                  "displayName": "Chablis",
+                  "name": "Chablis",
+                  "fillColor": "#3498DB",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#2980B9",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "premier-cru",
+                  "url": "/geojson/Chablis/Chablis 1er cru/AOC Chablis 1er Cru.geojson",
+                  "displayName": "Chablis 1er Cru",
+                  "name": "Chablis 1er Cru",
+                  "fillColor": "#16A085",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#0E6655",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "grand-cru",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru.geojson",
+                  "displayName": "Chablis Grand Cru",
+                  "name": "Chablis Grand Cru",
+                  "fillColor": "#E74C3C",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#C0392B",
+                  "lineWidth": 2,
+                  "showLabels": false
                 }
               ]
-            },
+            }
+          },
+          {
+            "heading": "夏隆內丘 Côte Chalonnaise：性價比之選",
+            "text": "位於伯恩丘南端，氣候與土壤相似但名氣較小，因此價格更親民。是尋找高品質布根地的絕佳選擇。",
             "keyPoints": [
               "位置：伯恩丘南部，金丘的延續",
               "氣候：略溫暖於金丘",
@@ -503,40 +695,124 @@
             ]
           },
           {
-            "heading": "馬貢內 Mâconnais：日常白酒首選",
-            "text": "布根地最南端，氣候溫暖，以大量生產清爽易飲的霞多麗白酒為主。價格親民，適合日常飲用。",
             "mapSlide": {
-              "title": "🗺️ 馬貢內產區地圖",
-              "content": "主要村莊級產區",
+              "title": "🗺️ 夏隆內丘產區地圖",
+              "content": "五個主要村莊",
               "mapConfig": {
-                "center": [4.75, 46.3],
-                "zoom": 10.5,
+                "center": [4.70, 46.80],
+                "zoom": 11,
                 "pitch": 0,
                 "bearing": 0
               },
+              "markers": [
+                {
+                  "id": "bouzeron",
+                  "coordinates": [4.697, 46.915],
+                  "name": "Bouzeron",
+                  "description": "只產 Aligoté 白酒的特殊村莊",
+                  "color": "#F39C12",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "rully",
+                  "coordinates": [4.745, 46.875],
+                  "name": "Rully",
+                  "description": "紅白兼產，氣泡酒著名",
+                  "color": "#3498DB",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "mercurey",
+                  "coordinates": [4.730, 46.830],
+                  "name": "Mercurey",
+                  "description": "最大村莊，以紅酒為主",
+                  "color": "#C0392B",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "givry",
+                  "coordinates": [4.745, 46.780],
+                  "name": "Givry",
+                  "description": "優雅的紅酒，歷史悠久",
+                  "color": "#8E44AD",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "montagny",
+                  "coordinates": [4.660, 46.725],
+                  "name": "Montagny",
+                  "description": "只產白酒，霞多麗為主",
+                  "color": "#16A085",
+                  "textColor": "#FFFFFF"
+                }
+              ],
               "geojsonFiles": [
                 {
                   "id": "base-burgundy",
                   "url": "/geojson/AOC Bourgogne map.geojson",
                   "isBase": true,
                   "fillColor": "#E6E6FA",
-                  "fillOpacity": 0.1,
+                  "fillOpacity": 0.05,
                   "lineColor": "#9370DB",
                   "lineWidth": 1,
                   "showLabels": false
                 },
                 {
-                  "id": "maconnais",
-                  "url": "/geojson/Maconnais/AOC Mâcon-Villages.geojson",
-                  "displayName": "Mâconnais",
-                  "fillColor": "#98D8C8",
-                  "fillOpacity": 0.6,
-                  "lineColor": "#2E8B57",
+                  "id": "bouzeron",
+                  "url": "/geojson/Cote-Chalonnaise/01Bouzeron/AOC Bouzeron.geojson",
+                  "displayName": "Bouzeron",
+                  "fillColor": "#F39C12",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#CA6F1E",
                   "lineWidth": 2,
-                  "showLabels": true
+                  "showLabels": false
+                },
+                {
+                  "id": "rully",
+                  "url": "/geojson/Cote-Chalonnaise/02 Rully/AOC Rully.geojson",
+                  "displayName": "Rully",
+                  "fillColor": "#3498DB",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#2980B9",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "mercurey",
+                  "url": "/geojson/Cote-Chalonnaise/03Mercurey/AOC Mercurey.geojson",
+                  "displayName": "Mercurey",
+                  "fillColor": "#C0392B",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#7B241C",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "givry",
+                  "url": "/geojson/Cote-Chalonnaise/04Givry/AOC Givry.geojson",
+                  "displayName": "Givry",
+                  "fillColor": "#8E44AD",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#5B2C6F",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "montagny",
+                  "url": "/geojson/Cote-Chalonnaise/05Montagny/AOC Montagny.geojson",
+                  "displayName": "Montagny",
+                  "fillColor": "#16A085",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#0E6655",
+                  "lineWidth": 2,
+                  "showLabels": false
                 }
               ]
-            },
+            }
+          },
+          {
+            "heading": "馬貢內 Mâconnais：日常白酒首選",
+            "text": "布根地最南端，氣候溫暖，以大量生產清爽易飲的霞多麗白酒為主。價格親民，適合日常飲用。",
             "keyPoints": [
               "氣候：溫暖，受地中海影響",
               "產量：布根地25%的白酒來自這裡",
@@ -549,6 +825,104 @@
               "Saint-Véran - 清新優雅，性價比高",
               "Viré-Clessé - 圓潤飽滿，微礦物感"
             ]
+          },
+          {
+            "mapSlide": {
+              "title": "🗺️ 馬貢內產區地圖",
+              "content": "主要產區分布",
+              "mapConfig": {
+                "center": [4.75, 46.30],
+                "zoom": 10.5,
+                "pitch": 0,
+                "bearing": 0
+              },
+              "markers": [
+                {
+                  "id": "macon-villages",
+                  "coordinates": [4.83, 46.35],
+                  "name": "Mâcon-Villages",
+                  "description": "基礎大區酒",
+                  "color": "#95A5A6",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "pouilly-fuisse",
+                  "coordinates": [4.75, 46.29],
+                  "name": "Pouilly-Fuissé",
+                  "description": "最著名村莊，品質可比美 Meursault",
+                  "color": "#F39C12",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "saint-veran",
+                  "coordinates": [4.72, 46.25],
+                  "name": "Saint-Véran",
+                  "description": "清新優雅，性價比高",
+                  "color": "#16A085",
+                  "textColor": "#FFFFFF"
+                },
+                {
+                  "id": "vire-clesse",
+                  "coordinates": [4.83, 46.40],
+                  "name": "Viré-Clessé",
+                  "description": "圓潤飽滿，微礦物感",
+                  "color": "#3498DB",
+                  "textColor": "#FFFFFF"
+                }
+              ],
+              "geojsonFiles": [
+                {
+                  "id": "base-burgundy",
+                  "url": "/geojson/AOC Bourgogne map.geojson",
+                  "isBase": true,
+                  "fillColor": "#E6E6FA",
+                  "fillOpacity": 0.05,
+                  "lineColor": "#9370DB",
+                  "lineWidth": 1,
+                  "showLabels": false
+                },
+                {
+                  "id": "macon-villages",
+                  "url": "/geojson/Maconnais/AOC Mâcon-Villages.geojson",
+                  "displayName": "Mâcon-Villages",
+                  "fillColor": "#95A5A6",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#7F8C8D",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "pouilly-fuisse",
+                  "url": "/geojson/Maconnais/AOC Pouilly-Fuissé.geojson",
+                  "displayName": "Pouilly-Fuissé",
+                  "fillColor": "#F39C12",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#CA6F1E",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "saint-veran",
+                  "url": "/geojson/Maconnais/AOC Saint-Véran.geojson",
+                  "displayName": "Saint-Véran",
+                  "fillColor": "#16A085",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#0E6655",
+                  "lineWidth": 2,
+                  "showLabels": false
+                },
+                {
+                  "id": "vire-clesse",
+                  "url": "/geojson/Maconnais/AOC Viré-Clessé.geojson",
+                  "displayName": "Viré-Clessé",
+                  "fillColor": "#3498DB",
+                  "fillOpacity": 0.5,
+                  "lineColor": "#2980B9",
+                  "lineWidth": 2,
+                  "showLabels": false
+                }
+              ]
+            }
           }
         ],
         "comparisonTable": {
@@ -571,6 +945,40 @@
       "content": {
         "introduction": "薄酒萊雖然行政上屬於布根地大區，但在風土和風格上截然不同。這裡的主角是加美（Gamay）葡萄，釀出的酒果味奔放、易飲親民，與黑皮諾的優雅複雜形成對比。",
         "sections": [
+          {
+            "mapSlide": {
+              "title": "🗺️ 薄酒萊產區地圖",
+              "content": "探索薄酒萊產區",
+              "mapConfig": {
+                "center": [4.65, 46.15],
+                "zoom": 10.5,
+                "pitch": 0,
+                "bearing": 0
+              },
+              "geojsonFiles": [
+                {
+                  "id": "base-burgundy",
+                  "url": "/geojson/AOC Bourgogne map.geojson",
+                  "isBase": true,
+                  "fillColor": "#E6E6FA",
+                  "fillOpacity": 0.1,
+                  "lineColor": "#9370DB",
+                  "lineWidth": 1,
+                  "showLabels": false
+                },
+                {
+                  "id": "beaujolais",
+                  "url": "/geojson/Beaujolais/AOC Beaujolais Villages.geojson",
+                  "displayName": "Beaujolais",
+                  "fillColor": "#8B008B",
+                  "fillOpacity": 0.6,
+                  "lineColor": "#4B0082",
+                  "lineWidth": 2,
+                  "showLabels": true
+                }
+              ]
+            }
+          },
           {
             "heading": "為什麼薄酒萊與眾不同？",
             "keyPoints": [
@@ -669,33 +1077,217 @@
         "summary": "薄酒萊是布根地的特立獨行者，加美葡萄展現了完全不同的風格。別被新酒誤導，十大特級村才是薄酒萊的靈魂。",
         "mapSlide": {
           "title": "🗺️ 薄酒萊產區地圖",
-          "content": "薄酒萊產區與十大特級村",
+          "content": "十大特級村分布",
+          "interactive": true,
+          "buttonPosition": "left",
           "mapConfig": {
             "center": [4.65, 46.15],
             "zoom": 10.5,
             "pitch": 0,
             "bearing": 0
           },
+          "markers": [
+            {
+              "id": "saint-amour",
+              "coordinates": [4.745, 46.265],
+              "name": "Saint-Amour",
+              "description": "情人節最愛，輕盈優雅",
+              "color": "#E91E63",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "julienas",
+              "coordinates": [4.710, 46.240],
+              "name": "Juliénas",
+              "description": "果味與香料並存",
+              "color": "#9C27B0",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "chenas",
+              "coordinates": [4.725, 46.225],
+              "name": "Chénas",
+              "description": "最稀有，複雜度高",
+              "color": "#673AB7",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "moulin-a-vent",
+              "coordinates": [4.735, 46.210],
+              "name": "Moulin-à-Vent",
+              "description": "薄酒萊之王，可比擬夜丘紅酒",
+              "color": "#C0392B",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "fleurie",
+              "coordinates": [4.695, 46.190],
+              "name": "Fleurie",
+              "description": "最優雅芬芳，花香四溢",
+              "color": "#FF5722",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "chiroubles",
+              "coordinates": [4.670, 46.175],
+              "name": "Chiroubles",
+              "description": "海拔最高，最細膩",
+              "color": "#FF9800",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "morgon",
+              "coordinates": [4.685, 46.160],
+              "name": "Morgon",
+              "description": "最強勁，櫻桃與土壤香",
+              "color": "#8B0000",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "regnié",
+              "coordinates": [4.655, 46.145],
+              "name": "Régnié",
+              "description": "1988年升級，果味新鮮",
+              "color": "#FFC107",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "brouilly",
+              "coordinates": [4.655, 46.120],
+              "name": "Brouilly",
+              "description": "最大特級村，易飲",
+              "color": "#4CAF50",
+              "textColor": "#FFFFFF"
+            },
+            {
+              "id": "cote-de-brouilly",
+              "coordinates": [4.665, 46.110],
+              "name": "Côte de Brouilly",
+              "description": "火山土壤，更濃郁",
+              "color": "#009688",
+              "textColor": "#FFFFFF"
+            }
+          ],
           "geojsonFiles": [
             {
               "id": "base-burgundy",
               "url": "/geojson/AOC Bourgogne map.geojson",
               "isBase": true,
               "fillColor": "#E6E6FA",
-              "fillOpacity": 0.1,
+              "fillOpacity": 0.05,
               "lineColor": "#9370DB",
               "lineWidth": 1,
               "showLabels": false
             },
             {
-              "id": "beaujolais",
-              "url": "/geojson/Beaujolais/AOC Beaujolais Villages.geojson",
-              "displayName": "Beaujolais",
-              "fillColor": "#8B008B",
-              "fillOpacity": 0.6,
-              "lineColor": "#4B0082",
+              "id": "saint-amour",
+              "url": "/geojson/Beaujolais/AOC Saint-Amour.geojson",
+              "displayName": "Saint-Amour",
+              "name": "Saint-Amour",
+              "fillColor": "#E91E63",
+              "fillOpacity": 0.5,
+              "lineColor": "#C2185B",
               "lineWidth": 2,
-              "showLabels": true
+              "showLabels": false
+            },
+            {
+              "id": "julienas",
+              "url": "/geojson/Beaujolais/AOC Juliénas.geojson",
+              "displayName": "Juliénas",
+              "name": "Juliénas",
+              "fillColor": "#9C27B0",
+              "fillOpacity": 0.5,
+              "lineColor": "#7B1FA2",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "chenas",
+              "url": "/geojson/Beaujolais/AOC Chénas.geojson",
+              "displayName": "Chénas",
+              "name": "Chénas",
+              "fillColor": "#673AB7",
+              "fillOpacity": 0.5,
+              "lineColor": "#512DA8",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "moulin-a-vent",
+              "url": "/geojson/Beaujolais/AOC Moulin-à-Vent.geojson",
+              "displayName": "Moulin-à-Vent",
+              "name": "Moulin-à-Vent",
+              "fillColor": "#C0392B",
+              "fillOpacity": 0.5,
+              "lineColor": "#7B241C",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "fleurie",
+              "url": "/geojson/Beaujolais/AOC Fleurie.geojson",
+              "displayName": "Fleurie",
+              "name": "Fleurie",
+              "fillColor": "#FF5722",
+              "fillOpacity": 0.5,
+              "lineColor": "#E64A19",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "chiroubles",
+              "url": "/geojson/Beaujolais/AOC Chiroubles.geojson",
+              "displayName": "Chiroubles",
+              "name": "Chiroubles",
+              "fillColor": "#FF9800",
+              "fillOpacity": 0.5,
+              "lineColor": "#F57C00",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "morgon",
+              "url": "/geojson/Beaujolais/AOC Morgon.geojson",
+              "displayName": "Morgon",
+              "name": "Morgon",
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.5,
+              "lineColor": "#5C0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "regnié",
+              "url": "/geojson/Beaujolais/AOC Régnié.geojson",
+              "displayName": "Régnié",
+              "name": "Régnié",
+              "fillColor": "#FFC107",
+              "fillOpacity": 0.5,
+              "lineColor": "#FFA000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "brouilly",
+              "url": "/geojson/Beaujolais/AOC Brouilly.geojson",
+              "displayName": "Brouilly",
+              "name": "Brouilly",
+              "fillColor": "#4CAF50",
+              "fillOpacity": 0.5,
+              "lineColor": "#388E3C",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "cote-de-brouilly",
+              "url": "/geojson/Beaujolais/AOC Côte de Brouilly.geojson",
+              "displayName": "Côte de Brouilly",
+              "name": "Côte de Brouilly",
+              "fillColor": "#009688",
+              "fillOpacity": 0.5,
+              "lineColor": "#00796B",
+              "lineWidth": 2,
+              "showLabels": false
             }
           ]
         },

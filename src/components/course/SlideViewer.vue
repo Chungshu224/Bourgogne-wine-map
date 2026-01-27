@@ -104,7 +104,8 @@ const slides = computed(() => {
       title: props.lesson.content.mapSlide.title || '產區地圖',
       content: props.lesson.content.mapSlide.content,
       mapConfig: props.lesson.content.mapSlide.mapConfig,
-      geojsonFiles: props.lesson.content.mapSlide.geojsonFiles
+      geojsonFiles: props.lesson.content.mapSlide.geojsonFiles,
+      markers: props.lesson.content.mapSlide.markers
     })
   }
 
@@ -118,7 +119,8 @@ const slides = computed(() => {
         title: mapSlide.title || '產區地圖',
         content: mapSlide.content,
         mapConfig: mapSlide.mapConfig,
-        geojsonFiles: mapSlide.geojsonFiles
+        geojsonFiles: mapSlide.geojsonFiles,
+        markers: mapSlide.markers
       })
     })
   } else {
@@ -127,12 +129,22 @@ const slides = computed(() => {
 
   // 3. 內容投影片
   if (props.lesson.content?.sections) {
-    props.lesson.content.sections.forEach(section => {
+    console.log('📚 處理 sections, 數量:', props.lesson.content.sections.length)
+    props.lesson.content.sections.forEach((section, index) => {
+      console.log(`  Section ${index}:`, {
+        hasHeading: !!section.heading,
+        hasMapSlide: !!section.mapSlide,
+        heading: section.heading
+      })
       // 如果這個 section 有地圖配置，先添加地圖投影片
       if (section.mapSlide) {
+        console.log('🗺️ 創建地圖投影片:', section.mapSlide.title)
         slideArray.push({
           type: 'map',
-          ...section.mapSlide,
+          title: section.mapSlide.title,
+          mapConfig: section.mapSlide.mapConfig,
+          geojsonFiles: section.mapSlide.geojsonFiles,
+          markers: section.mapSlide.markers,
           interactive: true,
           buttonPosition: section.mapSlide.buttonPosition || 'left'
         })
@@ -178,7 +190,11 @@ const slides = computed(() => {
             type: 'list',
             title: section.heading,
             content: section.text,
-            points: section.crus.map(c => typeof c === 'string' ? c : `${c.name} - ${c.character}`)
+            points: section.crus.map(c => {
+              if (typeof c === 'string') return c
+              // 使用 style 和 ageability 屬性
+              return `${c.name} - ${c.style}${c.ageability ? ` (${c.ageability})` : ''}`
+            })
           })
         }
         // 如果有子產區詳細資料（如夏布利四級分類），為每個級別創建投影片
@@ -288,11 +304,19 @@ const slides = computed(() => {
         
         // 如果有對比表，添加對比表投影片
         if (section.comparisonTable) {
-          slideArray.push({
+          console.log('🔍 找到 comparisonTable:', section.comparisonTable.title)
+          console.log('  Headers:', section.comparisonTable.headers)
+          console.log('  Rows:', section.comparisonTable.rows)
+          const comparisonSlide = {
             type: 'comparison',
             title: section.comparisonTable.title || section.heading,
-            comparison: section.comparisonTable
-          })
+            comparison: {
+              headers: section.comparisonTable.headers,
+              rows: section.comparisonTable.rows
+            }
+          }
+          console.log('  創建的幻燈片:', JSON.stringify(comparisonSlide, null, 2))
+          slideArray.push(comparisonSlide)
         }
         
         // 如果有酒標圖片，添加一個圖片投影片

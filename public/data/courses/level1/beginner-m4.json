@@ -456,48 +456,20 @@
           },
           {
             "heading": "經典餐酒搭配",
-            "pairings": [
-              {
-                "food": "生蠔 Oysters",
-                "wine": "Chablis 或 Premier Cru",
-                "reason": "礦物感與海洋風味完美匹配，高酸度平衡蠔的鮮味"
-              },
-              {
-                "food": "清蒸鱸魚",
-                "wine": "Chablis",
-                "reason": "不搶味，突顯魚的鮮甜"
-              },
-              {
-                "food": "烤龍蝦配奶油醬",
-                "wine": "Grand Cru",
-                "reason": "足夠的酒體和複雜度搭配豐富醬汁"
-              },
-              {
-                "food": "山羊起司 Chèvre",
-                "wine": "Petit Chablis 或 Chablis",
-                "reason": "酸度切入起司的油脂，礦物感互補"
-              },
-              {
-                "food": "日式生魚片",
-                "wine": "Chablis",
-                "reason": "純淨風格不干擾魚肉細緻風味"
-              },
-              {
-                "food": "白酒蒸淡菜",
-                "wine": "Premier Cru",
-                "reason": "礦物感呼應貝類，酸度提振味蕾"
-              },
-              {
-                "food": "烤雞配奶油蘑菇",
-                "wine": "Premier Cru（有桶）",
-                "reason": "微橡木味與蘑菇土壤香氣搭配"
-              },
-              {
-                "food": "炸物（天婦羅）",
-                "wine": "Petit Chablis",
-                "reason": "高酸度去油解膩"
-              }
-            ]
+            "comparisonTable": {
+              "title": "經典餐酒搭配",
+              "headers": ["料理", "推薦酒款", "搭配原因"],
+              "rows": [
+                ["生蠔 Oysters", "Chablis 或 Premier Cru", "礦物感與海洋風味完美匹配，高酸度平衡蠔的鮮味"],
+                ["清蒸鱸魚", "Chablis", "不搶味，突顯魚的鮮甜"],
+                ["烤龍蝦配奶油醬", "Grand Cru", "足夠的酒體和複雜度搭配豐富醬汁"],
+                ["山羊起司 Chèvre", "Petit Chablis 或 Chablis", "酸度切入起司的油脂，礦物感互補"],
+                ["日式生魚片", "Chablis", "純淨風格不干擾魚肉細緻風味"],
+                ["白酒蒸淡菜", "Premier Cru", "礦物感呼應貝類，酸度提振味蕾"],
+                ["烤雞配奶油蘑菇", "Premier Cru（有桶）", "微橡木味與蘑菇土壤香氣搭配"],
+                ["炸物（天婦羅）", "Petit Chablis", "高酸度去油解膩"]
+              ]
+            }
           },
           {
             "heading": "過桶 vs 不過桶",

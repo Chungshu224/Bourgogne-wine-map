@@ -60,8 +60,13 @@ export class MapSlideManager {
     // 載入基礎圖層
     await this.loadBaseLayers()
 
-    // 載入所有產區圖層（初始可見）
+    // 載入所有產區圖層
     await this.loadAllRegionLayers()
+
+    // 如果是交互式地圖，初始隱藏所有圖層
+    if (this.config.interactive) {
+      this.hideAllLayers()
+    }
 
     // 添加標記
     this.addMarkers()
@@ -221,9 +226,11 @@ export class MapSlideManager {
   createMarkerElement(marker) {
     const el = document.createElement('div')
     el.className = 'city-marker'
+    const pinColor = marker.color || '#DC143C'
+    const textColor = marker.textColor || '#2c3e50'
     el.innerHTML = `
-      <div class="marker-pin"></div>
-      <div class="marker-label">${marker.name}</div>
+      <div class="marker-pin" style="background: ${pinColor};"></div>
+      <div class="marker-label" style="color: ${textColor}; background: ${textColor === '#FFFFFF' ? '#2c3e50' : 'white'};">${marker.name}</div>
     `
     return el
   }
@@ -322,6 +329,29 @@ export class MapSlideManager {
     }
 
     return region.id
+  }
+
+  /**
+   * 隱藏所有圖層（用於交互式地圖初始狀態）
+   */
+  hideAllLayers() {
+    if (!this.config.geojsonFiles) return
+
+    const regionLayers = this.config.geojsonFiles.filter(
+      file => !file.isBase && file.id !== 'bourgogne-map'
+    )
+
+    regionLayers.forEach(layer => {
+      const layerId = layer.id
+      if (this.map.getLayer(`${layerId}-fill`)) {
+        this.map.setLayoutProperty(`${layerId}-fill`, 'visibility', 'none')
+      }
+      if (this.map.getLayer(`${layerId}-line`)) {
+        this.map.setLayoutProperty(`${layerId}-line`, 'visibility', 'none')
+      }
+    })
+
+    console.log('已隱藏所有圖層（交互式模式）')
   }
 
   /**

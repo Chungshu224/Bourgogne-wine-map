@@ -1,0 +1,214 @@
+{
+  "moduleId": "module7",
+  "title": "夏隆內丘與馬貢內",
+  "description": "探索性價比優秀的布根地產區，學習如何挑選超值美酒",
+  "lessons": [
+    {
+      "id": "lesson1",
+      "title": "夏隆內丘：金丘的延續",
+      "duration": "15min",
+      "type": "text-images",
+      "content": {
+        "sections": [
+          {
+            "heading": "夏隆內丘概覽",
+            "text": "位於伯恩丘南端，氣候與土壤相似但名氣較小，因此價格更親民。是尋找高品質布根地的絕佳選擇。",
+            "keyPoints": [
+              "位置：伯恩丘南部，金丘的延續",
+              "氣候：略溫暖於金丘",
+              "風格：與金丘相似但更輕盈易飲",
+              "價格：比金丘便宜30-50%"
+            ]
+          },
+          {
+            "heading": "五大村莊詳解",
+            "villages": [
+              {
+                "name": "Bouzeron",
+                "specialty": "只產 Aligoté 白酒的特殊村莊",
+                "style": "清爽酸度，檸檬與白花香氣",
+                "price": "€15-25"
+              },
+              {
+                "name": "Rully",
+                "specialty": "紅白兼產，氣泡酒著名",
+                "style": "白酒清新優雅，紅酒果味豐富",
+                "price": "€20-35"
+              },
+              {
+                "name": "Mercurey",
+                "specialty": "最大村莊，以紅酒為主",
+                "style": "結構紮實，櫻桃與香料氣息",
+                "price": "€25-40"
+              },
+              {
+                "name": "Givry",
+                "specialty": "優雅的紅酒，歷史悠久",
+                "style": "細膩單寧，紅色莓果香氣",
+                "price": "€22-38"
+              },
+              {
+                "name": "Montagny",
+                "specialty": "只產白酒，霞多麗為主",
+                "style": "圓潤口感，礦物質感明顯",
+                "price": "€18-30"
+              }
+            ]
+          }
+        ],
+        "mapSlide": {
+          "title": "🗺️ 夏隆內丘五大村莊",
+          "content": "由北至南分布",
+          "mapConfig": {
+            "center": [4.70, 46.80],
+            "zoom": 11
+          }
+        }
+      }
+    },
+    {
+      "id": "lesson2",
+      "title": "馬貢內：親民白酒天堂",
+      "duration": "12min",
+      "type": "text-images",
+      "content": {
+        "sections": [
+          {
+            "heading": "馬貢內特色",
+            "text": "布根地最南端的產區，氣候溫暖，盛產平易近人的霞多麗白酒。",
+            "keyPoints": [
+              "氣候：地中海影響，陽光充足",
+              "品種：主要是霞多麗，少量黑皮諾",
+              "風格：果味豐富，酸度柔和",
+              "價格：布根地最親民的白酒"
+            ]
+          },
+          {
+            "heading": "主要產區",
+            "areas": [
+              {
+                "name": "Mâcon / Mâcon-Villages",
+                "description": "入門級白酒，新鮮易飲",
+                "price": "€10-18"
+              },
+              {
+                "name": "Pouilly-Fuissé",
+                "description": "馬貢內頂級產區，礦物質感強",
+                "price": "€25-50"
+              },
+              {
+                "name": "Saint-Véran",
+                "description": "優質中價位選擇",
+                "price": "€15-25"
+              },
+              {
+                "name": "Viré-Clessé",
+                "description": "圓潤豐滿，橡木桶陳年",
+                "price": "€18-30"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "lesson3",
+      "title": "性價比選購指南",
+      "duration": "13min",
+      "type": "text-images",
+      "content": {
+        "sections": [
+          {
+            "heading": "如何挑選超值布根地",
+            "guide": [
+              {
+                "budget": "€15-25",
+                "recommendations": [
+                  "Bouzeron Aligoté - 清爽開胃酒",
+                  "Mâcon-Villages - 日常白酒",
+                  "Rully blanc - 優雅霞多麗"
+                ]
+              },
+              {
+                "budget": "€25-40",
+                "recommendations": [
+                  "Mercurey rouge - 結構紮實紅酒",
+                  "Saint-Véran - 平衡的白酒",
+                  "Montagny 1er Cru - 礦物質感白酒"
+                ]
+              },
+              {
+                "budget": "€40-60",
+                "recommendations": [
+                  "Pouilly-Fuissé - 馬貢內頂級白酒",
+                  "Rully 1er Cru - 精緻紅白酒",
+                  "Givry 1er Cru - 優雅陳年紅酒"
+                ]
+              }
+            ]
+          },
+          {
+            "heading": "選購技巧",
+            "tips": [
+              "看年份：年輕的酒（2-3年）更新鮮",
+              "認酒莊：選擇知名酒莊的副牌",
+              "比價格：同等級的酒比金丘便宜30-50%",
+              "重口感：注重個人喜好而非名氣"
+            ]
+          }
+        ],
+        "pairings": {
+          "白酒搭配": [
+            "生蠔、貝類海鮮",
+            "烤雞、豬排",
+            "山羊乳酪"
+          ],
+          "紅酒搭配": [
+            "烤鴨、燒雞",
+            "牛排、羊排",
+            "軟質乳酪"
+          ]
+        }
+      }
+    }
+  ],
+  "quiz": {
+    "questions": [
+      {
+        "id": "q1",
+        "question": "夏隆內丘最大的村莊是？",
+        "options": ["Bouzeron", "Rully", "Mercurey", "Givry"],
+        "correctAnswer": 2,
+        "explanation": "Mercurey 是夏隆內丘最大的村莊，以紅酒為主，產量占整個產區約60%。"
+      },
+      {
+        "id": "q2",
+        "question": "Bouzeron 產區的特色是？",
+        "options": ["只產黑皮諾", "只產霞多麗", "只產 Aligoté", "只產氣泡酒"],
+        "correctAnswer": 2,
+        "explanation": "Bouzeron 是布根地唯一只產 Aligoté 白酒的村莊級AOC。"
+      },
+      {
+        "id": "q3",
+        "question": "馬貢內最頂級的產區是？",
+        "options": ["Mâcon-Villages", "Pouilly-Fuissé", "Saint-Véran", "Viré-Clessé"],
+        "correctAnswer": 1,
+        "explanation": "Pouilly-Fuissé 是馬貢內品質最高的產區，礦物質感強，陳年潛力佳。"
+      },
+      {
+        "id": "q4",
+        "question": "夏隆內丘相比金丘的價格差異約為？",
+        "options": ["10-20%", "30-50%", "60-80%", "幾乎相同"],
+        "correctAnswer": 1,
+        "explanation": "夏隆內丘的酒比金丘便宜30-50%，是性價比之選。"
+      },
+      {
+        "id": "q5",
+        "question": "Montagny 產區的特色是？",
+        "options": ["只產紅酒", "只產白酒", "紅白兼產", "產氣泡酒"],
+        "correctAnswer": 1,
+        "explanation": "Montagny 是夏隆內丘唯一只產白酒的村莊，以霞多麗為主。"
+      }
+    ]
+  }
+}

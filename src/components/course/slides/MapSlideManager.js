@@ -46,15 +46,57 @@ export class MapSlideManager {
       center: mapConfig.center,
       zoom: mapConfig.zoom,
       pitch: mapConfig.pitch || 0,
-      bearing: mapConfig.bearing || 0
+      bearing: mapConfig.bearing || 0,
+      transformRequest: (url, resourceType) => {
+        // 對於本地資源（絕對路徑或相對路徑），直接返回不做轉換
+        if (url.startsWith('/') || url.startsWith('./') || url.startsWith('../')) {
+          return { url: url }
+        }
+        // 對於完整的 http/https URL，正常處理
+        if (url.startsWith('http://') || url.startsWith('https://')) {
+          return { url: url }
+        }
+        // 對於 mapbox:// 協議，正常處理
+        if (url.startsWith('mapbox://')) {
+          return { url: url }
+        }
+        // 其他情況，假設是相對路徑
+        return { url: url }
+      },
+      // 禁用 Mapbox 的一些外部資源載入
+      locale: {
+        'AttributionControl.ToggleAttribution': '切換歸屬',
+        'AttributionControl.MapFeedback': '地圖回饋',
+        'NavigationControl.ResetBearing': '重置方位',
+        'NavigationControl.ZoomIn': '放大',
+        'NavigationControl.ZoomOut': '縮小'
+      }
+    })
+
+    // 添加錯誤處理
+    this.map.on('error', (e) => {
+      console.error('Mapbox 錯誤:', e.error)
+      // 如果是 URL 相關錯誤，嘗試忽略
+      if (e.error && e.error.message && e.error.message.includes('TLD')) {
+        console.warn('忽略 TLD 錯誤，這可能是 Mapbox 內部處理導致的')
+        e.preventDefault && e.preventDefault()
+      }
     })
 
     // 添加導航控制
     this.map.addControl(new mapboxgl.NavigationControl(), 'top-right')
 
     // 等待地圖載入
-    await new Promise((resolve) => {
+    await new Promise((resolve, reject) => {
       this.map.on('load', resolve)
+      this.map.on('error', (e) => {
+        // 只在嚴重錯誤時 reject
+        if (!e.error.message.includes('TLD')) {
+          reject(e.error)
+        }
+      })
+      // 設置超時
+      setTimeout(() => resolve(), 10000)
     })
 
     // 載入基礎圖層
@@ -63,8 +105,8 @@ export class MapSlideManager {
     // 載入所有產區圖層
     await this.loadAllRegionLayers()
 
-    // 如果是交互式地圖，初始隱藏所有圖層
-    if (this.config.interactive) {
+    // 如果配置了regions（新版互動式）或interactive標記，初始隱藏所有產區圖層
+    if (this.config.regions || this.config.interactive) {
       this.hideAllLayers()
     }
 
@@ -118,7 +160,14 @@ export class MapSlideManager {
    */
   async loadGeoJSONLayer(geojsonFile) {
     try {
+      console.log('載入 GeoJSON:', geojsonFile.url)
       const response = await fetch(geojsonFile.url)
+      
+      if (!response.ok) {
+        console.error(`載入失敗: ${geojsonFile.url}, 狀態: ${response.status}`)
+        return
+      }
+      
       const geojsonData = await response.json()
 
       const layerId = geojsonFile.id || `layer-${Math.random().toString(36).substr(2, 9)}`
@@ -337,21 +386,24 @@ export class MapSlideManager {
   hideAllLayers() {
     if (!this.config.geojsonFiles) return
 
-    const regionLayers = this.config.geojsonFiles.filter(
-      file => !file.isBase && file.id !== 'bourgogne-map'
-    )
-
-    regionLayers.forEach(layer => {
-      const layerId = layer.id
-      if (this.map.getLayer(`${layerId}-fill`)) {
-        this.map.setLayoutProperty(`${layerId}-fill`, 'visibility', 'none')
-      }
-      if (this.map.getLayer(`${layerId}-line`)) {
-        this.map.setLayoutProperty(`${layerId}-line`, 'visibility', 'none')
+    // 只保留真正的底圖（bourgogne-base或bourgogne-map）
+    this.config.geojsonFiles.forEach(layer => {
+      // 只保留bourgogne-base和bourgogne-map
+      if (layer.id !== 'bourgogne-base' && layer.id !== 'bourgogne-map') {
+        const layerId = layer.id
+        if (this.map.getLayer(`${layerId}-fill`)) {
+          this.map.setLayoutProperty(`${layerId}-fill`, 'visibility', 'none')
+        }
+        if (this.map.getLayer(`${layerId}-line`)) {
+          this.map.setLayoutProperty(`${layerId}-line`, 'visibility', 'none')
+        }
+        if (this.map.getLayer(`${layerId}-label`)) {
+          this.map.setLayoutProperty(`${layerId}-label`, 'visibility', 'none')
+        }
       }
     })
 
-    console.log('已隱藏所有圖層（交互式模式）')
+    console.log('已隱藏所有產區圖層（交互式模式），僅保留底圖')
   }
 
   /**

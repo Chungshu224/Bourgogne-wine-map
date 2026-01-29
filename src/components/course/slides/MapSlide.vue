@@ -5,8 +5,21 @@
       <h2 class="slide-title">{{ slide.title }}</h2>
     </div>
 
-    <!-- 左側按鈕面板（如果是交互式地圖） -->
-    <div v-if="slide.interactive && slide.buttonPosition === 'left'" class="layer-buttons left">
+    <!-- 左側產區按鈕（如果配置了regions） -->
+    <div v-if="slide.regions && slide.regions.length > 0" class="region-buttons-panel">
+      <button
+        v-for="region in slide.regions"
+        :key="region.id"
+        :class="['region-btn', { active: activeLayerId === region.id }]"
+        @click="toggleRegion(region)"
+      >
+        <div class="region-name-zh">{{ region.name }}</div>
+        <div class="region-name-fr">{{ region.nameFr }}</div>
+      </button>
+    </div>
+
+    <!-- 左側圖層按鈕（舊版互動式地圖） -->
+    <div v-else-if="slide.interactive && slide.buttonPosition === 'left'" class="layer-buttons left">
       <button
         v-for="layer in interactiveLayers"
         :key="layer.id"
@@ -26,6 +39,7 @@
 import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import 'mapbox-gl/dist/mapbox-gl.css'
 import { MapSlideManager } from './MapSlideManager.js'
+import * as turf from '@turf/turf'
 
 const props = defineProps({
   slide: {
@@ -116,6 +130,192 @@ const initMap = async () => {
     }
   } catch (error) {
     console.error('❌ 地圖初始化失敗:', error)
+  }
+}
+
+// 切換產區顯示
+const toggleRegion = async (region) => {
+  if (!mapManager || !mapManager.map) return
+  
+  try {
+    const map = mapManager.map
+    
+    // 如果點擊已激活的產區，隱藏它並恢復全景
+    if (activeLayerId.value === region.id) {
+      // 隱藏該產區的所有圖層
+      props.slide.geojsonFiles.forEach(file => {
+        // 跳過底圖
+        if (file.id === 'bourgogne-base' || file.id === 'bourgogne-map') return
+        
+        // 隱藏與該產區相關的所有圖層
+        if (file.id === region.id || file.id.includes(region.id.split('-')[0])) {
+          const fillLayerId = `${file.id}-fill`
+          const lineLayerId = `${file.id}-line`
+          if (map.getLayer(fillLayerId)) {
+            map.setLayoutProperty(fillLayerId, 'visibility', 'none')
+          }
+          if (map.getLayer(lineLayerId)) {
+            map.setLayoutProperty(lineLayerId, 'visibility', 'none')
+          }
+        }
+      })
+      activeLayerId.value = null
+      
+      // 恢復到初始視圖
+      const initialConfig = props.slide.mapConfig || { center: [4.5, 47.0], zoom: 8.2 }
+      map.flyTo({
+        center: initialConfig.center,
+        zoom: initialConfig.zoom,
+        pitch: initialConfig.pitch || 0,
+        bearing: initialConfig.bearing || 0,
+        duration: 1500
+      })
+    } else {
+      // 先隱藏所有產區圖層（除了底圖）
+      props.slide.geojsonFiles.forEach(file => {
+        if (file.id !== 'bourgogne-base' && file.id !== 'bourgogne-map') {
+          const fillLayerId = `${file.id}-fill`
+          const lineLayerId = `${file.id}-line`
+          if (map.getLayer(fillLayerId)) {
+            map.setLayoutProperty(fillLayerId, 'visibility', 'none')
+          }
+          if (map.getLayer(lineLayerId)) {
+            map.setLayoutProperty(lineLayerId, 'visibility', 'none')
+          }
+        }
+      })
+      
+      // 收集選中產區的所有相關圖層並顯示
+      const regionFeatures = []
+      props.slide.geojsonFiles.forEach(file => {
+        // 跳過底圖
+        if (file.id === 'bourgogne-base' || file.id === 'bourgogne-map') return
+        
+        // 檢查是否匹配主產區或相關子區域
+        const isMatch = file.id === region.id || 
+                       file.displayName === region.name ||
+                       (region.id === 'cote-de-nuits' && file.fillColor === '#8B0000') ||
+                       (region.id === 'cote-de-beaune' && file.fillColor === '#FF6347') ||
+                       (region.id === 'marsannay' && file.fillColor === '#8B4789') ||
+                       (region.id === 'fixin' && file.fillColor === '#CD5C5C') ||
+                       (region.id === 'gevrey-chambertin' && (file.fillColor === '#DC143C' || file.id === 'brochon')) ||
+                       (region.id === 'morey-saint-denis' && file.fillColor === '#C71585') ||
+                       (region.id === 'chambolle-musigny' && file.fillColor === '#DB7093') ||
+                       (region.id === 'vougeot' && file.fillColor === '#B22222') ||
+                       (region.id === 'vosne-romanee' && file.fillColor === '#8B0000') ||
+                       (region.id === 'flagey-echezeaux' && file.fillColor === '#CD5C5C') ||
+                       (region.id === 'nuits-saint-georges' && file.fillColor === '#DC143C') ||
+                       (region.id === 'meursault' && file.fillColor === '#FFD700') ||
+                       (region.id === 'puligny-montrachet' && file.fillColor === '#FFFF00') ||
+                       (region.id === 'chassagne-montrachet' && file.fillColor === '#F5DEB3') ||
+                       (region.id === 'pommard' && file.fillColor === '#8B0000') ||
+                       (region.id === 'volnay' && file.fillColor === '#DC143C')
+        
+        if (isMatch) {
+          const fillLayerId = `${file.id}-fill`
+          const lineLayerId = `${file.id}-line`
+          if (map.getLayer(fillLayerId)) {
+            map.setLayoutProperty(fillLayerId, 'visibility', 'visible')
+          }
+          if (map.getLayer(lineLayerId)) {
+            map.setLayoutProperty(lineLayerId, 'visibility', 'visible')
+          }
+          
+          // 收集該圖層的 GeoJSON 數據用於計算邊界
+          const geojsonData = mapManager.loadedLayers.get(file.id)
+          if (geojsonData && geojsonData.features) {
+            regionFeatures.push(...geojsonData.features)
+          }
+        }
+      })
+      
+      activeLayerId.value = region.id
+      
+      // 計算邊界並縮放到該產區
+      if (regionFeatures.length > 0) {
+        try {
+          const combinedGeoJSON = {
+            type: 'FeatureCollection',
+            features: regionFeatures
+          }
+          const bbox = turf.bbox(combinedGeoJSON)
+          
+          // 根據產區大小調整 padding 和 maxZoom
+          let padding = 80
+          let maxZoom = 12
+          
+          // 為較小的產區（如夏布利、薄酒萊）使用更大的縮放
+          if (region.id === 'chablis') {
+            padding = 60
+            maxZoom = 11.5
+          } else if (region.id === 'beaujolais') {
+            padding = 70
+            maxZoom = 10.5
+          } else if (region.id === 'cote-de-nuits' || region.id === 'cote-de-beaune') {
+            padding = 50
+            maxZoom = 11
+          } else if (region.id === 'maconnais') {
+            padding = 70
+            maxZoom = 10.5
+          } else if (region.id === 'cote-chalonnaise') {
+            padding = 60
+            maxZoom = 11
+          } else if (region.id === 'marsannay') {
+            padding = 40
+            maxZoom = 13
+          } else if (region.id === 'fixin') {
+            padding = 30
+            maxZoom = 13.5
+          } else if (region.id === 'gevrey-chambertin') {
+            padding = 50
+            maxZoom = 12.5
+          } else if (region.id === 'morey-saint-denis') {
+            padding = 40
+            maxZoom = 13
+          } else if (region.id === 'chambolle-musigny') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'vougeot') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'vosne-romanee') {
+            padding = 40
+            maxZoom = 13
+          } else if (region.id === 'flagey-echezeaux') {
+            padding = 35
+            maxZoom = 13.5
+          } else if (region.id === 'nuits-saint-georges') {
+            padding = 50
+            maxZoom = 12
+          } else if (region.id === 'meursault') {
+            padding = 40
+            maxZoom = 13
+          } else if (region.id === 'puligny-montrachet') {
+            padding = 35
+            maxZoom = 13.5
+          } else if (region.id === 'chassagne-montrachet') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'pommard') {
+            padding = 35
+            maxZoom = 13.5
+          } else if (region.id === 'volnay') {
+            padding = 30
+            maxZoom = 14
+          }
+          
+          map.fitBounds(bbox, {
+            padding: padding,
+            duration: 1500,
+            maxZoom: maxZoom
+          })
+        } catch (error) {
+          console.error('計算產區邊界失敗:', error)
+        }
+      }
+    }
+  } catch (error) {
+    console.error('切換產區失敗:', error)
   }
 }
 
@@ -250,6 +450,104 @@ watch(() => props.slide, () => {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   max-height: calc(100vh - 8rem);
   overflow-y: auto;
+}
+
+/* 產區按鈕面板 */
+.region-buttons-panel {
+  position: absolute;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  max-width: 220px;
+}
+
+.region-btn {
+  padding: 0.75rem 1rem;
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.region-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+  transform: scaleY(0);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.region-btn:hover::before {
+  transform: scaleY(1);
+}
+
+.region-name-zh {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #2d3748;
+  line-height: 1.3;
+  transition: color 0.3s ease;
+}
+
+.region-name-fr {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #718096;
+  font-style: italic;
+  line-height: 1.2;
+  transition: color 0.3s ease;
+}
+
+.region-btn:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.25);
+  border-color: #667eea;
+}
+
+.region-btn:hover .region-name-zh {
+  color: #667eea;
+}
+
+.region-btn:hover .region-name-fr {
+  color: #667eea;
+}
+
+.region-btn.active {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-color: transparent;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
+  transform: translateX(6px);
+}
+
+.region-btn.active .region-name-zh,
+.region-btn.active .region-name-fr {
+  color: white;
+}
+
+.region-btn.active::before {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scaleY(1);
 }
 
 /* 左側圖層按鈕 */

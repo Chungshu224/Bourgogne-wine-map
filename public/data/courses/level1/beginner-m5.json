@@ -1,353 +1,503 @@
 {
   "moduleId": "module5",
-  "title": "薄酒萊入門",
-  "description": "探索布根地的特立獨行者薄酒萊，了解加美葡萄、二氧化碳浸漬法，以及十大特級村的獨特魅力",
+  "title": "夏布利深入探索",
+  "description": "深入了解夏布利的風土、分級、七大特級園，以及如何品鑑這種純淨礦物感的霞多麗白酒",
   "lessons": [
     {
-      "id": "lesson1",
-      "title": "薄酒萊：布根地的叛逆者",
-      "duration": "15分鐘",
-      "type": "text-images",
+      "id": "map-overview",
+      "title": "🗺️ 夏布利產區地圖總覽",
+      "duration": "2分鐘",
+      "type": "map-only",
       "content": {
-        "introduction": "薄酒萊雖然行政上屬於布根地大區，但在品種、土壤、釀造方式和風格上都與金丘截然不同。這裡是加美（Gamay）葡萄的天堂，釀出的酒果味奔放、易飲親民。",
-        "sections": [
-          {
-            "heading": "為什麼薄酒萊如此不同？",
-            "keyPoints": [
-              "品種：100% 加美（Gamay），而非黑皮諾",
-              "土壤：花崗岩而非石灰岩",
-              "釀造：二氧化碳浸漬法（Carbonic Maceration）",
-              "風格：果味主導、低單寧、年輕時飲用最佳",
-              "文化：薄酒萊新酒節（11月第三個週四）"
-            ]
+        "mapSlide": {
+          "title": "🗺️ 夏布利產區地圖",
+          "content": "探索夏布利的地理位置與四個分級",
+          "mapConfig": {
+            "center": [3.8, 47.82],
+            "zoom": 11.5,
+            "pitch": 0,
+            "bearing": 0
           },
-          {
-            "heading": "加美葡萄的前世今生",
-            "text": "加美（Gamay）全名為 Gamay Noir à Jus Blanc（白汁黑加美），是黑皮諾與 Gouais Blanc 的自然雜交後代。1395年，勃艮第公爵 Philippe le Hardi 曾禁止在金丘種植加美，認為它「低劣」，只允許在薄酒萊種植。諷刺的是，這反而讓薄酒萊成為加美的完美家園。",
-            "keyPoints": [
-              "起源：勃艮第自然雜交",
-              "特性：高產、早熟、適應貧瘠土壤",
-              "香氣：紅櫻桃、草莓、香蕉、泡泡糖",
-              "單寧：低單寧，適合年輕飲用",
-              "全球種植：法國90%，其他國家少見"
-            ]
-          },
-          {
-            "heading": "花崗岩土壤的魔力",
-            "text": "薄酒萊北部的十大特級村區域都位於花崗岩土壤上，與金丘的石灰岩完全不同。花崗岩貧瘠、排水良好、富含礦物質，限制產量但提升品質。",
-            "soilTypes": [
-              {
-                "name": "粉紅花崗岩",
-                "location": "Fleurie, Chiroubles",
-                "character": "優雅芬芳、細膩柔順"
-              },
-              {
-                "name": "藍色花崗岩",
-                "location": "Morgon, Régnié",
-                "character": "結構緊實、礦物感強"
-              },
-              {
-                "name": "分解花崗岩（Gore）",
-                "location": "Moulin-à-Vent",
-                "character": "複雜度高、陳年潛力強"
-              }
-            ]
-          },
-          {
-            "heading": "二氧化碳浸漬法（Carbonic Maceration）",
-            "text": "這是薄酒萊最獨特的釀造技術。整串葡萄（不破皮）放入密閉槽，注入二氧化碳，葡萄在無氧環境下進行細胞內發酵，萃取出果味和顏色，但單寧很低。",
-            "steps": [
-              "1. 手工採收整串葡萄",
-              "2. 不破皮直接放入發酵槽",
-              "3. 注入二氧化碳排出氧氣",
-              "4. 5-10天細胞內發酵（35°C）",
-              "5. 壓榨後完成酒精發酵",
-              "6. 短暫陳年後裝瓶"
-            ],
-            "results": [
-              "✓ 濃郁果香（香蕉、草莓、泡泡糖）",
-              "✓ 鮮豔紫紅色澤",
-              "✓ 低單寧、口感柔順",
-              "✓ 適合年輕飲用",
-              "✗ 陳年潛力有限（除非傳統釀造）"
-            ]
-          }
-        ],
-        "tips": [
-          "🍇 加美在花崗岩上表現最佳，石灰岩上較平庸",
-          "🍇 二氧化碳浸漬法發明於薄酒萊",
-          "🍇 十大特級村很多使用傳統釀造法，可陳年更久",
-          "🍇 薄酒萊新酒只佔總產量25%，別被誤導"
-        ],
-        "summary": "薄酒萊的加美葡萄、花崗岩土壤和二氧化碳浸漬法，創造了與金丘黑皮諾完全不同的風格。這是布根地多樣性的最佳證明。"
+          "geojsonFiles": [
+            {
+              "id": "base-burgundy",
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "chablis",
+              "url": "/geojson/Chablis/AOC Chablis.geojson",
+              "displayName": "Chablis",
+              "fillColor": "#F0E68C",
+              "fillOpacity": 0.6,
+              "lineColor": "#DAA520",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
+        }
       }
     },
     {
-      "id": "lesson2",
-      "title": "十大特級村（Crus）深度解析",
-      "duration": "20分鐘",
+      "id": "lesson1",
+      "title": "夏布利的獨特風土",
+      "duration": "15分鐘",
       "type": "text-images",
       "content": {
-        "introduction": "薄酒萊的精華在十大特級村（Crus），全部位於北部花崗岩山坡。這些村莊釀出的酒複雜度高、可陳年，完全不同於人們對薄酒萊「簡單新酒」的刻板印象。",
+        "introduction": "夏布利位於布根地最北端，距離巴黎僅2小時車程，但卻與金丘有著截然不同的風土條件。這裡的霞多麗展現了最純淨、最礦物感的一面。",
         "sections": [
           {
-            "heading": "十大特級村分級與特色",
-            "crus": [
-              {
-                "name": "Moulin-à-Vent",
-                "chinese": "風車磨坊",
-                "area": "660公頃",
-                "soil": "分解花崗岩（Gore）+ 錳",
-                "style": "薄酒萊之王，最強勁複雜",
-                "aging": "5-20年",
-                "character": "深紅寶石色、玫瑰香氣、單寧明顯、可比擬夜丘紅酒",
-                "price": "€15-50",
-                "food": "烤肉、野味、成熟起司"
+            "heading": "地理位置與氣候",
+            "mapSlide": {
+              "title": "🗺️ 夏布利產區地圖",
+              "content": "探索夏布利的地理位置",
+              "mapConfig": {
+                "center": [3.8, 47.82],
+                "zoom": 12,
+                "pitch": 0,
+                "bearing": 0
               },
-              {
-                "name": "Morgon",
-                "chinese": "莫爾貢",
-                "area": "1100公頃（最大）",
-                "soil": "分解藍色花崗岩（Côte de Py）",
-                "style": "獨特的「Morgon味」",
-                "aging": "5-15年",
-                "character": "櫻桃、土壤香氣、結構紮實、陳年後發展出類似黑皮諾的複雜度",
-                "price": "€12-40",
-                "food": "燉牛肉、烤鴨、野菇"
-              },
-              {
-                "name": "Fleurie",
-                "chinese": "花莊",
-                "area": "870公頃",
-                "soil": "粉紅花崗岩",
-                "style": "薄酒萊女王，最優雅芬芳",
-                "aging": "3-10年",
-                "character": "紫羅蘭、玫瑰花香、絲滑質地、女性化風格",
-                "price": "€12-35",
-                "food": "烤雞、鮭魚、溫和起司"
-              },
-              {
-                "name": "Juliénas",
-                "chinese": "朱麗娜",
-                "area": "580公頃",
-                "soil": "花崗岩 + 沖積土",
-                "style": "果味與香料並存",
-                "aging": "3-10年",
-                "character": "紅色漿果、牡丹花香、香料、結構均衡",
-                "price": "€12-30",
-                "food": "烤豬肉、火腿、中式紅燒"
-              },
-              {
-                "name": "Chénas",
-                "chinese": "謝納",
-                "area": "285公頃（最小）",
-                "soil": "花崗岩",
-                "style": "最稀有、複雜度高",
-                "aging": "5-12年",
-                "character": "牡丹、紫羅蘭、礦物感、優雅結構",
-                "price": "€15-40",
-                "food": "野味、烤羊排"
-              },
-              {
-                "name": "Saint-Amour",
-                "chinese": "聖愛",
-                "area": "320公頃",
-                "soil": "花崗岩 + 黏土",
-                "style": "情人節最愛",
-                "aging": "2-5年",
-                "character": "桃子、杏桃、花香、輕盈優雅",
-                "price": "€12-28",
-                "food": "白肉、海鮮、沙拉"
-              },
-              {
-                "name": "Chiroubles",
-                "chinese": "希魯布勒",
-                "area": "360公頃",
-                "soil": "粉紅花崗岩",
-                "style": "海拔最高（400米），最細膩",
-                "aging": "2-5年",
-                "character": "紅色小果、紫羅蘭、細膩柔順、酒體最輕",
-                "price": "€12-28",
-                "food": "冷盤、輕食、日式料理"
-              },
-              {
-                "name": "Régnié",
-                "chinese": "雷尼耶",
-                "area": "400公頃",
-                "soil": "粉紅花崗岩",
-                "style": "1988年才升級為特級村",
-                "aging": "2-5年",
-                "character": "紅莓、香蕉、新鮮果味",
-                "price": "€10-25",
-                "food": "烤雞、披薩、輕食"
-              },
-              {
-                "name": "Brouilly",
-                "chinese": "布魯伊",
-                "area": "1300公頃（第二大）",
-                "soil": "藍色花崗岩（Mont Brouilly 周圍）",
-                "style": "最大特級村，風格多樣",
-                "aging": "2-5年",
-                "character": "紅色漿果、礦物感、易飲爽口",
-                "price": "€10-25",
-                "food": "燒烤、火鍋、家常菜"
-              },
-              {
-                "name": "Côte de Brouilly",
-                "chinese": "布魯伊山坡",
-                "area": "320公頃",
-                "soil": "火山岩（獨特！）",
-                "style": "Brouilly 的精華版",
-                "aging": "3-8年",
-                "character": "更濃郁、礦物感強、火山土壤特色",
-                "price": "€12-30",
-                "food": "烤肉、野味、濃郁醬汁"
-              }
+              "geojsonFiles": [
+                {
+                  "id": "base-burgundy",
+                  "url": "/geojson/AOC Bourgogne map.geojson",
+                  "isBase": true,
+                  "fillColor": "#E6E6FA",
+                  "fillOpacity": 0.1,
+                  "lineColor": "#9370DB",
+                  "lineWidth": 1,
+                  "showLabels": false
+                },
+                {
+                  "id": "chablis",
+                  "url": "/geojson/Chablis/AOC Chablis.geojson",
+                  "displayName": "Chablis",
+                  "fillColor": "#F0E68C",
+                  "fillOpacity": 0.6,
+                  "lineColor": "#DAA520",
+                  "lineWidth": 2,
+                  "showLabels": true
+                }
+              ]
+            },
+            "text": "夏布利位於約訥省（Yonne），Serein 河蜿蜒流過，形成理想的山谷地形。氣候屬於大陸性，比金丘更冷，春季霜凍是最大威脅。",
+            "keyPoints": [
+              "緯度：北緯47.8度，布根地最北",
+              "年均溫：10.5°C，比伯恩丘低2°C",
+              "降雨：750mm，分佈均勻",
+              "霜凍：春季4-5月是關鍵期，採用暖爐、灑水防霜",
+              "日照：夏季日照時數長，利於成熟"
             ]
           },
           {
-            "heading": "如何選擇特級村？",
-            "guide": {
-              "想要優雅細膩": "Fleurie, Chiroubles, Saint-Amour",
-              "想要強勁陳年": "Moulin-à-Vent, Morgon, Chénas",
-              "想要平衡易飲": "Juliénas, Régnié, Brouilly",
-              "想要獨特風土": "Côte de Brouilly（火山岩）, Morgon（Côte de Py）",
-              "性價比首選": "Brouilly, Régnié"
+            "heading": "神奇的 Kimmeridgian 土壤",
+            "text": "夏布利最獨特的是1.5億年前侏羅紀時期形成的 Kimmeridgian 泥灰岩，富含小牡蠣化石（Exogyra virgula）。這種土壤賦予夏布利酒款獨特的礦物感和「槍石」（gunflint）香氣。",
+            "keyPoints": [
+              "成分：泥灰岩 + 石灰岩 + 貝殼化石",
+              "排水：良好，避免根部積水",
+              "礦物質：鈣、鎂、碘豐富",
+              "特級園：100% Kimmeridgian 土壤",
+              "風味影響：牡蠣、貝殼、白堊、燧石"
+            ]
+          },
+          {
+            "heading": "與金丘霞多麗的差異",
+            "text": "夏布利與金丘雖然都種植霞多麗，但因氣候、土壤和釀造方式的不同，展現出截然不同的風格特徵。",
+            "comparisonTable": {
+              "title": "夏布利 vs 金丘霞多麗",
+              "headers": ["特徵", "夏布利 Chablis", "金丘 Côte d'Or"],
+              "rows": [
+                ["🌡️ 氣候", "涼爽大陸性", "溫和"],
+                ["🪨 土壤", "Kimmeridgian 泥灰岩", "石灰岩為主"],
+                ["🍷 釀造", "少過桶或不過桶", "橡木桶發酵/陳年"],
+                ["👃 風格", "高酸、礦物、檸檬、牡蠣", "奶油、榛果、烤麵包、熱帶水果"],
+                ["💪 酒體", "輕盈到中等", "中等到飽滿"],
+                ["💰 價格", "€15-200", "€30-500+"],
+                ["🍽️ 配餐", "生蠔、海鮮、清淡料理", "奶油醬汁、禽肉、豐富料理"]
+              ]
             }
           }
         ],
         "tips": [
-          "🍷 Moulin-à-Vent 陳年後常被誤認為夜丘黑皮諾",
-          "🍷 Morgon 的 Côte de Py 地塊是整個薄酒萊最精華",
-          "🍷 Fleurie 最受女性喜愛，花香四溢",
-          "🍷 Côte de Brouilly 是唯一有火山岩的特級村"
+          "🌊 Kimmeridgian 得名自英國 Dorset 郡的 Kimmeridge 村",
+          "🌊 同樣的土壤也出現在香檳區和英國南部",
+          "🌊 化石含量越高，礦物感越明顯",
+          "🌊 2017、2018年霜凍導致產量減少50%以上"
         ],
-        "summary": "十大特級村展現了加美葡萄在花崗岩土壤上的多樣表現，從優雅的 Fleurie 到強勁的 Moulin-à-Vent，證明薄酒萊遠不只是「新酒」。"
+        "summary": "夏布利的涼爽氣候和獨特的 Kimmeridgian 土壤，造就了世界上最純淨、最具礦物感的霞多麗白酒。這是風土影響的最佳範例。"
+      }
+    },
+    {
+      "id": "lesson2",
+      "title": "夏布利四級分級與七大特級園",
+      "duration": "20分鐘",
+      "type": "text-images",
+      "content": {
+        "introduction": "夏布利有獨特的四級分級體系：Petit Chablis、Chablis、Premier Cru、Grand Cru。七大特級園連成一片，位於 Serein 河右岸，是夏布利的精華所在。",
+        "sections": [
+          {
+            "mapSlide": {
+              "title": "🗺️ 夏布利分級地圖",
+              "mapConfig": {
+                "center": [3.8, 47.82],
+                "zoom": 11.8,
+                "pitch": 0,
+                "bearing": 0
+              },
+              "buttonPosition": "left",
+              "geojsonFiles": [
+                {
+                  "id": "petit-chablis",
+                  "name": "🥉 Petit Chablis",
+                  "url": "/geojson/Chablis/AOC Petit Chablis.geojson",
+                  "fillColor": "#E8D5A8",
+                  "fillOpacity": 0.7,
+                  "lineColor": "#D4C090",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "chablis",
+                  "name": "🥈 Chablis",
+                  "url": "/geojson/Chablis/AOC Chablis.geojson",
+                  "fillColor": "#DBC68F",
+                  "fillOpacity": 0.75,
+                  "lineColor": "#C9B178",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "premier-cru",
+                  "name": "🥇 Premier Cru",
+                  "url": "/geojson/Chablis/Chablis Premier Cru/AOC Chablis Premier Cru.geojson",
+                  "fillColor": "#CEB776",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#BDA55E",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "grand-cru",
+                  "name": "👑 Grand Cru",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru.geojson",
+                  "fillColor": "#B8860B",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#8B6508",
+                  "lineWidth": 3,
+                  "isBase": false,
+                  "defaultVisible": false
+                }
+              ]
+            }
+          },
+          {
+            "heading": "四級分級詳解",
+            "levels": [
+              {
+                "name": "🥉 Petit Chablis",
+                "area": "外圍高地 Portlandian 石灰岩",
+                "style": "輕盈爽口、簡單果味",
+                "price": "€8-15",
+                "drink": "1-2年內飲用",
+                "percentage": "15%產量",
+                "color": "#E8D5A8"
+              },
+              {
+                "name": "🥈 Chablis",
+                "area": "山谷兩側 部分Kimmeridgian土壤",
+                "style": "經典風格、檸檬礦物清爽",
+                "price": "€15-30",
+                "drink": "2-5年適飲",
+                "percentage": "60%產量",
+                "color": "#DBC68F"
+              },
+              {
+                "name": "🥇 Premier Cru",
+                "area": "40個一級園 右岸山坡精華",
+                "style": "濃郁複雜、礦物感強",
+                "price": "€25-60",
+                "drink": "3-10年陳年",
+                "percentage": "15%產量",
+                "color": "#CEB776",
+                "famousClimates": [
+                  "Montée de Tonnerre - 最著名，緊鄰特級園",
+                  "Fourchaume - 最大的一級園",
+                  "Vaillons - 優雅礦物",
+                  "Montmains - 豐富果味",
+                  "Côte de Léchet - 飽滿圓潤"
+                ]
+              },
+              {
+                "name": "👑 Grand Cru",
+                "area": "7大特級園 右岸同一山坡",
+                "style": "極致複雜、完美平衡",
+                "price": "€50-200+",
+                "drink": "5-20年長期陳年",
+                "percentage": "2%頂級",
+                "color": "#B8860B"
+              }
+            ]
+          },
+          {
+            "mapSlide": {
+              "title": "👑 七大特級園地圖",
+              "mapConfig": {
+                "center": [3.815, 47.815],
+                "zoom": 13.5,
+                "pitch": 0,
+                "bearing": 0
+              },
+              "buttonPosition": "left",
+              "geojsonFiles": [
+                {
+                  "id": "bougros",
+                  "name": "Bougros",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Bougros.geojson",
+                  "fillColor": "#8B4513",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#654321",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "preuses",
+                  "name": "Preuses",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Preuses.geojson",
+                  "fillColor": "#B8860B",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#8B6508",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "vaudesir",
+                  "name": "Vaudésir",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Vaudésir.geojson",
+                  "fillColor": "#DAA520",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#B8860B",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "grenouilles",
+                  "name": "Grenouilles",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Grenouilles.geojson",
+                  "fillColor": "#FFD700",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#DAA520",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "valmur",
+                  "name": "Valmur",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Valmur.geojson",
+                  "fillColor": "#F0E68C",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#DAA520",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "les-clos",
+                  "name": "Les Clos",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Les Clos.geojson",
+                  "fillColor": "#CD853F",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#8B4513",
+                  "lineWidth": 3,
+                  "isBase": false,
+                  "defaultVisible": false
+                },
+                {
+                  "id": "blanchot",
+                  "name": "Blanchot",
+                  "url": "/geojson/Chablis/Chablis Grand Cru/AOC Chablis Grand Cru Blanchot.geojson",
+                  "fillColor": "#DEB887",
+                  "fillOpacity": 0.8,
+                  "lineColor": "#CD853F",
+                  "lineWidth": 2,
+                  "isBase": false,
+                  "defaultVisible": false
+                }
+              ]
+            }
+          },
+          {
+            "heading": "七大特級園（從西到東）",
+            "grandCrus": [
+              {
+                "name": "Bougros",
+                "area": "15.9公頃",
+                "exposure": "西南向",
+                "style": "強勁有力、礦物感強、需長時間陳年",
+                "position": "最西端，最晚成熟"
+              },
+              {
+                "name": "Preuses",
+                "area": "11.4公頃",
+                "exposure": "南向",
+                "style": "優雅細緻、花香明顯、絲滑質地",
+                "position": "位置最佳之一"
+              },
+              {
+                "name": "Vaudésir",
+                "area": "14.7公頃",
+                "exposure": "南向",
+                "style": "豐富飽滿、複雜度高、陳年潛力極強",
+                "position": "許多名家認為最優秀"
+              },
+              {
+                "name": "Grenouilles",
+                "area": "9.4公頃（最小）",
+                "exposure": "南向",
+                "style": "精緻優雅、礦物與花香平衡",
+                "position": "最緊湊集中"
+              },
+              {
+                "name": "Valmur",
+                "area": "13.1公頃",
+                "exposure": "南向",
+                "style": "強勁結構、陳年後展現複雜香氣",
+                "position": "坡度陡峭"
+              },
+              {
+                "name": "Les Clos",
+                "area": "26.9公頃（最大）",
+                "exposure": "南西向",
+                "style": "夏布利之王、最強勁複雜、可陳年30年+",
+                "position": "中心位置，最著名"
+              },
+              {
+                "name": "Blanchot",
+                "area": "12.7公頃",
+                "exposure": "南向",
+                "style": "優雅芬芳、花香果香平衡、早熟",
+                "position": "最東端"
+              }
+            ]
+          },
+          {
+            "heading": "La Moutonne - 第八個特級園？",
+            "text": "La Moutonne 是一個獨佔園（Monopole），橫跨 Preuses 和 Vaudésir 兩個特級園，面積2.35公頃，由 Domaine Long-Depaquit（屬於 Bichot 集團）獨家擁有。雖然不是官方特級園，但品質和價格都達到特級園水準。",
+            "labelImage": "/images/Lesson/Moutonne .jpg"
+          }
+        ],
+        "tips": [
+          "🍾 Les Clos 被公認為七大特級園中最優秀",
+          "🍾 所有特級園總面積僅約100公頃，產量稀少",
+          "🍾 特級園酒標只標 'Chablis Grand Cru' + 園名",
+          "🍾 一級園 Montée de Tonnerre 品質接近特級園",
+          "🍾 好的特級園至少需陳年5年才開始展現真正潛力"
+        ],
+        "summary": "夏布利的分級體系清晰反映了風土差異。七大特級園連成一片黃金山坡，展現了霞多麗在涼爽氣候和 Kimmeridgian 土壤上的極致表現。"
       }
     },
     {
       "id": "lesson3",
-      "title": "薄酒萊品鑑與餐酒搭配",
-      "duration": "10分鐘",
+      "title": "夏布利品鑑與餐酒搭配",
+      "duration": "15分鐘",
       "type": "interactive",
       "content": {
-        "introduction": "薄酒萊的果味、低單寧和適中酒體，使其成為配餐的萬能選手，尤其適合搭配亞洲料理。了解如何品鑑和搭配，讓您充分享受這種易飲葡萄酒的魅力。",
+        "introduction": "夏布利的高酸度和礦物感使其成為配餐的絕佳選擇，尤其是海鮮。了解不同級別的風味特徵，能幫助您做出最佳搭配。",
         "sections": [
           {
-            "heading": "品鑑薄酒萊的要點",
+            "heading": "品鑑夏布利的關鍵要素",
             "keyPoints": [
-              "溫度：微冷飲用（12-14°C），夏天可降至10°C",
-              "杯型：較大的紅酒杯，展現果香",
-              "觀色：紫紅色（年輕），石榴紅（陳年）",
-              "聞香：紅櫻桃、草莓、香蕉、泡泡糖、紫羅蘭",
-              "品嚐：低單寧、中等酒體、果味豐富、爽口"
+              "溫度：8-10°C，過冷會抑制香氣",
+              "杯型：鬱金香型白酒杯，聚集香氣",
+              "觀色：淺金黃帶綠色反光（年輕），金黃色（陳年）",
+              "聞香：檸檬、青蘋果、白花、礦物、牡蠣殼",
+              "品嚐：高酸度、中等酒體、持久礦物尾韻"
             ]
           },
           {
-            "heading": "不同類型的品鑑差異",
-            "comparison": [
+            "heading": "不同級別的風味輪廓",
+            "tastingNotes": [
               {
-                "type": "Beaujolais Nouveau 新酒",
-                "color": "鮮豔紫紅",
-                "aroma": "香蕉、泡泡糖、草莓糖",
-                "palate": "輕盈、簡單、果味甜美",
-                "temperature": "10-12°C",
-                "drink": "當年12月前"
+                "level": "Petit Chablis",
+                "aroma": "青蘋果、檸檬皮、白花",
+                "palate": "清爽高酸、輕盈酒體、簡單直接",
+                "finish": "短暫、清新"
               },
               {
-                "type": "Beaujolais-Villages",
-                "color": "紫紅色",
-                "aroma": "紅莓、櫻桃、淡花香",
-                "palate": "清新、中等酒體、平衡",
-                "temperature": "12-14°C",
-                "drink": "1-3年"
+                "level": "Chablis",
+                "aroma": "檸檬、青蘋果、白堊、淡淡的燧石",
+                "palate": "活潑酸度、中等酒體、礦物感明顯",
+                "finish": "中等長度、礦物尾韻"
               },
               {
-                "type": "Cru Beaujolais（特級村）",
-                "color": "深紅寶石",
-                "aroma": "成熟櫻桃、紫羅蘭、香料、土壤",
-                "palate": "複雜、結構、礦物感、單寧柔和但明顯",
-                "temperature": "14-16°C",
-                "drink": "2-15年（視特級村而定）"
+                "level": "Premier Cru",
+                "aroma": "成熟檸檬、白桃、杏仁、燧石、貝殼",
+                "palate": "濃郁但不厚重、酸度與果味平衡、複雜層次",
+                "finish": "持久、礦物與果味交織"
+              },
+              {
+                "level": "Grand Cru",
+                "aroma": "蜂蜜、烤杏仁、檸檬乳酪、濕石頭、牡蠣、香料",
+                "palate": "極致複雜、完美平衡、絲滑質地、深邃礦物感",
+                "finish": "非常持久（30秒+）、層次豐富"
               }
             ]
           },
           {
-            "heading": "餐酒搭配建議",
-            "pairings": [
+            "heading": "經典餐酒搭配",
+            "comparisonTable": {
+              "title": "經典餐酒搭配",
+              "headers": ["料理", "推薦酒款", "搭配原因"],
+              "rows": [
+                ["生蠔 Oysters", "Chablis 或 Premier Cru", "礦物感與海洋風味完美匹配，高酸度平衡蠔的鮮味"],
+                ["清蒸鱸魚", "Chablis", "不搶味，突顯魚的鮮甜"],
+                ["烤龍蝦配奶油醬", "Grand Cru", "足夠的酒體和複雜度搭配豐富醬汁"],
+                ["山羊起司 Chèvre", "Petit Chablis 或 Chablis", "酸度切入起司的油脂，礦物感互補"],
+                ["日式生魚片", "Chablis", "純淨風格不干擾魚肉細緻風味"],
+                ["白酒蒸淡菜", "Premier Cru", "礦物感呼應貝類，酸度提振味蕾"],
+                ["烤雞配奶油蘑菇", "Premier Cru（有桶）", "微橡木味與蘑菇土壤香氣搭配"],
+                ["炸物（天婦羅）", "Petit Chablis", "高酸度去油解膩"]
+              ]
+            }
+          },
+          {
+            "heading": "過桶 vs 不過桶",
+            "text": "夏布利的釀造風格有兩大陣營：傳統派堅持不鏽鋼桶保持純淨，現代派使用部分橡木桶增加複雜度。",
+            "styles": [
               {
-                "category": "法式料理",
-                "dishes": [
-                  "里昂沙拉（Lyon Salad）",
-                  "熟食拼盤（Charcuterie）",
-                  "烤雞",
-                  "布列斯雞（Poulet de Bresse）",
-                  "燉牛肉（Boeuf Bourguignon）- 用 Morgon 或 Moulin-à-Vent"
-                ]
+                "name": "不鏽鋼桶派（Traditionalists）",
+                "producers": "Dauvissat, Raveneau, Moreau",
+                "style": "純淨礦物、高酸、緊緻",
+                "pairing": "生蠔、生魚片、清蒸海鮮"
               },
               {
-                "category": "中式料理（絕配！）",
-                "dishes": [
-                  "宮保雞丁",
-                  "糖醋排骨",
-                  "北京烤鴨",
-                  "紅燒肉",
-                  "火鍋（清湯）",
-                  "粵菜燒味"
-                ]
-              },
-              {
-                "category": "日式料理",
-                "dishes": [
-                  "照燒雞",
-                  "鰻魚飯",
-                  "壽喜燒",
-                  "炸豬排",
-                  "烤雞串"
-                ]
-              },
-              {
-                "category": "其他",
-                "dishes": [
-                  "披薩",
-                  "漢堡",
-                  "燒烤",
-                  "起司拼盤（溫和起司）",
-                  "野餐冷盤"
-                ]
+                "name": "橡木桶派（Modernists）",
+                "producers": "William Fèvre, Droin, Long-Depaquit",
+                "style": "更圓潤、奶油感、複雜度高",
+                "pairing": "烤魚、奶油醬料、成熟起司"
               }
-            ]
-          },
-          {
-            "heading": "薄酒萊配餐的黃金法則",
-            "rules": [
-              "✓ 果味料理 → 果味薄酒萊（完美匹配）",
-              "✓ 油膩食物 → 酸度洗淨油脂",
-              "✓ 微辣料理 → 低單寧不會放大辣味",
-              "✓ 冷盤熟食 → 微冷的薄酒萊最佳",
-              "✗ 避免過重醬汁（會壓過酒的細膩）",
-              "✗ 避免過辣料理（四川麻辣鍋太刺激）"
-            ]
-          },
-          {
-            "heading": "侍酒溫度很重要！",
-            "text": "很多人犯的最大錯誤是把薄酒萊當作「紅酒」在室溫下喝（18-20°C）。這會讓酒顯得鬆散無趣。正確做法是微冷飲用：",
-            "temperatures": [
-              "夏天：10-12°C（冰箱30分鐘）",
-              "春秋：12-14°C（冰箱15分鐘）",
-              "冬天：14-16°C（室溫稍涼處）",
-              "陳年特級村：最高不超過16°C"
             ]
           }
         ],
         "tips": [
-          "🍽️ 薄酒萊是亞洲料理的最佳夥伴",
-          "🍽️ 野餐、BBQ、派對的完美選擇",
-          "🍽️ 不喜歡單寧重的人會愛上薄酒萊",
-          "🍽️ Morgon 配紅燒肉絕配",
-          "🍽️ Fleurie 配烤雞完美"
+          "🥂 夏布利開瓶後1小時風味最佳",
+          "🥂 特級園可醒酒30分鐘",
+          "🥂 避免與重口味醬料搭配（如紅酒醬）",
+          "🥂 陳年的夏布利溫度可提高到12°C",
+          "🥂 「When in doubt, Chablis」- 海鮮萬能搭配"
         ],
-        "summary": "薄酒萊的低單寧、果味和易飲特性，使其成為配餐萬能選手。記得微冷飲用，別錯過與亞洲料理的美妙搭配。"
+        "summary": "夏布利的高酸度和礦物感使其成為海鮮的最佳伴侶。不同級別有不同的複雜度，但都保持了霞多麗的純淨本質。了解過桶與否的差異，能幫助您選擇最適合的餐酒搭配。"
       }
     }
   ],
@@ -356,133 +506,133 @@
     "questions": [
       {
         "id": "q1",
-        "question": "薄酒萊主要種植哪個葡萄品種？",
+        "question": "夏布利的獨特土壤 Kimmeridgian 主要富含什麼？",
         "type": "single-choice",
         "options": [
-          "黑皮諾 Pinot Noir",
-          "加美 Gamay",
-          "希哈 Syrah",
-          "梅洛 Merlot"
+          "火山灰",
+          "小牡蠣化石",
+          "鐵礦",
+          "花崗岩"
         ],
         "correctAnswer": 1,
-        "explanation": "薄酒萊100%種植加美（Gamay）葡萄，這是與布根地其他產區最大的區別。"
+        "explanation": "Kimmeridgian 泥灰岩富含1.5億年前的小牡蠣化石（Exogyra virgula），賦予夏布利獨特的礦物感和牡蠣貝殼味。"
       },
       {
         "id": "q2",
-        "question": "薄酒萊最獨特的釀造技術是什麼？",
+        "question": "夏布利共有多少個特級園（Grand Cru）？",
         "type": "single-choice",
         "options": [
-          "冷浸皮",
-          "二氧化碳浸漬法",
-          "蘋果酸乳酸發酵",
-          "橡木桶陳年"
+          "1個",
+          "7個",
+          "12個",
+          "24個"
         ],
         "correctAnswer": 1,
-        "explanation": "二氧化碳浸漬法（Carbonic Maceration）是薄酒萊的標誌性釀造技術，整串葡萄在無氧環境下發酵。"
+        "explanation": "夏布利有7個特級園：Bougros、Preuses、Vaudésir、Grenouilles、Valmur、Les Clos、Blanchot，全部位於 Serein 河右岸。"
       },
       {
         "id": "q3",
-        "question": "薄酒萊共有多少個特級村（Crus）？",
+        "question": "哪個是夏布利最大、最著名的特級園？",
         "type": "single-choice",
         "options": [
-          "5個",
-          "7個",
-          "10個",
-          "12個"
+          "Preuses",
+          "Vaudésir",
+          "Les Clos",
+          "Grenouilles"
         ],
         "correctAnswer": 2,
-        "explanation": "薄酒萊有10個特級村，包括 Moulin-à-Vent、Morgon、Fleurie 等。"
+        "explanation": "Les Clos 是夏布利最大的特級園（26.9公頃），也被公認為品質最優秀，可陳年30年以上。"
       },
       {
         "id": "q4",
-        "question": "哪個特級村被稱為「薄酒萊之王」？",
+        "question": "夏布利四級分級中，佔產量最大比例的是？",
         "type": "single-choice",
         "options": [
-          "Fleurie",
-          "Morgon",
-          "Moulin-à-Vent",
-          "Brouilly"
+          "Petit Chablis",
+          "Chablis",
+          "Premier Cru",
+          "Grand Cru"
         ],
-        "correctAnswer": 2,
-        "explanation": "Moulin-à-Vent 被稱為「薄酒萊之王」，最強勁複雜，可陳年10-20年，陳年後常被誤認為夜丘黑皮諾。"
+        "correctAnswer": 1,
+        "explanation": "Chablis（夏布利）村莊級佔總產量的60%，是最基礎也是產量最大的級別。"
       },
       {
         "id": "q5",
-        "question": "薄酒萊新酒（Beaujolais Nouveau）每年什麼時候上市？",
+        "question": "夏布利最經典的餐酒搭配是？",
         "type": "single-choice",
         "options": [
-          "9月第一個週六",
-          "10月第三個週四",
-          "11月第三個週四",
-          "12月第一個週六"
+          "牛排",
+          "生蠔",
+          "巧克力",
+          "辣椒"
         ],
-        "correctAnswer": 2,
-        "explanation": "薄酒萊新酒每年11月第三個週四上市，這是法國的葡萄酒節慶日。"
+        "correctAnswer": 1,
+        "explanation": "夏布利與生蠔是經典搭配，礦物感與海洋風味完美匹配，高酸度平衡蠔的鮮味。"
       },
       {
         "id": "q6",
-        "question": "哪個特級村因其優雅芬芳的風格被稱為「薄酒萊女王」？",
+        "question": "品鑑夏布利的理想溫度是？",
         "type": "single-choice",
         "options": [
-          "Fleurie",
-          "Chiroubles",
-          "Saint-Amour",
-          "Régnié"
-        ],
-        "correctAnswer": 0,
-        "explanation": "Fleurie 被稱為「薄酒萊女王」，以紫羅蘭、玫瑰花香和絲滑質地著稱，是最優雅芬芳的特級村。"
-      },
-      {
-        "id": "q7",
-        "question": "薄酒萊十大特級村主要位於什麼土壤上？",
-        "type": "single-choice",
-        "options": [
-          "石灰岩",
-          "花崗岩",
-          "黏土",
-          "沙土"
-        ],
-        "correctAnswer": 1,
-        "explanation": "十大特級村都位於北部的花崗岩土壤上，這與金丘的石灰岩土壤完全不同。"
-      },
-      {
-        "id": "q8",
-        "question": "品鑑薄酒萊的理想溫度是？",
-        "type": "single-choice",
-        "options": [
+          "4-6°C",
           "8-10°C",
-          "12-14°C",
-          "16-18°C",
+          "14-16°C",
           "18-20°C"
         ],
         "correctAnswer": 1,
-        "explanation": "薄酒萊應微冷飲用（12-14°C），夏天可降至10°C。常溫飲用會顯得鬆散無趣。"
+        "explanation": "夏布利應在8-10°C品飲，過冷會抑制香氣，陳年老酒可稍高至12°C。"
+      },
+      {
+        "id": "q7",
+        "question": "夏布利一級園（Premier Cru）約有多少個氣候區？",
+        "type": "single-choice",
+        "options": [
+          "10個",
+          "20個",
+          "40個",
+          "100個"
+        ],
+        "correctAnswer": 2,
+        "explanation": "夏布利有約40個一級園，其中最著名的包括 Montée de Tonnerre、Fourchaume、Vaillons 等。"
+      },
+      {
+        "id": "q8",
+        "question": "哪個不是夏布利傳統不鏽鋼桶派的代表酒莊？",
+        "type": "single-choice",
+        "options": [
+          "Dauvissat",
+          "Raveneau",
+          "William Fèvre",
+          "Moreau"
+        ],
+        "correctAnswer": 2,
+        "explanation": "William Fèvre 屬於橡木桶派（現代派），Dauvissat 和 Raveneau 是傳統不鏽鋼桶派的代表。"
       },
       {
         "id": "q9",
-        "question": "哪個特級村是唯一位於火山岩土壤上的？",
+        "question": "夏布利春季最大的自然威脅是？",
         "type": "single-choice",
         "options": [
-          "Morgon",
-          "Côte de Brouilly",
-          "Moulin-à-Vent",
-          "Chénas"
+          "乾旱",
+          "霜凍",
+          "颱風",
+          "冰雹"
         ],
         "correctAnswer": 1,
-        "explanation": "Côte de Brouilly 位於 Mont Brouilly 山坡上，是唯一有火山岩土壤的特級村，賦予酒款獨特的礦物感。"
+        "explanation": "春季霜凍是夏布利最大的威脅，4-5月的霜凍可能摧毀當年大部分產量，酒農使用暖爐、灑水等方式防霜。"
       },
       {
         "id": "q10",
-        "question": "薄酒萊最適合搭配哪種料理？",
+        "question": "La Moutonne 是一個橫跨哪兩個特級園的獨佔園？",
         "type": "single-choice",
         "options": [
-          "厚重紅肉",
-          "辣味川菜",
-          "亞洲料理",
-          "甜點"
+          "Les Clos 和 Valmur",
+          "Preuses 和 Vaudésir",
+          "Bougros 和 Blanchot",
+          "Grenouilles 和 Valmur"
         ],
-        "correctAnswer": 2,
-        "explanation": "薄酒萊的果味、低單寧和適中酒體，使其成為亞洲料理（中式、日式）的絕配，尤其適合宮保雞丁、糖醋排骨等。"
+        "correctAnswer": 1,
+        "explanation": "La Moutonne（2.35公頃）橫跨 Preuses 和 Vaudésir 兩個特級園，由 Domaine Long-Depaquit 獨家擁有。"
       }
     ]
   }

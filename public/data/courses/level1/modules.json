@@ -5,7 +5,7 @@
       "order": 1,
       "title": "認識布根地",
       "icon": "🗺️",
-      "duration": "60分鐘",
+      "duration": "50分鐘",
       "lessons": 4,
       "progress": 0,
       "completed": false,
@@ -15,30 +15,42 @@
     {
       "id": "beginner-m2",
       "order": 2,
-      "title": "分級制度入門",
-      "icon": "🏷️",
-      "duration": "45分鐘",
+      "title": "風土與品種",
+      "icon": "🍇",
+      "duration": "40分鐘",
       "lessons": 3,
       "progress": 0,
       "completed": false,
       "locked": true,
-      "description": "掌握布根地AOC制度與金字塔四級分級系統"
+      "description": "掌握布根地AOC制度、風土概念、黑皮諾與霞多麗品種特性"
     },
     {
       "id": "beginner-m3",
       "order": 3,
-      "title": "六大產區概覽",
-      "icon": "🌍",
-      "duration": "75分鐘",
+      "title": "夜丘探索",
+      "icon": "🍷",
+      "duration": "57分鐘",
       "lessons": 4,
       "progress": 0,
       "completed": false,
       "locked": true,
-      "description": "認識夜丘、伯恩丘、夏布利、夏隆、馬貢與薄酒萊六大產區"
+      "description": "深入探索夜丘9大村莊、24個特級園與黑皮諾的極致表現"
     },
     {
       "id": "beginner-m4",
       "order": 4,
+      "title": "伯恩丘探索",
+      "icon": "🥂",
+      "duration": "52分鐘",
+      "lessons": 4,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "探索白酒三巨頭Meursault、Puligny、Chassagne與紅酒雙星"
+    },
+    {
+      "id": "beginner-m5",
+      "order": 5,
       "title": "夏布利深入探索",
       "icon": "🦪",
       "duration": "50分鐘",
@@ -49,8 +61,8 @@
       "description": "深入了解夏布利Kimmeridgian風土、七大特級園與品鑑技巧"
     },
     {
-      "id": "beginner-m5",
-      "order": 5,
+      "id": "beginner-m6",
+      "order": 6,
       "title": "薄酒萊入門",
       "icon": "🎉",
       "duration": "45分鐘",
@@ -59,6 +71,30 @@
       "completed": false,
       "locked": true,
       "description": "探索加美品種特性、十大特級村莊與亞洲料理搭配"
+    },
+    {
+      "id": "beginner-m7",
+      "order": 7,
+      "title": "夏隆內丘與馬貢內",
+      "icon": "💎",
+      "duration": "40分鐘",
+      "lessons": 3,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "探索性價比優秀的產區：夏隆內丘5村與馬貢內親民白酒"
+    },
+    {
+      "id": "beginner-m8",
+      "order": 8,
+      "title": "年份與名莊",
+      "icon": "⭐",
+      "duration": "45分鐘",
+      "lessons": 3,
+      "progress": 0,
+      "completed": false,
+      "locked": true,
+      "description": "了解氣候年份影響、頂級名莊與收藏投資建議"
     }
   ]
 }

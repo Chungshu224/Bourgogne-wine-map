@@ -71,7 +71,46 @@
         {
           "type": "map",
           "title": "🌍 六大產區（南北排列）",
-
+          "interactive": true,
+          "buttonPosition": "left",
+          "regions": [
+            {
+              "id": "chablis",
+              "name": "夏布利",
+              "nameFr": "Chablis",
+              "description": "純淨礦物風格的霞多麗白酒"
+            },
+            {
+              "id": "cote-de-nuits",
+              "name": "夜丘",
+              "nameFr": "Côte de Nuits",
+              "description": "世界頂級黑皮諾紅酒產區"
+            },
+            {
+              "id": "cote-de-beaune",
+              "name": "伯恩丘",
+              "nameFr": "Côte de Beaune",
+              "description": "紅白酒並重的偉大產區"
+            },
+            {
+              "id": "cote-chalonnaise",
+              "name": "夏隆丘",
+              "nameFr": "Côte Chalonnaise",
+              "description": "高性價比優質產區"
+            },
+            {
+              "id": "maconnais",
+              "name": "馬貢內",
+              "nameFr": "Mâconnais",
+              "description": "清新易飲的白酒產區"
+            },
+            {
+              "id": "beaujolais",
+              "name": "薄酒萊",
+              "nameFr": "Beaujolais",
+              "description": "加美葡萄的天堂"
+            }
+          ],
           "mapConfig": {
             "center": [4.5, 47.0],
             "zoom": 8.2,

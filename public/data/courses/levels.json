@@ -7,7 +7,7 @@
       "icon": "🍇",
       "color": "#E8F5E9",
       "primaryColor": "#4CAF50",
-      "duration": "4-6 小時",
+      "duration": "6-8 小時",
       "description": "建立布根地葡萄酒的基礎認知，了解地理環境、主要葡萄品種與產區分級系統",
       "features": [
         { "icon": "🗺️", "text": "地理位置與風土" },
@@ -16,7 +16,7 @@
         { "icon": "🏰", "text": "品酒基礎技巧" }
       ],
       "modules": 8,
-      "hours": 3,
+      "hours": 6.5,
       "requiredScore": 60,
       "certificate": "布根地探索者證書",
       "unlocked": true

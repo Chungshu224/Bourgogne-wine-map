@@ -105,10 +105,11 @@ export class MapSlideManager {
     // 載入所有產區圖層
     await this.loadAllRegionLayers()
 
+    // 不再自動隱藏圖層，讓所有產區在初始時就顯示
     // 如果配置了regions（新版互動式）或interactive標記，初始隱藏所有產區圖層
-    if (this.config.regions || this.config.interactive) {
-      this.hideAllLayers()
-    }
+    // if (this.config.regions || this.config.interactive) {
+    //   this.hideAllLayers()
+    // }
 
     // 添加標記
     this.addMarkers()

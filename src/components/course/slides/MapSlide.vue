@@ -6,16 +6,32 @@
     </div>
 
     <!-- 左側產區按鈕（如果配置了regions） -->
-    <div v-if="slide.regions && slide.regions.length > 0" class="region-buttons-panel">
-      <button
-        v-for="region in slide.regions"
-        :key="region.id"
-        :class="['region-btn', { active: activeLayerId === region.id }]"
-        @click="toggleRegion(region)"
-      >
-        <div class="region-name-zh">{{ region.name }}</div>
-        <div class="region-name-fr">{{ region.nameFr }}</div>
-      </button>
+    <div v-if="slide.regions && slide.regions.length > 0" class="region-buttons-container">
+      <!-- 左側按鈕組 -->
+      <div class="region-buttons-panel left">
+        <button
+          v-for="region in leftRegions"
+          :key="region.id"
+          :class="['region-btn', { active: activeLayerId === region.id }]"
+          @click="toggleRegion(region)"
+        >
+          <div class="region-name-zh">{{ region.name }}</div>
+          <div class="region-name-fr">{{ region.nameFr }}</div>
+        </button>
+      </div>
+      
+      <!-- 右側按鈕組 -->
+      <div class="region-buttons-panel right">
+        <button
+          v-for="region in rightRegions"
+          :key="region.id"
+          :class="['region-btn', { active: activeLayerId === region.id }]"
+          @click="toggleRegion(region)"
+        >
+          <div class="region-name-zh">{{ region.name }}</div>
+          <div class="region-name-fr">{{ region.nameFr }}</div>
+        </button>
+      </div>
     </div>
 
     <!-- 左側圖層按鈕（舊版互動式地圖） -->
@@ -52,6 +68,19 @@ const mapContainer = ref(null)
 const activeRegion = ref(null)
 const activeLayerId = ref(null)
 let mapManager = null
+
+// 將產區按鈕分成左右兩組
+const leftRegions = computed(() => {
+  if (!props.slide.regions) return []
+  const mid = Math.ceil(props.slide.regions.length / 2)
+  return props.slide.regions.slice(0, mid)
+})
+
+const rightRegions = computed(() => {
+  if (!props.slide.regions) return []
+  const mid = Math.ceil(props.slide.regions.length / 2)
+  return props.slide.regions.slice(mid)
+})
 
 // 交互式圖層列表
 const interactiveLayers = computed(() => {
@@ -209,7 +238,39 @@ const toggleRegion = async (region) => {
                        (region.id === 'puligny-montrachet' && file.fillColor === '#FFFF00') ||
                        (region.id === 'chassagne-montrachet' && file.fillColor === '#F5DEB3') ||
                        (region.id === 'pommard' && file.fillColor === '#8B0000') ||
-                       (region.id === 'volnay' && file.fillColor === '#DC143C')
+                       (region.id === 'volnay' && file.fillColor === '#DC143C') ||
+                       (region.id === 'petit-chablis' && file.fillColor === '#E8D5A8') ||
+                       (region.id === 'chablis' && file.fillColor === '#DBC68F') ||
+                       (region.id === 'premier-cru' && file.fillColor === '#CEB776') ||
+                       (region.id === 'grand-cru' && file.fillColor === '#B8860B') ||
+                       (region.id === 'bougros' && file.fillColor === '#8B4513') ||
+                       (region.id === 'preuses' && file.fillColor === '#B8860B') ||
+                       (region.id === 'vaudesir' && file.fillColor === '#DAA520') ||
+                       (region.id === 'grenouilles' && file.fillColor === '#FFD700') ||
+                       (region.id === 'valmur' && file.fillColor === '#F0E68C') ||
+                       (region.id === 'les-clos' && file.fillColor === '#CD853F') ||
+                       (region.id === 'blanchot' && file.fillColor === '#DEB887') ||
+                       (region.id === 'saint-amour' && file.fillColor === '#FFB6C1') ||
+                       (region.id === 'julienas' && file.fillColor === '#FF69B4') ||
+                       (region.id === 'chenas' && file.fillColor === '#C71585') ||
+                       (region.id === 'moulin-a-vent' && file.fillColor === '#8B008B') ||
+                       (region.id === 'fleurie' && file.fillColor === '#DDA0DD') ||
+                       (region.id === 'chiroubles' && file.fillColor === '#EE82EE') ||
+                       (region.id === 'morgon' && file.fillColor === '#BA55D3') ||
+                       (region.id === 'regnie' && file.fillColor === '#DA70D6') ||
+                       (region.id === 'brouilly' && file.fillColor === '#9370DB') ||
+                       (region.id === 'cote-de-brouilly' && file.fillColor === '#8A2BE2') ||
+                       (region.id === 'bouzeron' && file.fillColor === '#98D8C8') ||
+                       (region.id === 'rully' && file.fillColor === '#6EC1E4') ||
+                       (region.id === 'mercurey' && file.fillColor === '#5DADE2') ||
+                       (region.id === 'givry' && file.fillColor === '#3498DB') ||
+                       (region.id === 'montagny' && file.fillColor === '#2E86C1') ||
+                       (region.id === 'macon-villages' && file.fillColor === '#B8E6B8') ||
+                       (region.id === 'vire-clesse' && file.fillColor === '#90D090') ||
+                       (region.id === 'saint-veran' && file.fillColor === '#6BBF6B') ||
+                       (region.id === 'pouilly-vinzelles' && file.fillColor === '#4CAF50') ||
+                       (region.id === 'pouilly-loche' && file.fillColor === '#45A049') ||
+                       (region.id === 'pouilly-fuisse' && file.fillColor === '#2E7D32')
         
         if (isMatch) {
           const fillLayerId = `${file.id}-fill`
@@ -302,6 +363,99 @@ const toggleRegion = async (region) => {
           } else if (region.id === 'volnay') {
             padding = 30
             maxZoom = 14
+          } else if (region.id === 'petit-chablis') {
+            padding = 60
+            maxZoom = 11.5
+          } else if (region.id === 'premier-cru') {
+            padding = 50
+            maxZoom = 12.5
+          } else if (region.id === 'grand-cru') {
+            padding = 40
+            maxZoom = 13.5
+          } else if (region.id === 'bougros') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'preuses') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'vaudesir') {
+            padding = 25
+            maxZoom = 14.5
+          } else if (region.id === 'grenouilles') {
+            padding = 20
+            maxZoom = 15.5
+          } else if (region.id === 'valmur') {
+            padding = 25
+            maxZoom = 14.5
+          } else if (region.id === 'les-clos') {
+            padding = 30
+            maxZoom = 14.5
+          } else if (region.id === 'blanchot') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'saint-amour') {
+            padding = 30
+            maxZoom = 13.5
+          } else if (region.id === 'julienas') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'chenas') {
+            padding = 28
+            maxZoom = 14
+          } else if (region.id === 'moulin-a-vent') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'fleurie') {
+            padding = 40
+            maxZoom = 12.5
+          } else if (region.id === 'chiroubles') {
+            padding = 32
+            maxZoom = 13.5
+          } else if (region.id === 'morgon') {
+            padding = 55
+            maxZoom = 11.5
+          } else if (region.id === 'regnie') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'brouilly') {
+            padding = 60
+            maxZoom = 11.5
+          } else if (region.id === 'cote-de-brouilly') {
+            padding = 32
+            maxZoom = 13.5
+          } else if (region.id === 'bouzeron') {
+            padding = 30
+            maxZoom = 14
+          } else if (region.id === 'rully') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'mercurey') {
+            padding = 50
+            maxZoom = 12
+          } else if (region.id === 'givry') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'montagny') {
+            padding = 40
+            maxZoom = 12.5
+          } else if (region.id === 'macon-villages') {
+            padding = 70
+            maxZoom = 10
+          } else if (region.id === 'vire-clesse') {
+            padding = 35
+            maxZoom = 13
+          } else if (region.id === 'saint-veran') {
+            padding = 45
+            maxZoom = 12
+          } else if (region.id === 'pouilly-vinzelles') {
+            padding = 30
+            maxZoom = 13.5
+          } else if (region.id === 'pouilly-loche') {
+            padding = 28
+            maxZoom = 14
+          } else if (region.id === 'pouilly-fuisse') {
+            padding = 40
+            maxZoom = 12.5
           }
           
           map.fitBounds(bbox, {
@@ -452,22 +606,42 @@ watch(() => props.slide, () => {
   overflow-y: auto;
 }
 
-/* 產區按鈕面板 */
-.region-buttons-panel {
+/* 產區按鈕容器 */
+.region-buttons-container {
   position: absolute;
-  left: 2rem;
   top: 50%;
   transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+/* 產區按鈕面板 */
+.region-buttons-panel {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  z-index: 10;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   padding: 1.2rem;
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   max-width: 220px;
+  pointer-events: auto;
+  max-height: calc(100vh - 12rem);
+  overflow-y: auto;
+}
+
+.region-buttons-panel.left {
+  align-self: flex-start;
+}
+
+.region-buttons-panel.right {
+  align-self: flex-start;
 }
 
 .region-btn {

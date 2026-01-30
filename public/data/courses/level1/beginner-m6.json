@@ -86,144 +86,386 @@
       "id": "lesson4-b",
       "title": "十大特級村（Crus）深度解析",
       "duration": "20分鐘",
-      "type": "text-images",
-      "content": {
-        "introduction": "薄酒萊的精華在十大特級村（Crus），全部位於北部花崗岩山坡。這些村莊釀出的酒複雜度高、可陳年，完全不同於人們對薄酒萊「簡單新酒」的刻板印象。",
-        "sections": [
-          {
-            "heading": "十大特級村分級與特色",
-            "crus": [
-              {
-                "name": "Moulin-à-Vent",
-                "chinese": "風車磨坊",
-                "area": "660公頃",
-                "soil": "分解花崗岩（Gore）+ 錳",
-                "style": "薄酒萊之王，最強勁複雜",
-                "aging": "5-20年",
-                "character": "深紅寶石色、玫瑰香氣、單寧明顯、可比擬夜丘紅酒",
-                "price": "€15-50",
-                "food": "烤肉、野味、成熟起司"
-              },
-              {
-                "name": "Morgon",
-                "chinese": "莫爾貢",
-                "area": "1100公頃（最大）",
-                "soil": "分解藍色花崗岩（Côte de Py）",
-                "style": "獨特的「Morgon味」",
-                "aging": "5-15年",
-                "character": "櫻桃、土壤香氣、結構紮實、陳年後發展出類似黑皮諾的複雜度",
-                "price": "€12-40",
-                "food": "燉牛肉、烤鴨、野菇"
-              },
-              {
-                "name": "Fleurie",
-                "chinese": "花莊",
-                "area": "870公頃",
-                "soil": "粉紅花崗岩",
-                "style": "薄酒萊女王，最優雅芬芳",
-                "aging": "3-10年",
-                "character": "紫羅蘭、玫瑰花香、絲滑質地、女性化風格",
-                "price": "€12-35",
-                "food": "烤雞、鮭魚、溫和起司"
-              },
-              {
-                "name": "Juliénas",
-                "chinese": "朱麗娜",
-                "area": "580公頃",
-                "soil": "花崗岩 + 沖積土",
-                "style": "果味與香料並存",
-                "aging": "3-10年",
-                "character": "紅色漿果、牡丹花香、香料、結構均衡",
-                "price": "€12-30",
-                "food": "烤豬肉、火腿、中式紅燒"
-              },
-              {
-                "name": "Chénas",
-                "chinese": "謝納",
-                "area": "285公頃（最小）",
-                "soil": "花崗岩",
-                "style": "最稀有、複雜度高",
-                "aging": "5-12年",
-                "character": "牡丹、紫羅蘭、礦物感、優雅結構",
-                "price": "€15-40",
-                "food": "野味、烤羊排"
-              },
-              {
-                "name": "Saint-Amour",
-                "chinese": "聖愛",
-                "area": "320公頃",
-                "soil": "花崗岩 + 黏土",
-                "style": "情人節最愛",
-                "aging": "2-5年",
-                "character": "桃子、杏桃、花香、輕盈優雅",
-                "price": "€12-28",
-                "food": "白肉、海鮮、沙拉"
-              },
-              {
-                "name": "Chiroubles",
-                "chinese": "希魯布勒",
-                "area": "360公頃",
-                "soil": "粉紅花崗岩",
-                "style": "海拔最高（400米），最細膩",
-                "aging": "2-5年",
-                "character": "紅色小果、紫羅蘭、細膩柔順、酒體最輕",
-                "price": "€12-28",
-                "food": "冷盤、輕食、日式料理"
-              },
-              {
-                "name": "Régnié",
-                "chinese": "雷尼耶",
-                "area": "400公頃",
-                "soil": "粉紅花崗岩",
-                "style": "1988年才升級為特級村",
-                "aging": "2-5年",
-                "character": "紅莓、香蕉、新鮮果味",
-                "price": "€10-25",
-                "food": "烤雞、披薩、輕食"
-              },
-              {
-                "name": "Brouilly",
-                "chinese": "布魯伊",
-                "area": "1300公頃（第二大）",
-                "soil": "藍色花崗岩（Mont Brouilly 周圍）",
-                "style": "最大特級村，風格多樣",
-                "aging": "2-5年",
-                "character": "紅色漿果、礦物感、易飲爽口",
-                "price": "€10-25",
-                "food": "燒烤、火鍋、家常菜"
-              },
-              {
-                "name": "Côte de Brouilly",
-                "chinese": "布魯伊山坡",
-                "area": "320公頃",
-                "soil": "火山岩（獨特！）",
-                "style": "Brouilly 的精華版",
-                "aging": "3-8年",
-                "character": "更濃郁、礦物感強、火山土壤特色",
-                "price": "€12-30",
-                "food": "烤肉、野味、濃郁醬汁"
-              }
-            ]
-          },
-          {
-            "heading": "如何選擇特級村？",
-            "guide": {
-              "想要優雅細膩": "Fleurie, Chiroubles, Saint-Amour",
-              "想要強勁陳年": "Moulin-à-Vent, Morgon, Chénas",
-              "想要平衡易飲": "Juliénas, Régnié, Brouilly",
-              "想要獨特風土": "Côte de Brouilly（火山岩）, Morgon（Côte de Py）",
-              "性價比首選": "Brouilly, Régnié"
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "十大特級村（Crus）深度解析",
+          "subtitle": "20分鐘",
+          "description": "薄酒萊的精華在十大特級村（Crus），全部位於北部花崗岩山坡。這些村莊釀出的酒複雜度高、可陳年，完全不同於人們對薄酒萊「簡單新酒」的刻板印象。"
+        },
+        {
+          "type": "map",
+          "title": "🗺️ 薄酒萊十大特級村地圖",
+          "interactive": true,
+          "buttonPosition": "left",
+          "regions": [
+            {
+              "id": "saint-amour",
+              "name": "聖愛",
+              "nameFr": "Saint-Amour",
+              "fillColor": "#FFB6C1"
+            },
+            {
+              "id": "julienas",
+              "name": "朱麗娜",
+              "nameFr": "Juliénas",
+              "fillColor": "#FF69B4"
+            },
+            {
+              "id": "chenas",
+              "name": "謝納",
+              "nameFr": "Chénas",
+              "fillColor": "#C71585"
+            },
+            {
+              "id": "moulin-a-vent",
+              "name": "風車磨坊",
+              "nameFr": "Moulin-à-Vent",
+              "fillColor": "#8B008B"
+            },
+            {
+              "id": "fleurie",
+              "name": "花莊",
+              "nameFr": "Fleurie",
+              "fillColor": "#DDA0DD"
+            },
+            {
+              "id": "chiroubles",
+              "name": "希魯布勒",
+              "nameFr": "Chiroubles",
+              "fillColor": "#EE82EE"
+            },
+            {
+              "id": "morgon",
+              "name": "莫爾貢",
+              "nameFr": "Morgon",
+              "fillColor": "#BA55D3"
+            },
+            {
+              "id": "regnie",
+              "name": "雷尼耶",
+              "nameFr": "Régnié",
+              "fillColor": "#DA70D6"
+            },
+            {
+              "id": "brouilly",
+              "name": "布魯伊",
+              "nameFr": "Brouilly",
+              "fillColor": "#9370DB"
+            },
+            {
+              "id": "cote-de-brouilly",
+              "name": "布魯伊山坡",
+              "nameFr": "Côte de Brouilly",
+              "fillColor": "#8A2BE2"
             }
-          }
-        ],
-        "tips": [
-          "🍷 Moulin-à-Vent 陳年後常被誤認為夜丘黑皮諾",
-          "🍷 Morgon 的 Côte de Py 地塊是整個薄酒萊最精華",
-          "🍷 Fleurie 最受女性喜愛，花香四溢",
-          "🍷 Côte de Brouilly 是唯一有火山岩的特級村"
-        ],
-        "summary": "十大特級村展現了加美葡萄在花崗岩土壤上的多樣表現，從優雅的 Fleurie 到強勁的 Moulin-à-Vent，證明薄酒萊遠不只是「新酒」。"
-      }
+          ],
+          "mapConfig": {
+            "center": [4.65, 46.15],
+            "zoom": 10.5,
+            "pitch": 0,
+            "bearing": 0
+          },
+          "geojsonFiles": [
+            {
+              "id": "base-burgundy",
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "saint-amour",
+              "url": "/geojson/Beaujolais/AOC Saint-Amour.geojson",
+              "displayName": "Saint-Amour",
+              "fillColor": "#FFB6C1",
+              "fillOpacity": 0.75,
+              "lineColor": "#FF69B4",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "julienas",
+              "url": "/geojson/Beaujolais/AOC Juliénas.geojson",
+              "displayName": "Juliénas",
+              "fillColor": "#FF69B4",
+              "fillOpacity": 0.75,
+              "lineColor": "#FF1493",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "chenas",
+              "url": "/geojson/Beaujolais/AOC Chénas.geojson",
+              "displayName": "Chénas",
+              "fillColor": "#C71585",
+              "fillOpacity": 0.8,
+              "lineColor": "#8B008B",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "moulin-a-vent",
+              "url": "/geojson/Beaujolais/AOC Moulin-à-Vent.geojson",
+              "displayName": "Moulin-à-Vent",
+              "fillColor": "#8B008B",
+              "fillOpacity": 0.85,
+              "lineColor": "#4B0082",
+              "lineWidth": 3,
+              "showLabels": true
+            },
+            {
+              "id": "fleurie",
+              "url": "/geojson/Beaujolais/AOC Fleurie.geojson",
+              "displayName": "Fleurie",
+              "fillColor": "#DDA0DD",
+              "fillOpacity": 0.75,
+              "lineColor": "#BA55D3",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "chiroubles",
+              "url": "/geojson/Beaujolais/AOC Chiroubles.geojson",
+              "displayName": "Chiroubles",
+              "fillColor": "#EE82EE",
+              "fillOpacity": 0.75,
+              "lineColor": "#DA70D6",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "morgon",
+              "url": "/geojson/Beaujolais/AOC Morgon.geojson",
+              "displayName": "Morgon",
+              "fillColor": "#BA55D3",
+              "fillOpacity": 0.8,
+              "lineColor": "#9370DB",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "regnie",
+              "url": "/geojson/Beaujolais/AOC Régnié.geojson",
+              "displayName": "Régnié",
+              "fillColor": "#DA70D6",
+              "fillOpacity": 0.75,
+              "lineColor": "#BA55D3",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "brouilly",
+              "url": "/geojson/Beaujolais/AOC Brouilly.geojson",
+              "displayName": "Brouilly",
+              "fillColor": "#9370DB",
+              "fillOpacity": 0.75,
+              "lineColor": "#6A5ACD",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "cote-de-brouilly",
+              "url": "/geojson/Beaujolais/AOC Côte de Brouilly.geojson",
+              "displayName": "Côte de Brouilly",
+              "fillColor": "#8A2BE2",
+              "fillOpacity": 0.85,
+              "lineColor": "#4B0082",
+              "lineWidth": 3,
+              "showLabels": true
+            }
+          ]
+        },
+        {
+          "type": "content",
+          "title": "十大特級村概覽",
+          "content": "薄酒萊的十大特級村全部位於北部花崗岩山坡，從北到南依次排列，每個村莊都有獨特的風土和風格。",
+          "keyPoints": [
+            "🏔️ 位置：全部位於北部花崗岩山坡",
+            "🍇 品種：100% 加美（Gamay）",
+            "🪨 土壤：粉紅/藍色花崗岩、分解花崗岩",
+            "🍷 風格：從優雅芬芳到強勁複雜",
+            "⏳ 陳年：2-20年（視村莊而定）",
+            "📊 總面積：約6400公頃",
+            "💎 產量：約佔薄酒萊25%"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "👑 Moulin-à-Vent - 薄酒萊之王",
+          "content": "風車磨坊是薄酒萊最強勁複雜的特級村，陳年後常被誤認為夜丘黑皮諾。",
+          "keyPoints": [
+            "📏 面積：660公頃",
+            "🪨 土壤：分解花崗岩（Gore）+ 錳",
+            "⏳ 陳年潛力：5-20年",
+            "💰 價格：€15-50",
+            "",
+            "🎨 風格特徵",
+            "  • 深紅寶石色",
+            "  • 玫瑰、鳶尾花香氣",
+            "  • 單寧明顯但柔和",
+            "  • 結構緊實、複雜度高",
+            "  • 陳年後類似黑皮諾",
+            "",
+            "🍽️ 配餐：烤肉、野味、成熟起司",
+            "🏆 地位：薄酒萊之王"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🍒 Morgon - 獨特的 Morgon 味",
+          "content": "莫爾貢是面積最大的特級村（1100公頃），以獨特的「Morgon味」和 Côte de Py 地塊聞名。",
+          "keyPoints": [
+            "📏 面積：1100公頃（最大）",
+            "🪨 土壤：分解藍色花崗岩（Côte de Py）",
+            "⏳ 陳年潛力：5-15年",
+            "💰 價格：€12-40",
+            "",
+            "🎨 風格特徵",
+            "  • 櫻桃、黑莓果香",
+            "  • 土壤、礦物香氣",
+            "  • 結構紮實",
+            "  • 陳年後發展黑皮諾般的複雜度",
+            "  • Côte de Py 是整個薄酒萊最精華地塊",
+            "",
+            "🍽️ 配餐：燉牛肉、烤鴨、野菇",
+            "🌟 特色：獨特的「Morgon味」"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🌸 Fleurie - 薄酒萊女王",
+          "content": "花莊以優雅芬芳的風格被稱為「薄酒萊女王」，是最受歡迎的特級村之一。",
+          "keyPoints": [
+            "📏 面積：870公頃",
+            "🪨 土壤：粉紅花崗岩",
+            "⏳ 陳年潛力：3-10年",
+            "💰 價格：€12-35",
+            "",
+            "🎨 風格特徵",
+            "  • 紫羅蘭、玫瑰花香",
+            "  • 紅色小果（草莓、覆盆子）",
+            "  • 絲滑質地",
+            "  • 優雅細膩、女性化風格",
+            "  • 最芬芳的特級村",
+            "",
+            "🍽️ 配餐：烤雞、鮭魚、溫和起司",
+            "👑 地位：薄酒萊女王"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "北部三村：Saint-Amour、Juliénas、Chénas",
+          "content": "薄酒萊最北部的三個特級村，各有特色。",
+          "keyPoints": [
+            "💕 Saint-Amour（聖愛）",
+            "  • 320公頃，情人節最愛",
+            "  • 桃子、杏桃、花香",
+            "  • 輕盈優雅，2-5年適飲",
+            "  • €12-28，配白肉、海鮮",
+            "",
+            "🌺 Juliénas（朱麗娜）",
+            "  • 580公頃，果味與香料並存",
+            "  • 紅色漿果、牡丹花香、香料",
+            "  • 結構均衡，3-10年",
+            "  • €12-30，配烤豬肉、火腿、中式紅燒",
+            "",
+            "🌹 Chénas（謝納）",
+            "  • 285公頃（最小），最稀有",
+            "  • 牡丹、紫羅蘭、礦物感",
+            "  • 複雜度高，5-12年",
+            "  • €15-40，配野味、烤羊排"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "中部二村：Chiroubles、Régnié",
+          "content": "這兩個村莊風格較為輕盈細膩，適合年輕飲用。",
+          "keyPoints": [
+            "🏔️ Chiroubles（希魯布勒）",
+            "  • 360公頃，海拔最高（400米）",
+            "  • 粉紅花崗岩",
+            "  • 紅色小果、紫羅蘭",
+            "  • 酒體最輕、細膩柔順",
+            "  • 2-5年適飲，€12-28",
+            "  • 配冷盤、輕食、日式料理",
+            "",
+            "🆕 Régnié（雷尼耶）",
+            "  • 400公頃，1988年才升級為特級村",
+            "  • 粉紅花崗岩",
+            "  • 紅莓、香蕉、新鮮果味",
+            "  • 2-5年適飲，€10-25",
+            "  • 配烤雞、披薩、輕食",
+            "  • 性價比高"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "南部二村：Brouilly、Côte de Brouilly",
+          "content": "位於 Mont Brouilly 山周圍的兩個特級村，Côte de Brouilly 有獨特的火山岩土壤。",
+          "keyPoints": [
+            "🏔️ Brouilly（布魯伊）",
+            "  • 1300公頃（第二大）",
+            "  • 藍色花崗岩（Mont Brouilly 周圍）",
+            "  • 紅色漿果、礦物感",
+            "  • 易飲爽口，2-5年",
+            "  • €10-25，配燒烤、火鍋、家常菜",
+            "",
+            "🌋 Côte de Brouilly（布魯伊山坡）",
+            "  • 320公頃，位於山坡上",
+            "  • 🔥 火山岩土壤（唯一！）",
+            "  • 更濃郁、礦物感強",
+            "  • 火山土壤特色",
+            "  • 3-8年，€12-30",
+            "  • 配烤肉、野味、濃郁醬汁",
+            "  • 是 Brouilly 的精華版"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "如何選擇特級村？",
+          "content": "根據您的喜好和場合選擇合適的特級村。",
+          "keyPoints": [
+            "🌸 想要優雅細膩",
+            "  → Fleurie, Chiroubles, Saint-Amour",
+            "",
+            "💪 想要強勁陳年",
+            "  → Moulin-à-Vent, Morgon, Chénas",
+            "",
+            "⚖️ 想要平衡易飲",
+            "  → Juliénas, Régnié, Brouilly",
+            "",
+            "🌋 想要獨特風土",
+            "  → Côte de Brouilly（火山岩）",
+            "  → Morgon Côte de Py（藍色花崗岩）",
+            "",
+            "💰 性價比首選",
+            "  → Brouilly, Régnié"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💡 重點提示",
+          "points": [
+            "🍷 Moulin-à-Vent 陳年後常被誤認為夜丘黑皮諾",
+            "🍷 Morgon 的 Côte de Py 地塊是整個薄酒萊最精華",
+            "🍷 Fleurie 最受女性喜愛，花香四溢",
+            "🍷 Côte de Brouilly 是唯一有火山岩的特級村",
+            "🍷 Chénas 面積最小（285公頃），最稀有",
+            "🍷 Morgon 面積最大（1100公頃）",
+            "🍷 十大特級村都可陳年，不是只能年輕飲用"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "總結",
+          "content": "十大特級村展現了加美葡萄在花崗岩土壤上的多樣表現，從優雅的 Fleurie 到強勁的 Moulin-à-Vent，證明薄酒萊遠不只是「新酒」。每個村莊都有獨特的個性，值得深入探索。"
+        }
+      ]
     },
     {
       "id": "lesson4-c",

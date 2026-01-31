@@ -5,6 +5,11 @@
     </div>
     <div class="slide-body">
       <div class="main-content" v-html="formattedContent"></div>
+      <div v-if="slide.keyPoints" class="key-points">
+        <div v-for="(point, index) in slide.keyPoints" :key="index" class="point-item">
+          {{ point }}
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -60,8 +65,9 @@ const formattedContent = computed(() => {
 .slide-body {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 0 20px;
 }
 
 .main-content {
@@ -69,12 +75,30 @@ const formattedContent = computed(() => {
   line-height: 1.8;
   color: #34495e;
   text-align: left;
-  max-width: 800px;
+  margin-bottom: 24px;
 }
 
 .main-content strong {
   color: #2c3e50;
   font-weight: 700;
+}
+
+.key-points {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.point-item {
+  color: #34495e;
+  white-space: pre-wrap;
+  text-align: left;
+}
+
+.point-item:empty {
+  height: 0.5em;
 }
 
 @media (max-width: 768px) {

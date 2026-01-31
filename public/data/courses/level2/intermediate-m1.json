@@ -21,6 +21,186 @@
           "content": "夜丘是布根地最負盛名的紅酒產區，南北長約20公里，位於第戎南方至科爾戈洛瓦（Corgoloin）。這裡出產世界上最昂貴、最優雅的黑皮諾紅酒。"
         },
         {
+          "type": "map",
+          "title": "夜丘九大村莊地圖",
+          "description": "點擊按鈕查看各村莊位置與範圍",
+          "regions": [
+            {
+              "name": "馬沙內",
+              "nameFr": "Marsannay",
+              "id": "marsannay",
+              "fillColor": "#8B4789"
+            },
+            {
+              "name": "菲克桑",
+              "nameFr": "Fixin",
+              "id": "fixin",
+              "fillColor": "#CD5C5C"
+            },
+            {
+              "name": "熱夫雷-香貝丹",
+              "nameFr": "Gevrey-Chambertin",
+              "id": "gevrey-chambertin",
+              "fillColor": "#DC143C"
+            },
+            {
+              "name": "莫雷-聖丹尼",
+              "nameFr": "Morey-Saint-Denis",
+              "id": "morey-saint-denis",
+              "fillColor": "#C71585"
+            },
+            {
+              "name": "香波-慕西尼",
+              "nameFr": "Chambolle-Musigny",
+              "id": "chambolle-musigny",
+              "fillColor": "#DB7093"
+            },
+            {
+              "name": "伏舊",
+              "nameFr": "Vougeot",
+              "id": "vougeot",
+              "fillColor": "#B22222"
+            },
+            {
+              "name": "弗拉傑-艾瑟索",
+              "nameFr": "Flagey-Echézeaux",
+              "id": "flagey-echezeaux",
+              "fillColor": "#A52A2A"
+            },
+            {
+              "name": "馮內-羅曼尼",
+              "nameFr": "Vosne-Romanée",
+              "id": "vosne-romanee",
+              "fillColor": "#8B0000"
+            },
+            {
+              "name": "夜-聖喬治",
+              "nameFr": "Nuits-Saint-Georges",
+              "id": "nuits-saint-georges",
+              "fillColor": "#8B0A0A"
+            }
+          ],
+          "geojsonFiles": [
+            {
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "marsannay-chenove",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Chenôve).geojson",
+              "displayName": "Marsannay",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "marsannay-couchey",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Couchey).geojson",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "marsannay-main",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Marsannay-la-côte).geojson",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "fixin",
+              "url": "/geojson/Cote-de-Nuits/02Fixin/AOC Fixin (Fixin).geojson",
+              "displayName": "Fixin",
+              "fillColor": "#CD5C5C",
+              "fillOpacity": 0.7,
+              "lineColor": "#5A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "gevrey-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/AOC Gevrey-Chambertin (Gevrey-Chambertin).geojson",
+              "displayName": "Gevrey-Chambertin",
+              "fillColor": "#DC143C",
+              "fillOpacity": 0.7,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "morey-saint-denis",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/AOC Morey-Saint-Denis.geojson",
+              "displayName": "Morey-Saint-Denis",
+              "fillColor": "#C71585",
+              "fillOpacity": 0.7,
+              "lineColor": "#6A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "chambolle-musigny",
+              "url": "/geojson/Cote-de-Nuits/06Chambolle Musigny/AOC Chambolle-Musigny.geojson",
+              "displayName": "Chambolle-Musigny",
+              "fillColor": "#DB7093",
+              "fillOpacity": 0.7,
+              "lineColor": "#7A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "vougeot",
+              "url": "/geojson/Cote-de-Nuits/09Vougeot/AOC Vougeot.geojson",
+              "displayName": "Vougeot",
+              "fillColor": "#B22222",
+              "fillOpacity": 0.7,
+              "lineColor": "#6A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "flagey-echezeaux",
+              "url": "/geojson/Cote-de-Nuits/07Flagey-Echézeaux/Flagey-Echézeaux.geojson",
+              "displayName": "Flagey-Echézeaux",
+              "fillColor": "#A52A2A",
+              "fillOpacity": 0.7,
+              "lineColor": "#7A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "vosne-romanee",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/AOC Vosne-Romanée.geojson",
+              "displayName": "Vosne-Romanée",
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "nuits-saint-georges",
+              "url": "/geojson/Cote-de-Nuits/10Nuits-Saint-Georges/AOC Nuits-Saint-Georges.geojson",
+              "displayName": "Nuits-Saint-Georges",
+              "fillColor": "#8B0A0A",
+              "fillOpacity": 0.7,
+              "lineColor": "#5A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
+        },
+        {
           "type": "list",
           "title": "🍷 夜丘的特色",
           "points": [
@@ -47,23 +227,33 @@
           ]
         },
         {
-          "type": "comparison",
+          "type": "content",
           "title": "夜丘紅酒 vs 伯恩丘紅酒",
-          "leftTitle": "夜丘紅酒",
-          "leftPoints": [
-            "結構強勁、骨架明顯",
-            "單寧緊實、需要陳年",
-            "香氣濃郁、深度複雜",
-            "陳年後展現森林氣息",
-            "適合搭配野味與紅肉"
-          ],
-          "rightTitle": "伯恩丘紅酒",
-          "rightPoints": [
-            "優雅柔順、質地細緻",
-            "單寧柔和、較早適飲",
-            "果香明顯、清新活潑",
-            "陳年後展現花香",
-            "適合搭配禽類與魚類"
+          "content": "兩個產區的黑皮諾風格迥異，各有千秋。夜丘以強勁結構著稱，伯恩丘則以優雅細膩見長。",
+          "keyPoints": [
+            "🍷 夜丘紅酒 - 強勁有力",
+            "  • 結構強勁、骨架明顯、單寧緊實",
+            "  • 黑色水果、森林氣息、野味、松露",
+            "  • 陳年潛力：特級園 15-40年+",
+            "  • 價格：€30-數千歐元",
+            "  • 配餐：野味、紅肉、燉煮料理、熟成起司",
+            "  • 代表：Gevrey-Chambertin、Vosne-Romanée、Chambolle-Musigny",
+            "",
+            "🍷 伯恩丘紅酒 - 優雅細緻",
+            "  • 優雅柔順、質地細膩、單寧柔和",
+            "  • 紅色水果、花香、玫瑰、紫羅蘭",
+            "  • 陳年潛力：特級園 10-25年",
+            "  • 價格：€25-800",
+            "  • 配餐：禽類、白肉、鮭魚、軟質起司",
+            "  • 代表：Volnay、Pommard、Beaune",
+            "",
+            "💡 關鍵差異",
+            "  • 夜丘：深沉複雜、需耐心等待",
+            "  • 伯恩丘：親切易飲、較早適飲",
+            "  • 夜丘：黑色水果主導",
+            "  • 伯恩丘：紅色水果為主",
+            "  • 夜丘：單寧緊實、結構感強",
+            "  • 伯恩丘：單寧柔和、質地絲滑"
           ]
         },
         {
@@ -89,6 +279,184 @@
           "type": "content",
           "title": "熱夫雷-香貝丹（Gevrey-Chambertin）",
           "content": "這是夜丘最大的村莊，擁有9個特級園，超過400公頃的葡萄園。拿破崙最愛的香貝丹特級園就位於此，這裡的紅酒以強勁、濃郁、需要長時間陳年著稱。"
+        },
+        {
+          "type": "map",
+          "title": "熱夫雷-香貝丹地圖",
+          "description": "點擊按鈕查看村莊級與九大特級園",
+          "regions": [
+            {
+              "name": "村莊級",
+              "nameFr": "Village",
+              "id": "gevrey-village",
+              "fillColor": "#FFB6C1"
+            },
+            {
+              "name": "香貝丹",
+              "nameFr": "Chambertin",
+              "id": "chambertin",
+              "fillColor": "#8B0000"
+            },
+            {
+              "name": "香貝丹-貝日",
+              "nameFr": "Chambertin-Clos de Bèze",
+              "id": "chambertin-cdb",
+              "fillColor": "#A52A2A"
+            },
+            {
+              "name": "夏爾姆-香貝丹",
+              "nameFr": "Charmes-Chambertin",
+              "id": "charmes-chambertin",
+              "fillColor": "#B22222"
+            },
+            {
+              "name": "夏培爾-香貝丹",
+              "nameFr": "Chapelle-Chambertin",
+              "id": "chapelle-chambertin",
+              "fillColor": "#CD5C5C"
+            },
+            {
+              "name": "格里奧-香貝丹",
+              "nameFr": "Griotte-Chambertin",
+              "id": "griotte-chambertin",
+              "fillColor": "#DC143C"
+            },
+            {
+              "name": "拉圖里榭-香貝丹",
+              "nameFr": "Latricières-Chambertin",
+              "id": "latricieres-chambertin",
+              "fillColor": "#E9967A"
+            },
+            {
+              "name": "瑪茲-香貝丹",
+              "nameFr": "Mazis-Chambertin",
+              "id": "mazis-chambertin",
+              "fillColor": "#F08080"
+            },
+            {
+              "name": "瑪佐耶-香貝丹",
+              "nameFr": "Mazoyères-Chambertin",
+              "id": "mazoyeres-chambertin",
+              "fillColor": "#FA8072"
+            },
+            {
+              "name": "胡修-香貝丹",
+              "nameFr": "Ruchottes-Chambertin",
+              "id": "ruchottes-chambertin",
+              "fillColor": "#FF6347"
+            }
+          ],
+          "geojsonFiles": [
+            {
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "gevrey-village",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/AOC Gevrey-Chambertin (Gevrey-Chambertin).geojson",
+              "displayName": "Gevrey-Chambertin Village",
+              "fillColor": "#FFB6C1",
+              "fillOpacity": 0.5,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Chambertin Grand Cru.geojson",
+              "displayName": "Chambertin",
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.8,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "chambertin-cdb",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Chambertin Clos de Bèze Grand Cru.geojson",
+              "displayName": "Clos de Bèze",
+              "fillColor": "#A52A2A",
+              "fillOpacity": 0.8,
+              "lineColor": "#5A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "charmes-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Charmes Chambertin Grand Cru.geojson",
+              "displayName": "Charmes-Chambertin",
+              "fillColor": "#B22222",
+              "fillOpacity": 0.8,
+              "lineColor": "#6A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "chapelle-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Chapelle Chambertin Grand Cru.geojson",
+              "displayName": "Chapelle-Chambertin",
+              "fillColor": "#CD5C5C",
+              "fillOpacity": 0.8,
+              "lineColor": "#7A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "griotte-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Griotte Chambertin Grand Cru.geojson",
+              "displayName": "Griotte-Chambertin",
+              "fillColor": "#DC143C",
+              "fillOpacity": 0.8,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "latricieres-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Latricières Chambertin Grand Cru.geojson",
+              "displayName": "Latricières-Chambertin",
+              "fillColor": "#E9967A",
+              "fillOpacity": 0.8,
+              "lineColor": "#9A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "mazis-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Mazis Chambertin Grand Cru.geojson",
+              "displayName": "Mazis-Chambertin",
+              "fillColor": "#F08080",
+              "fillOpacity": 0.8,
+              "lineColor": "#AA0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "mazoyeres-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Mazoyères Chambertin Grand Cru.geojson",
+              "displayName": "Mazoyères-Chambertin",
+              "fillColor": "#FA8072",
+              "fillOpacity": 0.8,
+              "lineColor": "#BA0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "ruchottes-chambertin",
+              "url": "/geojson/Cote-de-Nuits/04Gevrey Chambertin/Grand Crus/AOC Ruchottes Chambertin Grand Cru.geojson",
+              "displayName": "Ruchottes-Chambertin",
+              "fillColor": "#FF6347",
+              "fillOpacity": 0.8,
+              "lineColor": "#CA0000",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
         },
         {
           "type": "list",
@@ -164,6 +532,72 @@
           "content": "如果說熱夫雷-香貝丹是夜丘的力量代表，香波-慕西尼就是優雅的化身。這裡的紅酒以絲綢般的質地、細緻的單寧與花香著稱，是夜丘中最女性化的風格。"
         },
         {
+          "type": "map",
+          "title": "香波-慕西尼地圖",
+          "description": "點擊按鈕查看村莊級與特級園",
+          "regions": [
+            {
+              "name": "村莊級",
+              "nameFr": "Village",
+              "id": "chambolle-village",
+              "fillColor": "#FFE4E1"
+            },
+            {
+              "name": "慕西尼",
+              "nameFr": "Musigny",
+              "id": "musigny",
+              "fillColor": "#DB7093"
+            },
+            {
+              "name": "邦馬爾",
+              "nameFr": "Bonnes-Mares",
+              "id": "bonnes-mares-chambolle",
+              "fillColor": "#C71585"
+            }
+          ],
+          "geojsonFiles": [
+            {
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "chambolle-village",
+              "url": "/geojson/Cote-de-Nuits/06Chambolle Musigny/AOC Chambolle-Musigny.geojson",
+              "displayName": "Chambolle-Musigny Village",
+              "fillColor": "#FFE4E1",
+              "fillOpacity": 0.5,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "musigny",
+              "url": "/geojson/Cote-de-Nuits/06Chambolle Musigny/Grand Crus/AOC Musigny Grand Cru.geojson",
+              "displayName": "Musigny",
+              "fillColor": "#DB7093",
+              "fillOpacity": 0.8,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "bonnes-mares-chambolle",
+              "url": "/geojson/Cote-de-Nuits/06Chambolle Musigny/Grand Crus/AOC Bonnes-Mares Grand Cru.geojson",
+              "displayName": "Bonnes-Mares",
+              "fillColor": "#C71585",
+              "fillOpacity": 0.8,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
+        },
+        {
           "type": "list",
           "title": "💎 香波-慕西尼特級園",
           "points": [
@@ -188,6 +622,120 @@
           "type": "content",
           "title": "莫雷-聖丹尼（Morey-Saint-Denis）",
           "content": "夾在熱夫雷-香貝丹與香波-慕西尼之間，莫雷-聖丹尼常被忽略，但這裡擁有5個特級園，風格介於鄰村之間，兼具力量與優雅。"
+        },
+        {
+          "type": "map",
+          "title": "莫雷-聖丹尼地圖",
+          "description": "點擊按鈕查看村莊級與五大特級園",
+          "regions": [
+            {
+              "name": "村莊級",
+              "nameFr": "Village",
+              "id": "morey-village",
+              "fillColor": "#DDA0DD"
+            },
+            {
+              "name": "克洛-德-拉侯奇",
+              "nameFr": "Clos de la Roche",
+              "id": "clos-de-la-roche",
+              "fillColor": "#8B008B"
+            },
+            {
+              "name": "克洛-聖丹尼",
+              "nameFr": "Clos Saint-Denis",
+              "id": "clos-saint-denis",
+              "fillColor": "#9932CC"
+            },
+            {
+              "name": "克洛-德-塔",
+              "nameFr": "Clos des Lambrays",
+              "id": "clos-des-lambrays",
+              "fillColor": "#BA55D3"
+            },
+            {
+              "name": "克洛-德-塔爾",
+              "nameFr": "Clos de Tart",
+              "id": "clos-de-tart",
+              "fillColor": "#9370DB"
+            },
+            {
+              "name": "邦馬爾",
+              "nameFr": "Bonnes-Mares",
+              "id": "bonnes-mares-morey",
+              "fillColor": "#8A2BE2"
+            }
+          ],
+          "geojsonFiles": [
+            {
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "morey-village",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/AOC Morey-Saint-Denis.geojson",
+              "displayName": "Morey-Saint-Denis Village",
+              "fillColor": "#DDA0DD",
+              "fillOpacity": 0.5,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "clos-de-la-roche",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/Grand Crus/AOC Clos de la Roche Grand Cru.geojson",
+              "displayName": "Clos de la Roche",
+              "fillColor": "#8B008B",
+              "fillOpacity": 0.8,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "clos-saint-denis",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/Grand Crus/AOC Clos Saint-Denis Grand Cru.geojson",
+              "displayName": "Clos Saint-Denis",
+              "fillColor": "#9932CC",
+              "fillOpacity": 0.8,
+              "lineColor": "#5A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "clos-des-lambrays",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/Grand Crus/AOC Clos des Lambrays Grand Cru.geojson",
+              "displayName": "Clos des Lambrays",
+              "fillColor": "#BA55D3",
+              "fillOpacity": 0.8,
+              "lineColor": "#6A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "clos-de-tart",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/Grand Crus/AOC Clos de Tart Grand Cru.geojson",
+              "displayName": "Clos de Tart",
+              "fillColor": "#9370DB",
+              "fillOpacity": 0.8,
+              "lineColor": "#7A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "bonnes-mares-morey",
+              "url": "/geojson/Cote-de-Nuits/05Morey-Saint-Denis/Grand Crus/AOC Bonnes Mares Grand Cru.geojson",
+              "displayName": "Bonnes-Mares",
+              "fillColor": "#8A2BE2",
+              "fillOpacity": 0.8,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
         },
         {
           "type": "list",
@@ -243,6 +791,168 @@
           "type": "content",
           "title": "馮內-羅曼尼（Vosne-Romanée）",
           "content": "這是布根地的心臟，世界上葡萄酒愛好者的朝聖地。這個小村莊擁有8個特級園，包括傳奇的羅曼尼康帝（Romanée-Conti），每一瓶都是天價。"
+        },
+        {
+          "type": "map",
+          "title": "馮內-羅曼尼地圖",
+          "description": "點擊按鈕查看村莊級與八大特級園",
+          "regions": [
+            {
+              "name": "村莊級",
+              "nameFr": "Village",
+              "id": "vosne-village",
+              "fillColor": "#FFE4E1"
+            },
+            {
+              "name": "羅曼尼康帝",
+              "nameFr": "Romanée-Conti",
+              "id": "romanee-conti",
+              "fillColor": "#8B0000"
+            },
+            {
+              "name": "拉塔希",
+              "nameFr": "La Tâche",
+              "id": "la-tache",
+              "fillColor": "#A52A2A"
+            },
+            {
+              "name": "羅曼尼",
+              "nameFr": "La Romanée",
+              "id": "la-romanee",
+              "fillColor": "#B22222"
+            },
+            {
+              "name": "李奇堡",
+              "nameFr": "Richebourg",
+              "id": "richebourg",
+              "fillColor": "#CD5C5C"
+            },
+            {
+              "name": "羅曼尼-聖維旺",
+              "nameFr": "Romanée-Saint-Vivant",
+              "id": "romanee-saint-vivant",
+              "fillColor": "#DC143C"
+            },
+            {
+              "name": "大街特級園",
+              "nameFr": "La Grande Rue",
+              "id": "la-grande-rue",
+              "fillColor": "#E9967A"
+            },
+            {
+              "name": "艾瑟索",
+              "nameFr": "Echézeaux",
+              "id": "echezeaux",
+              "fillColor": "#F08080"
+            },
+            {
+              "name": "大艾瑟索",
+              "nameFr": "Grands Echézeaux",
+              "id": "grands-echezeaux",
+              "fillColor": "#FA8072"
+            }
+          ],
+          "geojsonFiles": [
+            {
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "vosne-village",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/AOC Vosne-Romanée.geojson",
+              "displayName": "Vosne-Romanée Village",
+              "fillColor": "#FFE4E1",
+              "fillOpacity": 0.5,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "romanee-conti",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/Grand Crus/AOC Romanée-Conti Grand Cru.geojson",
+              "displayName": "Romanée-Conti",
+              "fillColor": "#8B0000",
+              "fillOpacity": 0.8,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "la-tache",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/Grand Crus/AOC La Tâche Grand Cru.geojson",
+              "displayName": "La Tâche",
+              "fillColor": "#A52A2A",
+              "fillOpacity": 0.8,
+              "lineColor": "#5A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "la-romanee",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/Grand Crus/AOC La Romanée Grand Cru.geojson",
+              "displayName": "La Romanée",
+              "fillColor": "#B22222",
+              "fillOpacity": 0.8,
+              "lineColor": "#6A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "richebourg",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/Grand Crus/AOC Richebourg Grand Cru.geojson",
+              "displayName": "Richebourg",
+              "fillColor": "#CD5C5C",
+              "fillOpacity": 0.8,
+              "lineColor": "#7A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "romanee-saint-vivant",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/Grand Crus/AOC Romanée-Saint-Vivant Grand Cru.geojson",
+              "displayName": "Romanée-Saint-Vivant",
+              "fillColor": "#DC143C",
+              "fillOpacity": 0.8,
+              "lineColor": "#8B0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "la-grande-rue",
+              "url": "/geojson/Cote-de-Nuits/08Vosne-Romanée/Grand Crus/AOC La Grande Rue Grand Cru.geojson",
+              "displayName": "La Grande Rue",
+              "fillColor": "#E9967A",
+              "fillOpacity": 0.8,
+              "lineColor": "#9A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "echezeaux",
+              "url": "/geojson/Cote-de-Nuits/07Flagey-Echézeaux/Grand Crus/AOC Echezeaux Grand Cru.geojson",
+              "displayName": "Echézeaux",
+              "fillColor": "#F08080",
+              "fillOpacity": 0.8,
+              "lineColor": "#AA0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "grands-echezeaux",
+              "url": "/geojson/Cote-de-Nuits/07Flagey-Echézeaux/Grand Crus/AOC Grands-Echezeaux Grand Cru.geojson",
+              "displayName": "Grands Echézeaux",
+              "fillColor": "#FA8072",
+              "fillOpacity": 0.8,
+              "lineColor": "#BA0000",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
         },
         {
           "type": "list",
@@ -332,6 +1042,90 @@
           "type": "content",
           "title": "夜-聖喬治（Nuits-Saint-Georges）",
           "content": "夜丘最南端的重要村莊，也是整個夜丘的命名來源。雖然沒有特級園，但擁有41個一級園，面積達143公頃，紅酒以強勁、耐久著稱。"
+        },
+        {
+          "type": "map",
+          "title": "夜丘性價比村莊地圖",
+          "description": "點擊按鈕查看夜-聖喬治、馬沙內、菲克桑位置",
+          "regions": [
+            {
+              "name": "夜-聖喬治",
+              "nameFr": "Nuits-Saint-Georges",
+              "id": "nuits-saint-georges",
+              "fillColor": "#8B0A0A"
+            },
+            {
+              "name": "馬沙內",
+              "nameFr": "Marsannay",
+              "id": "marsannay",
+              "fillColor": "#8B4789"
+            },
+            {
+              "name": "菲克桑",
+              "nameFr": "Fixin",
+              "id": "fixin",
+              "fillColor": "#CD5C5C"
+            }
+          ],
+          "geojsonFiles": [
+            {
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#E6E6FA",
+              "fillOpacity": 0.1,
+              "lineColor": "#9370DB",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "nuits-saint-georges",
+              "url": "/geojson/Cote-de-Nuits/10Nuits-Saint-Georges/AOC Nuits-Saint-Georges.geojson",
+              "displayName": "Nuits-Saint-Georges",
+              "fillColor": "#8B0A0A",
+              "fillOpacity": 0.7,
+              "lineColor": "#5A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "marsannay-chenove",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Chenôve).geojson",
+              "displayName": "Marsannay",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            },
+            {
+              "id": "marsannay-couchey",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Couchey).geojson",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "marsannay-main",
+              "url": "/geojson/Cote-de-Nuits/01Marsannay/AOC Marsannay (Marsannay-la-côte).geojson",
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.7,
+              "lineColor": "#4A0000",
+              "lineWidth": 2,
+              "showLabels": false
+            },
+            {
+              "id": "fixin",
+              "url": "/geojson/Cote-de-Nuits/02Fixin/AOC Fixin (Fixin).geojson",
+              "displayName": "Fixin",
+              "fillColor": "#CD5C5C",
+              "fillOpacity": 0.7,
+              "lineColor": "#5A0000",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ]
         },
         {
           "type": "list",

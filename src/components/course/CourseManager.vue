@@ -193,8 +193,18 @@ const loadLevelModules = async (levelId) => {
 // 載入模組詳細資料
 const loadModuleData = async (levelId, moduleId) => {
   try {
-    const response = await fetch(`/data/courses/level${levelId}/${moduleId}.json`)
+    // 根據 levelId 確定正確的路徑
+    let levelFolder = 'level1'
+    if (levelId === 1) levelFolder = 'level1'
+    else if (levelId === 2) levelFolder = 'level2'
+    else if (levelId === 3) levelFolder = 'level3'
+    else if (levelId === 4) levelFolder = 'level4'
+    
+    const url = `/data/courses/${levelFolder}/${moduleId}.json`
+    console.log('🔍 載入模組資料 URL:', url)
+    const response = await fetch(url)
     moduleData.value = await response.json()
+    console.log('✅ 模組資料載入成功:', moduleData.value.title)
   } catch (error) {
     console.error('載入模組資料失敗:', error)
   }

@@ -229,6 +229,11 @@ const toggleRegion = async (region) => {
                        (region.id === 'fixin' && file.fillColor === '#CD5C5C') ||
                        (region.id === 'gevrey-chambertin' && (file.fillColor === '#DC143C' || file.id === 'brochon')) ||
                        (region.id === 'gevrey-village' && file.fillColor === '#FFB6C1') ||
+                       (region.id === 'clos-saint-jacques' && file.fillColor === '#8B0000') ||
+                       (region.id === 'les-cazetiers' && file.fillColor === '#A52A2A') ||
+                       (region.id === 'lavaut-saint-jacques' && file.fillColor === '#B22222') ||
+                       (region.id === 'aux-combottes' && file.fillColor === '#DC143C') ||
+                       (region.id === 'estournelles-saint-jacques' && file.fillColor === '#CD5C5C') ||
                        (region.id === 'chambertin' && file.fillColor === '#8B0000') ||
                        (region.id === 'chambertin-cdb' && file.fillColor === '#A52A2A') ||
                        (region.id === 'charmes-chambertin' && file.fillColor === '#B22222') ||
@@ -247,6 +252,11 @@ const toggleRegion = async (region) => {
                        (region.id === 'bonnes-mares-morey' && file.fillColor === '#8A2BE2') ||
                        (region.id === 'chambolle-musigny' && file.fillColor === '#DB7093') ||
                        (region.id === 'chambolle-village' && file.fillColor === '#FFE4E1') ||
+                       (region.id === 'les-amoureuses' && file.fillColor === '#DB7093') ||
+                       (region.id === 'les-charmes-chambolle' && file.fillColor === '#C71585') ||
+                       (region.id === 'les-fuees' && file.fillColor === '#FF1493') ||
+                       (region.id === 'les-cras-chambolle' && file.fillColor === '#BA55D3') ||
+                       (region.id === 'aux-beaux-bruns' && file.fillColor === '#8B008B') ||
                        (region.id === 'musigny' && file.fillColor === '#DB7093') ||
                        (region.id === 'bonnes-mares-chambolle' && file.fillColor === '#C71585') ||
                        (region.id === 'vougeot' && file.fillColor === '#B22222') ||
@@ -263,6 +273,11 @@ const toggleRegion = async (region) => {
                        (region.id === 'grands-echezeaux' && file.fillColor === '#FA8072') ||
                        (region.id === 'flagey-echezeaux' && file.fillColor === '#A52A2A') ||
                        (region.id === 'nuits-saint-georges' && file.fillColor === '#8B0A0A') ||
+                       (region.id === 'les-saint-georges' && file.fillColor === '#8B0A0A') ||
+                       (region.id === 'les-vaucrains' && file.fillColor === '#A52A2A') ||
+                       (region.id === 'les-cailles-nsg' && file.fillColor === '#B22222') ||
+                       (region.id === 'aux-boudots' && file.fillColor === '#CD5C5C') ||
+                       (region.id === 'les-pruliers' && file.fillColor === '#DC143C') ||
                        (region.id === 'aloxe-corton' && file.fillColor === '#D4AF37') ||
                        (region.id === 'aloxe-village' && file.fillColor === '#FFEFD5') ||
                        (region.id === 'corton-rouge' && file.fillColor === '#8B0000') ||
@@ -272,8 +287,20 @@ const toggleRegion = async (region) => {
                        (region.id === 'beaune' && file.fillColor === '#DAA520') ||
                        (region.id === 'meursault' && file.fillColor === '#FFD700') ||
                        (region.id === 'meursault-village' && file.fillColor === '#FFD700') ||
+                       (region.id === 'meursault-village' && file.fillColor === '#FFD700') ||
+                       (region.id === 'les-perrieres-meursault' && file.fillColor === '#FFD700') ||
+                       (region.id === 'les-genevrieres' && file.fillColor === '#F0E68C') ||
+                       (region.id === 'les-charmes-meursault' && file.fillColor === '#DAA520') ||
+                       (region.id === 'porusot' && file.fillColor === '#B8860B') ||
+                       (region.id === 'goutte-dor' && file.fillColor === '#CD853F') ||
                        (region.id === 'puligny-montrachet' && file.fillColor === '#FFFF00') ||
                        (region.id === 'puligny-village' && file.fillColor === '#FFFACD') ||
+                       (region.id === 'puligny-village' && file.fillColor === '#FFFACD') ||
+                       (region.id === 'les-pucelles' && file.fillColor === '#FFFF00') ||
+                       (region.id === 'le-cailleret' && file.fillColor === '#F0E68C') ||
+                       (region.id === 'les-combettes' && file.fillColor === '#FFD700') ||
+                       (region.id === 'les-folatieres' && file.fillColor === '#DAA520') ||
+                       (region.id === 'champ-canet' && file.fillColor === '#B8860B') ||
                        (region.id === 'chassagne-montrachet' && file.fillColor === '#F5DEB3') ||
                        (region.id === 'chassagne-village' && file.fillColor === '#FFEFD5') ||
                        (region.id === 'montrachet' && file.fillColor === '#FFD700') ||
@@ -285,6 +312,13 @@ const toggleRegion = async (region) => {
                        (region.id === 'santenay' && file.fillColor === '#BC8F8F') ||
                        (region.id === 'pommard' && file.fillColor === '#8B0000') ||
                        (region.id === 'volnay' && file.fillColor === '#DC143C') ||
+                       (region.id === 'pommard' && file.fillColor === '#8B0000') ||
+                       (region.id === 'les-rugiens' && file.fillColor === '#8B0000') ||
+                       (region.id === 'les-epenots' && file.fillColor === '#A52A2A') ||
+                       (region.id === 'volnay' && file.fillColor === '#DC143C') ||
+                       (region.id === 'caillerets-volnay' && file.fillColor === '#DC143C') ||
+                       (region.id === 'champans' && file.fillColor === '#CD5C5C') ||
+                       (region.id === 'santenots' && file.fillColor === '#B22222') ||
                        (region.id === 'petit-chablis' && file.fillColor === '#E8D5A8') ||
                        (region.id === 'chablis' && file.fillColor === '#DBC68F') ||
                        (region.id === 'premier-cru' && file.fillColor === '#CEB776') ||
@@ -379,6 +413,21 @@ const toggleRegion = async (region) => {
           } else if (region.id === 'gevrey-village') {
             padding = 50
             maxZoom = 12.5
+          } else if (region.id === 'clos-saint-jacques') {
+            padding = 20
+            maxZoom = 15.5
+          } else if (region.id === 'les-cazetiers') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'lavaut-saint-jacques') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'aux-combottes') {
+            padding = 15
+            maxZoom = 16
+          } else if (region.id === 'estournelles-saint-jacques') {
+            padding = 20
+            maxZoom = 15.5
           } else if (region.id === 'chambertin') {
             padding = 25
             maxZoom = 15
@@ -433,6 +482,21 @@ const toggleRegion = async (region) => {
           } else if (region.id === 'chambolle-village') {
             padding = 35
             maxZoom = 13
+          } else if (region.id === 'les-amoureuses') {
+            padding = 20
+            maxZoom = 15.5
+          } else if (region.id === 'les-charmes-chambolle') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-fuees') {
+            padding = 20
+            maxZoom = 15.5
+          } else if (region.id === 'les-cras-chambolle') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'aux-beaux-bruns') {
+            padding = 20
+            maxZoom = 15.5
           } else if (region.id === 'musigny') {
             padding = 25
             maxZoom = 15
@@ -478,6 +542,21 @@ const toggleRegion = async (region) => {
           } else if (region.id === 'nuits-saint-georges') {
             padding = 50
             maxZoom = 12
+          } else if (region.id === 'les-saint-georges') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-vaucrains') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-cailles-nsg') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'aux-boudots') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-pruliers') {
+            padding = 30
+            maxZoom = 14.5
           } else if (region.id === 'aloxe-corton') {
             padding = 35
             maxZoom = 13.5
@@ -505,12 +584,48 @@ const toggleRegion = async (region) => {
           } else if (region.id === 'meursault-village') {
             padding = 40
             maxZoom = 13
+          } else if (region.id === 'meursault-village') {
+            padding = 40
+            maxZoom = 13
+          } else if (region.id === 'les-perrieres-meursault') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-genevrieres') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-charmes-meursault') {
+            padding = 30
+            maxZoom = 14.5
+          } else if (region.id === 'porusot') {
+            padding = 20
+            maxZoom = 15.5
+          } else if (region.id === 'goutte-dor') {
+            padding = 25
+            maxZoom = 15
           } else if (region.id === 'puligny-montrachet') {
             padding = 35
             maxZoom = 13.5
           } else if (region.id === 'puligny-village') {
             padding = 35
             maxZoom = 13.5
+          } else if (region.id === 'puligny-village') {
+            padding = 40
+            maxZoom = 13
+          } else if (region.id === 'les-pucelles') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'le-cailleret') {
+            padding = 20
+            maxZoom = 15.5
+          } else if (region.id === 'les-combettes') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-folatieres') {
+            padding = 30
+            maxZoom = 14.5
+          } else if (region.id === 'champ-canet') {
+            padding = 25
+            maxZoom = 15
           } else if (region.id === 'chassagne-montrachet') {
             padding = 35
             maxZoom = 13
@@ -547,6 +662,27 @@ const toggleRegion = async (region) => {
           } else if (region.id === 'clos-vougeot') {
             padding = 30
             maxZoom = 14
+          } else if (region.id === 'pommard') {
+            padding = 45
+            maxZoom = 13
+          } else if (region.id === 'les-rugiens') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'les-epenots') {
+            padding = 30
+            maxZoom = 14.5
+          } else if (region.id === 'volnay') {
+            padding = 40
+            maxZoom = 13
+          } else if (region.id === 'caillerets-volnay') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'champans') {
+            padding = 25
+            maxZoom = 15
+          } else if (region.id === 'santenots') {
+            padding = 25
+            maxZoom = 15
           } else if (region.id === 'petit-chablis') {
             padding = 60
             maxZoom = 11.5

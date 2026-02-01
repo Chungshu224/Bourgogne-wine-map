@@ -6,13 +6,16 @@
     <div class="slide-body">
       <div class="timeline">
         <div 
-          v-for="(item, index) in slide.timeline" 
+          v-for="(item, index) in slide.events" 
           :key="index" 
           class="timeline-item"
         >
           <div class="timeline-year">{{ item.year }}</div>
           <div class="timeline-connector"></div>
-          <div class="timeline-event">{{ item.event }}</div>
+          <div class="timeline-event">
+            <div class="event-title">{{ item.title }}</div>
+            <div class="event-description">{{ item.description }}</div>
+          </div>
         </div>
       </div>
     </div>
@@ -113,6 +116,19 @@ defineProps({
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.event-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #667eea;
+  margin-bottom: 8px;
+}
+
+.event-description {
+  font-size: 16px;
+  color: #5a6c7d;
+  line-height: 1.5;
+}
+
 @media (max-width: 768px) {
   .timeline-slide {
     padding: 40px 30px;
@@ -135,6 +151,15 @@ defineProps({
   .timeline-event {
     font-size: 15px;
     padding: 12px 16px;
+  }
+
+  .event-title {
+    font-size: 17px;
+    margin-bottom: 6px;
+  }
+
+  .event-description {
+    font-size: 14px;
   }
 }
 </style>

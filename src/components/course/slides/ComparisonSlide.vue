@@ -52,6 +52,29 @@
         </div>
       </div>
 
+      <!-- 左右對比佈局 -->
+      <div v-else-if="slide.leftTitle && slide.rightTitle" class="side-by-side-comparison">
+        <div class="comparison-column left">
+          <h3 class="column-title">{{ slide.leftTitle }}</h3>
+          <ul class="comparison-points">
+            <li v-for="(point, index) in slide.leftPoints" :key="index">
+              {{ point }}
+            </li>
+          </ul>
+        </div>
+        <div class="comparison-divider">
+          <span class="vs-text">VS</span>
+        </div>
+        <div class="comparison-column right">
+          <h3 class="column-title">{{ slide.rightTitle }}</h3>
+          <ul class="comparison-points">
+            <li v-for="(point, index) in slide.rightPoints" :key="index">
+              {{ point }}
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <!-- 通用對比表 -->
       <div v-else-if="slide.comparison" class="comparison-table">
         <table>
@@ -300,6 +323,125 @@ const formatKey = (key) => {
   background: #f5f7fa;
 }
 
+/* 左右對比佈局樣式 */
+.side-by-side-comparison {
+  display: flex;
+  align-items: stretch;
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.comparison-column {
+  flex: 1;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e3eaf2 100%);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.comparison-column:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.25);
+}
+
+.comparison-column.left {
+  border-left: 4px solid #667eea;
+}
+
+.comparison-column.right {
+  border-right: 4px solid #764ba2;
+}
+
+.column-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 24px 0;
+  padding-bottom: 16px;
+  border-bottom: 2px solid #667eea;
+  text-align: center;
+}
+
+.comparison-column.right .column-title {
+  border-bottom-color: #764ba2;
+}
+
+.comparison-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.comparison-points li {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #2c3e50;
+  padding: 12px 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  position: relative;
+  padding-left: 40px;
+  transition: all 0.25s ease;
+}
+
+.comparison-points li:hover {
+  transform: translateX(4px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.comparison-points li::before {
+  content: '✓';
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667eea;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.comparison-column.right .comparison-points li::before {
+  color: #764ba2;
+}
+
+.comparison-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.vs-text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #667eea;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 16px;
+  border: 3px solid #667eea;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
 @media (max-width: 768px) {
   .comparison-slide {
     padding: 40px 30px;
@@ -319,6 +461,36 @@ const formatKey = (key) => {
 
   .grape-header h3 {
     font-size: 20px;
+  }
+
+  .side-by-side-comparison {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .comparison-divider {
+    width: 100%;
+    height: 50px;
+  }
+
+  .vs-text {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+
+  .comparison-column {
+    padding: 24px;
+  }
+
+  .column-title {
+    font-size: 1.25rem;
+  }
+
+  .comparison-points li {
+    font-size: 1rem;
+    padding: 10px 14px;
+    padding-left: 36px;
   }
 }
 </style>

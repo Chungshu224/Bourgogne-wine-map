@@ -110,6 +110,7 @@
       "wineStyle": "優雅細膩，充滿魅力",
       "tastingNotes": "紅莓果、花香、香料",
       "agingPotential": "10-18年",
+      "producers": ["Dujac", "Ponsot"],
       "color": "#CD853F"
     },
     "aux-cheseaux": {
@@ -124,6 +125,7 @@
       "wineStyle": "結構良好，礦物感強",
       "tastingNotes": "黑果、礦物質、香料",
       "agingPotential": "12-20年",
+      "producers": ["Dujac", "Hubert Lignier"],
       "color": "#CD853F"
     },
     "clos-baulet": {
@@ -138,6 +140,7 @@
       "wineStyle": "濃郁飽滿，單寧強勁",
       "tastingNotes": "黑莓、皮革、香料",
       "agingPotential": "12-20年",
+      "producers": ["Domaine des Lambrays"],
       "color": "#CD853F"
     },
     "clos-des-ormes": {
@@ -152,6 +155,7 @@
       "wineStyle": "平衡優雅，結構良好",
       "tastingNotes": "紅果、礦物質、精細香料",
       "agingPotential": "10-18年",
+      "producers": ["Ponsot", "Clos des Lambrays"],
       "color": "#CD853F"
     },
     "clos-sorbe": {
@@ -166,6 +170,7 @@
       "wineStyle": "優雅精緻，礦物感突出",
       "tastingNotes": "櫻桃、花香、石質礦物味",
       "agingPotential": "12-20年",
+      "producers": ["Dujac"],
       "color": "#CD853F"
     },
     "cote-rotie": {
@@ -180,6 +185,7 @@
       "wineStyle": "強勁有力，富有個性",
       "tastingNotes": "黑果、香料、土壤氣息",
       "agingPotential": "12-22年",
+      "producers": ["Ponsot"],
       "color": "#CD853F"
     },
     "la-bussiere": {
@@ -194,6 +200,7 @@
       "wineStyle": "優雅平衡，中等酒體",
       "tastingNotes": "紅果、花香、淡雅香料",
       "agingPotential": "10-18年",
+      "producers": ["Georges Lignier"],
       "color": "#CD853F"
     },
     "la-riotte": {
@@ -208,6 +215,7 @@
       "wineStyle": "結構紮實，單寧豐富",
       "tastingNotes": "黑果、土壤、香料",
       "agingPotential": "12-20年",
+      "producers": ["Dujac", "Hubert Lignier"],
       "color": "#CD853F"
     },
     "le-village": {
@@ -222,6 +230,7 @@
       "wineStyle": "易飲親和，果香豐富",
       "tastingNotes": "紅果、花香、柔和香料",
       "agingPotential": "8-15年",
+      "producers": ["Ponsot", "Georges Lignier"],
       "color": "#CD853F"
     },
     "les-blanchards": {
@@ -236,6 +245,7 @@
       "wineStyle": "純淨優雅，礦物感強",
       "tastingNotes": "櫻桃、白花、石質礦物味",
       "agingPotential": "10-18年",
+      "producers": ["Domaine des Lambrays"],
       "color": "#CD853F"
     },
     "les-chaffots": {
@@ -250,6 +260,7 @@
       "wineStyle": "濃郁集中，結構良好",
       "tastingNotes": "黑果、鐵質礦物、香料",
       "agingPotential": "12-20年",
+      "producers": ["Hubert Lignier"],
       "color": "#CD853F"
     },
     "les-charrieres": {
@@ -264,6 +275,7 @@
       "wineStyle": "精細優雅，層次豐富",
       "tastingNotes": "紅果、花香、精細香料",
       "agingPotential": "10-18年",
+      "producers": ["Dujac"],
       "color": "#CD853F"
     },
     "les-chenevery": {
@@ -278,6 +290,7 @@
       "wineStyle": "豐滿濃郁，單寧強勁",
       "tastingNotes": "黑果、土壤、野生香料",
       "agingPotential": "12-22年",
+      "producers": ["Ponsot"],
       "color": "#CD853F"
     },
     "les-faconnieres": {
@@ -292,6 +305,7 @@
       "wineStyle": "優雅細緻，平衡良好",
       "tastingNotes": "紅果、花香、淡雅礦物質",
       "agingPotential": "10-18年",
+      "producers": ["Georges Lignier"],
       "color": "#CD853F"
     },
     "les-genavrieres": {
@@ -306,6 +320,7 @@
       "wineStyle": "純淨精緻，礦物感顯著",
       "tastingNotes": "櫻桃、白花、石灰質礦物味",
       "agingPotential": "10-18年",
+      "producers": ["Ponsot"],
       "color": "#CD853F"
     },
     "les-gruenchers": {
@@ -320,6 +335,7 @@
       "wineStyle": "結構緊實，陳年潛力佳",
       "tastingNotes": "黑果、土壤、複雜香料",
       "agingPotential": "12-20年",
+      "producers": ["Dujac"],
       "color": "#CD853F"
     },
     "les-millandes": {
@@ -334,6 +350,7 @@
       "wineStyle": "豐滿強勁，結構紮實",
       "tastingNotes": "黑果、皮革、香料",
       "agingPotential": "12-22年",
+      "producers": ["Hubert Lignier"],
       "color": "#CD853F"
     },
     "les-ruchots": {
@@ -348,6 +365,7 @@
       "wineStyle": "優雅精緻，香氣複雜",
       "tastingNotes": "紅果、花香、精細礦物質",
       "agingPotential": "10-20年",
+      "producers": ["Dujac", "Ponsot"],
       "color": "#CD853F"
     },
     "les-sorbes": {
@@ -362,6 +380,7 @@
       "wineStyle": "純淨優雅，礦物感突出",
       "tastingNotes": "櫻桃、花香、石質礦物味",
       "agingPotential": "12-20年",
+      "producers": ["Dujac"],
       "color": "#CD853F"
     },
     "monts-luisants": {
@@ -377,6 +396,7 @@
       "tastingNotes": "紅果、花香、高山礦物質",
       "agingPotential": "10-18年",
       "history": "Morey-Saint-Denis 海拔最高的一級園之一",
+      "producers": ["Ponsot"],
       "color": "#CD853F"
     }
   },

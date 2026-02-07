@@ -586,6 +586,7 @@ watch(
 );
 
 const showAOCGeojson = async (groupName, aocFile) => {
+  console.log('[showAOCGeojson] 開始載入', { groupName, aocFile })
   if (!map) return
   domaines.value = [];
   activeDomaine.value = null;
@@ -610,15 +611,18 @@ const showAOCGeojson = async (groupName, aocFile) => {
     }
 
     // Debug log：方便在 console 檢查實際請求的路徑
-    console.debug('載入 geojson 路徑:', geojsonPath)
+    console.debug('[showAOCGeojson] 載入 geojson 路徑:', geojsonPath)
 
     let geojson
     if (geojsonCache.has(geojsonPath)) {
       geojson = geojsonCache.get(geojsonPath)
+      console.debug('[showAOCGeojson] 使用緩存的 geojson')
     } else {
+      console.debug('[showAOCGeojson] Fetching:', geojsonPath)
       const res = await fetch(geojsonPath)
       if (!res.ok) throw new Error(`無法載入 geojson (${res.status})`)
       geojson = await res.json()
+      console.debug('[showAOCGeojson] GeoJSON 已解析:', geojson.type, '特徵數:', geojson.features?.length)
       geojsonCache.set(geojsonPath, geojson)
     }
 
@@ -729,19 +733,6 @@ const initMap = async (retry = 0) => {
     }
     
     mapboxgl.accessToken = 'pk.eyJ1IjoiY2h1bmdzaHVsZWUiLCJhIjoiY21kcTZqbHU1MDNnODJsczZ5NXBtNms2NCJ9.UThWFp3_47qETAMZWhdrTg'
-    // Ensure Mapbox internal API base URL is explicitly set to a supported TLD
-    // This prevents URL parsing issues in some environments/browsers ("Unlisted TLDs in URLs are not supported")
-    // See: mapbox-gl-js expects a valid API host; set it explicitly to avoid ambiguous values
-    try {
-      if (typeof mapboxgl.baseApiUrl !== 'undefined') {
-        mapboxgl.baseApiUrl = 'https://api.mapbox.com'
-      } else if (mapboxgl && mapboxgl.config) {
-        mapboxgl.config.API_URL = 'https://api.mapbox.com'
-      }
-    } catch (e) {
-      // non-fatal: if this environment doesn't allow setting, continue and let Mapbox handle defaults
-      console.debug('Unable to set Mapbox baseApiUrl:', e)
-    }
     
     map = new mapboxgl.Map({
       container: mapContainer.value,

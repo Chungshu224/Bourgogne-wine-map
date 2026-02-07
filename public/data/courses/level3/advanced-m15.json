@@ -3,11 +3,850 @@
   "title": "綜合案例研究",
   "description": "實際案例分析、模擬專業場景與Level 3總複習與認證準備",
   "lessons": [
-    {"id": "m15-l1", "title": "案例一：酒莊參訪規劃", "duration": "18分鐘", "type": "presentation"},
-    {"id": "m15-l2", "title": "案例二：收藏組合構建", "duration": "18分鐘", "type": "presentation"},
-    {"id": "m15-l3", "title": "案例三：餐廳酒單設計", "duration": "18分鐘", "type": "presentation"},
-    {"id": "m15-l4", "title": "Level 3 總複習", "duration": "18分鐘", "type": "presentation"},
-    {"id": "m15-l5", "title": "認證考試準備", "duration": "18分鐘", "type": "presentation"}
+    {
+      "id": "m15-l1",
+      "title": "案例一：酒莊參訪規劃",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "案例一：酒莊參訪規劃",
+          "subtitle": "Lesson 1 - 18分鐘",
+          "description": "實戰規劃一次完美的布根地酒莊之旅"
+        },
+        {
+          "type": "content",
+          "title": "案例背景與目標",
+          "content": "**客戶檔案**\n\n👤 **李先生，45歲，企業主**\n• 預算：€15,000（含住宿、餐飲、品鑑、購酒）\n• 時間：7天6夜（2026年10月）\n• 目標：深度了解布根地、參訪頂級酒莊、建立長期關係\n• 經驗：中級愛好者，喝過DRC、Leroy，但未訪問過產區\n• 偏好：Pinot Noir、特級園、陳年潛力酒款\n• 語言：英文流利、法文基礎\n\n**規劃目標**\n\n✅ **教育性**：深入了解風土、釀造、歷史\n✅ **體驗性**：品嚐不同等級酒款（村級→特級園）\n✅ **關係建立**：與酒莊建立購酒管道\n✅ **投資考量**：識別值得收藏的酒莊與年份\n✅ **美食體驗**：米其林餐廳與酒款搭配\n\n**挑戰**\n• 頂級酒莊預約困難（需提前3-6個月）\n• 時間有限，需精選酒莊\n• 平衡教育與享受\n• 語言與文化差異"
+        },
+        {
+          "type": "content",
+          "title": "🗓️ 7天行程規劃",
+          "content": "**Day 1 - 週六：抵達與適應**\n• 上午：抵達第戎（Dijon），租車\n• 下午：入住Beaune市中心精品酒店（Hôtel Le Cep 5星）\n• 傍晚：Beaune老城徒步、參觀Hospices de Beaune\n• 晚餐：Le Jardin des Remparts（1星米其林）\n\n**Day 2 - 週日：Côte de Nuits南段**\n• 09:00：Domaine Méo-Camuzet（Vosne-Romanée）\n  - 參訪酒窖、品嚐5款（村級→特級園Cros Parantoux）\n  - 預算：品鑑€80、購酒€1,500\n• 13:00：午餐 - Auberge de la Charme（Prenaux）\n• 15:00：參觀DRC葡萄園（外觀，不開放參訪）\n  - 徒步Romanée-Conti、La Tâche、Richebourg地塊\n  - 專業導遊講解風土差異\n• 18:00：Domaine Forey Père & Fils（小型家族酒莊）\n  - 深度交流、家庭式品鑑\n  - 預算：品鑑€50、購酒€800\n• 20:00：晚餐 - 酒店附近傳統餐廳\n\n**Day 3 - 週一：Côte de Nuits北段**\n• 09:30：Domaine Armand Rousseau（Gevrey-Chambertin）\n  - 預約困難★★★★★（需6個月前透過關係）\n  - 品嚐Chambertin、Clos de Bèze等\n  - 預算：品鑑€150、購酒€3,000\n• 13:00：午餐 - Chez Guy（Gevrey村內）\n• 15:00：Domaine Denis Mortet（較易預約的高品質酒莊）\n  - 品嚐多款Gevrey特級園\n  - 預算：品鑑€80、購酒€1,200\n• 18:00：自由參觀Clos de Vougeot城堡\n• 20:00：晚餐 - Maison Lameloise（Chagny，3星米其林）\n\n**Day 4 - 週二：Côte de Beaune**\n• 09:00：Domaine Leflaive（Puligny-Montrachet）\n  - 白酒大師班、特級園Montrachet品鑑\n  - 預算：品鑑€120、購酒€2,000\n• 13:00：午餐 - Le Montrachet（Puligny村）\n• 15:00：Domaine Marquis d'Angerville（Volnay）\n  - 優雅派紅酒代表\n  - 預算：品鑑€70、購酒€1,000\n• 18:00：參觀Meursault村、自由購物\n• 20:00：晚餐 - Le Charlemagne（Pernand-Vergelesses，1星）\n\n**Day 5 - 週三：深度體驗日**\n• 全日：Domaine Leroy（Vosne-Romanée）\n  - 極難預約★★★★★（需透過頂級酒商介紹）\n  - 深度參訪：葡萄園徒步、酒窖、生物動力法解說\n  - 午餐：酒莊提供簡餐\n  - 品鑑：8-10款（村級→特級園Musigny）\n  - 預算：品鑑€200、購酒€5,000\n• 晚餐：酒店休息（體力恢復）\n\n**Day 6 - 週四：Chablis與Grand Auxerrois**\n• 08:00：驅車前往Chablis（1.5小時）\n• 10:00：Domaine William Fèvre（Chablis特級園專家）\n  - 品嚐7個特級園對比\n  - 預算：品鑑€60、購酒€800\n• 13:00：午餐 - Au Fil du Zinc（Chablis）\n• 15:00：Domaine Vincent Dauvissat（需預約）\n  - Chablis最頂尖生產者\n  - 預算：品鑑€100、購酒€1,200\n• 18:00：返回Beaune\n• 20:00：晚餐 - La Côte d'Or（Saulieu，2星米其林）\n\n**Day 7 - 週五：採購與總結**\n• 上午：Beaune酒商採購（Patriarche、Bouchard等）\n  - 補齊清單、批量購買\n  - 預算：€2,000\n• 午餐：Beaune市場體驗\n• 下午：整理、打包、安排運輸\n• 晚餐：告別晚宴 - Loiseau des Vignes（Beaune，1星）\n• 翌日返程"
+        },
+        {
+          "type": "list",
+          "title": "💰 詳細預算分配（€15,000）",
+          "points": [
+            "**住宿**：€1,200（6晚 × €200/晚，5星精品酒店）",
+            "**餐飲**：€2,000（米其林3次 + 日常餐飲）",
+            "**租車與油費**：€500（7天）",
+            "**酒莊品鑑費**：€910（9個酒莊）",
+            "**購酒**：€9,500",
+            "  - Rousseau：€3,000（6瓶特級園）",
+            "  - Leroy：€5,000（4瓶特級園）",
+            "  - 其他酒莊：€1,500（15-20瓶）",
+            "**導遊服務**：€400（DRC葡萄園專業導覽）",
+            "**運輸**：€300（酒款運回台灣，溫控）",
+            "**雜支**：€190（小費、停車、門票等）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "📝 預約策略與注意事項",
+          "content": "**頂級酒莊預約難度分級**\n\n⭐⭐⭐⭐⭐ **極難（需6個月前+關係）**\n• DRC：基本不開放個人參訪\n• Leroy：需透過頂級酒商或侍酒師介紹\n• Rousseau：需提前6個月、透過進口商\n• Leflaive：需提前4-6個月\n\n⭐⭐⭐ **中等（提前2-3個月）**\n• Méo-Camuzet：官網預約系統\n• Denis Mortet：email預約\n• William Fèvre：較易預約\n\n⭐ **容易（提前1個月）**\n• 小型家族酒莊\n• Beaune酒商（walk-in可）\n\n**預約信件範本（英文）**\n\n```\nSubject: Visit Request - October 2026\n\nDear [Winery Name],\n\nI am writing to request a visit to your esteemed domaine during my trip to Burgundy from October 12-18, 2026.\n\nI am a serious Burgundy collector from Taiwan with particular interest in [specific wines]. I would be honored to visit your estate, tour the vineyards and cellar, and taste your wines.\n\nI am flexible with dates and happy to accommodate your schedule. I understand there may be a tasting fee and am prepared to purchase wines.\n\nI was referred to you by [wine merchant/sommelier name if applicable].\n\nThank you for considering my request.\n\nBest regards,\n[Your Name]\n[Contact Information]\n```\n\n**關鍵成功因素**\n\n✅ **提前規劃**：至少6個月前開始預約\n✅ **建立關係**：透過酒商、侍酒師介紹\n✅ **展現誠意**：表明購買意願、長期收藏興趣\n✅ **靈活配合**：配合酒莊時間而非堅持己見\n✅ **尊重文化**：學習基本法文禮貌用語\n✅ **專業形象**：穿著得體、準時、有禮貌"
+        },
+        {
+          "type": "comparison",
+          "title": "大型酒商 vs 小型酒莊訪問對比",
+          "leftTitle": "🏢 大型酒商（易預約）",
+          "leftPoints": [
+            "代表：Bouchard、Drouhin、Jadot",
+            "預約：Walk-in或提前1週",
+            "費用：€20-50（含品鑑5-8款）",
+            "優勢：選擇多、英文流利、購買方便",
+            "適合：初次訪問、快速體驗",
+            "缺點：商業化、缺乏深度交流",
+            "建議：作為補充，非主要行程"
+          ],
+          "rightTitle": "🍇 頂級精品酒莊（難預約）",
+          "rightPoints": [
+            "代表：DRC、Leroy、Rousseau、Leflaive",
+            "預約：6個月前+關係引薦",
+            "費用：€100-200（含特級園品鑑）",
+            "優勢：深度交流、頂級品質、建立關係",
+            "適合：認真藏家、長期投資",
+            "挑戰：語言、預約困難、價格高",
+            "建議：行程核心，值得所有努力"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "✅ 行程成功檢核表",
+          "points": [
+            "**出發前3個月**",
+            "  ☑ 所有酒莊預約確認",
+            "  ☑ 米其林餐廳訂位",
+            "  ☑ 租車預訂（含GPS、保險）",
+            "  ☑ 酒店預訂確認",
+            "**出發前1個月**",
+            "  ☑ 再次確認所有預約",
+            "  ☑ 準備品鑑筆記本、相機",
+            "  ☑ 列出購酒清單與預算",
+            "  ☑ 學習基本法文禮貌用語",
+            "**旅行期間**",
+            "  ☑ 每日品鑑筆記記錄",
+            "  ☑ 拍照記錄（葡萄園、酒標、人物）",
+            "  ☑ 索取酒莊名片與聯繫方式",
+            "  ☑ 記錄購酒清單與價格",
+            "**返家後**",
+            "  ☑ 發送感謝信給所有酒莊",
+            "  ☑ 整理品鑑筆記與照片",
+            "  ☑ 追蹤酒款運輸狀況",
+            "  ☑ 建立酒莊聯繫資料庫"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "💡 專家建議與常見錯誤",
+          "content": "**專家建議**\n\n👍 **DO（應該做的）**\n• 每天最多3個酒莊（品質>數量）\n• 預留彈性時間（突發狀況、疲勞）\n• 午餐選擇清淡（下午還要品酒）\n• 準備吐酒桶或杯（品鑑≠暍醉）\n• 記錄一切（筆記、照片、名片）\n• 購買時當機立斷（猶豫就沒了）\n• 尊重酒莊時間（準時、不遲到）\n\n👎 **DON'T（避免做的）**\n• 一天排5個以上酒莊（品鑑疲勞）\n• 週末參訪（多數酒莊關閉）\n• 空腹品酒（容易醉、影響判斷）\n• 討論價格過於直接（法國人含蓄）\n• 過度比較酒莊（不禮貌）\n• 只品鑑不購買（被列入黑名單）\n• 遲到或臨時取消（破壞信譽）\n\n**常見錯誤**\n\n❌ **錯誤1：行程過滿**\n「第一天排了5個酒莊，到第三個就累了，後面兩個完全無法專心品鑑。」\n✅ 解決：每天最多3個，保留探索與休息時間。\n\n❌ **錯誤2：沒有提前預約**\n「以為可以walk-in頂級酒莊，結果全部吃閉門羹。」\n✅ 解決：至少提前3-6個月預約。\n\n❌ **錯誤3：語言準備不足**\n「小酒莊主人不會英文，溝通困難，錯過很多知識。」\n✅ 解決：聘請專業導遊或學習基礎法文。\n\n❌ **錯誤4：購酒猶豫**\n「當天沒買，回來後想買發現已售罄或漲價。」\n✅ 解決：喜歡就買，尤其是限量酒款。\n\n❌ **錯誤5：沒有建立關係**\n「品鑑完就走，沒留聯繫方式，失去長期購酒管道。」\n✅ 解決：索取名片、發感謝信、保持聯繫。"
+        },
+        {
+          "type": "content",
+          "title": "🎯 案例總結與學習要點",
+          "content": "**李先生行程執行結果**\n\n**成功預約的酒莊**\n✅ Méo-Camuzet：順利預約並購得Cros Parantoux\n✅ Rousseau：透過台灣進口商引薦成功\n✅ Leroy：透過香港酒商介紹（等待6個月）\n✅ Leflaive：官網預約，品嚐到Montrachet\n✅ 其他小酒莊：全部順利\n\n**購酒成果**\n• 總計30瓶，花費€9,500\n• 包含3瓶Rousseau特級園\n• 2瓶Leroy Musigny（配額制）\n• 5瓶Leflaive特級園白酒\n• 其他優質村級與一級園\n\n**投資回報預測**\n• 2026購入：€9,500\n• 預測2031市值：€18,000-20,000\n• 5年投資回報：+100%\n• 部分飲用、部分收藏\n\n**無形收穫**\n• 建立5家酒莊長期購酒關係\n• 深度理解布根地風土與文化\n• 品鑑能力顯著提升\n• 結識同好與專業人士\n• 終身難忘的體驗\n\n**關鍵學習要點**\n\n1️⃣ **提前規劃是成功關鍵**（6個月起跑）\n2️⃣ **關係比金錢重要**（透過引薦事半功倍）\n3️⃣ **質量勝過數量**（3個頂級酒莊>10個普通參訪）\n4️⃣ **尊重與誠意**（準時、有禮、購買支持）\n5️⃣ **長期思維**（建立關係、持續購酒）\n\n**適用情境**\n本案例適合：\n• 預算充足的認真藏家\n• 首次深度產區訪問\n• 建立長期酒莊關係\n• 投資與品鑑並重\n\n可依據不同預算（€5K、€10K、€20K）與時間（3天、7天、14天）調整規模。"
+        }
+      ]
+    },
+    {
+      "id": "m15-l2",
+      "title": "案例二：收藏組合構建",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "案例二：收藏組合構建",
+          "subtitle": "Lesson 2 - 18分鐘",
+          "description": "從零開始建立平衡的布根地酒窖"
+        },
+        {
+          "type": "content",
+          "title": "案例背景與目標",
+          "content": "**客戶檔案**\n\n👤 **陳女士，38歲，金融業高管**\n• 預算：NT$1,500,000（約€42,000）\n• 目標：3年內建立150-200瓶的精品酒窖\n• 比例：70%飲用、30%投資收藏\n• 風險偏好：中等（平衡品質與價格）\n• 飲用頻率：每週2-3瓶\n• 經驗：Level 2程度，參加過多次品酒會\n• 偏好：紅白酒並重、布根地為主\n\n**陳女士的需求**\n\n🍷 **日常飲用**（50-60瓶）\n• 價格：NT$3,000-8,000/瓶\n• 適飲期：現在到2030年\n• 用途：平日晚餐、朋友小聚\n\n🎯 **特殊場合**（40-50瓶）\n• 價格：NT$8,000-20,000/瓶\n• 適飲期：2030-2040年\n• 用途：重要慶祝、商務宴請\n\n💎 **投資收藏**（50-60瓶）\n• 價格：NT$20,000-50,000/瓶\n• 陳年潛力：10-20年\n• 用途：長期持有、增值、終極品鑑\n\n**挑戰**\n• 有限預算內取得最佳性價比\n• 平衡不同需求與飲用時程\n• 避免過度集中單一酒莊或年份\n• 確保適當的紅白比例"
+        },
+        {
+          "type": "content",
+          "title": "📊 酒窖組合策略分析",
+          "content": "**配置原則**\n\n**1️⃣ 金字塔結構**（數量與價格反比）\n\n```\n         💎 投資級\n        30% 預算\n       20% 數量\n      (30-40瓶)\n    \n      🎯 特殊場合\n     40% 預算\n    30% 數量\n   (50-60瓶)\n  \n   🍷 日常飲用\n  30% 預算\n 50% 數量\n(70-90瓶)\n```\n\n**2️⃣ 紅白酒比例**\n• 紅酒：70%（布根地Pinot Noir為主）\n• 白酒：30%（Chardonnay + Chablis）\n\n**3️⃣ 產區分布**（以布根地為核心）\n• Côte de Nuits紅酒：40%\n• Côte de Beaune紅酒：20%\n• Côte de Beaune白酒：25%\n• Chablis：10%\n• 其他（香檳、隆河備用）：5%\n\n**4️⃣ 等級分布**\n• 特級園 Grand Cru：15%\n• 一級園 Premier Cru：35%\n• 村級 Village：40%\n• 地區級 Regional：10%\n\n**5️⃣ 年份分布**（避免單一年份風險）\n• 偉大年份（2015, 2019, 2022）：30%\n• 優質年份（2017, 2020, 2021）：50%\n• 早飲年份（2018, 2023）：20%"
+        },
+        {
+          "type": "list",
+          "title": "🍷 日常飲用組合（30%預算，50%數量）",
+          "points": [
+            "**預算配置**：NT$450,000（約€12,600）",
+            "**目標數量**：75-90瓶",
+            "**平均單價**：NT$5,000-6,000/瓶",
+            "**Côte de Nuits村級紅酒**（30瓶，@NT$4,000-7,000）",
+            "  - Gevrey-Chambertin Village：6瓶（不同酒莊）",
+            "  - Chambolle-Musigny Village：6瓶",
+            "  - Vosne-Romanée Village：4瓶（較貴）",
+            "  - Nuits-Saint-Georges Village：6瓶",
+            "  - Morey-Saint-Denis Village：4瓶",
+            "  - Fixin、Marsannay：4瓶（性價比高）",
+            "**Côte de Beaune村級紅酒**（15瓶）",
+            "  - Pommard、Volnay：各4瓶",
+            "  - Beaune、Savigny：各3-4瓶",
+            "**Côte de Beaune村級白酒**（20瓶）",
+            "  - Meursault Village：6瓶",
+            "  - Puligny/Chassagne Village：各4瓶",
+            "  - Saint-Aubin：6瓶（性價比★★★★★）",
+            "**Chablis**（10瓶）",
+            "  - Chablis Premier Cru：10瓶（各特級園各1-2瓶）",
+            "**推薦酒莊**：Louis Jadot、Joseph Drouhin、Faiveley（品質穩定）"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🎯 特殊場合組合（40%預算，30%數量）",
+          "points": [
+            "**預算配置**：NT$600,000（約€16,800）",
+            "**目標數量**：50-60瓶",
+            "**平均單價**：NT$10,000-12,000/瓶",
+            "**Côte de Nuits一級園紅酒**（25瓶）",
+            "  - Gevrey 1er Cru（Lavaut St-Jacques等）：6瓶",
+            "  - Chambolle 1er Cru（Les Amoureuses等）：5瓶",
+            "  - Vosne 1er Cru（Malconsorts等）：6瓶",
+            "  - Nuits 1er Cru（Les Saint-Georges）：4瓶",
+            "  - Morey 1er Cru（Clos des Ormes）：4瓶",
+            "**Côte de Nuits特級園**（8瓶，入門級）",
+            "  - Clos de Vougeot：3瓶",
+            "  - Échézeaux：3瓶",
+            "  - Charmes-Chambertin：2瓶",
+            "**Côte de Beaune一級園紅酒**（8瓶）",
+            "  - Volnay 1er Cru：4瓶",
+            "  - Pommard 1er Cru：4瓶",
+            "**白酒一級園與特級園**（12瓶）",
+            "  - Meursault 1er Cru：4瓶",
+            "  - Puligny 1er Cru：4瓶",
+            "  - Corton-Charlemagne（特級園）：2瓶",
+            "  - Chablis Grand Cru：2瓶",
+            "**推薦酒莊**：Méo-Camuzet、Denis Mortet、Hubert Lignier、Leflaive"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💎 投資收藏組合（30%預算，20%數量）",
+          "points": [
+            "**預算配置**：NT$450,000（約€12,600）",
+            "**目標數量**：30-40瓶",
+            "**平均單價**：NT$15,000-30,000/瓶",
+            "**頂級特級園紅酒**（18-20瓶）",
+            "  - Chambertin/Clos de Bèze：3瓶（Rousseau若有配額）",
+            "  - Musigny：2瓶（老藤、極具陳年潛力）",
+            "  - Bonnes-Mares：2瓶",
+            "  - Clos de la Roche：2瓶（Dujac、Ponsot）",
+            "  - Richebourg：2瓶",
+            "  - La Tâche：1瓶（若預算允許）",
+            "  - Romanée-Saint-Vivant：2瓶",
+            "  - Grands-Échézeaux：2瓶",
+            "  - Clos de Vougeot：2瓶（頂級地塊，如Méo-Camuzet）",
+            "**頂級白酒特級園**（6瓶）",
+            "  - Montrachet：1瓶（終極目標）",
+            "  - Bâtard-Montrachet：2瓶",
+            "  - Chevalier-Montrachet：2瓶",
+            "  - Corton-Charlemagne：1瓶",
+            "**DRC等級（如有機會）**（2-3瓶）",
+            "  - DRC La Tâche：1瓶（NT$100K等級）",
+            "  - Leroy Musigny/Chambertin：2瓶",
+            "**投資策略**：",
+            "  - 偉大年份優先（2015, 2019, 2022）",
+            "  - 分批購買（降低市場波動風險）",
+            "  - 原木箱優先（保值性更高）",
+            "  - 完美瓶況（投資前提）",
+            "**預期報酬**：10年內100-200%增值（歷史數據參考）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "📅 3年分批購買計畫",
+          "content": "**Year 1（2026）：建立基礎（NT$600K）**\n\n**Q1-Q2：日常飲用組（NT$200K）**\n• 購買30瓶村級紅酒（現貨）\n• 購買15瓶白酒與Chablis\n• 目標：立即可飲、建立習慣\n\n**Q3：特殊場合組（NT$250K）**\n• 購買20瓶一級園（現貨+期酒）\n• 購買5瓶入門特級園\n• 開始建立酒莊關係\n\n**Q4：首批投資級（NT$150K）**\n• 購買5-8瓶頂級特級園\n• 參加拍賣會獲取稀有酒款\n• 年終回顧與調整策略\n\n---\n\n**Year 2（2027）：深化組合（NT$550K）**\n\n**Q1-Q2：日常補充（NT$150K）**\n• 補充消耗的日常用酒\n• 嘗試新酒莊與產區\n\n**Q2-Q3：特殊場合擴充（NT$200K）**\n• 增加一級園數量\n• 購買2-3瓶中階特級園\n\n**Q4：重點投資（NT$200K）**\n• 2027年偉大年份期酒（若有）\n• 拍賣會獲取陳年酒款\n• 參訪布根地、建立酒莊關係\n\n---\n\n**Year 3（2028）：完善組合（NT$350K）**\n\n**Q1-Q2：查漏補缺（NT$150K）**\n• 補足缺少的產區與酒莊\n• 平衡紅白酒比例\n• 調整年份分布\n\n**Q3-Q4：終極目標（NT$200K）**\n• 購買1-2瓶DRC等級酒款\n• 獲取配額制酒莊（Leroy、Rousseau）\n• 完成酒窖目標\n\n---\n\n**分批購買的優勢**\n✅ 分散市場風險（價格波動）\n✅ 學習與調整（避免初期錯誤）\n✅ 現金流管理（不必一次大筆支出）\n✅ 建立關係（長期客戶獲得配額）\n✅ 靈活應對（新年份、市場機會）"
+        },
+        {
+          "type": "comparison",
+          "title": "購買管道比較與建議",
+          "leftTitle": "🏪 零售酒商（主要管道）",
+          "leftPoints": [
+            "優勢：選擇多、可試飲、專業建議",
+            "劣勢：價格較高、熱門酒款難搶",
+            "適合：日常用酒、建立關係",
+            "推薦：",
+            "  - 台灣：尚格、橡木桶、紅酒俱樂部",
+            "  - 香港：Watson's Wine、Altaya",
+            "  - 歐洲：Millesima、Berry Bros",
+            "策略：成為VIP、優先獲配額酒款"
+          ],
+          "rightTitle": "🔨 拍賣會（投資級）",
+          "rightPoints": [
+            "優勢：稀有老酒、完美瓶況、投資級",
+            "劣勢：價格波動、需專業判斷",
+            "適合：投資收藏、絕版酒款",
+            "推薦：",
+            "  - 國際：Acker、Sotheby's、Zachys",
+            "  - 亞洲：香港邦瀚斯",
+            "  - 線上：WineBid",
+            "策略：參加預展、設定價格上限"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🎯 陳女士執行成果（3年後）",
+          "content": "**最終酒窖組成（2028年底）**\n\n**總投資**：NT$1,500,000（執行率100%）\n**總數量**：168瓶\n\n**庫存結構**\n• 日常飲用：82瓶（已消耗部分、持續補充）\n• 特殊場合：56瓶（大部分未開、適飲期2030-2040）\n• 投資收藏：30瓶（完美瓶況、原木箱、長期持有）\n\n**亮點收藏**\n✨ 2015 DRC La Tâche（1瓶）：購入NT$95K，現值NT$150K\n✨ 2019 Leroy Musigny（2瓶）：購入各NT$85K，現值各NT$120K\n✨ 2015 Rousseau Chambertin（2瓶）：購入各NT$28K，現值各NT$42K\n✨ 2019年份特級園組合（12瓶）：穩定增值中\n\n**財務成果**\n• 投資組合市值（2028）：NT$680K → NT$950K（+40%）\n• 已飲用價值：NT$420K\n• 日常/特殊場合存酒：NT$450K\n• **總資產價值**：NT$1,820K（+21%年化報酬）\n\n**無形收穫**\n✅ 建立10家酒莊/酒商長期關係\n✅ 獲得2家頂級酒莊配額（年度穩定供貨）\n✅ 品鑑能力從Level 2提升至Level 3+\n✅ 參訪布根地2次、深度理解風土\n✅ 結識高端品酒圈社群\n✅ 每週高品質葡萄酒享受\n\n**關鍵成功因素**\n\n1️⃣ **清晰目標與紀律**：嚴守預算與配置比例\n2️⃣ **分批購買策略**：分散風險、持續學習\n3️⃣ **關係建立**：成為酒商VIP、獲得配額\n4️⃣ **知識投資**：完成Level 3課程、參訪產區\n5️⃣ **耐心等待**：不急於追高、等待最佳時機\n6️⃣ **記錄追蹤**：CellarTracker管理、定期檢視\n\n**未來5年規劃（2029-2033）**\n• 停止大量購買（酒窖已達目標）\n• 維持性補充日常用酒（年度NT$100K）\n• 機會性購買（偉大年份、稀有配額）\n• 開始飲用投資級酒款（2015年份進入適飲期）\n• 部分投資酒款出售（獲利了結）\n• 傳承計劃（與家人分享）"
+        },
+        {
+          "type": "list",
+          "title": "💡 收藏組合建立要點總結",
+          "points": [
+            "**1. 金字塔結構**：50%數量日常、20%數量投資、創造平衡",
+            "**2. 分散風險**：不同酒莊、年份、產區、等級組合",
+            "**3. 紅白平衡**：70%紅酒、30%白酒符合多數人偏好",
+            "**4. 年份選擇**：30%偉大年份、50%優質年份、20%早飲年份",
+            "**5. 分批購買**：3年分散投入、降低市場波動風險",
+            "**6. 記錄管理**：使用CellarTracker追蹤庫存與價值",
+            "**7. 關係建立**：成為長期客戶、獲取配額與優先購買權",
+            "**8. 持續學習**：完成Level 3、參訪產區、深化知識",
+            "**9. 理性投資**：設定預算上限、避免情緒化購買",
+            "**10. 享受過程**：收藏的目的是享受，而非純投資",
+            "**適用不同預算**：此框架可縮放（NT$500K、1M、2M、5M皆適用）"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m15-l3",
+      "title": "案例三：餐廳酒單設計",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "案例三：餐廳酒單設計",
+          "subtitle": "Lesson 3 - 18分鐘",
+          "description": "為高端法式餐廳打造專業布根地酒單"
+        },
+        {
+          "type": "content",
+          "title": "案例背景",
+          "content": "**餐廳檔案**\n\n🍽️ **Le Terroir - 當代法式餐廳**\n• 地點：台北市信義區\n• 定位：Fine Dining、目標米其林一星\n• 座位：50席\n• 客單價：NT$3,500-5,000（含酒水可達NT$8,000-12,000）\n• 主廚：法國受訓、勃艮第料理風格\n• 開幕：2026年10月\n\n**投資方的需求**\n\n🎯 **商業目標**\n• 酒單成為差異化競爭優勢\n• 酒水毛利率：65-70%\n• 初期酒窖投資：NT$3,000,000\n• 月營收目標：NT$4,500,000（食物60%、酒水40%）\n• 目標客群：企業高管、葡萄酒愛好者、商務宴請\n\n**侍酒師的挑戰**\n\n👨‍🍳 **餐酒搭配需求**\n• 主廚菜單：8道式 Tasting Menu\n• 風格：精緻、清淡、強調食材本味\n• 關鍵食材：松露、鵝肝、海鮮、野味、牛肉\n• 需要：by-the-glass選項（每道配酒）\n\n🍷 **酒單平衡**\n• 入門親民款：讓新客不怯步\n• 中階主力款：主要營收來源\n• 頂級收藏款：建立形象、吸引藏家\n• 布根地為核心、其他產區為輔\n\n💰 **庫存管理**\n• 週轉率：合理庫存、避免資金積壓\n• 陳年策略：部分酒款持有5-10年增值\n• 採購策略：建立酒商關係、獲得配額"
+        },
+        {
+          "type": "content",
+          "title": "🍷 酒單結構設計（NT$3M預算）",
+          "content": "**整體配置原則**\n\n**1️⃣ 產區分布**\n• 布根地：60%（核心競爭力）\n• 香檳：15%（開胃、慶祝）\n• 波爾多：10%（牛排配酒）\n• 隆河、其他法國：10%\n• 新世界：5%（價格友善選項）\n\n**2️⃣ 價格區間分布**（零售價基礎）\n\n```\n金字塔結構：\n\n          NT$30K+\n         頂級收藏\n        10%預算\n       50種選項\n      \n      NT$10K-30K  \n     中高階主力\n    40%預算\n   150種選項\n  \n   NT$5K-10K\n  中階主力款\n 30%預算\n200種選項\n\n  NT$2K-5K\n 入門親民款\n20%預算\n150種選項\n```\n\n**3️⃣ 紅白香檳比例**\n• 紅酒：50%\n• 白酒：35%\n• 香檳/氣泡酒：15%\n\n**4️⃣ By-the-Glass選項**（每杯75-100ml）\n• 白酒：8-10款\n• 紅酒：8-10款\n• 香檳：3-4款\n• 定價：零售價的60-70%/杯（1瓶出5杯）\n• 使用Coravin保存系統（高價酒款）"
+        },
+        {
+          "type": "list",
+          "title": "📋 布根地酒單詳細配置",
+          "points": [
+            "**入門區（NT$2,000-5,000/瓶）- 30款**",
+            "成本：NT$600K | 售價：NT$1.5-1.8M",
+            "**紅酒村級**（15款）",
+            "  - Gevrey-Chambertin Village：3款",
+            "  - Chambolle-Musigny Village：2款",
+            "  - Vosne-Romanée Village：2款（高端入門）",
+            "  - Nuits-Saint-Georges Village：2款",
+            "  - Beaune、Pommard、Volnay：各2款",
+            "**白酒村級**（12款）",
+            "  - Meursault Village：3款",
+            "  - Puligny-Montrachet Village：3款",
+            "  - Chassagne-Montrachet Village：2款",
+            "  - Saint-Aubin：2款（性價比之王）",
+            "  - Chablis Premier Cru：2款",
+            "**特色**：by-the-glass主力、入門友善"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "📋 中階主力區配置",
+          "points": [
+            "**中階區（NT$5,000-10,000/瓶）- 40款**",
+            "成本：NT$900K | 售價：NT$2.5-3.5M",
+            "**紅酒一級園**（20款）",
+            "  - Gevrey 1er Cru（Lavaut St-Jacques等）：4款",
+            "  - Chambolle 1er Cru：3款",
+            "  - Vosne 1er Cru（Malconsorts等）：4款",
+            "  - Nuits 1er Cru：3款",
+            "  - Beaune/Pommard/Volnay 1er Cru：各2款",
+            "**白酒一級園**（15款）",
+            "  - Meursault 1er Cru：4款",
+            "  - Puligny 1er Cru：4款",
+            "  - Chassagne 1er Cru：3款",
+            "  - Chablis Grand Cru：2款",
+            "  - Corton-Charlemagne：2款（特級園入門）",
+            "**入門特級園**（5款）",
+            "  - Clos de Vougeot：2款",
+            "  - Échézeaux：2款",
+            "  - Charmes-Chambertin：1款",
+            "**特色**：主要營收來源、配餐主力、性價比最優"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "📋 中高階與頂級區配置",
+          "points": [
+            "**中高階區（NT$10,000-30,000/瓶）- 35款**",
+            "成本：NT$1.2M | 售價：NT$3.5-7M",
+            "**頂級一級園與特級園**（25款）",
+            "  - Chambertin、Clos de Bèze：各2款",
+            "  - Musigny：2款（紅白各1）",
+            "  - Bonnes-Mares：2款",
+            "  - Clos de la Roche：2款",
+            "  - Richebourg：2款",
+            "  - Romanée-Saint-Vivant：2款",
+            "  - Grands-Échézeaux：2款",
+            "  - La Tâche：2款（若有配額）",
+            "**頂級白酒特級園**（10款）",
+            "  - Montrachet：1款（鎮店之寶）",
+            "  - Bâtard-Montrachet：3款",
+            "  - Chevalier-Montrachet：3款",
+            "  - Corton-Charlemagne：3款",
+            "",
+            "**頂級收藏區（NT$30,000+/瓶）- 20款**",
+            "成本：NT$300K | 售價：NT$1-3M",
+            "**DRC系列**（若有配額）",
+            "  - La Tâche：2瓶",
+            "  - Richebourg：1瓶",
+            "  - Romanée-Saint-Vivant：1瓶",
+            "  - Romanée-Conti：1瓶（終極鎮店）",
+            "**Leroy**",
+            "  - Musigny：2瓶",
+            "  - Chambertin：1瓶",
+            "**其他頂級生產者**",
+            "  - Rousseau Chambertin：2瓶",
+            "  - Henri Jayer（老酒，若有）：1瓶",
+            "  - Dujac、Roumier頂級園：各2瓶",
+            "**特色**：形象建立、藏家吸引、話題製造、增值潛力"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🍾 配餐酒單設計（Pairing Menu）",
+          "content": "**8 Course Tasting Menu 搭配方案**\n\n**標準配餐（NT$3,800/人）**\n每道75ml配酒，總約600ml\n\n```\n1️⃣ 開胃小點\n   Champagne Blanc de Blancs NV\n   → 清爽、細膩、開胃\n\n2️⃣ 生蠔、海膽\n   Chablis Grand Cru Les Clos 2020\n   → 礦物感、高酸、海洋氣息\n\n3️⃣ 炙烤干貝、松露\n   Meursault 1er Cru Perrières 2019\n   → 奶油質地、堅果、白松露呼應\n\n4️⃣ 鵝肝、蘋果\n   Puligny-Montrachet 1er Cru Folatières 2018\n   → 成熟果味、酸度平衡鵝肝油脂\n\n5️⃣ 龍蝦、焦化奶油\n   Corton-Charlemagne Grand Cru 2017\n   → 濃郁、架構、呼應焦化風味\n\n6️⃣ 乳鴿、紅酒醬汁\n   Chambolle-Musigny 1er Cru Les Amoureuses 2019\n   → 優雅、紅色水果、絲滑單寧\n\n7️⃣ 和牛、黑松露\n   Vosne-Romanée 1er Cru Malconsorts 2018\n   → 力量、深度、陳年風味、松露共鳴\n\n8️⃣ 乳酪拼盤\n   Gevrey-Chambertin Village 2020\n   → 結構、陳年潛力、與熟成乳酪互補\n\n🍰 甜點：不配酒或選配甜酒（Sauternes）\n```\n\n**高級配餐（NT$8,800/人）**\n升級為特級園與DRC等級\n\n主要升級：\n• 第5道：Montrachet Grand Cru\n• 第6道：Musigny Grand Cru\n• 第7道：DRC La Tâche 或 Leroy Richebourg\n• 增加Champagne Prestige Cuvée開場\n\n**By-the-Glass 單點配餐**\n客人可依每道菜自由選配\n• 價格：NT$450-3,500/杯\n• 靈活度高、控制預算"
+        },
+        {
+          "type": "comparison",
+          "title": "定價策略與毛利管理",
+          "leftTitle": "💰 定價公式",
+          "leftPoints": [
+            "**入門款（<NT$5K成本）**",
+            "售價 = 成本 × 2.8-3.0",
+            "毛利率：65-67%",
+            "範例：成本NT$2,000 → 售價NT$5,800",
+            "**中階款（NT$5-10K成本）**",
+            "售價 = 成本 × 3.0-3.2",
+            "毛利率：67-69%",
+            "範例：成本NT$7,000 → 售價NT$22,000",
+            "**高階款（NT$10K+成本）**",
+            "售價 = 成本 × 3.2-3.5",
+            "毛利率：69-71%",
+            "範例：成本NT$30,000 → 售價NT$100,000"
+          ],
+          "rightTitle": "📊 收益優化",
+          "rightPoints": [
+            "**By-the-Glass高毛利**",
+            "1瓶出5杯，每杯70%零售價",
+            "實際毛利：75-80%",
+            "範例：NT$5,000酒→5杯各NT$900",
+            "  = NT$4,500營收（成本NT$1,500）",
+            "**Coravin系統投資**",
+            "高價酒（NT$10K+）by-the-glass化",
+            "降低客人心理門檻",
+            "提升高階酒款流動性",
+            "**老酒增值策略**",
+            "持有陳年酒款5-10年",
+            "售價隨市場增值調整",
+            "吸引藏家、建立聲譽"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "📈 執行成果（開幕1年後）",
+          "content": "**營運數據（2027年10月）**\n\n**營收表現**\n• 月平均營收：NT$4,800,000（超標7%）\n• 食物營收：NT$2,800,000（58%）\n• 酒水營收：NT$2,000,000（42%）\n• 酒水毛利率：68%（達標）\n\n**酒單表現**\n\n🏆 **暢銷區間**（NT$8,000-18,000/瓶）\n• 佔總銷售量：60%\n• 佔總營收：55%\n• 代表酒款：\n  - Vosne-Romanée 1er Cru（月銷8-10瓶）\n  - Meursault 1er Cru（月銷12-15瓶）\n  - Chablis Grand Cru（月銷10瓶）\n\n📊 **By-the-Glass成效**\n• 月銷售：600-800杯\n• 營收貢獻：NT$600,000/月\n• 毛利率：78%（高於瓶裝）\n• 客戶接受度：85%配餐選擇by-the-glass\n\n💎 **頂級酒款**\n• DRC La Tâche：售出2瓶（各NT$120,000）\n• Leroy Musigny：售出1瓶（NT$180,000）\n• 話題效應：社群媒體曝光、吸引藏家\n\n**品牌效應**\n\n⭐ **米其林效應**\n• 2027年8月獲米其林一星\n• 酒單被評為「精心策劃的布根地收藏」\n• 訂位需提前1-2個月\n\n🍷 **專業認可**\n• Wine Spectator「Best Award of Excellence」\n• 台灣侍酒師協會推薦\n• 葡萄酒雜誌專題報導\n\n👥 **客群建立**\n• 建立200+ VIP常客\n• 葡萄酒俱樂部定期活動（月度品鑑會）\n• 企業包場商務宴請（高利潤）\n\n**酒窖增值**\n\n📈 **投資回報**\n• 初期投入：NT$3,000,000\n• 1年後庫存價值：NT$2,200,000（部分售出）\n• 已售酒水營收：NT$24,000,000\n• 酒水毛利：NT$16,300,000\n• **ROI**：543%（極高回報）\n\n💰 **陳年增值**\n• 持有的2015/2019年份持續增值\n• 部分酒款售價已調漲20-30%\n• 成為餐廳隱形資產"
+        },
+        {
+          "type": "list",
+          "title": "💡 餐廳酒單設計要點總結",
+          "points": [
+            "**1. 金字塔結構**：20%入門、30%中階、40%中高階、10%頂級",
+            "**2. By-the-Glass核心**：降低門檻、提高毛利、配餐靈活",
+            "**3. 布根地為魂**：60%配置、建立專業形象、差異化競爭",
+            "**4. 價格區間完整**：從NT$2K到NT$100K+滿足所有客群",
+            "**5. 配餐邏輯清晰**：每道菜有2-3個配酒選項、專業推薦",
+            "**6. 定價策略合理**：成本×2.8-3.5、毛利65-70%、市場競爭力",
+            "**7. 庫存管理精準**：快銷款大量、慢銷款少量、老酒增值",
+            "**8. 關係建立重要**：酒商VIP、配額獲取、穩定供應",
+            "**9. 持續更新**：季節性調整、新年份引進、陳年酒款推出",
+            "**10. 品牌建設**：米其林、Wine Spectator、專業認證加持",
+            "**適用場景**：Fine Dining、酒吧、Wine Bistro皆可調整應用"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m15-l4",
+      "title": "Level 3 總複習",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "Level 3 總複習",
+          "subtitle": "Lesson 4 - 18分鐘",
+          "description": "系統回顧Level 3所有核心知識點"
+        },
+        {
+          "type": "content",
+          "title": "Level 3 課程架構總覽",
+          "content": "**15個進階模塊完整回顧**\n\n**🎯 核心能力培養**\n\nLevel 3課程歷時15個模塊，建立了從**進階愛好者到專業水準**的完整知識體系：\n\n✅ **深度風土理解**（M1-M5）\n✅ **生產者與酒莊**（M6-M7）\n✅ **投資與市場**（M8-M10）\n✅ **商業實務**（M11-M13）\n✅ **專業技能**（M14-M15）\n\n**學習時長**：約5小時高強度內容\n**測驗次數**：15次專業測驗\n**案例研究**：30+真實案例分析\n**實戰場景**：酒莊參訪、收藏組合、餐廳酒單等\n\n**完成Level 3後，你已具備**\n\n🏆 **專業品鑑能力**：使用標準術語、系統化評估\n🏆 **投資決策能力**：評估陳年潛力、市場價值\n🏆 **商業應用能力**：酒單設計、採購策略\n🏆 **文化理解深度**：風土、歷史、生產哲學\n🏆 **專業認證準備**：WSET Diploma、MS基礎"
+        },
+        {
+          "type": "list",
+          "title": "📚 M1-M5：風土與產區深度解析",
+          "points": [
+            "**M1：Côte de Nuits核心產區**",
+            "  ✓ 7個村莊：Gevrey到Nuits-Saint-Georges",
+            "  ✓ 24個特級園：地質、微氣候、風格差異",
+            "  ✓ 關鍵酒莊：DRC、Leroy、Rousseau等",
+            "**M2：Côte de Beaune精華**",
+            "  ✓ 紅酒：Pommard、Volnay優雅派",
+            "  ✓ 白酒：Meursault、Puligny-Montrachet",
+            "  ✓ 特級園：Montrachet家族、Corton系列",
+            "**M3：Chablis與Grand Auxerrois**",
+            "  ✓ Kimmeridgian土壤獨特性",
+            "  ✓ 7個特級園：從Bougros到Vaudésir",
+            "  ✓ 生產者：Raveneau、Dauvissat、Fèvre",
+            "**M4：Côte Chalonnaise與Mâconnais**",
+            "  ✓ 性價比產區：Mercurey、Givry、Rully",
+            "  ✓ Pouilly-Fuissé白酒崛起",
+            "**M5：Beaujolais特殊性**",
+            "  ✓ Gamay品種特色",
+            "  ✓ 10個Cru：Morgon、Fleurie、Moulin-à-Vent",
+            "  ✓ 半二氧化碳浸漬法"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🏛️ M6-M7：歷史、文化與生產者",
+          "points": [
+            "**M6：布根地葡萄酒歷史**",
+            "  ✓ 羅馬時期起源",
+            "  ✓ 修道院（Cîteaux、Cluny）奠定Climat系統",
+            "  ✓ 法國大革命土地重分配",
+            "  ✓ 19世紀根瘤蚜危機與重建",
+            "  ✓ AOC系統建立（1936）",
+            "  ✓ 當代發展：氣候變遷、有機/生物動力",
+            "**M7：傳奇生產者深度研究**",
+            "  ✓ DRC：獨占園策略、天價背後的品質",
+            "  ✓ Leroy：Lalou Bize-Leroy的生物動力哲學",
+            "  ✓ Rousseau：Chambertin王者地位",
+            "  ✓ 新生代：Sylvain Cathiard、Prieuré Roch",
+            "  ✓ Henri Jayer傳承與影響",
+            "  ✓ 名莊風格對比：優雅vs力量"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "💰 M8-M10：投資、市場與氣候",
+          "points": [
+            "**M8：投資與陳年潛力評估**",
+            "  ✓ 陳年曲線：年輕期→適飲期→巔峰→衰退",
+            "  ✓ 評估指標：酸度、單寧、濃度、平衡",
+            "  ✓ 投資級酒款條件：特級園+偉大年份+頂級生產者",
+            "  ✓ 歷史投資回報：DRC La Tâche 10年+200%",
+            "  ✓ 儲存條件：溫濕度、震動、光線控制",
+            "**M9：年份評估與氣候影響**",
+            "  ✓ 偉大年份：2005,2009,2010,2015,2019,2022",
+            "  ✓ 年份特徵：溫度、降雨、採收時機",
+            "  ✓ 氣候變遷影響：採收提前、酒精度上升",
+            "  ✓ 年份vs風土：偉大風土在普通年份仍優秀",
+            "**M10：市場趨勢與價格分析**",
+            "  ✓ Liv-ex指數：布根地15年上漲300%",
+            "  ✓ 供需失衡：產量減少、需求暴增",
+            "  ✓ 亞洲市場崛起：中國、香港、台灣",
+            "  ✓ NFT與數位認證新趨勢",
+            "  ✓ 價格泡沫風險與理性投資"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🍇 M11-M13：商業實務與專業技能",
+          "points": [
+            "**M11：有機與生物動力法**",
+            "  ✓ 有機認證：AB、Ecocert標準",
+            "  ✓ 生物動力法：Demeter認證、配劑500-508",
+            "  ✓ 代表酒莊：Leroy、Leflaive、Trapet",
+            "  ✓ 市場趨勢：消費者偏好、溢價20-30%",
+            "**M12：氣候變遷與未來挑戰**",
+            "  ✓ 溫度上升1.5°C（1980-2020）",
+            "  ✓ 採收時間提前2-3週",
+            "  ✓ 酒精度從12.5%升至14%+",
+            "  ✓ 酒莊應對：遮陰網、晚採品種、高海拔",
+            "  ✓ 2050預測：布根地氣候類似隆河",
+            "**M13：拍賣與交易實務**",
+            "  ✓ 五大拍賣行：Acker、Sotheby's、Zachys等",
+            "  ✓ 拍賣流程：預約→預展→競標→交割",
+            "  ✓ 佣金結構：買家25%、賣家15%",
+            "  ✓ 瓶況評估：IN、BN、TS液位系統",
+            "  ✓ 競標策略：設定上限、避免情緒化",
+            "  ✓ 2018年DRC $558K世界紀錄"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🎓 M14-M15：專業品鑑與綜合應用",
+          "points": [
+            "**M14：專業品鑑報告撰寫**",
+            "  ✓ WSET SAT系統：視覺→嗅覺→味覺→結論",
+            "  ✓ 專業術語：Fine-grained、Silky、Long finish",
+            "  ✓ 評分系統：Parker 100分、Burghound、JR 20分",
+            "  ✓ Burghound權威：96+分極稀有",
+            "  ✓ 品鑑筆記結構：完整模板與實例",
+            "  ✓ CellarTracker工具使用",
+            "  ✓ 實戰演練：村級→特級園→DRC品鑑報告",
+            "**M15：綜合案例研究**（本課）",
+            "  ✓ 案例1：7天布根地酒莊參訪規劃",
+            "  ✓ 案例2：NT$1.5M收藏組合構建",
+            "  ✓ 案例3：Fine Dining餐廳酒單設計",
+            "  ✓ 整合所有Level 3知識",
+            "  ✓ 模擬真實專業場景",
+            "  ✓ 決策能力培養"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "Level 1 vs Level 2 vs Level 3 能力對比",
+          "leftTitle": "🌱 Level 1 入門者",
+          "leftPoints": [
+            "認識布根地5大產區",
+            "了解Pinot Noir與Chardonnay",
+            "知道村級、一級園、特級園差異",
+            "能品嚐並描述基本風味",
+            "知道DRC、Leroy等名莊",
+            "目標：葡萄酒愛好者入門",
+            "時長：2-3小時課程"
+          ],
+          "rightTitle": "🌳 Level 2 進階者",
+          "rightPoints": [
+            "深入理解33個特級園",
+            "掌握各村莊風格特徵",
+            "了解風土與釀造影響",
+            "開始系統化品鑑",
+            "認識50+重要生產者",
+            "目標：進階愛好者、藏家",
+            "時長：3-4小時課程"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🏆 Level 3 專業水準",
+          "content": "**Level 3畢業生能力清單**\n\n✅ **專業品鑑能力**\n• 使用WSET/MS標準品鑑法\n• 撰寫高品質品鑑筆記\n• 盲品準確判斷產區與等級\n• 評估陳年潛力與適飲期\n• 理解並使用專業評分系統\n\n✅ **投資決策能力**\n• 評估酒款投資價值\n• 理解市場趨勢與價格機制\n• 掌握拍賣會運作與策略\n• 建立平衡的收藏組合\n• 預測長期增值潛力\n\n✅ **商業應用能力**\n• 設計專業餐廳酒單\n• 規劃產區參訪行程\n• 酒莊採購與關係建立\n• 成本控制與定價策略\n• 庫存管理與週轉優化\n\n✅ **深度風土理解**\n• 33個特級園風格差異\n• 地質、氣候、微環境影響\n• 歷史與文化脈絡\n• 生產哲學（有機、生物動力）\n• 氣候變遷對產區的影響\n\n✅ **專業認證準備**\n• WSET Level 3 Diploma預備知識\n• Court of Master Sommeliers基礎\n• 布根地專業認證（BIVB）準備\n• 專業侍酒師知識體系\n\n**與專業水準的差距**\n\n目前Level 3 ➡️ 完整專業\n• 理論知識：✅ 90%達標\n• 實戰經驗：🔄 需累積（參訪、品鑑、實務）\n• 盲品能力：🔄 需大量練習（500-1000次）\n• 人脈網絡：🔄 需主動建立（酒莊、酒商、同好）\n• 專業認證：🔄 可報考WSET Diploma、MS\n\n**下一步建議**\n\n1️⃣ **持續品鑑**：每週3-5款、累積1000+經驗\n2️⃣ **產區訪問**：至少1次布根地深度之旅\n3️⃣ **建立酒窖**：實踐收藏組合理論\n4️⃣ **參加認證**：WSET Diploma、MS Level 1-2\n5️⃣ **加入社群**：品酒會、專業組織、線上論壇\n6️⃣ **閱讀訂閱**：Burghound、Vinous、Decanter\n7️⃣ **實務應用**：餐廳顧問、酒商、教學等"
+        },
+        {
+          "type": "list",
+          "title": "🎯 Level 3 核心知識點速記",
+          "points": [
+            "**地理**：Côte d'Or = Côte de Nuits + Côte de Beaune",
+            "**特級園**：33個（24紅+9白），佔布根地<2%產量",
+            "**土壤**：Jurassic石灰岩、泥灰岩、Kimmeridgian（Chablis）",
+            "**氣候**：大陸性、年均1900-2000小時日照、700-800mm降雨",
+            "**品種**：Pinot Noir（紅）、Chardonnay（白）、Gamay（Beaujolais）",
+            "**產量**：150M瓶/年、布根地佔法國3%、但價值20%+",
+            "**等級**：Regional < Village < 1er Cru < Grand Cru",
+            "**DRC**：1.8公頃RC獨占、年產6000瓶、€15-25K/瓶",
+            "**年份**：2005★★★★★、2015★★★★★、2019★★★★★",
+            "**投資**：特級園10年平均+150%、DRC 15年+300%",
+            "**評分**：Parker 96+ = Burghound 94+ = JR 18.5+",
+            "**拍賣**：世界紀錄$558K（1945 DRC RC, 2018）",
+            "**氣候變遷**：1980-2020溫度+1.5°C、採收提前3週",
+            "**新趨勢**：有機30%+、生物動力15%+、女性釀酒師崛起"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m15-l5",
+      "title": "認證考試準備",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "認證考試準備",
+          "subtitle": "Lesson 5 - 18分鐘",
+          "description": "Level 3最終測驗指南與專業認證路徑"
+        },
+        {
+          "type": "content",
+          "title": "Level 3 最終測驗說明",
+          "content": "**測驗概要**\n\n📋 **測驗格式**\n• 題型：選擇題 + 是非題 + 簡答題\n• 題數：50題\n• 時間：60分鐘\n• 及格分數：80分（40/50題正確）\n• 難度：Level 3進階水準\n\n**涵蓋範圍**（M1-M15全部內容）\n\n**Part 1：風土與產區**（30%，15題）\n• 33個特級園名稱、位置、風格\n• 村莊產區特徵與差異\n• 土壤、氣候、微環境\n• Chablis與其他產區特殊性\n\n**Part 2：歷史、文化與生產者**（20%，10題）\n• 布根地葡萄酒歷史重要事件\n• 傳奇生產者與代表作\n• 有機與生物動力法\n• 氣候變遷影響\n\n**Part 3：市場、投資與實務**（25%，12-13題）\n• 陳年潛力評估\n• 年份分析與評價\n• 拍賣會運作與策略\n• 價格趨勢與投資回報\n\n**Part 4：品鑑與專業技能**（25%，12-13題）\n• 專業品鑑術語\n• 評分系統理解\n• 品鑑筆記撰寫\n• 綜合案例分析\n\n**考試技巧**\n\n⏱️ **時間管理**\n• 第一遍：30分鐘快速作答（會的先做）\n• 第二遍：20分鐘處理難題\n• 第三遍：10分鐘檢查答案\n\n🎯 **答題策略**\n• 排除法：先去除明顯錯誤選項\n• 關鍵詞：注意「always」「never」等絕對詞\n• 情境題：代入真實場景思考\n• 不確定：憑第一直覺（改答案往往變錯）\n\n📚 **考前準備**\n• 複習15個模塊的重點筆記\n• 重做所有章節測驗（15次）\n• 背誦33個特級園位置與特色\n• 記憶重要數字與年份\n• 充足睡眠、保持冷靜"
+        },
+        {
+          "type": "list",
+          "title": "🎯 考前衝刺：必背知識點",
+          "points": [
+            "**33個特級園（必背）**",
+            "  Côte de Nuits（24紅）：Chambertin、Clos de Bèze、Latricières、Mazis、Ruchottes、Chapelle、Charmes、Griotte、Mazoyères、Clos de la Roche、Clos Saint-Denis、Clos des Lambrays、Clos de Tart、Bonnes-Mares、Musigny、Grands-Échézeaux、Échézeaux、Clos de Vougeot、Romanée-Conti、La Tâche、La Romanée、Romanée-Saint-Vivant、La Grande Rue、Richebourg",
+            "  Côte de Beaune（8白+1紅）：Corton（紅）、Corton-Charlemagne、Charlemagne、Montrachet、Chevalier-Montrachet、Bâtard-Montrachet、Bienvenues-Bâtard、Criots-Bâtard",
+            "  Chablis（7白）：Blanchot、Bougros、Les Clos、Grenouilles、Preuses、Valmur、Vaudésir",
+            "**頂級生產者與代表作**",
+            "  - DRC：RC、La Tâche、Richebourg、RSV、GE、E、Montrachet",
+            "  - Leroy：Musigny、Chambertin、RSV、Clos de la Roche",
+            "  - Rousseau：Chambertin、Clos de Bèze、Clos St-Jacques",
+            "**偉大年份（必記）**",
+            "  1990★★★★★、1999★★★★、2002★★★★、2005★★★★★、2009★★★★★、2010★★★★★、2015★★★★★、2019★★★★★、2022★★★★★",
+            "**關鍵數字**",
+            "  - 特級園：33個、<2%產量、€50-500+/瓶",
+            "  - 一級園：640個、10%產量",
+            "  - 布根地總產量：150M瓶/年",
+            "  - DRC RC：1.8公頃、6000瓶/年",
+            "  - 拍賣紀錄：$558,000（1945 DRC RC）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🏆 進階認證路徑建議",
+          "content": "**完成Level 3後的專業認證選擇**\n\n**🍷 WSET（Wine & Spirit Education Trust）**\n\n**Level 3 Award in Wines**（通常在Level 3之前）\n• level：國際認可、葡萄酒產業標準\n• 難度：中等\n• 時間：2-3個月準備\n• 費用：NT$20,000-30,000\n• 考試：2小時筆試（50題）+ 品鑑（2款盲品）\n• 適合：Level 3畢業生應該輕鬆通過\n\n**Level 4 Diploma in Wines**（最高等級）\n• Level：專業水準、接近Master of Wine預備\n• 難度：極高\n• 時間：2-3年\n• 費用：NT$200,000-300,000\n• 考試：6個單元（筆試+盲品）\n• 內容：全球所有產區深度、商業、品鑑\n• 適合：決心成為葡萄酒專業人士\n\n---\n\n**👨‍🍳 Court of Master Sommeliers（CMS）**\n\n**Level 1 - Introductory Sommelier**\n• 難度：簡單\n• 時間：1天課程+考試\n• 費用：$495美元\n• 通過率：95%+\n• 適合：Level 3畢業生秒殺\n\n**Level 2 - Certified Sommelier**\n• 難度：中等\n• 時間：2天課程+考試\n• 費用：$795美元\n• 考試：理論+盲品+服務\n• 通過率：60-70%\n• 適合：餐飲業侍酒師、認真愛好者\n\n**Level 3 - Advanced Sommelier**\n• 難度：高\n• 時間：5天課程+考試\n• 費用：$1,495美元\n• 考試：嚴格的理論+盲品+服務\n• 通過率：30-40%\n• 適合：資深侍酒師、立志成為MS\n\n**Level 4 - Master Sommelier（MS）**\n• 難度：世界最難葡萄酒考試\n• 全球僅約270位MS\n• 通過率：<10%\n• 需多次應考（平均7年）\n• 考試：極度嚴格的理論+盲品+服務\n\n---\n\n**🇫🇷 BIVB布根地葡萄酒學院認證**\n\n**Certified Educator of Bourgogne Wines**\n• 專注：布根地專業認證\n• 難度：中等\n• 時間：5天密集課程（布根地當地）\n• 費用：€2,500（含食宿、酒莊參訪）\n• 考試：筆試+盲品+口試\n• 適合：布根地專家、教育者\n\n---\n\n**🎓 推薦路徑**\n\n**路徑A：愛好者精進**\n本課程Level 3 → WSET Level 3 → BIVB認證\n\n**路徑B：專業侍酒師**\nLevel 3 → CMS Level 1-2 → WSET Diploma → CMS Advanced\n\n**路徑C：葡萄酒教育者**\nLevel 3 → WSET Diploma → BIVB → 考慮MW（Master of Wine）\n\n**路徑D：商業應用**\nLevel 3 → 實戰經驗（酒商、餐廳）→ 選擇性認證"
+        },
+        {
+          "type": "comparison",
+          "title": "WSET vs CMS 認證比較",
+          "leftTitle": "📚 WSET（學術派）",
+          "leftPoints": [
+            "優勢：全球最廣泛認可",
+            "重點：理論知識、產區、品鑑",
+            "考試：筆試為主+品鑑",
+            "適合：愛好者、酒商、教育者",
+            "彈性：自學+考試、無服務要求",
+            "Level 4 Diploma：業界黃金標準",
+            "時間：可自行安排進度",
+            "認可：全球酒商、拍賣行、教育機構"
+          ],
+          "rightTitle": "🍾 CMS（實務派）",
+          "rightPoints": [
+            "優勢：侍酒師專業頂峰",
+            "重點：盲品、服務、實戰",
+            "考試：理論+盲品+服務演示",
+            "適合：餐飲業、侍酒師、MS目標",
+            "要求：必須參加課程+考試",
+            "Master Sommelier：世界最難",
+            "時間：固定課程時間",
+            "認可：Fine Dining餐廳、頂級飯店"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🚀 Level 3 畢業後的持續學習計劃",
+          "content": "**第1年：實戰累積**\n\n**品鑑訓練**（每週）\n• 週一：盲品練習（2-3款）\n• 週三：主題品鑑（同產區不同酒莊）\n• 週五：配餐實驗（美食配酒）\n• 目標：1年品鑑200-300款\n\n**產區訪問**（每年1-2次）\n• 布根地深度之旅（7-14天）\n• 拜訪10+酒莊、建立關係\n• 參加當地品酒活動\n• 體驗風土與文化\n\n**閱讀與訂閱**（持續）\n• Burghound.com（$125/年）：布根地聖經\n• Vinous（$165/年）：Antonio Galloni評論\n• Decanter雜誌（月刊）\n• 專業書籍：《Burgundy》Jasper Morris MW\n\n**社群參與**\n• 加入葡萄酒俱樂部\n• 參加品酒會（2次/月）\n• 線上論壇：Wine Berserkers、Reddit r/wine\n\n---\n\n**第2-3年：專業發展**\n\n**認證考取**\n• WSET Level 3（6個月準備）\n• 或 CMS Level 1-2（1年）\n• BIVB認證（若有機會赴法）\n\n**酒窖建立**\n• 執行收藏組合計劃（案例二）\n• 追蹤陳年演變\n• 記錄品鑑筆記\n\n**專業實踐**（選擇性）\n• 餐廳酒單顧問\n• 酒商兼職或全職\n• 品酒會講師\n• 葡萄酒寫作\n\n---\n\n**第4-5年：專家之路**\n\n**高階認證**\n• WSET Diploma（2-3年投入）\n• CMS Advanced（若走侍酒師路線）\n\n**專業深化**\n• 成為特定產區專家（如布根地）\n• 撰寫專業文章或書籍\n• 建立個人品牌\n• 產業人脈網絡\n\n**職業選擇**\n• 葡萄酒教育者\n• 專業侍酒師（Fine Dining）\n• 酒商或酒莊代表\n• 葡萄酒顧問\n• 拍賣行專家\n• 葡萄酒作家\n\n---\n\n**終身學習心態**\n\n葡萄酒的世界永無止境：\n• 每個年份都有新發現\n• 新酒莊不斷崛起\n• 氣候變遷帶來變化\n• 技術與理念革新\n\n即使成為專家，也要保持謙虛與好奇心。\n永遠有新的葡萄酒等待品嚐，\n永遠有新的知識等待學習。\n\n**這才是葡萄酒迷人之處。** 🍷"
+        },
+        {
+          "type": "content",
+          "title": "🎓 Level 3 畢業致詞",
+          "content": "**恭喜你完成Level 3布根地進階課程！**\n\n🏆 **你已經達成了什麼**\n\n在這15個模塊的旅程中，你：\n\n✅ 深入學習了**布根地5大產區**、**33個特級園**、**50+傳奇生產者**\n✅ 掌握了**專業品鑑術語**與**系統化評估方法**\n✅ 理解了**投資策略**、**市場趨勢**、**拍賣運作**\n✅ 學會了**商業應用**：酒莊參訪、收藏組合、餐廳酒單\n✅ 建立了從**風土到哲學**的完整知識體系\n\n你不再是普通的葡萄酒愛好者，\n你已經具備**專業水準的布根地知識**。\n\n---\n\n**🌟 但這不是終點，而是起點**\n\nLevel 3教給你的是**地圖與指南針**，\n真正的探索才剛開始：\n\n• 每一次品鑑都是新的學習\n• 每一次產區訪問都是深化理解\n• 每一次分享都是知識的昇華\n\n葡萄酒不只是知識，更是：\n• **文化**的載體\n• **歷史**的見證  \n• **風土**的表達\n• **人生**的享受\n\n---\n\n**🍷 給你的最後建議**\n\n**1. 持續品鑑**  \n理論需要實踐驗證。每週品嚐、記錄、反思。\n\n**2. 保持謙虛**  \n即使是DRC的莊主，也在持續學習。\n\n**3. 分享熱情**  \n與朋友分享一瓶好酒，比獨自飲用更美好。\n\n**4. 理性投資**  \n不要讓投資壓力破壞品酒的樂趣。\n\n**5. 享受旅程**  \n葡萄酒最終是用來享受的，不是用來炫耀的。\n\n**6. 永不停止學習**  \n每個年份、每個酒莊、每瓶酒都有故事。\n\n---\n\n**🥂 最後的祝福**\n\n願你：\n• 品嚐到更多偉大的葡萄酒\n• 訪問夢想中的酒莊\n• 結識志同道合的朋友\n• 將知識轉化為智慧\n• 在葡萄酒的世界裡找到快樂\n\n記住：\n**最好的酒，永遠是下一瓶。**\n\n---\n\n**準備好了嗎？**\n\n現在，去參加Level 3最終測驗，\n證明你的學習成果。\n\n然後，打開一瓶好酒，\n慶祝這個里程碑。\n\n**À votre santé!（敬你的健康！）**\n\n**Santé! 🍷**\n\n---\n\n*Level 3 課程設計團隊 敬上*\n*2026年2月*"
+        }
+      ]
+    }
   ],
-  "quiz": {"id": "advanced-m15-quiz", "title": "綜合案例研究 - 最終測驗", "passingScore": 80, "questions": [{"id": "q1", "type": "multiple-choice", "question": "布根地有多少個特級園？", "options": ["24個", "33個", "42個", "50個"], "correctAnswer": 1}]}
+  "quiz": {
+    "id": "advanced-m15-quiz",
+    "title": "綜合案例研究 - 最終測驗",
+    "passingScore": 80,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple-choice",
+        "question": "布根地共有多少個特級園（Grand Cru）？",
+        "options": ["24個", "33個", "42個", "50個"],
+        "correctAnswer": 1,
+        "explanation": "布根地共有33個特級園：Côte de Nuits 24個（紅酒）、Côte de Beaune 8個白酒+1個紅酒（Corton）、Chablis 7個（白酒）。"
+      },
+      {
+        "id": "q2",
+        "type": "multiple-choice",
+        "question": "DRC的Romanée-Conti獨占園面積約為？",
+        "options": ["0.8公頃", "1.8公頃", "3.8公頃", "5.8公頃"],
+        "correctAnswer": 1,
+        "explanation": "Romanée-Conti獨占園面積約1.8公頃，年產約6,000瓶，是世界上最昂貴的葡萄酒之一。"
+      },
+      {
+        "id": "q3",
+        "type": "true-false",
+        "question": "規劃布根地酒莊參訪時，頂級酒莊如DRC、Leroy通常需要提前6個月預約。",
+        "correctAnswer": true,
+        "explanation": "頂級酒莊預約極為困難，需要提前6個月甚至更久，並且通常需要透過酒商或專業人士引薦。"
+      },
+      {
+        "id": "q4",
+        "type": "multiple-choice",
+        "question": "建立平衡的布根地收藏組合時，投資級酒款應佔總預算的多少比例？",
+        "options": ["10-15%", "20-30%", "40-50%", "60-70%"],
+        "correctAnswer": 1,
+        "explanation": "投資級酒款建議佔20-30%預算，50%為日常與特殊場合用酒，保持金字塔結構平衡。"
+      },
+      {
+        "id": "q5",
+        "type": "multiple-choice",
+        "question": "Fine Dining餐廳酒單設計中，By-the-Glass（杯賣）的主要優勢是？",
+        "options": [
+          "降低購買門檻、提高毛利率",
+          "減少庫存壓力",
+          "簡化侍酒師工作",
+          "加快翻桌率"
+        ],
+        "correctAnswer": 0,
+        "explanation": "By-the-Glass降低客人嘗試高價酒的門檻，同時因為1瓶可出5杯，毛利率可達75-80%，高於瓶裝銷售。"
+      },
+      {
+        "id": "q6",
+        "type": "true-false",
+        "question": "Allen Meadows（Burghound）的96分以上評分極度罕見，一年給不到10款酒。",
+        "correctAnswer": true,
+        "explanation": "Burghound的96+分極度罕見，只給最偉大年份的最偉大酒款，是布根地最嚴格的評分標準之一。"
+      },
+      {
+        "id": "q7",
+        "type": "multiple-choice",
+        "question": "2018年創下單瓶葡萄酒拍賣世界紀錄的是哪一款酒？",
+        "options": [
+          "1990 DRC Romanée-Conti",
+          "1945 DRC Romanée-Conti",
+          "1962 Henri Jayer Cros Parantoux",
+          "1937 DRC Romanée-Conti"
+        ],
+        "correctAnswer": 1,
+        "explanation": "2018年10月，一瓶1945年份DRC Romanée-Conti在Sotheby's拍出$558,000美元，創下單瓶葡萄酒拍賣世界紀錄。"
+      },
+      {
+        "id": "q8",
+        "type": "multiple-choice",
+        "question": "餐廳酒單定價時，中階酒款（成本NT$5-10K）的建議售價倍數是？",
+        "options": ["2.0-2.5倍", "2.8-3.0倍", "3.0-3.2倍", "3.5-4.0倍"],
+        "correctAnswer": 2,
+        "explanation": "中階酒款建議售價為成本的3.0-3.2倍，可達到67-69%毛利率，既有競爭力又能維持合理利潤。"
+      },
+      {
+        "id": "q9",
+        "type": "true-false",
+        "question": "建立收藏組合時，應該集中購買單一偉大年份（如2015）以獲得最佳投資回報。",
+        "correctAnswer": false,
+        "explanation": "應該分散年份風險，建議30%偉大年份、50%優質年份、20%早飲年份，避免單一年份集中的市場風險。"
+      },
+      {
+        "id": "q10",
+        "type": "multiple-choice",
+        "question": "完成Level 3課程後，最適合的進階專業認證是？",
+        "options": [
+          "WSET Level 1",
+          "WSET Level 3或CMS Level 2",
+          "Master Sommelier",
+          "Master of Wine"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Level 3畢業生適合挑戰WSET Level 3 Award或CMS Certified Sommelier（Level 2），作為進階專業認證的起點。"
+      },
+      {
+        "id": "q11",
+        "type": "multiple-choice",
+        "question": "Chablis特級園共有幾個？",
+        "options": ["4個", "7個", "10個", "15個"],
+        "correctAnswer": 1,
+        "explanation": "Chablis共有7個特級園：Blanchot、Bougros、Les Clos、Grenouilles、Preuses、Valmur、Vaudésir。"
+      },
+      {
+        "id": "q12",
+        "type": "true-false",
+        "question": "Coravin系統可以讓餐廳將高價酒款以杯裝方式銷售而不影響酒質。",
+        "correctAnswer": true,
+        "explanation": "Coravin系統使用惰性氣體取酒，不拔軟木塞，可以保存酒質數週甚至數月，讓高價酒by-the-glass成為可能。"
+      },
+      {
+        "id": "q13",
+        "type": "multiple-choice",
+        "question": "布根地最適合建立長期購酒關係的方式是？",
+        "options": [
+          "只在拍賣會購買",
+          "成為酒商VIP客戶、定期購買",
+          "每次都換不同酒商比價",
+          "等待特價促銷"
+        ],
+        "correctAnswer": 1,
+        "explanation": "成為長期VIP客戶可以獲得配額制酒款的優先購買權、專家建議和更好的價格，是建立收藏的最佳策略。"
+      },
+      {
+        "id": "q14",
+        "type": "multiple-choice",
+        "question": "拍賣會中的'Buyer's Premium'（買家佣金）通常為錘價的多少？",
+        "options": ["5-10%", "15-25%", "30-40%", "50%"],
+        "correctAnswer": 1,
+        "explanation": "買家佣金通常為15-25%，是買家除了錘價外需要額外支付給拍賣行的費用，價格越高比例可能略低。"
+      },
+      {
+        "id": "q15",
+        "type": "true-false",
+        "question": "Level 3課程涵蓋了從入門到專業水準的布根地完整知識體系。",
+        "correctAnswer": true,
+        "explanation": "Level 3課程整合了風土、歷史、生產者、投資、品鑑、商業應用等各方面，建立了專業水準的布根地知識體系。"
+      }
+    ]
+  }
 }

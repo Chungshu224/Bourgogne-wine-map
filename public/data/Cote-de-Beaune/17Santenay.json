@@ -36,7 +36,20 @@
       },
       "santenay-cote-de-beaune": {
         "name": "Santenay Côte de Beaune",
-        "file": "AOC Santenay ou Santenay Côte de Beaune.geojson"
+        "file": "AOC Santenay ou Santenay Côte de Beaune.geojson",
+        "fullName": "AOC Santenay ou Santenay Côte de Beaune",
+        "classification": "Village",
+        "area": "約 170 公頃",
+        "altitude": "220-300m",
+        "exposition": "東、東南",
+        "soil": "多樣，以粘土和石灰岩為主",
+        "grapes": ["Pinot Noir", "Chardonnay"],
+        "wineStyle": "紅酒：果味濃郁，結構柔和，帶有泥土氣息。白酒：清新，帶有柑橘和花香。",
+        "tastingNotes": "紅酒：櫻桃、黑加侖、甘草。白酒：檸檬、金合歡。",
+        "agingPotential": "紅酒：4-10年，白酒：2-7年",
+        "history": "Santenay村級酒的另一標註方式，強調其屬於伯恩丘產區，品質特點與Santenay Village相同。",
+        "producers": ["Domaine Lucien Muzard et Fils", "Domaine David Moreau", "Domaine Justin Girardin"],
+        "color": "#A52A2A"
       }
     },
     "premier_crus": {

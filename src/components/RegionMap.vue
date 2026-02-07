@@ -94,25 +94,28 @@ const showAOCGeojson = async (group, aoc) => {
     // Chablis 使用 mainFolder.json (如 Chablis.json, Grand Auxerrois.json)
     dataPath = `/data/${dataPathPrefix.value}${mainFolder}.json`;
   } else {
-    // 其他區域使用村莊編號和名稱匹配（如 01Marsannay, 02Rully 等）
-    // 移除空格以匹配實際文件名
-    const groupFileName = group.replace(/\s+/g, '');
-    dataPath = `/data/${dataPathPrefix.value}${groupFileName}.json`;
+    // 其他區域使用村莊編號和名稱匹配（如 01Marsannay, 04Gevrey Chambertin 等）
+    // 使用 mainFolder 保留原始空格，因為實際文件名包含空格
+    dataPath = `/data/${dataPathPrefix.value}${mainFolder}.json`;
   }
+
+  console.log('[RegionMap] Loading data:', { group, aoc, dataPath });
 
   try {
     let aocData;
     if (dataCache.has(dataPath)) {
       aocData = dataCache.get(dataPath);
+      console.log('[RegionMap] Data loaded from cache:', dataPath);
     } else {
       const res = await fetch(dataPath);
       if (!res.ok) {
-        console.warn(`Cannot load data file: ${dataPath}`);
+        console.error(`[RegionMap] Failed to load data file: ${dataPath} (Status: ${res.status})`);
         regionInfo.value = null;
         return;
       }
       aocData = await res.json();
       dataCache.set(dataPath, aocData);
+      console.log('[RegionMap] Data loaded successfully:', dataPath);
     }
 
     // 處理不同的 JSON 結構
@@ -130,28 +133,90 @@ const showAOCGeojson = async (group, aoc) => {
         console.warn(`No info found for key: "${aocKey}" in Regional.json`);
         regionInfo.value = null;
       }
-    } else if (aocData.village) {
-      // Côte de Nuits 格式: {village: {key: {...}}}
-      // 從 AOC 檔名提取關鍵字，例如 "AOC Marsannay (Couchey).geojson" -> "couchey"
-      const match = aoc.match(/\(([^)]+)\)/);
-      let searchKey = match ? match[1] : aoc.replace('.geojson', '').replace(/^AOC /, '');
-      searchKey = searchKey.toLowerCase().replace(/\s+/g, '-').replace(/[àâä]/g, 'a').replace(/[éèêë]/g, 'e').replace(/[ôö]/g, 'o').replace(/ç/g, 'c').replace(/î/g, 'i');
+    } else if (aocData.village || aocData['1er Crus'] || aocData.premier_crus || aocData['Grand Crus'] || aocData.grand_crus) {
+      // Côte de Nuits/Beaune 格式: {village: {...}, "1er Crus": {...}, "Grand Crus": {...}}
+      // 或 {village: {...}, premier_crus: {...}, grand_crus: {...}}
       
-      const foundInfo = aocData.village[searchKey];
+      // 從 AOC 檔名分析等級和名稱
+      let searchKey = aoc.replace('.geojson', '');
+      let targetCategory = null;
+      
+      // 判斷是否為 Grand Cru
+      if (searchKey.includes('Grand Cru')) {
+        targetCategory = aocData['Grand Crus'] || aocData.grand_crus;
+        // 提取 Grand Cru 名稱，例如 "AOC Chambertin Grand Cru" -> "chambertin"
+        searchKey = searchKey.replace(/AOC\s+/i, '').replace(/\s+Grand Cru.*$/i, '').trim();
+      }
+      // 判斷是否為 1er Cru / Premier Cru
+      else if (searchKey.match(/1er\s+Cru|Premier\s+Cru/i)) {
+        targetCategory = aocData['1er Crus'] || aocData.premier_crus;
+        // 提取 1er Cru 名稱，例如 "AOC Fixin 1er Cru Clos du Chapitre" -> "Clos du Chapitre"
+        searchKey = searchKey.replace(/AOC\s+/i, '').replace(/.*?1er\s+Cru\s+/i, '').replace(/.*?Premier\s+Cru\s+/i, '').trim();
+      }
+      // 否則為村莊級
+      else {
+        targetCategory = aocData.village;
+        // 從 AOC 檔名提取關鍵字，例如 "AOC Marsannay (Couchey).geojson" -> "couchey"
+        const match = searchKey.match(/\(([^)]+)\)/);
+        searchKey = match ? match[1] : searchKey.replace(/^AOC /, '');
+      }
+      
+      // 標準化搜尋鍵
+      searchKey = searchKey.toLowerCase()
+        .replace(/\s+/g, '-')
+        .replace(/[àâä]/g, 'a')
+        .replace(/[éèêë]/g, 'e')
+        .replace(/[ôö]/g, 'o')
+        .replace(/[ùûü]/g, 'u')
+        .replace(/ç/g, 'c')
+        .replace(/[îï]/g, 'i');
+      
+      let foundInfo = null;
+      
+      if (targetCategory) {
+        // 嘗試直接匹配
+        foundInfo = targetCategory[searchKey];
+        
+        // 如果沒找到，嘗試其他可能的變體
+        if (!foundInfo) {
+          // 嘗試不帶連字符的版本
+          const noHyphens = searchKey.replace(/-/g, '');
+          foundInfo = targetCategory[noHyphens];
+        }
+        
+        if (!foundInfo) {
+          // 嘗試首字母大寫的版本 (例如 "Clos de la Perrière" 可能用原始大小寫作為 key)
+          for (const key of Object.keys(targetCategory)) {
+            if (key.toLowerCase().replace(/\s+/g, '-') === searchKey) {
+              foundInfo = targetCategory[key];
+              break;
+            }
+          }
+        }
+      }
+      
       if (foundInfo) {
         regionInfo.value = foundInfo;
+        console.log('[RegionMap] Region info found:', foundInfo.name);
       } else {
-        // 如果找不到，嘗試使用第一個村莊資訊（預設）
-        const firstKey = Object.keys(aocData.village)[0];
-        regionInfo.value = firstKey ? aocData.village[firstKey] : null;
-        console.warn(`Using first village info for: "${aoc}", searched for: "${searchKey}"`);
+        // 如果找不到，嘗試使用第一個資訊（預設）
+        if (targetCategory && Object.keys(targetCategory).length > 0) {
+          const firstKey = Object.keys(targetCategory)[0];
+          regionInfo.value = targetCategory[firstKey];
+          console.warn(`[RegionMap] Using first entry for: "${aoc}", searched for: "${searchKey}"`);
+        } else {
+          regionInfo.value = null;
+          console.error(`[RegionMap] No info found for: "${aoc}", searched for: "${searchKey}" in category:`, targetCategory ? Object.keys(targetCategory) : 'undefined');
+        }
       }
     } else {
       // 其他格式: 直接使用整個物件 {name, description, ...}
       regionInfo.value = aocData;
+      console.log('[RegionMap] Using direct data format');
     }
   } catch (error) {
-    console.error("Error loading region info:", error);
+    console.error("[RegionMap] Error loading region info:", error);
+    console.error("[RegionMap] Failed for:", { group, aoc, dataPath });
     regionInfo.value = null;
   }
 };

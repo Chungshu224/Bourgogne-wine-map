@@ -3,10 +3,511 @@
   "title": "專業品鑑報告撰寫",
   "description": "專業品鑑術語、評分系統理解與高品質品鑑筆記撰寫技巧",
   "lessons": [
-    {"id": "m14-l1", "title": "專業品鑑術語", "duration": "19分鐘", "type": "presentation"},
-    {"id": "m14-l2", "title": "評分系統比較", "duration": "19分鐘", "type": "presentation"},
-    {"id": "m14-l3", "title": "品鑑筆記結構", "duration": "19分鐘", "type": "presentation"},
-    {"id": "m14-l4", "title": "實戰演練", "duration": "18分鐘", "type": "presentation"}
+    {
+      "id": "m14-l1",
+      "title": "專業品鑑術語",
+      "duration": "19分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "專業品鑑術語",
+          "subtitle": "Lesson 1 - 19分鐘",
+          "description": "掌握專業品鑑的語言系統"
+        },
+        {
+          "type": "content",
+          "title": "品鑑術語的重要性",
+          "content": "**為什麼需要專業術語？**\n\n專業品鑑術語是葡萄酒產業的通用語言，具有三大功能：\n\n• **精確描述**：將感官體驗轉化為可傳達的文字\n• **標準化溝通**：不同品鑑者之間有共同的參考框架\n• **專業性證明**：展現品鑑者的訓練與經驗\n\n**專業 vs 業餘**\n業餘：「這酒很好喝，有果香。」\n專業：「酒體中等偏重，展現成熟黑櫻桃與黑醋栗香氣，伴隨細膩的煙燻與香料氣息，單寧細緻絲滑，酸度活潑，尾韻悠長達30秒以上。」\n\n差異在於**精確性、層次性、技術性**。"
+        },
+        {
+          "type": "list",
+          "title": "🎨 視覺評估專業術語",
+          "points": [
+            "**清澈度**：Brilliant（明亮）、Clear（清澈）、Dull（混濁）、Hazy（霧狀）",
+            "**濃度**：Pale（淺）、Medium（中等）、Deep（深）、Opaque（不透光）",
+            "**顏色-白酒**：Lemon-green、Lemon、Gold、Amber、Brown",
+            "**顏色-紅酒**：Purple、Ruby、Garnet（石榴紅）、Tawny（茶色）、Brown",
+            "**黏度/酒腿**：Thin（薄）、Medium、Thick（厚）、Viscous（黏稠）",
+            "**邊緣色澤**：觀察酒杯傾斜時邊緣顏色的變化（年齡指標）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🍷 布根地紅酒顏色解讀",
+          "content": "**顏色與年齡的關係**\n\n**年輕酒（1-3年）**\n• 深紫色（Purple）或鮮豔紅寶石（Bright Ruby）\n• 邊緣可能帶紫色調\n• Pinot Noir典型：透明但色澤飽滿\n• 範例：2020年份的Gevrey-Chambertin村級\n\n**適飲期（5-10年）**\n• 石榴紅（Garnet）為主調\n• 邊緣開始出現橙色或磚紅色調\n• 酒體中央仍保持深度\n• 範例：2015年份的Vosne-Romanée特級園\n\n**成熟/老酒（15年+）**\n• 整體偏向茶色（Tawny）或磚紅\n• 邊緣明顯橙褐色\n• 透明度增加、顏色濃度降低\n• 可能出現輕微沉澱\n• 範例：2005年DRC La Tâche\n\n**特殊情況**\n• 過度氧化：提早褐變（Premature Browning）\n• 瓶況不佳：顏色暗淡無光澤"
+        },
+        {
+          "type": "list",
+          "title": "👃 香氣分類與術語體系",
+          "points": [
+            "**主要香氣（Primary）**：來自葡萄品種本身",
+            "  - 紅色水果：草莓、覆盆子、紅櫻桃、紅醋栗",
+            "  - 黑色水果：黑櫻桃、黑醋栗、黑莓、藍莓",
+            "  - 花香：紫羅蘭、玫瑰、牡丹、杜鵑花",
+            "**次要香氣（Secondary）**：來自釀造過程",
+            "  - 香草、椰子、焦糖、烤麵包（橡木桶）",
+            "  - 奶油、黃油、酵母、麵團（MLF乳酸發酵）",
+            "**三級香氣（Tertiary）**：來自陳年",
+            "  - 森林地表、蘑菇、松露、濕土、枯葉",
+            "  - 皮革、雪茄盒、煙草、茶葉",
+            "  - 肉類、醬油、陳年風味（Umami）"
+          ]
+        },
+        {
+          "type": "comparison",
+          "title": "布根地特級園香氣特徵對比",
+          "leftTitle": "🌸 Chambertin（優雅派）",
+          "leftPoints": [
+            "香氣：成熟紅櫻桃、玫瑰花瓣",
+            "香料：肉桂、丁香、白胡椒",
+            "礦物：濕石頭、鐵質感",
+            "陳年：森林地表、松露、茶葉",
+            "特色：精緻、複雜、層次豐富",
+            "典型酒莊：Rousseau、Leroy"
+          ],
+          "rightTitle": "💪 Clos de Bèze（力量派）",
+          "rightPoints": [
+            "香氣：黑櫻桃、黑醋栗",
+            "香料：甘草、煙燻、烤肉",
+            "礦物：石墨、火藥、鐵礦",
+            "陳年：皮革、雪茄盒、野味",
+            "特色：強勁、結構、陽剛",
+            "典型酒莊：Bruno Clair、Faiveley"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "👄 口感評估核心術語",
+          "points": [
+            "**酒體（Body）**：Light、Medium-、Medium、Medium+、Full",
+            "**甜度（Sweetness）**：Dry、Off-dry、Medium-sweet、Sweet",
+            "**酸度（Acidity）**：Low、Medium-、Medium、Medium+、High",
+            "**單寧（Tannin）**：Low、Medium、High | Fine-grained（細緻）、Grippy（抓口）、Chalky（粉質）",
+            "**酒精（Alcohol）**：Low (<11%)、Medium (11-13.9%)、High (14%+)",
+            "**平衡（Balance）**：Well-balanced（平衡）、Unbalanced（失衡）",
+            "**質地（Texture）**：Silky（絲滑）、Velvet（天鵝絨）、Grainy（粗糙）",
+            "**尾韻（Finish）**：Short（短，<3秒）、Medium（6-12秒）、Long（>15秒）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🏗️ 架構與複雜度術語",
+          "content": "**架構（Structure）**\n\n• **Well-structured**：各元素比例適當、有明確骨架\n• **Firm structure**：酸度與單寧強勁、需要陳年\n• **Loose structure**：鬆散、缺乏骨架\n• **Elegant structure**：精緻優雅的架構（布根地最高評價）\n\n**複雜度（Complexity）**\n\n• **Simple**：單一香氣、無層次\n• **Moderate complexity**：2-3層香氣、有一定變化\n• **Complex**：多層次香氣、持續演變\n• **Highly complex**：極度複雜、每次品嚐都有新發現\n• **Profound**：深邃、哲學性的複雜度（DRC等級）\n\n**演變（Evolution）**\n\n• **Primary fruit-driven**：以果味為主、年輕\n• **Evolving**：由果味轉向陳年風味\n• **Fully evolved**：完全發展、三級香氣主導\n• **Past its peak**：過了巔峰期、衰退\n\n**典型描述**\n「2015 DRC Romanée-Conti展現profound complexity，架構elegant yet firm，multiple layers of aroma持續evolving，展現此園之terroir的完整表達。」"
+        },
+        {
+          "type": "list",
+          "title": "⚖️ 品質評估術語（WSET系統）",
+          "points": [
+            "**Faulty**：有缺陷（軟木塞污染TCA、氧化、還原等）",
+            "**Poor**：差（失衡、單薄、無個性）",
+            "**Acceptable**：可接受（簡單但無缺陷）",
+            "**Good**：好（正確釀造、有品種特徵）",
+            "**Very Good**：非常好（品質穩定、有特色）",
+            "**Outstanding**：傑出（複雜、平衡、獨特、陳年潛力）",
+            "**Exceptional**：卓越（WSET Diploma等級描述）",
+            "布根地特級園目標：至少Outstanding、頂級酒莊達Exceptional"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🚫 常見錯誤術語與替代方案",
+          "content": "**避免使用的模糊術語**\n\n❌ **「好喝」** → ✅ Well-balanced, harmonious\n❌ **「順口」** → ✅ Smooth tannins, silky texture\n❌ **「很香」** → ✅ Aromatic intensity is high\n❌ **「有層次」** → ✅ Complex with multiple layers\n❌ **「回甘」** → ✅ Long finish with lingering aftertaste\n❌ **「有深度」** → ✅ Profound, with great depth of flavor\n\n**避免主觀情緒表達**\n\n❌ 「我覺得很棒」 → ✅ 描述具體特徵\n❌ 「令人驚豔」 → ✅ Exceptional quality with...\n❌ 「不太喜歡」 → ✅ 指出具體技術問題\n\n**使用精確的比較**\n\n❌ 「酸度高」 → ✅ High acidity (pH 3.2, TA 6.5g/L)\n❌ 「很甜」 → ✅ Medium-sweet (RS 35g/L)\n❌ 「酒精很高」 → ✅ High alcohol (14.5% ABV)\n\n**專業品鑑的黃金法則**\n描述你品嚐到的，而非你的感受。用技術術語替代情緒詞彙。"
+        }
+      ]
+    },
+    {
+      "id": "m14-l2",
+      "title": "評分系統比較",
+      "duration": "19分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "評分系統比較",
+          "subtitle": "Lesson 2 - 19分鐘",
+          "description": "理解全球主要葡萄酒評分體系"
+        },
+        {
+          "type": "content",
+          "title": "為什麼需要評分系統？",
+          "content": "**評分系統的功能**\n\n• **標準化溝通**：提供統一的品質參考\n• **市場指標**：影響價格與投資決策\n• **消費者指南**：協助選購決策\n• **歷史記錄**：追蹤年份與酒莊表現\n\n**評分的爭議性**\n\n✅ **支持者**：客觀、量化、易於理解\n❌ **反對者**：過度簡化、忽視個人偏好、影響市場過大\n\n**現實情況**\n無論喜歡與否，評分系統已深刻影響全球葡萄酒市場，尤其是：\n• Parker 95+分：價格可能翻倍\n• Burghound 94+分：布根地藏家必買\n• 多位評論家一致高分：拍賣價格暴漲\n\n**專業態度**\n了解各系統特色、參考但不盲從、培養自己的判斷力。"
+        },
+        {
+          "type": "comparison",
+          "title": "Robert Parker 100分制 vs 20分制",
+          "leftTitle": "🍷 Parker 100分制",
+          "leftPoints": [
+            "範圍：50-100分（實際使用85-100）",
+            "創始人：Robert Parker（1978年）",
+            "影響力：全球最大、影響拍賣價格",
+            "風格偏好：濃郁、果味、成熟、橡木",
+            "90-95分：Very Good to Excellent",
+            "96-100分：Extraordinary to Perfect",
+            "布根地：Wine Advocate團隊評分"
+          ],
+          "rightTitle": "📊 傳統20分制（法國）",
+          "rightPoints": [
+            "範圍：0-20分（實際使用10-20）",
+            "起源：法國學術系統",
+            "使用：Revue du Vin de France等",
+            "15-16分：Good to Very Good",
+            "17-18分：Excellent",
+            "19-20分：Exceptional（極罕見）",
+            "特色：嚴格、少給高分、保守",
+            "18分以上=Parker 95+分等級"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🎯 Allen Meadows (Burghound) 評分系統",
+          "content": "**布根地最具權威的評分系統**\n\nAllen Meadows創立於2000年，專注布根地，被譽為「布根地聖經」。\n\n**評分架構**\n\n• **範圍**：75-100分（實際常用88-98分）\n• **整數評分**：無小數點（與Parker 0.5分制不同）\n• **Sweet Spot**：90-95分（優質布根地主流）\n• **96+分**：極度罕見、只給最偉大的酒\n\n**分數意義**\n\n• **88-89分**：Good，正確釀造但無特殊之處\n• **90-92分**：Very Good，展現terroir特徵\n• **93-95分**：Outstanding，頂級酒莊標準\n• **96-97分**：Exceptional，偉大年份的偉大酒\n• **98-100分**：Perfect，歷史級（一年給不到10款）\n\n**評分特色**\n\n✅ **專業深度**：深入了解每個酒莊、風土、年份\n✅ **陳年追蹤**：會重新品嚐並調整評分\n✅ **嚴格標準**：96分以上極稀有\n✅ **藏家信賴**：布根地拍賣的定價參考\n\n**經典評分範例**\n\n• 2015 DRC Romanée-Conti：98分\n• 2010 Leroy Musigny：98分\n• 2005 Rousseau Chambertin：96分\n\n**閱讀建議**\n訂閱Burghound.com（年費$125美元），獲得最專業的布根地評分與品鑑報告。"
+        },
+        {
+          "type": "comparison",
+          "title": "Jancis Robinson vs Antonio Galloni",
+          "leftTitle": "👩 Jancis Robinson MW",
+          "leftPoints": [
+            "系統：20分制（精確到0.5分）",
+            "風格：優雅、平衡、陳年潛力",
+            "16-17分：Very Good",
+            "17.5-18.5分：Outstanding",
+            "19-20分：Exceptional（罕見）",
+            "特色：重視風土與細緻度",
+            "團隊：全球Master of Wine團隊",
+            "適合：追求優雅風格的藏家"
+          ],
+          "rightTitle": "🍇 Antonio Galloni (Vinous)",
+          "rightPoints": [
+            "系統：100分制",
+            "風格：介於Parker與Meadows之間",
+            "90-94分：布根地優質酒款",
+            "95-97分：頂級、值得投資",
+            "98-100分：極稀有",
+            "特色：詳細品鑑筆記、產區深度",
+            "背景：曾任Robert Parker助手",
+            "適合：尋求第二意見的藏家"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "📈 評分對市場價格的實際影響",
+          "points": [
+            "**Parker 95+分 vs 93分**：價格可能相差50-100%",
+            "**Burghound 96+分**：布根地拍賣溢價30-50%",
+            "**多位評論家一致95+**：被視為「must-buy」、搶購一空",
+            "**案例：2015 DRC La Tâche**",
+            "  - Parker 98分 + Burghound 96分 + Galloni 98分",
+            "  - 零售價從€3,500漲至€5,000+",
+            "  - 拍賣價2026年達$6,500/瓶",
+            "**低分後果**：Parker 88分導致期酒難銷、價格下跌",
+            "**評分通膨**：近年94-96分區間酒款數量增加"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🌟 其他重要評分系統",
+          "content": "**Decanter（英國）**\n• 系統：5星制 + 獎項\n• ⭐⭐⭐⭐⭐：95-100分等級\n• Platinum獎（Best in Show）：最高榮譽\n• World Wine Awards影響力大\n\n**Wine Spectator（美國）**\n• 系統：100分制\n• 與Parker類似，但布根地影響力較小\n• Top 100榜單對市場影響顯著\n• 偏好波爾多與加州\n\n**James Suckling（獨立評論家）**\n• 系統：100分制\n• 前Wine Spectator資深編輯\n• 重視義大利與香檳\n• 布根地評分參考價值中等\n\n**La Revue du Vin de France**\n• 系統：20分制（法國權威）\n• 法國本土最具影響力\n• 嚴格、保守、少給高分\n• 18分以上即為頂級\n\n**Wine Enthusiast**\n• 系統：100分制\n• 美國市場導向\n• 布根地影響力低於Parker/Burghound\n\n**選擇建議**\n布根地藏家優先參考：Burghound > Parker/Galloni > Jancis Robinson"
+        },
+        {
+          "type": "list",
+          "title": "⚠️ 理性看待評分的5大原則",
+          "points": [
+            "**1. 評分非絕對真理**：只代表特定品鑑者在特定時刻的判斷",
+            "**2. 考慮評論家風格偏好**：Parker喜濃郁、Meadows重結構、JR重優雅",
+            "**3. 參考多位評論家**：一致高分比單一評分更可靠",
+            "**4. 注意品鑑時機**：桶邊試酒vs裝瓶後、年輕vs陳年後可能大不同",
+            "**5. 發展自己的口味**：評分是參考、不是聖旨、培養獨立判斷力",
+            "**黃金法則**：買你喜歡的，而非高分的",
+            "**實用建議**：93-95分區間通常性價比最高（94分vs96分價差大但品質差距小）"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "📊 評分系統對照表與使用建議",
+          "content": "**評分對照參考**\n\n| Parker 100分 | Burghound | JR 20分 | 品質描述 |\n|-------------|-----------|---------|----------|\n| 96-100      | 96-98     | 19-20   | Exceptional |\n| 94-95       | 93-95     | 18-18.5 | Outstanding |\n| 90-93       | 90-92     | 17-17.5 | Excellent |\n| 85-89       | 88-89     | 16-16.5 | Very Good |\n\n**使用策略**\n\n**投資級酒款（長期持有10年+）**\n• 目標：Parker 95+、Burghound 94+、多位一致高分\n• 關鍵：偉大年份（2015, 2019, 2022）+ 頂級酒莊\n• 預算：願意支付溢價\n\n**日常飲用（2-5年內飲用）**\n• 目標：90-93分區間\n• 關鍵：性價比、村級或地區級\n• 預算：合理價格\n\n**探索新酒莊**\n• 參考：新興評論家（如Vinous）\n• 目標：92-94分的小酒莊\n• 機會：尚未反映在價格上\n\n**盲品練習**\n• 忽略評分、先品嚐、後對照\n• 訓練獨立判斷力\n• 了解自己的偏好與評論家的差異"
+        }
+      ]
+    },
+    {
+      "id": "m14-l3",
+      "title": "品鑑筆記結構",
+      "duration": "19分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "品鑑筆記結構",
+          "subtitle": "Lesson 3 - 19分鐘",
+          "description": "建立系統化的品鑑記錄方法"
+        },
+        {
+          "type": "content",
+          "title": "為什麼需要結構化品鑑筆記？",
+          "content": "**品鑑筆記的價值**\n\n📝 **個人記錄**\n• 追蹤酒款演變（陳年軌跡）\n• 建立個人口味資料庫\n• 記錄最佳飲用時機\n• 避免重複購買錯誤\n\n💼 **專業用途**\n• 酒商採購決策\n• 侍酒師推薦依據\n• 酒評家文章素材\n• 教學與分享\n\n💰 **投資參考**\n• 評估陳年潛力\n• 判斷最佳出售時機\n• 記錄瓶況變化\n\n**沒有結構的問題**\n❌ 「這酒好喝」→ 1年後完全忘記\n❌ 「有果香」→ 什麼果香？濃度？\n❌ 「可以再放」→ 放多久？何時達巔峰？\n\n**有結構的優勢**\n✅ 系統化、可比較、可追蹤\n✅ 隨時間累積有價值的數據\n✅ 訓練品鑑能力的最佳工具"
+        },
+        {
+          "type": "list",
+          "title": "🎯 WSET系統化品鑑法（SAT）",
+          "points": [
+            "**S - Systematic Approach**：系統化方法",
+            "**A - Analytical**：分析性思考",
+            "**T - Tasting**：品鑑實踐",
+            "**結構：視覺→嗅覺→味覺→結論→評分**",
+            "**視覺（Appearance）**：清澈度、濃度、顏色、其他觀察",
+            "**嗅覺（Nose）**：狀態、濃度、香氣特徵、發展階段",
+            "**味覺（Palate）**：甜度、酸度、單寧、酒精、酒體、風味、尾韻",
+            "**結論（Conclusions）**：品質評估、陳年潛力、適飲期",
+            "**評分**：Faulty/Poor/Acceptable/Good/Very Good/Outstanding"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "📋 Court of Master Sommeliers四步品鑑法",
+          "content": "**MS考試標準品鑑結構**\n\n**1️⃣ Sight（視覺）**\n• Clarity（清澈度）\n• Concentration（濃度）\n• Color（顏色）\n• Other observations（其他觀察：酒腿、氣泡等）\n\n**2️⃣ Nose（嗅覺）**\n• Condition（狀態：clean, faulty）\n• Intensity（濃度：light, medium, pronounced）\n• Aroma characteristics（香氣特徵）\n  - Primary fruits\n  - Secondary characteristics  \n  - Tertiary development\n• Development（發展：youthful, developing, fully developed）\n\n**3️⃣ Palate（味覺）**\n• Sweetness（甜度）\n• Acidity（酸度）\n• Tannin（單寧：level + nature）\n• Alcohol（酒精）\n• Body（酒體）\n• Flavor characteristics（風味特徵）\n• Finish（尾韻：length + character）\n\n**4️⃣ Conclusions（結論）**\n• Quality level（品質等級）\n• Aging potential（陳年潛力）\n• Drinking window（適飲期）\n• Grape variety（品種判斷，盲品時）\n• Region（產區判斷，盲品時）\n\n**時間分配建議**\n視覺 30秒 → 嗅覺 60秒 → 味覺 90秒 → 結論 30秒\n總計：3-4分鐘完成標準品鑑"
+        },
+        {
+          "type": "comparison",
+          "title": "簡潔版 vs 詳細版品鑑筆記",
+          "leftTitle": "⚡ 簡潔版（日常飲用）",
+          "leftPoints": [
+            "時間：2-3分鐘",
+            "適用：日常品鑑、快速記錄",
+            "格式：",
+            "• 外觀：簡述顏色與清澈度",
+            "• 香氣：3-5個關鍵描述詞",
+            "• 口感：酸/單寧/酒體/尾韻",
+            "• 評價：分數+一句總結",
+            "範例：「Garnet, 紅櫻桃、玫瑰、香料，中等酸度，細緻單寧，尾韻悠長。92/100，優質村級。」"
+          ],
+          "rightTitle": "📝 詳細版（重要酒款）",
+          "rightPoints": [
+            "時間：10-15分鐘",
+            "適用：投資級酒款、陳年追蹤",
+            "格式：",
+            "• 完整SAT結構",
+            "• 詳細香氣層次（10+描述詞）",
+            "• 酸度/單寧/酒精數值估計",
+            "• 陳年潛力預測（5/10/15年）",
+            "• 配餐建議、最佳飲用溫度",
+            "• 與同酒莊其他年份比較",
+            "• 拍照記錄瓶身與酒標"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🔧 實用品鑑筆記工具與平台",
+          "content": "**數位工具**\n\n📱 **CellarTracker**（最推薦）\n• 免費、全球最大品鑑筆記平台\n• 150萬+ 用戶、數百萬筆記錄\n• 可追蹤酒窖存貨、陳年曲線\n• 社群評分與筆記參考\n• iOS/Android/Web全平台\n\n📱 **Vivino**\n• 手機掃描酒標自動識別\n• 社群評分與價格查詢\n• 適合入門者、快速查詢\n• 筆記功能較陽春\n\n📱 **Delectable**\n• 專業侍酒師社群\n• Pro版有專家評分\n• 社交功能強\n• 美國市場為主\n\n💻 **自建Excel/Notion**\n• 完全客製化\n• 可加入購買價格、拍賣追蹤\n• 適合數據控\n• 需要自律維護\n\n📓 **紙本筆記本**（傳統但有效）\n• Moleskine Wine Journal\n• 不受電池限制\n• 適合酒莊參訪記錄\n• 可貼酒標、速寫\n\n**推薦組合**\n日常：CellarTracker（快速記錄）\n重要酒款：詳細紙本 + CellarTracker備份\n酒窖管理：CellarTracker存貨追蹤"
+        },
+        {
+          "type": "content",
+          "title": "📝 標準品鑑筆記模板（布根地專用）",
+          "content": "**完整模板架構**\n\n```\n【基本資訊】\n酒名：2015 Domaine de la Romanée-Conti La Tâche\n產區：Vosne-Romanée Grand Cru\n品種：Pinot Noir 100%\n酒精：13.5%\n品鑑日期：2026年2月8日\n品鑑地點：家中酒窖\n醒酒時間：開瓶2小時\n溫度：16°C\n倒酒量：約100ml\n\n【視覺 Appearance】\n清澈度：Brilliant（明亮）\n濃度：Medium+（中等偏深）\n顏色：Deep garnet with orange rim\n其他：Medium+ legs, slight sediment\n\n【嗅覺 Nose】\n狀態：Clean（乾淨無瑕疵）\n濃度：Pronounced（濃郁）\n發展階段：Fully developed but still evolving\n香氣特徵：\n  Primary：黑櫻桃、紅醋栗、覆盆子\n  Secondary：紫羅蘭、玫瑰花瓣、香草、烤麵包\n  Tertiary：濕土、蘑菇、松露、皮革、煙草、茶葉\n複雜度：Highly complex, multilayered\n\n【味覺 Palate】\n甜度：Dry\n酸度：High（清新活躍，TA估計6.5g/L）\n單寧：Medium+, fine-grained, silky\n酒精：Medium+（14%，溫暖但平衡）\n酒體：Full\n風味濃度：Intense\n風味特徵：與鼻息一致，加上礦物感、鹹鮮感\n平衡：Exceptional balance\n尾韻：Very long (45+ seconds)，持續演變\n質地：Velvet texture, seamless\n\n【結論 Conclusions】\n品質：Outstanding (96/100)\nterroir表達：完美詮釋La Tâche的優雅與力量\n陳年潛力：已進入適飲期，仍可陳年10-15年\n最佳飲用：2026-2035年\n配餐：松露燉飯、烤鴨、陳年乳酪\n\n【個人筆記】\n這是我第三次品嚐此酒（2023, 2025, 2026）。\n相比2023年，香氣更開放、單寧更柔順。\n建議至少醒酒2小時，16-17°C最佳。\n與2015 Romanée-Conti相比，La Tâche更陽剛，RC更飄逸。\n購買價：€4,200（2020年）\n當前市值：€6,500（2026年）\n```"
+        },
+        {
+          "type": "list",
+          "title": "💡 撰寫優質品鑑筆記的10大技巧",
+          "points": [
+            "**1. 即時記錄**：當下寫下第一印象，事後難以回憶",
+            "**2. 使用標準術語**：避免模糊詞彙（「好喝」→「well-balanced」）",
+            "**3. 量化描述**：「高酸度」→「high acidity, estimated TA 6.5g/L」",
+            "**4. 記錄環境**：醒酒時間、溫度、餐搭影響風味",
+            "**5. 多次品鑑**：同一酒款不同時間品嚐，追蹤演變",
+            "**6. 比較參照**：與同酒莊、同產區、同年份酒款比較",
+            "**7. 誠實評價**：即使是DRC，也要指出缺點",
+            "**8. 拍照記錄**：酒標、瓶身、顏色、酒腿",
+            "**9. 記錄來源**：購自何處、瓶況、價格（投資參考）",
+            "**10. 定期複習**：每季回顧筆記，發現自己口味變化與品鑑能力進步"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🚫 品鑑筆記常見錯誤與改進",
+          "content": "**錯誤1：過度簡略**\n❌ 「不錯，有果香。」\n✅ 「Medium+ intensity nose with red cherry, raspberry, subtle violet notes. Well-balanced with fine tannins and long finish. 90/100.」\n\n**錯誤2：過度主觀**\n❌ 「我超愛！今年喝過最好的酒！」\n✅ 「Outstanding quality. Complex, well-structured, excellent aging potential. Personal preference: highly enjoyable. 94/100.」\n\n**錯誤3：使用非標準術語**\n❌ 「順口、回甘、有深度」\n✅ 「Smooth texture with silky tannins. Long finish with lingering aftertaste. Profound complexity with multiple flavor layers.」\n\n**錯誤4：忽視技術細節**\n❌ 「酸度高」\n✅ 「High acidity (estimated pH 3.3, TA 6g/L), providing freshness and aging structure.」\n\n**錯誤5：缺乏比較參考**\n❌ 「單寧強」\n✅ 「Medium+ tannin, less grippy than 2010 vintage but more structured than 2018.」\n\n**改進策略**\n• 使用模板，強制完成每個欄位\n• 參考專業評論家的筆記學習用詞\n• 品鑑時對照WSET/MS術語表\n• 定期與品酒會友交流筆記\n• 盲品後對照答案，檢討判斷準確度\n\n**進階技巧：建立個人術語庫**\n隨時間累積，建立「我的香氣資料庫」，記錄：\n• 「Chambertin典型香氣」：我的感受\n• 「2015年份特徵」：我的觀察\n• 「DRC風格」：我的理解\n\n這比死記教科書更有效，建立專屬於你的品鑑語言。"
+        }
+      ]
+    },
+    {
+      "id": "m14-l4",
+      "title": "實戰演練",
+      "duration": "18分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "實戰演練",
+          "subtitle": "Lesson 4 - 18分鐘",
+          "description": "真實酒款品鑑報告示範與練習"
+        },
+        {
+          "type": "content",
+          "title": "實戰演練的學習價值",
+          "content": "**理論與實踐的橋樑**\n\n學習品鑑術語和評分系統後，最重要的是**實際應用**。本節提供：\n\n✅ **3個真實酒款**完整品鑑報告示範\n✅ **不同品質等級**對比（村級、特級園、DRC）\n✅ **專業寫作風格**參考\n✅ **常見問題**解析\n\n**學習方法**\n\n1. **先自己品鑑**（如果有酒款）\n2. **閱讀專業報告**\n3. **對比差異**\n4. **學習用詞與結構**\n5. **模仿練習**\n\n**練習頻率建議**\n\n• 每週至少品鑑並記錄2-3款酒\n• 每月參加1次品酒會（多人交流）\n• 每季回顧並重新品嚐重要酒款\n• 每年追蹤5-10款酒的陳年演變\n\n**6個月後，你將看到驚人的進步！**"
+        },
+        {
+          "type": "content",
+          "title": "範例 1️⃣：村級酒款品鑑報告",
+          "content": "**2019 Louis Jadot Gevrey-Chambertin Village**\n\n---\n\n**【基本資訊】**\nProducer: Louis Jadot\nAppellation: Gevrey-Chambertin AC\nVintage: 2019\nGrape: Pinot Noir 100%\nAlcohol: 13.5% ABV\nTasting Date: 2026年2月\nPrice: €45 (retail)\n\n**【視覺 Appearance】**\nClarity: Clear\nIntensity: Medium\nColor: Bright ruby with purple rim\nOther: Medium legs, no sediment\n\n**【嗅覺 Nose】**\nCondition: Clean\nIntensity: Pronounced\nDevelopment: Youthful but accessible\n\nAroma Profile:\n• **Primary**: Red cherry, raspberry, strawberry\n• **Secondary**: Subtle vanilla, toast from oak (20% new)\n• **Tertiary**: Hints of dried herbs, very early earthy notes\n\nComplexity: Moderate complexity\n\n**【味覺 Palate】**\nSweetness: Dry\nAcidity: High (fresh, vibrant, TA ≈ 5.5g/L)\nTannin: Medium, fine-grained, slightly chalky\nAlcohol: Medium+ (warming but balanced)\nBody: Medium+\nFlavor Intensity: Medium+\nFlavor: Echoes nose - red fruits, light spice, mineral notes\nFinish: Medium+ length (10-12 seconds)\nTexture: Smooth\n\n**【結論 Conclusions】**\n**Quality Level**: Good to Very Good (88/100)\n**Assessment**: Well-made village-level Gevrey. Clean fruit expression, proper structure, good typicity. Not complex but honest and enjoyable.\n**Aging Potential**: Drink now to 2029. Will not significantly improve but will maintain.\n**Optimal Drinking**: 2026-2028\n**Food Pairing**: Roasted chicken, mushroom risotto, soft cheeses\n\n**【評論】**\nThis is a textbook village Gevrey - shows the appellation's characteristic red fruit and earthy undertones without the depth and complexity of premier or grand cru. Jadot's consistent quality shines through. Fair value at €45. Good introduction to Gevrey style.\n\n**Burghound Comparison**: Typical Jadot村級水準，評論家給88-89分\n**Market Position**: 入門級Gevrey，適合日常飲用\n**Investment**: No（日常消費用，非投資級）"
+        },
+        {
+          "type": "content",
+          "title": "範例 2️⃣：特級園品鑑報告",
+          "content": "**2015 Domaine Armand Rousseau Chambertin Grand Cru**\n\n---\n\n**【基本資訊】**\nProducer: Domaine Armand Rousseau\nAppellation: Chambertin Grand Cru\nVintage: 2015 (偉大年份)\nGrape: Pinot Noir 100%\nAlcohol: 13.5% ABV\nTasting Date: 2026年2月\nDecant: 3 hours\nTemperature: 16°C\nPrice: €800 (2020 purchase), Current: €1,200\n\n**【視覺 Appearance】**\nClarity: Brilliant\nIntensity: Deep\nColor: Deep garnet with slight orange rim (developing)\nOther: Pronounced legs, trace sediment\n\n**【嗅覺 Nose】**\nCondition: Clean, flawless\nIntensity: Very pronounced\nDevelopment: Evolving beautifully - primary and tertiary in harmony\n\nAroma Profile:\n• **Primary**: Concentrated black cherry, cassis, ripe raspberry\n• **Secondary**: Rose petal, violet, vanilla, cedar, sweet spice\n• **Tertiary**: Forest floor, truffle, mushroom, damp earth, leather, tobacco leaf, black tea\n\nComplexity: **Highly complex** - multiple layers continuously evolving in glass\n\n**【味覺 Palate】**\nSweetness: Dry (but ripe fruit suggests richness)\nAcidity: High (TA ≈ 6.5g/L, provides structure and freshness)\nTannin: High but remarkably fine - silky, integrated, no rough edges\nAlcohol: Medium+ (13.5% but feels perfectly balanced)\nBody: Full\nFlavor Intensity: Intense\nFlavor: Black cherry, cassis, truffle, iron/blood, licorice, profound minerality\nFinish: **Very long** (40+ seconds) with waves of flavor\nTexture: Silk and velvet - the hallmark of great Rousseau\n\n**【結論 Conclusions】**\n**Quality Level**: Outstanding (96/100)\n\n**Assessment**: \nExceptional Chambertin showing perfect balance of power and elegance. The 2015 vintage's concentration is evident but controlled. Rousseau's masterful winemaking allows terroir to speak clearly. This is what grand cru Burgundy should be - profound, complex, ageworthy yet already beautiful.\n\n**Terroir Expression**: Perfect expression of Chambertin - masculine structure with aristocratic refinement. The iron/mineral core is unmistakable.\n\n**Aging Potential**: Already excellent but will continue to improve for 10-15 years, then plateau for another decade. Peak: 2030-2040.\n\n**Optimal Drinking**: 2028-2045\n\n**Food Pairing**: Prime beef with truffle sauce, roasted duck, game meats, aged Comté\n\n**【專業評分參考】**\n• Allen Meadows (Burghound): 95-96分\n• Antonio Galloni (Vinous): 96分\n• Neal Martin: 95分\n\n**【投資評估】**\n購入價（2020）: €800\n當前市值（2026）: €1,200\n漲幅: +50% (6年)\n預測2035: €1,800-2,000\n\n**Verdict**: Hold. 尚未達巔峰，繼續陳年將獲得更大增值與飲用樂趣。\n\n**【個人筆記】**\n這是我第二次品嚐此酒（首次：2023年）。\n相比3年前，香氣更複雜，單寧更融合，三級香氣開始主導。\n建議醒酒至少3小時，甚至可以提前一天開瓶。\n與Rousseau其他特級園比較：比Clos de Bèze更優雅，比Clos Saint-Jacques更深沉。\n\n這才是花800歐的價值 - 每一口都在訴說Chambertin的故事。"
+        },
+        {
+          "type": "content",
+          "title": "範例 3️⃣：DRC等級品鑑報告",
+          "content": "**2015 Domaine de la Romanée-Conti Romanée-Conti Grand Cru**\n\n---\n\n**【基本資訊】**\nProducer: Domaine de la Romanée-Conti\nAppellation: Romanée-Conti Grand Cru (Monopole)\nVintage: 2015 (世紀年份)\nGrape: Pinot Noir 100%\nAlcohol: 13%\nTasting Date: 2026年2月8日\nDecant: 4 hours in decanter\nTemperature: 17°C\nGlassware: Zalto Burgundy\nOccasion: 特殊慶祝\nPrice: €15,000 (2020 purchase), Current: €25,000+\n\n**【視覺 Appearance】**\nClarity: **Brilliant** - luminous quality\nIntensity: Medium+ (surprisingly delicate for concentration)\nColor: Pale to medium garnet with slight orange/brick rim\nOther: Ethereal quality - seems to glow from within. Medium+ legs. Slight sediment.\n\n**【嗅覺 Nose】**\nCondition: **Pristine** - absolutely flawless\nIntensity: Pronounced but restrained (不aggressive)\nDevelopment: Paradoxically youthful AND evolved\n\nAroma Profile - **Transcendent Complexity**:\n• **Primary**: Red cherry, cranberry, wild strawberry (精緻非濃郁)\n• **Floral**: Rose petal, peony, orange blossom, potpourri\n• **Spice**: Cinnamon, clove, star anise, saffron, incense\n• **Tertiary**: Truffle, humus, forest floor, sandalwood, black tea, tobacco\n• **Mineral**: Wet stones, iron ore, saline quality\n• **Ethereal**: Something indefinable - 'RC magic'\n\nComplexity: **Profound** - 20+ identifiable elements, constantly morphing\n\n**【味覺 Palate】**\nSweetness: Dry (but profound fruit depth creates richness illusion)\nAcidity: **High** but seamlessly integrated (pH ≈ 3.6, TA ≈ 6.0g/L)\nTannin: Medium but ultra-fine - like powdered silk. Completely integrated.\nAlcohol: Medium (13% but feels weightless)\nBody: Medium+ but seems lighter due to incredible finesse\nFlavor Intensity: **Intense yet delicate** (the paradox of RC)\nFlavor: Echoes nose with added dimensions - umami, blood orange, exotic spices\nFinish: **Exceptionally long** (60+ seconds) - waves upon waves\nTexture: **Liquid silk** - the finest texture in all of wine\nBalance: **Perfect** - nothing out of place\n\n**【特殊品質】**\n\n**什麼讓RC不同？**\n\n1. **精緻度 (Finesse)**: 不是力量，是優雅的極致\n2. **複雜度 (Complexity)**: 每30秒都有新發現\n3. **深度 (Depth)**: 有vertically stacked layers\n4. **礦物感 (Minerality)**: 彷彿品嚐土地本身\n5. **整體感 (Completeness)**: 無懈可擊的完美\n6. **哲學性 (Profundity)**: 超越技術，進入藝術與哲學\n\n**【結論 Conclusions】**\n\n**Quality Level**: **Exceptional** (98/100)\n\n**Assessment**:\nThis is not just outstanding wine - this is a complete artistic statement. The 2015 RC represents the pinnacle of what Burgundy can achieve. It combines the vintage's richness with RC's signature ethereal elegance. Every element is perfectly calibrated. This wine doesn't shout - it whispers profound truths about terroir, time, and craft.\n\n**Terroir Expression**: \nRomanée-Conti的terroir完全透明化 - 每一個nuance都清晰可辨。這是獨占園的優勢：無妥協、純粹表達。\n\n**Vintage Character**:\n2015的濃度與結構，但RC的克制與精緻化解了任何厚重感。這是偉大年份遇上偉大terroir的完美結合。\n\n**Aging Potential**: \n已經beautiful，但遠未到巔峰。可陳年20-30年，2035-2050進入完全成熟期。此酒可能活過我。\n\n**Optimal Drinking**: 2030-2055 (25年窗口)\n\n**Food Pairing**: \n說實話，這酒不需要食物。如果一定要搭：白松露、極簡烹調的野生鴿胸、或單獨品飲。\n\n**【專業評分】**\n• Allen Meadows: **98分** (\"A wine of surreal beauty\")\n• Antonio Galloni: **98-100分** (\"Utterly magnificent\")\n• Neal Martin: **98分** (\"Liquid poetry\")\n• Jancis Robinson: **19.5/20** (極罕見高分)\n\n**【市場與投資】**\n2020購入價: €15,000\n2026市價: €25,000-28,000\n投資報酬: +70% (6年)\n拍賣記錄: 2025年Acker拍出$32,000/瓶\n預測2035: €40,000+\n\n**Investment Grade**: **AAA** - 最高等級投資品\n**Liquidity**: 極佳 - 隨時可在拍賣會高價出售\n**Risk**: 極低 - DRC價格從未長期下跌\n\n**【哲學思考】**\n\n喝RC不是consumption，是experience。這瓶酒讓我思考：\n\n• What is perfection in wine?\n• How does terroir speak through human hands?\n• Why does beauty matter?\n\nRC不回答這些問題，但提出了更好的問題。\n\n花€15,000買一瓶酒理性嗎？不。\n值得嗎？如果你理解wine beyond liquid，那麼：absolutely.\n\n這是我這輩子品嚐過最接近完美的酒。\n\n**【個人備註】**\n此酒為重要生日慶祝。與6位好友分享（各約80ml）。\n品鑑時間：從19:00-23:30，持續4.5小時。\n酒從未停止演變。\n瓶況完美：IN液位，完整原木箱，來自知名藏家。\n\n下次開瓶：2035年（10年後），期待它的完全成熟。\n\n**這是wine education的終點嗎？不，這是另一個起點。**"
+        },
+        {
+          "type": "comparison",
+          "title": "三個範例比較與學習重點",
+          "leftTitle": "📊 品質層次差異",
+          "leftPoints": [
+            "村級（88分）：正確、簡單、果味主導",
+            "特級園（96分）：複雜、深度、terroir表達",
+            "DRC（98分）：超越技術、哲學性、藝術品",
+            "價格：€45 vs €800 vs €15,000",
+            "價差合理性：複雜度、稀有性、陳年潛力、藝術價值",
+            "學習：了解為何頂級酒值得溢價"
+          ],
+          "rightTitle": "✍️ 寫作風格演進",
+          "rightPoints": [
+            "村級：簡潔、直接、技術性",
+            "特級園：詳細、層次、比較性",
+            "DRC：詩意、哲學、情感與理性並存",
+            "術語密度：基本 → 進階 → 大師",
+            "個人色彩：少 → 中 → 多（但仍專業）",
+            "學習：隨酒款等級調整寫作深度"
+          ]
+        },
+        {
+          "type": "list",
+          "title": "🎯 實戰練習作業",
+          "points": [
+            "**作業1：日常練習**",
+            "• 本週品鑑3款酒，每款寫完整品鑑筆記",
+            "• 至少一款使用WSET完整結構",
+            "• 上傳至CellarTracker或個人筆記",
+            "**作業2：比較品鑑**",
+            "• 同時品鑑2款同產區不同等級的酒（如村級vs特級園）",
+            "• 撰寫比較報告，突出差異",
+            "• 思考：價差是否合理？",
+            "**作業3：盲品挑戰**",
+            "• 請朋友準備3款布根地紅酒（遮住酒標）",
+            "• 盲品並記錄，推測產區、等級、年份",
+            "• 揭曉答案後檢討，學習特徵識別",
+            "**作業4：陳年追蹤**",
+            "• 選擇一款有陳年潛力的酒（購買3-6瓶）",
+            "• 每6個月開一瓶並記錄",
+            "• 追蹤演變軌跡，預測巔峰期"
+          ]
+        },
+        {
+          "type": "content",
+          "title": "🚀 從業餘到專業的品鑑之路",
+          "content": "**階段1：初學者（0-6個月）**\n• 熟悉基本術語\n• 能簡單描述顏色、香氣、口感\n• 開始建立品鑑筆記習慣\n• 品鑑50-100款酒\n\n**階段2：進階者（6個月-2年）**\n• 掌握WSET/MS系統化方法\n• 能分辨primary/secondary/tertiary香氣\n• 開始準確判斷產區與品種\n• 品鑑200-500款酒\n• 參考專業評論家筆記對比\n\n**階段3：專業者（2-5年）**\n• 盲品準確度高（產區80%+、品種90%+）\n• 撰寫高品質品鑑報告\n• 能評估陳年潛力\n• 品鑑1,000+款酒\n• 開始建立個人風格\n\n**階段4：專家（5年+）**\n• 深入了解特定產區（如布根地）\n• 熟悉各酒莊風格差異\n• 能準確預測酒款演變\n• 品鑑3,000+款酒\n• 受邀寫專業評論\n\n**永遠的學習者**\n即使是Robert Parker、Allen Meadows也持續學習。\n葡萄酒的世界無邊無際，保持謙虛、持續探索。\n\n**最後的建議**\n\n📝 **寫作**：每週至少3篇品鑑筆記\n👥 **社群**：加入品酒會、與同好交流\n📚 **閱讀**：訂閱專業評論（Burghound, Vinous）\n🍷 **品鑑**：每月至少品嚐10-15款酒\n🎓 **認證**：考慮WSET Diploma或Sommelier認證\n💰 **投資**：建立個人酒窖，追蹤陳年\n🌍 **旅行**：造訪布根地，親臨酒莊品鑑\n\n**品鑑是終身的旅程，享受每一步！** 🥂"
+        }
+      ]
+    }
   ],
-  "quiz": {"id": "advanced-m14-quiz", "title": "專業品鑑報告撰寫 - 綜合測驗", "passingScore": 75, "questions": [{"id": "q1", "type": "multiple-choice", "question": "Parker評分系統的滿分是？", "options": ["20分", "100分", "5星", "10分"], "correctAnswer": 1}]}
+  "quiz": {
+    "id": "advanced-m14-quiz",
+    "title": "專業品鑑報告撰寫 - 綜合測驗",
+    "passingScore": 75,
+    "questions": [
+      {
+        "id": "q1",
+        "type": "multiple-choice",
+        "question": "Parker評分系統的滿分是？",
+        "options": ["20分", "100分", "5星", "10分"],
+        "correctAnswer": 1,
+        "explanation": "Robert Parker使用100分制，實際評分範圍為50-100分，但多數酒款在85-100分區間。"
+      },
+      {
+        "id": "q2",
+        "type": "multiple-choice",
+        "question": "描述布根地紅酒顏色時，'Garnet'是指？",
+        "options": ["紫色", "石榴紅色", "茶色", "橙色"],
+        "correctAnswer": 1,
+        "explanation": "Garnet（石榴紅）是布根地Pinot Noir進入適飲期的典型顏色，介於年輕的Ruby與陳年的Tawny之間。"
+      },
+      {
+        "id": "q3",
+        "type": "true-false",
+        "question": "Primary香氣是指來自葡萄品種本身的香氣。",
+        "correctAnswer": true,
+        "explanation": "Primary香氣來自葡萄品種，Secondary香氣來自釀造過程，Tertiary香氣來自陳年。"
+      },
+      {
+        "id": "q4",
+        "type": "multiple-choice",
+        "question": "Allen Meadows (Burghound)評分系統中，96分以上代表什麼？",
+        "options": [
+          "Good",
+          "Very Good",
+          "Outstanding",
+          "Exceptional - 極度罕見"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Burghound的96分以上極度罕見，只給最偉大年份的最偉大酒款，一年不到10款。"
+      },
+      {
+        "id": "q5",
+        "type": "multiple-choice",
+        "question": "WSET品鑑系統中，SAT代表？",
+        "options": [
+          "Sweet, Acidity, Tannin",
+          "Systematic Approach to Tasting",
+          "Structure, Aroma, Texture",
+          "Score And Taste"
+        ],
+        "correctAnswer": 1,
+        "explanation": "SAT是WSET的Systematic Approach to Tasting（系統化品鑑方法）的縮寫。"
+      },
+      {
+        "id": "q6",
+        "type": "true-false",
+        "question": "單寧描述中，'Fine-grained'是指粗糙的單寧。",
+        "correctAnswer": false,
+        "explanation": "Fine-grained指細緻的單寧，是高品質葡萄酒的特徵。粗糙的單寧用Coarse或Rough描述。"
+      },
+      {
+        "id": "q7",
+        "type": "multiple-choice",
+        "question": "品鑑筆記中，'Long finish'通常指尾韻持續多久？",
+        "options": ["3秒以下", "3-6秒", "6-12秒", "15秒以上"],
+        "correctAnswer": 3,
+        "explanation": "Long finish通常指15秒以上。Short finish <3秒，Medium finish 6-12秒。"
+      },
+      {
+        "id": "q8",
+        "type": "multiple-choice",
+        "question": "描述酒體時，布根地特級園通常是？",
+        "options": ["Light", "Medium", "Medium+ to Full", "Heavy"],
+        "correctAnswer": 2,
+        "explanation": "布根地特級園通常是Medium+到Full body，比村級的Medium body更有架構和濃度。"
+      },
+      {
+        "id": "q9",
+        "type": "true-false",
+        "question": "專業品鑑筆記應該避免任何主觀情感表達。",
+        "correctAnswer": false,
+        "explanation": "雖然應以技術性描述為主，但適度的個人感受（尤其在「個人筆記」部分）可以增加筆記的真實性和參考價值。關鍵是區分客觀描述與主觀感受。"
+      },
+      {
+        "id": "q10",
+        "type": "multiple-choice",
+        "question": "CellarTracker的主要功能是？",
+        "options": [
+          "購買葡萄酒",
+          "品鑑筆記記錄與酒窖管理",
+          "葡萄酒拍賣",
+          "酒莊預訂"
+        ],
+        "correctAnswer": 1,
+        "explanation": "CellarTracker是全球最大的品鑑筆記與酒窖管理平台，免費提供記錄、追蹤、社群評分等功能。"
+      }
+    ]
+  }
 }

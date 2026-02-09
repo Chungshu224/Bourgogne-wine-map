@@ -32,15 +32,15 @@
         "area": "約 61 公頃",
         "altitude": "270-350m",
         "exposition": "東、東南",
-        "soil": "白色泥灰岩和石灰岩",
-        "grapes": [
+        "soilStructure": "白色泥灰岩和石灰岩",
+        "grapeVarieties": [
           "Aligoté"
         ],
         "wineStyle": "清新、活潑，帶有礦物感和柑橘香氣。",
         "tastingNotes": "檸檬、青蘋果、金合歡、燧石。",
         "agingPotential": "3-7年",
         "history": "這是該產區的核心，展現了 Aligoté Doré 品種的潛力。",
-        "producers": [
+        "famousWineries": [
           "Domaine de Villaine",
           "Domaine A. et P. de Villaine"
         ],

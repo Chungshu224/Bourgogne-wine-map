@@ -39,8 +39,8 @@
         "area": "約 500 公頃",
         "altitude": "230-320m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩和粘土",
-        "grapes": [
+        "soilStructure": "石灰岩和粘土",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -48,7 +48,7 @@
         "tastingNotes": "紅酒：紅色水果。白酒：蘋果、柑橘。",
         "agingPotential": "3-8年",
         "history": "Mercurey 村莊級是產區產量最大的部分。",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Maison Louis Jadot"
         ],
@@ -64,8 +64,8 @@
         "area": "約 150 公頃",
         "altitude": "240-300m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -73,7 +73,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革。白酒：烤麵包、蜂蜜。",
         "agingPotential": "紅酒：7-20年，白酒：5-12年",
         "history": "Mercurey 擁有多達32個一級園，是其品質的象徵。",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -88,8 +88,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -97,7 +97,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -112,8 +112,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -121,7 +121,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -136,8 +136,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -145,7 +145,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -160,8 +160,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -169,7 +169,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -184,8 +184,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -193,7 +193,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -208,8 +208,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -217,7 +217,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -232,8 +232,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -241,7 +241,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -256,8 +256,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -265,7 +265,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -280,8 +280,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -289,7 +289,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -304,8 +304,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -313,7 +313,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -328,8 +328,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -337,7 +337,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -352,8 +352,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -361,7 +361,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -376,8 +376,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -385,7 +385,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -400,8 +400,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -409,7 +409,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -424,8 +424,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -433,7 +433,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -448,8 +448,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -457,7 +457,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -472,8 +472,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -481,7 +481,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -496,8 +496,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -505,7 +505,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -520,8 +520,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -529,7 +529,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -544,8 +544,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -553,7 +553,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -568,8 +568,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -577,7 +577,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -592,8 +592,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -601,7 +601,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -616,8 +616,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -625,7 +625,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -640,8 +640,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -649,7 +649,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -664,8 +664,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -673,7 +673,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -688,8 +688,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -697,7 +697,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -712,8 +712,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -721,7 +721,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -736,8 +736,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -745,7 +745,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -760,8 +760,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -769,7 +769,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -784,8 +784,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -793,7 +793,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -808,8 +808,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -817,7 +817,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"
@@ -832,8 +832,8 @@
         "area": "約 1.2-4 公頃",
         "altitude": "240-320m",
         "exposition": "東、東南、南",
-        "soil": "富含鐵質的石灰岩與泥灰岩",
-        "grapes": [
+        "soilStructure": "富含鐵質的石灰岩與泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -841,7 +841,7 @@
         "tastingNotes": "紅酒：黑櫻桃、甘草、皮革、森林底層。白酒：白桃、杏仁、烤麵包。",
         "agingPotential": "7-20年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Faiveley",
           "Château de Chamirey",
           "Domaine Michel Juillot"

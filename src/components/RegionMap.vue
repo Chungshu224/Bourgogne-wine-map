@@ -271,14 +271,12 @@ watch(() => props.regionConfig?.id, () => {
 <style scoped>
 .main-layout {
   display: flex;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  height: calc(100vh - var(--header-height, 56px));
   position: fixed;
-  top: 0;
+  top: var(--header-height, 56px);
   left: 0;
   right: 0;
-  bottom: 0;
 }
 
 @media (max-width: 768px) {

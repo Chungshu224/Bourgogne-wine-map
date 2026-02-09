@@ -39,8 +39,8 @@
         "area": "約 230 公頃",
         "altitude": "240-280m",
         "exposition": "東、東南",
-        "soil": "石灰岩和粘土",
-        "grapes": [
+        "soilStructure": "石灰岩和粘土",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -48,7 +48,7 @@
         "tastingNotes": "紅酒：櫻桃、覆盆子。白酒：青蘋果。",
         "agingPotential": "3-7年",
         "history": "Givry 村莊級葡萄酒是體驗該產區風格的絕佳入門。",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Maison Joseph Drouhin"
         ],
@@ -64,8 +64,8 @@
         "area": "約 55 公頃",
         "altitude": "250-280m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -73,7 +73,7 @@
         "tastingNotes": "紅酒：黑櫻桃、香料、煙燻。白酒：白桃、烤杏仁。",
         "agingPotential": "紅酒：6-15年，白酒：4-10年",
         "history": "Givry 的一級園展現了該產區所能達到的精緻和優雅的高度。",
-        "producers": [
+        "famousWineries": [
           "Domaine François Lumpp",
           "Domaine Thenard",
           "Clos Salomon"
@@ -88,8 +88,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -97,7 +97,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -112,8 +112,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -121,7 +121,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -136,8 +136,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -145,7 +145,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -160,8 +160,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -169,7 +169,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -184,8 +184,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -193,7 +193,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -208,8 +208,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -217,7 +217,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -232,8 +232,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -241,7 +241,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -256,8 +256,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -265,7 +265,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -280,8 +280,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -289,7 +289,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -304,8 +304,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -313,7 +313,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -328,8 +328,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -337,7 +337,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -352,8 +352,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -361,7 +361,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -376,8 +376,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -385,7 +385,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -400,8 +400,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -409,7 +409,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -424,8 +424,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -433,7 +433,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -448,8 +448,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -457,7 +457,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -472,8 +472,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -481,7 +481,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -496,8 +496,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -505,7 +505,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -520,8 +520,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -529,7 +529,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -544,8 +544,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -553,7 +553,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -568,8 +568,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -577,7 +577,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -592,8 +592,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -601,7 +601,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -616,8 +616,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -625,7 +625,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -640,8 +640,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -649,7 +649,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -664,8 +664,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -673,7 +673,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -688,8 +688,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -697,7 +697,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -712,8 +712,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -721,7 +721,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -736,8 +736,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -745,7 +745,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -760,8 +760,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -769,7 +769,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -784,8 +784,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -793,7 +793,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -808,8 +808,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -817,7 +817,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -832,8 +832,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -841,7 +841,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -856,8 +856,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -865,7 +865,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -880,8 +880,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -889,7 +889,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"
@@ -904,8 +904,8 @@
         "area": "約 0.8-2.5 公頃",
         "altitude": "250-300m",
         "exposition": "東、東南、南",
-        "soil": "石灰岩與泥灰岩混合，富含鐵質",
-        "grapes": [
+        "soilStructure": "石灰岩與泥灰岩混合，富含鐵質",
+        "grapeVarieties": [
           "Pinot Noir",
           "Chardonnay"
         ],
@@ -913,7 +913,7 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Domaine Joblot",
           "Domaine Besson",
           "Domaine François Lumpp"

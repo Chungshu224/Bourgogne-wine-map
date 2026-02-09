@@ -82,9 +82,13 @@
               <span class="detail-label">坡向:</span>
               <span class="detail-value">{{ regionInfo.exposition }}</span>
             </div>
-            <div v-if="regionInfo.soil" class="detail-item full-width">
+            <div v-if="regionInfo.soilStructure" class="detail-item full-width">
               <span class="detail-label">土壤:</span>
-              <span class="detail-value">{{ regionInfo.soil }}</span>
+              <span class="detail-value">{{ regionInfo.soilStructure }}</span>
+            </div>
+            <div v-if="regionInfo.climate" class="detail-item full-width">
+              <span class="detail-label">氣候:</span>
+              <span class="detail-value">{{ regionInfo.climate }}</span>
             </div>
             <div v-if="regionInfo.wineStyle" class="detail-item full-width">
               <span class="detail-label">葡萄酒風格:</span>
@@ -104,19 +108,28 @@
             </div>
           </div>
 
-          <div v-if="regionInfo.grapes && regionInfo.grapes.length" class="grape-section">
+          <div v-if="regionInfo.wineTypes && regionInfo.wineTypes.length" class="wine-types-section">
+            <div class="wine-types-title">酒款類型:</div>
+            <div class="wine-types-list">
+              <span v-for="wineType in regionInfo.wineTypes" :key="wineType" class="wine-type-tag">
+                {{ wineType }}
+              </span>
+            </div>
+          </div>
+
+          <div v-if="regionInfo.grapeVarieties && regionInfo.grapeVarieties.length" class="grape-section">
             <div class="grape-title">主要葡萄品種:</div>
             <div class="grape-badges">
-              <div v-for="grape in regionInfo.grapes" :key="grape" class="grape-badge" :style="grapeBadgeStyle(grape)">
+              <div v-for="grape in regionInfo.grapeVarieties" :key="grape" class="grape-badge" :style="grapeBadgeStyle(grape)">
                 {{ grape }}
               </div>
             </div>
           </div>
 
-          <div v-if="regionInfo.producers && regionInfo.producers.length" class="producers-section">
-            <div class="producers-title">代表生產者:</div>
+          <div v-if="regionInfo.famousWineries && regionInfo.famousWineries.length" class="producers-section">
+            <div class="producers-title">知名酒莊:</div>
             <div class="producers-list">
-              <span v-for="producer in regionInfo.producers" :key="producer" class="producer-tag">
+              <span v-for="producer in regionInfo.famousWineries" :key="producer" class="producer-tag">
                 {{ producer }}
               </span>
             </div>
@@ -816,16 +829,18 @@ onUnmounted(() => {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.85);
-  padding: 8px 20px;
+  padding: 16px 20px 12px;
   z-index: 10;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  backdrop-filter: blur(8px);
 }
 
 .map-header h1 {
   margin: 0;
   font-size: 1.5rem;
   color: #006400; /* DarkGreen for Veneto */
+  line-height: 1.4;
 }
 
 .map-info-bar {
@@ -836,7 +851,7 @@ onUnmounted(() => {
   padding: 0;
   border-radius: 12px;
   max-width: 450px;
-  max-height: 30vh;
+  max-height: 60vh;
   box-shadow: 
     0 8px 24px rgba(0, 0, 0, 0.15),
     0 2px 8px rgba(0, 0, 0, 0.1);
@@ -1023,6 +1038,47 @@ onUnmounted(() => {
   border-left: 3px solid #8B0000;
 }
 
+.wine-types-section {
+  margin: 15px -16px 0;
+  padding: 15px;
+  background: #fafafa;
+  border-radius: 8px;
+  border-left: 3px solid #8B0000;
+}
+
+.wine-types-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #8B0000;
+  margin-bottom: 10px;
+}
+
+.wine-types-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.wine-type-tag {
+  background: linear-gradient(145deg, #8B0000, #660000);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 
+    0 2px 4px rgba(139, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.wine-type-tag:hover {
+  background: linear-gradient(145deg, #a00000, #800000);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 6px rgba(139, 0, 0, 0.4);
+}
+
 .producers-title {
   font-weight: 700;
   font-size: 1rem;
@@ -1104,15 +1160,15 @@ onUnmounted(() => {
 
 .btn-3d {
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 20px;
+  left: 20px;
   padding: 12px 24px;
   background: linear-gradient(145deg, #4CAF50, #45a049);
   color: white;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 100;
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: 0.5px;
@@ -1123,7 +1179,6 @@ onUnmounted(() => {
     inset 0 2px 2px rgba(255, 255, 255, 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  position: relative;
   overflow: hidden;
 }
 
@@ -1301,7 +1356,7 @@ onUnmounted(() => {
     width: auto;
     bottom: 10px;
     left: 10px;
-    max-height: 30vh;
+    max-height: 40vh;
   }
   
   .map-header h1 {

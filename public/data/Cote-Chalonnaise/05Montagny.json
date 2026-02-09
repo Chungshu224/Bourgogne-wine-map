@@ -37,15 +37,15 @@
         "area": "約 120 公頃",
         "altitude": "270-400m",
         "exposition": "東、東南",
-        "soil": "石灰岩和粘土",
-        "grapes": [
+        "soilStructure": "石灰岩和粘土",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "清新、直接，帶有柑橘和礦物風味。",
         "tastingNotes": "青蘋果、檸檬。",
         "agingPotential": "2-5年",
         "history": "Montagny 村莊級葡萄酒是該產區的基礎。",
-        "producers": [
+        "famousWineries": [
           "Maison Louis Latour",
           "Cave de Buxy"
         ],
@@ -61,15 +61,15 @@
         "area": "約 200 公頃",
         "altitude": "280-400m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度更陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度更陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "更為豐富、複雜和集中，具有顯著的礦物核心和陳年潛力。",
         "tastingNotes": "白桃、杏仁、蜂蜜、燧石。",
         "agingPotential": "5-12年",
         "history": "Montagny 的一級園比例非常高，是該產區品質的保證。",
-        "producers": [
+        "famousWineries": [
           "Domaine Stéphane Aladame",
           "Domaine Feuillat-Juillot"
         ],
@@ -83,15 +83,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -106,15 +106,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -129,15 +129,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -152,15 +152,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -175,15 +175,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -198,15 +198,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -221,15 +221,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -244,15 +244,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -267,15 +267,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -290,15 +290,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -313,15 +313,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -336,15 +336,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -359,15 +359,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -382,15 +382,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -405,15 +405,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -428,15 +428,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -451,15 +451,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -474,15 +474,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -497,15 +497,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -520,15 +520,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -543,15 +543,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -566,15 +566,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -589,15 +589,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -612,15 +612,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -635,15 +635,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -658,15 +658,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -681,15 +681,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -704,15 +704,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -727,15 +727,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -750,15 +750,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -773,15 +773,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -796,15 +796,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -819,15 +819,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -842,15 +842,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -865,15 +865,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -888,15 +888,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -911,15 +911,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -934,15 +934,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -957,15 +957,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -980,15 +980,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1003,15 +1003,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1026,15 +1026,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1049,15 +1049,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1072,15 +1072,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1095,15 +1095,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1118,15 +1118,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1141,15 +1141,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1164,15 +1164,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"
@@ -1187,15 +1187,15 @@
         "area": "約 1.5-3 公頃",
         "altitude": "280-380m",
         "exposition": "東、東南",
-        "soil": "富含石灰岩的泥灰岩，坡度較陡",
-        "grapes": [
+        "soilStructure": "富含石灰岩的泥灰岩，坡度較陡",
+        "grapeVarieties": [
           "Chardonnay"
         ],
         "wineStyle": "白酒：更為豐富、集中且具礦物核心，展現地塊特色。",
         "tastingNotes": "白酒：柑橘、白花、燧石、烤杏仁、蜂蜜。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [
+        "famousWineries": [
           "Cave de Buxy",
           "Château de la Saule",
           "Stéphane Aladame"

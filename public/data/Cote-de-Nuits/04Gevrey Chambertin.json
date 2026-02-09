@@ -1,5 +1,22 @@
 {
-  "Grand Crus": {
+  "name": "Gevrey-Chambertin",
+  "description": "夜丘最負盛名的村莊之一，擁有9個特級園（布根地最多），包括傳奇的Chambertin和Clos de Bèze。生產強勁有力、結構宏大、陳年潛力極佳的黑皮諾紅酒，被譽為'夜丘之王'。",
+  "area": "約 410 公頃",
+  "altitude": "250-350m",
+  "exposition": "東-東南向",
+  "grapeVarieties": ["Pinot Noir"],
+  "wineTypes": ["紅酒"],
+  "climate": "大陸性氣候，理想的坡地朝向",
+  "soilStructure": "粘土石灰岩土壤，富含鐵質，表層為棕色石灰質土和紅色粘土",
+  "wineStyle": "紅酒：結構宏大、濃郁複雜、單寧豐富、力量強勁，需要長時間陳年",
+  "tastingNotes": "黑莓、櫻桃、香料、皮革、礦物質、甘草、野味",
+  "agingPotential": "村莊級：10-20年；一級園：15-30年；特級園：20-50年",
+  "famousWineries": ["Domaine Armand Rousseau", "Domaine Denis Mortet", "Domaine Claude Dugat", "Domaine Fourrier", "Domaine Leroy"],
+  "grandCrus": ["Chambertin", "Chambertin-Clos de Bèze", "Chapelle-Chambertin", "Charmes-Chambertin", "Griotte-Chambertin", "Latricières-Chambertin", "Mazis-Chambertin", "Mazoyères-Chambertin", "Ruchottes-Chambertin"],
+  "premierCrus": ["Clos Saint-Jacques", "Lavaut Saint-Jacques", "Les Cazetiers", "Combe au Moine", "Estournelles-Saint-Jacques"],
+  "history": "Gevrey-Chambertin的歷史可追溯至7世紀修道院種植。Chambertin是拿破崙最愛的葡萄酒，被譽為'勃艮地之王'。村莊因Chambertin的盛名在1847年加上了Chambertin的名字。",
+  "geojson": {
+    "grand_crus": {
     "chambertin": {
       "name": "Chambertin",
       "fullName": "AOC Chambertin Grand Cru",
@@ -7,15 +24,15 @@
       "area": "13.5 ha",
       "altitude": "275-300m",
       "exposition": "東-東南向",
-      "soil": "粘土石灰岩土壤，含有豐富的鐵質",
-      "grapes": [
+      "soilStructure": "粘土石灰岩土壤，含有豐富的鐵質",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "結構宏大、濃郁複雜、陳年潛力極佳",
       "tastingNotes": "黑莓、櫻桃、香料、皮革、礦物質",
       "agingPotential": "15-30年",
       "history": "勃根地之王，拿破崙最愛的葡萄酒，被譽為最偉大的黑皮諾產區之一",
-      "producers": [
+      "famousWineries": [
         "Armand Rousseau",
         "Leroy",
         "Denis Mortet"
@@ -221,15 +238,15 @@
       "area": "15.5 ha",
       "altitude": "275-300m",
       "exposition": "東-東南向",
-      "soil": "石灰岩粘土，富含鐵質氧化物",
-      "grapes": [
+      "soilStructure": "石灰岩粘土，富含鐵質氧化物",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅細膩、香氣複雜、單寧絲滑",
       "tastingNotes": "紅果、紫羅蘭、香料、森林地面、礦物質",
       "agingPotential": "15-25年",
       "history": "歷史可追溯至7世紀，由僧侶開墾，與Chambertin同樣聲譽卓著",
-      "producers": [
+      "famousWineries": [
         "Faiveley",
         "Bruno Clair",
         "Pierre Damoy"
@@ -243,15 +260,15 @@
       "area": "5.5 ha",
       "altitude": "280-310m",
       "exposition": "東向",
-      "soil": "石灰岩土壤，排水良好",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，排水良好",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅精緻、酸度活潑、結構平衡",
       "tastingNotes": "草莓、櫻桃、玫瑰花瓣、香料",
       "agingPotential": "10-20年",
       "history": "因附近的小教堂（Chapelle）而得名",
-      "producers": [
+      "famousWineries": [
         "Claude Dugat",
         "Jean-Louis Trapet"
       ],
@@ -264,15 +281,15 @@
       "area": "31 ha",
       "altitude": "260-280m",
       "exposition": "東-東南向",
-      "soil": "深厚的粘土石灰岩土壤",
-      "grapes": [
+      "soilStructure": "深厚的粘土石灰岩土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "豐滿圓潤、果味濃郁、易於親近",
       "tastingNotes": "黑櫻桃、李子、香草、咖啡",
       "agingPotential": "12-20年",
       "history": "Gevrey-Chambertin最大的特級園",
-      "producers": [
+      "famousWineries": [
         "Ponsot",
         "Dujac",
         "Sérafin Père et Fils"
@@ -286,15 +303,15 @@
       "area": "2.7 ha",
       "altitude": "280-300m",
       "exposition": "東向",
-      "soil": "薄層石灰岩土壤，底層為堅硬岩床",
-      "grapes": [
+      "soilStructure": "薄層石灰岩土壤，底層為堅硬岩床",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "精緻優雅、香氣濃郁、單寧精細",
       "tastingNotes": "櫻桃、玫瑰、香料、礦物質",
       "agingPotential": "15-25年",
       "history": "以其精緻優雅著稱的小產區",
-      "producers": [
+      "famousWineries": [
         "Claude Dugat",
         "Ponsot"
       ],
@@ -307,15 +324,15 @@
       "area": "7.4 ha",
       "altitude": "270-290m",
       "exposition": "東-東南向",
-      "soil": "粘土石灰岩，富含鐵質",
-      "grapes": [
+      "soilStructure": "粘土石灰岩，富含鐵質",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "強勁有力、結構緊密、陳年能力強",
       "tastingNotes": "黑果、皮革、煙燻、礦物質",
       "agingPotential": "15-25年",
       "history": "名稱來自拉丁語「Latricis」，意為石礦場",
-      "producers": [
+      "famousWineries": [
         "Jean-Louis Trapet",
         "Faiveley"
       ],
@@ -328,15 +345,15 @@
       "area": "9.1 ha",
       "altitude": "270-290m",
       "exposition": "東向",
-      "soil": "石灰岩粘土，含有較多石塊",
-      "grapes": [
+      "soilStructure": "石灰岩粘土，含有較多石塊",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "濃郁深邃、單寧堅實、層次豐富",
       "tastingNotes": "黑莓、香料、松露、土壤氣息",
       "agingPotential": "15-25年",
       "history": "位於Chambertin北部的優質產區",
-      "producers": [
+      "famousWineries": [
         "Faiveley",
         "Hospices de Beaune"
       ],
@@ -349,15 +366,15 @@
       "area": "19 ha",
       "altitude": "260-280m",
       "exposition": "東-東南向",
-      "soil": "深厚粘土土壤",
-      "grapes": [
+      "soilStructure": "深厚粘土土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "豐滿柔順、果味充沛、易於飲用",
       "tastingNotes": "紅果、香草、巧克力、香料",
       "agingPotential": "10-18年",
       "history": "與Charmes-Chambertin相鄰，風格相似",
-      "producers": [
+      "famousWineries": [
         "Hospices de Beaune",
         "Various producers"
       ],
@@ -370,15 +387,15 @@
       "area": "3.3 ha",
       "altitude": "280-310m",
       "exposition": "東向",
-      "soil": "薄層石灰岩土壤，多石塊",
-      "grapes": [
+      "soilStructure": "薄層石灰岩土壤，多石塊",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "精緻細膩、香氣複雜、礦物感強",
       "tastingNotes": "紅果、花香、礦物質、香料",
       "agingPotential": "15-20年",
       "history": "最小的Chambertin家族產區之一",
-      "producers": [
+      "famousWineries": [
         "Armand Rousseau",
         "Mugneret-Gibourg"
       ],
@@ -393,15 +410,15 @@
       "area": "約80 ha (23個一級園)",
       "altitude": "250-350m",
       "exposition": "主要朝東及東南向",
-      "soil": "石灰岩粘土土壤，各園區略有差異",
-      "grapes": [
+      "soilStructure": "石灰岩粘土土壤，各園區略有差異",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "介於村莊級與特級園之間，品質卓越、風格多樣、結構複雜",
       "tastingNotes": "黑果、紅果、花香、香料、礦物質、土壤氣息",
       "agingPotential": "8-25年（視具體園區而定）",
       "history": "Gevrey-Chambertin擁有23個一級園，其中Clos Saint-Jacques、Les Cazetiers等被譽為接近特級園品質。這些一級園大多位於特級園周圍的優質坡地，承載著數百年的釀酒傳統，展現出勃根地黑皮諾的精髓與多樣性。",
-      "producers": [
+      "famousWineries": [
         "Armand Rousseau",
         "Bruno Clair",
         "Denis Mortet",
@@ -418,15 +435,15 @@
       "area": "2.4 ha",
       "altitude": "260-280m",
       "exposition": "東-東南向",
-      "soil": "石灰岩粘土土壤",
-      "grapes": [
+      "soilStructure": "石灰岩粘土土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅平衡、果味清新、單寧柔順",
       "tastingNotes": "櫻桃、草莓、花香、香料",
       "agingPotential": "8-15年",
       "history": "位於村莊上方的優質地塊",
-      "producers": [
+      "famousWineries": [
         "Various local producers"
       ],
       "color": "#B22222"
@@ -438,15 +455,15 @@
       "area": "6.7 ha",
       "altitude": "250-270m",
       "exposition": "東向",
-      "soil": "粘土石灰岩，含有較多砂礫",
-      "grapes": [
+      "soilStructure": "粘土石灰岩，含有較多砂礫",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "結構良好、果味濃郁、陳年潛力佳",
       "tastingNotes": "黑果、香料、土壤氣息、礦物質",
       "agingPotential": "10-18年",
       "history": "位於特級園下方的重要一級園",
-      "producers": [
+      "famousWineries": [
         "Denis Bachelet",
         "Philippe Leclerc"
       ],
@@ -459,15 +476,15 @@
       "area": "3.9 ha",
       "altitude": "260-280m",
       "exposition": "東-東南向",
-      "soil": "石灰岩土壤，排水良好",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，排水良好",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅精緻、酸度活潑、香氣複雜",
       "tastingNotes": "紅果、花香、香料、礦物質",
       "agingPotential": "8-15年",
       "history": "傳統的一級園地塊",
-      "producers": [
+      "famousWineries": [
         "Local producers"
       ],
       "color": "#B22222"
@@ -479,15 +496,15 @@
       "area": "3.6 ha",
       "altitude": "270-290m",
       "exposition": "東向",
-      "soil": "石灰岩粘土，含鐵質",
-      "grapes": [
+      "soilStructure": "石灰岩粘土，含鐵質",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "濃郁深邃、單寧緊實、陳年能力強",
       "tastingNotes": "黑果、皮革、香料、煙燻",
       "agingPotential": "10-20年",
       "history": "與特級園相鄰的優質地塊",
-      "producers": [
+      "famousWineries": [
         "Dupont-Tisserandot",
         "Philippe Leclerc"
       ],
@@ -500,15 +517,15 @@
       "area": "5.9 ha",
       "altitude": "280-320m",
       "exposition": "東向",
-      "soil": "石灰岩土壤，多石塊",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，多石塊",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "強勁有力、結構宏大、礦物感強",
       "tastingNotes": "黑果、礦物質、香料、土壤氣息",
       "agingPotential": "12-20年",
       "history": "著名的單一園，由Clos des Varoilles酒莊擁有",
-      "producers": [
+      "famousWineries": [
         "Clos des Varoilles"
       ],
       "color": "#B22222"
@@ -520,15 +537,15 @@
       "area": "1.6 ha",
       "altitude": "280-300m",
       "exposition": "東-東南向",
-      "soil": "石灰岩土壤",
-      "grapes": [
+      "soilStructure": "石灰岩土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅精緻、香氣純淨、口感絲滑",
       "tastingNotes": "紅果、花香、香料、礦物質",
       "agingPotential": "10-15年",
       "history": "小而精的單一園",
-      "producers": [
+      "famousWineries": [
         "Pierre Damoy"
       ],
       "color": "#B22222"
@@ -540,15 +557,15 @@
       "area": "1.8 ha",
       "altitude": "270-290m",
       "exposition": "東向",
-      "soil": "粘土石灰岩土壤",
-      "grapes": [
+      "soilStructure": "粘土石灰岩土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "濃郁複雜、結構良好、層次豐富",
       "tastingNotes": "黑果、香料、皮革、礦物質",
       "agingPotential": "10-18年",
       "history": "歷史悠久的修道院葡萄園",
-      "producers": [
+      "famousWineries": [
         "Various producers"
       ],
       "color": "#B22222"
@@ -560,15 +577,15 @@
       "area": "6.7 ha",
       "altitude": "270-300m",
       "exposition": "東-東南向",
-      "soil": "石灰岩粘土，富含鐵質",
-      "grapes": [
+      "soilStructure": "石灰岩粘土，富含鐵質",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "品質接近特級園、濃郁複雜、陳年潛力極佳",
       "tastingNotes": "黑果、紫羅蘭、香料、礦物質、皮革",
       "agingPotential": "15-25年",
       "history": "被譽為最接近特級園品質的一級園",
-      "producers": [
+      "famousWineries": [
         "Armand Rousseau",
         "Bruno Clair",
         "Sylvie Esmonin"
@@ -582,15 +599,15 @@
       "area": "5.2 ha",
       "altitude": "300-350m",
       "exposition": "東向",
-      "soil": "石灰岩土壤，薄層表土",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，薄層表土",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅細膩、酸度鮮活、礦物感突出",
       "tastingNotes": "紅果、花香、礦物質、香料",
       "agingPotential": "10-18年",
       "history": "位於山坡高處的優質地塊",
-      "producers": [
+      "famousWineries": [
         "Hubert Lignier",
         "Dupont-Tisserandot"
       ],
@@ -603,15 +620,15 @@
       "area": "2.4 ha",
       "altitude": "280-300m",
       "exposition": "東向",
-      "soil": "石灰岩粘土土壤",
-      "grapes": [
+      "soilStructure": "石灰岩粘土土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "結構良好、果味濃郁、單寧平衡",
       "tastingNotes": "黑果、香料、土壤氣息",
       "agingPotential": "8-15年",
       "history": "傳統一級園地塊",
-      "producers": [
+      "famousWineries": [
         "Local producers"
       ],
       "color": "#B22222"
@@ -623,15 +640,15 @@
       "area": "1.3 ha",
       "altitude": "280-300m",
       "exposition": "東-東南向",
-      "soil": "石灰岩土壤",
-      "grapes": [
+      "soilStructure": "石灰岩土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "精緻優雅、香氣純淨、口感細膩",
       "tastingNotes": "紅果、花香、礦物質",
       "agingPotential": "8-15年",
       "history": "小型精品一級園",
-      "producers": [
+      "famousWineries": [
         "Various small producers"
       ],
       "color": "#B22222"
@@ -643,15 +660,15 @@
       "area": "2.3 ha",
       "altitude": "270-290m",
       "exposition": "東向",
-      "soil": "粘土石灰岩，含鐵質",
-      "grapes": [
+      "soilStructure": "粘土石灰岩，含鐵質",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "濃郁深邃、結構紮實、陳年能力佳",
       "tastingNotes": "黑果、香料、皮革、礦物質",
       "agingPotential": "10-18年",
       "history": "與Clos Saint-Jacques相鄰的優質地塊",
-      "producers": [
+      "famousWineries": [
         "Robert Esmonin",
         "Sylvie Esmonin"
       ],
@@ -664,15 +681,15 @@
       "area": "4.2 ha",
       "altitude": "250-270m",
       "exposition": "東-東南向",
-      "soil": "粘土石灰岩土壤",
-      "grapes": [
+      "soilStructure": "粘土石灰岩土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "平衡優雅、果味清新、易於親近",
       "tastingNotes": "櫻桃、草莓、香料、花香",
       "agingPotential": "8-15年",
       "history": "位於村莊附近的一級園",
-      "producers": [
+      "famousWineries": [
         "Various producers"
       ],
       "color": "#B22222"
@@ -684,15 +701,15 @@
       "area": "1.9 ha",
       "altitude": "280-300m",
       "exposition": "東向",
-      "soil": "石灰岩土壤，多石塊",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，多石塊",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "精緻細膩、礦物感強、口感純淨",
       "tastingNotes": "紅果、礦物質、花香、香料",
       "agingPotential": "10-15年",
       "history": "小型優質一級園",
-      "producers": [
+      "famousWineries": [
         "Claude Dugat"
       ],
       "color": "#B22222"
@@ -704,15 +721,15 @@
       "area": "2.5 ha",
       "altitude": "300-320m",
       "exposition": "東向",
-      "soil": "石灰岩土壤，薄層表土",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，薄層表土",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅精緻、酸度鮮活、香氣複雜",
       "tastingNotes": "紅果、花香、礦物質、香料",
       "agingPotential": "10-18年",
       "history": "位於山坡上的優質地塊",
-      "producers": [
+      "famousWineries": [
         "Various producers"
       ],
       "color": "#B22222"
@@ -724,15 +741,15 @@
       "area": "3.8 ha",
       "altitude": "280-300m",
       "exposition": "東-東南向",
-      "soil": "石灰岩土壤，多石塊",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，多石塊",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "強勁有力、礦物感突出、結構緊密",
       "tastingNotes": "黑果、礦物質、香料、土壤氣息",
       "agingPotential": "12-20年",
       "history": "以石質土壤著稱的一級園",
-      "producers": [
+      "famousWineries": [
         "Various producers"
       ],
       "color": "#B22222"
@@ -744,15 +761,15 @@
       "area": "1.2 ha",
       "altitude": "280-300m",
       "exposition": "東向",
-      "soil": "石灰岩粘土土壤",
-      "grapes": [
+      "soilStructure": "石灰岩粘土土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅細膩、香氣複雜、口感絲滑",
       "tastingNotes": "紅果、紫羅蘭、香料、礦物質",
       "agingPotential": "10-18年",
       "history": "小而精的優質一級園",
-      "producers": [
+      "famousWineries": [
         "Various small producers"
       ],
       "color": "#B22222"
@@ -764,15 +781,15 @@
       "area": "9.5 ha",
       "altitude": "270-300m",
       "exposition": "東-東南向",
-      "soil": "粘土石灰岩，富含鐵質",
-      "grapes": [
+      "soilStructure": "粘土石灰岩，富含鐵質",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "濃郁複雜、結構宏大、陳年潛力強",
       "tastingNotes": "黑果、香料、皮革、礦物質、煙燻",
       "agingPotential": "12-22年",
       "history": "Gevrey-Chambertin最重要的一級園之一",
-      "producers": [
+      "famousWineries": [
         "Bernard Dugat-Py",
         "Claude Dugat",
         "Denis Mortet"
@@ -786,15 +803,15 @@
       "area": "9.0 ha",
       "altitude": "260-280m",
       "exposition": "東-東南向",
-      "soil": "粘土石灰岩，含砂礫",
-      "grapes": [
+      "soilStructure": "粘土石灰岩，含砂礫",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "品質卓越、濃郁複雜、陳年潛力佳",
       "tastingNotes": "黑果、紫羅蘭、香料、礦物質",
       "agingPotential": "12-20年",
       "history": "被認為是品質最接近特級園的一級園之一",
-      "producers": [
+      "famousWineries": [
         "Christian Serafin",
         "Bruno Clair",
         "Philippe Charlopin"
@@ -808,15 +825,15 @@
       "area": "2.3 ha",
       "altitude": "280-300m",
       "exposition": "東向",
-      "soil": "石灰岩土壤，多石塊",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，多石塊",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "精緻優雅、礦物感強、口感純淨",
       "tastingNotes": "紅果、礦物質、花香、香料",
       "agingPotential": "10-15年",
       "history": "位於山坡中段的優質地塊",
-      "producers": [
+      "famousWineries": [
         "Various producers"
       ],
       "color": "#B22222"
@@ -828,15 +845,15 @@
       "area": "5.8 ha",
       "altitude": "270-290m",
       "exposition": "東-東南向",
-      "soil": "石灰岩粘土土壤",
-      "grapes": [
+      "soilStructure": "石灰岩粘土土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅平衡、果味濃郁、單寧柔順",
       "tastingNotes": "櫻桃、草莓、香料、花香",
       "agingPotential": "10-18年",
       "history": "與特級園Chapelle-Chambertin相鄰",
-      "producers": [
+      "famousWineries": [
         "Various producers"
       ],
       "color": "#B22222"
@@ -848,15 +865,15 @@
       "area": "2.2 ha",
       "altitude": "260-280m",
       "exposition": "東向",
-      "soil": "粘土石灰岩土壤",
-      "grapes": [
+      "soilStructure": "粘土石灰岩土壤",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "濃郁深邃、結構良好、層次豐富",
       "tastingNotes": "黑果、香料、皮革、礦物質",
       "agingPotential": "10-18年",
       "history": "Les Cazetiers的延伸部分",
-      "producers": [
+      "famousWineries": [
         "Various producers"
       ],
       "color": "#B22222"
@@ -868,100 +885,18 @@
       "area": "2.1 ha",
       "altitude": "280-300m",
       "exposition": "東-東南向",
-      "soil": "石灰岩土壤，排水良好",
-      "grapes": [
+      "soilStructure": "石灰岩土壤，排水良好",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "優雅精緻、香氣純淨、口感細膩",
       "tastingNotes": "紅果、花香、礦物質、香料",
       "agingPotential": "8-15年",
       "history": "小型精品一級園",
-      "producers": [
+      "famousWineries": [
         "Harmand-Geoffroy"
       ],
       "color": "#B22222"
-    }
-  },
-  "1er Crus": {
-    "clos-saint-jacques": {
-      "name": "Clos Saint-Jacques",
-      "fullName": "AOC Gevrey-Chambertin 1er Cru Clos Saint-Jacques",
-      "classification": "1er Cru",
-      "area": "6.7 ha",
-      "altitude": "270-300m",
-      "exposition": "東向",
-      "soil": "石灰岩基底，表層為紅色粘土和碎石",
-      "grapes": ["黑皮諾 100%"],
-      "wineStyle": "優雅精緻、結構完美、具有特級園的品質",
-      "tastingNotes": "紅色水果、玫瑰花、香料、礦物質、絲滑單寧",
-      "agingPotential": "15-25年",
-      "history": "被譽為「未被授予特級園稱號的特級園」，品質可媲美 Grand Cru",
-      "producers": ["Armand Rousseau", "Bruno Clair", "Fourrier", "Sylvie Esmonin"],
-      "color": "#DC143C"
-    },
-    "lavaut-saint-jacques": {
-      "name": "Lavaut Saint-Jacques",
-      "fullName": "AOC Gevrey-Chambertin 1er Cru Lavaut Saint-Jacques",
-      "classification": "1er Cru",
-      "area": "9.5 ha",
-      "altitude": "270-290m",
-      "exposition": "東向",
-      "soil": "粘土石灰岩，富含鐵質",
-      "grapes": ["黑皮諾 100%"],
-      "wineStyle": "強勁有力、濃郁複雜、單寧堅實",
-      "tastingNotes": "黑櫻桃、甘草、香料、泥土氣息、礦物質",
-      "agingPotential": "12-20年",
-      "history": "與 Clos Saint-Jacques 相鄰，品質卓越的一級園",
-      "producers": ["Denis Mortet", "Claude Dugat", "Harmand-Geoffroy"],
-      "color": "#DC143C"
-    },
-    "cazetiers": {
-      "name": "Les Cazetiers",
-      "fullName": "AOC Gevrey-Chambertin 1er Cru Les Cazetiers",
-      "classification": "1er Cru",
-      "area": "9 ha",
-      "altitude": "260-280m",
-      "exposition": "東-東南向",
-      "soil": "粘土石灰岩，含石塊",
-      "grapes": ["黑皮諾 100%"],
-      "wineStyle": "優雅、細膩、花香豐富",
-      "tastingNotes": "紅色水果、紫羅蘭、香料、優雅的單寧",
-      "agingPotential": "10-18年",
-      "history": "位於村莊北端，鄰近 Chambertin，是頂級一級園之一",
-      "producers": ["Faiveley", "Bruno Clair", "Philippe Leclerc"],
-      "color": "#DC143C"
-    },
-    "combe-au-moine": {
-      "name": "Combe au Moine",
-      "fullName": "AOC Gevrey-Chambertin 1er Cru Combe au Moine",
-      "classification": "1er Cru",
-      "area": "5 ha",
-      "altitude": "280-310m",
-      "exposition": "東向",
-      "soil": "石灰岩為主，土層較薄",
-      "grapes": ["黑皮諾 100%"],
-      "wineStyle": "優雅、礦物感強、結構精緻",
-      "tastingNotes": "櫻桃、草莓、白花、石頭礦物、細膩單寧",
-      "agingPotential": "12-20年",
-      "history": "位於 Latricières-Chambertin 上方，海拔較高的一級園",
-      "producers": ["Hubert Lignier", "Dujac", "Ponsot"],
-      "color": "#DC143C"
-    },
-    "estournelles-saint-jacques": {
-      "name": "Estournelles-Saint-Jacques",
-      "fullName": "AOC Gevrey-Chambertin 1er Cru Estournelles-Saint-Jacques",
-      "classification": "1er Cru",
-      "area": "2.2 ha",
-      "altitude": "270-280m",
-      "exposition": "東向",
-      "soil": "粘土石灰岩，含礫石",
-      "grapes": ["黑皮諾 100%"],
-      "wineStyle": "豐富、深邃、具有深度",
-      "tastingNotes": "黑色水果、香料、煙燻、皮革、複雜層次",
-      "agingPotential": "15-22年",
-      "history": "緊鄰 Clos Saint-Jacques，品質優異",
-      "producers": ["Fourrier", "Rossignol-Trapet"],
-      "color": "#DC143C"
     }
   },
   "village": {
@@ -972,18 +907,19 @@
       "area": "約400 ha",
       "altitude": "220-280m",
       "exposition": "主要朝東",
-      "soil": "多樣化土壤，以粘土石灰岩為主",
-      "grapes": [
+      "soilStructure": "多樣化土壤，以粘土石灰岩為主",
+      "grapeVarieties": [
         "黑皮諾 100%"
       ],
       "wineStyle": "果味豐富、結構良好、易於親近",
       "tastingNotes": "櫻桃、草莓、香料、土壤氣息",
       "agingPotential": "5-12年",
       "history": "勃根地最著名的村莊之一，擁有9個特級園",
-      "producers": [
+      "famousWineries": [
         "眾多生產者"
       ],
       "color": "#CD853F"
     }
+  }
   }
 }

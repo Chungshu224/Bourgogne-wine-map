@@ -97,7 +97,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-charle": {
@@ -117,7 +121,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-de-la-baraude": {
@@ -137,7 +145,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-du-cellier-aux-moines": {
@@ -157,7 +169,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-du-cras-long": {
@@ -177,7 +193,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-du-vernoy": {
@@ -197,7 +217,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-jus": {
@@ -217,7 +241,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-marceaux": {
@@ -237,7 +265,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-marole": {
@@ -257,7 +289,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-salomon": {
@@ -277,7 +313,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-saint-paul": {
@@ -297,7 +337,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "clos-saint-pierre": {
@@ -317,7 +361,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "crausot": {
@@ -337,7 +385,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "cremillons": {
@@ -357,7 +409,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "en-choue": {
@@ -377,7 +433,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "la-brulee": {
@@ -397,7 +457,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "la-grande-berge": {
@@ -417,7 +481,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "la-matrosse": {
@@ -437,7 +505,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "la-petite-berge": {
@@ -457,7 +529,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "la-plante": {
@@ -477,7 +553,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "le-champ-lalot": {
@@ -497,7 +577,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "le-medenchot": {
@@ -517,7 +601,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "le-paradis": {
@@ -537,7 +625,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "le-petit-pretan": {
@@ -557,7 +649,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "le-pied-de-chaume": {
@@ -577,7 +673,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "le-pied-du-clou": {
@@ -597,7 +697,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "le-vigron": {
@@ -617,7 +721,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "les-bois-chevaux": {
@@ -637,7 +745,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "les-bois-gautiers": {
@@ -657,7 +769,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "les-combes": {
@@ -677,7 +793,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "les-galaffres": {
@@ -697,7 +817,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "les-grandes-vignes": {
@@ -717,7 +841,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "les-grands-pretans": {
@@ -737,7 +865,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "petit-marole": {
@@ -757,7 +889,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       },
       "servoisine": {
@@ -777,7 +913,11 @@
         "tastingNotes": "紅酒：覆盆子、紫羅蘭、黑醋栗、香料。白酒：檸檬、金合歡、礦物。",
         "agingPotential": "6-15年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Joblot",
+          "Domaine Besson",
+          "Domaine François Lumpp"
+        ],
         "color": "#CD853F"
       }
     },

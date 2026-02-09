@@ -83,7 +83,7 @@
       },
       "agneux": {
         "name": "Agneux",
-        "file": "AOC Rully 1er Cru Agneux.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Agneux.geojson",
         "fullName": "AOC Rully 1er Cru Agneux",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -98,12 +98,15 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Jacqueson",
+          "Domaine Dureuil-Janthial"
+        ],
         "color": "#CD853F"
       },
       "champs-cloux": {
         "name": "Champs Cloux",
-        "file": "AOC Rully 1er Cru Champs Cloux.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Champs Cloux.geojson",
         "fullName": "AOC Rully 1er Cru Champs Cloux",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -118,12 +121,15 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Paul et Marie Jacqueson",
+          "Château de Rully"
+        ],
         "color": "#CD853F"
       },
       "chapitre": {
         "name": "Chapitre",
-        "file": "AOC Rully 1er Cru Chapitre.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Chapitre.geojson",
         "fullName": "AOC Rully 1er Cru Chapitre",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -138,12 +144,15 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine de Villaine",
+          "Domaine Belleville"
+        ],
         "color": "#CD853F"
       },
       "clos-du-chaigne": {
         "name": "Clos du Chaigne",
-        "file": "AOC Rully 1er Cru Clos du Chaigne.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Clos du Chaigne.geojson",
         "fullName": "AOC Rully 1er Cru Clos du Chaigne",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -158,12 +167,15 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Jacqueson",
+          "Antonin Rodet"
+        ],
         "color": "#CD853F"
       },
       "clos-st-jacques": {
         "name": "Clos St Jacques",
-        "file": "AOC Rully 1er Cru Clos St Jacques.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Clos St Jacques.geojson",
         "fullName": "AOC Rully 1er Cru Clos St Jacques",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -183,7 +195,7 @@
       },
       "cloux": {
         "name": "Cloux",
-        "file": "AOC Rully 1er Cru Cloux.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Cloux.geojson",
         "fullName": "AOC Rully 1er Cru Cloux",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -198,12 +210,15 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Vincent Dureuil-Janthial",
+          "Château de Rully"
+        ],
         "color": "#CD853F"
       },
       "gresigny": {
         "name": "Grésigny",
-        "file": "AOC Rully 1er Cru Grésigny.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru Grésigny.geojson",
         "fullName": "AOC Rully 1er Cru Grésigny",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -218,12 +233,15 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine de Villaine",
+          "Domaine Paul et Marie Jacqueson"
+        ],
         "color": "#CD853F"
       },
       "la-bressande": {
         "name": "La Bressande",
-        "file": "AOC Rully 1er Cru La Bressande.geojson",
+        "file": "Rully 1er Cru/AOC Rully 1er Cru La Bressande.geojson",
         "fullName": "AOC Rully 1er Cru La Bressande",
         "classification": "1er Cru",
         "area": "約 1-2.8 公頃",
@@ -258,7 +276,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Jacqueson",
+          "Domaine Dureuil-Janthial"
+        ],
         "color": "#CD853F"
       },
       "la-pucelle": {
@@ -298,7 +319,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine de la Renarde",
+          "Domaine Belleville"
+        ],
         "color": "#CD853F"
       },
       "le-meix-cadot": {
@@ -318,7 +342,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Vincent Dureuil-Janthial",
+          "Château de Rully"
+        ],
         "color": "#CD853F"
       },
       "le-meix-caillet": {
@@ -358,7 +385,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Paul et Marie Jacqueson",
+          "Domaine de Villaine"
+        ],
         "color": "#CD853F"
       },
       "margotes": {
@@ -378,7 +408,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Jacqueson",
+          "Antonin Rodet"
+        ],
         "color": "#CD853F"
       },
       "marissou": {
@@ -398,7 +431,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Dureuil-Janthial",
+          "Domaine Belleville"
+        ],
         "color": "#CD853F"
       },
       "molesme": {
@@ -418,7 +454,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine de Villaine",
+          "Château de Rully"
+        ],
         "color": "#CD853F"
       },
       "montpalais": {
@@ -438,7 +477,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Vincent Dureuil-Janthial",
+          "Domaine Paul et Marie Jacqueson"
+        ],
         "color": "#CD853F"
       },
       "pillot": {
@@ -458,7 +500,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Jacqueson",
+          "Domaine de Villaine"
+        ],
         "color": "#CD853F"
       },
       "preaux": {
@@ -478,7 +523,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Dureuil-Janthial",
+          "Antonin Rodet"
+        ],
         "color": "#CD853F"
       },
       "rabource": {
@@ -498,7 +546,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Paul et Marie Jacqueson",
+          "Château de Rully"
+        ],
         "color": "#CD853F"
       },
       "raclot": {
@@ -538,7 +589,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine de Villaine",
+          "Domaine Vincent Dureuil-Janthial"
+        ],
         "color": "#CD853F"
       }
     },

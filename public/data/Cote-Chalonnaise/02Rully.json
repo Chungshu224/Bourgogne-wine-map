@@ -57,7 +57,7 @@
         "color": "#F5F5DC"
       }
     },
-    "1er Cru": {
+    "premier_crus": {
       "overview": {
         "name": "Rully 1er Cru",
         "file": "AOC Rully 1er Cru.geojson",

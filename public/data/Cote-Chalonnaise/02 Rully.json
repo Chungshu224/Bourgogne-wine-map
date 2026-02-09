@@ -190,7 +190,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Vincent Dureuil-Janthial",
+          "Château de Rully"
+        ],
         "color": "#CD853F"
       },
       "cloux": {
@@ -256,7 +259,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Jacqueson",
+          "Domaine Dureuil-Janthial"
+        ],
         "color": "#CD853F"
       },
       "la-fosse": {
@@ -299,7 +305,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine de Villaine",
+          "Domaine Paul et Marie Jacqueson"
+        ],
         "color": "#CD853F"
       },
       "la-renarde": {
@@ -365,7 +374,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Paul et Marie Jacqueson",
+          "Château de Rully"
+        ],
         "color": "#CD853F"
       },
       "les-pierres": {
@@ -569,7 +581,10 @@
         "tastingNotes": "白酒：青蘋果、梨、金合歡、燧石。紅酒：櫻桃、草莓、玫瑰花瓣。",
         "agingPotential": "5-12年",
         "history": "",
-        "producers": [],
+        "producers": [
+          "Domaine Paul et Marie Jacqueson",
+          "Domaine de Villaine"
+        ],
         "color": "#CD853F"
       },
       "vauvry": {

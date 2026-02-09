@@ -133,29 +133,33 @@ const showAOCGeojson = async (group, aoc) => {
         console.warn(`No info found for key: "${aocKey}" in Regional.json`);
         regionInfo.value = null;
       }
-    } else if (aocData.village || aocData['1er Crus'] || aocData.premier_crus || aocData['Grand Crus'] || aocData.grand_crus) {
+    } else if (aocData.village || aocData['1er Crus'] || aocData.premier_crus || aocData['Grand Crus'] || aocData.grand_crus || 
+               aocData.geojson?.village || aocData.geojson?.['1er Crus'] || aocData.geojson?.premier_crus || aocData.geojson?.['Grand Crus'] || aocData.geojson?.grand_crus) {
       // Côte de Nuits/Beaune 格式: {village: {...}, "1er Crus": {...}, "Grand Crus": {...}}
       // 或 {village: {...}, premier_crus: {...}, grand_crus: {...}}
+      // 或 {geojson: {village: {...}, premier_crus: {...}, grand_crus: {...}}}
       
+      // 如果資料在 geojson 屬性內，先提取出來
+      const dataSource = aocData.geojson || aocData;
       // 從 AOC 檔名分析等級和名稱
       let searchKey = aoc.replace('.geojson', '');
       let targetCategory = null;
       
       // 判斷是否為 Grand Cru
       if (searchKey.includes('Grand Cru')) {
-        targetCategory = aocData['Grand Crus'] || aocData.grand_crus;
+        targetCategory = dataSource['Grand Crus'] || dataSource.grand_crus;
         // 提取 Grand Cru 名稱，例如 "AOC Chambertin Grand Cru" -> "chambertin"
         searchKey = searchKey.replace(/AOC\s+/i, '').replace(/\s+Grand Cru.*$/i, '').trim();
       }
       // 判斷是否為 1er Cru / Premier Cru
       else if (searchKey.match(/1er\s+Cru|Premier\s+Cru/i)) {
-        targetCategory = aocData['1er Crus'] || aocData.premier_crus;
+        targetCategory = dataSource['1er Crus'] || dataSource.premier_crus;
         // 提取 1er Cru 名稱，例如 "AOC Fixin 1er Cru Clos du Chapitre" -> "Clos du Chapitre"
         searchKey = searchKey.replace(/AOC\s+/i, '').replace(/.*?1er\s+Cru\s+/i, '').replace(/.*?Premier\s+Cru\s+/i, '').trim();
       }
       // 否則為村莊級
       else {
-        targetCategory = aocData.village;
+        targetCategory = dataSource.village;
         // 從 AOC 檔名提取關鍵字，例如 "AOC Marsannay (Couchey).geojson" -> "couchey"
         const match = searchKey.match(/\(([^)]+)\)/);
         searchKey = match ? match[1] : searchKey.replace(/^AOC /, '');

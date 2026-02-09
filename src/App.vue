@@ -49,6 +49,13 @@ const switchMode = (mode) => {
         <button class="back-to-course-btn" @click="switchMode('course')">
           ← 返回課程學習
         </button>
+        <button 
+          v-if="!showRegionSelector" 
+          class="back-to-region-btn" 
+          @click="backToRegionSelector"
+        >
+          ← 返回產區選擇
+        </button>
       </div>
       
       <!-- 區域選擇器 -->
@@ -59,11 +66,6 @@ const switchMode = (mode) => {
       
       <!-- 地圖視圖 -->
       <div v-else class="map-view">
-        <!-- 返回按鈕 -->
-        <button class="back-button" @click="backToRegionSelector">
-          ← 返回產區選擇
-        </button>
-        
         <!-- 使用通用 RegionMap 組件顯示所有區域 -->
         <RegionMap 
           v-if="currentRegion"
@@ -102,31 +104,6 @@ const switchMode = (mode) => {
   min-height: calc(100vh - var(--header-height));
   position: relative;
   padding-top: var(--header-height);
-}
-
-.back-button {
-  position: absolute;
-  top: calc(var(--header-height) + 70px);
-  left: 16px;
-  z-index: 999;
-  padding: 10px 18px;
-  background: white;
-  border: 2px solid #667eea;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #667eea;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
-  min-height: 44px;
-}
-
-.back-button:hover {
-  background: #667eea;
-  color: white;
-  transform: scale(1.03);
-  box-shadow: 0 6px 14px rgba(102, 126, 234, 0.25);
 }
 
 /* 模式切換按鈕 */
@@ -191,6 +168,9 @@ const switchMode = (mode) => {
   background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(6px);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.06);
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .back-to-course-btn {
@@ -210,18 +190,36 @@ const switchMode = (mode) => {
   box-shadow: 0 6px 14px rgba(102, 126, 234, 0.2);
 }
 
+.back-to-region-btn {
+  padding: 10px 16px;
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #667eea;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.back-to-region-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(-2px);
+  box-shadow: 0 6px 14px rgba(102, 126, 234, 0.25);
+}
+
 /* 響應式調整 */
 @media (max-width: 768px) {
-  .back-button {
-    left: 12px;
-    top: calc(var(--header-height) + 64px);
-    font-size: 0.98rem;
-    padding: 10px 14px;
-  }
-
-  .course-mode-btn, .back-to-course-btn {
+  .course-mode-btn, .back-to-course-btn, .back-to-region-btn {
     padding: 10px 14px;
     font-size: 0.95rem;
+  }
+
+  .map-mode-header {
+    padding: 10px 12px;
+    gap: 8px;
   }
 
   .map-view {

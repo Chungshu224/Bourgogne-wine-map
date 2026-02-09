@@ -106,9 +106,9 @@ const switchMode = (mode) => {
 
 .back-button {
   position: absolute;
-  top: calc(var(--header-height) + 12px);
+  top: calc(var(--header-height) + 70px);
   left: 16px;
-  z-index: 1000;
+  z-index: 999;
   padding: 10px 18px;
   background: white;
   border: 2px solid #667eea;
@@ -214,7 +214,7 @@ const switchMode = (mode) => {
 @media (max-width: 768px) {
   .back-button {
     left: 12px;
-    top: calc(var(--header-height) + 10px);
+    top: calc(var(--header-height) + 64px);
     font-size: 0.98rem;
     padding: 10px 14px;
   }

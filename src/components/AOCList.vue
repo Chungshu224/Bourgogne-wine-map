@@ -1,13 +1,19 @@
 <template>
   <div class="aoc-list">
-    <h2>{{ regionName }} 產區清單</h2>
+    <div class="list-header">
+      <h2 class="list-title">{{ regionName }}</h2>
+      <div class="list-subtitle">產區清單</div>
+    </div>
     
-    <input
-      type="text"
-      class="aoc-search"
-      placeholder="搜尋產區..."
-      v-model="searchModel"
-    />
+    <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input
+        type="text"
+        class="aoc-search"
+        placeholder="搜尋產區..."
+        v-model="searchModel"
+      />
+    </div>
     
     <div v-for="(folderContent, folderName) in filteredGeojsonTree" :key="folderName">
       <div class="group-header" @click="toggleRegion(folderName)">
@@ -158,61 +164,116 @@ watch(() => props.indexPath, async () => {
 
 <style scoped>
 .aoc-list {
-  flex: 0 0 320px;
+  flex: 0 0 340px;
   height: 100%;
   overflow-y: auto;
-  background: #f8f8f8;
-  border-right: 1px solid #ddd;
-  padding: 20px 15px;
+  background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+  border-right: 2px solid #e0e0e0;
+  padding: 0;
   box-sizing: border-box;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
 }
 
-h2 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  color: #800020; /* Burgundy color */
+.list-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(135deg, #8B0000 0%, #660000 100%);
+  color: white;
+  padding: 20px 20px 18px;
+  margin-bottom: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.list-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.list-subtitle {
+  margin-top: 4px;
+  font-size: 0.85rem;
+  opacity: 0.9;
+  font-weight: 400;
   letter-spacing: 1px;
+}
+
+.search-container {
+  position: relative;
+  padding: 15px 20px;
+  background: white;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.search-icon {
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .aoc-search {
   width: 100%;
-  padding: 8px 12px;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  margin-bottom: 15px;
-  font-size: 0.9rem;
+  padding: 10px 12px 10px 35px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: #fafafa;
 }
 
 .aoc-search:focus {
   outline: none;
   border-color: #8B0000;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
 }
 
 .group-header {
   display: flex;
   align-items: center;
-  padding: 8px 5px;
+  padding: 10px 20px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 0;
+  background: white;
+  border-bottom: 1px solid #f0f0f0;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  color: #333;
 }
 
 .group-header:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #f8f9fa 0%, white 100%);
+  padding-left: 24px;
 }
 
 .region-header .group-name {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .group-icon {
   font-size: 0.7rem;
-  margin-right: 8px;
-  width: 10px;
+  margin-right: 10px;
+  width: 12px;
+  color: #8B0000;
+  font-weight: bold;
+}
+
+.group-name {
+  font-size: 0.95rem;
 }
 
 .region-group {
   margin-left: 10px;
+  background: #fafafa;
 }
 
 .region-content {
@@ -222,28 +283,55 @@ h2 {
 .aoc-item {
   display: flex;
   align-items: center;
-  padding: 6px 8px;
-  margin: 2px 0;
-  border-radius: 4px;
+  padding: 9px 20px;
+  margin: 0;
+  border-radius: 0;
   cursor: pointer;
   font-size: 0.9rem;
+  background: white;
+  border-bottom: 1px solid #f5f5f5;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.aoc-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: linear-gradient(to right, rgba(139, 0, 0, 0.1), transparent);
+  transition: width 0.3s ease;
 }
 
 .aoc-item:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #f8f9fa;
+  padding-left: 24px;
+  color: #8B0000;
+}
+
+.aoc-item:hover::before {
+  width: 4px;
+  background: #8B0000;
 }
 
 .aoc-item.active {
-  background: rgba(139, 0, 0, 0.1);
-  font-weight: 500;
+  background: linear-gradient(to right, #fff5f5, white);
+  font-weight: 600;
+  color: #8B0000;
+  border-left: 4px solid #8B0000;
+  box-shadow: inset 0 0 0 1px rgba(139, 0, 0, 0.1);
 }
 
 .aoc-dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  margin-right: 8px;
+  margin-right: 10px;
   flex-shrink: 0;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 768px) {

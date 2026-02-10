@@ -126,11 +126,11 @@
         <span class="btn-icon">🗺️</span>
         探索地圖
       </button>
-      <button class="action-button achievements">
+      <button class="action-button achievements" @click="showAchievements">
         <span class="btn-icon">🏆</span>
         成就系統
       </button>
-      <button class="action-button learning-progress">
+      <button class="action-button learning-progress" @click="showDetailedProgress">
         <span class="btn-icon">📊</span>
         學習進度
       </button>
@@ -140,7 +140,9 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue'
+import { useProgress } from '../../composables/useProgress.js'
 
+const progressStore = useProgress()
 const levels = ref([])
 const userProgress = ref({
   1: { completed: false, progress: 0, score: 0 },
@@ -232,6 +234,56 @@ const startJourney = () => {
   if (nextAvailableLevel.value) {
     emit('startLevel', nextAvailableLevel.value)
   }
+}
+
+// 成就系統功能（即將推出）
+const showAchievements = () => {
+  alert('🏆 成就系統即將推出！\n\n敬請期待更多精彩功能：\n• 解鎖成就徽章\n• 關鍵節點獎勵\n• 學習里程碟記錄\n• 排行榜與挑戰賽事')
+}
+
+// 學習進度詳情
+const showDetailedProgress = async () => {
+  // 讀取所有階段的詳細進度
+  let progressMessage = '📊 學習進度報告\n' + '='.repeat(35) + '\n\n'
+  
+  // 總體統計
+  progressMessage += `🌟 總體進度：${totalProgress.value}%\n`
+  progressMessage += `✅ 完成層級：${completedLevels.value} / 4\n`
+  progressMessage += `⏱️ 累計時長：${studyTime.value} 小時\n`
+  progressMessage += `🎓 獲得證書：${earnedCertificates.value}\n\n`
+  
+  // 各階段詳細進度
+  for (const level of levels.value) {
+    const levelId = level.id
+    const progress = getProgress(levelId)
+    const levelProgress = progressStore.getLevelProgress(levelId)
+    
+    let completedModules = 0
+    let avgScore = 0
+    
+    if (Object.keys(levelProgress).length > 0) {
+      completedModules = Object.keys(levelProgress).filter(key => levelProgress[key].completed).length
+      const scores = Object.values(levelProgress).map(p => p.quizScore || 0).filter(s => s > 0)
+      if (scores.length > 0) {
+        avgScore = Math.round(scores.reduce((sum, s) => sum + s, 0) / scores.length)
+      }
+    }
+    
+    const statusIcon = progress >= 100 ? '✅' : progress > 0 ? '🟡' : '⚪'
+    progressMessage += `${statusIcon} Level ${levelId}: ${level.name}\n`
+    progressMessage += `   進度: ${Math.round(progress)}% | 模組: ${completedModules}/${level.modules} | 分數: ${avgScore}\n\n`
+  }
+  
+  // 證書資訊
+  const certificates = progressStore.getCertificates()
+  if (certificates.length > 0) {
+    progressMessage += '\n🎓 證書記錄\n' + '-'.repeat(35) + '\n'
+    certificates.forEach((cert, index) => {
+      progressMessage += `${index + 1}. Level ${cert.level} - ${cert.completedModules}/${cert.totalModules} 模組 (${cert.averageScore}分)\n`
+    })
+  }
+  
+  alert(progressMessage)
 }
 </script>
 

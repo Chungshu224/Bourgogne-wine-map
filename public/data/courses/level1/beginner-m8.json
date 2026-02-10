@@ -808,6 +808,7 @@
     }
   ],
   "quiz": {
+    "passingScore": 60,
     "questions": [
       {
         "id": "q1",

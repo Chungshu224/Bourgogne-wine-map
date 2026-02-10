@@ -37,7 +37,7 @@
         { "icon": "📋", "text": "品鑑與收藏" }
       ],
       "modules": 8,
-      "hours": 4.5,
+      "hours": 8,
       "requiredScore": 70,
       "certificate": "布根地愛好者證書",
       "unlocked": false,
@@ -80,10 +80,9 @@
         { "icon": "🔥", "text": "行業趨勢剖析" },
         { "icon": "🌍", "text": "國際市場調策" }
       ],
-      "modules": 18,
+      "modules": 8,
       "hours": 12,
       "requiredScore": 80,
-      "modules": 8,
       "certificate": "布根地大師證書 + 講師資格認證",
       "unlocked": false,
       "prerequisite": "完成第三階段並達到 85% 以上"

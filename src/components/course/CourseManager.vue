@@ -108,6 +108,7 @@
 
 <script setup>
 import { ref, computed, defineEmits } from 'vue'
+import { useProgress } from '../../composables/useProgress.js'
 import LevelSelector from './LevelSelector.vue'
 import CourseLayout from './CourseLayout.vue'
 import LessonViewer from './LessonViewer.vue'
@@ -116,6 +117,7 @@ import QuizEngine from './QuizEngine.vue'
 import CertificateGenerator from './CertificateGenerator.vue'
 
 const emit = defineEmits(['openMap'])
+const progressStore = useProgress()
 
 // 當前視圖狀態
 const currentView = ref('levelSelector') // levelSelector, courseContent, certificate
@@ -129,6 +131,7 @@ const moduleData = ref(null)
 // 當前課程狀態
 const currentLessonIndex = ref(0)
 const completedLessons = ref([])
+const lessonStartTime = ref(0)
 
 // 證書資料
 const certificateData = ref(null)
@@ -158,23 +161,32 @@ const handleSelectLevel = async (level) => {
 
 // 處理選擇模組
 const handleSelectModule = async (module) => {
-  console.log('🎯 handleSelectModule 被調用:', module.title)
-  selectedModule.value = module
-  viewMode.value = 'overview'
-  console.log('📌 viewMode 設為:', viewMode.value)
-  console.log('📌 selectedModule:', selectedModule.value?.title)
-  
-  // 載入模組資料
-  await loadModuleData(selectedLevel.value.id, module.id)
-  console.log('✅ 模組資料載入完成')
-  console.log('📊 檢查顯示條件:')
-  console.log('  - viewMode === "overview":', viewMode.value === 'overview')
-  console.log('  - selectedModule 存在:', !!selectedModule.value)
-  console.log('  - moduleData 存在:', !!moduleData.value)
-  console.log('  - 應該顯示 module-overview:', viewMode.value === 'overview' && !!selectedModule.value && !!moduleData.value)
-  
-  // 載入已完成課程
-  loadCompletedLessons(module.id)
+  try {
+    console.log('🎯 handleSelectModule 被調用:', module.title)
+    selectedModule.value = module
+    viewMode.value = 'overview'
+    console.log('📌 viewMode 設為:', viewMode.value)
+    console.log('📌 selectedModule:', selectedModule.value?.title)
+    
+    // 載入模組資料
+    await loadModuleData(selectedLevel.value.id, module.id)
+    console.log('✅ 模組資料載入完成')
+    console.log('📊 檢查顯示條件:')
+    console.log('  - viewMode === "overview":', viewMode.value === 'overview')
+    console.log('  - selectedModule 存在:', !!selectedModule.value)
+    console.log('  - moduleData 存在:', !!moduleData.value)
+    console.log('  - 應該顯示 module-overview:', viewMode.value === 'overview' && !!selectedModule.value && !!moduleData.value)
+    
+    // 載入已完成課程
+    loadCompletedLessons(module.id)
+  } catch (error) {
+    console.error('載入模組失敗:', error)
+    alert(`無法載入模組「${module.title}」，請檢查網路連線或稍後再試。\n錯誤詳情：${error.message}`)
+    // 重置狀態
+    selectedModule.value = null
+    moduleData.value = null
+    viewMode.value = 'list'
+  }
 }
 
 // 載入階段所有模組
@@ -203,25 +215,35 @@ const loadModuleData = async (levelId, moduleId) => {
     const url = `/data/courses/${levelFolder}/${moduleId}.json`
     console.log('🔍 載入模組資料 URL:', url)
     const response = await fetch(url)
+    
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}: ${response.statusText}`)
+    }
+    
     moduleData.value = await response.json()
     console.log('✅ 模組資料載入成功:', moduleData.value.title)
   } catch (error) {
     console.error('載入模組資料失敗:', error)
+    moduleData.value = null
+    throw new Error(`無法載入模組資料 (${moduleId}): ${error.message}`)
   }
 }
 
 // 載入已完成課程
 const loadCompletedLessons = (moduleId) => {
-  const saved = localStorage.getItem(`completed-lessons-${moduleId}`)
-  if (saved) {
-    completedLessons.value = JSON.parse(saved)
-  } else {
-    completedLessons.value = []
-  }
+  completedLessons.value = progressStore.getCompletedLessons(moduleId)
 }
 
 // 開始課程
 const startLesson = (lessonIndex) => {
+  // 範圍驗證
+  if (!moduleData.value || lessonIndex < 0 || lessonIndex >= moduleData.value.lessons.length) {
+    console.error(`Invalid lesson index: ${lessonIndex}`)
+    return
+  }
+  
+  // 記錄開始時間
+  lessonStartTime.value = Date.now()
   currentLessonIndex.value = lessonIndex
   viewMode.value = 'lesson'
 }
@@ -236,6 +258,18 @@ const completeLesson = (lessonId) => {
   if (!completedLessons.value.includes(lessonId)) {
     completedLessons.value.push(lessonId)
     saveCompletedLessons()
+  }
+  
+  // 計算並累計學習時間
+  if (lessonStartTime.value > 0) {
+    const endTime = Date.now()
+    const durationMinutes = Math.round((endTime - lessonStartTime.value) / 1000 / 60)
+    
+    // 使用 progressStore 累計時間
+    const moduleId = selectedModule.value.id
+    progressStore.addLearningTime(moduleId, durationMinutes)
+    
+    lessonStartTime.value = 0
   }
   
   // 如果還有下一課，繼續
@@ -257,19 +291,20 @@ const previousLesson = () => {
 // 儲存已完成課程
 const saveCompletedLessons = () => {
   const moduleId = selectedModule.value.id
-  localStorage.setItem(`completed-lessons-${moduleId}`, JSON.stringify(completedLessons.value))
+  progressStore.saveCompletedLessons(moduleId, completedLessons.value)
 }
 
 // 處理測驗完成
-const handleQuizComplete = (result) => {
+const handleQuizComplete = async (result) => {
   if (result.passed) {
     // 標記模組為完成
     markModuleComplete(selectedModule.value.id, result)
     
     // 檢查是否完成整個階段
-    if (checkLevelComplete(selectedLevel.value.id)) {
+    const levelComplete = await checkLevelComplete(selectedLevel.value.id)
+    if (levelComplete) {
       // 生成證書
-      generateCertificate(selectedLevel.value, result)
+      await generateCertificate(selectedLevel.value, result)
     } else {
       // 繼續下一模組
       continueToNextModule()
@@ -280,63 +315,88 @@ const handleQuizComplete = (result) => {
 // 標記模組完成
 const markModuleComplete = (moduleId, quizResult) => {
   const levelId = selectedLevel.value.id
-  const progressKey = `burgundy-level${levelId}-progress`
-  
-  const saved = localStorage.getItem(progressKey)
-  const progress = saved ? JSON.parse(saved) : {}
-  
-  progress[moduleId] = {
+  progressStore.saveModuleProgress(levelId, moduleId, {
     completed: true,
     progress: 100,
     quizScore: quizResult.score,
     completedAt: new Date().toISOString()
-  }
-  
-  localStorage.setItem(progressKey, JSON.stringify(progress))
+  })
 }
 
 // 檢查階段是否完成
-const checkLevelComplete = (levelId) => {
-  const progressKey = `burgundy-level${levelId}-progress`
-  const saved = localStorage.getItem(progressKey)
-  
-  if (!saved) return false
-  
-  const progress = JSON.parse(saved)
-  const moduleCount = Object.keys(progress).filter(key => progress[key].completed).length
-  
-  // 假設每個階段有5個模組（實際應該從 modules.json 讀取）
-  return moduleCount >= 5
+const checkLevelComplete = async (levelId) => {
+  // 動態讀取模組總數
+  try {
+    const modulesRes = await fetch(`/data/courses/level${levelId}/modules.json`)
+    if (!modulesRes.ok) {
+      console.error(`Failed to load modules.json for level ${levelId}`)
+      return false
+    }
+    const modulesData = await modulesRes.json()
+    const totalModules = modulesData.modules.length
+    
+    return progressStore.isLevelComplete(levelId, totalModules)
+  } catch (error) {
+    console.error('Error checking level completion:', error)
+    return false
+  }
 }
 
 // 生成證書
-const generateCertificate = (level, lastQuizResult) => {
+const generateCertificate = async (level, lastQuizResult) => {
   const levelId = level.id
-  const progressKey = `burgundy-level${levelId}-progress`
-  const progress = JSON.parse(localStorage.getItem(progressKey) || '{}')
+  const progress = progressStore.getLevelProgress(levelId)
   
   const completedModules = Object.keys(progress).filter(key => progress[key].completed).length
   const scores = Object.values(progress).map(p => p.quizScore || 0)
   const averageScore = Math.round(scores.reduce((sum, s) => sum + s, 0) / scores.length)
   
+  // 動態讀取模組總數
+  let totalModules = completedModules
+  try {
+    const modulesRes = await fetch(`/data/courses/level${levelId}/modules.json`)
+    if (modulesRes.ok) {
+      const modulesData = await modulesRes.json()
+      totalModules = modulesData.modules.length
+    }
+  } catch (error) {
+    console.error('Error loading modules count:', error)
+  }
+  
+  // 計算總學習時間
+  let totalTimeHours = 0
+  try {
+    const modulesRes = await fetch(`/data/courses/level${levelId}/modules.json`)
+    if (modulesRes.ok) {
+      const modulesData = await modulesRes.json()
+      let totalMinutes = 0
+      
+      modulesData.modules.forEach(mod => {
+        totalMinutes += progressStore.getLearningTime(mod.id)
+      })
+      
+      totalTimeHours = Math.round(totalMinutes / 60 * 10) / 10 // 小時，保留一位小數
+    }
+  } catch (error) {
+    console.error('Error calculating total time:', error)
+  }
+  
   // 生成證書ID
   const certificateId = `BW-L${levelId}-${Date.now()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}`
   
   certificateData.value = {
-    userName: localStorage.getItem('userName') || '學習者',
+    userName: progressStore.getUserName(),
     level: levelId,
     completedModules: completedModules,
-    totalModules: 5, // 應該從實際資料讀取
+    totalModules: totalModules,
     averageScore: averageScore,
-    totalTime: 0, // 需要累計實際學習時間
+    totalTime: totalTimeHours,
     completedAt: new Date(),
     certificateId: certificateId
   }
   
   // 儲存證書資料
-  const certificates = JSON.parse(localStorage.getItem('certificates') || '[]')
-  certificates.push(certificateData.value)
-  localStorage.setItem('certificates', JSON.stringify(certificates))
+  progressStore.saveCertificate(certificateData.value)
   
   // 顯示證書
   currentView.value = 'certificate'

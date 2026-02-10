@@ -1,0 +1,148 @@
+{
+  "moduleId": "example-map-demo",
+  "title": "地圖幻燈片範例",
+  "description": "展示不同地圖配置的範例",
+  "lessons": [
+    {
+      "id": "map-demo-1",
+      "title": "地圖幻燈片範例",
+      "duration": "10分鐘",
+      "type": "presentation",
+      "slides": [
+        {
+          "type": "title",
+          "title": "地圖幻燈片範例",
+          "subtitle": "展示不同的地圖配置方式",
+          "description": "每個地圖都有獨立的實例和配置"
+        },
+        {
+          "type": "map",
+          "title": "範例 1: 簡單地圖",
+          "content": "<p>這是一個簡單的地圖範例。</p><p>只顯示布根地的整體輪廓。</p>",
+          "mapConfig": {
+            "center": [4.5, 47.2],
+            "zoom": 8,
+            "pitch": 0,
+            "bearing": 0
+          },
+          "geojsonFiles": [
+            {
+              "id": "bourgogne-map",
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.3,
+              "lineColor": "#5C2E5C",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ],
+          "bounds": [[3.8, 46.5], [5.2, 48.0]],
+          "markers": [
+            {
+              "name": "Dijon",
+              "coordinates": [5.0415, 47.3220]
+            },
+            {
+              "name": "Beaune",
+              "coordinates": [4.8378, 47.0247]
+            }
+          ]
+        },
+        {
+          "type": "map",
+          "title": "範例 2: 互動式產區地圖",
+          "content": "<p><strong>點擊下方按鈕</strong>探索不同產區。</p><p>每個產區都會動態載入和聚焦。</p>",
+          "mapConfig": {
+            "center": [4.5, 47.0],
+            "zoom": 8,
+            "pitch": 0,
+            "bearing": 0
+          },
+          "geojsonFiles": [
+            {
+              "id": "bourgogne-map",
+              "url": "/geojson/AOC Bourgogne map.geojson",
+              "isBase": true,
+              "fillColor": "#8B4789",
+              "fillOpacity": 0.2,
+              "lineColor": "#5C2E5C",
+              "lineWidth": 1,
+              "showLabels": false
+            },
+            {
+              "id": "chablis",
+              "url": "/geojson/Chablis/AOC Chablis.geojson",
+              "displayName": "夏布利",
+              "fillColor": "#F0E68C",
+              "fillOpacity": 0.6,
+              "lineColor": "#DAA520",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "cote-chalonnaise",
+              "url": "/geojson/Cote-Chalonnaise/AOC Bourgogne Côte Chalonnaise.geojson",
+              "displayName": "夏隆丘",
+              "fillColor": "#FF6B6B",
+              "fillOpacity": 0.6,
+              "lineColor": "#FF4500",
+              "lineWidth": 2.5,
+              "showLabels": true
+            },
+            {
+              "id": "maconnais",
+              "url": "/geojson/Maconnais/AOC Mâcon.geojson",
+              "displayName": "馬貢內",
+              "fillColor": "#98D8C8",
+              "fillOpacity": 0.6,
+              "lineColor": "#45B7AF",
+              "lineWidth": 2.5,
+              "showLabels": true
+            }
+          ],
+          "bounds": [[3.8, 45.8], [5.2, 48.0]]
+        },
+        {
+          "type": "map",
+          "title": "範例 3: 3D 傾斜視角",
+          "content": "<p>使用 <strong>pitch</strong> 參數創建 3D 效果。</p><p>適合展示地形和坡度。</p>",
+          "mapConfig": {
+            "center": [4.95, 47.15],
+            "zoom": 11,
+            "pitch": 45,
+            "bearing": -20
+          },
+          "geojsonFiles": [
+            {
+              "id": "cote-de-nuits",
+              "url": "/geojson/Cote-de-Nuits/AOC Côte de Nuits-Villages.geojson",
+              "isBase": true,
+              "fillColor": "#DC143C",
+              "fillOpacity": 0.5,
+              "lineColor": "#B22222",
+              "lineWidth": 2,
+              "showLabels": true
+            }
+          ],
+          "bounds": [[4.85, 47.05], [5.05, 47.25]],
+          "markers": [
+            {
+              "name": "Nuits-Saint-Georges",
+              "coordinates": [4.9495, 47.1367]
+            },
+            {
+              "name": "Vosne-Romanée",
+              "coordinates": [4.9598, 47.1612]
+            }
+          ]
+        },
+        {
+          "type": "content",
+          "title": "地圖配置說明",
+          "content": "每個地圖幻燈片都是獨立的實例，擁有自己的：\n\n• 地圖中心點和縮放級別\n• GeoJSON 圖層和樣式\n• 互動按鈕和標記\n• 視圖動畫和狀態\n\n這種設計讓你可以為每個教學場景創建最合適的地圖展示。"
+        }
+      ]
+    }
+  ]
+}

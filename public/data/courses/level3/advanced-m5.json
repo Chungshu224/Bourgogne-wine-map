@@ -77,6 +77,59 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "🍇 頂級酒莊整串發酵比例對比",
+          "content": "從0%到100%的光譜，展現不同釀造哲學。DRC堅持100%，Henri Jayer傳統0%，大多數酒莊採用彈性策略30-70%。",
+          "data": {
+            "items": [
+              {
+                "label": "DRC / Dujac",
+                "value": 100,
+                "displayValue": "100% - 極致複雜度",
+                "color": "#8B4789"
+              },
+              {
+                "label": "Domaine Leroy",
+                "value": 100,
+                "displayValue": "100% - 生物動力法",
+                "color": "#9C27B0"
+              },
+              {
+                "label": "Rousseau",
+                "value": 50,
+                "displayValue": "50% - 平衡策略",
+                "color": "#673AB7"
+              },
+              {
+                "label": "Méo-Camuzet",
+                "value": 40,
+                "displayValue": "40% - 適度整串",
+                "color": "#3F51B5"
+              },
+              {
+                "label": "Louis Jadot",
+                "value": 30,
+                "displayValue": "30% - 保守策略",
+                "color": "#2196F3"
+              },
+              {
+                "label": "Fourrier",
+                "value": 20,
+                "displayValue": "20% - 低比例",
+                "color": "#03A9F4"
+              },
+              {
+                "label": "Henri Jayer風格",
+                "value": 0,
+                "displayValue": "0% - 純淨果味",
+                "color": "#00BCD4"
+              }
+            ]
+          },
+          "note": "暖化趨勢下，整串比例普遍增加。2000年代平均30%，2020年代已達50-70%。果梗單寧可平衡高酒精度。"
+        },
+        {
           "type": "content",
           "title": "部分整串的智慧",
           "content": "大多數生產者採用部分整串（30-70%），視年份、地塊調整。溫暖年份減少整串比例（避免過度單寧），涼爽年份增加（增加複雜度）。優雅地塊（如Chambolle）適合較高整串，強勁地塊（如Gevrey）則適度即可。"
@@ -147,6 +200,33 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "comparison",
+          "title": "🔥 橡木桶烘烤程度對比（輕度 vs 重度）",
+          "content": "烘烤程度決定橡木桶賦予酒款的香氣風格。布根地偏好中度到中重度（200-230°C），既能賦予烤麵包、焦糖香氣，又不會掩蓋風土表達。",
+          "data": {
+            "leftTitle": "輕度烘烤 Light Toast",
+            "leftItems": [
+              {"label": "溫度", "value": "<200°C"},
+              {"label": "時間", "value": "15-20分鐘"},
+              {"label": "香氣", "value": "花香、香草、白胡椒"},
+              {"label": "風格", "value": "精緻、優雅、風土主導"},
+              {"label": "適用", "value": "頂級白酒（Montrachet）"},
+              {"label": "代表", "value": "Leflaive, Raveneau"}
+            ],
+            "rightTitle": "重度烘烤 Heavy Toast",
+            "rightItems": [
+              {"label": "溫度", "value": ">230°C"},
+              {"label": "時間", "value": "35-45分鐘"},
+              {"label": "香氣", "value": "煙燻、炙烤、焦肉"},
+              {"label": "風格", "value": "濃郁、強勁、木味主導"},
+              {"label": "適用", "value": "濃郁紅酒（少用）"},
+              {"label": "代表", "value": "新世界風格"}
+            ]
+          },
+          "note": "布根地主流：中度（200-220°C，25-30分鐘）→ 香草、烤麵包、焦糖。中重度（220-230°C，30-35分鐘）→ 焦糖、咖啡、可可。DRC/Méo-Camuzet 使用中重度，Coche-Dury 偏好中度。過度烘烤（>230°C）會掩蓋Pinot Noir的紅色水果精緻感。"
+        },
+        {
           "type": "comparison",
           "title": "高新桶 vs 低新桶",
           "leftTitle": "高新桶（80-100%）",
@@ -167,6 +247,59 @@
             "適合：優雅精緻的酒款",
             "優勢：風土特性清晰"
           ]
+        },
+        {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "🛢️ 頂級酒莊新橡木桶使用比例（紅酒vs白酒）",
+          "content": "紅酒可承受80-100%新桶，白酒則僅20-40%。單寧結構是關鍵差異。DRC/Méo紅酒100%新桶，但Coche-Dury白酒僅25%。",
+          "data": {
+            "items": [
+              {
+                "label": "DRC 紅酒",
+                "value": 100,
+                "displayValue": "100% - 自有森林",
+                "color": "#8B0000"
+              },
+              {
+                "label": "Méo-Camuzet 紅酒",
+                "value": 100,
+                "displayValue": "100% - François Frères",
+                "color": "#DC143C"
+              },
+              {
+                "label": "Rousseau 紅酒",
+                "value": 80,
+                "displayValue": "80% - 平衡策略",
+                "color": "#FF6347"
+              },
+              {
+                "label": "Leroy 紅酒",
+                "value": 70,
+                "displayValue": "70% - 生物動力法",
+                "color": "#FF7F50"
+              },
+              {
+                "label": "Leflaive 白酒",
+                "value": 30,
+                "displayValue": "30% - 白酒標準",
+                "color": "#FFD700"
+              },
+              {
+                "label": "Coche-Dury 白酒",
+                "value": 25,
+                "displayValue": "25% - 極致風土",
+                "color": "#FFEC8B"
+              },
+              {
+                "label": "Ramonet 白酒",
+                "value": 20,
+                "displayValue": "20% - 低干預",
+                "color": "#FFFACD"
+              }
+            ]
+          },
+          "note": "一個新法國橡木桶成本€1,000-1,500。DRC每年需要1,500-2,000個新桶，成本超過€200萬。白酒對新桶極敏感，過度使用會掩蓋礦物感。"
         },
         {
           "type": "content",

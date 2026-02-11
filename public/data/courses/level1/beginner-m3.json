@@ -187,6 +187,71 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "📊 夜丘9大村莊風格對比",
+          "content": "直觀展示各村莊的酒體強度與風格特色（滿分10分）",
+          "data": {
+            "items": [
+              {
+                "label": "Marsannay",
+                "value": 65,
+                "displayValue": "6.5",
+                "color": "#FFB6C1"
+              },
+              {
+                "label": "Fixin",
+                "value": 70,
+                "displayValue": "7.0",
+                "color": "#FFA07A"
+              },
+              {
+                "label": "Gevrey-Chambertin",
+                "value": 90,
+                "displayValue": "9.0 強勁",
+                "color": "#8B0000"
+              },
+              {
+                "label": "Morey-Saint-Denis",
+                "value": 85,
+                "displayValue": "8.5",
+                "color": "#A52A2A"
+              },
+              {
+                "label": "Chambolle-Musigny",
+                "value": 75,
+                "displayValue": "7.5 優雅",
+                "color": "#DC143C"
+              },
+              {
+                "label": "Vougeot",
+                "value": 80,
+                "displayValue": "8.0",
+                "color": "#B22222"
+              },
+              {
+                "label": "Vosne-Romanée",
+                "value": 100,
+                "displayValue": "10 完美",
+                "color": "#8B0000"
+              },
+              {
+                "label": "Flagey-Echézeaux",
+                "value": 85,
+                "displayValue": "8.5",
+                "color": "#CD5C5C"
+              },
+              {
+                "label": "Nuits-Saint-Georges",
+                "value": 85,
+                "displayValue": "8.5 結構",
+                "color": "#A52A2A"
+              }
+            ]
+          },
+          "note": "評分基於酒體強度、複雜度與陳年潛力綜合評估。Vosne-Romanée 被認為是夜丘的巔峰。"
+        },
+        {
           "type": "content",
           "title": "總結",
           "content": "夜丘是黑皮諾的天堂，每個村莊都有獨特個性，從強勁的 Gevrey 到優雅的 Chambolle，風格多樣但都展現了極高的品質。"

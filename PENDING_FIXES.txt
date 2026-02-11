@@ -1,0 +1,403 @@
+================================================
+  課程系統待修正項目清單
+  檢查日期: 2026-02-11
+================================================
+
+📊 總覽
+--------------------------------------------------
+✅ 已修正: 5 項
+🔴 待修正: 8 項（高優先級 5 項 + 中低優先級 3 項）
+
+
+✅ 已完成的修正
+================================================
+
+1. ✅ levels.json - Level 4 重複的 modules 屬性
+   位置: public/data/courses/levels.json:83-85
+   狀態: 已刪除重複屬性，統一為 8
+
+2. ✅ levels.json - Level 2 時長數據不一致
+   位置: public/data/courses/levels.json:41
+   狀態: hours 從 4.5 → 8
+
+3. ✅ 冗餘文件清理
+   狀態: 3 個舊文件已移至 archive/
+
+4. ✅ beginner-m7.json - 缺少 passingScore
+   位置: public/data/courses/level1/beginner-m7.json:911
+   狀態: 已添加 "passingScore": 60
+
+5. ✅ beginner-m8.json - 缺少 passingScore
+   位置: public/data/courses/level1/beginner-m8.json:810
+   狀態: 已添加 "passingScore": 60
+
+
+🔴 待修正項目（按優先級排序）
+================================================
+
+【P0 - 緊急】
+--------------------------------------------------
+無
+
+
+【P1 - 高優先級】（影響功能正確性）
+--------------------------------------------------
+
+1. 🔴 totalModules 硬編碼問題
+   位置: src/components/course/CourseManager.vue:329
+   問題: totalModules: 5 // 應該從實際資料讀取
+   影響: 證書顯示錯誤的模組總數
+   
+   當前代碼:
+   ```javascript
+   certificateData.value = {
+     userName: localStorage.getItem('userName') || '學習者',
+     level: levelId,
+     completedModules: completedModules,
+     totalModules: 5, // ❌ 硬編碼
+     averageScore: averageScore,
+     totalTime: 0,
+     completedAt: new Date(),
+     certificateId: certificateId
+   }
+   ```
+   
+   建議修正:
+   ```javascript
+   // 讀取該階段的 modules.json
+   const modulesRes = await fetch(`/data/courses/level${levelId}/modules.json`)
+   const modulesData = await modulesRes.json()
+   const totalModules = modulesData.modules.length
+   
+   certificateData.value = {
+     // ...
+     totalModules: totalModules, // ✅ 動態讀取
+     // ...
+   }
+   ```
+
+
+2. 🔴 checkLevelComplete 假設模組數量
+   位置: src/components/course/CourseManager.vue:308
+   問題: return moduleCount >= 5 // 假設每階段 5 個模組
+   影響: Level 3 (15 模組) 和 Level 4 (8 模組) 完成判斷不正確
+   
+   當前代碼:
+   ```javascript
+   const checkLevelComplete = (levelId) => {
+     const progressKey = `burgundy-level${levelId}-progress`
+     const saved = localStorage.getItem(progressKey)
+     
+     if (!saved) return false
+     
+     const progress = JSON.parse(saved)
+     const moduleCount = Object.keys(progress).filter(key => progress[key].completed).length
+     
+     // ❌ 假設每個階段有5個模組
+     return moduleCount >= 5
+   }
+   ```
+   
+   建議修正:
+   ```javascript
+   const checkLevelComplete = async (levelId) => {
+     const progressKey = `burgundy-level${levelId}-progress`
+     const saved = localStorage.getItem(progressKey)
+     
+     if (!saved) return false
+     
+     const progress = JSON.parse(saved)
+     const completedCount = Object.keys(progress).filter(key => progress[key].completed).length
+     
+     // ✅ 動態讀取模組總數
+     const modulesRes = await fetch(`/data/courses/level${levelId}/modules.json`)
+     const modulesData = await modulesRes.json()
+     const totalModules = modulesData.modules.length
+     
+     return completedCount >= totalModules
+   }
+   ```
+
+
+3. 🔴 totalTime 未實現時間追蹤
+   位置: src/components/course/CourseManager.vue:331
+   問題: totalTime: 0 // 需要累計實際學習時間
+   影響: 證書上顯示學習時數為 0
+   
+   建議實現:
+   ```javascript
+   // 1. 在開始課程時記錄時間
+   const startLesson = (lessonIndex) => {
+     const startTime = Date.now()
+     localStorage.setItem('lessonStartTime', startTime.toString())
+     currentLessonIndex.value = lessonIndex
+     viewMode.value = 'lesson'
+   }
+   
+   // 2. 完成課程時累計時間
+   const completeLesson = (lessonId) => {
+     const startTime = parseInt(localStorage.getItem('lessonStartTime') || '0')
+     const endTime = Date.now()
+     const duration = Math.round((endTime - startTime) / 1000 / 60) // 分鐘
+     
+     // 累計到總時長
+     const moduleId = selectedModule.value.id
+     const timeKey = `learningTime-${moduleId}`
+     const currentTime = parseInt(localStorage.getItem(timeKey) || '0')
+     localStorage.setItem(timeKey, (currentTime + duration).toString())
+     
+     // 原有邏輯...
+   }
+   
+   // 3. 生成證書時讀取總時長
+   const calculateTotalTime = (levelId) => {
+     const modulesRes = await fetch(`/data/courses/level${levelId}/modules.json`)
+     const modulesData = await modulesRes.json()
+     
+     let totalMinutes = 0
+     modulesData.modules.forEach(mod => {
+       const timeKey = `learningTime-${mod.id}`
+       totalMinutes += parseInt(localStorage.getItem(timeKey) || '0')
+     })
+     
+     return Math.round(totalMinutes / 60 * 10) / 10 // 小時，保留一位小數
+   }
+   ```
+
+
+4. 🔴 startLesson 缺少模組範圍驗證
+   位置: src/components/course/CourseManager.vue:223
+   問題: 如果 lessonIndex 超出範圍，可能導致錯誤
+   影響: 用戶體驗，可能顯示空白頁面
+   
+   建議修正:
+   ```javascript
+   const startLesson = (lessonIndex) => {
+     // ✅ 添加範圍檢查
+     if (lessonIndex < 0 || lessonIndex >= moduleData.value.lessons.length) {
+       console.error(`Invalid lesson index: ${lessonIndex}`)
+       return
+     }
+     
+     currentLessonIndex.value = lessonIndex
+     viewMode.value = 'lesson'
+   }
+   ```
+
+
+5. 🔴 handleSelectModule 未處理加載失敗
+   位置: src/components/course/CourseManager.vue:176-195
+   問題: fetch 失敗時沒有錯誤處理
+   影響: 網絡錯誤時用戶看到空白頁面
+   
+   建議修正:
+   ```javascript
+   const handleSelectModule = async (module) => {
+     selectedModule.value = module
+     
+     try {
+       const response = await fetch(`/data/courses/level${selectedLevel.value.id}/${module.id}.json`)
+       
+       // ✅ 添加狀態檢查
+       if (!response.ok) {
+         throw new Error(`HTTP error! status: ${response.status}`)
+       }
+       
+       moduleData.value = await response.json()
+       
+       // 載入已完成的課程
+       const saved = localStorage.getItem(`completed-lessons-${module.id}`)
+       if (saved) {
+         completedLessons.value = JSON.parse(saved)
+       } else {
+         completedLessons.value = []
+       }
+       
+       viewMode.value = 'overview'
+       
+     } catch (error) {
+       console.error('Error loading module:', error)
+       // ✅ 顯示錯誤訊息
+       alert(`載入模組失敗: ${error.message}\n請檢查網絡連接或稍後再試。`)
+       viewMode.value = 'overview'
+       moduleData.value = null
+     }
+   }
+   ```
+
+
+【P2 - 中優先級】（影響用戶體驗）
+--------------------------------------------------
+
+6. 🟡 成就系統按鈕無功能
+   位置: src/components/course/LevelSelector.vue:129
+   問題: 按鈕顯示但沒有 @click 事件
+   影響: 用戶點擊無反應，降低信任度
+   
+   當前代碼:
+   ```vue
+   <button class="action-button achievements">
+     <span class="btn-icon">🏆</span>
+     成就系統
+   </button>
+   ```
+   
+   建議修正（方案 A - 臨時）:
+   ```vue
+   <button class="action-button achievements" @click="showComingSoon">
+     <span class="btn-icon">🏆</span>
+     成就系統
+   </button>
+   
+   <script>
+   const showComingSoon = () => {
+     alert('🏆 成就系統即將推出！\n敬請期待...')
+   }
+   </script>
+   ```
+   
+   建議修正（方案 B - 完整實現）:
+   詳見附錄 A：成就系統實現方案
+
+
+7. 🟡 學習進度按鈕無功能
+   位置: src/components/course/LevelSelector.vue:134
+   問題: 同上，按鈕無實際功能
+   影響: 同上
+   
+   建議修正:
+   ```vue
+   <button class="action-button learning-progress" @click="showProgress">
+     <span class="btn-icon">📊</span>
+     學習進度
+   </button>
+   
+   <script>
+   const showProgress = () => {
+     // 方案 A: 彈窗顯示統計
+     const stats = generateProgressStats()
+     alert(stats)
+     
+     // 方案 B: 導航到詳細頁面
+     // router.push('/progress')
+   }
+   
+   const generateProgressStats = () => {
+     const stats = []
+     for (let i = 1; i <= 4; i++) {
+       const progress = userProgress.value[i]
+       stats.push(`Level ${i}: ${progress.progress}% 完成`)
+     }
+     return `📊 您的學習進度\n\n${stats.join('\n')}`
+   }
+   </script>
+   ```
+
+
+【P3 - 低優先級】（代碼優化）
+--------------------------------------------------
+
+8. 🟢 代碼重複 - localStorage 操作
+   位置: 多處
+   問題: localStorage get/set 邏輯分散在各處
+   影響: 維護困難，容易出錯
+   
+   建議重構:
+   ```javascript
+   // composables/useProgress.js
+   export function useProgress() {
+     const getProgress = (levelId) => {
+       const key = `burgundy-level${levelId}-progress`
+       const saved = localStorage.getItem(key)
+       return saved ? JSON.parse(saved) : {}
+     }
+     
+     const saveProgress = (levelId, moduleId, data) => {
+       const key = `burgundy-level${levelId}-progress`
+       const progress = getProgress(levelId)
+       progress[moduleId] = data
+       localStorage.setItem(key, JSON.stringify(progress))
+     }
+     
+     const getCompletedLessons = (moduleId) => {
+       const key = `completed-lessons-${moduleId}`
+       const saved = localStorage.getItem(key)
+       return saved ? JSON.parse(saved) : []
+     }
+     
+     const saveCompletedLessons = (moduleId, lessons) => {
+       const key = `completed-lessons-${moduleId}`
+       localStorage.setItem(key, JSON.stringify(lessons))
+     }
+     
+     return {
+       getProgress,
+       saveProgress,
+       getCompletedLessons,
+       saveCompletedLessons
+     }
+   }
+   ```
+
+
+================================================
+  修正優先級建議
+================================================
+
+立即執行（本週）:
+  □ 1. totalModules 動態讀取
+  □ 2. checkLevelComplete 修正
+  □ 3. totalTime 時間追蹤
+  
+近期執行（2週內）:
+  □ 4. startLesson 範圍驗證
+  □ 5. handleSelectModule 錯誤處理
+  
+未來優化（1個月內）:
+  □ 6. 成就系統按鈕功能
+  □ 7. 學習進度按鈕功能
+  □ 8. localStorage 邏輯重構
+
+
+================================================
+  附錄 A：成就系統實現方案
+================================================
+
+成就定義 (achievements.json):
+```json
+{
+  "achievements": [
+    {
+      "id": "first-step",
+      "name": "初試啼聲",
+      "description": "完成第一個模組",
+      "icon": "🎯",
+      "condition": { "type": "moduleComplete", "count": 1 }
+    },
+    {
+      "id": "perfect-score",
+      "name": "滿分達人",
+      "description": "在任何測驗中獲得 100 分",
+      "icon": "💯",
+      "condition": { "type": "quizPerfect", "count": 1 }
+    },
+    {
+      "id": "level-1-master",
+      "name": "入門大師",
+      "description": "完成 Level 1 所有模組",
+      "icon": "🍇",
+      "condition": { "type": "levelComplete", "level": 1 }
+    }
+  ]
+}
+```
+
+實現邏輯:
+1. 每次完成模組/測驗時檢查成就條件
+2. 解鎖成就時顯示彈窗慶祝動畫
+3. 在 LevelSelector 顯示已獲得成就列表
+
+
+================================================
+  檢查完成時間: 2026-02-11 00:50
+================================================

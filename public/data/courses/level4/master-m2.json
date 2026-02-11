@@ -60,6 +60,77 @@
           "content": "黑皮諾在全球種植面積約112,000公頃，遠少於Cabernet Sauvignon（340,000公頃）或Merlot（266,000公頃）。主要產區包括：法國布根地（10,500公頃）、香檳區（12,000公頃）、美國加州與奧勒岡（16,000公頃）、紐西蘭（5,900公頃）、德國（11,800公頃）、澳洲（4,600公頃）。"
         },
         {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "🌍 全球黑皮諾種植面積分布（前10大產區）",
+          "content": "黑皮諾總面積112,000公頃，僅為Cabernet的1/3。美國最大（16,000ha），但布根地（10,500ha）品質最高。香檳區（12,000ha）用於氣泡酒。",
+          "data": {
+            "items": [
+              {
+                "label": "美國（CA+OR）",
+                "value": 16000,
+                "displayValue": "16,000公頃 - 加州+奧勒岡",
+                "color": "#C41E3A"
+              },
+              {
+                "label": "法國香檳區",
+                "value": 12000,
+                "displayValue": "12,000公頃 - 氣泡酒為主",
+                "color": "#FFD700"
+              },
+              {
+                "label": "德國",
+                "value": 11800,
+                "displayValue": "11,800公頃 - Spätburgunder",
+                "color": "#000000"
+              },
+              {
+                "label": "法國布根地",
+                "value": 10500,
+                "displayValue": "10,500公頃 - 品質標竿",
+                "color": "#8B0000"
+              },
+              {
+                "label": "紐西蘭",
+                "value": 5900,
+                "displayValue": "5,900公頃 - 中奧塔哥領銜",
+                "color": "#000080"
+              },
+              {
+                "label": "澳洲",
+                "value": 4600,
+                "displayValue": "4,600公頃 - Yarra Valley等",
+                "color": "#FFD700"
+              },
+              {
+                "label": "義大利",
+                "value": 5200,
+                "displayValue": "5,200公頃 - Alto Adige等",
+                "color": "#009246"
+              },
+              {
+                "label": "瑞士",
+                "value": 4400,
+                "displayValue": "4,400公頃 - 本地消費為主",
+                "color": "#FF0000"
+              },
+              {
+                "label": "奧地利",
+                "value": 650,
+                "displayValue": "650公頃 - Blauburgunder",
+                "color": "#ED2939"
+              },
+              {
+                "label": "其他產區",
+                "value": 40950,
+                "displayValue": "40,950公頃 - 羅馬尼亞、摩爾多瓦等",
+                "color": "#808080"
+              }
+            ]
+          },
+          "note": "對比：Cabernet Sauvignon 340,000ha、Merlot 266,000ha。黑皮諾種植面積僅為Cabernet的1/3，反映其挑剔的生長條件。布根地雖僅10,500ha，但品質與價格遠超其他產區，證明『風土>面積』。"
+        },
+        {
           "type": "list",
           "title": "🌍 頂級產區概覽",
           "points": [
@@ -75,6 +146,43 @@
           "type": "content",
           "title": "💡 關鍵洞察",
           "content": "黑皮諾的全球擴散始於1980年代，當時釀酒師開始尋找涼爽氣候產區。成功的關鍵在於：1) 找到類似布根地的石灰岩土壤；2) 涼爽但陽光充足的氣候；3) 選擇適當的布根地克隆；4) 尊重風土而非過度釀造技術干預。"
+        },
+        {
+          "type": "chart",
+          "chartType": "radar",
+          "title": "🎯 全球五大頂級黑皮諾產區風格雷達對比",
+          "content": "布根地在優雅、複雜、陳年潛力上最高，但果味濃度中等。中奧塔哥果味最濃郁。奧勒岡最接近布根地。德國最優雅但酒體最輕。加州最飽滿但礦物感較弱。",
+          "data": {
+            "labels": ["果味濃度", "酸度", "單寧質地", "酒體結構", "礦物感", "陳年潛力", "複雜度", "優雅度"],
+            "datasets": [
+              {
+                "label": "布根地 Burgundy",
+                "data": [75, 95, 90, 80, 95, 100, 100, 100],
+                "color": "#8B0000"
+              },
+              {
+                "label": "中奧塔哥 Central Otago",
+                "data": [95, 90, 85, 85, 80, 85, 80, 75],
+                "color": "#000080"
+              },
+              {
+                "label": "奧勒岡 Willamette",
+                "data": [80, 90, 85, 75, 85, 90, 85, 90],
+                "color": "#228B22"
+              },
+              {
+                "label": "德國 Germany",
+                "data": [70, 95, 80, 65, 90, 85, 85, 95],
+                "color": "#000000"
+              },
+              {
+                "label": "加州索諾瑪 Sonoma",
+                "data": [90, 80, 85, 90, 70, 80, 75, 70],
+                "color": "#C41E3A"
+              }
+            ]
+          },
+          "note": "布根地在7項指標中5項領先（酸度、單寧、礦物、陳年、複雜、優雅），唯果味濃度不及新世界。中奧塔哥果味最濃郁（95分）但優雅度僅75。奧勒岡最平衡，8項指標均75-90分，是最接近布根地的新世界產區。德國優雅度95分但酒體僅65分。加州酒體最飽滿（90分）但礦物感最弱（70分）。"
         }
       ]
     },
@@ -210,6 +318,33 @@
           "content": "中奧塔哥包含多個子產區：Bannockburn（最溫暖、最濃郁）、Gibbston（最涼爽、最優雅）、Bendigo（平衡、結構）、Wanaka（高海拔、精緻）、Cromwell Basin（果味奔放）。頂級生產者包括Felton Road、Burn Cottage、Rippon、Amisfield、Mt Difficulty。"
         },
         {
+          "type": "chart",
+          "chartType": "comparison",
+          "title": "🏔️ 中奧塔哥四大子產區風格對比（溫暖vs涼爽光譜）",
+          "content": "Bannockburn最溫暖濃郁，Gibbston最涼爽優雅，Bendigo平衡，Wanaka高海拔精緻。同一產區內風格差異巨大！",
+          "data": {
+            "leftTitle": "Bannockburn (最溫暖)",
+            "leftItems": [
+              {"label": "氣候", "value": "最溫暖，成熟度高"},
+              {"label": "風格", "value": "濃郁、飽滿、強勁"},
+              {"label": "果實", "value": "深色果實、黑櫻桃"},
+              {"label": "酒精度", "value": "14-14.5%"},
+              {"label": "代表酒莊", "value": "Felton Road, Burn Cottage"},
+              {"label": "價格", "value": "NZ$60-120"}
+            ],
+            "rightTitle": "Gibbston (最涼爽)",
+            "rightItems": [
+              {"label": "氣候", "value": "最涼爽，生長季長"},
+              {"label": "風格", "value": "優雅、精緻、細膩"},
+              {"label": "果實", "value": "紅色果實、酸櫻桃"},
+              {"label": "酒精度", "value": "13-13.5%"},
+              {"label": "代表酒莊", "value": "Amisfield, Rockburn"},
+              {"label": "價格", "value": "NZ$50-100"}
+            ]
+          },
+          "note": "中奧塔哥內部差異：Bannockburn最溫暖（年均溫14°C）vs Gibbston最涼爽（年均溫11°C），溫差達30%！其他子產區：Bendigo（平衡、結構，代表：Mt Difficulty）、Wanaka（高海拔400m，精緻，代表：Rippon）、Cromwell Basin（果味奔放）。土壤差異：古老片岩（Schist）是共同點，但土層厚度影響風格。價格對比：所有子產區價格相近，主要看酒莊聲譽。Felton Road/Burn Cottage為頂級（NZ$100-200）。盲品識別：Bannockburn有Napa感（濃郁、飽滿），Gibbston最接近布根地（優雅、高酸）。"
+        },
+        {
           "type": "list",
           "title": "⭐ 代表性酒莊",
           "points": [
@@ -278,6 +413,35 @@
             "酒精度較高（14-15%）",
             "規模化與精品並存"
           ]
+        },
+        {
+          "type": "chart",
+          "chartType": "comparison",
+          "title": "🇺🇸 奧勒岡 vs 加州黑皮諾風格詳細對比（涼爽vs溫暖）",
+          "content": "奧勒岡威拉美特谷涼爽優雅接近布根地，加州索諾瑪/聖塔芭芭拉更溫暖濃郁。選擇取決於個人偏好！",
+          "data": {
+            "leftTitle": "Oregon Willamette Valley",
+            "leftItems": [
+              {"label": "氣候", "value": "涼爽海洋性，年均13°C"},
+              {"label": "風格", "value": "優雅、高酸、布根地靈魂"},
+              {"label": "果實", "value": "紅色果實、森林底層"},
+              {"label": "酒精度", "value": "13-14%"},
+              {"label": "陳年", "value": "需5-10年，優雅演化"},
+              {"label": "代表酒莊", "value": "Domaine Drouhin, Beaux Frères"},
+              {"label": "價格", "value": "$40-100（村莊級品質）"}
+            ],
+            "rightTitle": "California (Sonoma/Santa Barbara)",
+            "rightItems": [
+              {"label": "氣候", "value": "溫暖地中海，年均15-16°C"},
+              {"label": "風格", "value": "濃郁、飽滿、新世界魅力"},
+              {"label": "果實", "value": "深色果實、甜香料"},
+              {"label": "酒精度", "value": "14-15%"},
+              {"label": "陳年", "value": "年輕時已討喜，3-8年"},
+              {"label": "代表酒莊", "value": "Williams Selyem, Kosta Browne"},
+              {"label": "價格", "value": "$50-150（高評分導向）"}
+            ]
+          },
+          "note": "美國黑皮諾兩大流派：奧勒岡威拉美特谷（涼爽優雅派）vs 加州索諾瑪/聖塔芭芭拉（溫暖濃郁派）。氣候差異：奧勒岡年均13°C（與布根地45度緯度相似，海洋性）vs 加州15-16°C（地中海氣候，日照充足）。土壤：奧勒岡Jory火山紅土+沉積岩（泥土氣息、礦物感）vs 加州多樣化（Goldridge沙質、石灰岩）。釀造哲學：奧勒岡追求布根地優雅（整串發酵、少新桶）vs 加州追求濃郁果味（去梗、新桶比例高）。市場定位：奧勒岡主打布根地愛好者（性價比高）vs 加州主打Parker高分（價格昂貴）。頂級酒款：奧勒岡Evening Land Seven Springs $150（媲美布根地一級園）vs 加州Kosta Browne $200+（RP 95+常客）。產量：奧勒岡1.2萬噸/年（精品小規模）vs 加州8萬噸/年（規模化+精品並存）。盲品識別：奧勒岡泥土氣息重、酸度明亮 vs 加州甜香料、酒精感。"
         },
         {
           "type": "content",
@@ -379,8 +543,52 @@
         {
           "type": "content",
           "title": "💡 盲品識別要點",
-          "content": "德國黑皮諾特徵：1) 中等石榴紅色；2) 精緻的紅色果實、花香（玫瑰、紫羅蘭）；3) 高酸度，清爽；4) 細膩絲滑的單寧；5) 中等酒體；6) 礦物感明顯（石灰岩或板岩）；7) 優雅而不張揚。關鍵詞是「純淨」、「精緻」、「礦物」。"
-        }
+          "content": "德國黑皮諾特徵：1) 中等石榴紅色；2) 精緻的紅色果實、花香（玫瑰、紫羅蘭）；3) 高酸度，清爽；4) 細膩絲滑的單寧；5) 中等酒體；6) 礦物感明顯（石灰岩或板岩）；7) 優雅而不張揚。關鍵詞是「純淨」、「精緻」、「礦物」。"        },
+        {
+          "type": "chart",
+          "chartType": "timeline",
+          "title": "🇩🇪 德國黑皮諾品質革命：從甘甜入門級到婲美布根地",
+          "content": "1990s傳統甜型風格 → 2000s品質革命（現代釀造技術）→ 2010s國際認可 → 2020s婲美布根地村莊級。價格僅布根地的1/3，CP值極高！",
+          "data": {
+            "items": [
+              {
+                "year": "1990s",
+                "score": 30,
+                "label": "傳統時代 - 甜型、輕盈、不經橡木桶"
+              },
+              {
+                "year": "2000年",
+                "score": 45,
+                "label": "品質革命開始 - Huber/Becker領銜"
+              },
+              {
+                "year": "2005年",
+                "score": 60,
+                "label": "現代技術普及 - 完全乾型、橡木桶"
+              },
+              {
+                "year": "2010年",
+                "score": 75,
+                "label": "VDP GG制度建立 - 特級園標準化"
+              },
+              {
+                "year": "2015年",
+                "score": 85,
+                "label": "國際認可 - Allen Meadows給高95+"
+              },
+              {
+                "year": "2020年",
+                "score": 95,
+                "label": "婲美布根地 - 盲品擊敗一級園"
+              },
+              {
+                "year": "2025年",
+                "score": 100,
+                "label": "主流認可 - CP值爆棚，價格仅1/3"
+              }
+            ]
+          },
+          "note": "35年品質躍進：1990s甜型入門級 → 2025年婲美布根地村莊級。關鍵轉折點：2000年Bernhard Huber、Friedrich Becker等釀酒師引入現代技術（溫控發酵、精準萎取、法國橡木桶）。2010年VDP（頂級酒莊聯盟）建立類似布根地的四級分級：Grosses Gewächs（GG，特級園）是最高等級。2015年Allen Meadows給Baden一級園評95+分，與布根地一級園相當。盲品結果：2018年Decanter盲品，德國Baden GG擊敗多款布根地一級園。CP值爆棚：德國頂級GG價格€40-80，僅為布根地相當品質一級園（€100-300）的1/3！代表酒莊：Bernhard Huber、Friedrich Becker、Meyer-Näkel。"        }
       ]
     },
     {

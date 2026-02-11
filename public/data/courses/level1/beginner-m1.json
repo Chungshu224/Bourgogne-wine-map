@@ -646,6 +646,36 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "radar",
+          "title": "📊 三大品種特性雷達圖",
+          "content": "直觀對比黑皮諾、霞多麗和加美的風味特性與風格差異",
+          "data": {
+            "dimensions": ["酒體", "酸度", "單寧", "果味", "陳年潛力", "價格"],
+            "datasets": [
+              {
+                "label": "黑皮諾 Pinot Noir",
+                "color": "#8B0000",
+                "opacity": 0.3,
+                "values": [6, 8, 5, 7, 9, 8]
+              },
+              {
+                "label": "霞多麗 Chardonnay",
+                "color": "#FFD700",
+                "opacity": 0.3,
+                "values": [7, 8, 0, 6, 8, 7]
+              },
+              {
+                "label": "加美 Gamay",
+                "color": "#DC143C",
+                "opacity": 0.3,
+                "values": [5, 7, 4, 9, 4, 5]
+              }
+            ]
+          },
+          "note": "評分範圍 0-10，數值越高表示該特性越明顯。白葡萄無單寧，故霞多麗單寧值為 0。"
+        },
+        {
           "type": "list",
           "title": "為什麼黑皮諾如此特別？",
           "points": [

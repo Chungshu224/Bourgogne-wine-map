@@ -110,6 +110,59 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "⛰️ 夜丘主要村莊海拔分布（黃金帶250-350m）",
+          "content": "展示各村莊葡萄園的海拔範圍。大多數特級園集中在280-320m，這個高度確保理想的排水性、晝夜溫差和糖酸平衡。",
+          "data": {
+            "items": [
+              {
+                "label": "Gevrey-Chambertin",
+                "value": 85,
+                "displayValue": "260-320m (60m範圍)",
+                "color": "#8B4789"
+              },
+              {
+                "label": "Morey-Saint-Denis",
+                "value": 90,
+                "displayValue": "270-330m (60m範圍)",
+                "color": "#9C27B0"
+              },
+              {
+                "label": "Chambolle-Musigny",
+                "value": 95,
+                "displayValue": "280-340m (60m範圍)",
+                "color": "#673AB7"
+              },
+              {
+                "label": "Vougeot",
+                "value": 80,
+                "displayValue": "250-310m (60m範圍)",
+                "color": "#3F51B5"
+              },
+              {
+                "label": "Vosne-Romanée",
+                "value": 88,
+                "displayValue": "265-325m (60m範圍)",
+                "color": "#2196F3"
+              },
+              {
+                "label": "Nuits-Saint-Georges",
+                "value": 75,
+                "displayValue": "240-300m (60m範圍)",
+                "color": "#03A9F4"
+              },
+              {
+                "label": "Hautes-Côtes",
+                "value": 100,
+                "displayValue": "350-450m (暖化受益)",
+                "color": "#00BCD4"
+              }
+            ]
+          },
+          "note": "280-320m是黃金高度帶，特級園幾乎都在此範圍。Hautes-Côtes（高坡）因暖化正從次級變優質。海拔每上升100m，溫度降0.6°C。"
+        },
+        {
           "type": "comparison",
           "title": "坡地位置差異",
           "leftTitle": "上坡（Haut de Côte）",
@@ -133,6 +186,35 @@
           "type": "content",
           "title": "實例：Clos de Vougeot的三個世界",
           "content": "Clos de Vougeot是理解坡地差異的最佳教材。這個50公頃的特級園被80多個生產者擁有，從上坡到下坡海拔差距達60米。上坡（靠近Musigny）的酒款優雅精緻，中坡均衡，下坡則較為厚重。這也是為什麼同樣是Clos de Vougeot，價格可以差距5倍以上。"
+        },
+        {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "📏 Clos de Vougeot 坡地三段式剖面",
+          "content": "50公頃特級園分為上中下三段，海拔從310m降至250m。土壤組成、排水性、酒款風格差異巨大，價格可差5倍。",
+          "data": {
+            "items": [
+              {
+                "label": "上坡 (Haut)",
+                "value": 100,
+                "displayValue": "300-310m | 石灰岩80% | €800-1200",
+                "color": "#8B4789"
+              },
+              {
+                "label": "中坡 (Milieu)",
+                "value": 75,
+                "displayValue": "270-300m | 混合60% | €500-800",
+                "color": "#9C27B0"
+              },
+              {
+                "label": "下坡 (Bas)",
+                "value": 50,
+                "displayValue": "250-270m | 黏土70% | €250-500",
+                "color": "#3F51B5"
+              }
+            ]
+          },
+          "note": "上坡靠近Musigny，土壤薄、石灰岩多、排水極佳，酒款優雅如Chambolle。下坡靠近N74公路，土壤深厚、黏土多、酒體飽滿但缺精緻度。同為特級園，品質差異極大！"
         },
         {
           "type": "list",
@@ -196,6 +278,38 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "pie",
+          "title": "🪨 布根地特級園典型土壤組成（平均比例）",
+          "content": "石灰岩提供礦物感和排水性，黏土保水保肥，泥灰岩（混合層）平衡兩者。完美比例造就特級園品質。",
+          "data": {
+            "items": [
+              {
+                "label": "石灰岩 Calcaire",
+                "value": 45,
+                "color": "#E8E8E8"
+              },
+              {
+                "label": "泥灰岩 Marne",
+                "value": 30,
+                "color": "#C9A66B"
+              },
+              {
+                "label": "黏土 Argile",
+                "value": 20,
+                "color": "#8B4513"
+              },
+              {
+                "label": "碎石/礫石",
+                "value": 5,
+                "color": "#696969"
+              }
+            ],
+            "unit": "%"
+          },
+          "note": "理想比例：石灰岩40-50%（排水+礦物感）+ 黏土20-30%（保水+結構）+ 泥灰岩20-30%（平衡）。Romanée-Conti：紅色黏土30%混合石灰岩碎石。Montrachet：石灰岩60%土層僅30cm極致排水。"
+        },
+        {
           "type": "comparison",
           "title": "石灰岩 vs 黏土",
           "leftTitle": "石灰岩主導土壤",
@@ -242,7 +356,53 @@
             {"year": "6500萬年前", "title": "阿爾卑斯造山", "description": "地殼運動形成現今的坡地地形"},
             {"year": "200萬年前", "title": "冰河期", "description": "冰川侵蝕與沉積，形成現代土壤結構"}
           ]
-        }
+        },
+        {
+          "type": "chart",
+          "chartType": "timeline",
+          "title": "🌍 布根地地質演化2億年史詩",
+          "content": "從侏羅紀溫暖淺海到現代葡萄園，2億年地質演化塑造了今日風土。Kimmeridgian牡蠣化石層是夏布利的靈魂。",
+          "data": {
+            "items": [
+              {
+                "year": "2億年前",
+                "score": 20,
+                "label": "侏羅紀早期 - 淺海環境形成"
+              },
+              {
+                "year": "1.55億年前",
+                "score": 40,
+                "label": "Kimmeridgian - 牡蠣化石層（夏布利）"
+              },
+              {
+                "year": "1.45億年前",
+                "score": 55,
+                "label": "侏羅紀晚期 - 海水退去石灰岩形成"
+              },
+              {
+                "year": "6500萬年前",
+                "score": 70,
+                "label": "阿爾卑斯造山運動 - 坡地地形誕生"
+              },
+              {
+                "year": "200萬年前",
+                "score": 85,
+                "label": "冰河期 - 冰川侵蝕形成現代土壤"
+              },
+              {
+                "year": "6世紀",
+                "score": 95,
+                "label": "修道院時代 - 人類開始系統化栽培"
+              },
+              {
+                "year": "現代",
+                "score": 100,
+                "label": "2015年UNESCO世界遺產 - 1,247個Climats"
+              }
+            ]
+          },
+          "note": "2億年演化史濃縮在一杯酒中！Kimmeridgian土壤（1.55億年前）賦予夏布利獨特的牡蠣殼香氣和鹹鮮礦物感，這是其他產區無法複製的地質密碼。"
+        },
       ]
     },
     {

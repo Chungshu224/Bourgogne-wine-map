@@ -290,6 +290,36 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "💰 馮內-羅曼尼8大特級園價格排名",
+          "content": "平均單瓶售價對比（歐元）",
+          "data": {
+            "items": [
+              {"label": "Romanée-Conti", "value": 15000, "color": "#8B0000"},
+              {"label": "La Tâche", "value": 3500, "color": "#A52A2A"},
+              {"label": "La Romanée", "value": 2800, "color": "#B22222"},
+              {"label": "Richebourg", "value": 1500, "color": "#CD5C5C"},
+              {"label": "Romanée-Saint-Vivant", "value": 1200, "color": "#DC143C"},
+              {"label": "La Grande Rue", "value": 900, "color": "#E9967A"},
+              {"label": "Grands Echézeaux", "value": 600, "color": "#FA8072"},
+              {"label": "Echézeaux", "value": 400, "color": "#F08080"}
+            ],
+            "unit": "€"
+          },
+          "note": "羅曼尼康帝的價格是其他特級園的 4-40 倍。Echézeaux 是最親民的馮內-羅曼尼特級園，但品質仍屬頂級。投資收藏建議：頂級 3 個，性價比選擇：後 3 個。"
+        },
+        {
+          "type": "list",
+          "title": "💎 La Tâche - 拉塔希",
+          "points": [
+            "面積：6.1公頃",
+            "獨家所有：DRC",
+            "風格：比RC更強勁、更開放",
+            "香氣：玫瑰、香料、黑色水果",
+            "陳年：15-40年"
+        },
+        {
           "type": "list",
           "title": "💎 La Tâche - 拉塔希",
           "points": [

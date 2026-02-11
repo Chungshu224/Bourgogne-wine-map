@@ -194,6 +194,23 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "bar",
+          "title": "📏 蒙哈榭家族特級園面積對比",
+          "content": "五大白酒特級園面積與價格關係",
+          "data": {
+            "items": [
+              {"label": "Bâtard-Montrachet\n12公頃", "value": 12, "color": "#DAA520"},
+              {"label": "Montrachet\n8公頃", "value": 8, "color": "#FFD700"},
+              {"label": "Chevalier-Montrachet\n7.4公頃", "value": 7.4, "color": "#F0E68C"},
+              {"label": "Bienvenues-Bâtard\n3.7公頃", "value": 3.7, "color": "#B8860B"},
+              {"label": "Criots-Bâtard\n1.6公頃", "value": 1.6, "color": "#CD853F"}
+            ],
+            "unit": "公頃"
+          },
+          "note": "面積最大的 Bâtard 價格最親民（€500-2000），面積中等的 Montrachet 最昂貴（€2000-10000），證明風土品質比面積更決定價值。Chevalier 位於上坡，礦物感最強；Bâtard 位於下坡，最豐滿。"
+        },
+        {
           "type": "winery",
           "title": "🏰 頂級生產者",
           "wineries": [

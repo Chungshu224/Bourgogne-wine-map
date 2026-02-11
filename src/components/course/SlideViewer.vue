@@ -68,6 +68,7 @@ import ComparisonSlide from './slides/ComparisonSlide.vue'
 import TimelineSlide from './slides/TimelineSlide.vue'
 import MapSlide from './slides/MapSlide.vue'
 import WinerySlide from './slides/WinerySlide.vue'
+import ChartSlide from './slides/ChartSlide.vue'
 
 const props = defineProps({
   lesson: {
@@ -836,6 +837,7 @@ const getCurrentSlideComponent = computed(() => {
     case 'image': return ImageSlide
     case 'map': return MapSlide
     case 'winery': return WinerySlide
+    case 'chart': return ChartSlide
     default: return ContentSlide
   }
 })

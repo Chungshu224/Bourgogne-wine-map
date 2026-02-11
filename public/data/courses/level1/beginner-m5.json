@@ -154,6 +154,30 @@
           ]
         },
         {
+          "type": "chart",
+          "chartType": "radar",
+          "title": "📊 夏布利 vs 金丘霞多麗風格對比",
+          "content": "同樣的霞多麗品種，不同風土造就截然不同的風格",
+          "data": {
+            "dimensions": ["酒體", "酸度", "礦物感", "果味濃度", "橡木桶", "陳年潛力"],
+            "datasets": [
+              {
+                "label": "夏布利 Chablis",
+                "color": "#4CAF50",
+                "opacity": 0.3,
+                "values": [5, 9, 10, 6, 2, 7]
+              },
+              {
+                "label": "金丘白酒 Côte d'Or",
+                "color": "#FFD700",
+                "opacity": 0.3,
+                "values": [8, 7, 5, 8, 9, 9]
+              }
+            ]
+          },
+          "note": "評分範圍 0-10。夏布利以高酸度和礦物感著稱，金丘白酒則更飽滿圓潤，橡木桶使用更多。"
+        },
+        {
           "type": "content",
           "title": "霜凍的挑戰",
           "content": "春季霜凍是夏布利最大的自然威脅，嚴重時可摧毀50%以上產量。",
@@ -370,6 +394,38 @@
             "  • 右岸整體更強勁礦物",
             "  • 左岸更柔和花香"
           ]
+        },
+        {
+          "type": "chart",
+          "chartType": "pie",
+          "title": "📊 夏布利四級分級產量分布",
+          "content": "直觀展示各級別在夏布利總產量中的占比",
+          "data": {
+            "items": [
+              {
+                "label": "Petit Chablis 小夏布利",
+                "value": 15,
+                "color": "#E8D5A8"
+              },
+              {
+                "label": "Chablis 夏布利",
+                "value": 60,
+                "color": "#DBC68F"
+              },
+              {
+                "label": "Premier Cru 一級園",
+                "value": 23,
+                "color": "#CEB776"
+              },
+              {
+                "label": "Grand Cru 特級園",
+                "value": 2,
+                "color": "#B8860B"
+              }
+            ],
+            "unit": "%"
+          },
+          "note": "特級園僅佔 2%，但價格是基本款的 5-10 倍。一級園佔 23%，是品質與價格的最佳平衡點。"
         },
         {
           "type": "map",

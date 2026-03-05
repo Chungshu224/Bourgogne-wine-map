@@ -61,6 +61,22 @@
         </div>
       </div>
       <div v-else-if="regionInfo" ref="regionInfoContent" class="region-info-content">
+        <!-- 發音按鈕 -->
+        <div v-if="audioPath" class="pronunciation-section">
+          <button class="btn-pronunciation" @click="playPronunciation" :disabled="isPlayingAudio">
+            <svg v-if="!isPlayingAudio" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+            <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
+            <span>{{ isPlayingAudio ? '播放中...' : '聽發音' }}</span>
+          </button>
+        </div>
+        
         <div style="flex: 1; min-width: 0;">
           <div class="info-header">
             <div>
@@ -234,6 +250,89 @@ const selectedDomaineInfo = ref(null)
 const loadedInitialFiles = ref([]) // 追蹤已載入的初始村莊檔案
 // 圖片候補索引（用於 jpg/png fallback）
 const imageIndex = ref(0)
+
+// 音頻播放器
+const audioPlayer = ref(null)
+const isPlayingAudio = ref(false)
+
+// 根據 activeAOC 構建音頻路徑
+const audioPath = computed(() => {
+  if (!props.activeAOC?.aoc || !props.activeAOC?.group) return null
+  
+  // 移除 .geojson 副檔名
+  const aocName = props.activeAOC.aoc.replace('.geojson', '')
+  
+  // 從 group 中提取主資料夾路徑（例如 "Chablis" 或 "Chablis/Chablis Grand Cru"）
+  // 對於 Chablis 區域，group 可能是 "Chablis", "Grand Auxerrois", "Chablis/Chablis 1er cru" 等
+  let subPath = ''
+  
+  if (props.regionConfig?.id === 'chablis') {
+    // Chablis 區域特殊處理：使用 group 的第一個部分
+    const groupParts = props.activeAOC.group.split('/')
+    if (groupParts[0] === 'Chablis' || groupParts[0] === 'Grand Auxerrois') {
+      // 使用完整的 group 路徑
+      subPath = props.activeAOC.group
+    } else {
+      subPath = groupParts[0]
+    }
+  } else {
+    // 其他區域（Cote-de-Nuits, Cote-de-Beaune 等）：
+    const regionName = geojsonBasePath.value.replace('/geojson/', '').replace('/geojson', '')
+    const groupName = props.activeAOC.group
+    
+    // 特殊處理：Regional、Beaujolais、Beaujolais Crus 等虛擬分組
+    // 這些不是實際的資料夾，檔案直接在區域根目錄下
+    const isVirtualGroup = ['Regional', 'Beaujolais', 'Beaujolais Crus', 'AOC Bourgogne'].includes(groupName)
+    
+    if (isVirtualGroup) {
+      // 檔案直接在區域根目錄
+      subPath = regionName
+    } else {
+      // 使用 區域名稱/村莊資料夾 的完整路徑
+      subPath = regionName ? `${regionName}/${groupName}` : groupName
+    }
+  }
+  
+  // 構建音頻路徑：/sounds/{子路徑}/{AOC名稱}.mp3
+  const soundPath = subPath ? `/sounds/${subPath}/${aocName}.mp3` : `/sounds/${aocName}.mp3`
+  
+  console.log('[AudioPath] Constructed:', { 
+    regionId: props.regionConfig?.id,
+    group: props.activeAOC.group, 
+    aocName, 
+    subPath, 
+    soundPath 
+  })
+  
+  return soundPath
+})
+
+// 播放發音
+const playPronunciation = () => {
+  if (!audioPath.value) return
+  
+  if (audioPlayer.value) {
+    audioPlayer.value.pause()
+    audioPlayer.value.currentTime = 0
+  }
+  
+  audioPlayer.value = new Audio(audioPath.value)
+  isPlayingAudio.value = true
+  
+  audioPlayer.value.play().catch(error => {
+    console.error('播放音頻失敗:', error)
+    isPlayingAudio.value = false
+  })
+  
+  audioPlayer.value.onended = () => {
+    isPlayingAudio.value = false
+  }
+  
+  audioPlayer.value.onerror = () => {
+    console.error('音頻載入失敗:', audioPath.value)
+    isPlayingAudio.value = false
+  }
+}
 
 // 為各產區建立可能的圖片路徑候補清單（依 activeDomaine 推斷）
 const domaineImageCandidates = computed(() => {
@@ -745,7 +844,7 @@ const initMap = async (retry = 0) => {
       return
     }
     
-    mapboxgl.accessToken = 'pk.eyJ1IjoiY2h1bmdzaHVsZWUiLCJhIjoiY21kcTZqbHU1MDNnODJsczZ5NXBtNms2NCJ9.UThWFp3_47qETAMZWhdrTg'
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN
     
     map = new mapboxgl.Map({
       container: mapContainer.value,
@@ -1348,6 +1447,48 @@ onUnmounted(() => {
 .domaine-description {
   line-height: 1.4;
   font-style: italic;
+}
+
+.pronunciation-section {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.btn-pronunciation {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-pronunciation:hover:not(:disabled) {
+  background: linear-gradient(135deg, #5568d3 0%, #6a3f8f 100%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.btn-pronunciation:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-pronunciation:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.btn-pronunciation svg {
+  flex-shrink: 0;
 }
 
 @media (max-width: 768px) {

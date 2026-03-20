@@ -1458,7 +1458,7 @@ onUnmounted(() => {
 
 .btn-3d {
   position: absolute;
-  top: 20px;
+  top: 80px;
   left: 20px;
   padding: 12px 24px;
   background: linear-gradient(145deg, #4CAF50, #45a049);
@@ -1515,7 +1515,7 @@ onUnmounted(() => {
 
 .btn-contours {
   position: absolute;
-  top: 70px;  /* 在 3D 按鈕下方 */
+  top: 140px;  /* 在 3D 按鈕下方 */
   left: 20px;
   padding: 12px 24px;
   background: linear-gradient(145deg, #ff6b35, #f7931e);

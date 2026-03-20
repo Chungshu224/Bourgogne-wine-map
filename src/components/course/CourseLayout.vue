@@ -1,53 +1,81 @@
 <template>
   <div class="course-layout">
-    <!-- 測試模式橫幅 -->
-    <div class="test-mode-banner">
-      <span class="banner-icon">🧪</span>
-      測試模式已啟用 - 所有功能已解鎖
-      <div class="banner-actions">
-        <button class="banner-btn">電腦測試模式</button>
-        <button class="banner-btn primary">退出測試模式</button>
-      </div>
+    <!-- 測試模式浮動標籤 -->
+    <div class="test-mode-badge">
+      🧪 測試
     </div>
 
     <!-- 頂部導航欄 -->
     <header class="course-header">
+      <!-- 左側：返回按鈕和 Logo -->
       <div class="header-left">
+        <button class="back-btn" @click="backToLevelSelector">
+          <span class="back-icon">←</span>
+        </button>
         <div class="logo">🍷</div>
-        <h1 class="academy-title">布根地葡萄酒學院</h1>
-        <button class="back-btn" @click="backToLevelSelector">← 返回 Level 選擇</button>
       </div>
       
+      <!-- 中間：Level 切換標籤 -->
       <div class="header-center">
-        <button 
-          v-for="level in [1, 2, 3, 4]" 
-          :key="level"
-          class="level-tab"
-          :class="{ active: currentLevel.id === level }"
-        >
-          Level {{ level }}
-        </button>
+        <div class="level-tabs">
+          <button 
+            v-for="level in [1, 2, 3, 4]" 
+            :key="level"
+            class="level-tab"
+            :class="{ active: currentLevel.id === level }"
+            @click="handleLevelChange(level)"
+          >
+            L{{ level }}
+          </button>
+        </div>
       </div>
 
+      <!-- 右側：進度環 -->
       <div class="header-right">
-        <div class="progress-badge">{{ overallProgress }}%</div>
-        <div class="trophy-badge">🏆 {{ totalTrophies }}</div>
+        <button class="progress-btn" title="查看詳細進度">
+          <svg class="progress-ring" width="36" height="36">
+            <circle
+              class="progress-ring-bg"
+              cx="18" cy="18" r="15"
+              fill="none"
+              stroke="rgba(255,255,255,0.2)"
+              stroke-width="3"
+            />
+            <circle
+              class="progress-ring-fill"
+              cx="18" cy="18" r="15"
+              fill="none"
+              stroke="white"
+              stroke-width="3"
+              :stroke-dasharray="`${overallProgress * 0.942} 94.2`"
+              transform="rotate(-90 18 18)"
+            />
+          </svg>
+          <span class="progress-text">{{ overallProgress }}%</span>
+        </button>
       </div>
     </header>
 
     <!-- 主內容區 -->
     <div class="main-content">
-      <!-- 課程標題區 -->
-      <div class="level-intro">
-        <h2 class="level-title">Level {{ currentLevel.id }} - {{ currentLevel.name }}</h2>
-        <p class="level-description">{{ currentLevel.description }}</p>
+      <!-- Level 標題卡片 -->
+      <div class="level-header-card">
+        <div class="level-header-top">
+          <div class="level-badge">Level {{ currentLevel.id }}</div>
+          <h2 class="level-name">{{ currentLevel.name }}</h2>
+        </div>
+        <p class="level-desc">{{ currentLevel.description }}</p>
         
-        <button class="continue-btn">
-          <span class="play-icon">▶</span>
-          繼續學習
-        </button>
-        
-        <p class="completion-status">已完成 {{ completedModules }}/{{ modules.length }} 課程</p>
+        <div class="progress-section">
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar-fill" :style="{ width: overallProgress + '%' }"></div>
+          </div>
+        </div>
+
+        <!-- 激勵文字 -->
+        <div v-if="overallProgress < 100 && overallProgress > 0" class="motivation-text">
+          🎯 再完成 {{ modules.length - completedModules }} 個課程即可完成此階段！
+        </div>
       </div>
 
       <!-- 課程內容標題 -->
@@ -55,22 +83,80 @@
 
       <!-- 課程卡片網格 -->
       <div class="modules-grid">
-        <div 
-          v-for="module in modules" 
-          :key="module.id"
-          class="module-card"
-          :class="{ completed: module.completed, locked: module.locked }"
-          @click="handleModuleClick(module)"
-        >
-          <div class="card-icon">
-            <div v-if="module.completed" class="check-icon">✓</div>
-            <div v-else-if="module.locked" class="lock-icon">🔒</div>
+        <!-- 載入狀態 - 骨架屏 -->
+        <template v-if="loading">
+          <div 
+            v-for="n in 6" 
+            :key="'skeleton-' + n"
+            class="skeleton-card"
+          >
+            <div class="skeleton-icon"></div>
+            <div class="skeleton-content">
+              <div class="skeleton-title"></div>
+              <div class="skeleton-text"></div>
+            </div>
           </div>
-          <div class="card-content">
-            <h4 class="card-title">{{ module.title }}</h4>
-            <p class="card-duration">{{ module.duration }}</p>
+        </template>
+
+        <!-- 實際模組卡片 -->
+        <template v-else>
+          <div 
+            v-for="module in modules" 
+            :key="module.id"
+            class="module-card-wrapper"
+          >
+            <!-- 模組卡片主體 -->
+          <div 
+            class="module-card"
+            :class="{ 
+              completed: module.completed, 
+              locked: module.locked,
+              expanded: expandedModules[module.id]
+            }"
+            @click="toggleModuleExpand(module)"
+          >
+            <div class="card-icon">
+              <div v-if="module.completed" class="check-icon">✓</div>
+              <div v-else-if="module.locked" class="lock-icon">🔒</div>
+            </div>
+            <div class="card-content">
+              <h4 class="card-title">{{ module.title }}</h4>
+              <p class="card-meta">{{ module.duration }} · {{ module.lessons }} 課程</p>
+            </div>
+            <div class="expand-icon" v-if="!module.locked">
+              {{ expandedModules[module.id] ? '▼' : '▶' }}
+            </div>
           </div>
+
+          <!-- 展開的課程列表 -->
+          <transition name="expand">
+            <div 
+              v-if="expandedModules[module.id] && moduleDataCache[module.id]"
+              class="lessons-list"
+              @click.stop
+            >
+              <div 
+                v-for="(lesson, index) in moduleDataCache[module.id].lessons" 
+                :key="lesson.id"
+                class="lesson-item"
+                @click="handleLessonClick(module, index)"
+              >
+                <div class="lesson-number">{{ index + 1 }}</div>
+                <div class="lesson-info">
+                  <h5 class="lesson-title">{{ lesson.title }}</h5>
+                  <div class="lesson-meta">
+                    <span>{{ lesson.duration || '10 分鐘' }}</span>
+                  </div>
+                </div>
+                <div class="lesson-status">
+                  <span v-if="isLessonCompleted(module.id, lesson.id)" class="completed-badge">✓</span>
+                  <span v-else class="start-badge">開始 ▶</span>
+                </div>
+              </div>
+            </div>
+          </transition>
         </div>
+        </template>
       </div>
 
       <!-- Slot for additional content -->
@@ -80,7 +166,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, watch } from 'vue'
 
 const props = defineProps({
   currentLevel: {
@@ -89,11 +175,14 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['backToLevelSelector', 'selectModule'])
+const emit = defineEmits(['backToLevelSelector', 'selectModule', 'changeLevel', 'startLesson'])
 
 const modules = ref([])
 const currentModule = ref(null)
 const totalTrophies = ref(9)
+const expandedModules = ref({}) // 追踪展開的模組
+const moduleDataCache = ref({}) // 快取載入的模組數據
+const loading = ref(false) // 載入狀態
 
 const overallProgress = computed(() => {
   if (!modules.value.length) return 0
@@ -110,7 +199,16 @@ onMounted(async () => {
   await loadModules()
 })
 
+// 監聽 currentLevel 變化，重新載入模組
+watch(() => props.currentLevel, async (newLevel, oldLevel) => {
+  if (newLevel && newLevel.id !== oldLevel?.id) {
+    console.log('🔄 Level 已改變，重新載入模組:', newLevel.name)
+    await loadModules()
+  }
+}, { deep: true })
+
 const loadModules = async () => {
+  loading.value = true // 開始載入
   try {
     console.log('🔍 開始載入模組列表...')
     const url = `/data/courses/level${props.currentLevel.id}/modules.json`
@@ -155,6 +253,8 @@ const loadModules = async () => {
     }
   } catch (error) {
     console.error('❌ 載入模組失敗:', error)
+  } finally {
+    loading.value = false // 結束載入
   }
 }
 
@@ -189,6 +289,75 @@ const selectModule = (module) => {
 const backToLevelSelector = () => {
   emit('backToLevelSelector')
 }
+
+const handleLevelChange = (levelId) => {
+  console.log('🔄 切換到 Level:', levelId)
+  emit('changeLevel', levelId)
+}
+
+// 切換模組展開/收合
+const toggleModuleExpand = async (module) => {
+  if (module.locked) {
+    console.log('🔒 模組已鎖定，無法開啟')
+    return
+  }
+  
+  const moduleId = module.id
+  const isExpanded = expandedModules.value[moduleId]
+  
+  // 收合
+  if (isExpanded) {
+    expandedModules.value[moduleId] = false
+    console.log('📤 收合模組:', module.title)
+  } 
+  // 展開
+  else {
+    // 如果還沒有載入數據，先載入
+    if (!moduleDataCache.value[moduleId]) {
+      console.log('📥 載入模組數據:', module.title)
+      await loadModuleData(moduleId)
+    }
+    expandedModules.value[moduleId] = true
+    console.log('📥 展開模組:', module.title)
+  }
+}
+
+// 載入模組數據
+const loadModuleData = async (moduleId) => {
+  try {
+    const url = `/data/courses/level${props.currentLevel.id}/${moduleId}.json`
+    console.log('📡 載入模組數據 URL:', url)
+    const response = await fetch(url)
+    const data = await response.json()
+    moduleDataCache.value[moduleId] = data
+    console.log('✅ 模組數據載入成功:', data.title)
+  } catch (error) {
+    console.error('❌ 載入模組數據失敗:', error)
+  }
+}
+
+// 點擊課程項目
+const handleLessonClick = (module, lessonIndex) => {
+  console.log('🎓 點擊課程:', module.title, '- Lesson', lessonIndex + 1)
+  emit('startLesson', {
+    module: module,
+    lessonIndex: lessonIndex,
+    moduleData: moduleDataCache.value[module.id]
+  })
+}
+
+// 檢查課程是否完成
+const isLessonCompleted = (moduleId, lessonId) => {
+  const saved = localStorage.getItem(`burgundy-level${props.currentLevel.id}-progress`)
+  if (!saved) return false
+  
+  try {
+    const progress = JSON.parse(saved)
+    return progress[moduleId]?.completedLessons?.includes(lessonId) || false
+  } catch {
+    return false
+  }
+}
 </script>
 
 <style scoped>
@@ -198,116 +367,143 @@ const backToLevelSelector = () => {
   font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif;
 }
 
-/* 測試模式橫幅 */
-.test-mode-banner {
-  background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+/* 測試模式浮動標籤 */
+.test-mode-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.75);
   color: white;
-  padding: 12px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
   font-weight: 600;
+  z-index: 9999;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s ease-in-out infinite;
 }
 
-.banner-icon {
-  font-size: 18px;
-}
-
-.banner-actions {
-  display: flex;
-  gap: 12px;
-  margin-left: auto;
-}
-
-.banner-btn {
-  padding: 6px 16px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  background: transparent;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-}
-
-.banner-btn.primary {
-  background: white;
-  color: #ff6b6b;
-  border: none;
+@keyframes pulse {
+  0%, 100% { opacity: 0.8; }
+  50% { opacity: 1; }
 }
 
 /* 頂部導航欄 */
 .course-header {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  padding: 16px 40px;
+  background: var(--color-primary-gradient);
+  padding: 12px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: white;
+  box-shadow: var(--shadow-md);
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 16px;
-}
-
-.logo {
-  font-size: 32px;
-}
-
-.academy-title {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
+  gap: 12px;
 }
 
 .back-btn {
-  padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
+  padding: var(--spacing-sm) 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-sm);
   color: white;
   cursor: pointer;
-  font-size: 13px;
+  font-size: var(--text-base);
   font-weight: 600;
+  transition: var(--transition-base);
+  display: flex;
+  align-items: center;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateX(-2px);
+}
+
+.back-icon {
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 28px;
 }
 
 .header-center {
+  flex: 1;
   display: flex;
-  gap: 8px;
+  justify-content: center;
+}
+
+.level-tabs {
+  display: flex;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  border-radius: var(--radius-md);
 }
 
 .level-tab {
-  padding: 10px 24px;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
+  padding: 8px 20px;
+  background: transparent;
+  border: none;
+  border-radius: var(--radius-sm);
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  transition: var(--transition-base);
+  min-width: 50px;
+}
+
+.level-tab:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .level-tab.active {
   background: white;
-  color: #667eea;
+  color: var(--color-primary-start);
+  box-shadow: var(--shadow-sm);
 }
 
 .header-right {
   display: flex;
-  gap: 12px;
+  align-items: center;
 }
 
-.progress-badge,
-.trophy-badge {
-  padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 20px;
-  font-size: 14px;
+.progress-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full);
+  color: white;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.progress-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.progress-ring {
+  display: block;
+}
+
+.progress-ring-fill {
+  transition: stroke-dasharray 0.5s ease;
+}
+
+.progress-text {
+  font-size: var(--text-sm);
   font-weight: 700;
 }
 
@@ -315,57 +511,122 @@ const backToLevelSelector = () => {
 .main-content {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 40px;
+  padding: 24px 40px;
 }
 
-.level-intro {
-  text-align: center;
-  margin-bottom: 60px;
+/* Level 標題卡片 */
+.level-header-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px 32px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition-base);
 }
 
-.level-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: #2c3e50;
-  margin: 0 0 16px 0;
+.level-header-card:hover {
+  box-shadow: var(--shadow-md);
 }
 
-.level-description {
-  font-size: 16px;
-  color: #7f8c8d;
-  margin: 0 0 32px 0;
+.level-header-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
 }
 
-.continue-btn {
-  padding: 16px 48px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  border: none;
-  border-radius: 50px;
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
+.level-badge {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.4);
-  margin-bottom: 16px;
+  padding: 6px 16px;
+  background: var(--color-primary-gradient);
+  color: white;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
 }
 
-.play-icon {
-  font-size: 14px;
+.level-name {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
 }
 
-.completion-status {
-  font-size: 14px;
-  color: #95a5a6;
+.level-desc {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin: 0 0 20px 0;
+  line-height: 1.6;
+}
+
+/* 進度條區域 */
+.progress-section {
+  margin-top: 20px;
+}
+
+.progress-bar-wrapper {
+  width: 100%;
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--color-primary-gradient);
+  border-radius: var(--radius-full);
+  transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer-progress 2s infinite;
+}
+
+@keyframes shimmer-progress {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* 激勵文字 */
+.motivation-text {
+  margin-top: 16px;
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border-left: 4px solid var(--color-warning);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: #ea580c;
+  text-align: center;
 }
 
 .content-section-title {
-  font-size: 24px;
+  font-size: var(--text-xl);
   font-weight: 700;
-  color: #2c3e50;
-  margin: 0 0 32px 0;
+  color: var(--text-primary);
+  margin: 0 0 20px 0;
 }
 
 .modules-grid {
@@ -445,10 +706,218 @@ const backToLevelSelector = () => {
   margin: 0 0 4px 0;
 }
 
-.card-duration {
+.card-meta {
   font-size: 13px;
   color: #7f8c8d;
-  margin: 0;
+  margin: 4px 0 0 0;
+}
+
+/* 模組卡片包裝器 */
+.module-card-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 展開圖標 */
+.expand-icon {
+  font-size: 14px;
+  color: #667eea;
+  font-weight: 700;
+  transition: transform 0.3s ease;
+}
+
+.module-card.expanded .expand-icon {
+  transform: rotate(90deg);
+}
+
+/* 課程列表 */
+.lessons-list {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+  padding: 16px;
+  margin-top: -12px;
+  overflow: hidden;
+}
+
+.lesson-item {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 8px;
+}
+
+.lesson-item:last-child {
+  margin-bottom: 0;
+}
+
+.lesson-item:hover {
+  background: #667eea;
+  border-color: #667eea;
+  transform: translateX(4px);
+}
+
+.lesson-item:hover .lesson-title,
+.lesson-item:hover .lesson-meta {
+  color: white;
+}
+
+.lesson-item:hover .lesson-number {
+  background: white;
+  color: #667eea;
+}
+
+.lesson-item:hover .start-badge {
+  background: white;
+  color: #667eea;
+}
+
+.lesson-number {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.lesson-info {
+  flex: 1;
+}
+
+.lesson-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 4px 0;
+  transition: color 0.2s ease;
+}
+
+.lesson-meta {
+  font-size: 12px;
+  color: #7f8c8d;
+  transition: color 0.2s ease;
+}
+
+.lesson-status {
+  flex-shrink: 0;
+}
+
+.completed-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.start-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+/* 展開/收合動畫 */
+.expand-enter-active,
+.expand-leave-active {
+  transition: all 0.3s ease;
+  max-height: 500px;
+}
+
+.expand-enter-from,
+.expand-leave-to {
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* 骨架屏載入動畫 */
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+.skeleton-card {
+  background: white;
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.skeleton-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 0%,
+    #e0e0e0 50%,
+    #f0f0f0 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+  flex-shrink: 0;
+}
+
+.skeleton-content {
+  flex: 1;
+}
+
+.skeleton-title {
+  width: 70%;
+  height: 20px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 0%,
+    #e0e0e0 50%,
+    #f0f0f0 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.skeleton-text {
+  width: 40%;
+  height: 14px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 0%,
+    #e0e0e0 50%,
+    #f0f0f0 100%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 2s infinite linear;
+  border-radius: 4px;
 }
 
 @media (max-width: 1024px) {
@@ -458,6 +927,45 @@ const backToLevelSelector = () => {
 }
 
 @media (max-width: 768px) {
+  .main-content {
+    padding: 16px 20px;
+  }
+
+  .level-header-card {
+    padding: 20px 24px;
+    margin-bottom: 16px;
+  }
+
+  .level-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .level-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .level-name {
+    font-size: var(--text-lg);
+  }
+
+  .level-desc {
+    font-size: var(--text-sm);
+    margin-bottom: 16px;
+  }
+
+  .motivation-text {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+
+  .content-section-title {
+    font-size: var(--text-lg);
+    margin-bottom: 16px;
+  }
+
   .modules-grid {
     grid-template-columns: 1fr;
   }

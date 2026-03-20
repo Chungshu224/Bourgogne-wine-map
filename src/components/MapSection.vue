@@ -3,13 +3,18 @@
     <div class="map-header">
       <h1>{{ props.regionConfig?.name || 'Bourgogne wine map' }} 葡萄酒產區地圖</h1>
     </div>
-    <div class="map-info-bar" v-if="activeAOC.aoc">
+    <div class="map-info-bar" v-if="activeAOC.aoc" :class="{ collapsed: isInfoCollapsed }">
       <div class="info-header-bar">
         <span class="aoc-info-title">
           <span class="aoc-dot" :style="{background: aocColor(activeAOC.group)}"></span>
           {{ activeDomaine ? activeDomaine.replace('.geojson', '') : activeAOC.aoc.replace('.geojson','').replace(/_/g,' ') }}
         </span>
         <div class="map-buttons">
+          <button class="btn-collapse" @click="toggleInfoBar" :title="isInfoCollapsed ? '展開資訊' : '收合資訊'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" :style="{ transform: isInfoCollapsed ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
           <button v-if="showDomaineButton" class="btn-show-domaines" @click="toggleDomainesMode">
             {{ domainesMode ? '回上一層' : '顯示酒莊' }}
           </button>
@@ -17,6 +22,8 @@
         </div>
       </div>
       
+      <transition name="info-expand">
+        <div v-show="!isInfoCollapsed" class="info-content-wrapper">
       <div v-if="domainesMode" class="domaines-list-container">
         <div v-if="currentDomaineImage" class="domaine-image-container" style="margin-bottom: 12px; text-align: center;">
           <img :src="currentDomaineImage" alt="Domaine Image" @error="onDomaineImageError" style="max-width: 100%; height: auto; border-radius: 4px; max-height: 150px; object-fit: cover;">
@@ -153,10 +160,15 @@
         </div>
       </div>
       <div v-else class="no-info">無詳細產區資料</div>
+        </div>
+      </transition>
     </div>
     <div ref="mapContainer" class="map"></div>
     <button class="btn-3d" @click="toggle3D">
       {{ is3D ? '2D' : '3D' }}
+    </button>
+    <button class="btn-contours" @click="toggleContours">
+      {{ showContours ? '隱藏等高線' : '顯示等高線' }}
     </button>
     <div v-if="mapError" class="map-error">
       {{ mapError }}
@@ -241,6 +253,8 @@ const mapError = ref(null)
 const mapContainer = ref(null)
 let map = null
 const is3D = ref(false)
+const showContours = ref(false)
+const isInfoCollapsed = ref(false)
 const geojsonCache = new Map()
 let resetBounds = null // stored bbox [minX,minY,maxX,maxY] for reset
 const domaines = ref([])
@@ -829,8 +843,65 @@ const resetMap = async () => {
 const toggle3D = () => {
   is3D.value = !is3D.value
   if (map) {
-    map.easeTo({ pitch: is3D.value ? 45 : 0, duration: 800 })
+    if (is3D.value) {
+      // 啟用 3D 模式：傾斜視角 + 地形
+      map.easeTo({ pitch: 45, duration: 800 })
+      
+      // 啟用地形（如果 source 已存在）
+      if (map.getSource('mapbox-dem')) {
+        map.setTerrain({ 
+          source: 'mapbox-dem', 
+          exaggeration: 1.5  // 地形高度誇張倍數
+        })
+        
+        // 添加天空層
+        if (!map.getLayer('sky')) {
+          map.addLayer({
+            id: 'sky',
+            type: 'sky',
+            paint: {
+              'sky-type': 'atmosphere',
+              'sky-atmosphere-sun': [0.0, 90.0],
+              'sky-atmosphere-sun-intensity': 15
+            }
+          })
+        }
+      }
+    } else {
+      // 關閉 3D 模式：平面視角 + 移除地形
+      map.easeTo({ pitch: 0, duration: 800 })
+      
+      // 移除地形效果
+      map.setTerrain(null)
+      
+      // 移除天空層
+      if (map.getLayer('sky')) {
+        map.removeLayer('sky')
+      }
+    }
   }
+}
+
+const toggleContours = () => {
+  showContours.value = !showContours.value
+  if (map) {
+    const visibility = showContours.value ? 'visible' : 'none'
+    
+    // 切換所有等高線相關圖層的可見性
+    if (map.getLayer('contour-lines')) {
+      map.setLayoutProperty('contour-lines', 'visibility', visibility)
+    }
+    if (map.getLayer('contour-lines-bold')) {
+      map.setLayoutProperty('contour-lines-bold', 'visibility', visibility)
+    }
+    if (map.getLayer('contour-labels')) {
+      map.setLayoutProperty('contour-labels', 'visibility', visibility)
+    }
+  }
+}
+
+const toggleInfoBar = () => {
+  isInfoCollapsed.value = !isInfoCollapsed.value
 }
 
 const initMap = async (retry = 0) => {
@@ -859,6 +930,113 @@ const initMap = async (retry = 0) => {
     map.on('load', async () => {
       map.addControl(new mapboxgl.NavigationControl(), 'top-right')
       map.addControl(new mapboxgl.FullscreenControl(), 'top-right')
+      
+      // 添加 3D 地形 source (Mapbox Terrain DEM v1)
+      map.addSource('mapbox-dem', {
+        type: 'raster-dem',
+        url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+        tileSize: 512,
+        maxzoom: 14
+      })
+      
+      // 添加等高線 source (Mapbox Terrain Vector v2)
+      map.addSource('contours', {
+        type: 'vector',
+        url: 'mapbox://mapbox.mapbox-terrain-v2'
+      })
+      
+      // 添加等高線圖層（初始隱藏）
+      map.addLayer({
+        id: 'contour-lines',
+        type: 'line',
+        source: 'contours',
+        'source-layer': 'contour',
+        layout: {
+          'line-join': 'round',
+          'line-cap': 'round',
+          'visibility': 'none'  // 初始隱藏
+        },
+        paint: {
+          'line-color': '#ff6b35',
+          'line-width': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            10, 0.5,
+            14, 1.5
+          ],
+          'line-opacity': 0.8
+        },
+        filter: ['==', ['get', 'index'], 1]  // 每10米一條等高線
+      })
+      
+      // 添加粗等高線（每100米）
+      map.addLayer({
+        id: 'contour-lines-bold',
+        type: 'line',
+        source: 'contours',
+        'source-layer': 'contour',
+        layout: {
+          'line-join': 'round',
+          'line-cap': 'round',
+          'visibility': 'none'  // 初始隱藏
+        },
+        paint: {
+          'line-color': '#d62828',
+          'line-width': [
+            'interpolate',
+            ['linear'],
+            ['zoom'],
+            10, 1,
+            14, 2.5
+          ],
+          'line-opacity': 0.9
+        },
+        filter: ['==', ['get', 'index'], 5]  // 每50米一條粗等高線
+      })
+      
+      // 添加等高線標籤
+      map.addLayer({
+        id: 'contour-labels',
+        type: 'symbol',
+        source: 'contours',
+        'source-layer': 'contour',
+        layout: {
+          'symbol-placement': 'line',
+          'text-field': ['concat', ['get', 'ele'], 'm'],
+          'text-font': ['DIN Pro Medium', 'Arial Unicode MS Regular'],
+          'text-size': 10,
+          'text-pitch-alignment': 'viewport',
+          'symbol-spacing': 250,  // 增加標籤間距避免過於密集
+          'visibility': 'none'  // 初始隱藏
+        },
+        paint: {
+          'text-color': '#d62828',
+          'text-halo-color': '#fff',
+          'text-halo-width': 1.5
+        },
+        filter: ['==', ['get', 'index'], 1]  // 每10米顯示標籤
+      })
+      
+      // 如果已經是 3D 模式，立即啟用地形
+      if (is3D.value) {
+        map.setTerrain({ 
+          source: 'mapbox-dem', 
+          exaggeration: 1.5  // 地形高度誇張倍數（1.5x）
+        })
+        
+        // 添加天空層增強 3D 效果
+        map.addLayer({
+          id: 'sky',
+          type: 'sky',
+          paint: {
+            'sky-type': 'atmosphere',
+            'sky-atmosphere-sun': [0.0, 90.0],
+            'sky-atmosphere-sun-intensity': 15
+          }
+        })
+      }
+      
       // load initial village-level geojsons and set reset bounds
       await loadInitialVillageGeojsons()
     })
@@ -996,6 +1174,28 @@ onUnmounted(() => {
   gap: 8px;
 }
 
+.btn-collapse {
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-collapse:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.btn-collapse:active {
+  transform: scale(0.95);
+}
+
 .btn-reset {
   padding: 8px 14px;
   background: linear-gradient(145deg, #f44336, #e53935);
@@ -1028,11 +1228,10 @@ onUnmounted(() => {
 
 .region-info-content {
   margin-top: 0;
-  padding: 16px;
+  padding: 0;
   font-size: 0.95rem;
   line-height: 1.6;
   text-align: left;
-  overflow-y: auto;
   background: white;
 }
 
@@ -1314,6 +1513,63 @@ onUnmounted(() => {
     inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
+.btn-contours {
+  position: absolute;
+  top: 70px;  /* 在 3D 按鈕下方 */
+  left: 20px;
+  padding: 12px 24px;
+  background: linear-gradient(145deg, #ff6b35, #f7931e);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(255, 107, 53, 0.3),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.15),
+    inset 0 2px 2px rgba(255, 255, 255, 0.3);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.btn-contours::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-contours:hover::before {
+  left: 100%;
+}
+
+.btn-contours:hover {
+  background: linear-gradient(145deg, #f7931e, #e8850e);
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.25),
+    0 10px 25px rgba(255, 107, 53, 0.4),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.15),
+    inset 0 2px 2px rgba(255, 255, 255, 0.3);
+}
+
+.btn-contours:active {
+  transform: translateY(0px);
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    0 3px 10px rgba(255, 107, 53, 0.2),
+    inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 .loading-overlay {
   position: absolute;
   top: 0;
@@ -1370,9 +1626,8 @@ onUnmounted(() => {
 }
 
 .domaines-list-container {
-  margin-top: 12px;
-  overflow-y: auto;
-  padding-right: 10px;
+  margin-top: 0;
+  padding-right: 0;
 }
 
 .domaines-list {
@@ -1502,6 +1757,50 @@ onUnmounted(() => {
   
   .map-header h1 {
     font-size: 1.2rem;
+  }
+}
+
+/* 收合狀態樣式 */
+.map-info-bar.collapsed {
+  max-height: 56px;
+}
+
+/* 資訊內容包裹器 */
+.info-content-wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+  flex: 1;
+  padding: 16px;
+}
+
+/* 展開收合動畫 */
+.info-expand-enter-active {
+  animation: expand 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.info-expand-leave-active {
+  animation: collapse 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes expand {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 60vh;
+    opacity: 1;
+  }
+}
+
+@keyframes collapse {
+  from {
+    max-height: 60vh;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
   }
 }
 </style>

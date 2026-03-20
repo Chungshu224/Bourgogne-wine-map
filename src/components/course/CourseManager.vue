@@ -9,10 +9,14 @@
 
     <!-- 課程學習介面 -->
     <div v-else-if="currentView === 'courseContent'" class="course-container">
+      <!-- 課程列表和模組總覽 -->
       <CourseLayout 
+        v-if="viewMode !== 'lesson'"
         :currentLevel="selectedLevel"
         @backToLevelSelector="backToLevelSelector"
         @selectModule="handleSelectModule"
+        @changeLevel="handleChangeLevel"
+        @startLesson="handleStartLesson"
       >
         <!-- 模組總覽 -->
         <div v-if="viewMode === 'overview' && selectedModule && moduleData" class="module-overview">
@@ -20,21 +24,6 @@
             <div class="module-icon">{{ selectedModule.icon }}</div>
             <h1>{{ selectedModule.title }}</h1>
             <p class="module-description">{{ selectedModule.description }}</p>
-          </div>
-
-          <div class="module-meta">
-            <div class="meta-item">
-              <span class="meta-icon">⏱️</span>
-              <span>{{ selectedModule.duration }}</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-icon">📚</span>
-              <span>{{ moduleData.lessons?.length || selectedModule.lessons }} 課程</span>
-            </div>
-            <div class="meta-item">
-              <span class="meta-icon">📝</span>
-              <span>完成測驗可獲得進度</span>
-            </div>
           </div>
 
           <div class="lessons-list">
@@ -48,11 +37,6 @@
               <div class="lesson-number">{{ index + 1 }}</div>
               <div class="lesson-info">
                 <h3>{{ lesson.title }}</h3>
-                <div class="lesson-meta">
-                  <span>{{ lesson.duration }}</span>
-                  <span>•</span>
-                  <span>{{ getLessonTypeName(lesson.type) }}</span>
-                </div>
               </div>
               <div class="lesson-status">
                 <span v-if="isLessonCompleted(lesson.id)" class="completed-icon">✓</span>
@@ -70,16 +54,6 @@
           </div>
         </div>
 
-        <!-- 課程內容 - 使用簡報模式 -->
-        <SlideViewer
-          v-if="viewMode === 'lesson' && currentLesson"
-          :lesson="currentLesson"
-          :lessonNumber="currentLessonIndex + 1"
-          :totalLessons="moduleData.lessons.length"
-          @close="backToOverview"
-          @complete="completeLesson"
-        />
-
         <!-- 測驗 -->
         <QuizEngine
           v-else-if="viewMode === 'quiz'"
@@ -90,6 +64,16 @@
           @continueNext="continueToNextModule"
         />
       </CourseLayout>
+
+      <!-- 課程內容 - 全螢幕簡報模式 -->
+      <SlideViewer
+        v-else-if="viewMode === 'lesson' && currentLesson"
+        :lesson="currentLesson"
+        :lessonNumber="currentLessonIndex + 1"
+        :totalLessons="moduleData.lessons.length"
+        @close="backToOverview"
+        @complete="completeLesson"
+      />
     </div>
 
     <!-- 證書展示 -->
@@ -159,6 +143,33 @@ const handleSelectLevel = async (level) => {
   console.log('✅ currentView 已設為 courseContent，CourseLayout 應該渲染')
 }
 
+// 處理 Level 切換
+const handleChangeLevel = async (levelId) => {
+  console.log('🔄 handleChangeLevel 被調用:', levelId)
+  
+  // 從 levels.json 載入 level 資訊
+  try {
+    const response = await fetch('/data/courses/levels.json')
+    const data = await response.json()
+    const targetLevel = data.levels.find(l => l.id === levelId)
+    
+    if (targetLevel) {
+      // 重置狀態
+      selectedModule.value = null
+      moduleData.value = null
+      viewMode.value = 'list'
+      
+      // 切換到新 Level
+      selectedLevel.value = targetLevel
+      console.log('✅ 已切換到:', targetLevel.name)
+    } else {
+      console.error('找不到 Level:', levelId)
+    }
+  } catch (error) {
+    console.error('切換 Level 失敗:', error)
+  }
+}
+
 // 處理選擇模組
 const handleSelectModule = async (module) => {
   try {
@@ -186,6 +197,28 @@ const handleSelectModule = async (module) => {
     selectedModule.value = null
     moduleData.value = null
     viewMode.value = 'list'
+  }
+}
+
+// 處理直接啟動課程（從 CourseLayout 展開的課程列表）
+const handleStartLesson = async (payload) => {
+  try {
+    console.log('🚀 handleStartLesson 被調用:', payload)
+    
+    // 設置選中的模組
+    selectedModule.value = payload.module
+    moduleData.value = payload.moduleData
+    currentLessonIndex.value = payload.lessonIndex
+    lessonStartTime.value = Date.now()
+    
+    // 載入已完成課程
+    loadCompletedLessons(payload.module.id)
+    
+    // 直接進入簡報模式
+    viewMode.value = 'lesson'
+    console.log('✅ 進入簡報模式，課程:', moduleData.value?.lessons[currentLessonIndex.value]?.title)
+  } catch (error) {
+    console.error('啟動課程失敗:', error)
   }
 }
 
@@ -234,7 +267,7 @@ const loadCompletedLessons = (moduleId) => {
   completedLessons.value = progressStore.getCompletedLessons(moduleId)
 }
 
-// 開始課程
+// 開始課程（直接進入簡報，第一頁是課程導讀）
 const startLesson = (lessonIndex) => {
   // 範圍驗證
   if (!moduleData.value || lessonIndex < 0 || lessonIndex >= moduleData.value.lessons.length) {
@@ -242,9 +275,11 @@ const startLesson = (lessonIndex) => {
     return
   }
   
-  // 記錄開始時間
-  lessonStartTime.value = Date.now()
+  // 記錄選擇的課程索引和開始時間
   currentLessonIndex.value = lessonIndex
+  lessonStartTime.value = Date.now()
+  
+  // 直接進入簡報模式（第一頁是課程導讀）
   viewMode.value = 'lesson'
 }
 
@@ -433,18 +468,6 @@ const backToOverview = () => {
   viewMode.value = 'overview'
 }
 
-// 獲取課程類型名稱
-const getLessonTypeName = (type) => {
-  const types = {
-    'video-text': '影片+文字',
-    'text-images': '圖文教學',
-    'comparison': '對比學習',
-    'interactive': '互動練習',
-    'presentation': '簡報式課程'
-  }
-  return types[type] || '一般課程'
-}
-
 // 打開地圖互動
 const openMapInteraction = (mapData) => {
   console.log('Opening map interaction:', mapData)
@@ -506,30 +529,6 @@ const handleOpenMap = () => {
   margin: 0 auto;
 }
 
-.module-meta {
-  display: flex;
-  justify-content: center;
-  gap: 36px;
-  margin-bottom: 32px;
-  padding: 20px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-}
-
-.meta-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9375rem;
-  color: #2c3e50;
-  font-weight: 600;
-}
-
-.meta-icon {
-  font-size: 1.25rem;
-}
-
 .lessons-list {
   background: white;
   border-radius: 16px;
@@ -588,13 +587,6 @@ const handleOpenMap = () => {
   margin-bottom: 4px;
   font-weight: 600;
   line-height: 1.4;
-}
-
-.lesson-meta {
-  font-size: 0.8125rem;
-  color: #95a5a6;
-  display: flex;
-  gap: 8px;
 }
 
 .lesson-status {

@@ -1,65 +1,68 @@
 <template>
   <div class="slide-viewer">
+    <!-- 頂部導航欄 -->
+    <div class="top-navigation">
+      <!-- 左側：返回按鈕 -->
+      <button class="nav-control-btn back-btn" @click="$emit('close')">
+        ← 返回課程列表
+      </button>
+
+      <!-- 中間：上一張/下一張按鈕和頁碼 -->
+      <div class="center-controls">
+        <button 
+          class="nav-control-btn prev-btn" 
+          @click="prevSlide"
+          :disabled="currentSlide === 0"
+        >
+          ◀ 上一張
+        </button>
+        
+        <div class="slide-counter">
+          <span class="current-number">{{ currentSlide + 1 }}</span>
+          <span class="separator">/</span>
+          <span class="total-number">{{ slides.length }}</span>
+        </div>
+        
+        <button 
+          class="nav-control-btn next-btn" 
+          @click="nextSlide"
+          :disabled="currentSlide === slides.length - 1"
+        >
+          下一張 ▶
+        </button>
+      </div>
+
+      <!-- 右側：完成課程按鈕（僅最後一張顯示） -->
+      <button 
+        v-if="currentSlide === slides.length - 1"
+        class="nav-control-btn complete-btn" 
+        @click="completeLesson"
+      >
+        ✓ 完成課程
+      </button>
+      <div v-else class="placeholder"></div>
+    </div>
+
     <!-- 簡報主區域 -->
     <div class="slide-container">
       <!-- 當前投影片 -->
       <div class="slide" :key="currentSlide">
         <component :is="getCurrentSlideComponent" :slide="slides[currentSlide]" />
       </div>
-
-      <!-- 導航按鈕 -->
-      <button 
-        v-if="currentSlide > 0"
-        class="nav-btn prev-btn" 
-        @click="prevSlide"
-      >
-        <span class="arrow">‹</span>
-      </button>
-      
-      <button 
-        v-if="currentSlide < slides.length - 1"
-        class="nav-btn next-btn" 
-        @click="nextSlide"
-      >
-        <span class="arrow">›</span>
-      </button>
-
-      <!-- 進度指示器 -->
-      <div class="progress-indicator">
-        <div 
-          v-for="(slide, index) in slides" 
-          :key="index"
-          class="dot"
-          :class="{ active: index === currentSlide }"
-          @click="goToSlide(index)"
-        ></div>
-      </div>
-
-      <!-- 投影片編號 -->
-      <div class="slide-number">
-        {{ currentSlide + 1 }} / {{ slides.length }}
-      </div>
     </div>
 
-    <!-- 底部控制欄 -->
-    <div class="controls">
-      <button class="control-btn" @click="$emit('close')">
-        ← 返回課程列表
-      </button>
-      <div class="slide-title">{{ lesson.title }}</div>
-      <button 
-        v-if="currentSlide === slides.length - 1"
-        class="control-btn complete-btn" 
-        @click="completeLesson"
-      >
-        完成課程 ✓
-      </button>
+    <!-- 底部進度條 -->
+    <div class="bottom-progress">
+      <div class="progress-bar-container">
+        <div class="progress-bar" :style="{ width: progressPercentage + '%' }"></div>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import IntroSlide from './slides/IntroSlide.vue'
 import TitleSlide from './slides/TitleSlide.vue'
 import ContentSlide from './slides/ContentSlide.vue'
 import ImageSlide from './slides/ImageSlide.vue'
@@ -81,16 +84,31 @@ const emit = defineEmits(['complete', 'close'])
 
 const currentSlide = ref(0)
 
+// 進度百分比
+const progressPercentage = computed(() => {
+  if (slides.value.length === 0) return 0
+  return ((currentSlide.value + 1) / slides.value.length) * 100
+})
+
 // 將課程內容轉換為投影片
 const slides = computed(() => {
-  // 如果課程已經包含 slides 陣列，直接使用
+  const slideArray = []
+  
+  // 0. 課程導讀投影片（第一頁）
+  slideArray.push({
+    type: 'intro',
+    title: '課程導讀',
+    description: props.lesson.content?.introduction || props.lesson.description || `本課程將深入探討${props.lesson.title}的各個面向，建立扎實的知識基礎。`,
+    objectives: props.lesson.objectives || generateDefaultObjectives()
+  })
+  
+  // 如果課程已經包含 slides 陣列，合併使用
   if (props.lesson.slides && Array.isArray(props.lesson.slides)) {
-    return props.lesson.slides
+    slideArray.push(...props.lesson.slides)
+    return slideArray
   }
   
   // 否則，將舊格式轉換為投影片格式
-  const slideArray = []
-  
   // 1. 標題投影片
   slideArray.push({
     type: 'title',
@@ -826,10 +844,48 @@ const slides = computed(() => {
   return slideArray
 })
 
+// 生成預設學習目標
+const generateDefaultObjectives = () => {
+  const lessonTitle = props.lesson.title
+  const objectives = []
+  
+  // 根據課程標題生成學習目標
+  if (lessonTitle.includes('產區') || lessonTitle.includes('地理')) {
+    objectives.push({ icon: '🗺️', text: '認識產區地理位置與分布' })
+  }
+  if (lessonTitle.includes('歷史') || lessonTitle.includes('僳侶')) {
+    objectives.push({ icon: '📅', text: '了解歷史發展脈絡' })
+  }
+  if (lessonTitle.includes('品種') || lessonTitle.includes('葡萄')) {
+    objectives.push({ icon: '🍇', text: '辨識葡萄品種特徵' })
+  }
+  if (lessonTitle.includes('酒標') || lessonTitle.includes('分級')) {
+    objectives.push({ icon: '🏷️', text: '學會閱讀與辨別酒標資訊' })
+  }
+  if (lessonTitle.includes('風土') || lessonTitle.includes('Terroir')) {
+    objectives.push({ icon: '🏞️', text: '理解風土條件的重要性' })
+  }
+  if (lessonTitle.includes('品鑑') || lessonTitle.includes('品飲')) {
+    objectives.push({ icon: '👃', text: '培養品鑑與分析能力' })
+  }
+  
+  // 如果沒有特定目標，返回通用目標
+  if (objectives.length === 0) {
+    objectives.push(
+      { icon: '🎯', text: '建立系統化的知識架構' },
+      { icon: '📚', text: '掌握核心概念與原理' },
+      { icon: '🍷', text: '深化對布根地葡萄酒的理解' }
+    )
+  }
+  
+  return objectives
+}
+
 const getCurrentSlideComponent = computed(() => {
   const slideType = slides.value[currentSlide.value]?.type
   
   switch(slideType) {
+    case 'intro': return IntroSlide
     case 'title': return TitleSlide
     case 'list': return ListSlide
     case 'timeline': return TimelineSlide
@@ -887,6 +943,90 @@ onUnmounted(() => {
   flex-direction: column;
 }
 
+/* 頂部導航欄 */
+.top-navigation {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 100;
+}
+
+.center-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.placeholder {
+  width: 120px;
+}
+
+.nav-control-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Segoe UI', 'Microsoft YaHei', Arial, sans-serif;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-control-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-1px);
+}
+
+.nav-control-btn.complete-btn {
+  background: rgba(76, 175, 80, 0.9);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.nav-control-btn.complete-btn:hover {
+  background: rgba(76, 175, 80, 1);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+}
+
+.nav-control-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.slide-counter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+}
+
+.current-number {
+  font-size: 1.3rem;
+  color: white;
+  font-weight: 700;
+}
+
+.separator {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.total-number {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+/* 簡報主區域 */
 .slide-container {
   flex: 1;
   position: relative;
@@ -894,6 +1034,7 @@ onUnmounted(() => {
   align-items: center;
   justify-content: center;
   padding: 40px;
+  overflow: hidden;
 }
 
 .slide {
@@ -918,137 +1059,106 @@ onUnmounted(() => {
   }
 }
 
-/* 導航按鈕 */
-.nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 56px;
-  height: 56px;
-  background: rgba(255, 255, 255, 0.95);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 2rem;
-  color: #667eea;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  z-index: 10;
-}
-
-.nav-btn:hover {
+/* 底部進度條區域 */
+.bottom-progress {
+  position: relative;
   background: white;
-  transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.prev-btn {
-  left: 32px;
+.progress-bar-container {
+  width: 100%;
+  height: 6px;
+  background: #e0e0e0;
+  position: relative;
+  overflow: hidden;
 }
 
-.next-btn {
-  right: 32px;
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
-.arrow {
-  line-height: 1;
-}
-
-/* 進度指示器 */
-.progress-indicator {
+.progress-bar::after {
+  content: '';
   position: absolute;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-  z-index: 10;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3));
+  animation: shimmer 2s infinite;
 }
 
-.dot {
-  width: 10px;
-  height: 10px;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
-.dot:hover {
-  background: rgba(255, 255, 255, 0.7);
-  transform: scale(1.15);
-}
-
-.dot.active {
-  background: white;
-  width: 28px;
-  border-radius: 5px;
-}
-
-/* 投影片編號 */
-.slide-number {
+.complete-lesson-btn {
   position: absolute;
-  top: 24px;
-  right: 32px;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 8px 14px;
-  border-radius: 16px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #667eea;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* 底部控制欄 */
-.controls {
-  background: rgba(0, 0, 0, 0.15);
-  backdrop-filter: blur(12px);
-  padding: 18px 36px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.control-btn {
-  background: rgba(255, 255, 255, 0.95);
-  border: none;
-  padding: 11px 22px;
-  border-radius: 10px;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  color: #667eea;
-}
-
-.control-btn:hover {
-  background: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.complete-btn {
+  bottom: 20px;
+  right: 40px;
+  padding: 14px 30px;
   background: linear-gradient(135deg, #4CAF50, #45a049);
   color: white;
-}
-
-.complete-btn:hover {
-  background: linear-gradient(135deg, #45a049, #3d8b40);
-}
-
-.slide-title {
-  color: white;
-  font-size: 1.0625rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
   font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.complete-lesson-btn:hover {
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.5);
+  transform: translateY(-2px);
+}
+
+/* 淡入淡出動畫 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
 }
 
 /* 響應式設計 */
+@media (max-width: 1024px) {
+  .slide-container {
+    padding: 30px 20px;
+  }
+
+  .top-navigation {
+    padding: 12px 20px;
+  }
+
+  .center-controls {
+    gap: 16px;
+  }
+
+  .nav-control-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
 @media (max-width: 768px) {
   .slide-container {
-    padding: 20px;
+    padding: 20px 15px;
   }
 
   .slide {
@@ -1056,35 +1166,29 @@ onUnmounted(() => {
     height: auto;
   }
 
-  .nav-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 28px;
+  .top-navigation {
+    flex-direction: column;
+    padding: 10px 15px;
+    gap: 12px;
   }
 
-  .prev-btn {
-    left: 10px;
-  }
-
-  .next-btn {
-    right: 10px;
-  }
-
-  .slide-number {
-    top: 10px;
-    right: 10px;
-  }
-
-  .controls {
-    padding: 16px 20px;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-
-  .slide-title {
+  .center-controls {
+    order: 1;
     width: 100%;
-    text-align: center;
-    font-size: 16px;
+    justify-content: center;
+  }
+
+  .slide-counter {
+    font-size: 0.95rem;
+  }
+
+  .nav-control-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .placeholder {
+    display: none;
   }
 }
 </style>

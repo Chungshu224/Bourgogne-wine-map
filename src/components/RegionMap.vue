@@ -309,9 +309,9 @@ watch(() => props.regionConfig?.id, () => {
 .main-layout {
   display: flex;
   width: 100%;
-  height: calc(100vh - var(--header-height, 56px));
+  height: 100dvh; /* dynamic viewport height */
   position: fixed;
-  top: var(--header-height, 56px);
+  top: 0;
   left: 0;
   right: 0;
 }
@@ -319,9 +319,9 @@ watch(() => props.regionConfig?.id, () => {
 @media (max-width: 768px) {
   .main-layout {
     flex-direction: column;
-    height: 100%;
+    height: 100dvh;
     width: 100%;
-    position: relative;
+    position: fixed; /* Ensures map always fills screen */
   }
   
   :deep(.aoc-list.mobile-overlay) {

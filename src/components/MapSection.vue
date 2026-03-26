@@ -319,6 +319,8 @@ const props = defineProps({
 const emit = defineEmits(['resetMap', 'clear-region-info', 'reselect-aoc', 'request-aoc-list', 'request-learning-mode'])
 
 const isMobileView = ref(window.innerWidth <= 768)
+const showLayerPanel = ref(false)
+
 const checkMobile = () => {
   isMobileView.value = window.innerWidth <= 768
 }
@@ -2262,6 +2264,57 @@ onUnmounted(() => {
 
   .m-grid-text {
     font-size: 0.75rem;
+  }
+
+  .mobile-layer-panel {
+    position: fixed;
+    bottom: 80px;
+    left: 10px;
+    background: white;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    width: 200px;
+  }
+
+  .layer-panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .layer-panel-header h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .close-layer-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #999;
+  }
+
+  .layer-toggle-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .layer-toggle-btn.active {
+    background: #800020;
+    color: white;
+    border-color: #800020;
   }
 
   /* 避免底層資訊列被 mobile-grid-buttons 擋住 */

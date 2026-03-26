@@ -42,17 +42,13 @@ const switchMode = (mode) => {
     <div v-if="currentMode === 'course'">
       <CourseManager @openMap="switchMode('map')" />
     </div>
-
-    <!-- 地圖模式（輔助） -->
     <div v-else-if="currentMode === 'map'">
-      <!-- 區域選擇器 -->
       <RegionSelector 
         v-if="showRegionSelector"
         @region-selected="handleRegionSelected"
         @request-learning-mode="switchMode('course')"
       />
       
-      <!-- 地圖視圖 -->
       <div v-else class="map-view">
         <!-- 使用通用 RegionMap 組件顯示所有區域 -->
         <RegionMap 
@@ -80,6 +76,7 @@ const switchMode = (mode) => {
   margin: 0;
   padding: 0;
   overflow: auto;
+  background-color: #ffffff;
 }
 
 .app-container {
@@ -90,9 +87,9 @@ const switchMode = (mode) => {
 
 .map-view {
   width: 100%;
-  min-height: calc(100vh - var(--header-height));
+  height: 100dvh; /* use dynamic viewport height for mobile */
+  min-height: 100vh;
   position: relative;
-  padding-top: var(--header-height);
 }
 
 /* 模式切換按鈕 */
@@ -149,15 +146,9 @@ const switchMode = (mode) => {
 
 /* 響應式調整 */
 @media (max-width: 768px) {
-  .map-view {
-    padding-top: calc(var(--header-height));
-  }
 }
 
 @media (max-width: 480px) {
-  .map-view {
-    padding-top: calc(var(--header-height));
-  }
 }
 
 </style>

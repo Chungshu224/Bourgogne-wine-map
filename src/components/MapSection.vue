@@ -2202,10 +2202,12 @@ onUnmounted(() => {
 
 @media (max-width: 768px) {
   .map-header {
+    position: fixed;
     background: none;
     border: none;
     pointer-events: none;
     padding-top: 25px;
+    z-index: 1000;
   }
   .map-header h1 {
     font-size: 1.25rem;
@@ -2215,6 +2217,7 @@ onUnmounted(() => {
   }
 
   .btn-learning-mode {
+    position: fixed !important;
     top: 45%;
     left: 10px;
     width: 60px;
@@ -2289,7 +2292,7 @@ onUnmounted(() => {
   }
 
   .map-info-bar {
-    position: absolute !important;
+    position: fixed !important;
     bottom: 85px !important;
     left: 15px !important;
     right: 15px !important;
@@ -2305,7 +2308,7 @@ onUnmounted(() => {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
+    position: fixed;
     bottom: 15px;
     left: 15px;
     right: 15px;
@@ -2361,7 +2364,7 @@ onUnmounted(() => {
   }
 
   .mobile-layer-panel {
-    position: absolute;
+    position: fixed;
     bottom: 150px;
     left: 15px;
     background: white;

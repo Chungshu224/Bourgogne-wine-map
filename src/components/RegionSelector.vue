@@ -1,5 +1,9 @@
 <template>
   <div class="region-selector">
+    <!-- 返回課程按鈕 -->
+    <button class="back-course-btn" @click="$emit('request-learning-mode')">
+      ← 返回課程
+    </button>
     <div class="region-header">
       <h2>布根地葡萄酒產區</h2>
       <p class="subtitle">Bourgogne Wine Regions</p>
@@ -39,7 +43,7 @@
 <script setup>
 import { ref, defineEmits } from 'vue';
 
-const emit = defineEmits(['region-selected']);
+const emit = defineEmits(['region-selected', 'request-learning-mode']);
 
 const currentRegion = ref(null);
 
@@ -118,6 +122,29 @@ const selectRegion = (regionId) => {
   padding: 2rem;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
+  position: relative;
+  min-height: 100vh;
+}
+
+.back-course-btn {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(4px);
+  z-index: 10;
+}
+
+.back-course-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 .region-header {
@@ -236,6 +263,17 @@ const selectRegion = (regionId) => {
 }
 
 @media (max-width: 768px) {
+  .region-selector {
+    padding: 3rem 1rem 1rem;
+  }
+  
+  .back-course-btn {
+    top: 0.5rem;
+    left: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
   .region-grid {
     grid-template-columns: 1fr;
   }

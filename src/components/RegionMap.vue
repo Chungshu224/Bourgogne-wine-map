@@ -11,6 +11,8 @@ const props = defineProps({
   }
 })
 
+const emit = defineEmits(['request-learning-mode'])
+
 const search = ref('')
 const activeAOC = ref({ group: '', aoc: '' })
 const regionInfo = ref(null)
@@ -298,6 +300,7 @@ watch(() => props.regionConfig?.id, () => {
       @clear-region-info="clearRegionInfo"
       @reselect-aoc="reselectAOC"
       @request-aoc-list="showMobileAOCList = true"
+      @request-learning-mode="emit('request-learning-mode')"
     />
   </div>
 </template>

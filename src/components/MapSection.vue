@@ -220,6 +220,9 @@
       </div>
     </div>
     <div ref="mapContainer" class="map"></div>
+    <button class="btn-learning-mode" @click="$emit('request-learning-mode')">
+      返回學習模式
+    </button>
     <button :class="['btn-3d', { 'controls-wide': geologyVisible }]" @click="toggle3D">
       {{ is3D ? '2D' : '3D' }}
     </button>
@@ -313,7 +316,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['resetMap', 'clear-region-info', 'reselect-aoc', 'request-aoc-list'])
+const emit = defineEmits(['resetMap', 'clear-region-info', 'reselect-aoc', 'request-aoc-list', 'request-learning-mode'])
 
 const isMobileView = ref(window.innerWidth <= 768)
 const checkMobile = () => {
@@ -1802,9 +1805,37 @@ onUnmounted(() => {
   font-style: italic;
 }
 
-.btn-3d {
+.btn-learning-mode {
   position: absolute;
   top: 80px;
+  left: 20px;
+  width: 200px;
+  height: 48px;
+  padding: 0 12px;
+  background: linear-gradient(180deg, #4784b4, #33669d);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 100;
+  font-weight: 800;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.btn-learning-mode:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.btn-learning-mode:active {
+  transform: translateY(0px);
+}
+
+.btn-3d {
+  position: absolute;
+  top: 136px;
   left: 20px;
   width: 200px;
   height: 48px;
@@ -1832,7 +1863,7 @@ onUnmounted(() => {
 
 .btn-contours {
   position: absolute;
-  top: 136px;
+  top: 192px;
   left: 20px;
   width: 200px;
   height: 48px;
@@ -1860,7 +1891,7 @@ onUnmounted(() => {
 
 .geology-panel {
   position: absolute;
-  top: 192px;
+  top: 248px;
   left: 20px;
   width: 200px;
   background: transparent;
@@ -2155,6 +2186,7 @@ onUnmounted(() => {
     font-size: 1.2rem;
   }
 
+  .btn-learning-mode,
   .btn-3d,
   .btn-contours {
     left: 10px;
@@ -2165,15 +2197,76 @@ onUnmounted(() => {
     width: 200px;
   }
 
-  .btn-contours {
+  .btn-3d {
     top: 136px;
   }
 
-  .geology-panel {
+  .btn-contours {
     top: 192px;
+  }
+
+  .geology-panel {
+    top: 248px;
     left: 10px;
     width: 170px;
     right: auto;
+  }
+
+  .mobile-grid-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 8px 10px 16px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .m-grid-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 8px;
+    gap: 4px;
+    color: #666;
+    min-width: 60px;
+  }
+
+  .m-grid-btn.active {
+    color: #800020;
+  }
+
+  .m-grid-icon {
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f5f5;
+    border-radius: 50%;
+  }
+
+  .m-grid-btn.active .m-grid-icon {
+    background: #ffe6eb;
+    color: #800020;
+  }
+
+  .m-grid-text {
+    font-size: 0.75rem;
+  }
+
+  /* 避免底層資訊列被 mobile-grid-buttons 擋住 */
+  .map-info-bar {
+    bottom: 80px !important; 
   }
 }
 

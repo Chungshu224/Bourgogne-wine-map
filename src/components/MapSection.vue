@@ -200,36 +200,6 @@
         <button class="layer-toggle-btn" :class="{ active: showContours }" @click="toggleContours">
           {{ showContours ? '隱藏等高線' : '顯示等高線' }}
         </button>
-        <button v-if="geologyIndex && currentGeologyProvinceCodes.length > 0" class="layer-toggle-btn" :class="{ active: geologyVisible }" @click="geologyVisible = !geologyVisible">
-          {{ geologyVisible ? '隱藏地質圖層' : '顯示地質圖層' }}
-        </button>
-        
-        <!-- 地質材料選項 -->
-        <div v-if="geologyVisible && geologyIndex && geologyIndex.materials" class="mobile-geology-materials">
-          <div class="mobile-geology-materials-title">土壤材質</div>
-          <div v-for="material in geologyIndex.materials" :key="material.id" class="mobile-geology-item">
-            <button
-              type="button"
-              class="mobile-geology-toggle"
-              :class="{ active: geologyActiveMaterials.includes(material.id) }"
-              @click="toggleGeologyMaterial(material.id)"
-            >
-              <span class="material-dot" :style="{ backgroundColor: material.fillColor }"></span>
-              <span>{{ material.name }}</span>
-            </button>
-            <div class="mobile-geology-slider">
-              <input
-                type="range"
-                min="0.1"
-                max="0.85"
-                step="0.05"
-                v-model.number="geologyMaterialOpacity[material.id]"
-                :disabled="!geologyActiveMaterials.includes(material.id)"
-              />
-              <span class="slider-value">{{ Math.round((geologyMaterialOpacity[material.id] || 0) * 100) }}%</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div ref="mapContainer" class="map"></div>
@@ -2421,96 +2391,6 @@ onUnmounted(() => {
     background: #800020;
     color: white;
     border-color: #800020;
-  }
-
-
-  .mobile-geology-materials {
-    margin-top: 12px;
-    padding-top: 12px;
-    border-top: 1px solid #e0e0e0;
-  }
-  .mobile-geology-materials-title {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: #666;
-    margin-bottom: 8px;
-  }
-  .mobile-geology-item {
-    margin-bottom: 12px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-  }
-  .mobile-geology-toggle {
-    width: 100%;
-    padding: 8px 10px;
-    border-radius: 6px;
-    border: 1px solid #ddd;
-    background: #f8f8f8;
-    color: #333;
-    font-weight: 500;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: all 0.2s;
-    margin-bottom: 8px;
-  }
-  .mobile-geology-toggle.active {
-    background: #e8f5e9;
-    border-color: #4CAF50;
-    color: #2e7d32;
-  }
-  .mobile-geology-toggle .material-dot {
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-  .mobile-geology-slider {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 4px;
-  }
-  .mobile-geology-slider input[type='range'] {
-    flex: 1;
-    height: 6px;
-    border-radius: 3px;
-    background: linear-gradient(to right, #90caf9 0%, #1976d2 100%);
-    outline: none;
-    -webkit-appearance: none;
-  }
-  .mobile-geology-slider input[type='range']::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: #1976d2;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
-  .mobile-geology-slider input[type='range']::-moz-range-thumb {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background: #1976d2;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  }
-  .mobile-geology-slider input[type='range']:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-  .mobile-geology-slider .slider-value {
-    min-width: 45px;
-    text-align: right;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #555;
   }
 
   .btn-reset {

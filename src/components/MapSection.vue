@@ -183,7 +183,7 @@
       </transition>
 
       <!-- 手機版底部 4宮格 按鈕 -->
-      <div class="mobile-grid-buttons" v-if="isMobileView">
+      <div class="mobile-grid-buttons" v-if="isMobileView" :class="{ 'merged-with-info': activeAOC.aoc }">
         <button class="m-grid-btn" @click="$emit('request-aoc-list')">
           <span class="m-grid-icon">產</span>
           <span class="m-grid-text">產區</span>
@@ -220,8 +220,13 @@
       </div>
     </div>
     <div ref="mapContainer" class="map"></div>
-    <button class="btn-learning-mode" @click="$emit('request-learning-mode')">
-      返回學習模式
+    <!-- 返回學習模式按鈕 (手機版顯示為圓形圖示) -->
+    <button class="btn-learning-mode" @click="$emit('request-learning-mode')" title="返回學習模式">
+      <svg class="learning-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+        <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+      </svg>
+      <span class="learning-text">返回學習模式</span>
     </button>
     <button :class="['btn-3d', { 'controls-wide': geologyVisible }]" @click="toggle3D">
       {{ is3D ? '2D' : '3D' }}
@@ -1835,7 +1840,27 @@ onUnmounted(() => {
   transform: translateY(0px);
 }
 
+
+.btn-learning-mode .learning-icon {
+  display: none;
+}
+
+.btn-learning-mode .learning-text {
+  display: inline;
+}
+
+
+.btn-learning-mode .learning-icon {
+  display: none;
+}
+
+.btn-learning-mode .learning-text {
+  display: inline;
+}
+
 .btn-3d {
+
+
   position: absolute;
   top: 136px;
   left: 20px;
@@ -2176,56 +2201,126 @@ onUnmounted(() => {
 }
 
 @media (max-width: 768px) {
-  .map-info-bar {
-    max-width: calc(100% - 40px);
-    width: auto;
-    bottom: 10px;
-    left: 10px;
-    max-height: 40vh;
+  .map-header {
+    background: none;
+    border: none;
+    pointer-events: none;
+    padding-top: 25px;
   }
-  
   .map-header h1 {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    color: #5b1d1d;
+    text-shadow: 0 1px 4px rgba(255,255,255, 0.9), 0 0 10px rgba(255,255,255, 0.9), 0 0 15px rgba(255,255,255, 0.9);
+    pointer-events: auto;
   }
 
-  .btn-learning-mode,
-  .btn-3d,
-  .btn-contours {
+  .btn-learning-mode {
+    top: 45%;
     left: 10px;
-    width: 170px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0;
+    background: #4CAF50; /* Green */
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .btn-learning-mode .learning-icon {
+    display: block;
+    color: #111;
+  }
+  .btn-learning-mode .learning-text {
+    display: none;
   }
 
-  .controls-wide {
-    width: 200px;
+  .btn-3d, .btn-contours, .geology-panel {
+    display: none; /* Map tools moved to panels */
   }
 
-  .btn-3d {
-    top: 136px;
+  .desktop-only-buttons {
+    display: none !important;
   }
 
-  .btn-contours {
-    top: 192px;
+  .info-header-bar {
+    background: white;
+    color: #333;
+    padding: 12px 16px;
+    border-bottom: none;
+    border-radius: 20px 20px 0 0;
   }
 
-  .geology-panel {
-    top: 248px;
-    left: 10px;
-    width: 170px;
-    right: auto;
+  .aoc-info-title {
+    color: #333;
+    font-weight: 600;
+  }
+
+  .map-buttons-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .btn-collapse {
+    background: #111 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 10px !important;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-audio-compact {
+    background: #764ba2 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+  }
+
+  .map-info-bar {
+    position: absolute !important;
+    bottom: 85px !important;
+    left: 15px !important;
+    right: 15px !important;
+    width: auto !important;
+    max-width: none !important;
+    margin: 0;
+    border-radius: 20px 20px 0 0 !important;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.1) !important;
+    border-bottom: 1px solid #f0f0f0;
   }
 
   .mobile-grid-buttons {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
     background: white;
-    padding: 8px 10px 16px;
-    box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     z-index: 1000;
+  }
+  .mobile-grid-buttons.merged-with-info {
+    bottom: 15px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+    padding-top: 4px; /* Move slightly closer to the top piece */
   }
 
   .m-grid-btn {
@@ -2233,47 +2328,46 @@ onUnmounted(() => {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: none;
+    background: #FAEFEC;
+    border-radius: 14px;
     border: none;
-    padding: 8px;
+    padding: 10px 0;
     gap: 4px;
-    color: #666;
-    min-width: 60px;
+    color: #6D4C41;
+    flex: 1;
+    margin: 0 4px;
+    transition: all 0.2s;
   }
-
   .m-grid-btn.active {
-    color: #800020;
+    background: white;
+    color: #8B0000;
+    box-shadow: inset 0 0 0 1px #8B0000;
   }
-
   .m-grid-icon {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
-    width: 32px;
-    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f5f5f5;
-    border-radius: 50%;
+    background: none !important;
   }
-
   .m-grid-btn.active .m-grid-icon {
-    background: #ffe6eb;
-    color: #800020;
+    background: none !important;
+    color: #8B0000;
   }
-
   .m-grid-text {
     font-size: 0.75rem;
+    font-weight: bold;
   }
 
   .mobile-layer-panel {
-    position: fixed;
-    bottom: 80px;
-    left: 10px;
+    position: absolute;
+    bottom: 150px;
+    left: 15px;
     background: white;
     padding: 16px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     z-index: 1000;
     width: 200px;
   }
@@ -2284,13 +2378,11 @@ onUnmounted(() => {
     align-items: center;
     margin-bottom: 12px;
   }
-
   .layer-panel-header h4 {
     margin: 0;
     font-size: 1rem;
     color: #333;
   }
-
   .close-layer-btn {
     background: none;
     border: none;
@@ -2298,7 +2390,6 @@ onUnmounted(() => {
     cursor: pointer;
     color: #999;
   }
-
   .layer-toggle-btn {
     width: 100%;
     padding: 10px;
@@ -2310,17 +2401,12 @@ onUnmounted(() => {
     font-weight: bold;
     cursor: pointer;
   }
-
   .layer-toggle-btn.active {
     background: #800020;
     color: white;
     border-color: #800020;
   }
 
-  /* 避免底層資訊列被 mobile-grid-buttons 擋住 */
-  .map-info-bar {
-    bottom: 80px !important; 
-  }
 }
 
 /* 收合狀態樣式 */

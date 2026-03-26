@@ -49,7 +49,6 @@ const getCurrentLocation = () => {
   return '地圖'
 }
 </script>
-</script>
 
 <template>
   <div class="app-container">

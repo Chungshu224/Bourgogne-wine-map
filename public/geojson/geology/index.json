@@ -1,0 +1,222 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Bourgogne five-province geological materials (web optimized)",
+    "projection": "EPSG:4326",
+    "sourceProjection": "EPSG:2154"
+  },
+  "materials": [
+    {
+      "id": "clay",
+      "name": "黏土為主",
+      "fillColor": "#8d6e63",
+      "lineColor": "#5d4037"
+    },
+    {
+      "id": "sand",
+      "name": "砂為主",
+      "fillColor": "#f4c77d",
+      "lineColor": "#c89b52"
+    },
+    {
+      "id": "limestone",
+      "name": "石灰岩",
+      "fillColor": "#cfd8dc",
+      "lineColor": "#90a4ae"
+    },
+    {
+      "id": "gravel",
+      "name": "礫石卵石",
+      "fillColor": "#b0bec5",
+      "lineColor": "#78909c"
+    },
+    {
+      "id": "mixed",
+      "name": "混合沉積物",
+      "fillColor": "#d7ccc8",
+      "lineColor": "#8d6e63"
+    }
+  ],
+  "provinces": {
+    "021": {
+      "name": "Cote-d'Or",
+      "layers": [
+        {
+          "materialId": "clay",
+          "name": "黏土為主",
+          "url": "/geojson/geology/provinces/021/clay.geojson",
+          "featureCount": 3603
+        },
+        {
+          "materialId": "sand",
+          "name": "砂為主",
+          "url": "/geojson/geology/provinces/021/sand.geojson",
+          "featureCount": 520
+        },
+        {
+          "materialId": "limestone",
+          "name": "石灰岩",
+          "url": "/geojson/geology/provinces/021/limestone.geojson",
+          "featureCount": 5896
+        },
+        {
+          "materialId": "gravel",
+          "name": "礫石卵石",
+          "url": "/geojson/geology/provinces/021/gravel.geojson",
+          "featureCount": 245
+        },
+        {
+          "materialId": "mixed",
+          "name": "混合沉積物",
+          "url": "/geojson/geology/provinces/021/mixed.geojson",
+          "featureCount": 3083
+        }
+      ],
+      "totalFeatures": 13347
+    },
+    "058": {
+      "name": "Nievre",
+      "layers": [
+        {
+          "materialId": "clay",
+          "name": "黏土為主",
+          "url": "/geojson/geology/provinces/058/clay.geojson",
+          "featureCount": 4311
+        },
+        {
+          "materialId": "sand",
+          "name": "砂為主",
+          "url": "/geojson/geology/provinces/058/sand.geojson",
+          "featureCount": 902
+        },
+        {
+          "materialId": "limestone",
+          "name": "石灰岩",
+          "url": "/geojson/geology/provinces/058/limestone.geojson",
+          "featureCount": 3521
+        },
+        {
+          "materialId": "gravel",
+          "name": "礫石卵石",
+          "url": "/geojson/geology/provinces/058/gravel.geojson",
+          "featureCount": 592
+        },
+        {
+          "materialId": "mixed",
+          "name": "混合沉積物",
+          "url": "/geojson/geology/provinces/058/mixed.geojson",
+          "featureCount": 3623
+        }
+      ],
+      "totalFeatures": 12949
+    },
+    "069": {
+      "name": "Rhone",
+      "layers": [
+        {
+          "materialId": "clay",
+          "name": "黏土為主",
+          "url": "/geojson/geology/provinces/069/clay.geojson",
+          "featureCount": 828
+        },
+        {
+          "materialId": "sand",
+          "name": "砂為主",
+          "url": "/geojson/geology/provinces/069/sand.geojson",
+          "featureCount": 574
+        },
+        {
+          "materialId": "limestone",
+          "name": "石灰岩",
+          "url": "/geojson/geology/provinces/069/limestone.geojson",
+          "featureCount": 732
+        },
+        {
+          "materialId": "gravel",
+          "name": "礫石卵石",
+          "url": "/geojson/geology/provinces/069/gravel.geojson",
+          "featureCount": 331
+        },
+        {
+          "materialId": "mixed",
+          "name": "混合沉積物",
+          "url": "/geojson/geology/provinces/069/mixed.geojson",
+          "featureCount": 898
+        }
+      ],
+      "totalFeatures": 3363
+    },
+    "071": {
+      "name": "Saone-et-Loire",
+      "layers": [
+        {
+          "materialId": "clay",
+          "name": "黏土為主",
+          "url": "/geojson/geology/provinces/071/clay.geojson",
+          "featureCount": 3922
+        },
+        {
+          "materialId": "sand",
+          "name": "砂為主",
+          "url": "/geojson/geology/provinces/071/sand.geojson",
+          "featureCount": 1872
+        },
+        {
+          "materialId": "limestone",
+          "name": "石灰岩",
+          "url": "/geojson/geology/provinces/071/limestone.geojson",
+          "featureCount": 3276
+        },
+        {
+          "materialId": "gravel",
+          "name": "礫石卵石",
+          "url": "/geojson/geology/provinces/071/gravel.geojson",
+          "featureCount": 164
+        },
+        {
+          "materialId": "mixed",
+          "name": "混合沉積物",
+          "url": "/geojson/geology/provinces/071/mixed.geojson",
+          "featureCount": 3357
+        }
+      ],
+      "totalFeatures": 12591
+    },
+    "089": {
+      "name": "Yonne",
+      "layers": [
+        {
+          "materialId": "clay",
+          "name": "黏土為主",
+          "url": "/geojson/geology/provinces/089/clay.geojson",
+          "featureCount": 1157
+        },
+        {
+          "materialId": "sand",
+          "name": "砂為主",
+          "url": "/geojson/geology/provinces/089/sand.geojson",
+          "featureCount": 1657
+        },
+        {
+          "materialId": "limestone",
+          "name": "石灰岩",
+          "url": "/geojson/geology/provinces/089/limestone.geojson",
+          "featureCount": 1174
+        },
+        {
+          "materialId": "gravel",
+          "name": "礫石卵石",
+          "url": "/geojson/geology/provinces/089/gravel.geojson",
+          "featureCount": 907
+        },
+        {
+          "materialId": "mixed",
+          "name": "混合沉積物",
+          "url": "/geojson/geology/provinces/089/mixed.geojson",
+          "featureCount": 1231
+        }
+      ],
+      "totalFeatures": 6126
+    }
+  }
+}

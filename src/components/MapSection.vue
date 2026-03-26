@@ -5,20 +5,39 @@
     </div>
     <div class="map-info-bar" v-if="activeAOC.aoc" :class="{ collapsed: isInfoCollapsed }">
       <div class="info-header-bar">
-        <span class="aoc-info-title">
+        <div class="aoc-info-title">
           <span class="aoc-dot" :style="{background: aocColor(activeAOC.group)}"></span>
-          {{ activeDomaine ? activeDomaine.replace('.geojson', '') : activeAOC.aoc.replace('.geojson','').replace(/_/g,' ') }}
-        </span>
-        <div class="map-buttons">
+          <span class="aoc-name">{{ activeDomaine ? activeDomaine.replace('.geojson', '') : activeAOC.aoc.replace('.geojson','').replace(/_/g,' ') }}</span>
+        </div>
+        
+        <div class="map-buttons-right">
+          <!-- 上箭頭收合按鈕 (深色背景) -->
           <button class="btn-collapse" @click="toggleInfoBar" :title="isInfoCollapsed ? '展開資訊' : '收合資訊'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" :style="{ transform: isInfoCollapsed ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s' }">
-              <polyline points="6 9 12 15 18 9"></polyline>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" :style="{ transform: isInfoCollapsed ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.3s' }">
+              <polyline points="18 15 12 9 6 15"></polyline>
             </svg>
           </button>
-          <button v-if="showDomaineButton" class="btn-show-domaines" @click="toggleDomainesMode">
-            {{ domainesMode ? '回上一層' : '顯示酒莊' }}
+          
+          <!-- 音訊發音按鈕 (紫色背景) -->
+          <button v-if="audioPath" class="btn-audio-compact" @click="playPronunciation" :disabled="isPlayingAudio" title="聽發音">
+            <svg v-if="!isPlayingAudio" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+            </svg>
+            <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+            </svg>
           </button>
-          <button class="btn-reset" @click="resetMap">重置地圖</button>
+
+          <!-- 桌面版的其餘按鈕保留但不顯示於手機 -->
+          <div class="desktop-only-buttons">
+            <button v-if="showDomaineButton" class="btn-show-domaines" @click="toggleDomainesMode">
+              {{ domainesMode ? '回上一層' : '顯示酒莊' }}
+            </button>
+            <button class="btn-reset" @click="resetMap">重置地圖</button>
+          </div>
         </div>
       </div>
       
@@ -162,14 +181,80 @@
       <div v-else class="no-info">無詳細產區資料</div>
         </div>
       </transition>
+
+      <!-- 手機版底部 4宮格 按鈕 -->
+      <div class="mobile-grid-buttons" v-if="isMobileView">
+        <button class="m-grid-btn" @click="$emit('request-aoc-list')">
+          <span class="m-grid-icon">產</span>
+          <span class="m-grid-text">產區</span>
+        </button>
+        <button class="m-grid-btn" :class="{ active: showLayerPanel }" @click="showLayerPanel = !showLayerPanel">
+          <span class="m-grid-icon">層</span>
+          <span class="m-grid-text">圖層</span>
+        </button>
+        <button class="m-grid-btn" :class="{ active: is3D }" @click="toggle3D">
+          <span class="m-grid-icon">3D</span>
+          <span class="m-grid-text">3D</span>
+        </button>
+        <button class="m-grid-btn" :class="{ active: !isInfoCollapsed }" @click="toggleInfoBar">
+          <span class="m-grid-icon">資</span>
+          <span class="m-grid-text">資訊</span>
+        </button>
+      </div>
+
+    </div>
+    
+    <!-- 圖層選擇面板 (在手機版由 圖層 按鈕呼叫) -->
+    <div v-if="isMobileView && showLayerPanel" class="mobile-layer-panel">
+      <div class="layer-panel-header">
+        <h4>圖層設定</h4>
+        <button class="close-layer-btn" @click="showLayerPanel = false">✕</button>
+      </div>
+      <div class="layer-panel-content">
+        <button class="layer-toggle-btn" :class="{ active: showContours }" @click="toggleContours">
+          {{ showContours ? '隱藏等高線' : '顯示等高線' }}
+        </button>
+        <button v-if="geologyIndex && currentGeologyProvinceCodes.length > 0" class="layer-toggle-btn" :class="{ active: geologyVisible }" @click="geologyVisible = !geologyVisible">
+          {{ geologyVisible ? '隱藏地質圖層' : '顯示地質圖層' }}
+        </button>
+      </div>
     </div>
     <div ref="mapContainer" class="map"></div>
-    <button class="btn-3d" @click="toggle3D">
+    <button :class="['btn-3d', { 'controls-wide': geologyVisible }]" @click="toggle3D">
       {{ is3D ? '2D' : '3D' }}
     </button>
-    <button class="btn-contours" @click="toggleContours">
+    <button :class="['btn-contours', { 'controls-wide': geologyVisible }]" @click="toggleContours">
       {{ showContours ? '隱藏等高線' : '顯示等高線' }}
     </button>
+    <div :class="['geology-panel', { 'controls-wide': geologyVisible }]" v-if="geologyIndex && currentGeologyProvinceCodes.length > 0">
+      <button class="geology-visibility-btn" :class="{ active: geologyVisible }" type="button" @click="geologyVisible = !geologyVisible">
+        {{ geologyVisible ? '隱藏地質' : '顯示地質' }}
+      </button>
+      <div class="geology-materials" v-if="geologyVisible">
+        <div v-for="material in geologyIndex.materials" :key="material.id" class="geology-material-row">
+          <button
+            type="button"
+            class="geology-material-toggle"
+            :class="{ active: geologyActiveMaterials.includes(material.id) }"
+            @click="toggleGeologyMaterial(material.id)"
+          >
+            <span class="material-dot" :style="{ backgroundColor: material.fillColor }"></span>
+            <span>{{ material.name }}</span>
+          </button>
+          <label class="geology-slider-wrap">
+            <input
+              type="range"
+              min="0.1"
+              max="0.85"
+              step="0.05"
+              v-model.number="geologyMaterialOpacity[material.id]"
+              :disabled="!geologyActiveMaterials.includes(material.id)"
+            />
+            <span>{{ Math.round((geologyMaterialOpacity[material.id] || 0) * 100) }}%</span>
+          </label>
+        </div>
+      </div>
+    </div>
     <div v-if="mapError" class="map-error">
       {{ mapError }}
     </div>
@@ -228,7 +313,12 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['resetMap', 'clear-region-info', 'reselect-aoc'])
+const emit = defineEmits(['resetMap', 'clear-region-info', 'reselect-aoc', 'request-aoc-list'])
+
+const isMobileView = ref(window.innerWidth <= 768)
+const checkMobile = () => {
+  isMobileView.value = window.innerWidth <= 768
+}
 
 // 根據區域 ID 獲取基礎路徑
 const geojsonBasePath = computed(() => {
@@ -257,6 +347,11 @@ const showContours = ref(false)
 const isInfoCollapsed = ref(false)
 const geojsonCache = new Map()
 let resetBounds = null // stored bbox [minX,minY,maxX,maxY] for reset
+const geologyIndex = ref(null)
+const geologyVisible = ref(false)
+const geologyActiveMaterials = ref([])
+const geologyMaterialOpacity = ref({})
+const currentGeojsonBounds = ref(null)
 const domaines = ref([])
 const activeDomaine = ref(null)
 const domainesMode = ref(false)
@@ -268,6 +363,19 @@ const imageIndex = ref(0)
 // 音頻播放器
 const audioPlayer = ref(null)
 const isPlayingAudio = ref(false)
+
+const REGION_PROVINCES = {
+  chablis: ['089'],
+  'cote-de-nuits': ['021'],
+  'cote-de-beaune': ['021'],
+  'cote-chalonnaise': ['071'],
+  maconnais: ['071'],
+  beaujolais: ['071', '069']
+}
+
+const currentGeologyProvinceCodes = computed(() => {
+  return REGION_PROVINCES[props.regionConfig?.id] || []
+})
 
 // 根據 activeAOC 構建音頻路徑
 const audioPath = computed(() => {
@@ -592,7 +700,17 @@ async function loadInitialVillageGeojsons() {
       for (const villageKey of Object.keys(indexJson)) {
         const village = indexJson[villageKey]
         if (village.files && Array.isArray(village.files)) {
-          filesToLoad.push(...village.files)
+          village.files.forEach(f => {
+            // 過濾掉會造成重疊的 Brochon.geojson 與 Flagey-Echézeaux.geojson 避免初始顏色加倍
+            if (f === 'Brochon.geojson' || f === 'Flagey-Echézeaux.geojson') return;
+            filesToLoad.push(f)
+          })
+        }
+        
+        // 針對 Flagey-Echézeaux：將其預設為開啟兩個 Grand Cru
+        if (villageKey === '07Flagey-Echézeaux') {
+          filesToLoad.push('AOC Echezeaux Grand Cru.geojson')
+          filesToLoad.push('AOC Grands-Echezeaux Grand Cru.geojson')
         }
       }
       console.log(`自動載入 ${filesToLoad.length} 個村莊級 GeoJSON 檔案`)
@@ -647,7 +765,10 @@ async function loadInitialVillageGeojsons() {
           id: fillId,
           type: 'fill',
           source: srcId,
-          paint: { 'fill-color': 'rgba(255, 255, 255, 0.2)' }
+          paint: {
+            'fill-color': 'rgba(255, 255, 255, 0.2)',
+            'fill-opacity': geologyVisible.value ? 0 : 1
+          }
         })
         map.addLayer({
           id: outlineId,
@@ -675,6 +796,7 @@ async function loadInitialVillageGeojsons() {
       const fc = turf.featureCollection(allFeatures)
       const bbox = turf.bbox(fc) // [minX, minY, maxX, maxY]
       resetBounds = bbox
+      currentGeojsonBounds.value = bbox
       // fit to combined bbox
       map.fitBounds([[bbox[0], bbox[1]], [bbox[2], bbox[3]]], { padding: 60, duration: 1200 })
       return bbox
@@ -784,7 +906,7 @@ const showAOCGeojson = async (groupName, aocFile) => {
       source: 'aoc',
       paint: {
         'fill-color': getRandomColor(),
-        'fill-opacity': 1
+        'fill-opacity': geologyVisible.value ? 0 : 1
       }
     })
     map.addLayer({
@@ -798,6 +920,7 @@ const showAOCGeojson = async (groupName, aocFile) => {
     })
 
     const bbox = turf.bbox(geojson)
+    currentGeojsonBounds.value = bbox
     map.fitBounds(bbox, { padding: 40, duration: 800 })
 
   } catch (err) {
@@ -820,6 +943,7 @@ const resetMap = async () => {
   if (map.getLayer('aoc-fill')) map.removeLayer('aoc-fill')
   if (map.getLayer('aoc-outline')) map.removeLayer('aoc-outline')
   if (map.getSource('aoc')) map.removeSource('aoc')
+  currentGeojsonBounds.value = resetBounds
 
   // 重新載入並顯示初始村莊圖層
   await loadInitialVillageGeojsons()
@@ -902,6 +1026,204 @@ const toggleContours = () => {
 
 const toggleInfoBar = () => {
   isInfoCollapsed.value = !isInfoCollapsed.value
+}
+
+const geologySourceId = (materialId) => `geology-src-${materialId}`
+const geologyFillId = (materialId) => `geology-fill-${materialId}`
+const geologyLineId = (materialId) => `geology-line-${materialId}`
+const EMPTY_FEATURE_COLLECTION = { type: 'FeatureCollection', features: [] }
+
+const clearGeologyLayers = () => {
+  if (!map) return
+  for (const materialId of ['clay', 'sand', 'limestone', 'gravel', 'mixed']) {
+    const fillId = geologyFillId(materialId)
+    const lineId = geologyLineId(materialId)
+    const sourceId = geologySourceId(materialId)
+
+    if (map.getLayer(fillId)) map.removeLayer(fillId)
+    if (map.getLayer(lineId)) map.removeLayer(lineId)
+    if (map.getSource(sourceId)) map.removeSource(sourceId)
+  }
+}
+
+const loadGeologyIndex = async () => {
+  try {
+    const res = await fetch('/geojson/geology/index.json')
+    if (!res.ok) {
+      console.warn('無法載入 geology index，將略過地質面板')
+      return
+    }
+
+    const data = await res.json()
+    geologyIndex.value = data
+
+    if (Array.isArray(data.materials) && data.materials.length > 0 && geologyActiveMaterials.value.length === 0) {
+      geologyActiveMaterials.value = ['limestone', 'clay']
+    }
+
+    if (Array.isArray(data.materials) && Object.keys(geologyMaterialOpacity.value).length === 0) {
+      const opacityMap = {}
+      for (const material of data.materials) {
+        opacityMap[material.id] = 0.1
+      }
+      geologyMaterialOpacity.value = opacityMap
+    }
+  } catch (error) {
+    console.warn('讀取 geology index 失敗:', error)
+  }
+}
+
+const toggleGeologyMaterial = (materialId) => {
+  const current = [...geologyActiveMaterials.value]
+  const idx = current.indexOf(materialId)
+  if (idx >= 0) {
+    current.splice(idx, 1)
+  } else {
+    current.push(materialId)
+  }
+  geologyActiveMaterials.value = current
+}
+
+const bboxIntersects = (a, b) => {
+  return !(a[2] < b[0] || a[0] > b[2] || a[3] < b[1] || a[1] > b[3])
+}
+
+const getGeojsonBboxFilteredFeatureCollection = (collections) => {
+  const clipBbox = currentGeojsonBounds.value
+  const features = []
+
+  for (const collection of collections) {
+    const rawFeatures = collection?.features || []
+    for (const feature of rawFeatures) {
+      try {
+        if (!clipBbox) {
+          features.push(feature)
+          continue
+        }
+
+        const featureBbox = turf.bbox(feature)
+        if (bboxIntersects(featureBbox, clipBbox)) {
+          features.push(feature)
+        }
+      } catch (error) {
+        // Ignore malformed geometry and continue rendering the rest.
+      }
+    }
+  }
+
+  return {
+    type: 'FeatureCollection',
+    features
+  }
+}
+
+const syncGeojsonFillVisibilityWithGeology = () => {
+  if (!map) return
+
+  const fillOpacity = geologyVisible.value ? 0 : 1
+
+  if (map.getLayer('aoc-fill')) {
+    map.setPaintProperty('aoc-fill', 'fill-opacity', fillOpacity)
+  }
+
+  if (Array.isArray(loadedInitialFiles.value)) {
+    for (const file of loadedInitialFiles.value) {
+      const idBase = file.replace(/[^a-z0-9]/gi, '_')
+      const fillId = `init_fill_${idBase}`
+      if (map.getLayer(fillId)) {
+        map.setPaintProperty(fillId, 'fill-opacity', fillOpacity)
+      }
+    }
+  }
+}
+
+const refreshGeologyLayers = async () => {
+  if (!map || !geologyIndex.value) return
+
+  const selectedProvinceCodes = currentGeologyProvinceCodes.value
+  const selectedIds = new Set(geologyActiveMaterials.value)
+
+  for (const material of geologyIndex.value.materials || []) {
+    const materialId = material.id
+    const sourceId = geologySourceId(materialId)
+    const fillId = geologyFillId(materialId)
+    const lineId = geologyLineId(materialId)
+    const isActive = geologyVisible.value && selectedIds.has(materialId) && selectedProvinceCodes.length > 0
+
+    if (!isActive) {
+      if (map.getLayer(fillId)) map.setLayoutProperty(fillId, 'visibility', 'none')
+      if (map.getLayer(lineId)) map.setLayoutProperty(lineId, 'visibility', 'none')
+      if (map.getSource(sourceId)) {
+        map.getSource(sourceId).setData(EMPTY_FEATURE_COLLECTION)
+      }
+      continue
+    }
+
+    const collections = []
+    for (const provinceCode of selectedProvinceCodes) {
+      const province = geologyIndex.value.provinces?.[provinceCode]
+      const layerMeta = province?.layers?.find((layer) => layer.materialId === materialId)
+      if (!layerMeta) continue
+
+      try {
+        let geojson
+        if (geojsonCache.has(layerMeta.url)) {
+          geojson = geojsonCache.get(layerMeta.url)
+        } else {
+          const res = await fetch(layerMeta.url)
+          if (!res.ok) {
+            console.warn(`載入地質圖層失敗: ${layerMeta.url}`)
+            continue
+          }
+          geojson = await res.json()
+          geojsonCache.set(layerMeta.url, geojson)
+        }
+        collections.push(geojson)
+      } catch (error) {
+        console.warn('地質圖層渲染失敗:', materialId, provinceCode, error)
+      }
+    }
+
+    const viewportData = getGeojsonBboxFilteredFeatureCollection(collections)
+    const opacity = geologyMaterialOpacity.value[materialId] ?? 0.1
+
+    try {
+      if (map.getSource(sourceId)) {
+        map.getSource(sourceId).setData(viewportData)
+        if (map.getLayer(fillId)) {
+          map.setLayoutProperty(fillId, 'visibility', 'visible')
+          map.setPaintProperty(fillId, 'fill-opacity', opacity)
+        }
+        if (map.getLayer(lineId)) {
+          map.setLayoutProperty(lineId, 'visibility', 'visible')
+          map.setPaintProperty(lineId, 'line-opacity', Math.min(opacity + 0.15, 0.9))
+        }
+      } else {
+        map.addSource(sourceId, { type: 'geojson', data: viewportData })
+        map.addLayer({
+          id: fillId,
+          type: 'fill',
+          source: sourceId,
+          paint: {
+            'fill-color': material.fillColor || '#999999',
+            'fill-opacity': opacity
+          }
+        })
+        map.addLayer({
+          id: lineId,
+          type: 'line',
+          source: sourceId,
+          paint: {
+            'line-color': material.lineColor || '#666666',
+            'line-width': 0.4,
+            'line-opacity': Math.min(opacity + 0.15, 0.9)
+          }
+        })
+      }
+    } catch (error) {
+      console.warn('地質圖層更新失敗:', materialId, error)
+    }
+  }
 }
 
 const initMap = async (retry = 0) => {
@@ -1039,6 +1361,9 @@ const initMap = async (retry = 0) => {
       
       // load initial village-level geojsons and set reset bounds
       await loadInitialVillageGeojsons()
+
+      // initialize stage-1 geology overlays
+      await loadGeologyIndex()
     })
     
     map.on('error', (err) => {
@@ -1064,12 +1389,31 @@ watch(() => props.activeAOC, (newAOC, oldAOC) => {
     map.removeLayer('aoc-fill')
     map.removeLayer('aoc-outline')
     map.removeSource('aoc')
+    currentGeojsonBounds.value = resetBounds
     // Fly back to default view
     map.flyTo({ center: DEFAULT_VIEW.value.center, zoom: DEFAULT_VIEW.value.zoom })
   }
 }, { deep: true })
 
+watch([geologyVisible, currentGeologyProvinceCodes], async () => {
+  syncGeojsonFillVisibilityWithGeology()
+  await refreshGeologyLayers()
+})
+
+watch(currentGeojsonBounds, async () => {
+  await refreshGeologyLayers()
+})
+
+watch(() => geologyActiveMaterials.value, async () => {
+  await refreshGeologyLayers()
+}, { deep: true })
+
+watch(() => geologyMaterialOpacity.value, async () => {
+  await refreshGeologyLayers()
+}, { deep: true })
+
 onMounted(async () => {
+  window.addEventListener('resize', checkMobile)
   await nextTick()
   setTimeout(async () => {
     await initMap()
@@ -1077,6 +1421,8 @@ onMounted(async () => {
 })
 
 onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile)
+  clearGeologyLayers()
   if (map) {
     map.remove()
     map = null
@@ -1460,114 +1806,164 @@ onUnmounted(() => {
   position: absolute;
   top: 80px;
   left: 20px;
-  padding: 12px 24px;
-  background: linear-gradient(145deg, #4CAF50, #45a049);
+  width: 200px;
+  height: 48px;
+  padding: 0 12px;
+  background: linear-gradient(180deg, #5ebc5e, #47b457);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
   z-index: 100;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  box-shadow: 
-    0 4px 8px rgba(0, 0, 0, 0.2),
-    0 6px 20px rgba(76, 175, 80, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.15),
-    inset 0 2px 2px rgba(255, 255, 255, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-
-.btn-3d::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s;
-}
-
-.btn-3d:hover::before {
-  left: 100%;
+  font-weight: 800;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.18s ease, filter 0.18s ease;
 }
 
 .btn-3d:hover {
-  background: linear-gradient(145deg, #45a049, #3d8b40);
-  transform: translateY(-2px);
-  box-shadow: 
-    0 6px 12px rgba(0, 0, 0, 0.25),
-    0 10px 25px rgba(76, 175, 80, 0.4),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.15),
-    inset 0 2px 2px rgba(255, 255, 255, 0.3);
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 
 .btn-3d:active {
   transform: translateY(0px);
-  box-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.2),
-    0 3px 10px rgba(76, 175, 80, 0.2),
-    inset 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 .btn-contours {
   position: absolute;
-  top: 140px;  /* 在 3D 按鈕下方 */
+  top: 136px;
   left: 20px;
-  padding: 12px 24px;
-  background: linear-gradient(145deg, #ff6b35, #f7931e);
+  width: 200px;
+  height: 48px;
+  padding: 0 12px;
+  background: linear-gradient(180deg, #9d33b5, #88279d);
   color: white;
   border: none;
-  border-radius: 10px;
+  border-radius: 6px;
   cursor: pointer;
   z-index: 100;
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: 0.5px;
-  box-shadow: 
-    0 4px 8px rgba(0, 0, 0, 0.2),
-    0 6px 20px rgba(255, 107, 53, 0.3),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.15),
-    inset 0 2px 2px rgba(255, 255, 255, 0.3);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-}
-
-.btn-contours::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s;
-}
-
-.btn-contours:hover::before {
-  left: 100%;
+  font-weight: 800;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.18s ease, filter 0.18s ease;
 }
 
 .btn-contours:hover {
-  background: linear-gradient(145deg, #f7931e, #e8850e);
-  transform: translateY(-2px);
-  box-shadow: 
-    0 6px 12px rgba(0, 0, 0, 0.25),
-    0 10px 25px rgba(255, 107, 53, 0.4),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.15),
-    inset 0 2px 2px rgba(255, 255, 255, 0.3);
+  filter: brightness(1.05);
+  transform: translateY(-1px);
 }
 
 .btn-contours:active {
   transform: translateY(0px);
-  box-shadow: 
-    0 2px 4px rgba(0, 0, 0, 0.2),
-    0 3px 10px rgba(255, 107, 53, 0.2),
-    inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.geology-panel {
+  position: absolute;
+  top: 192px;
+  left: 20px;
+  width: 200px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: 100;
+  padding: 0;
+  backdrop-filter: none;
+  border: none;
+}
+
+.geology-visibility-btn {
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #8a6754, #755544);
+  color: #fff;
+  height: 48px;
+  padding: 0 10px;
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.geology-visibility-btn:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.geology-visibility-btn:active {
+  transform: translateY(0px);
+}
+
+.geology-visibility-btn.active {
+  background: linear-gradient(180deg, #8a6754, #755544);
+  /* border-color removed since we match the image */
+}
+
+.controls-wide {
+  width: 248px;
+}
+
+.geology-materials {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: none;
+  overflow-y: visible;
+}
+
+.geology-material-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.geology-material-toggle {
+  flex: 0 0 108px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid rgba(31, 60, 95, 0.2);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #1c2430;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 10px 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.geology-material-toggle.active {
+  box-shadow: inset 0 0 0 2px rgba(28, 138, 255, 0.95);
+}
+
+.geology-slider-wrap {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.geology-slider-wrap input[type='range'] {
+  flex: 1;
+  min-width: 0;
+}
+
+.material-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.22);
 }
 
 .loading-overlay {
@@ -1757,6 +2153,27 @@ onUnmounted(() => {
   
   .map-header h1 {
     font-size: 1.2rem;
+  }
+
+  .btn-3d,
+  .btn-contours {
+    left: 10px;
+    width: 170px;
+  }
+
+  .controls-wide {
+    width: 200px;
+  }
+
+  .btn-contours {
+    top: 136px;
+  }
+
+  .geology-panel {
+    top: 192px;
+    left: 10px;
+    width: 170px;
+    right: auto;
   }
 }
 

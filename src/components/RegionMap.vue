@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed, watch } from 'vue'
+import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import AOCList from './AOCList.vue'
 import MapSection from './MapSection.vue'
 
@@ -15,6 +15,24 @@ const search = ref('')
 const activeAOC = ref({ group: '', aoc: '' })
 const regionInfo = ref(null)
 const dataCache = new Map()
+
+const isMobileView = ref(window.innerWidth <= 768)
+const showMobileAOCList = ref(false)
+
+const checkMobile = () => {
+  isMobileView.value = window.innerWidth <= 768
+  if (!isMobileView.value) {
+    showMobileAOCList.value = false;
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', checkMobile)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile)
+})
 
 // 根據區域動態調整顏色配置
 const styleColors = computed(() => {
@@ -78,6 +96,11 @@ const dataPathPrefix = computed(() => {
 
 const showAOCGeojson = async (group, aoc) => {
   activeAOC.value = { group, aoc };
+
+  // 選擇後隱藏手機版的產區列表
+  if (isMobileView.value) {
+    showMobileAOCList.value = false;
+  }
 
   // 根據區域動態構建數據路徑
   const mainFolder = group.split('/')[0];
@@ -248,13 +271,23 @@ watch(() => props.regionConfig?.id, () => {
 <template>
   <div class="main-layout">
     <AOCList
+      v-show="!isMobileView || showMobileAOCList"
       v-model:search="search"
       :activeAOC="activeAOC"
       :aocColor="(group) => '#800020'"
       :indexPath="indexPath"
       :regionName="regionConfig?.name || 'Chablis'"
       @selectAOC="showAOCGeojson"
+      :class="{ 'mobile-overlay': isMobileView && showMobileAOCList }"
     />
+    
+    <button 
+      v-if="isMobileView && showMobileAOCList" 
+      class="close-aoc-list-btn"
+      @click="showMobileAOCList = false"
+    >
+      ✕
+    </button>
     
     <MapSection
       :activeAOC="activeAOC"
@@ -264,6 +297,7 @@ watch(() => props.regionConfig?.id, () => {
       @resetMap="resetMap"
       @clear-region-info="clearRegionInfo"
       @reselect-aoc="reselectAOC"
+      @request-aoc-list="showMobileAOCList = true"
     />
   </div>
 </template>
@@ -284,13 +318,38 @@ watch(() => props.regionConfig?.id, () => {
     flex-direction: column;
     height: 100%;
     width: 100%;
+    position: relative;
   }
   
-  :deep(.aoc-list) {
-    height: 30%;
+  :deep(.aoc-list.mobile-overlay) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
     width: 100%;
-    overflow-y: auto;
-    flex-shrink: 0;
+    z-index: 1000;
+    background: white;
+  }
+
+  .close-aoc-list-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
 }
 </style>

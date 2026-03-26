@@ -901,45 +901,6 @@ watch(() => props.slide, () => {
   left: 0;
 }
 
-/* 產區按鈕覆蓋層 */
-.region-buttons-overlay {
-  position: absolute;
-  top: 5rem;
-  left: 1.5rem;
-  z-index: 10;
-  pointer-events: none;
-  max-width: 240px;
-  max-height: calc(100% - 6rem);
-}
-
-.region-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  pointer-events: auto;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  padding: 0.7rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  max-height: calc(100vh - 8rem);
-  overflow-y: auto;
-}
-
-/* 產區按鈕容器 */
-.region-buttons-container {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 0;
-  right: 0;
-  pointer-events: none;
-  z-index: 10;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-}
-
 /* 產區按鈕面板 */
 .region-buttons-panel {
   display: flex;
@@ -1044,6 +1005,20 @@ watch(() => props.slide, () => {
   transform: scaleY(1);
 }
 
+/* 產區按鈕容器 */
+.region-buttons-container {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
 /* 左側圖層按鈕 */
 .layer-buttons.left {
   position: absolute;
@@ -1091,53 +1066,6 @@ watch(() => props.slide, () => {
   transform: translateX(4px);
 }
 
-.region-btn {
-  padding: 0.5rem 0.8rem;
-  background: white;
-  border: 2px solid #e2e8f0;
-  border-radius: 8px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #4a5568;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  width: 100%;
-  white-space: nowrap;
-}
-
-.region-name-zh {
-  font-size: 0.9rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.region-name-fr {
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: #718096;
-  font-style: italic;
-  line-height: 1.2;
-}
-
-.region-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.2);
-  border-color: #667eea;
-  color: #667eea;
-}
-
-.region-btn.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-color: transparent;
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-}
-
 /* 城市標記樣式 */
 .city-marker {
   cursor: pointer;
@@ -1169,45 +1097,166 @@ watch(() => props.slide, () => {
 }
 
 /* 響應式設計 */
+@media (max-width: 1024px) {
+  .region-buttons-panel {
+    max-width: 200px;
+    padding: 1rem;
+  }
+
+  .slide-header {
+    padding: 1.2rem 2rem;
+  }
+
+  .slide-title {
+    font-size: 1.7rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .region-buttons-container {
+    top: auto;
+    bottom: 1rem;
+    transform: none;
+    padding: 0 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .region-buttons-panel {
+    max-width: none;
+    width: 100%;
+    padding: 0.8rem;
+    gap: 0.5rem;
+    max-height: 180px;
+  }
+
+  .region-buttons-panel.left,
+  .region-buttons-panel.right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .region-btn {
+    flex: 0 1 calc(50% - 0.4rem);
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .region-name-zh {
+    font-size: 0.8rem;
+  }
+
+  .region-name-fr {
+    font-size: 0.65rem;
+  }
+
   .slide-header {
     padding: 1rem 1.5rem;
   }
 
   .slide-title {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
-  .region-buttons-overlay {
+  .layer-buttons.left {
+    left: 0.75rem;
     bottom: 1rem;
-    left: 1rem;
-    right: 1rem;
+    top: auto;
     transform: none;
+    padding: 0.75rem;
+    gap: 0.5rem;
   }
 
-  .region-buttons {
-    padding: 1rem;
-    gap: 0.6rem;
-  }
-
-  .region-btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.9rem;
-    min-width: 100px;
+  .layer-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    min-width: auto;
+    flex: 1;
   }
 }
 
 @media (max-width: 480px) {
-  .content-section {
-    padding: 1.5rem 1rem;
+  .slide-header {
+    padding: 0.8rem 1rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.9) 100%);
   }
 
   .slide-title {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
+    margin: 0;
   }
 
-  .slide-content {
-    font-size: 0.95rem;
+  .region-buttons-container {
+    bottom: 0.5rem;
+    padding: 0 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .region-buttons-panel {
+    max-height: 140px;
+    padding: 0.6rem;
+    gap: 0.4rem;
+    border-radius: 12px;
+  }
+
+  .region-buttons-panel.left,
+  .region-buttons-panel.right {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .region-btn {
+    flex: 0 1 calc(50% - 0.3rem);
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .region-name-zh {
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  .region-name-fr {
+    font-size: 0.6rem;
+    display: none;
+  }
+
+  .region-btn:hover {
+    transform: translateX(2px);
+  }
+
+  .region-btn.active {
+    transform: translateX(3px);
+  }
+
+  .layer-buttons.left {
+    left: 0.5rem;
+    bottom: 0.5rem;
+    padding: 0.6rem;
+    gap: 0.4rem;
+  }
+
+  .layer-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.75rem;
+    min-width: auto;
+    width: auto;
+    min-height: 36px;
+  }
+
+  .marker-pin {
+    width: 10px;
+    height: 10px;
+  }
+
+  .marker-label {
+    font-size: 11px;
+    padding: 2px 6px;
   }
 }
 </style>

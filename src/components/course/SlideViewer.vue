@@ -1,20 +1,11 @@
 <template>
   <div class="slide-viewer">
-    <!-- 頂部導航欄 -->
+    <!-- 頂部導航欄 - 手機易用設計 -->
     <div class="top-navigation">
-      <!-- 左側：返回按鈕 -->
-      <button class="nav-control-btn back-btn" @click="$emit('close')">
-        ← 返回課程列表
-      </button>
-
-      <!-- 中間：上一張/下一張按鈕和頁碼 -->
-      <div class="center-controls">
-        <button 
-          class="nav-control-btn prev-btn" 
-          @click="prevSlide"
-          :disabled="currentSlide === 0"
-        >
-          ◀ 上一張
+      <!-- Row 1：返回按鈕 + 頁碼 -->
+      <div class="nav-row-1">
+        <button class="nav-control-btn back-btn" @click="$emit('close')">
+          ← 返回
         </button>
         
         <div class="slide-counter">
@@ -22,25 +13,41 @@
           <span class="separator">/</span>
           <span class="total-number">{{ slides.length }}</span>
         </div>
+      </div>
+
+      <!-- Row 2：上一張/下一張導航按鈕 -->
+      <div class="nav-row-2">
+        <button 
+          class="nav-control-btn nav-control-prev" 
+          @click="prevSlide"
+          :disabled="currentSlide === 0"
+          title="上一張 (← 鍵盤)"
+        >
+          ◀
+        </button>
+        
+        <div class="nav-progress-info">
+          頁面 {{ currentSlide + 1 }} / {{ slides.length }}
+        </div>
         
         <button 
-          class="nav-control-btn next-btn" 
+          class="nav-control-btn nav-control-next" 
           @click="nextSlide"
           :disabled="currentSlide === slides.length - 1"
+          title="下一張 (→ 鍵盤)"
         >
-          下一張 ▶
+          ▶
         </button>
       </div>
 
-      <!-- 右側：完成課程按鈕（僅最後一張顯示） -->
+      <!-- Row 3：完成課程按鈕（全寬，僅最後一張顯示） -->
       <button 
         v-if="currentSlide === slides.length - 1"
-        class="nav-control-btn complete-btn" 
+        class="nav-control-btn complete-btn full-width" 
         @click="completeLesson"
       >
         ✓ 完成課程
       </button>
-      <div v-else class="placeholder"></div>
     </div>
 
     <!-- 簡報主區域 -->
@@ -946,30 +953,64 @@ onUnmounted(() => {
 /* 頂部導航欄 */
 .top-navigation {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  padding: 16px 32px;
+  padding: 12px 16px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
+  flex-direction: column;
+  gap: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
   z-index: 100;
 }
 
-.center-controls {
+/* Row 1：返回按鈕 + 頁碼 */
+.nav-row-1 {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
+  justify-content: space-between;
 }
 
-.placeholder {
-  width: 120px;
+/* Row 2：導航按鈕 */
+.nav-row-2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+.nav-progress-info {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 500;
+  min-width: 140px;
+  text-align: center;
+}
+
+.nav-control-prev,
+.nav-control-next {
+  flex: 0 0 44px;
+  height: 44px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+}
+
+.complete-btn.full-width {
+  width: 100%;
+  background: rgba(76, 175, 80, 0.9);
+}
+
+.complete-btn.full-width:hover {
+  background: rgba(76, 175, 80, 1);
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
 }
 
 .nav-control-btn {
-  padding: 10px 20px;
+  padding: 8px 16px;
   border: none;
   border-radius: 8px;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -977,6 +1018,10 @@ onUnmounted(() => {
   background: rgba(255, 255, 255, 0.2);
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.3);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-control-btn:hover:not(:disabled) {
@@ -1143,52 +1188,121 @@ onUnmounted(() => {
   }
 
   .top-navigation {
-    padding: 12px 20px;
-  }
-
-  .center-controls {
-    gap: 16px;
+    padding: 12px 16px;
   }
 
   .nav-control-btn {
-    padding: 8px 16px;
+    padding: 8px 14px;
     font-size: 0.85rem;
   }
 }
 
 @media (max-width: 768px) {
   .slide-container {
-    padding: 20px 15px;
+    padding: 16px 12px;
   }
 
   .slide {
     max-height: none;
     height: auto;
+    max-width: 100%;
+    border-radius: 16px;
   }
 
   .top-navigation {
-    flex-direction: column;
-    padding: 10px 15px;
-    gap: 12px;
+    padding: 10px 12px;
+    gap: 8px;
   }
 
-  .center-controls {
-    order: 1;
-    width: 100%;
-    justify-content: center;
+  .nav-row-1,
+  .nav-row-2 {
+    gap: 10px;
   }
 
   .slide-counter {
+    font-size: 0.9rem;
+  }
+
+  .nav-control-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    min-height: 40px;
+  }
+
+  .nav-progress-info {
+    font-size: 0.85rem;
+    min-width: 120px;
+  }
+
+  .nav-control-prev,
+  .nav-control-next {
+    flex: 0 0 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-container {
+    padding: 12px 8px;
+  }
+
+  .slide {
+    border-radius: 12px;
+    max-height: 70vh;
+  }
+
+  .top-navigation {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .nav-row-1 {
+    gap: 8px;
+  }
+
+  .nav-row-2 {
+    gap: 8px;
+  }
+
+  .back-btn {
+    padding: 6px 10px;
+    font-size: 0.75rem;
+    flex: 0 0 auto;
+  }
+
+  .slide-counter {
+    font-size: 0.8rem;
+    gap: 4px;
+  }
+
+  .current-number {
     font-size: 0.95rem;
   }
 
   .nav-control-btn {
-    padding: 8px 16px;
-    font-size: 0.85rem;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    min-height: 36px;
+    border-radius: 6px;
   }
 
-  .placeholder {
-    display: none;
+  .nav-control-prev,
+  .nav-control-next {
+    flex: 1;
+    height: 36px;
+    font-size: 0.9rem;
+  }
+
+  .nav-progress-info {
+    font-size: 0.75rem;
+    min-width: 100px;
+    padding: 0 4px;
+  }
+
+  .complete-btn.full-width {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    margin-top: 2px;
   }
 }
 </style>

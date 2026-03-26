@@ -182,26 +182,26 @@
         </div>
       </transition>
 
-      <!-- 手機版底部 4宮格 按鈕 -->
-      <div class="mobile-grid-buttons" v-if="isMobileView" :class="{ 'merged-with-info': activeAOC.aoc }">
-        <button class="m-grid-btn" @click="$emit('request-aoc-list')">
-          <span class="m-grid-icon">產</span>
-          <span class="m-grid-text">產區</span>
-        </button>
-        <button class="m-grid-btn" :class="{ active: showLayerPanel }" @click="showLayerPanel = !showLayerPanel">
-          <span class="m-grid-icon">層</span>
-          <span class="m-grid-text">圖層</span>
-        </button>
-        <button class="m-grid-btn" :class="{ active: is3D }" @click="toggle3D">
-          <span class="m-grid-icon">3D</span>
-          <span class="m-grid-text">3D</span>
-        </button>
-        <button class="m-grid-btn" :class="{ active: !isInfoCollapsed }" @click="toggleInfoBar">
-          <span class="m-grid-icon">資</span>
-          <span class="m-grid-text">資訊</span>
-        </button>
-      </div>
+    </div>
 
+    <!-- 手機版底部 4宮格 按鈕 -->
+    <div class="mobile-grid-buttons" v-if="isMobileView" :class="{ 'merged-with-info': activeAOC.aoc }">
+      <button class="m-grid-btn" @click="$emit('request-aoc-list')">
+        <span class="m-grid-icon">產</span>
+        <span class="m-grid-text">產區</span>
+      </button>
+      <button class="m-grid-btn" :class="{ active: showLayerPanel }" @click="showLayerPanel = !showLayerPanel">
+        <span class="m-grid-icon">層</span>
+        <span class="m-grid-text">圖層</span>
+      </button>
+      <button class="m-grid-btn" :class="{ active: is3D }" @click="toggle3D">
+        <span class="m-grid-icon">3D</span>
+        <span class="m-grid-text">3D</span>
+      </button>
+      <button class="m-grid-btn" :class="{ active: !isInfoCollapsed }" @click="toggleInfoBar">
+        <span class="m-grid-icon">資</span>
+        <span class="m-grid-text">資訊</span>
+      </button>
     </div>
     
     <!-- 圖層選擇面板 (在手機版由 圖層 按鈕呼叫) -->

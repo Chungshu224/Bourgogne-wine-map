@@ -31,12 +31,14 @@
             </svg>
           </button>
 
+          <!-- 重置地圖按鈕 (手機版也顯示) -->
+          <button class="btn-reset" @click="resetMap" title="重置地圖">⟲</button>
+          
           <!-- 桌面版的其餘按鈕保留但不顯示於手機 -->
           <div class="desktop-only-buttons">
             <button v-if="showDomaineButton" class="btn-show-domaines" @click="toggleDomainesMode">
               {{ domainesMode ? '回上一層' : '顯示酒莊' }}
             </button>
-            <button class="btn-reset" @click="resetMap">重置地圖</button>
           </div>
         </div>
       </div>
@@ -87,22 +89,6 @@
         </div>
       </div>
       <div v-else-if="regionInfo" ref="regionInfoContent" class="region-info-content">
-        <!-- 發音按鈕 -->
-        <div v-if="audioPath" class="pronunciation-section">
-          <button class="btn-pronunciation" @click="playPronunciation" :disabled="isPlayingAudio">
-            <svg v-if="!isPlayingAudio" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-            </svg>
-            <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-            </svg>
-            <span>{{ isPlayingAudio ? '播放中...' : '聽發音' }}</span>
-          </button>
-        </div>
-        
         <div style="flex: 1; min-width: 0;">
           <div class="info-header">
             <div>
@@ -217,6 +203,22 @@
         <button v-if="geologyIndex && currentGeologyProvinceCodes.length > 0" class="layer-toggle-btn" :class="{ active: geologyVisible }" @click="geologyVisible = !geologyVisible">
           {{ geologyVisible ? '隱藏地質圖層' : '顯示地質圖層' }}
         </button>
+        
+        <!-- 地質材料選項 -->
+        <div v-if="geologyVisible && geologyIndex && geologyIndex.materials" class="mobile-geology-materials">
+          <div class="mobile-geology-materials-title">土壤材質</div>
+          <div v-for="material in geologyIndex.materials" :key="material.id" class="mobile-geology-item">
+            <button
+              type="button"
+              class="mobile-geology-toggle"
+              :class="{ active: geologyActiveMaterials.includes(material.id) }"
+              @click="toggleGeologyMaterial(material.id)"
+            >
+              <span class="material-dot" :style="{ backgroundColor: material.fillColor }"></span>
+              <span>{{ material.name }}</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
     <div ref="mapContainer" class="map"></div>
@@ -2408,6 +2410,68 @@ onUnmounted(() => {
     background: #800020;
     color: white;
     border-color: #800020;
+  }
+
+
+  .mobile-geology-materials {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #e0e0e0;
+  }
+  .mobile-geology-materials-title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  .mobile-geology-item {
+    margin-bottom: 6px;
+  }
+  .mobile-geology-toggle {
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+  }
+  .mobile-geology-toggle.active {
+    background: #e8f5e9;
+    border-color: #4CAF50;
+    color: #2e7d32;
+  }
+  .mobile-geology-toggle .material-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .btn-reset {
+    padding: 6px 10px;
+    background: rgba(244, 67, 54, 0.9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-reset:hover {
+    background: rgba(229, 57, 53, 0.95);
+    transform: scale(1.05);
   }
 
 }

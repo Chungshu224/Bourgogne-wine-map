@@ -217,6 +217,17 @@
               <span class="material-dot" :style="{ backgroundColor: material.fillColor }"></span>
               <span>{{ material.name }}</span>
             </button>
+            <div class="mobile-geology-slider">
+              <input
+                type="range"
+                min="0.1"
+                max="0.85"
+                step="0.05"
+                v-model.number="geologyMaterialOpacity[material.id]"
+                :disabled="!geologyActiveMaterials.includes(material.id)"
+              />
+              <span class="slider-value">{{ Math.round((geologyMaterialOpacity[material.id] || 0) * 100) }}%</span>
+            </div>
           </div>
         </div>
       </div>
@@ -2425,7 +2436,11 @@ onUnmounted(() => {
     margin-bottom: 8px;
   }
   .mobile-geology-item {
-    margin-bottom: 6px;
+    margin-bottom: 12px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
   }
   .mobile-geology-toggle {
     width: 100%;
@@ -2440,6 +2455,7 @@ onUnmounted(() => {
     align-items: center;
     gap: 8px;
     transition: all 0.2s;
+    margin-bottom: 8px;
   }
   .mobile-geology-toggle.active {
     background: #e8f5e9;
@@ -2451,6 +2467,50 @@ onUnmounted(() => {
     height: 14px;
     border-radius: 50%;
     flex-shrink: 0;
+  }
+  .mobile-geology-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 4px;
+  }
+  .mobile-geology-slider input[type='range'] {
+    flex: 1;
+    height: 6px;
+    border-radius: 3px;
+    background: linear-gradient(to right, #90caf9 0%, #1976d2 100%);
+    outline: none;
+    -webkit-appearance: none;
+  }
+  .mobile-geology-slider input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1976d2;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .mobile-geology-slider input[type='range']::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #1976d2;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .mobile-geology-slider input[type='range']:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+  .mobile-geology-slider .slider-value {
+    min-width: 45px;
+    text-align: right;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
   }
 
   .btn-reset {

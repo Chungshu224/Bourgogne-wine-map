@@ -2298,7 +2298,7 @@ onUnmounted(() => {
     z-index: 1000;
   }
   .map-header h1 {
-    font-size: 1.25rem;
+    font-size: 1.16rem;
     color: #5b1d1d;
     text-shadow: 0 1px 4px rgba(255,255,255, 0.9), 0 0 10px rgba(255,255,255, 0.9), 0 0 15px rgba(255,255,255, 0.9);
     pointer-events: auto;
@@ -2308,8 +2308,8 @@ onUnmounted(() => {
     position: fixed !important;
     top: 45%;
     left: 10px;
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     padding: 0;
     background: #4CAF50; /* Green */
@@ -2338,7 +2338,7 @@ onUnmounted(() => {
   .info-header-bar {
     background: white;
     color: #333;
-    padding: 10px 12px;
+    padding: 9px 10px;
     border-bottom: none;
     border-radius: 20px 20px 0 0;
   }
@@ -2351,7 +2351,7 @@ onUnmounted(() => {
   }
 
   .aoc-name {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -2362,40 +2362,40 @@ onUnmounted(() => {
   }
 
   .map-buttons-right {
-    gap: 8px;
-  }
-
-  .map-action-buttons {
     gap: 6px;
   }
 
+  .map-action-buttons {
+    gap: 5px;
+  }
+
   .map-action-btn {
-    width: 38px;
-    height: 38px;
-    border-radius: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 11px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.14);
   }
 
   .btn-collapse {
     background: #111 !important;
     color: white !important;
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
   }
 
   .btn-audio-compact {
     background: #764ba2 !important;
     color: white !important;
-    width: 38px;
-    height: 38px;
-    min-height: 38px;
+    width: 36px;
+    height: 36px;
+    min-height: 36px;
   }
 
   .map-info-bar {
     position: fixed !important;
     bottom: 96px !important;
-    left: 15px !important;
-    right: 15px !important;
+    left: 12px !important;
+    right: 12px !important;
     width: auto !important;
     max-width: none !important;
     margin: 0;
@@ -2410,17 +2410,17 @@ onUnmounted(() => {
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    bottom: 15px;
-    left: 15px;
-    right: 15px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
     background: white;
-    padding: 12px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     z-index: 1000;
   }
   .mobile-grid-buttons.merged-with-info {
-    bottom: 15px;
+    bottom: 12px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
@@ -2433,13 +2433,13 @@ onUnmounted(() => {
     align-items: center;
     justify-content: center;
     background: #FAEFEC;
-    border-radius: 14px;
+    border-radius: 12px;
     border: none;
-    padding: 10px 0;
+    padding: 8px 0;
     gap: 4px;
     color: #6D4C41;
     flex: 1;
-    margin: 0 4px;
+    margin: 0 3px;
     transition: all 0.2s;
   }
   .m-grid-btn.active {
@@ -2448,7 +2448,7 @@ onUnmounted(() => {
     box-shadow: inset 0 0 0 1px #8B0000;
   }
   .m-grid-icon {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -2460,20 +2460,20 @@ onUnmounted(() => {
     color: #8B0000;
   }
   .m-grid-text {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     font-weight: bold;
   }
 
   .mobile-layer-panel {
     position: fixed;
-    bottom: 150px;
-    left: 15px;
+    bottom: 142px;
+    left: 12px;
     background: white;
-    padding: 16px;
-    border-radius: 16px;
+    padding: 14px;
+    border-radius: 14px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.2);
     z-index: 1000;
-    width: 200px;
+    width: 184px;
   }
 
   .layer-panel-header {
@@ -2484,18 +2484,19 @@ onUnmounted(() => {
   }
   .layer-panel-header h4 {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.92rem;
     color: #333;
   }
   .layer-toggle-btn {
     width: 100%;
-    padding: 10px;
+    padding: 9px;
     margin-bottom: 8px;
     border-radius: 6px;
     border: 1px solid #ddd;
     background: #f8f8f8;
     color: #333;
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 0.9rem;
     cursor: pointer;
   }
   .layer-toggle-btn.active {
@@ -2507,10 +2508,10 @@ onUnmounted(() => {
   .btn-reset {
     background: rgba(244, 67, 54, 0.9);
     color: white;
-    height: 36px;
-    width: 36px;
-    min-width: 36px;
-    border-radius: 10px;
+    height: 34px;
+    width: 34px;
+    min-width: 34px;
+    border-radius: 9px;
   }
   .btn-reset:hover {
     background: rgba(229, 57, 53, 0.95);

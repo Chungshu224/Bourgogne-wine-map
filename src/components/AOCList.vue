@@ -325,13 +325,54 @@ watch(() => props.indexPath, async () => {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) and (pointer: coarse) {
   .aoc-list {
     width: 100%;
     height: auto;
     flex: 0 0 auto;
     border-right: none;
     border-bottom: 1px solid #ddd;
+  }
+
+  .list-header {
+    padding: 16px 16px 14px;
+  }
+
+  .list-title {
+    font-size: 1.28rem;
+  }
+
+  .search-container {
+    padding: 12px 16px;
+  }
+
+  .search-icon {
+    left: 26px;
+    font-size: 0.92rem;
+  }
+
+  .aoc-search {
+    font-size: 0.9rem;
+    padding: 9px 10px 9px 31px;
+  }
+
+  .group-header {
+    padding: 9px 16px;
+  }
+
+  .group-name {
+    font-size: 0.9rem;
+  }
+
+  .aoc-item {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+
+  .aoc-dot {
+    width: 9px;
+    height: 9px;
+    margin-right: 8px;
   }
 }
 </style>

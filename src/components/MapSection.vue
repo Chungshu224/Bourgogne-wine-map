@@ -2412,8 +2412,8 @@ onUnmounted(() => {
     align-items: center;
     position: fixed;
     bottom: 12px;
-    left: 10px;
-    right: 10px;
+    left: 5px;
+    right: 5px;
     background: white;
     padding: 9px 8px;
     border-radius: 16px;

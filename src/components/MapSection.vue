@@ -11,28 +11,37 @@
         </div>
         
         <div class="map-buttons-right">
-          <!-- 上箭頭收合按鈕 (深色背景) -->
-          <button class="btn-collapse" @click="toggleInfoBar" :title="isInfoCollapsed ? '展開資訊' : '收合資訊'">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" :style="{ transform: isInfoCollapsed ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.3s' }">
-              <polyline points="18 15 12 9 6 15"></polyline>
-            </svg>
-          </button>
-          
-          <!-- 音訊發音按鈕 (紫色背景) -->
-          <button v-if="audioPath" class="btn-audio-compact" @click="playPronunciation" :disabled="isPlayingAudio" title="聽發音">
-            <svg v-if="!isPlayingAudio" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-            </svg>
-            <svg v-else xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-            </svg>
-          </button>
+          <div class="map-action-buttons">
+            <button class="map-action-btn btn-collapse" @click="toggleInfoBar" :title="isInfoCollapsed ? '展開資訊' : '收合資訊'" :aria-label="isInfoCollapsed ? '展開資訊' : '收合資訊'">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" :style="{ transform: isInfoCollapsed ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.3s ease' }">
+                <polyline points="18 15 12 9 6 15"></polyline>
+              </svg>
+            </button>
 
-          <!-- 重置地圖按鈕 (手機版也顯示) -->
-          <button class="btn-reset" @click="resetMap" title="重置地圖">⟲</button>
+            <button class="map-action-btn btn-audio-compact" @click="playPronunciation" :disabled="!audioPath || isPlayingAudio" :title="audioPath ? '聽發音' : '無發音檔'" :aria-label="audioPath ? '聽發音' : '無發音檔'">
+              <svg v-if="!audioPath" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <line x1="23" y1="9" x2="17" y2="15"></line>
+                <line x1="17" y1="9" x2="23" y2="15"></line>
+              </svg>
+              <svg v-else-if="!isPlayingAudio" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+              </svg>
+              <svg v-else xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+            </button>
+
+            <button class="map-action-btn btn-reset" @click="resetMap" title="重置地圖" aria-label="重置地圖">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 2v6h6"></path>
+                <path d="M3.05 13A9 9 0 1 0 6 5.3L3 8"></path>
+              </svg>
+            </button>
+          </div>
           
           <!-- 桌面版的其餘按鈕保留但不顯示於手機 -->
           <div class="desktop-only-buttons">
@@ -1496,13 +1505,26 @@ onUnmounted(() => {
   font-weight: 700;
   color: white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  min-width: 0;
+  flex: 1;
+}
+
+.aoc-name {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.25;
+  max-height: calc(1.25em * 2);
 }
 
 .aoc-dot {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 8px;
   flex-shrink: 0;
   border: 2px solid white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -1513,56 +1535,65 @@ onUnmounted(() => {
   gap: 8px;
 }
 
-.btn-collapse {
-  padding: 8px;
-  background: rgba(255, 255, 255, 0.15);
+.map-buttons-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.map-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.map-action-btn {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 6px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.2s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease, background 0.2s ease;
 }
 
-.btn-collapse:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: scale(1.05);
+.map-action-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.22);
 }
 
-.btn-collapse:active {
-  transform: scale(0.95);
+.map-action-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.map-action-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.map-action-btn:disabled:hover {
+  transform: none;
+}
+
+.btn-collapse {
+  background: linear-gradient(145deg, #222, #0f0f0f);
+}
+
+.btn-audio-compact {
+  background: linear-gradient(145deg, #8a63cf, #6b46c1);
 }
 
 .btn-reset {
-  padding: 8px 14px;
-  background: linear-gradient(145deg, #f44336, #e53935);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 0.85rem;
-  font-weight: 600;
-  box-shadow: 
-    0 2px 6px rgba(244, 67, 54, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  transition: all 0.2s ease;
-}
-
-.btn-reset:hover {
-  background: linear-gradient(145deg, #e53935, #c62828);
-  transform: translateY(-1px);
-  box-shadow: 
-    0 4px 10px rgba(244, 67, 54, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.btn-reset:active {
-  transform: translateY(0);
-  box-shadow: 
-    0 1px 3px rgba(244, 67, 54, 0.3),
-    inset 0 1px 2px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #f25f57, #dd3f37);
 }
 
 .region-info-content {
@@ -2233,7 +2264,7 @@ onUnmounted(() => {
   .info-header-bar {
     background: white;
     color: #333;
-    padding: 12px 16px;
+    padding: 10px 12px;
     border-bottom: none;
     border-radius: 20px 20px 0 0;
   }
@@ -2241,42 +2272,54 @@ onUnmounted(() => {
   .aoc-info-title {
     color: #333;
     font-weight: 600;
+    min-width: 0;
+    margin-right: 8px;
+  }
+
+  .aoc-name {
+    font-size: 0.98rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.2;
+    max-height: calc(1.2em * 2);
   }
 
   .map-buttons-right {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    gap: 8px;
+  }
+
+  .map-action-buttons {
+    gap: 6px;
+  }
+
+  .map-action-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.14);
   }
 
   .btn-collapse {
     background: #111 !important;
     color: white !important;
-    border: none !important;
-    border-radius: 10px !important;
     width: 38px;
     height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .btn-audio-compact {
     background: #764ba2 !important;
     color: white !important;
-    border: none !important;
-    border-radius: 50% !important;
     width: 38px;
     height: 38px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 38px;
   }
 
   .map-info-bar {
     position: fixed !important;
-    bottom: 85px !important;
+    bottom: 96px !important;
     left: 15px !important;
     right: 15px !important;
     width: auto !important;
@@ -2285,6 +2328,7 @@ onUnmounted(() => {
     border-radius: 20px 20px 0 0 !important;
     box-shadow: 0 -4px 15px rgba(0,0,0,0.1) !important;
     border-bottom: 1px solid #f0f0f0;
+    z-index: 1001;
   }
 
   .mobile-grid-buttons {
@@ -2394,20 +2438,12 @@ onUnmounted(() => {
   }
 
   .btn-reset {
-    padding: 6px 10px;
     background: rgba(244, 67, 54, 0.9);
     color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: all 0.2s ease;
-    min-width: 36px;
     height: 36px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 36px;
+    min-width: 36px;
+    border-radius: 10px;
   }
   .btn-reset:hover {
     background: rgba(229, 57, 53, 0.95);
@@ -2416,9 +2452,89 @@ onUnmounted(() => {
 
 }
 
+@media (min-width: 769px) and (max-width: 1366px) {
+  /* 隱藏桌機版操作按鈕 */
+  .btn-3d,
+  .btn-contours,
+  .geology-panel,
+  .desktop-only-buttons {
+    display: none !important;
+  }
+
+  .map-info-bar {
+    left: 16px;
+    right: 16px;
+    bottom: 24px;
+    width: auto;
+    max-width: none;
+  }
+
+  .info-header-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+  }
+
+  .aoc-info-title {
+    display: flex;
+    align-items: flex-start;
+    min-width: 0;
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .aoc-name {
+    font-size: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    line-height: 1.25;
+    max-height: calc(1.25em * 2);
+  }
+
+  .map-buttons-right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+  }
+
+  .map-action-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 8px;
+  }
+
+  .map-action-btn {
+    width: 38px;
+    height: 38px;
+  }
+}
+
 /* 收合狀態樣式 */
 .map-info-bar.collapsed {
-  max-height: 56px;
+  max-height: 78px;
+}
+
+.map-info-bar.collapsed .info-header-bar {
+  border-bottom: none;
+}
+
+.map-info-bar.collapsed .aoc-info-title {
+  padding-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .map-info-bar.collapsed {
+    bottom: 104px !important;
+    z-index: 1002;
+  }
 }
 
 /* 資訊內容包裹器 */

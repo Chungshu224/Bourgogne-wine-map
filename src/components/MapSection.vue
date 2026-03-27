@@ -2406,8 +2406,8 @@ onUnmounted(() => {
   }
 
   .mobile-grid-buttons {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 6px;
     align-items: center;
     position: fixed;
@@ -2433,7 +2433,6 @@ onUnmounted(() => {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 1;
     background: #FAEFEC;
     border-radius: 12px;
     border: none;

@@ -2453,10 +2453,7 @@ onUnmounted(() => {
 }
 
 @media (min-width: 769px) and (max-width: 1366px) {
-  /* 隱藏桌機版操作按鈕 */
-  .btn-3d,
-  .btn-contours,
-  .geology-panel,
+  /* 平板僅隱藏次要桌機按鈕，其餘地圖控制保留顯示 */
   .desktop-only-buttons {
     display: none !important;
   }

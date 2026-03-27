@@ -318,11 +318,19 @@ const props = defineProps({
 
 const emit = defineEmits(['resetMap', 'clear-region-info', 'reselect-aoc', 'request-aoc-list', 'request-learning-mode'])
 
-const isMobileView = ref(window.innerWidth <= 768)
+const TOUCH_LAYOUT_MAX_WIDTH = 1366
+const isTouchDevice = () => {
+  return typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches
+}
+const useTouchCompactLayout = () => {
+  return typeof window !== 'undefined' && window.innerWidth <= TOUCH_LAYOUT_MAX_WIDTH && isTouchDevice()
+}
+
+const isMobileView = ref(useTouchCompactLayout())
 const showLayerPanel = ref(false)
 
 const checkMobile = () => {
-  isMobileView.value = window.innerWidth <= 768
+  isMobileView.value = useTouchCompactLayout()
 }
 
 // 根據區域 ID 獲取基礎路徑
@@ -2280,7 +2288,7 @@ onUnmounted(() => {
   flex-shrink: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) and (pointer: coarse) {
   .map-header {
     position: fixed;
     background: none;
@@ -2511,7 +2519,7 @@ onUnmounted(() => {
 
 }
 
-@media (min-width: 769px) and (max-width: 1366px) {
+@media (min-width: 769px) and (max-width: 1366px) and (pointer: fine) {
   /* 平板僅隱藏次要桌機按鈕，其餘地圖控制保留顯示 */
   .desktop-only-buttons {
     display: none !important;
@@ -2586,7 +2594,7 @@ onUnmounted(() => {
   padding-right: 4px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) and (pointer: coarse) {
   .map-info-bar.collapsed {
     bottom: 104px !important;
     z-index: 1002;

@@ -18,11 +18,19 @@ const activeAOC = ref({ group: '', aoc: '' })
 const regionInfo = ref(null)
 const dataCache = new Map()
 
-const isMobileView = ref(window.innerWidth <= 768)
+const TOUCH_LAYOUT_MAX_WIDTH = 1366
+const isTouchDevice = () => {
+  return typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches
+}
+const useTouchCompactLayout = () => {
+  return typeof window !== 'undefined' && window.innerWidth <= TOUCH_LAYOUT_MAX_WIDTH && isTouchDevice()
+}
+
+const isMobileView = ref(useTouchCompactLayout())
 const showMobileAOCList = ref(false)
 
 const checkMobile = () => {
-  isMobileView.value = window.innerWidth <= 768
+  isMobileView.value = useTouchCompactLayout()
   if (!isMobileView.value) {
     showMobileAOCList.value = false;
   }
@@ -314,7 +322,7 @@ watch(() => props.regionConfig?.id, () => {
   right: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1366px) and (pointer: coarse) {
   .main-layout {
     flex-direction: column;
     height: 100dvh;

@@ -259,6 +259,11 @@ const resetMap = () => {
   regionInfo.value = null;
 }
 
+const setMobileAOCList = (visible) => {
+  // Default to open if event payload is missing.
+  showMobileAOCList.value = typeof visible === 'boolean' ? visible : true
+}
+
 const clearRegionInfo = () => {
   regionInfo.value = null;
 }
@@ -283,23 +288,16 @@ watch(() => props.regionConfig?.id, () => {
       :class="{ 'mobile-overlay': isMobileView && showMobileAOCList }"
     />
     
-    <button 
-      v-if="isMobileView && showMobileAOCList" 
-      class="close-aoc-list-btn"
-      @click="showMobileAOCList = false"
-    >
-      ✕
-    </button>
-    
     <MapSection
       :activeAOC="activeAOC"
       :regionInfo="regionInfo"
       :regionConfig="regionConfig"
       :styleColors="styleColors"
+      :mobileAOCListOpen="showMobileAOCList"
       @resetMap="resetMap"
       @clear-region-info="clearRegionInfo"
       @reselect-aoc="reselectAOC"
-      @request-aoc-list="showMobileAOCList = true"
+      @request-aoc-list="setMobileAOCList"
       @request-learning-mode="emit('request-learning-mode')"
     />
   </div>
@@ -334,25 +332,6 @@ watch(() => props.regionConfig?.id, () => {
     width: 100%;
     z-index: 1000;
     background: white;
-  }
-
-  .close-aoc-list-btn {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    z-index: 1001;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   }
 }
 </style>

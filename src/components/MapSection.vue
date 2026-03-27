@@ -181,19 +181,19 @@
 
     <!-- 手機版底部 4宮格 按鈕 -->
     <div class="mobile-grid-buttons" v-if="isMobileView" :class="{ 'merged-with-info': activeAOC.aoc }">
-      <button class="m-grid-btn" @click="$emit('request-aoc-list')">
+      <button class="m-grid-btn" :class="{ active: mobileAOCListOpen }" @click="handleMobileAction('aoc')">
         <span class="m-grid-icon">產</span>
         <span class="m-grid-text">產區</span>
       </button>
-      <button class="m-grid-btn" :class="{ active: showLayerPanel }" @click="showLayerPanel = !showLayerPanel">
+      <button class="m-grid-btn" :class="{ active: showLayerPanel }" @click="handleMobileAction('layer')">
         <span class="m-grid-icon">層</span>
         <span class="m-grid-text">圖層</span>
       </button>
-      <button class="m-grid-btn" :class="{ active: is3D }" @click="toggle3D">
+      <button class="m-grid-btn" :class="{ active: is3D }" @click="handleMobileAction('3d')">
         <span class="m-grid-icon">3D</span>
         <span class="m-grid-text">3D</span>
       </button>
-      <button class="m-grid-btn" :class="{ active: !isInfoCollapsed }" @click="toggleInfoBar">
+      <button class="m-grid-btn" :class="{ active: activeAOC.aoc && !isInfoCollapsed }" @click="handleMobileAction('info')">
         <span class="m-grid-icon">資</span>
         <span class="m-grid-text">資訊</span>
       </button>
@@ -203,7 +203,6 @@
     <div v-if="isMobileView && showLayerPanel" class="mobile-layer-panel">
       <div class="layer-panel-header">
         <h4>圖層設定</h4>
-        <button class="close-layer-btn" @click="showLayerPanel = false">✕</button>
       </div>
       <div class="layer-panel-content">
         <button class="layer-toggle-btn" :class="{ active: showContours }" @click="toggleContours">
@@ -302,6 +301,10 @@ const props = defineProps({
   activeAOC: Object,
   regionInfo: Object,
   styleColors: Object,
+  mobileAOCListOpen: {
+    type: Boolean,
+    default: false
+  },
   regionConfig: {
     type: Object,
     default: () => ({
@@ -1028,6 +1031,69 @@ const toggleContours = () => {
 
 const toggleInfoBar = () => {
   isInfoCollapsed.value = !isInfoCollapsed.value
+}
+
+const setMobileAOCListOpen = (visible) => {
+  emit('request-aoc-list', visible)
+}
+
+const collapseOtherMobileActions = (exceptAction) => {
+  if (exceptAction !== 'aoc' && props.mobileAOCListOpen) {
+    setMobileAOCListOpen(false)
+  }
+  if (exceptAction !== 'layer' && showLayerPanel.value) {
+    showLayerPanel.value = false
+  }
+  if (exceptAction !== '3d' && is3D.value) {
+    toggle3D()
+  }
+  if (exceptAction !== 'info' && !isInfoCollapsed.value) {
+    toggleInfoBar()
+  }
+}
+
+const handleMobileAction = (action) => {
+  if (!isMobileView.value) return
+
+  if (action === 'aoc') {
+    if (props.mobileAOCListOpen) {
+      setMobileAOCListOpen(false)
+      return
+    }
+    collapseOtherMobileActions('aoc')
+    setMobileAOCListOpen(true)
+    return
+  }
+
+  if (action === 'layer') {
+    if (showLayerPanel.value) {
+      showLayerPanel.value = false
+      return
+    }
+    collapseOtherMobileActions('layer')
+    showLayerPanel.value = true
+    return
+  }
+
+  if (action === '3d') {
+    if (is3D.value) {
+      toggle3D()
+      return
+    }
+    collapseOtherMobileActions('3d')
+    toggle3D()
+    return
+  }
+
+  if (action === 'info') {
+    if (!props.activeAOC?.aoc) return
+    if (!isInfoCollapsed.value) {
+      toggleInfoBar()
+      return
+    }
+    collapseOtherMobileActions('info')
+    toggleInfoBar()
+  }
 }
 
 const geologySourceId = (materialId) => `geology-src-${materialId}`
@@ -2404,7 +2470,7 @@ onUnmounted(() => {
 
   .layer-panel-header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 12px;
   }
@@ -2412,13 +2478,6 @@ onUnmounted(() => {
     margin: 0;
     font-size: 1rem;
     color: #333;
-  }
-  .close-layer-btn {
-    background: none;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    color: #999;
   }
   .layer-toggle-btn {
     width: 100%;

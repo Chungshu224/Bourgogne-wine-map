@@ -2,7 +2,6 @@
   <div class="aoc-list">
     <div class="list-header">
       <h2 class="list-title">{{ regionName }}</h2>
-      <div class="list-subtitle">產區清單</div>
     </div>
     
     <div class="search-container">
@@ -191,14 +190,6 @@ watch(() => props.indexPath, async () => {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.list-subtitle {
-  margin-top: 4px;
-  font-size: 0.85rem;
-  opacity: 0.9;
-  font-weight: 400;
-  letter-spacing: 1px;
 }
 
 .search-container {

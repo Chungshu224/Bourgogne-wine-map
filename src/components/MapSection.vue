@@ -2407,9 +2407,9 @@ onUnmounted(() => {
 
   .mobile-grid-buttons {
     display: flex;
+    justify-content: space-between;
     gap: 6px;
     align-items: center;
-    justify-content: center;
     position: fixed;
     bottom: 12px;
     left: 10px;
@@ -2425,7 +2425,7 @@ onUnmounted(() => {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     box-shadow: 0 8px 15px rgba(0,0,0,0.15);
-    padding-top: 4px;
+    padding-top: 4px; /* Move slightly closer to the top piece */
   }
 
   .m-grid-btn {
@@ -2433,16 +2433,14 @@ onUnmounted(() => {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 0 1 auto;
+    flex: 1;
     background: #FAEFEC;
     border-radius: 12px;
     border: none;
-    padding: 8px 6px;
+    padding: 8px 0;
     gap: 4px;
     color: #6D4C41;
-    margin: 0;
     transition: all 0.2s;
-    min-width: 40px;
   }
   .m-grid-btn.active {
     background: white;

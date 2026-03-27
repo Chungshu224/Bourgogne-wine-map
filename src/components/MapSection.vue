@@ -2406,15 +2406,16 @@ onUnmounted(() => {
   }
 
   .mobile-grid-buttons {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    column-gap: 6px;
     align-items: center;
     position: fixed;
     bottom: 12px;
-    left: 12px;
-    right: 12px;
+    left: 10px;
+    right: 10px;
     background: white;
-    padding: 10px;
+    padding: 9px 8px;
     border-radius: 16px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     z-index: 1000;
@@ -2432,14 +2433,14 @@ onUnmounted(() => {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
     background: #FAEFEC;
     border-radius: 12px;
     border: none;
     padding: 8px 0;
     gap: 4px;
     color: #6D4C41;
-    flex: 1;
-    margin: 0 3px;
+    margin: 0;
     transition: all 0.2s;
   }
   .m-grid-btn.active {

@@ -18,12 +18,9 @@ const activeAOC = ref({ group: '', aoc: '' })
 const regionInfo = ref(null)
 const dataCache = new Map()
 
-const TOUCH_LAYOUT_MAX_WIDTH = 1366
-const isTouchDevice = () => {
-  return typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(pointer: coarse)').matches
-}
+const TOUCH_LAYOUT_MAX_WIDTH = 4096
 const useTouchCompactLayout = () => {
-  return typeof window !== 'undefined' && window.innerWidth <= TOUCH_LAYOUT_MAX_WIDTH && isTouchDevice()
+  return typeof window !== 'undefined' && window.innerWidth <= TOUCH_LAYOUT_MAX_WIDTH
 }
 
 const isMobileView = ref(useTouchCompactLayout())
@@ -322,7 +319,7 @@ watch(() => props.regionConfig?.id, () => {
   right: 0;
 }
 
-@media (max-width: 1366px) and (pointer: coarse) {
+@media (max-width: 4096px) {
   .main-layout {
     flex-direction: column;
     height: 100dvh;
@@ -331,15 +328,29 @@ watch(() => props.regionConfig?.id, () => {
   }
   
   :deep(.aoc-list.mobile-overlay) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    top: 12px;
+    left: 5px;
+    right: auto;
+    bottom: 96px;
+    height: auto;
+    width: calc(100vw - 10px);
+    max-width: calc(100vw - 10px);
     z-index: 1000;
     background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    overflow-y: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  :deep(.aoc-list.mobile-overlay) {
+    width: min(52vw, 760px);
+    max-width: min(52vw, 760px);
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
   }
 }
 </style>

@@ -325,7 +325,7 @@ watch(() => props.indexPath, async () => {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media (max-width: 1366px) and (pointer: coarse) {
+@media (max-width: 4096px) {
   .aoc-list {
     width: 100%;
     height: auto;

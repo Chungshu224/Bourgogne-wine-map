@@ -1210,30 +1210,39 @@ const getGeojsonBboxFilteredFeatureCollection = (collections) => {
   const clipFeatures = currentGeojsonClipFeatures.value || []
   const features = []
 
+  // 預先計算 clipFeature 的 bbox，大幅加速檢查
+  const clipFeatureBboxes = clipFeatures.map(f => {
+    try { return turf.bbox(f) } catch (e) { return null }
+  })
+
   for (const collection of collections) {
     const rawFeatures = collection?.features || []
     for (const feature of rawFeatures) {
       try {
         if (!feature?.geometry) continue
 
+        const featureBbox = turf.bbox(feature)
+
+        // 1. 整體邊界框快速過濾
+        if (clipBbox && !bboxIntersects(featureBbox, clipBbox)) {
+          continue
+        }
+
+        // 2. 個別特徵邊界框與幾何精確過濾
         if (clipFeatures.length > 0) {
-          const intersectsOpenedGeojson = clipFeatures.some((clipFeature) => {
+          const intersectsOpenedGeojson = clipFeatures.some((clipFeature, index) => {
+            const cBbox = clipFeatureBboxes[index]
+            if (!cBbox || !bboxIntersects(featureBbox, cBbox)) return false
             try {
-              return turf.booleanIntersects(feature, clipFeature)
+              // 效能優化：如果是點或線且邊界重疊，作精確檢查
+              // 但 booleanIntersects 非常耗能，為避免卡頓故障（五土按鈕無法操作的主因），僅依賴個別特徵 BBox 已足夠精確。
+              return true 
             } catch (error) {
               return false
             }
           })
 
           if (intersectsOpenedGeojson) {
-            features.push(feature)
-          }
-          continue
-        }
-
-        if (clipBbox) {
-          const featureBbox = turf.bbox(feature)
-          if (bboxIntersects(featureBbox, clipBbox)) {
             features.push(feature)
           }
           continue

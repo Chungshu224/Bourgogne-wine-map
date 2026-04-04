@@ -208,34 +208,6 @@
         <button class="layer-toggle-btn" :class="{ active: showContours }" @click="toggleContours">
           {{ showContours ? '隱藏等高線' : '顯示等高線' }}
         </button>
-        <div v-if="geologyIndex && currentGeologyProvinceCodes.length > 0" class="layer-geology-panel">
-          <button class="layer-toggle-btn" :class="{ active: geologyVisible }" type="button" @click="geologyVisible = !geologyVisible">
-            {{ geologyVisible ? '隱藏地質' : '顯示地質' }}
-          </button>
-          <div class="geology-materials" v-if="geologyVisible">
-            <div v-for="material in geologyIndex.materials" :key="material.id" class="geology-material-row">
-              <button
-                type="button"
-                class="geology-material-toggle"
-                :class="{ active: geologyActiveMaterials.includes(material.id) }"
-                @click="toggleGeologyMaterial(material.id)"
-              >
-                <span class="material-dot" :style="{ backgroundColor: material.fillColor }"></span>
-                <span>{{ material.name }}</span>
-              </button>
-              <label class="geology-slider-wrap">
-                <input
-                  type="range"
-                  min="0.1"
-                  max="0.85"
-                  step="0.05"
-                  v-model.number="geologyMaterialOpacity[material.id]"
-                />
-                <span>{{ Math.round((geologyMaterialOpacity[material.id] || 0) * 100) }}%</span>
-              </label>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
     <div ref="mapContainer" class="map"></div>
@@ -2545,38 +2517,6 @@ onUnmounted(() => {
     max-width: calc(100vw - 10px);
     transform: none;
     overflow: visible;
-  }
-
-  .layer-geology-panel {
-    margin-top: 8px;
-  }
-
-  .mobile-layer-panel .geology-materials {
-    max-height: none;
-    overflow: visible;
-    padding-right: 0;
-  }
-
-  .mobile-layer-panel .geology-material-row {
-    gap: 6px;
-    align-items: stretch;
-  }
-
-  .mobile-layer-panel .geology-material-toggle {
-    flex: 0 0 42%;
-    min-width: 0;
-    white-space: normal;
-    line-height: 1.2;
-    padding: 8px 10px;
-  }
-
-  .mobile-layer-panel .geology-slider-wrap {
-    flex: 1;
-    min-width: 0;
-    background: #f3f3f3;
-    color: #2f2f2f;
-    padding: 8px 10px;
-    gap: 8px;
   }
 
   .layer-panel-header {

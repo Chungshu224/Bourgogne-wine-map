@@ -613,7 +613,7 @@ const loadDomaineLayer = async (domaineFile) => {
       source: 'domaine',
       paint: {
         'fill-color': '#FFD700', // Gold color for domaine
-        'fill-opacity': 0.5
+        'fill-opacity': 0.4
       }
     });
     map.addLayer({
@@ -790,7 +790,7 @@ async function loadInitialVillageGeojsons() {
           type: 'fill',
           source: srcId,
           paint: {
-            'fill-color': 'rgba(255, 255, 255, 0.2)',
+            'fill-color': 'rgba(255, 255, 255, 0.4)',
             'fill-opacity': geologyVisible.value ? 0 : 1
           }
         })
@@ -918,12 +918,12 @@ const showAOCGeojson = async (groupName, aocFile) => {
 
     map.addSource('aoc', { type: 'geojson', data: geojson })
     
-    // 隨機顏色 + 透明度 0.2
+    // 隨機顏色 + 透明度 0.4
     function getRandomColor() {
       const r = Math.floor(Math.random() * 200);
       const g = Math.floor(Math.random() * 200);
       const b = Math.floor(Math.random() * 200);
-      return `rgba(${r},${g},${b},0.2)`;
+      return `rgba(${r},${g},${b},0.4)`;
     }
     map.addLayer({
       id: 'aoc-fill',

@@ -790,8 +790,8 @@ async function loadInitialVillageGeojsons() {
           type: 'fill',
           source: srcId,
           paint: {
-            'fill-color': 'rgba(255, 255, 255, 0.2)',
-            'fill-opacity': geologyVisible.value ? 0 : 1
+            'fill-color': '#ffffff',
+            'fill-opacity': geologyVisible.value ? 0 : 0.2
           }
         })
         map.addLayer({
@@ -918,12 +918,12 @@ const showAOCGeojson = async (groupName, aocFile) => {
 
     map.addSource('aoc', { type: 'geojson', data: geojson })
     
-    // 隨機顏色 + 透明度 0.2
+    // 隨機顏色（不透明），透明度由 fill-opacity 控制
     function getRandomColor() {
       const r = Math.floor(Math.random() * 200);
       const g = Math.floor(Math.random() * 200);
       const b = Math.floor(Math.random() * 200);
-      return `rgba(${r},${g},${b},0.2)`;
+      return `rgb(${r},${g},${b})`;
     }
     map.addLayer({
       id: 'aoc-fill',
@@ -931,7 +931,7 @@ const showAOCGeojson = async (groupName, aocFile) => {
       source: 'aoc',
       paint: {
         'fill-color': getRandomColor(),
-        'fill-opacity': geologyVisible.value ? 0 : 1
+        'fill-opacity': geologyVisible.value ? 0 : 0.2
       }
     })
     map.addLayer({
@@ -1236,7 +1236,7 @@ const getGeojsonBboxFilteredFeatureCollection = (collections) => {
 const syncGeojsonFillVisibilityWithGeology = () => {
   if (!map) return
 
-  const fillOpacity = geologyVisible.value ? 0 : 1
+  const fillOpacity = geologyVisible.value ? 0 : 0.2
 
   if (map.getLayer('aoc-fill')) {
     map.setPaintProperty('aoc-fill', 'fill-opacity', fillOpacity)

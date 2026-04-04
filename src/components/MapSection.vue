@@ -613,7 +613,7 @@ const loadDomaineLayer = async (domaineFile) => {
       source: 'domaine',
       paint: {
         'fill-color': '#FFD700', // Gold color for domaine
-        'fill-opacity': 0.2
+        'fill-opacity': 0.1
       }
     });
     map.addLayer({
@@ -791,7 +791,7 @@ async function loadInitialVillageGeojsons() {
           source: srcId,
           paint: {
             'fill-color': '#ffffff',
-            'fill-opacity': geologyVisible.value ? 0 : 0.2
+            'fill-opacity': geologyVisible.value ? 0 : 0.1
           }
         })
         map.addLayer({
@@ -918,11 +918,11 @@ const showAOCGeojson = async (groupName, aocFile) => {
 
     map.addSource('aoc', { type: 'geojson', data: geojson })
     
-    // 隨機顏色（不透明），透明度由 fill-opacity 控制
+    // 隨機顏色（較亮色系避免疊加過暗），透明度由 fill-opacity 控制
     function getRandomColor() {
-      const r = Math.floor(Math.random() * 200);
-      const g = Math.floor(Math.random() * 200);
-      const b = Math.floor(Math.random() * 200);
+      const r = Math.floor(Math.random() * 155) + 100;
+      const g = Math.floor(Math.random() * 155) + 100;
+      const b = Math.floor(Math.random() * 155) + 100;
       return `rgb(${r},${g},${b})`;
     }
     map.addLayer({
@@ -931,7 +931,7 @@ const showAOCGeojson = async (groupName, aocFile) => {
       source: 'aoc',
       paint: {
         'fill-color': getRandomColor(),
-        'fill-opacity': geologyVisible.value ? 0 : 0.2
+        'fill-opacity': geologyVisible.value ? 0 : 0.1
       }
     })
     map.addLayer({
@@ -1236,7 +1236,7 @@ const getGeojsonBboxFilteredFeatureCollection = (collections) => {
 const syncGeojsonFillVisibilityWithGeology = () => {
   if (!map) return
 
-  const fillOpacity = geologyVisible.value ? 0 : 0.2
+  const fillOpacity = geologyVisible.value ? 0 : 0.1
 
   if (map.getLayer('aoc-fill')) {
     map.setPaintProperty('aoc-fill', 'fill-opacity', fillOpacity)
